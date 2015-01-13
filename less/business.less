@@ -1,3 +1,40 @@
+.site-header {
+	@media (min-width: 1280px) {
+		width: 1280px;
+	}
+}
+.super-header {
+	line-height: 40px;
+	font-size: 12px;
+	
+	ul {
+		.list-clean;
+		li {
+			display: inline-block;
+			font-weight: 600;
+			.sosume {
+				background: url(../images/cookies.png) left center no-repeat;
+				padding-left: 16px;
+			}
+		}
+		li + li:before {
+			content: "\00b7";
+			margin-left: 5px;
+			margin-right: 7px;
+			display: inline-block;
+		}
+		a {
+			.a-blue;
+		}
+		
+	}
+}
+.logo {
+	width: 372.746px;
+	height: 33.821px;
+	display: inline-block;
+	text-indent: -9999px;
+}
 .teaser {
 	h1.header,
 	h2.header,
@@ -45,6 +82,7 @@
 }
 
 .deck {
+	.module;
 	.section-header {
 		font-size: 12px;
 		font-weight: 700;

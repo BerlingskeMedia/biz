@@ -2,6 +2,51 @@
 // Variables
 // --------------------------------------------------
 
+@proxima : proximanova;
+
+@font-face {
+  font-family: 'proxima';
+  src: url('@{icon-font-path}@{proxima}-regular-webfont.eot');
+  src: url('@{icon-font-path}@{proxima}-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('@{icon-font-path}@{proxima}-regular-webfont.woff') format('woff'),
+       url('@{icon-font-path}@{proxima}-regular-webfont.ttf') format('truetype'),
+       url('@{icon-font-path}@{proxima}-regular-webfont.svg#proxima-regular') format('svg');
+       font-weight: regular;
+}
+
+@font-face {
+  font-family: 'proxima';
+  src: url('@{icon-font-path}@{proxima}-semibold-webfont.eot');
+  src: url('@{icon-font-path}@{proxima}-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('@{icon-font-path}@{proxima}-semibold-webfont.woff') format('woff'),
+       url('@{icon-font-path}@{proxima}-semibold-webfont.ttf') format('truetype'),
+       url('@{icon-font-path}@{proxima}-semibold-webfont.svg#proxima-semibold') format('svg');
+       font-weight: 600;
+}
+
+@font-face {
+  font-family: 'proxima';
+  src: url('@{icon-font-path}@{proxima}-bold-webfont.eot');
+  src: url('@{icon-font-path}@{proxima}-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('@{icon-font-path}@{proxima}-bold-webfont.woff') format('woff'),
+       url('@{icon-font-path}@{proxima}-bold-webfont.ttf') format('truetype'),
+       url('@{icon-font-path}@{proxima}-bold-webfont.svg#proxima-bold') format('svg');
+       font-weight: 700;
+}
+
+@font-face {
+  font-family: 'proxima';
+  src: url('@{icon-font-path}@{proxima}-extrabold-webfont.eot');
+  src: url('@{icon-font-path}@{proxima}-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('@{icon-font-path}@{proxima}-extrabold-webfont.woff') format('woff'),
+       url('@{icon-font-path}@{proxima}-extrabold-webfont.ttf') format('truetype'),
+       url('@{icon-font-path}@{proxima}-extrabold-webfont.svg#proxima-extrabold') format('svg');
+       font-weight: 800;
+}
+
+
+
+
 
 //== Colors
 //
@@ -20,6 +65,7 @@
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 
+@b-blue:				#193057;
 @biz-pink:				#f5dfda;
 @biz-pink-alt:			#cc0066;
 
@@ -46,7 +92,7 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "proxima-regular", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
