@@ -73,12 +73,37 @@
           
             <div class="article-content">
 
+
+              <div class="article-social">
+                    <a href="#" class="icon-facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="icon-twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="icon-linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" class="icon-letter"><i class="fa fa-envelope"></i></a>
+                    <span class="pull-right comments-teaser"><a href="#"><? dummy("text@number") ?> kommentarer</a> <a href="#" class="icon-letter"><i class="fa fa-comment"></i></a></span>
+              </div>
+
               <h2 class="article-summary">
                 <? dummy("text@teaser") ?>
               </h2>
 
+
                 
               
+              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+
+              <aside class="article-fact">
+              
+
+              <div class="fact-fader">
+                <span class="fact-toggle"><b>Udvid faktaboks</b><i class="fa fa-expand"></i></span>
+              </div>
+                <h1><? dummy("text@headline") ?></h1>
+                <p><? dummy("text@paragraph") ?></p>
+                <figure>
+                <img src="<? dummy("image@250x,") ?>" width="" height="" alt="" />
+                </figure>
+                <p><? dummy("text@paragraph") ?></p>
+              </aside>
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
               <div class="article-link-embedded">
@@ -96,7 +121,7 @@
           </div><!-- col -->
           
           <!-- SIDEBAR  -->
-          <div class="col-md-4 col-md-pull-8">
+          <aside class="col-md-4 col-md-pull-8">
           <div class="article-sidebar">
             <div class="module-sm banner">
               <? dummy("ad@300x250") ?>
@@ -115,7 +140,7 @@
                 
               </section>
             </div><!-- article-sidebar -->
-          </div><!-- col -->
+          </aside><!-- col -->
         </div><!-- row -->
       </article>  
         
