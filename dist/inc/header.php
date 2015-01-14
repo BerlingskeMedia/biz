@@ -49,7 +49,7 @@
             <a href="https://www.facebook.com/berlingskebusiness" target="_blank" class="header-tool-icon"><i class="fa fa-facebook"></i></a>
             <div class="social-iframe">
               <!-- Remember to insert button with correct App id -->
-              <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.business.dk&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=362425483926972" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>
+              <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fberlingskebusiness&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=362425483926972" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>
             </div>
           </div>
           <div class="tool-likeus">
