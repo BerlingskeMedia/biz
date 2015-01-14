@@ -352,8 +352,22 @@ a.header-tool-icon {
 	position: relative;
 	margin-bottom: 20px;
 	
+	
+	.article-date {
+		font-size: 12px;
+		color: rgba(0,0,0,.5);
+		.module-xs;
+		.clearfix;
+		display: block;
+	}
+	.date-updated {
+		display: inline-block;
+		background: #fed100;
+		padding: 0 3px;
+		font-style: italic;
+	}
+	
 	.article-image {
-
 		.module-sm;
 		figcaption {
 			font-size: 13px;
@@ -366,12 +380,31 @@ a.header-tool-icon {
 		}
 	}
 	.article-tag {
-		
-		color: @biz-1;
 		text-transform: uppercase;	
 		font-size: 14px;
 		font-weight: 600;
-		.a-blur;
+		display: block;
+		// .a-blur;
+		position: relative;
+		span {
+			background: @biz-pink;
+			display: inline-block;
+			padding: 0 5px 0 0;
+			z-index: 2;
+			position: relative;
+		}
+		&:after {
+			position: absolute;
+			height: 5px;
+			background: rgba(0,0,0,.1);
+			left: 0;
+			right: 0;
+			top: 7px;
+			content: '';
+			display: block;
+			z-index: 0;
+		}
+		
 	}
 
 }
@@ -380,7 +413,7 @@ h1.heading {
 	font-size: 40px;
 	color: #000;
 	line-height: 1.2;
-	margin: 0 0 20px;
+	margin: 0 0 10px;
 	font-family: Berlingske;
 }
 .article-summary {
@@ -396,6 +429,7 @@ h1.heading {
 }
 .article-byline {
 	line-height: 1.2;
+	.module-xs;
 	.clearfix;
 	figure {
 		float: left;

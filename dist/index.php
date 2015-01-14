@@ -32,6 +32,25 @@
       
       <article class="col-md-12">
         <header class="article-head">
+
+          <a href="section.php" title="TITLE" class="article-tag"><span><? dummy("text@item") ?></span></a>
+          <h1 class="heading"><? dummy("text@headline") ?></h1>
+
+
+          <div class="article-date">Mandag d. <time datetime="2014-02-14"><? dummy("text@pol-date") ?> kl. <? dummy("text@time") ?></time> <? if (dumb_luck("25%")): ?><span class="date-updated">OPDATERET <time datetime="2014-02-14"> kl. <? dummy("text@time") ?></time></span><? endif ?></div>
+
+
+
+            <div class="article-byline">
+              <? while (dumb_luck("1-3")): ?>
+                <div class="article-author">
+                  <figure><img src="<? dummy("image/!author@30x30,") ?>" width="" height="" alt="" /></figure>
+                  <span><? dummy("text@author") ?><br><a href="#" class="follow-author">Follow <i class="fa fa-caret-down"></i></a></span>
+              </div>
+            <? endwhile ?>
+            </div>    
+
+
           <? if (dumb_luck("50%")): ?>
             <figure class="article-image">
               <img src="<? dummy("image@940x,16:9") ?>" alt="" class="img-responsive" />
@@ -39,17 +58,9 @@
             </figure>
           <? endif ?>
 
-          <a href="section.php" title="TITLE" class="article-tag"><? dummy("text@item") ?></a>
-          <h1 class="heading"><? dummy("text@headline") ?></h1>
+          
 
-          <div class="article-byline module-sm">
-              <? while (dumb_luck("1-3")): ?>
-                <div class="article-author">
-                  <figure><img src="<? dummy("image/!author@30x30,") ?>" width="" height="" alt="" /></figure>
-                  <span><? dummy("text@author") ?><br><a href="#" class="follow-author">Follow <i class="fa fa-caret-down"></i></a></span>
-              </div>
-            <? endwhile ?>
-          </div>
+          
 
         </header>
 
@@ -66,7 +77,6 @@
                 <? dummy("text@teaser") ?>
               </h2>
 
-              
                 
               
 
