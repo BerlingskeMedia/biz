@@ -961,6 +961,7 @@ img {
 .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
+  width: 100% \9;
   height: auto;
 }
 .img-rounded {
@@ -977,6 +978,7 @@ img {
   transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
+  width: 100% \9;
   height: auto;
 }
 .img-circle {
@@ -8455,6 +8457,7 @@ h1.heading {
 .teaser img {
   display: block;
   max-width: 100%;
+  width: 100% \9;
   height: auto;
 }
 /*# sourceMappingURL=bootstrap.css.map */
