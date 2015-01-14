@@ -9,5 +9,4 @@ $(function () {
     $('.fact-toggle').on('click', function() {
     	$(this).closest('.article-fact').toggleClass('show');
     });
-
 });
