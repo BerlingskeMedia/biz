@@ -20,7 +20,9 @@
 }
 @font-face {
   font-family: 'Berlingske';
-  src: url('../fonts/berlingskeserif-bd.woff') format('woff'), url('../fonts/berlingskeserif-bd.ttf') format('truetype');
+  src: url('../fonts/berlingskeserif-bd.woff2') format('woff2'), url('../fonts/berlingskeserif-bd.woff') format('woff'), url('../fonts/berlingskeserif-bd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
