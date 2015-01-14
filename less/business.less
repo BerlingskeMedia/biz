@@ -318,7 +318,11 @@ a.header-tool-icon {
     	line-height: 1;
     }
 }
-
+.desktop-banner {
+	@media (max-width: @screen-sm-max) {
+		display: none;
+	}
+}
 .rat-tail {
 	position: relative;
 	width: 960px;
@@ -376,7 +380,7 @@ h1.heading {
 	font-size: 40px;
 	color: #000;
 	line-height: 1.2;
-	margin: 0;
+	margin: 0 0 20px;
 	font-family: Berlingske;
 }
 .article-summary {

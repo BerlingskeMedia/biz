@@ -14,7 +14,7 @@
   <?php include("./inc/header.php"); ?>
 
   <div class="container">
-    <div class="rat-tail">
+    <div class="rat-tail desktop-banner">
     <? dummy("ad@960x180") ?>
     <div class="banner-left">
       <? dummy("ad@160x600-2") ?>
@@ -32,18 +32,28 @@
       
       <article class="col-md-12">
         <header class="article-head">
-          
-          <figure class="article-image">
-            <img src="<? dummy("image@940x,16:9") ?>" alt="" class="img-responsive" />
-            <? if (dumb_luck("50%")): ?><figcaption><? dummy("text@teaser") ?> <span> Foto: <? dummy("text@author") ?></span></figcaption><? endif ?>
-          </figure>
+          <? if (dumb_luck("50%")): ?>
+            <figure class="article-image">
+              <img src="<? dummy("image@940x,16:9") ?>" alt="" class="img-responsive" />
+              <? if (dumb_luck("50%")): ?><figcaption><? dummy("text@teaser") ?> <span> Foto: <? dummy("text@author") ?></span></figcaption><? endif ?>
+            </figure>
+          <? endif ?>
 
           <a href="section.php" title="TITLE" class="article-tag"><? dummy("text@item") ?></a>
           <h1 class="heading"><? dummy("text@headline") ?></h1>
 
+          <div class="article-byline module-sm">
+              <? while (dumb_luck("1-3")): ?>
+                <div class="article-author">
+                  <figure><img src="<? dummy("image/!author@30x30,") ?>" width="" height="" alt="" /></figure>
+                  <span><? dummy("text@author") ?><br><a href="#" class="follow-author">Follow <i class="fa fa-caret-down"></i></a></span>
+              </div>
+            <? endwhile ?>
+          </div>
+
         </header>
 
-        <div class="banner banner-top-article">
+        <div class="banner banner-top-article desktop-banner">
           <? dummy("ad@930x80") ?>
         </div>
 
@@ -57,14 +67,7 @@
               </h2>
 
               
-                <div class="article-byline module-sm">
-                    <? while (dumb_luck("1-3")): ?>
-                      <div class="article-author">
-                        <figure><img src="<? dummy("image/!author@30x30,") ?>" width="" height="" alt="" /></figure>
-                        <span><? dummy("text@author") ?><br><a href="#" class="follow-author">Follow <i class="fa fa-caret-down"></i></a></span>
-                    </div>
-                  <? endwhile ?>
-                </div>
+                
               
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
