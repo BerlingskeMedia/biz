@@ -1,31 +1,26 @@
 @font-face {
   font-family: 'proxima';
-  src: url('../fonts/proximanova-regular-webfont.eot');
-  src: url('../fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-regular-webfont.woff') format('woff'), url('../fonts/proximanova-regular-webfont.ttf') format('truetype'), url('../fonts/proximanova-regular-webfont.svg#proxima-regular') format('svg');
+  src: url('../fonts/proximanova-regular-webfont.woff') format('woff'), url('../fonts/proximanova-regular-webfont.ttf') format('truetype');
   font-weight: regular;
 }
 @font-face {
   font-family: 'proxima';
-  src: url('../fonts/proximanova-semibold-webfont.eot');
-  src: url('../fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-semibold-webfont.woff') format('woff'), url('../fonts/proximanova-semibold-webfont.ttf') format('truetype'), url('../fonts/proximanova-semibold-webfont.svg#proxima-semibold') format('svg');
+  src: url('../fonts/proximanova-semibold-webfont.woff') format('woff'), url('../fonts/proximanova-semibold-webfont.ttf') format('truetype');
   font-weight: 600;
 }
 @font-face {
   font-family: 'proxima';
-  src: url('../fonts/proximanova-bold-webfont.eot');
-  src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-bold-webfont.woff') format('woff'), url('../fonts/proximanova-bold-webfont.ttf') format('truetype'), url('../fonts/proximanova-bold-webfont.svg#proxima-bold') format('svg');
+  src: url('../fonts/proximanova-bold-webfont.woff') format('woff'), url('../fonts/proximanova-bold-webfont.ttf') format('truetype');
   font-weight: 700;
 }
 @font-face {
   font-family: 'proxima';
-  src: url('../fonts/proximanova-extrabold-webfont.eot');
-  src: url('../fonts/proximanova-extrabold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-extrabold-webfont.woff') format('woff'), url('../fonts/proximanova-extrabold-webfont.ttf') format('truetype'), url('../fonts/proximanova-extrabold-webfont.svg#proxima-extrabold') format('svg');
+  src: url('../fonts/proximanova-extrabold-webfont.woff') format('woff'), url('../fonts/proximanova-extrabold-webfont.ttf') format('truetype');
   font-weight: 800;
 }
 @font-face {
   font-family: 'Berlingske';
-  src: url('../fonts/berlingskeserif-blk.eot');
-  src: url('../fonts/berlingskeserif-blk.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-blk.woff') format('woff'), url('../fonts/berlingskeserif-blk.ttf') format('truetype'), url('../fonts/berlingskeserif-blk.svg#berlingske-serif') format('svg');
+  src: url('../fonts/berlingskeserif-bd.woff') format('woff'), url('../fonts/berlingskeserif-bd.ttf') format('truetype');
 }
 .btn-default,
 .btn-primary,
