@@ -22,6 +22,11 @@
   src: url('../fonts/proximanova-extrabold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-extrabold-webfont.woff') format('woff'), url('../fonts/proximanova-extrabold-webfont.ttf') format('truetype'), url('../fonts/proximanova-extrabold-webfont.svg#proxima-extrabold') format('svg');
   font-weight: 800;
 }
+@font-face {
+  font-family: 'Berlingske';
+  src: url('../fonts/berlingskeserif-blk.eot');
+  src: url('../fonts/berlingskeserif-blk.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-blk.woff') format('woff'), url('../fonts/berlingskeserif-blk.ttf') format('truetype'), url('../fonts/berlingskeserif-blk.svg#berlingske-serif') format('svg');
+}
 .btn-default,
 .btn-primary,
 .btn-success,
