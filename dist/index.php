@@ -34,7 +34,7 @@
         <header class="article-head">
           
           <figure class="article-image">
-            <img src="<? dummy("image@940x,16:9") ?>" width="" height="" alt="" class="img-responsive" />
+            <img src="<? dummy("image@940x,16:9") ?>" alt="" class="img-responsive" />
             <? if (dumb_luck("50%")): ?><figcaption><? dummy("text@teaser") ?> <span> Foto: <? dummy("text@author") ?></span></figcaption><? endif ?>
           </figure>
 
