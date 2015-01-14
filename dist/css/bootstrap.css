@@ -8451,4 +8451,10 @@ h1.heading {
 .a-blue {
   color: #193057;
 }
+.article-link-embedded img,
+.teaser img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /*# sourceMappingURL=bootstrap.css.map */
