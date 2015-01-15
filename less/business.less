@@ -210,6 +210,8 @@ a.header-tool-icon {
 	}
 	time {
 		color: rgba(0,0,0,.5);
+	}
+	a + time {
 		padding-left: 4px;
 	}
 }
@@ -566,6 +568,13 @@ h1.heading {
 	position: relative;
 	padding: 20px 20px;
 
+	.fact-footer {
+		text-align: right;
+		font-size: 12px;
+		small {
+			color: rgba(0,0,0,.7);
+		}
+	}
 	.fact-cite {
 		font-size: 11px;
 		color: rgba(0,0,0,.6);
@@ -624,15 +633,20 @@ h1.heading {
 		span {
 			display: block;
 			font-size: 11px;
-			color: @biz-2;
+			color: @biz-1;
 		}
 	}
-	.timeline {
+	// used in both timeline and theme lists
+	.list-timeline {
 		padding-left: 10px;
 		border-left: 1px solid rgba(0,0,0,.1);
 		margin-left: 3px;
 		margin-bottom: 15px;
-		
+		.teaser {
+			time {
+
+			}
+		}
 		p {
 			line-height: 1.2;
 			&:last-child {
@@ -681,6 +695,11 @@ h1.heading {
 	}
 
 }
+.twitter-tweet {
+	a {
+		color: red!important
+	}
+}
 .article-fact-timeline {
 	.fact-content {
 		max-height: 450px;
@@ -690,8 +709,27 @@ h1.heading {
 		margin-bottom: 10px;
 	}	
 }
+.article-fact-float-theme {
+	.article-fact-float-right;	
+	li {
+		margin-right: 0;
+	}
+	.teaser {
+		font-size: 14px;
+	}
+	h1 {
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+}
 .article-fact-float-right {
 	max-width: 40%;
+	@media (max-width: @screen-xs-max) {
+		max-width: 100%;
+		float: none;
+		margin: 20px 0;
+	}
 	float: right;
 	margin-left: 20px;
 	margin-bottom: 10px;

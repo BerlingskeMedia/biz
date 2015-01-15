@@ -2,7 +2,7 @@
 
   <h1><? dummy("text@headline") ?></h1>
   <div class="fact-content">
-  <ul class="timeline">
+  <ul class="list-timeline">
   <? while (dumb_luck("2-6")): ?>
   	<li><span class="time"><? dummy("text@date-long") ?></span>
   		<h2><? dummy("text@teaser") ?></h2>

@@ -83,18 +83,21 @@
               </div>
 
              
-              <aside class="article-fact article-fact-float-theme">
+              <!-- <aside class="article-fact article-fact-float-theme">
+
                 <h1><span>TEMA</span>OW Bunker skandalen</h1>
 
                 <ul class="list-timeline">
                   <? while (dumb_luck("3-5")): ?>
-                  <li class="teaser"><a href="article.php"><? dummy("text@headline") ?></a></li>
+                  <li class="teaser"><a href="article.php"><footer><time><? dummy("text@time-ago-short") ?></time></footer><? dummy("text@headline") ?></a></li>
                   <? endwhile ?>
                 </ul>
                 <footer class="fact-footer"><a href="section.php">Read all</a> <small>(22 articles)</small></footer>
-              </aside>
+              </aside> -->
+              
+              <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
 
-              <? if (dumb_luck("0%")): ?>
+              <? if (dumb_luck("100%")): ?>
               
                 <? if (dumb_luck("50%")): ?>
                 <!-- *** Asset - factbox float right-->
@@ -108,7 +111,7 @@
 
               <? endif ?>
 
-                <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
+ 
 
               
 

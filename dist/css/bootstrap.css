@@ -8141,6 +8141,8 @@ a.header-tool-icon:hover {
 }
 .teaser time {
   color: rgba(0, 0, 0, 0.5);
+}
+.teaser a + time {
   padding-left: 4px;
 }
 .teaser-img {
@@ -8622,6 +8624,13 @@ h1.heading {
   position: relative;
   padding: 20px 20px;
 }
+.article-fact .fact-footer {
+  text-align: right;
+  font-size: 12px;
+}
+.article-fact .fact-footer small {
+  color: rgba(0, 0, 0, 0.7);
+}
 .article-fact .fact-cite {
   font-size: 11px;
   color: rgba(0, 0, 0, 0.6);
@@ -8692,32 +8701,32 @@ h1.heading {
 .article-fact h1 span {
   display: block;
   font-size: 11px;
-  color: #517fa4;
+  color: #cc0066;
 }
-.article-fact .timeline {
+.article-fact .list-timeline {
   padding-left: 10px;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   margin-left: 3px;
   margin-bottom: 15px;
 }
-.article-fact .timeline p {
+.article-fact .list-timeline p {
   line-height: 1.2;
 }
-.article-fact .timeline p:last-child {
+.article-fact .list-timeline p:last-child {
   margin-bottom: 0;
 }
-.article-fact .timeline li {
+.article-fact .list-timeline li {
   margin-right: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
-.article-fact .timeline li:first-child {
+.article-fact .list-timeline li:first-child {
   border-top: 0;
 }
-.article-fact .timeline li:last-child {
+.article-fact .list-timeline li:last-child {
   border-bottom: 0;
 }
-.article-fact .timeline .time {
+.article-fact .list-timeline .time {
   font-weight: 700;
   font-size: 11px;
   color: #cc0066;
@@ -8725,7 +8734,7 @@ h1.heading {
   display: block;
   margin-bottom: 3px;
 }
-.article-fact .timeline .time:before {
+.article-fact .list-timeline .time:before {
   content: ' ';
   background: #cc0066;
   width: 16px;
@@ -8737,11 +8746,14 @@ h1.heading {
   display: inline-block;
   border: 5px solid #e9d4cf;
 }
-.article-fact .timeline h2 {
+.article-fact .list-timeline h2 {
   font-size: 12px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.8);
   margin: 0 0 4px;
+}
+.twitter-tweet a {
+  color: #ff0000 !important;
 }
 .article-fact-timeline .fact-content {
   max-height: 450px;
@@ -8750,12 +8762,46 @@ h1.heading {
   z-index: 2;
   margin-bottom: 10px;
 }
+.article-fact-float-theme {
+  max-width: 40%;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  clear: right;
+}
+@media (max-width: 767px) {
+  .article-fact-float-theme {
+    max-width: 100%;
+    float: none;
+    margin: 20px 0;
+  }
+}
+.article-fact-float-theme figure {
+  margin-bottom: 20px;
+}
+.article-fact-float-theme li {
+  margin-right: 0;
+}
+.article-fact-float-theme .teaser {
+  font-size: 14px;
+}
+.article-fact-float-theme h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
 .article-fact-float-right {
   max-width: 40%;
   float: right;
   margin-left: 20px;
   margin-bottom: 10px;
   clear: right;
+}
+@media (max-width: 767px) {
+  .article-fact-float-right {
+    max-width: 100%;
+    float: none;
+    margin: 20px 0;
+  }
 }
 .article-fact-float-right figure {
   margin-bottom: 20px;
