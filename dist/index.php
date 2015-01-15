@@ -82,30 +82,25 @@
                     <span class="pull-right comments-teaser"><a href="#"><? dummy("text@number") ?> kommentarer</a> <a href="#" class="icon-letter"><i class="fa fa-comment"></i></a></span>
               </div>
 
-              <h2 class="article-summary">
-                <? dummy("text@long-teaser") ?>
-              </h2>
+             
 
               <? if (dumb_luck("50%")): ?>
-              <? if (dumb_luck("50%")): ?>
-              <!-- /////////  Asset - factbox \\\\\\\\\\\ -->
-              <?php include("inc/asset-article-factbox-float-right.php"); ?>
-              <? else: ?>
-              <!-- /////////  Asset - factbox \\\\\\\\\\\ -->
-              <?php include("inc/asset-article-factbox-timeline.php"); ?>
+              
+                <? if (dumb_luck("50%")): ?>
+                <!-- *** Asset - factbox float right-->
+                <?php include("inc/asset-article-factbox-float-right.php"); ?>
+              
+                <? else: ?>
+                <!-- *** Asset - factbox timeline  -->
+                <?php include("inc/asset-article-factbox-timeline.php"); ?>
+                <? endif ?>
+
+
               <? endif ?>
 
+                <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
 
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-
-
-              <? if (dumb_luck("99%")): ?>
-              <!-- /////////  Asset - factbox \\\\\\\\\\\ -->
-              <?php include("inc/asset-article-factbox-embedded.php"); ?>
-              <? endif ?>
-              <? endif ?>
-
-
+              
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
               <div class="article-link-embedded">
@@ -119,6 +114,31 @@
                 
               </div>
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+
+              <h2>H2:<? dummy("text@item") ?></h2>
+
+              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+
+              <? if (dumb_luck("50%")): ?>
+              <div class="media-embeds">
+              <blockquote class="twitter-tweet" lang="da"><p>Jubii! 11,8 millioner fra A. P. Møller Fonden til Helsingør Kommune! God dag;-) <a href="https://twitter.com/SthePol">@sthepol</a>&#10;<a href="http://t.co/LWfd9iStaU">http://t.co/LWfd9iStaU</a></p>&mdash; Benedikte Kiær (@benediktekiaer) <a href="https://twitter.com/benediktekiaer/status/533231937037414400">14. november 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+  <? else: ?>
+              <blockquote>
+                  
+                  <p>
+                    <? dummy("text@teaser") ?>
+                  </p>
+                  <small><? dummy("text@author") ?></small>
+                  <div class="quote-share">SHARE QUOTE <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></div>
+
+              </blockquote>
+              <? endif ?>
+
+              <h3>H3:<? dummy("text@item") ?></h3>
+              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+
             </div><!-- article-content -->
           </div><!-- col -->
           

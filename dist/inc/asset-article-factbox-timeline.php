@@ -10,6 +10,6 @@
   </li><? endwhile ?>
   </ul>
   </div>
-  <p class="fact-cite" >Source: <a href="#"><? dummy("text@item") ?></a> <? dummy("text@teaser") ?></cite>
+  <? if (dumb_luck("50%")): ?><p class="fact-cite" >Source: <a href="#"><? dummy("text@item") ?></a> <? dummy("text@teaser") ?></cite><? endif ?>
   
 </aside><!-- Article factbox -->
