@@ -83,27 +83,29 @@
               </div>
 
               <h2 class="article-summary">
-                <? dummy("text@teaser") ?>
+                <? dummy("text@long-teaser") ?>
               </h2>
 
+              <? if (dumb_luck("50%")): ?>
+              <? if (dumb_luck("50%")): ?>
+              <!-- /////////  Asset - factbox \\\\\\\\\\\ -->
+              <?php include("inc/asset-article-factbox-float-right.php"); ?>
+              <? else: ?>
+              <!-- /////////  Asset - factbox \\\\\\\\\\\ -->
+              <?php include("inc/asset-article-factbox-timeline.php"); ?>
+              <? endif ?>
 
-                
-              
+
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-              <aside class="article-fact">
-              
 
-              <div class="fact-fader">
-                <span class="fact-toggle"><b>Udvid faktaboks</b><i class="fa fa-expand"></i></span>
-              </div>
-                <h1><? dummy("text@headline") ?></h1>
-                <p><? dummy("text@paragraph") ?></p>
-                <figure>
-                <img src="<? dummy("image@250x,") ?>" width="" height="" alt="" />
-                </figure>
-                <p><? dummy("text@paragraph") ?></p>
-              </aside>
+              <? if (dumb_luck("99%")): ?>
+              <!-- /////////  Asset - factbox \\\\\\\\\\\ -->
+              <?php include("inc/asset-article-factbox-embedded.php"); ?>
+              <? endif ?>
+              <? endif ?>
+
+
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
               <div class="article-link-embedded">

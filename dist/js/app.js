@@ -6,7 +6,7 @@ $(function () {
     });
 
     // ARTICLE FACTBOX 
-    $('.fact-toggle').on('click', function() {
+    $('.fact-fader').on('click', function() {
     	$(this).closest('.article-fact').toggleClass('show');
     });
 });

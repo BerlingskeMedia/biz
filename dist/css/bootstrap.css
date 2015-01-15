@@ -8361,26 +8361,11 @@ h1.heading {
 }
 .article-summary {
   font-weight: 500;
-  font-size: 21px;
+  font-size: 22px;
   line-height: 1.3;
+  margin-bottom: 25px;
   margin-top: 0;
-  margin-bottom: 15px;
-}
-.article-summary:before,
-.article-summary:after {
-  content: " ";
-  display: table;
-}
-.article-summary:after {
-  clear: both;
-}
-.article-summary:before,
-.article-summary:after {
-  content: " ";
-  display: table;
-}
-.article-summary:after {
-  clear: both;
+  color: rgba(0, 0, 0, 0.8);
 }
 .article-content p {
   line-height: 1.6;
@@ -8553,78 +8538,154 @@ h1.heading {
   margin-right: 20px;
 }
 .article-fact {
-  padding: 20px 20px;
-  background: rgba(0, 0, 0, 0.05);
   position: relative;
-  max-height: 150px;
-  overflow: hidden;
-  -webkit-transition: height 0.2s ease;
-  -o-transition: height 0.2s ease;
-  transition: height 0.2s ease;
-  margin-bottom: 25px;
+  padding: 20px 20px;
 }
-.article-fact:before,
-.article-fact:after {
-  content: " ";
-  display: table;
+.article-fact .fact-cite {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.2;
+  font-style: normal;
+  margin-top: 20px;
+  padding-left: 9px;
+  margin-bottom: 0;
 }
-.article-fact:after {
-  clear: both;
+.article-fact img {
+  display: block;
+  max-width: 100%;
+  width: 100% \9;
+  height: auto;
 }
-.article-fact:before,
-.article-fact:after {
-  content: " ";
-  display: table;
+.article-fact:before {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.05);
+  top: 5px;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  content: ' ';
+  display: block;
+  z-index: -1;
 }
-.article-fact:after {
-  clear: both;
+.article-fact ul,
+.article-fact ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.article-fact:before,
-.article-fact:after {
-  content: " ";
-  display: table;
+.article-fact ul li,
+.article-fact ol li {
+  margin: 0;
 }
-.article-fact:after {
-  clear: both;
+.article-fact ul li,
+.article-fact ol li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
 }
-.article-fact:before,
-.article-fact:after {
-  content: " ";
-  display: table;
+.article-fact ul li:first-child,
+.article-fact ol li:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
 }
-.article-fact:after {
-  clear: both;
-}
-.article-fact.show {
-  max-height: 9999px;
-}
-.article-fact.show .fact-fader {
-  background: transparent;
-}
-.article-fact.show .fact-toggle .fa:before {
-  content: "\f066";
-}
-.article-fact.show .fact-toggle {
-  position: absolute!important;
-  right: 5px;
-  bottom: 0;
-}
-.article-fact.show .fact-toggle b {
-  display: none;
-}
-.article-fact p {
-  font-size: 90%;
+.article-fact p,
+.article-fact li {
+  font-size: 12px;
+  line-height: 1.4;
 }
 .article-fact h1 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
 }
-.article-fact figure {
+.article-fact h1 span {
+  display: block;
+  font-size: 11px;
+  color: #517fa4;
+}
+.article-fact .timeline {
+  padding-left: 10px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+.article-fact .timeline p {
+  line-height: 1.2;
+}
+.article-fact .timeline p:last-child {
+  margin-bottom: 0;
+}
+.article-fact .timeline li {
+  margin-right: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.article-fact .timeline li:first-child {
+  border-top: 0;
+}
+.article-fact .timeline li:last-child {
+  border-bottom: 0;
+}
+.article-fact .timeline .time {
+  font-weight: 600;
+  font-size: 12px;
+  color: #cc0066;
+  position: relative;
+  display: block;
+  margin-bottom: 3px;
+}
+.article-fact .timeline .time:before {
+  content: ' ';
+  background: #cc0066;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  left: -18px;
+  top: 0px;
+  display: inline-block;
+  border: 5px solid #e9d4cf;
+}
+.article-fact .timeline h2 {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0 0 4px;
+}
+.article-fact-timeline .fact-content {
+  max-height: 450px;
+  overflow-y: auto;
+  overflow-x: visible;
+  z-index: 2;
+}
+.article-fact-float-right {
+  max-width: 40%;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  clear: right;
+}
+.article-fact-float-right img {
+  margin-bottom: 20px;
+}
+.article-fact-embedded {
+  clear: right;
+  position: relative;
+  max-height: 200px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+.article-fact-embedded p,
+.article-fact-embedded li {
+  font-size: 14px;
+}
+.article-fact-embedded figure {
   float: left;
   margin: 5px 10px 0 0;
 }
-.article-fact .fact-fader {
+.article-fact-embedded .fact-fader {
   height: 80px;
   background-image: -webkit-linear-gradient(top, rgba(245, 223, 218, 0) 0, #f6dfda 80%);
   background-image: -o-linear-gradient(top, rgba(245, 223, 218, 0) 0, #f6dfda 80%);
@@ -8636,17 +8697,27 @@ h1.heading {
   left: 0;
   right: 0;
   text-align: center;
+  cursor: pointer;
 }
-.article-fact .fact-fader .fact-toggle {
+.article-fact-embedded .fact-fader:hover .fact-toggle {
+  background: rgba(0, 0, 0, 0.15);
+}
+.article-fact-embedded .fact-fader .fact-toggle {
   display: inline-block;
   cursor: pointer;
   position: relative;
-  top: 55px;
+  color: rgba(0, 0, 0, 0.8);
+  top: 57px;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.1);
+  padding-left: 5px;
+  -webkit-transition: background-color 0.1s ease;
+  -o-transition: background-color 0.1s ease;
+  transition: background-color 0.1s ease;
 }
-.article-fact .fact-fader .fact-toggle .fa {
+.article-fact-embedded .fact-fader .fact-toggle .fa {
   color: #fff;
   height: 20px;
   width: 20px;
@@ -8655,8 +8726,27 @@ h1.heading {
   background: #cc0066;
   margin-left: 5px;
 }
-.article-fact .fact-fader .fact-toggle:hover .fa:before {
+.article-fact-embedded .fact-fader .fact-toggle:hover .fa:before {
   transform: scale(1.3, 1.3);
+}
+.article-fact-embedded.show {
+  max-height: 9999px;
+}
+.article-fact-embedded.show .fact-fader {
+  background: transparent;
+}
+.article-fact-embedded.show .fact-toggle .fa:before {
+  content: "\f066";
+}
+.article-fact-embedded.show .fact-toggle {
+  position: absolute!important;
+  right: 5px;
+  bottom: 10px;
+  top: auto!important;
+  background: transparent!important;
+}
+.article-fact-embedded.show .fact-toggle b {
+  display: none;
 }
 .article-sidebar {
   padding-top: 4px;

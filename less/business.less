@@ -418,10 +418,11 @@ h1.heading {
 }
 .article-summary {
 	font-weight: 500;
-	font-size: 21px;
+	font-size: 22px;
 	line-height: 1.3;
+	margin-bottom: 25px;
 	margin-top: 0;
-	.module-xs;
+	color: rgba(0,0,0,.8);
 }
 .article-content p {
 	line-height: 1.6;
@@ -524,42 +525,153 @@ h1.heading {
 		margin-right: 20px;
 	} 
 }
+
 .article-fact {
-	padding: 20px 20px;
-	background: rgba(0,0,0,.05);
 	position: relative;
-	max-height: 150px;
-	overflow: hidden;
-	.transition (height .2s ease);
-	.module-sm;
-	.clearfix;
-	&.show {
-		max-height: 9999px;
-		.fact-fader {
-			background: transparent;
+	padding: 20px 20px;
+
+	.fact-cite {
+		font-size: 11px;
+		color: rgba(0,0,0,.6);
+		line-height: 1.2;
+		font-style: normal;
+		margin-top: 20px;
+		padding-left: 9px;
+		margin-bottom: 0;
+	}
+	img {
+		.img-responsive;
+	}
+	&:before {
+		position: absolute;
+		background: rgba(0,0,0,.05);
+		top: 5px;
+		bottom: 5px;
+		left: 0;
+		right: 0;
+		content: ' ';
+		display: block;
+		z-index: -1;
+	}
+	ul, ol {
+		.list-clean;
+		li {
+			margin-bottom: 10px;
+			border-bottom: 1px solid rgba(0,0,0,.1);
+			padding-bottom: 10px;
+			&:first-child {
+				border-top: 1px solid rgba(0,0,0,.1);
+				padding-top: 10px;
+			}
 		}
-		.fact-toggle .fa:before {
-			content: "\f066";
+	}
+	p, li {
+		font-size: 12px;
+		line-height: 1.4;
+	}
+	
+	h1 {
+		font-size: 14px;
+		font-weight: 600;
+		margin: 0 0 10px 0;
+		span {
+			display: block;
+			font-size: 11px;
+			color: @biz-2;
 		}
-		.fact-toggle {
-			position: absolute!important;
-			right: 5px;
-			bottom: 0;
-			b {
-				display: none;
+	}
+	.timeline {
+		padding-left: 10px;
+		border-left: 1px solid rgba(0,0,0,.1);
+		margin-left: 10px;
+		margin-bottom: 15px;
+		
+		p {
+			line-height: 1.2;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		li {
+			margin-right: 10px;
+			margin-bottom: 15px;
+			padding-bottom: 15px;
+			&:first-child {
+				border-top: 0;
+			}
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+		.time {
+			font-weight: 600;
+			font-size: 12px;
+			color: @biz-1;
+			position: relative;
+			display: block;
+			margin-bottom: 3px;
+
+			&:before {
+				content: ' ';
+				background: @biz-1;
+				width: 16px;
+				height: 16px;
+				border-radius: 50%;
+				position: absolute;
+				left: -18px;
+				top: 0px;
+				display: inline-block;
+				border: 5px solid #e9d4cf;
 			}
 		}
 
+		h2 {
+			font-size: 12px;
+			font-weight: 600;
+			color: rgba(0,0,0,.8);
+			margin: 0 0 4px;	
+		}
+	}
 
+}
+.article-fact-timeline {
+	.fact-content {
+		max-height: 450px;
+		overflow-y: auto; 
+		overflow-x: visible;
+		z-index: 2;	
+		
+	}	
+}
+.article-fact-float-right {
+	max-width: 40%;
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	clear: right;
+	img {
+		margin-bottom: 20px;
 	}
-	p {
-		font-size: 90%;
+}
+
+
+
+.article-fact-embedded {
+	clear: right;
+	position: relative;
+	max-height: 200px;
+	border-top: 1px solid rgba(0,0,0,.1);
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	overflow: hidden;
+	// .transition (height .2s ease);
+	margin-bottom: 25px;
+
+	p, li {
+		font-size: 14px;
 	}
-	h1 {
-		font-size: 18px;
-		font-weight: 600;
-		margin: 0 0 15px 0;
-	}
+	
+	
+	
 	figure {
 		float: left;
 		margin: 5px 10px 0 0;
@@ -572,14 +684,28 @@ h1.heading {
 		left: 0;
 		right: 0;
 		text-align: center;
+		cursor: pointer;
+		
+		&:hover {
+			
+			.fact-toggle {
+				background: rgba(0,0,0,.15);
+			}
+		}
+
 		.fact-toggle {
 			display: inline-block;
 			cursor: pointer;
 			position: relative;
-			top: 55px;
+			color: rgba(0,0,0,.8);
+			top: 57px;
 			font-size: 13px;
 			font-weight: 700;
 			text-transform: uppercase;
+			background: rgba(0,0,0,.1);
+			padding-left: 5px;
+			.transition (background-color .1s ease);
+			
 			.fa {
 				color: #fff;
 				height: 20px;
@@ -596,7 +722,25 @@ h1.heading {
 				transform: scale(1.3, 1.3);
 			}
 		}
-		
+	}
+	&.show {
+		max-height: 9999px;
+		.fact-fader {
+			background: transparent;
+		}
+		.fact-toggle .fa:before {
+			content: "\f066";
+		}
+		.fact-toggle {
+			position: absolute!important;
+			right: 5px;
+			bottom: 10px;
+			top: auto!important;
+			background: transparent!important;
+			b {
+				display: none;
+			}
+		}
 	}
 }
 .article-sidebar {
