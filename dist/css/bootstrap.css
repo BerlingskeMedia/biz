@@ -8625,9 +8625,19 @@ h1.heading {
   display: inline-block;
   font-size: 11px;
   font-weight: 600;
+}
+.article-tags ul li a {
+  display: inline-block;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   padding: 1px 10px;
+  line-height: 14px;
+  -webkit-transition: background-color 0.1s ease;
+  -o-transition: background-color 0.1s ease;
+  transition: background-color 0.1s ease;
+}
+.article-tags ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .article-social {
   margin-bottom: 15px;
