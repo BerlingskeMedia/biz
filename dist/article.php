@@ -83,17 +83,19 @@
               </div>
 
              
-              <!-- <aside class="article-fact article-fact-float-theme">
+              <aside class="article-fact article-fact-float-theme">
 
                 <h1><span>TEMA</span>OW Bunker skandalen</h1>
 
                 <ul class="list-timeline">
+                <li class="teaser"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2><footer><time><? dummy("text@time-ago-short") ?></time></footer></li>
+                <li class="teaser current-article"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2><footer><time><? dummy("text@time-ago-short") ?></time></footer></li>
                   <? while (dumb_luck("3-5")): ?>
-                  <li class="teaser"><a href="article.php"><footer><time><? dummy("text@time-ago-short") ?></time></footer><? dummy("text@headline") ?></a></li>
+                  <li class="teaser"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2><footer><time><? dummy("text@time-ago-short") ?></time></footer></li>
                   <? endwhile ?>
                 </ul>
-                <footer class="fact-footer"><a href="section.php">Read all</a> <small>(22 articles)</small></footer>
-              </aside> -->
+                <footer class="fact-footer"><a href="section.php">Read all <i class="fa fa-caret-right"></i></a> <small>(22 articles)</small></footer>
+              </aside>
               
               <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
 
@@ -127,6 +129,17 @@
                 
               </div>
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+              <div class="article-link-embedded">
+                <figure>
+                <a href="article.php" title="TITLE"><img src="<? dummy("image@70x,16:9") ?>" width="" height="" alt="" /></a>
+                </figure>
+                <div class="teaser-body">
+                  <span>Læs også:</span>
+                  <a href="article.php" title="TITLE"><? dummy("text@headline") ?></a>  
+                </div>
+                
+              </div>
+              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
               <h2>H2:<? dummy("text@item") ?></h2>
 
@@ -135,15 +148,15 @@
               <? if (dumb_luck("50%")): ?>
               <div class="media-embeds">
               <blockquote class="twitter-tweet" lang="da"><p>Jubii! 11,8 millioner fra A. P. Møller Fonden til Helsingør Kommune! God dag;-) <a href="https://twitter.com/SthePol">@sthepol</a>&#10;<a href="http://t.co/LWfd9iStaU">http://t.co/LWfd9iStaU</a></p>&mdash; Benedikte Kiær (@benediktekiaer) <a href="https://twitter.com/benediktekiaer/status/533231937037414400">14. november 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-  <? else: ?>
-              <blockquote>
+              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+              <? else: ?>
+              <blockquote class="bond-quote">
                   
                   <p>
                     <? dummy("text@teaser") ?>
                   </p>
-                  <small><? dummy("text@author") ?></small>
+                  <small><? dummy("text@author") ?>- <? if (dumb_luck("50%")): ?><? dummy("text@teaser") ?><? endif ?></small>
                   <div class="quote-share">SHARE QUOTE <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></div>
 
               </blockquote>
@@ -151,6 +164,25 @@
 
               <h3>H3:<? dummy("text@item") ?></h3>
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+
+
+
+              <!-- READ ALSO -->
+              <aside class="article-related">
+                
+              <h1>Read also</h1>
+
+              <ul class="list">
+              <? while (dumb_luck("2-5")): ?>
+              <li class="teaser">
+              <footer><a href="section.php" class="cat"><? dummy("text@item") ?></a> <time><? dummy("text@time-ago-short") ?>.</time></footer>
+              <h2><a href="article.php"><? dummy("text@headline") ?></a></h2>
+              <? endwhile ?>  
+              </ul>
+
+              </aside><!-- read also -->
+
+
 
             </div><!-- article-content -->
           </div><!-- col -->
@@ -178,7 +210,9 @@
           </aside><!-- col -->
         </div><!-- row -->
       </article>  
-        
+      <div class="col-md-12">
+      <? dummy("ad@biz-features") ?>
+      </div>  
       <div class="col-md-12">
           <h1 class="section-header">Seneste nyt</h1>
       </div>
