@@ -54,7 +54,7 @@
           <? if (dumb_luck("50%")): ?>
             <figure class="article-image">
               <img src="<? dummy("image@940x,16:9") ?>" alt="" class="img-responsive" />
-              <? if (dumb_luck("50%")): ?><figcaption><? dummy("text@teaser") ?> <span> Foto: <? dummy("text@author") ?></span></figcaption><? endif ?>
+              <? if (dumb_luck("50%")): ?><figcaption><i class="fa fa-camera"></i> <? dummy("text@teaser") ?> <span> Foto: <? dummy("text@author") ?></span></figcaption><? endif ?>
             </figure>
           <? endif ?>
 
@@ -133,13 +133,19 @@
                 </div>
                 
               </div>
+
+              <p><? dummy("text@paragraph") ?></p>
+                <!-- *** Asset - factbox float right-->
+                <?php include("inc/asset-article-factbox-embedded.php"); ?>
+
+
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
               <? if (dumb_luck("50%")): ?>
                 <!-- *** Asset - factbox theme-->
                 <?php include("inc/asset-article-quiz.php"); ?>
               <? endif ?>
-              
+
               <h2>H2:<? dummy("text@item") ?></h2>
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
@@ -211,7 +217,7 @@
               <? while (dumb_luck("2-5")): ?>
               <li class="teaser">
               <footer><a href="section.php" class="cat"><? dummy("text@item") ?></a> <time><? dummy("text@time-ago-short") ?>.</time></footer>
-              <h2><a href="article.php"><? dummy("text@headline") ?></a></h2>
+              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
               <? endwhile ?>  
               </ul>
 
@@ -219,46 +225,7 @@
 
               <div class="comments" id="article-comments">
                 
-                <script type="text/javascript">
-var disqus_url = 'http://puls.politiko.dk/terrorister-er-ikke-muslimer/';
-var disqus_identifier = '1870 http://puls.politiko.dk/?p=1870';
-var disqus_container_id = 'disqus_thread';
-var disqus_shortname = 'politikodk';
-var disqus_title = "Terrorister er ikke muslimer";
-var disqus_config_custom = window.disqus_config;
-var disqus_config = function () {
-    /*
-    All currently supported events:
-    onReady: fires when everything is ready,
-    onNewComment: fires when a new comment is posted,
-    onIdentify: fires when user is authenticated
-    */
-    
-    
-    this.language = '';
-        this.callbacks.onReady.push(function () {
-
-        // sync comments in the background so we don't block the page
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = '?cf_action=sync_comments&post_id=1870';
-
-        var firstScript = document.getElementsByTagName('script')[0];
-        firstScript.parentNode.insertBefore(script, firstScript);
-    });
-    
-    if (disqus_config_custom) {
-        disqus_config_custom.call(this);
-    }
-};
-
-(function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
+             
 
 
 
@@ -326,6 +293,61 @@ var disqus_config = function () {
           </footer>
 
       </section>
+
+      <section class="deck">
+      
+        <div class="col-md-12">
+            <h1 class="section-header">Business Premium<a href="#" class="pull-right">Se alle</a></h1>
+        </div>
+
+     
+          <ul class="list-clean flex-4-2-1">
+            <? while (dumb_luck("4")): ?>
+              <li>
+                <article class="teaser teaser-ecommerce col-md-3 col-sm-4 col-xs-6">
+                  <figure class="teaser-img">
+                    <a href="article.php"><img src="<? dummy("image/!ecommerce-biz@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a>
+                  </figure>
+                  
+                  <h2 class="header"><a href="article.php"><? dummy("text@ecommerce") ?></a></h2>
+                  <div class="teaser-price"><a href="http://www.berlingske.dk/shop" target="_blank" class="btn btn-xxs btn-secondary">Køb</a> <span class="price"><? dummy("text@number") ?> kr.</span></div>
+                </article>
+                </li>
+            <? endwhile ?>
+          </ul>
+
+          
+
+      </section>
+
+      <section class="deck">
+      
+        <div class="col-md-12">
+            <h1 class="section-header">Gode tilbud i Berlingske Shop <a href="#" class="pull-right">Gå til shoppen</a></h1>
+
+        </div>
+
+        
+        
+          <ul class="list-clean flex-4-2-1">
+            <? while (dumb_luck("3")): ?>
+              <li>
+                <article class="teaser teaser-ecommerce col-md-4 col-sm-4 col-xs-6">
+                  <figure class="teaser-img">
+                    <a href="article.php"><img src="<? dummy("image/!ecommerce-biz@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a>
+                  </figure>
+                  
+                  <h2 class="header"><a href="article.php"><? dummy("text@ecommerce") ?></a></h2>
+                  <div class="teaser-price"><a href="http://www.berlingske.dk/shop" target="_blank" class="btn btn-xxs btn-secondary">Køb</a> <span class="price"><? dummy("text@number") ?> kr.</span></div>
+                </article>
+                </li>
+            <? endwhile ?>
+          </ul>
+
+          
+
+      </section>
+
 
     <section class="deck">
       <div class="col-md-12">

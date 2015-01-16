@@ -176,8 +176,8 @@ a.header-tool-icon {
 	}
 }
 .logo {
-	width: 372.746px;
-	height: 33.821px;
+	width: 373px;
+	height: 34px;
 	display: inline-block;
 	text-indent: -9999px;
 }
@@ -200,7 +200,7 @@ a.header-tool-icon {
 	h2 + footer {
 		margin-bottom: 0;
 	}
-	a {
+	.header a {
 		color: @text-color;
 		&:hover {
 			opacity: .8;
@@ -218,6 +218,25 @@ a.header-tool-icon {
 	}
 }
 
+.teaser-ecommerce {
+	.teaser-price {
+		line-height: 14px;
+		color: rgba(0,0,0,8);
+		line-height: 14px;
+		&:hover {
+			color: rgba(0,0,0,8);
+		}
+	}
+	.price {
+		display: inline-block;
+		margin-left: 2px;
+		vertical-align: middle;
+		font-size: 11px;
+		font-weight: 700;
+		
+	}
+	
+}
 .teaser-img {
 	margin-bottom: 10px;
 	a {
@@ -398,8 +417,9 @@ a.header-tool-icon {
 	.date-updated {
 		display: inline-block;
 		background: #fed100;
-		padding: 0 3px;
+		padding: 0 5px;
 		font-style: italic;
+		color: #111;
 	}
 	
 	.article-image {
@@ -894,8 +914,7 @@ h1.heading {
 	clear: right;
 	position: relative;
 	max-height: 200px;
-	border-top: 1px solid rgba(0,0,0,.1);
-	border-bottom: 1px solid rgba(0,0,0,.1);
+	
 	overflow: hidden;
 	// .transition (height .2s ease);
 	margin-bottom: 25px;
