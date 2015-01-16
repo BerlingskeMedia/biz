@@ -8163,6 +8163,22 @@ a.header-tool-icon:hover {
 .teaser-img a:hover img {
   opacity: 0.9;
 }
+.section-header {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+}
+.section-header:before {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  top: -14px;
+  left: 0;
+  content: ' ';
+}
 .deck {
   margin-bottom: 50px;
 }
@@ -8182,11 +8198,9 @@ a.header-tool-icon:hover {
 .deck:after {
   clear: both;
 }
-.deck .section-header {
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+.deck .deck-footer {
+  margin: 20px;
+  clear: both;
 }
 .list-clean {
   list-style: none;
@@ -8491,7 +8505,7 @@ h1.heading {
   font-size: 17px;
 }
 .article-related {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 .article-related:before,
 .article-related:after {
@@ -8508,6 +8522,9 @@ h1.heading {
 }
 .article-related:after {
   clear: both;
+}
+.article-related h1 {
+  position: relative;
 }
 .article-byline {
   line-height: 1.2;
@@ -8646,22 +8663,6 @@ h1.heading {
   line-height: 1.2;
   font-weight: 700;
 }
-.article-link-embedded:before,
-.article-link-embedded:after {
-  content: " ";
-  display: table;
-}
-.article-link-embedded:after {
-  clear: both;
-}
-.article-link-embedded:before,
-.article-link-embedded:after {
-  content: " ";
-  display: table;
-}
-.article-link-embedded:after {
-  clear: both;
-}
 .article-link-embedded a {
   color: rgba(0, 0, 0, 0.8);
   -webkit-transition: opacity 0.1s ease;
@@ -8678,6 +8679,26 @@ h1.heading {
 .article-link-embedded figure {
   float: left;
   margin-right: 10px;
+}
+.article-video {
+  margin-bottom: 25px;
+  clear: both;
+}
+.article-video:before,
+.article-video:after {
+  content: " ";
+  display: table;
+}
+.article-video:after {
+  clear: both;
+}
+.article-video:before,
+.article-video:after {
+  content: " ";
+  display: table;
+}
+.article-video:after {
+  clear: both;
 }
 .article-fact {
   position: relative;
@@ -8977,6 +8998,25 @@ h1.heading {
 }
 .article-sidebar {
   padding-top: 4px;
+}
+.flex-4-2-1 li {
+  display: block;
+}
+.flex-4-2-1 li article {
+  margin-bottom: 15px;
+}
+.flex-4-2-1 li:nth-child(4n+5) {
+  clear: left;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .flex-4-2-1 li:nth-child(4n+5) {
+    clear: left;
+  }
+}
+@media (max-width: 767px) {
+  .flex-4-2-1 li:nth-child(odd) {
+    clear: left;
+  }
 }
 .module {
   margin-bottom: 50px;

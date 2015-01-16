@@ -27,7 +27,7 @@
     
     </div>
     <div class="row">
-      <section class="deck">
+      
 
       
       <article class="col-md-12">
@@ -83,21 +83,14 @@
               </div>
 
              
-              <aside class="article-fact article-fact-float-theme">
-
-                <h1><span>TEMA</span>OW Bunker skandalen</h1>
-
-                <ul class="list-timeline">
-                <li class="teaser"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2><footer><time><? dummy("text@time-ago-short") ?></time></footer></li>
-                <li class="teaser current-article"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2><footer><time><? dummy("text@time-ago-short") ?></time></footer></li>
-                  <? while (dumb_luck("3-5")): ?>
-                  <li class="teaser"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2><footer><time><? dummy("text@time-ago-short") ?></time></footer></li>
-                  <? endwhile ?>
-                </ul>
-                <footer class="fact-footer"><a href="section.php">Read all <i class="fa fa-caret-right"></i></a> <small>(22 articles)</small></footer>
-              </aside>
+              
               
               <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
+              <? if (dumb_luck("25%")): ?>
+                <!-- *** Asset - factbox theme-->
+                <?php include("inc/asset-article-factbox-theme.php"); ?>
+              <? endif ?>
+
 
               <? if (dumb_luck("100%")): ?>
               
@@ -165,12 +158,19 @@
               <h3>H3:<? dummy("text@item") ?></h3>
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-
+              <!-- VIDEOS -->
+              <? if (dumb_luck("50%")): ?>
+              <div class="article-video">
+                <iframe width="425" height="349" src="http://www.youtube.com/embed/FKWwdQu6_ok" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+              <? endif ?>
 
               <!-- READ ALSO -->
               <aside class="article-related">
                 
-              <h1>Read also</h1>
+              <h1 class="section-header">Read also</h1>
+              
 
               <ul class="list">
               <? while (dumb_luck("2-5")): ?>
@@ -208,26 +208,44 @@
               </section>
             </div><!-- article-sidebar -->
           </aside><!-- col -->
+
+
         </div><!-- row -->
       </article>  
+
+      <section class="deck">
+      
+        <div class="col-md-12">
+            <h1 class="section-header">Seneste nyt</h1>
+        </div>
+
+        
+        
+          <ul class="list-clean flex-4-2-1">
+            <? while (dumb_luck("8")): ?>
+              <li>
+                <article class="teaser col-md-3 col-sm-3 col-xs-6">
+                  <figure class="teaser-img">
+                    <a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a>
+                  </figure>
+                  <footer><a href="section.php" class="cat"><? dummy("text@item") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+                </article>
+                </li>
+            <? endwhile ?>
+          </ul>
+
+          <footer class="deck-footer text-center">
+            <button type="button"  data-loading-text="Loading..." class="btn btn-primary btn-sm btn-loading" autocomplete="off">Load more</button>
+          </footer>
+
+      </section>
+
+    <section class="deck">
       <div class="col-md-12">
       <? dummy("ad@biz-features") ?>
       </div>  
-      <div class="col-md-12">
-          <h1 class="section-header">Seneste nyt</h1>
-      </div>
-      <? while (dumb_luck("4")): ?>
-        <div class="col-md-3 ">
-            <article class="teaser">
-              <figure class="teaser-img">
-                <a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a>
-              </figure>
-              <footer><a href="section.php" class="cat"><? dummy("text@item") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-            </article>
-        </div>
-      <? endwhile ?>
-      </section>
+    </section>
     </div>
 
     <div class="row">

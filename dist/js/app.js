@@ -10,6 +10,7 @@ $(function () {
     	$(this).closest('.article-fact').toggleClass('show');
     });
 
-
+    // Responsive videos in articles
+    $('.article-content').fitVids();
 
 });
