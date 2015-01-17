@@ -1,29 +1,48 @@
-/*SKAKKE*/
-font-face {
-  font-family: 'Proxima';
-  src: url('../fonts/proximanova-regular.eot');
-  src: url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-regular.woff2') format('woff2'), url('../fonts/proximanova-regular.woff') format('woff'), url('../fonts/proximanova-regular.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-font-face {
+/*font-face {
   font-family: 'Proxima';
   src: url('../fonts/proximanova-bold.eot');
   src: url('../fonts/proximanova-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-bold.woff2') format('woff2'), url('../fonts/proximanova-bold.woff') format('woff'), url('../fonts/proximanova-bold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
-font-face {
+
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('proximanova-semibold-webfont.eot');
+    src: url('proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-semibold-webfont.woff2') format('woff2'),
+         url('proximanova-semibold-webfont.woff') format('woff'),
+         url('proximanova-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+/*SKAKKE*/
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/proximanova-regular.eot');
+  src: url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-regular.woff2') format('woff2'), url('../fonts/proximanova-regular.woff') format('woff'), url('../fonts/proximanova-regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/proximanova-bold.eot');
+  src: url('../fonts/proximanova-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-bold.woff2') format('woff2'), url('../fonts/proximanova-bold.woff') format('woff'), url('../fonts/proximanova-bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Proxima';
   src: url('../fonts/proximanova-extrabold.eot');
   src: url('../fonts/proximanova-extrabold.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-extrabold.woff2') format('woff2'), url('../fonts/proximanova-extrabold.woff') format('woff'), url('../fonts/proximanova-extrabold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
-font-face {
+@font-face {
   font-family: 'Berlingske';
-  src: url('../fonts/berlingske-serif.eot');
-  src: url('../fonts/berlingske-serif.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingske-serif.woff2') format('woff2'), url('../fonts/berlingske-serif.woff') format('woff'), url('../fonts/berlingske-serif.ttf') format('truetype');
+  src: url('../fonts/berlingskeserif-bd.eot');
+  src: url('../fonts/berlingskeserif-bd.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-bd.woff2') format('woff2'), url('../fonts/berlingskeserif-bd.woff') format('woff'), url('../fonts/berlingskeserif-bd.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
@@ -7943,7 +7962,13 @@ button.close {
 h1,
 h2,
 h3,
-h4 {
+h4,
+div,
+span,
+strong,
+i,
+em,
+form {
   text-rendering: optimizeLegibility;
 }
 @media (max-width: 991px) {
@@ -8200,6 +8225,7 @@ a.header-tool-icon:hover {
   width: 47%;
   display: inline-block;
   margin-bottom: 20px;
+  padding-right: 5px;
 }
 .article-related-chunk ul li:before,
 .article-related-chunk ul li:after {
@@ -8225,8 +8251,8 @@ a.header-tool-icon:hover {
 }
 .article-related-chunk .teaser .header {
   margin-bottom: 5px;
-  font-weight: 700;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 15px;
 }
 .article-related-chunk figure {
   float: left;
@@ -8567,8 +8593,8 @@ a.header-tool-icon:hover {
   margin-bottom: 20px;
 }
 .article-head .article-date {
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.8);
   margin-bottom: 15px;
   display: block;
 }
@@ -8631,7 +8657,7 @@ a.header-tool-icon:hover {
   clear: both;
 }
 .article-head .article-image figcaption {
-  font-size: 13px;
+  font-size: 14px;
   color: rgba(0, 0, 0, 0.8);
   margin-top: 5px;
   font-weight: 600;
@@ -8645,6 +8671,7 @@ a.header-tool-icon:hover {
   font-weight: 600;
   display: block;
   position: relative;
+  text-rendering: optimizeLegibility;
 }
 .article-head .article-tag span {
   background: #f5dfda;
@@ -8691,27 +8718,20 @@ h1.heading {
   color: #cc0066;
 }
 .aside-header {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
   margin: 0 0 10px 0;
   line-height: 1.3;
 }
 .aside-header span {
   display: block;
-  font-size: 11px;
+  font-size: 12px;
   color: #cc0066;
 }
 .aside-header-small {
-  font-size: 11px;
-  font-weight: 700;
+  font-size: 12px;
   text-transform: uppercase;
   margin: 5px 0 20px;
-  line-height: 1.3;
-}
-.aside-header-small span {
-  display: block;
-  font-size: 11px;
-  color: #cc0066;
 }
 .article-content {
   padding-bottom: 50px;
@@ -8749,7 +8769,7 @@ h1.heading {
 }
 .article-content .article-summary {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 25px;
   line-height: 1.3;
   margin-bottom: 25px;
   margin-top: 0;
@@ -8758,7 +8778,7 @@ h1.heading {
 .article-content > p {
   line-height: 1.6;
   margin-bottom: 25px;
-  font-size: 16px;
+  font-size: 17px;
 }
 .article-content div + p {
   clear: left;
@@ -8883,8 +8903,8 @@ h1.heading {
 }
 .article-tags ul li {
   display: inline-block;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 500;
 }
 .article-tags ul li a {
   display: inline-block;
@@ -9027,7 +9047,7 @@ h1.heading {
   }
 }
 .article-image-embedded figcaption {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.8);
   padding-top: 5px;
@@ -9060,7 +9080,7 @@ h1.heading {
 }
 .article-fact .fact-footer {
   text-align: right;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 }
 .article-fact .fact-footer small {
@@ -9081,14 +9101,14 @@ h1.heading {
   height: auto;
 }
 .article-fact figcaption {
-  font-size: 11px;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.7);
   line-height: 1.3;
   margin-top: 5px;
   font-weight: 600;
 }
 .article-fact figcaption span {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.5);
 }
 .article-fact:before {
   position: absolute;
@@ -9124,8 +9144,11 @@ h1.heading {
 }
 .article-fact p,
 .article-fact li {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
+}
+.article-fact b {
+  font-weight: 600;
 }
 .article-fact .list-timeline {
   padding-left: 10px;
@@ -9170,6 +9193,7 @@ h1.heading {
 }
 .article-fact .list-timeline p {
   line-height: 1.2;
+  font-size: 13px;
 }
 .article-fact .list-timeline p:last-child {
   margin-bottom: 0;
@@ -9187,8 +9211,9 @@ h1.heading {
 }
 .article-fact .list-timeline .time {
   font-weight: 700;
-  font-size: 11px;
+  font-size: 12px;
   color: #cc0066;
+  text-transform: uppercase;
   position: relative;
   display: block;
   margin-bottom: 3px;
@@ -9206,8 +9231,8 @@ h1.heading {
   border: 5px solid #e9d4cf;
 }
 .article-fact .list-timeline h2 {
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 600;
   color: rgba(0, 0, 0, 0.8);
   margin: 0 0 4px;
 }

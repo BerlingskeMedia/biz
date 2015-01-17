@@ -2,6 +2,25 @@
 @berlingske-serif: berlingskeserif-bd;
 
 
+/*font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/proximanova-bold.eot');
+  src: url('../fonts/proximanova-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-bold.woff2') format('woff2'), url('../fonts/proximanova-bold.woff') format('woff'), url('../fonts/proximanova-bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('proximanova-semibold-webfont.eot');
+    src: url('proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-semibold-webfont.woff2') format('woff2'),
+         url('proximanova-semibold-webfont.woff') format('woff'),
+         url('proximanova-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
 
 
 @font-path: "../fonts/";
@@ -9,7 +28,7 @@
 
 // Font embeds
 .font( @fontname; @filename; @fontweight) {
-font-face {
+@font-face {
     font-family: '@{fontname}';
     src: url('@{font-path}@{filename}.eot');
     src: url('@{font-path}@{filename}.eot?#iefix') format('embedded-opentype'),
@@ -24,5 +43,5 @@ font-face {
 .font(Proxima; proximanova-regular; 300);
 .font(Proxima; proximanova-bold; 600);
 .font(Proxima; proximanova-extrabold; 700);
-.font(Berlingske; berlingske-serif; 300);
+.font(Berlingske; berlingskeserif-bd; 300);
 

@@ -1,29 +1,48 @@
-/*SKAKKE*/
-font-face {
-  font-family: 'Proxima';
-  src: url('../fonts/proximanova-regular.eot');
-  src: url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-regular.woff2') format('woff2'), url('../fonts/proximanova-regular.woff') format('woff'), url('../fonts/proximanova-regular.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-font-face {
+/*font-face {
   font-family: 'Proxima';
   src: url('../fonts/proximanova-bold.eot');
   src: url('../fonts/proximanova-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-bold.woff2') format('woff2'), url('../fonts/proximanova-bold.woff') format('woff'), url('../fonts/proximanova-bold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
-font-face {
+
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('proximanova-semibold-webfont.eot');
+    src: url('proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-semibold-webfont.woff2') format('woff2'),
+         url('proximanova-semibold-webfont.woff') format('woff'),
+         url('proximanova-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+/*SKAKKE*/
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/proximanova-regular.eot');
+  src: url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-regular.woff2') format('woff2'), url('../fonts/proximanova-regular.woff') format('woff'), url('../fonts/proximanova-regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/proximanova-bold.eot');
+  src: url('../fonts/proximanova-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-bold.woff2') format('woff2'), url('../fonts/proximanova-bold.woff') format('woff'), url('../fonts/proximanova-bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Proxima';
   src: url('../fonts/proximanova-extrabold.eot');
   src: url('../fonts/proximanova-extrabold.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-extrabold.woff2') format('woff2'), url('../fonts/proximanova-extrabold.woff') format('woff'), url('../fonts/proximanova-extrabold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
-font-face {
+@font-face {
   font-family: 'Berlingske';
-  src: url('../fonts/berlingske-serif.eot');
-  src: url('../fonts/berlingske-serif.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingske-serif.woff2') format('woff2'), url('../fonts/berlingske-serif.woff') format('woff'), url('../fonts/berlingske-serif.ttf') format('truetype');
+  src: url('../fonts/berlingskeserif-bd.eot');
+  src: url('../fonts/berlingskeserif-bd.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-bd.woff2') format('woff2'), url('../fonts/berlingskeserif-bd.woff') format('woff'), url('../fonts/berlingskeserif-bd.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }

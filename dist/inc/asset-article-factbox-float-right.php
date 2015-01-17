@@ -8,7 +8,7 @@
   </ul>
   <figure>
   <img src="<? dummy("image@250x,") ?>" width="" height="" alt="" />
-  <figcaption><? dummy("text@teaser") ?> <span>Foto: <? dummy("text@author") ?></span></figcaption>
+  <figcaption><i class="fa fa-camera"></i> <? dummy("text@teaser") ?> <span>Foto: <? dummy("text@author") ?></span></figcaption>
   </figure>
   <p><? dummy("text@paragraph") ?></p>
 </aside><!-- Article factbox -->
