@@ -950,18 +950,17 @@ h1.heading {
 }
 
 
-
-.mousescroll {
-    overflow: hidden;	
-    ul {
- 	   list-style-type: none;
-	}
-	&:hover {
-    	overflow-y: scroll;
+@media (min-width: @screen-sm) {
+	.mousescroll {
+    	overflow: hidden;	
+	    ul {
+	 	   list-style-type: none;
+		}
+		&:hover {
+	    	overflow-y: scroll;
+		}
 	}
 }
-
-
 
 
 .article-fact-timeline {

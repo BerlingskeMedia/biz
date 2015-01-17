@@ -1,4 +1,4 @@
-<div class="sm-notitification">Artiklen fortsætter efter faktaboksen</div>
+<div class="sm-notitification">Article continues after factbox... </div>
 <aside class="article-fact article-fact-float-theme">
 
   <h1><span>TEMA</span>OW Bunker skandalen</h1>
