@@ -8951,7 +8951,7 @@ h1.heading {
   color: rgba(0, 0, 0, 0.7);
   font-style: italic;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .sm-notitification {
     display: block;
   }
