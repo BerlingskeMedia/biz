@@ -4,18 +4,18 @@
 
 
 
-
+@font-path: "../fonts/";
 /*SKAKKE*/
 
 // Font embeds
-.font(@fontname; @filename; @fontweight) {
+.font( @fontname; @filename; @fontweight) {
 font-face {
     font-family: '@{fontname}';
-    src: url('@{icon-font-path}@{filename}.eot');
-    src: url('@{icon-font-path}@{filename}.eot?#iefix') format('embedded-opentype'),
-         url('@{icon-font-path}@{filename}.woff2') format('woff2'),
-         url('@{icon-font-path}@{filename}.woff') format('woff'),
-         url('@{icon-font-path}@{filename}.ttf') format('truetype');
+    src: url('@{font-path}@{filename}.eot');
+    src: url('@{font-path}@{filename}.eot?#iefix') format('embedded-opentype'),
+         url('@{font-path}@{filename}.woff2') format('woff2'),
+         url('@{font-path}@{filename}.woff') format('woff'),
+         url('@{font-path}@{filename}.ttf') format('truetype');
     font-weight: @fontweight;
     font-style: normal;
     }
