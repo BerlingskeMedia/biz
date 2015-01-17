@@ -5,12 +5,12 @@
 
 
 
-
+/*SKAKKE*/
 
 // Font embeds
 .font(@fontname; @filename; @fontweight) {
 font-face {
-    font-family: '{@fontname}';
+    font-family: '@{fontname}';
     src: url('@{icon-font-path}@{filename}.eot');
     src: url('@{icon-font-path}@{filename}.eot?#iefix') format('embedded-opentype'),
          url('@{icon-font-path}@{filename}.woff2') format('woff2'),
@@ -21,62 +21,8 @@ font-face {
     }
 }
 
-/*.font(Proxima; proximanova-regular; 300);
+.font(Proxima; proximanova-regular; 300);
 .font(Proxima; proximanova-bold; 600);
-.font(Proxima; proximanova-extrabold; 700);*/
+.font(Proxima; proximanova-extrabold; 700);
+.font(Berlingske; berlingske-serif; 300);
 
-/*@font-face {
-    font-family: 'proxima';
-    src: url('proximanova-semibold.eot');
-    src: url('proximanova-semibold.eot?#iefix') format('embedded-opentype'),
-         url('proximanova-semibold.woff2') format('woff2'),
-         url('proximanova-semibold.woff') format('woff'),
-         url('proximanova-semibold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'proxima';
-    src: url('@{icon-font-path}proximanova-regular.eot');
-    src: url('@{icon-font-path}proximanova-regular.eot?#iefix') format('embedded-opentype'),
-         url('@{icon-font-path}proximanova-regular.woff2') format('woff2'),
-         url('@{icon-font-path}proximanova-regular.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'proxima';
-    src: url('@{icon-font-path}proximanova-semibold.eot');
-    src: url('@{icon-font-path}proximanova-semibold.eot?#iefix') format('embedded-opentype'),
-         url('@{icon-font-path}proximanova-semibold.woff2') format('woff2'),
-         url('@{icon-font-path}proximanova-semibold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'proxima';
-    src: url('@{icon-font-path}proximanova-bold.eot');
-    src: url('@{icon-font-path}proximanova-bold.eot?#iefix') format('embedded-opentype'),
-         url('@{icon-font-path}proximanova-bold.woff2') format('woff2'),
-         url('@{icon-font-path}proximanova-bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-
-}*/
-
-@font-face {
-  font-family: 'Berlingske';
-  src: 
-      url('@{icon-font-path}@{berlingske-serif}.woff2') format('woff2'),
-      url('@{icon-font-path}@{berlingske-serif}.woff') format('woff'),
-      url('@{icon-font-path}@{berlingske-serif}.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
