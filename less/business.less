@@ -216,8 +216,6 @@ a.header-tool-icon {
 	.teaser {
 		.header {
 			margin-bottom: 5px;
-			font-weight: 600;
-			font-size: 15px;
 		}	
 	}
 	
@@ -238,11 +236,10 @@ a.header-tool-icon {
 	h2.header,
 	h3.header {
 		margin: 0 0 10px 0;
-
 	}
 	h2 {
 		font-size: 15px;
-
+		font-weight: 600;
 	}
 	footer {
 		font-weight: 600;
@@ -268,6 +265,31 @@ a.header-tool-icon {
 	}
 	a + time {
 		padding-left: 4px;
+	}
+}
+
+.list-lg {
+	 .header {
+		font-size: 20px;
+		font-weight: 600;
+	}
+}
+.list-md {
+	 .header {
+		font-size: 17px;	
+		font-weight: 600;
+	}
+}
+.list-sm {
+	 .header {
+		font-size: 16px;
+		font-weight: 600;
+	}
+}
+.list-xs {
+	 .header {
+		font-size: 15px;
+		font-weight: 600;
 	}
 }
 .teaser-fixed-height .header {
@@ -415,10 +437,6 @@ a.header-tool-icon {
 			opacity: .8;
 		}
 	}
-	.header {
-		font-size: 15px;
-		font-weight: 700;
-	}
 }
 .toplist {
 	.list-clean;
@@ -433,28 +451,59 @@ a.header-tool-icon {
 		}
 	}
 	li {
-    counter-increment: toplist;
-    padding-left: 0px;
-    overflow: hidden;
-    margin-bottom: 10px;
-    &:before {
-    	content: counter(toplist) ".";
-    	float: left;
-    	display: inline-block;
-    	width: 25px;
-    	color: @biz-1;
-    	text-align: right;
-    	padding-right: .2em;
+		counter-increment: toplist;
+		padding-left: 0px;
+		overflow: hidden;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid rgba(0,0,0,.1);
+	    &:before {
+	    	content: counter(toplist) ".";
+	    	float: left;
+	    	display: inline-block;
+	    	width: 50px;
+	    	color: rgba(0,0,0,.5);
+	    	text-align: right;
+	    	padding-right: .5em;
+	    	font-size: 30px;
+	    	font-weight: 200;
+		}
 	}
 }
+.toplist-xs {
+	li {
+    	&:before {
+    		width: 30px;
+    		font-size: 16px;
+		}
+	}
+}
+.toplist-lg li {
+	&:before {
+    	font-size: 30px;
+    	width: 50px;
+    	line-height: 1;
+    }
+}
+.list-image-right {
+	figure {
+		float: right;
+		margin: 0 0 0 10px;	
+	}
+	.teaser-body {
+		margin-right: 60px;
+	}
+
 }
 .list-jobs {
 	.list-clean;
 	.list-bullet;
 	li {
-		font-size: 12px;
+		font-size: 13px;
 		margin-bottom: 10px;
-
+		strong {
+			font-weight: 600;
+		}
 		figure {
 			float: right;
 			margin-left: 10px;
@@ -486,17 +535,13 @@ a.header-tool-icon {
 	}
 }
 .inventory-footer {
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: 600;
-
+	text-align: center;
 }
-.toplist-large li {
-	&:before {
-    	font-weight: 700;
-    	font-size: 30px;
-    	width: 50px;
-    	line-height: 1;
-    }
+
+.banner {
+	.text-center;
 }
 .desktop-banner {
 	@media (max-width: @screen-sm-max) {
@@ -637,7 +682,11 @@ h1.heading {
 	margin: 5px 0 20px;
 }
 .article-content {
+
 	padding-bottom: 50px;
+	b, strong {
+		font-weight: 600;
+	}
 	blockquote {
 		.clearfix;
 		p {
@@ -651,7 +700,7 @@ h1.heading {
 
 	h2 {
 		font-size: 17px;
-		font-weight: 700;
+		font-weight: 600;
 	}
 	h3 {
 		font-size: 16px;
@@ -681,7 +730,6 @@ h1.heading {
 }
 
 .article-related {
-	margin-top: 60px;
 	.clearfix;
 	h1 {
 		position: relative;
@@ -704,10 +752,7 @@ h1.heading {
 		display: inline-block;
 		margin-right: 15px;
 		span {
-			/*white-space: nowrap;
-			display: inline-block;
-			float: left;*/
-			font-weight: 700;
+			font-weight: 600;
 			overflow: hidden;
 			display: inline-block;
 		}
@@ -769,14 +814,23 @@ h1.heading {
 			background-color: rgba(0,0,0,.4); 
 		}
 	}
-	.icon-social-facebook:hover {
+	.icon-social-facebook{
 		background-color: @col-facebook;
+		&:hover {
+			background-color: darken(@col-facebook, 5%);
+		}
 	}
-	.icon-social-twitter:hover {
-		background-color: @col-twitter; 
+	.icon-social-twitter {
+		background-color: @col-twitter;
+		&:hover {
+			background-color: darken(@col-twitter, 5%);
+		}
 	}
-	.icon-social-linkedin:hover {
-		background-color: @col-linkedin; 
+	.icon-social-linkedin {
+		background-color: @col-linkedin;
+		&:hover {
+			background-color: darken(@col-linkedin, 5%);
+		}
 	}
 	.icon-text {
 		color: #000;
@@ -804,14 +858,14 @@ h1.heading {
 		text-transform: uppercase;
 		font-size: 11px;
 		line-height: 1.2;
-		font-weight: 700;
+		font-weight: 600;
 	}
 	
 	a {
 		color: rgba(0,0,0,.8);
 		.a-blur;
 		font-size: 14px;
-		font-weight: 700;
+		font-weight: 600;
 		line-height: 1.2;
 		display: inline-block;
 	}
@@ -1037,6 +1091,7 @@ h1.heading {
 	.mousescroll {
     	overflow-x: hidden;	
     	overflow-y: auto;
+    	-webkit-overflow-scrolling: touch;
 	    ul {
 	 	   list-style-type: none;
 		}

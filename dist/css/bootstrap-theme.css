@@ -20,6 +20,13 @@
 /*SKAKKE*/
 @font-face {
   font-family: 'Proxima';
+  src: url('../fonts/proximanova-light.eot');
+  src: url('../fonts/proximanova-light.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-light.woff2') format('woff2'), url('../fonts/proximanova-light.woff') format('woff'), url('../fonts/proximanova-light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima';
   src: url('../fonts/proximanova-regular.eot');
   src: url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-regular.woff2') format('woff2'), url('../fonts/proximanova-regular.woff') format('woff'), url('../fonts/proximanova-regular.ttf') format('truetype');
   font-weight: 300;
@@ -30,13 +37,6 @@
   src: url('../fonts/proximanova-bold.eot');
   src: url('../fonts/proximanova-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-bold.woff2') format('woff2'), url('../fonts/proximanova-bold.woff') format('woff'), url('../fonts/proximanova-bold.ttf') format('truetype');
   font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Proxima';
-  src: url('../fonts/proximanova-extrabold.eot');
-  src: url('../fonts/proximanova-extrabold.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-extrabold.woff2') format('woff2'), url('../fonts/proximanova-extrabold.woff') format('woff'), url('../fonts/proximanova-extrabold.ttf') format('truetype');
-  font-weight: 700;
   font-style: normal;
 }
 @font-face {
