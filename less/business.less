@@ -747,6 +747,18 @@ h1.heading {
 	clear: both;
 }
 .article-image-embedded {
+	@media (max-width: @screen-sm-max) {
+		display: block;
+		max-width: none;
+		margin: 0 0 20px;
+		figure {
+			text-align: center;
+			img {
+				margin: 0 auto;
+			}
+		}
+	}
+
 	max-width: 50%;
 	margin: 5px 0 20px 20px;
 	float: right;
@@ -760,6 +772,9 @@ h1.heading {
 		span {
 			color: rgba(0,0,0,.6);
 		}
+	}
+	img {
+		.img-responsive;
 	}
 }
 .sm-notitification {

@@ -8915,6 +8915,19 @@ h1.heading {
   float: right;
   clear: right;
 }
+@media (max-width: 991px) {
+  .article-image-embedded {
+    display: block;
+    max-width: none;
+    margin: 0 0 20px;
+  }
+  .article-image-embedded figure {
+    text-align: center;
+  }
+  .article-image-embedded figure img {
+    margin: 0 auto;
+  }
+}
 .article-image-embedded figcaption {
   font-size: 12px;
   font-weight: 600;
@@ -8923,6 +8936,12 @@ h1.heading {
 }
 .article-image-embedded figcaption span {
   color: rgba(0, 0, 0, 0.6);
+}
+.article-image-embedded img {
+  display: block;
+  max-width: 100%;
+  width: 100% \9;
+  height: auto;
 }
 .sm-notitification {
   display: none;
