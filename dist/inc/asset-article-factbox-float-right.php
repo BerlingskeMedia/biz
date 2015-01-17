@@ -1,3 +1,4 @@
+<div class="sm-notitification">Artiklen fortsætter efter faktaboksen</div>
 <aside class="article-fact article-fact-float-right">
 
   <h1><? dummy("text@headline") ?></h1>

@@ -170,10 +170,11 @@
               <h3>H3:<? dummy("text@item") ?></h3>
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-              <!-- EMBEDDED IMAGE -->
+              
               <? if (dumb_luck("50%")): ?>
+              <!-- EMBEDDED IMAGE -->
               <div class="article-image-embedded">
-                <figure><img src="<? dummy("image@300x,") ?>" width="" height="" alt="" class="Img-responsive"/>
+                <figure><img src="<? dummy("image@300x,") ?>" width="" height="" alt="" />
                 <? if (dumb_luck("75%")): ?>
                 <figcaption><i class="fa fa-camera"></i> <? dummy("text@teaser") ?> <span>Foto: <? dummy("text@author") ?></span></figcaption>
                 <? endif ?>
@@ -181,8 +182,9 @@
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
               <? endif ?>
 
-              <!-- VIDEOS -->
+              
               <? if (dumb_luck("50%")): ?>
+              <!-- VIDEOS -->
               <div class="article-video">
                 <iframe width="425" height="349" src="http://www.youtube.com/embed/FKWwdQu6_ok" frameborder="0" allowfullscreen></iframe>
               </div>
@@ -243,6 +245,24 @@
           <!-- SIDEBAR  -->
           <aside class="col-md-4 col-md-pull-8">
           <div class="article-sidebar">
+
+          <section class="module business-inventory business-inventory-jobindex">
+              <h1 class="section-header">Ledige job fra Jobindex A/S</h1>
+              <ul class="list-jobs">
+              <? while (dumb_luck("3-5")): ?>
+              <li>
+              <a href="#">
+                <strong><? dummy("text@job") ?></strong>
+                <span class="job-company"><? dummy("text@job-company") ?></span>
+              </a>
+              </li>
+              <? endwhile ?>
+              </ul>
+              <footer class="inventory-footer">
+                <a href="#">Se flere jobs på Jobindex.dk</a>
+              </footer>
+          </section>
+
             <div class="module-sm banner">
               <? dummy("ad@300x250") ?>
             </div>
@@ -250,10 +270,10 @@
                 
                   <? while (dumb_luck("4")): ?>
                     <article class="teaser teaser-thumb-sm">
-                      <figure><a href="article.php"><img src="<? dummy("image@40x40,") ?>" width="" height="" alt="" /></a></figure>
+                      <figure><a href="article.php"><img src="<? dummy("image@60x60,") ?>" width="" height="" alt="" /></a></figure>
                       <div class="teaser-body">
                         <footer><a href="section.php" class="cat"><? dummy("text@item") ?></a>  <time> <? dummy("text@time-ago-short") ?></time></footer>
-                        <a href="article.php"><? dummy("text@headline") ?></a>
+                        <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
                       </div>
                     </article>
                   <? endwhile ?>
@@ -343,37 +363,20 @@
                 </li>
             <? endwhile ?>
           </ul>
-
-          
-
       </section>
 
 
     <section class="deck">
       <div class="col-md-12">
-      <? dummy("ad@biz-features") ?>
+      <?  dummy("ad@biz-features") ?>
       </div>  
     </section>
     </div>
 
-    <div class="row">
-    <div class="col-md-4">
-      <ul class="toplist">
-        <? while (dumb_luck("10")): ?>
-          <li><a href="article.php"><? dummy("text@headline") ?></a></li>
-        <? endwhile ?>
-      </ul>
-    </div>
+  
 
-    <div class="col-md-4">
-      <ul class="toplist toplist-large">
-        <? while (dumb_luck("10")): ?>
-          <li><a href="article.php"><? dummy("text@headline") ?></a></li>
-        <? endwhile ?>
-      </ul>
-    </div>
+  
 
-  </div>
   </div><!-- container -->
     
 

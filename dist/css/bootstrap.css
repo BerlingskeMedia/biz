@@ -7964,6 +7964,11 @@ h3,
 h4 {
   text-rendering: optimizeLegibility;
 }
+@media (max-width: 991px) {
+  .site-header {
+    display: none;
+  }
+}
 @media (min-width: 1280px) {
   .site-header .container {
     width: 1280px;
@@ -8167,6 +8172,25 @@ a.header-tool-icon:hover {
   display: inline-block;
   text-indent: -9999px;
 }
+.teaser {
+  margin-bottom: 25px;
+}
+.teaser:before,
+.teaser:after {
+  content: " ";
+  display: table;
+}
+.teaser:after {
+  clear: both;
+}
+.teaser:before,
+.teaser:after {
+  content: " ";
+  display: table;
+}
+.teaser:after {
+  clear: both;
+}
 .teaser h1.header,
 .teaser h2.header,
 .teaser h3.header {
@@ -8198,6 +8222,21 @@ a.header-tool-icon:hover {
 }
 .teaser a + time {
   padding-left: 4px;
+}
+.teaser-fixed-height .header {
+  height: 60px;
+}
+.teaser-author {
+  line-height: 1.2;
+}
+.teaser-author img {
+  float: left;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.teaser-author .author-title {
+  display: block;
+  color: rgba(0, 0, 0, 0.7);
 }
 .teaser-ecommerce .teaser-price {
   color: #000000;
@@ -8300,8 +8339,8 @@ a.header-tool-icon:hover {
   color: #cc0066;
 }
 .teaser-thumb-sm {
-  padding: 15px 0;
-  margin: 0;
+  padding: 0px 0;
+  margin: 0 0 10px;
   list-style: none;
   line-height: 1.3;
 }
@@ -8328,6 +8367,9 @@ a.header-tool-icon:hover {
 }
 .teaser-thumb-sm a:hover {
   opacity: .8;
+}
+.teaser-thumb-sm .header {
+  font-size: 14px;
 }
 .toplist {
   list-style: none;
@@ -8359,6 +8401,60 @@ a.header-tool-icon:hover {
   color: #cc0066;
   text-align: right;
   padding-right: .2em;
+}
+.list-jobs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list-jobs li {
+  margin: 0;
+}
+.list-jobs li {
+  padding-left: 15px;
+}
+.list-jobs li:before {
+  display: inline-block;
+  content: "\f054";
+  font-family: fontawesome;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  text-align: center;
+  font-size: 10px;
+  margin-left: -15px;
+  color: #cc0066;
+}
+.list-jobs li {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.list-jobs li figure {
+  float: right;
+  margin-left: 10px;
+  clear: right;
+}
+.list-bullet li {
+  padding-left: 15px;
+}
+.list-bullet li:before {
+  display: inline-block;
+  content: "\f054";
+  font-family: fontawesome;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  text-align: center;
+  font-size: 10px;
+  margin-left: -15px;
+  color: #cc0066;
+}
+.business-inventory-jobindex a {
+  color: rgba(0, 0, 0, 0.8);
+}
+.inventory-footer {
+  font-size: 11px;
+  font-weight: 600;
 }
 .toplist-large li:before {
   font-weight: 700;
@@ -8564,8 +8660,11 @@ h1.heading {
 }
 .article-content > p {
   line-height: 1.6;
-  margin-bottom: 20px;
-  font-size: 17px;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+.article-content div + p {
+  clear: left;
 }
 .article-related {
   margin-top: 60px;
@@ -8825,6 +8924,19 @@ h1.heading {
 .article-image-embedded figcaption span {
   color: rgba(0, 0, 0, 0.6);
 }
+.sm-notitification {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+  padding: 3px 0;
+  color: rgba(0, 0, 0, 0.7);
+  font-style: italic;
+}
+@media (max-width: 991px) {
+  .sm-notitification {
+    display: block;
+  }
+}
 .article-fact {
   position: relative;
   padding: 20px 20px;
@@ -9007,7 +9119,7 @@ h1.heading {
   .article-fact-float-theme {
     max-width: 100%;
     float: none;
-    margin: 20px 0;
+    margin: 0 0 20px;
   }
 }
 .article-fact-float-theme figure {
@@ -9035,7 +9147,7 @@ h1.heading {
   .article-fact-float-right {
     max-width: 100%;
     float: none;
-    margin: 20px 0;
+    margin: 0 0 20px;
   }
 }
 .article-fact-float-right figure {
@@ -9070,23 +9182,58 @@ h1.heading {
   text-align: center;
   cursor: pointer;
 }
-.article-fact-embedded .fact-fader:hover .fact-toggle {
-  background: rgba(0, 0, 0, 0.15);
-}
 .article-fact-embedded .fact-fader .fact-toggle {
   display: inline-block;
   cursor: pointer;
   position: relative;
-  color: rgba(0, 0, 0, 0.8);
   top: 57px;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.1);
   padding-left: 5px;
   -webkit-transition: background-color 0.1s ease;
   -o-transition: background-color 0.1s ease;
   transition: background-color 0.1s ease;
+  color: #ffffff;
+  background-color: #cc0066;
+}
+.article-fact-embedded .fact-fader .fact-toggle:hover,
+.article-fact-embedded .fact-fader .fact-toggle:focus,
+.article-fact-embedded .fact-fader .fact-toggle.focus,
+.article-fact-embedded .fact-fader .fact-toggle:active,
+.article-fact-embedded .fact-fader .fact-toggle.active,
+.open > .dropdown-toggle.article-fact-embedded .fact-fader .fact-toggle {
+  color: #ffffff;
+  background-color: #99004d;
+}
+.article-fact-embedded .fact-fader .fact-toggle:active,
+.article-fact-embedded .fact-fader .fact-toggle.active,
+.open > .dropdown-toggle.article-fact-embedded .fact-fader .fact-toggle {
+  background-image: none;
+}
+.article-fact-embedded .fact-fader .fact-toggle.disabled,
+.article-fact-embedded .fact-fader .fact-toggle[disabled],
+fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle,
+.article-fact-embedded .fact-fader .fact-toggle.disabled:hover,
+.article-fact-embedded .fact-fader .fact-toggle[disabled]:hover,
+fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle:hover,
+.article-fact-embedded .fact-fader .fact-toggle.disabled:focus,
+.article-fact-embedded .fact-fader .fact-toggle[disabled]:focus,
+fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle:focus,
+.article-fact-embedded .fact-fader .fact-toggle.disabled.focus,
+.article-fact-embedded .fact-fader .fact-toggle[disabled].focus,
+fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.focus,
+.article-fact-embedded .fact-fader .fact-toggle.disabled:active,
+.article-fact-embedded .fact-fader .fact-toggle[disabled]:active,
+fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle:active,
+.article-fact-embedded .fact-fader .fact-toggle.disabled.active,
+.article-fact-embedded .fact-fader .fact-toggle[disabled].active,
+fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
+  background-color: #cc0066;
+}
+.article-fact-embedded .fact-fader .fact-toggle .badge {
+  color: #cc0066;
+  background-color: #ffffff;
 }
 .article-fact-embedded .fact-fader .fact-toggle .fa {
   color: #fff;

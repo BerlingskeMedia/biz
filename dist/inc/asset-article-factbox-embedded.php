@@ -1,3 +1,4 @@
+<div class="sm-notitification">Artiklen fortsætter efter faktaboksen</div>
 <aside class="article-fact article-fact-embedded">
 <div class="fact-fader">
   <span class="fact-toggle"><b>Udvid faktaboks</b><i class="fa fa-chevron-down"></i></span>

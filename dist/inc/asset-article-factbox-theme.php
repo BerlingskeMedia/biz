@@ -1,3 +1,4 @@
+<div class="sm-notitification">Artiklen fortsætter efter faktaboksen</div>
 <aside class="article-fact article-fact-float-theme">
 
   <h1><span>TEMA</span>OW Bunker skandalen</h1>
