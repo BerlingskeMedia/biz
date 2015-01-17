@@ -368,7 +368,7 @@
 
     <section class="deck">
       <div class="col-md-12">
-      <?  dummy("ad@biz-features") ?>
+      <? // dummy("ad@biz-features") ?>
       </div>  
     </section>
     </div>
