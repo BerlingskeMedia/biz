@@ -19,7 +19,7 @@
     
     <? while (dumb_luck("4")): ?>
     <div class="col-md-3 col-sm-6 col-xs-6">
-      <article class="teaser teaser-fixed-height">
+      <article class="teaser teaser-fixed-height teaser-hover">
       <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="" height="" alt="" /></a></figure>
       <footer><a href="section.php" class="cat"><? dummy("text@item") ?></a>  <time> <? dummy("text@time-ago-short") ?></time></footer>
       <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>

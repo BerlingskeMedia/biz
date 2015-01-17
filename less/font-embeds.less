@@ -2,26 +2,41 @@
 @berlingske-serif: berlingskeserif-bd;
 
 
+
+
+
+
+
+// Font embeds
+.font(@fontname; @filename; @fontweight) {
+font-face {
+    font-family: '{@fontname}';
+    src: url('@{icon-font-path}@{filename}.eot');
+    src: url('@{icon-font-path}@{filename}.eot?#iefix') format('embedded-opentype'),
+         url('@{icon-font-path}@{filename}.woff2') format('woff2'),
+         url('@{icon-font-path}@{filename}.woff') format('woff'),
+         url('@{icon-font-path}@{filename}.ttf') format('truetype');
+    font-weight: @fontweight;
+    font-style: normal;
+    }
+}
+
+/*.font(Proxima; proximanova-regular; 300);
+.font(Proxima; proximanova-bold; 600);
+.font(Proxima; proximanova-extrabold; 700);*/
+
 /*@font-face {
     font-family: 'proxima';
-    src: url('@{icon-font-path}proximanova-light.eot');
-    src: url('@{icon-font-path}proximanova-light.eot?#iefix') format('embedded-opentype'),
-         url('@{icon-font-path}proximanova-light.woff2') format('woff2'),
-         url('@{icon-font-path}proximanova-light.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'proxima_novalight';
-    src: url('proximanova-light.eot');
-    src: url('proximanova-light.eot?#iefix') format('embedded-opentype'),
-         url('proximanova-light.woff2') format('woff2'),
-         url('proximanova-light.woff') format('woff');
-    font-weight: normal;
+    src: url('proximanova-semibold.eot');
+    src: url('proximanova-semibold.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-semibold.woff2') format('woff2'),
+         url('proximanova-semibold.woff') format('woff'),
+         url('proximanova-semibold.ttf') format('truetype');
+    font-weight: 600;
     font-style: normal;
 
 }
-*/
+
 
 @font-face {
     font-family: 'proxima';
@@ -54,7 +69,7 @@
     font-weight: 700;
     font-style: normal;
 
-}
+}*/
 
 @font-face {
   font-family: 'Berlingske';

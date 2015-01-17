@@ -1,7 +1,7 @@
-<div class="sm-notitification">Article continues after factbox... </div>
+<div class="sm-notitification">Article continues after factbox &hellip;</div>
 <aside class="article-fact article-fact-float-theme">
 
-  <h1><span>TEMA</span>OW Bunker skandalen</h1>
+  <h1 class="aside-header"><span>TEMA</span>OW Bunker skandalen</h1>
 
   <ul class="list-timeline">
     <li class="teaser"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2><footer><time><? dummy("text@time-ago-short") ?></time></footer></li>

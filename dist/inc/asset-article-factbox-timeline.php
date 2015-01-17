@@ -1,7 +1,7 @@
-<div class="sm-notitification">Article continues after factbox... </div>
+<div class="sm-notitification">Article continues after factbox &hellip;</div>
 <aside class="article-fact article-fact-float-right article-fact-timeline">
 
-  <h1><? dummy("text@headline") ?></h1>
+  <h1 class="aside-header"><? dummy("text@headline") ?></h1>
   <div class="fact-content mousescroll">
   <ul class="list-timeline ">
   <? while (dumb_luck("2-6")): ?>

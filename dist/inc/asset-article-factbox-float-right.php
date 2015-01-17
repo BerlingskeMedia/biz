@@ -1,7 +1,7 @@
-<div class="sm-notitification">Article continues after factbox... </div>
+<div class="sm-notitification">Article continues after factbox &hellip; </div>
 <aside class="article-fact article-fact-float-right">
 
-  <h1><? dummy("text@headline") ?></h1>
+  <h1 class="aside-header"><? dummy("text@headline") ?></h1>
   <p><? dummy("text@paragraph") ?></p>
   <ul>
   <? while (dumb_luck("3")): ?><li><strong><? dummy("text@date-long") ?></strong><br><? dummy("text@teaser") ?></li><? endwhile ?>

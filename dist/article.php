@@ -1,6 +1,9 @@
 <? require_once("../../dummy/dummy.php") ?>
+
 <!DOCTYPE html>
-<html lang="da">
+<!--[if IE 9 ]><html class="ie9" lang="da"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="da"><!--<![endif]-->
+
   <head>
     <title>Business.dk</title>
     <?php include("./inc/head.php"); ?> 
@@ -170,6 +173,25 @@
               <h3>H3:<? dummy("text@item") ?></h3>
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
+              <aside class="article-related-chunk">
+                <h1 class="aside-header aside-header-small">Mere om OW Bunker sagen</h1>
+                <ul>
+                  <? while (dumb_luck("4")): ?>
+                  <li class="teaser">
+                      <figure><a href="article.php"><img src="<? dummy("image@60x60,") ?>" width="" height="" alt="" /></a></figure>
+                      <div class="teaser-body">
+                        <h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>
+                        <footer><time> 3d.</time></footer>
+                      </div>
+
+                  </li>
+                  <? endwhile ?>
+                </ul>
+
+              </aside>
+
+              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+
               
               <? if (dumb_luck("50%")): ?>
               <!-- EMBEDDED IMAGE -->
@@ -247,7 +269,7 @@
           <div class="article-sidebar">
 
           <section class="module business-inventory business-inventory-jobindex">
-              <h1 class="section-header">Ledige job fra Jobindex A/S</h1>
+              <h1 class="module-header">Ledige job fra Jobindex A/S</h1>
               <ul class="list-jobs">
               <? while (dumb_luck("3-5")): ?>
               <li>
@@ -259,17 +281,17 @@
               <? endwhile ?>
               </ul>
               <footer class="inventory-footer">
-                <a href="#">Se flere jobs på Jobindex.dk</a>
+                <a href="#">Se flere jobs på Jobindex.dk <i class="fa fa-angle-right"></i></a>
               </footer>
           </section>
 
             <div class="module-sm banner">
               <? dummy("ad@300x250") ?>
             </div>
-              <section class="module-sm">
+              <section class="module-sm teaser-list-border">
                 
                   <? while (dumb_luck("4")): ?>
-                    <article class="teaser teaser-thumb-sm">
+                    <article class="teaser teaser-thumb-sm ">
                       <figure><a href="article.php"><img src="<? dummy("image@60x60,") ?>" width="" height="" alt="" /></a></figure>
                       <div class="teaser-body">
                         <footer><a href="section.php" class="cat"><? dummy("text@item") ?></a>  <time> <? dummy("text@time-ago-short") ?></time></footer>
