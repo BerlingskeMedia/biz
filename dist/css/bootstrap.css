@@ -3007,6 +3007,48 @@ fieldset[disabled] .btn-secondary.active {
   color: #193057;
   background-color: #ffffff;
 }
+.btn-facebook {
+  color: #ffffff;
+  background-color: #4c66a4;
+}
+.btn-facebook:hover,
+.btn-facebook:focus,
+.btn-facebook.focus,
+.btn-facebook:active,
+.btn-facebook.active,
+.open > .dropdown-toggle.btn-facebook {
+  color: #ffffff;
+  background-color: #3c5081;
+}
+.btn-facebook:active,
+.btn-facebook.active,
+.open > .dropdown-toggle.btn-facebook {
+  background-image: none;
+}
+.btn-facebook.disabled,
+.btn-facebook[disabled],
+fieldset[disabled] .btn-facebook,
+.btn-facebook.disabled:hover,
+.btn-facebook[disabled]:hover,
+fieldset[disabled] .btn-facebook:hover,
+.btn-facebook.disabled:focus,
+.btn-facebook[disabled]:focus,
+fieldset[disabled] .btn-facebook:focus,
+.btn-facebook.disabled.focus,
+.btn-facebook[disabled].focus,
+fieldset[disabled] .btn-facebook.focus,
+.btn-facebook.disabled:active,
+.btn-facebook[disabled]:active,
+fieldset[disabled] .btn-facebook:active,
+.btn-facebook.disabled.active,
+.btn-facebook[disabled].active,
+fieldset[disabled] .btn-facebook.active {
+  background-color: #4c66a4;
+}
+.btn-facebook .badge {
+  color: #4c66a4;
+  background-color: #ffffff;
+}
 .btn-danger {
   color: #ffffff;
   background-color: #d9534f;
@@ -5398,16 +5440,29 @@ a.list-group-item-danger.active:focus {
 .well-image {
   position: relative;
 }
+.well-image img {
+  display: block;
+  max-width: 100%;
+  width: 100% \9;
+  height: auto;
+}
 .well-image figcaption {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 20%;
+  bottom: 20px;
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
-  font-size: 80px;
+  font-size: 70px;
+  letter-spacing: -0.02em;
   font-weight: 200;
+  font-family: Berlingske;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .well-image figcaption {
+    font-size: 5.9vw;
+  }
 }
 .well-lg {
   padding: 24px;
@@ -7974,7 +8029,8 @@ span,
 strong,
 i,
 em,
-form {
+form,
+figcaption {
   text-rendering: optimizeLegibility;
 }
 @media (max-width: 991px) {
@@ -8471,6 +8527,11 @@ h1.page-header {
   margin-bottom: 30px;
   text-align: center;
 }
+@media (max-width: 767px) {
+  h1.page-header {
+    font-size: 5.9vw;
+  }
+}
 h2.page-header {
   font-size: 30px;
   font-weight: 300;
@@ -8822,7 +8883,6 @@ h2.page-header:before {
   font-weight: 600;
   display: block;
   position: relative;
-  text-rendering: optimizeLegibility;
 }
 .article-head .article-tag span {
   background: #f5dfda;
@@ -9600,6 +9660,22 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 }
 @media (max-width: 767px) {
   .flex-4-2-1 li:nth-child(odd) {
+    clear: left;
+  }
+}
+.flex-4-3-2 li {
+  display: block;
+}
+.flex-4-3-2 li:nth-child(4n+5) {
+  clear: left;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .flex-4-3-2 li:nth-child(3n+4) {
+    clear: left;
+  }
+}
+@media (max-width: 767px) {
+  .flex-4-3-2 li:nth-child(odd) {
     clear: left;
   }
 }

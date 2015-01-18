@@ -1,4 +1,4 @@
-h1, h2, h3, h4, div, span, strong, i, em, form {
+h1, h2, h3, h4, div, span, strong, i, em, form, figcaption {
 	text-rendering: optimizeLegibility;
 }
 .site-header {
@@ -396,7 +396,9 @@ h1.page-header {
 	font-weight: 200;
 	margin-bottom: 30px;
 	.text-center;
-	
+	@media (max-width: @screen-xs-max) {
+		font-size: 5.9vw;;
+	}
 }
 h2.page-header {
 	font-size: 30px;
@@ -686,7 +688,7 @@ h2.page-header {
 		font-weight: 600;
 		display: block;
 		position: relative;
-		text-rendering: optimizeLegibility;
+		
 		span {
 			background: @biz-pink;
 			display: inline-block;
@@ -1310,6 +1312,28 @@ h1.heading {
 	@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
 		li:nth-child(4n+5) {
     		clear: left;
+		}
+	}
+	@media (max-width: @screen-xs-max) {
+		li:nth-child(odd) {
+    		clear: left;
+		}
+	}
+}
+
+.flex-4-3-2 {
+	li {
+		display: block;
+		
+		&:nth-child(4n+5) {
+    		clear: left;
+		}
+
+	}
+	@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+		li:nth-child(3n+4) {
+    		clear: left;
+
 		}
 	}
 	@media (max-width: @screen-xs-max) {

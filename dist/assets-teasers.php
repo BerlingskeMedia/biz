@@ -59,7 +59,7 @@
               <li>
                 <article class="teaser teaser-ecommerce col-md-4 col-sm-4 col-xs-6">
                   <figure class="teaser-img">
-                    <a href="article.php"><span class="hover-border"></span><img src="<? dummy("image/!ecommerce-biz@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a>
+                    <a href="article.php"><img src="<? dummy("image/!ecommerce-biz@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a>
                   </figure>
                   
                   <h2 class="header"><a href="article.php"><? dummy("text@ecommerce") ?></a></h2>

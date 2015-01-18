@@ -39,7 +39,7 @@
     <div class="well">
       <figure class="well-image">
       <img src="<? dummy("image/!biz-staff@940x,16:8") ?>" width="" height="" alt="" />
-      <figcaption>Holdet bag<br>Business.dk</figcaption>
+      <figcaption>Holdet bag Business.dk</figcaption>
     </figure>
       
     </div>
@@ -51,7 +51,7 @@
 
 
         <h2 class="page-header"><? dummy("text@biz-cat") ?></h2>
-        <ul class="list-staff flex-4-2-1">
+        <ul class="list-staff flex-4-3-2">
         
         <? while (dumb_luck("5-10")): ?>
         
@@ -81,6 +81,8 @@
 
           <div class="text-center"><a href="#" class="btn btn-primary">Søg job</a></div>
 
+          <br>
+          <div class="text-center"><a href="#" class="btn btn-lg btn-facebook">Følg os på Facebook</a></div>
         </div>
 
       </div>
