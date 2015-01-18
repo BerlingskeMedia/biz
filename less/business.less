@@ -1,3 +1,7 @@
+.example-element {
+	background: rgba(0,0,0,.1);
+	padding: 20px;
+}
 h1, h2, h3, h4, div, span, strong, i, em, form, figcaption {
 	text-rendering: optimizeLegibility;
 }
@@ -230,6 +234,17 @@ a.header-tool-icon {
 		overflow: hidden;
 	}
 }
+.toggle-content {
+	max-height: 0;
+	overflow: hidden;
+	.transition (all .2s ease);
+	height: auto;
+}
+
+.toggle-active .toggle-content {
+	max-height: none;
+	height: auto;
+}
 .teaser {
 	.module-sm;
 	h1.header,
@@ -286,6 +301,7 @@ a.header-tool-icon {
 		font-size: 15px;
 		font-weight: 500;
 		text-transform: uppercase;
+		text-align: center;
 	}
 	h2 {
 		font-size: 15px;
@@ -332,24 +348,23 @@ a.header-tool-icon {
 	}
 }
 
-.teaser-ecommerce {
-	.teaser-price {
-		line-height: 14px;
-		color: rgba(0,0,0,8);
-		line-height: 14px;
-		&:hover {
-			color: rgba(0,0,0,8);
-		}
-	}
-	.price {
-		display: inline-block;
-		margin-left: 2px;
-		vertical-align: middle;
-		font-size: 11px;
-		font-weight: 700;
-		
+
+.teaser-price {
+	color: rgba(0,0,0,.6);
+	line-height: 14px;
+	&:hover {
+		color: rgba(0,0,0,.8);
 	}
 }
+.price {
+	display: inline-block;
+	margin-left: 2px;
+	vertical-align: middle;
+	font-size: 12px;
+	font-weight: 600;
+	
+}
+
 .hover-border {
 	display: inline-block;
 	position: absolute;
@@ -390,21 +405,29 @@ a:hover {
 	border-bottom: 0;
 	margin-top: 0;
 	.clearfix;
+	padding-top: 20px;
 }
+.page-header-border {
+	border-top: 5px solid rgba(0,0,0,.1);	
+	padding-top: 40px;
+}
+
 h1.page-header {
 	font-size: 60px;
 	font-weight: 200;
 	margin-bottom: 30px;
+	font-family: berlingske;
 	.text-center;
 	@media (max-width: @screen-xs-max) {
 		font-size: 5.9vw;;
 	}
 }
 h2.page-header {
-	font-size: 30px;
-	font-weight: 300;
+	font-size: 25px;
+	font-weight: 600;
 	padding-top: 30px;
 	margin: 40px 0 20px 0;
+	text-transform: uppercase;
 	.text-center;
 	&:before {
 		height: 20px;
@@ -456,6 +479,7 @@ h2.page-header {
 
 .list {
 	.list-clean;
+	
 	li {
 		margin: 0;
 		padding: 10px 0;
@@ -466,6 +490,12 @@ h2.page-header {
 		&:first-child {
 			border-top: 1px dotted rgba(0,0,0,.1);
 		}
+		footer {
+			margin-bottom: 5px;
+		}
+		/*.header + footer {
+			margin: 5px 0 0 0 
+		}*/
 	}
 }
 .teaser-body {
@@ -476,44 +506,14 @@ h2.page-header {
 		color: @biz-1;
 	}
 }
-.teaser-list-border {
+.list-border {
 	.teaser {
 		margin-bottom: 10px;
 		padding-bottom: 10px; 
 		border-bottom: 1px solid rgba(0,0,0,.1);
 	}
 }
-.teaser-thumb-sm {
-	padding: 0px 0;
-	margin: 0 0 10px;
-	list-style: none;
-	line-height: 1.3;
-	&:first-child {
-		padding-top: 0;
-	}
-	footer {
-		margin-bottom: 0;
-	}
-	
-	figure {
-		float: left;
-		margin-right: 10px;
-		margin-top: 4px; 
-	}
-	
-	.article-link {
-		display: inline-block;
-		overflow: hidden;
-	}
-	a {
-		color: #333;
-		.transition (opacity .1s ease);
-		display: inline-block;
-		&:hover {
-			opacity: .8;
-		}
-	}
-}
+
 .toplist {
 	.list-clean;
 }
@@ -537,20 +537,22 @@ h2.page-header {
 	    	content: counter(toplist) ".";
 	    	float: left;
 	    	display: inline-block;
-	    	width: 50px;
 	    	color: rgba(0,0,0,.5);
 	    	text-align: right;
 	    	padding-right: .5em;
-	    	font-size: 30px;
+	    	
 	    	font-weight: 200;
+	    	width: 30px;
+    		font-size: 16px;
 		}
 	}
 }
-.toplist-xs {
+
+.toplist-lg {
 	li {
     	&:before {
-    		width: 30px;
-    		font-size: 16px;
+			width: 50px;
+	    	font-size: 30px;    		
 		}
 	}
 }
@@ -561,6 +563,21 @@ h2.page-header {
     	line-height: 1;
     }
 }
+.list-image-left {
+	figure {
+		float: left;
+		margin: 0 10px 0 0;	
+	}
+	.teaser-body {
+		margin-left: 60px;
+	}
+}
+.list-image-left.toplist {
+	.teaser-body {
+		margin-left: 90px;
+	}
+}
+
 .list-image-right {
 	figure {
 		float: right;
@@ -1002,6 +1019,9 @@ h1.heading {
 		display: block;
 	}
 }
+.article-module {
+	margin-bottom: 25px;
+}
 .article-fact {
 	position: relative;
 	padding: 30px 20px;
@@ -1298,7 +1318,7 @@ h1.heading {
 
 
 
-.flex-4-2-1 {
+.flex-4-2-2 {
 	li {
 		display: block;
 		article {
@@ -1324,16 +1344,17 @@ h1.heading {
 .flex-4-3-2 {
 	li {
 		display: block;
-		
-		&:nth-child(4n+5) {
+	}
+
+	@media (min-width: @screen-md){
+		li:nth-child(4n+5) {
     		clear: left;
 		}
+	}	
 
-	}
 	@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
 		li:nth-child(3n+4) {
     		clear: left;
-
 		}
 	}
 	@media (max-width: @screen-xs-max) {

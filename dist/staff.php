@@ -37,10 +37,12 @@
     <section class="deck">
     <div class="col-md-12">
     <div class="well">
-      <figure class="well-image">
-      <img src="<? dummy("image/!biz-staff@940x,16:8") ?>" width="" height="" alt="" />
-      <figcaption>Holdet bag Business.dk</figcaption>
-    </figure>
+      
+      
+      <h1 class="page-header page-header-border">
+        Holdet bag Business.dk
+      </h1>  
+    
       
     </div>
     
@@ -53,7 +55,7 @@
         <h2 class="page-header"><? dummy("text@biz-cat") ?></h2>
         <ul class="list-staff flex-4-3-2">
         
-        <? while (dumb_luck("5-10")): ?>
+        <? while (dumb_luck("5-25")): ?>
         
           <li class="col-md-3 col-sm-4 col-xs-6 staff-overview">
               <figure><a href="author.php"><span class="hover-border"></span><img src="<? dummy("image/!author@150x150,") ?>" width="" height="" alt="" /></a></figure>
@@ -76,13 +78,13 @@
         <div class="well">
           
           <h1 class="page-header">
-            Vil du skrive for Business.dk?
+            Vil du være en del af Danmarks bedste erhvervsredaktion?
           </h1>
 
           <div class="text-center"><a href="#" class="btn btn-primary">Søg job</a></div>
 
           <br>
-          <div class="text-center"><a href="#" class="btn btn-lg btn-facebook">Følg os på Facebook</a></div>
+          
         </div>
 
       </div>

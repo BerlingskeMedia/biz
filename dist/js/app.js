@@ -23,6 +23,12 @@ $(function () {
         },{
            duration: 1500
         });
+    });
+
+    // GLOBAL TOGGLE SCRIPT
+    $('.toggle-btn').on('click', function (e){
+      $(this).closest('.toggle-container').toggleClass('toggle-active');
+      // $(this).closest('.toggle-container').find('.toggle-content').slideToggle('fast');
     })
 
 });

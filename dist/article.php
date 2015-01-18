@@ -213,6 +213,8 @@
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
               <? endif ?>
 
+              <?php include("inc/asset-article-letterbox.php"); ?>
+
               <aside class="article-tags">
                 
               <ul>
@@ -240,8 +242,8 @@
               <ul class="list list-xs">
               <? while (dumb_luck("2-5")): ?>
               <li class="teaser">
-              <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?>.</time></footer>
               <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+              <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
               <? endwhile ?>  
               </ul>
 
@@ -258,10 +260,10 @@
               
 
               <ul class="list list-xs">
-              <? while (dumb_luck("2-5")): ?>
+              <? while (dumb_luck("5")): ?>
               <li class="teaser">
-              <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?>.</time></footer>
               <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+              <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
               <? endwhile ?>  
               </ul>
 
@@ -273,7 +275,7 @@
               <h1 class="section-header">Most read</h1>
                   
                   <ul class="toplist toplist-xs list-xs list-image-right ">
-                    <? while (dumb_luck("10")): ?>
+                    <? while (dumb_luck("5")): ?>
                       <li class="header">
                       <? if (dumb_luck("66%")): ?><figure class="teaser-img"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></figure><? endif ?>
                       <div class="teaser-body">
@@ -326,14 +328,14 @@
             <div class="module-sm banner">
               <? dummy("ad@300x250") ?>
             </div>
-              <section class="module-sm teaser-list-border list-xs">
+              <section class="module-sm list list-border list-xs list-image-left">
                 
                   <? while (dumb_luck("4")): ?>
-                    <article class="teaser teaser-thumb-sm ">
+                    <article class="teaser">
                       <figure><a href="article.php"><img src="<? dummy("image@60x60,") ?>" width="" height="" alt="" /></a></figure>
                       <div class="teaser-body">
-                        <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a>  <time> <? dummy("text@time-ago-short") ?></time></footer>
                         <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+                        <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a>  <time> <? dummy("text@time-ago-short") ?></time></footer>
                       </div>
                     </article>
                   <? endwhile ?>
