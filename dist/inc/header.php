@@ -38,7 +38,7 @@
     </div><!-- col -->
     
       <div class="col-sm-6">
-        <a href="overview.php" class="logo">
+        <a href="/" class="logo">
           Berlingske Business
         </a>    
       </div>

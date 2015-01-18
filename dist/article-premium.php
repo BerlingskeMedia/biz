@@ -96,124 +96,59 @@
               <? endif ?>
 
 
-              <? if (dumb_luck("100%")): ?>
               
-                <? if (dumb_luck("50%")): ?>
-                <!-- *** Asset - factbox float right-->
-                <?php include("inc/asset-article-factbox-float-right.php"); ?>
+
               
-                <? else: ?>
-                <!-- *** Asset - factbox timeline  -->
-                <?php include("inc/asset-article-factbox-timeline.php"); ?>
-                <? endif ?>
-
-
-              <? endif ?>
-
- 
-
+              <ul><li>Albatros Travel</li><li>AdventureDK</li><li>Atlantis</li><li>Akademisk Rejsebureau</li><li>Limpopo Travel</li></ul>
               
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <div class="article-link-embedded">
-                <figure>
-                <a href="article.php" title="TITLE"><img src="<? dummy("image@70x,16:9") ?>" width="" height="" alt="" /></a>
-                </figure>
-                <div class="teaser-body">
-                  <span>Læs også:</span>
-                  <a href="article.php" title="TITLE"><? dummy("text@headline") ?></a>  
-                </div>
-                
-              </div>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <div class="article-link-embedded">
-                <figure>
-                <a href="article.php" title="TITLE"><img src="<? dummy("image@70x,16:9") ?>" width="" height="" alt="" /></a>
-                </figure>
-                <div class="teaser-body">
-                  <span>Læs også:</span>
-                  <a href="article.php" title="TITLE"><? dummy("text@headline") ?></a>  
-                </div>
-                
-              </div>
+              
+              
+              <p><strong>Dette får du også med i analysen:</strong></p>
 
-              <p><? dummy("text@paragraph") ?></p>
-                <!-- *** Asset - factbox float right-->
-                <?php include("inc/asset-article-factbox-embedded.php"); ?>
+              <ul>
+<li>Analyse af egenkapitalforrentning Soliditetsgrad og afkastningsgrad</li>
+<li>Interview med nøgleperson fra branchen</li>
+<li>Konkurrence fra udlandet</li>
+<li>Politiske tiltag</li>
+<li>Forventninger til fremtiden</li>
+</ul>
 
+<div class="article-fact  article-fact-premium fact-2-col">
+<h4 class="aside-header">Det får du med analysen af 60 rejsebureauer</h4>
+<p><strong>Du får en 14 siders analyse skrevet af en analysemedarbejder i Berlingske Research i en PDF-fil skrevet på baggrund af de senest tilgængelige 3 årsregnskab&nbsp; (2013, 2012 og 2011).</strong></p><p><strong>Du får også en Excel-fil, som indeholder:</strong></p><ul><li>Grafik-ark med bl.a. bruttofortjenester, soliditet, egenkapitaler på brancheniveau</li><li>Indtjeningsanalyse (afkastningsgrad, egenkapitalforretning, payout etc.)</li><li>Vækstanalyse (bruttofortjeneste, aktiver, egenkapital fra 2011 til 2013)</li><li>Virksomhedernes rangering efter afkastningsgrad</li><li>Regnskabstal for de tre senest tilgængelige regnskaber</li><li>Kontaktoplysninger (adresse, mail og telefon, samt navn på adm. direktør)</li></ul><p><strong>Vi har samlet følgende oplysninger om hver virksomhed:</strong></p><p>CVR, virksomhedstype (f.eks. A/S), nettoomsætning (sporadisk registreret), bruttofortjeneste, primært resultat, finansielle indtægter, ordinært resultat før finansielle udgifter, finansielle udgifter, resultat før skat og ekstraordinære poster, ekstraordinære indtægter/udgifter (meget sporadisk registreret), ordinært resultat før skat, skat, ordinært resultat efter skat, minoritetsandel, årets resultat, dividende, henlagt til egenkapital, aktiver, likvider, egenkapital ultimo, minoritetsinteresser (meget sporadisk registreret), hensættelser, langfristet gæld, kortfristet gæld, antal medarbejdere (sporadisk registreret), startdato.</p><p><strong>De 60 virksomheder</strong></p><ul><li>Albatros Travel</li><li>AdventureDK</li><li>Atlantis</li><li>Akademisk Rejsebureau</li><li>Limpopo Travel</li><li>Stjernegaard Rejser</li><li>Dagama Travel</li><li>Unitas Rejser</li><li>Australienrejser</li><li>Euro Travel</li><li>Best Travel</li><li>Blixen Tours</li><li>Bravo Tours</li><li>C &amp; C Travel</li><li>Check Point Travel</li><li>Club La Santa</li><li>Dahl Andersen</li><li>Dansk Bilferie</li><li>Viktors farmor</li><li>Detur</li><li>Discovery Rejsebureau</li><li>FDM Travel</li><li>Top Tours</li><li>Fonden 65-Ferie</li><li>Magic Tours</li><li>Gislev Rejser</li><li>Grace Tours</li><li>Grupperejsebureauet</li><li>Holstebro Rejsecenter</li><li>Horizons</li><li>Seatravel</li><li>Comet Rejser</li><li>Kilroy Group Travel</li><li>Kipling Travel</li><li>Rejseselskabet Jesper Hannibal &amp; Company</li><li>MyCruise</li><li>MyPlanet International</li><li>Nortlander</li><li>Nyhavn Rejser</li><li>DTF Travel</li><li>Peacock Travel</li><li>Primo Tours</li><li>Profil Rejser</li><li>Rejsespecialisten</li><li>Riis Rejser</li><li>Risskov Travel Partner</li><li>Horisont Rejser</li><li>Spies</li><li>Star Tour</li><li>Sun Tours</li><li>Svane Rejsebureau</li><li>Take Offer</li><li>Topas</li><li>USATours.dk</li><li>Vacansoleil Danmark</li><li>Ruby Rejser</li><li>Happydays</li><li>Århus Charter</li><li>Store Verden Safari</li><li>Live Travel</li></ul><p>Du downloader PDF-rapporten og Excel-arket og kan gemme filerne, så længe du ønsker.</p><p>Kilder: Analysen er udarbejdet på baggrund af virksomhedernes tre seneste tilgængelige regnskaber. I analysen frasorteres virksomheder der ikke offentliggør regnskaber.</p>
+</div>
 
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-
-              <? if (dumb_luck("50%")): ?>
-                <!-- *** Asset - factbox theme-->
-                <?php include("inc/asset-article-quiz.php"); ?>
-              <? endif ?>
-
-              <h2>H2:<? dummy("text@item") ?></h2>
-
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-
-              <? if (dumb_luck("50%")): ?>
-              <div class="media-embeds">
-              <blockquote class="twitter-tweet" lang="da"><p>Jubii! 11,8 millioner fra A. P. Møller Fonden til Helsingør Kommune! God dag;-) <a href="https://twitter.com/SthePol">@sthepol</a>&#10;<a href="http://t.co/LWfd9iStaU">http://t.co/LWfd9iStaU</a></p>&mdash; Benedikte Kiær (@benediktekiaer) <a href="https://twitter.com/benediktekiaer/status/533231937037414400">14. november 2014</a></blockquote>
-              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-              <? else: ?>
-              <blockquote class="bond-quote">
-                  
-                  <p>
-                    <? dummy("text@teaser") ?>
-                  </p>
-                  <small><? dummy("text@author") ?>- <? if (dumb_luck("50%")): ?><? dummy("text@teaser") ?><? endif ?></small>
-                  <div class="quote-share">SHARE QUOTE <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></div>
-
-              </blockquote>
-              <? endif ?>
-
-              <h3>H3:<? dummy("text@item") ?></h3>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <div class="sm-notitification">Article continues after factbox &hellip;</div>
-              <aside class="article-related-chunk list-xs">
-                <h1 class="aside-header aside-header-small">Mere om OW Bunker sagen</h1>
-                <ul>
-                  <? while (dumb_luck("4")): ?>
-                  <li class="teaser">
-                      <figure><a href="article.php"><img src="<? dummy("image@60x60,") ?>" width="" height="" alt="" /></a></figure>
-                      <div class="teaser-body">
-                        <h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>
-                        <footer><time> 3d.</time></footer>
-                      </div>
-
-                  </li>
-                  <? endwhile ?>
-                </ul>
-
-              </aside>
-
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
               
-              <? if (dumb_luck("50%")): ?>
-              <!-- EMBEDDED IMAGE -->
-              <div class="article-image-embedded">
-                <figure><img src="<? dummy("image@300x,") ?>" width="" height="" alt="" />
-                <? if (dumb_luck("75%")): ?>
-                <figcaption><i class="fa fa-camera"></i> <? dummy("text@teaser") ?> <span>Foto: <? dummy("text@author") ?></span></figcaption>
-                <? endif ?>
-              </div>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <? endif ?>
+              
+
 
               
-              <? if (dumb_luck("50%")): ?>
-              <!-- VIDEOS -->
-              <div class="article-video">
-                <iframe width="425" height="349" src="http://www.youtube.com/embed/FKWwdQu6_ok" frameborder="0" allowfullscreen></iframe>
-              </div>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <? endif ?>
 
-              <?php include("inc/asset-article-letterbox.php"); ?>
+              
+
+              
+
+              
+
+              
+
+              
+              
+              
+              
+
+              
+
+              
+              
+
+              
+              
+
+              
 
               <aside class="article-tags">
                 

@@ -142,8 +142,8 @@
   </div>
 
   <div class="col-md-4">
-    <h1 class="aside-header"><code>.list-image-right</code></h1>
-                <ul class="list  list-xs list-image-right ">
+    <h1 class="aside-header"><code>.list .list-image-right</code></h1>
+                <ul class="list  list-image-right ">
                     <? while (dumb_luck("5")): ?>
                       <li class="teaser">
                       <? if (dumb_luck("90%")): ?><figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure><? endif ?>
@@ -155,8 +155,8 @@
                   </ul>
   </div>
   <div class="col-md-4">
-    <h1 class="aside-header"><code>.list-image-left</code></h1>
-                  <ul class="list  list-xs list-image-left ">
+    <h1 class="aside-header"><code>.list .list-image-left</code></h1>
+                  <ul class="list  list-image-left ">
                     <? while (dumb_luck("5")): ?>
                       <li class="teaser">
                       <? if (dumb_luck("90%")): ?><figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure><? endif ?>
@@ -176,7 +176,7 @@
   
 
   <div class="col-md-4">
-      <h1 class="aside-header"><code>.list-xs</code></h1>
+      <h1 class="aside-header"><code>.list .list-xs</code></h1>
                   
                   <ul class="list list-xs  ">
                     <? while (dumb_luck("5")): ?>
@@ -193,9 +193,9 @@
   
 
   <div class="col-md-4">
-      <h1 class="aside-header"><code>.list-sm</code></h1>
+      <h1 class="aside-header"><code>.list</code> (default)</h1>
                   
-                  <ul class="list list-sm  ">
+                  <ul class="list  ">
                     <? while (dumb_luck("5")): ?>
                       <li class="teaser">
                       <div class="teaser-body">
@@ -210,9 +210,9 @@
   
 
   <div class="col-md-4">
-      <h1 class="aside-header"><code>.list-md</code></h1>
+      <h1 class="aside-header"><code>.list .list-lg</code> </h1>
                   
-                  <ul class="list  list-md  ">
+                  <ul class="list list-lg">
                     <? while (dumb_luck("5")): ?>
                       <li class="teaser">
                       <div class="teaser-body">

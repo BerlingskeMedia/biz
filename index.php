@@ -1,12 +1,22 @@
-<? require_once("../dummy/dummy.php") ?>
+
 
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9" lang="da"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="da"><!--<![endif]-->
 
   <head>
-    <title>Business.dk</title>
-    <?php include("dist/inc/head.php"); ?> 
+    <title>Business.dk - Project Central</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="dist/css/bootstrap.css?ver=456" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     
   </head>
   <body>
   <!--[if lt IE 9]>
@@ -14,8 +24,7 @@
   <![endif]-->
 
 
-  <?php // include("./inc/header.php"); ?>
-
+  
   <div class="container">
     
 
@@ -39,6 +48,7 @@
         <ul class="overview">
         <li><a href="/dist/index.php">Frontpage</a></li>
         <li><a href="/dist/article.php">Article</a></li>
+        <li><a href="/dist/article-premium.php">Article - Premium</a></li>
         <li><a href="/dist/staff.php">Staff</a></li>
         </ul>
 
@@ -62,7 +72,11 @@
 
 
 
-  <?php include("dist/inc/footer.php"); ?>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+
+<script src="dist/js/app.js?ver=587"></script>
 
     
   </body>
