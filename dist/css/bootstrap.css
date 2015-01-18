@@ -8887,6 +8887,11 @@ h1.heading {
   display: inline-block;
   margin-right: 15px;
 }
+@media (max-width: 767px) {
+  .article-byline .article-author {
+    margin-bottom: 5px;
+  }
+}
 .article-byline .article-author span {
   font-weight: 600;
   overflow: hidden;
