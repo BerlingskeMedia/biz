@@ -5389,25 +5389,31 @@ a.list-group-item-danger.active:focus {
 }
 .well {
   min-height: 20px;
-  padding: 19px;
   margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 .well blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
+.well-image {
+  position: relative;
+}
+.well-image figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  font-size: 80px;
+  font-weight: 200;
+  text-align: center;
+}
 .well-lg {
   padding: 24px;
-  border-radius: 6px;
 }
 .well-sm {
   padding: 9px;
-  border-radius: 3px;
 }
 .close {
   float: right;
@@ -8312,6 +8318,54 @@ a.header-tool-icon:hover {
 .teaser a + time {
   padding-left: 4px;
 }
+.list-staff {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list-staff li {
+  margin: 0;
+}
+.list-staff:before,
+.list-staff:after {
+  content: " ";
+  display: table;
+}
+.list-staff:after {
+  clear: both;
+}
+.list-staff:before,
+.list-staff:after {
+  content: " ";
+  display: table;
+}
+.list-staff:after {
+  clear: both;
+}
+.list-staff li {
+  margin-bottom: 40px;
+}
+.list-staff figure {
+  text-align: center;
+  position: relative;
+}
+.list-staff img {
+  display: block;
+  max-width: 100%;
+  width: 100% \9;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+.list-staff h1 {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.list-staff h2 {
+  font-size: 15px;
+  font-weight: 300;
+}
 .list-lg .header {
   font-size: 20px;
   font-weight: 600;
@@ -8357,6 +8411,25 @@ a.header-tool-icon:hover {
   font-size: 11px;
   font-weight: 700;
 }
+.hover-border {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-left: -75px;
+  -webkit-transition: box-shadow 0.1s ease;
+  -o-transition: box-shadow 0.1s ease;
+  transition: box-shadow 0.1s ease;
+}
+a:hover .hover-border {
+  box-shadow: 0 0 0 5px #cc0066 inset;
+  z-index: 99;
+}
 .teaser-img {
   margin-bottom: 10px;
 }
@@ -8369,9 +8442,55 @@ a.header-tool-icon:hover {
 .teaser-img a:hover img {
   opacity: 0.9;
 }
+.page-header {
+  clear: both;
+  position: relative;
+  padding: 0;
+  border-bottom: 0;
+  margin-top: 0;
+}
+.page-header:before,
+.page-header:after {
+  content: " ";
+  display: table;
+}
+.page-header:after {
+  clear: both;
+}
+.page-header:before,
+.page-header:after {
+  content: " ";
+  display: table;
+}
+.page-header:after {
+  clear: both;
+}
+h1.page-header {
+  font-size: 60px;
+  font-weight: 200;
+  margin-bottom: 30px;
+  text-align: center;
+}
+h2.page-header {
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 30px;
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+h2.page-header:before {
+  height: 20px;
+  content: ' ';
+  display: inline-block;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: #cc0066;
+}
 .section-header {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 20px;
   position: relative;
