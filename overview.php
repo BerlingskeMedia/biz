@@ -1,4 +1,4 @@
-<? require_once("../../dummy/dummy.php") ?>
+<? require_once("../dummy/dummy.php") ?>
 
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9" lang="da"> <![endif]-->
@@ -6,7 +6,7 @@
 
   <head>
     <title>Business.dk</title>
-    <?php include("./inc/head.php"); ?> 
+    <?php include("dist/inc/head.php"); ?> 
   </head>
   <body>
   <!--[if lt IE 9]>
@@ -37,16 +37,16 @@
         <h3>Page templates</h3>
 
         <ul class="overview">
-        <li><a href="index.php">Frontpage</a></li>
-        <li><a href="article.php">Article</a></li>
-        <li><a href="staff.php">Staff</a></li>
+        <li><a href="/dist/index.php">Frontpage</a></li>
+        <li><a href="/dist/article.php">Article</a></li>
+        <li><a href="/dist/staff.php">Staff</a></li>
         </ul>
 
         <h3>Toolbox</h3>
 
         <ul class="overview">
-          <li><a href="assets-tools.php">Assets</a></li>
-          <li><a href="assets-teasers.php">Lists and teasers</a></li>
+          <li><a href="/dist/assets-tools.php">Assets</a></li>
+          <li><a href="/dist/assets-teasers.php">Lists and teasers</a></li>
         </ul>
 
         
@@ -62,7 +62,7 @@
 
 
 
-  <?php include("./inc/footer.php"); ?>
+  <?php include("dist/inc/footer.php"); ?>
 
     
   </body>
