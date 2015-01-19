@@ -195,13 +195,9 @@
               
               <? if (dumb_luck("50%")): ?>
               <!-- EMBEDDED IMAGE -->
-              <div class="article-image-embedded">
-                <figure><img src="<? dummy("image@300x,") ?>" width="" height="" alt="" />
-                <? if (dumb_luck("75%")): ?>
-                <figcaption><i class="fa fa-camera"></i> <? dummy("text@teaser") ?> <span>Foto: <? dummy("text@author") ?></span></figcaption>
-                <? endif ?>
-              </div>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+              <?php include("inc/asset-article-image-embedded.php"); ?>
+              
+              
               <? endif ?>
 
               
@@ -215,18 +211,10 @@
 
               <?php include("inc/asset-article-letterbox.php"); ?>
 
-              <aside class="article-tags">
-                
-              <ul>
-                <li><a href="section.php">Brændstof</a></li>
-                <li><a href="section.php">Flyselskab</a></li>
-                <li><a href="section.php">Olieprisen</a></li>
-                <li><a href="section.php">SAS</a></li>
-                <li><a href="section.php">Saxo Bank</a></li>
-                <li><a href="section.php">Sydbank</a></li>
-              </ul>
+              
+              <?php include('inc/asset-article-tags.php'); ?>
 
-              </aside>
+
               <div class="article-social text-center">
                     <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
                     <a href="#" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>

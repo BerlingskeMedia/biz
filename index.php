@@ -117,6 +117,12 @@ body {
           
         
         </ul>
+        <h4>BrandView</h4>
+        <ul>
+        <li class="b"><a href="/dist/article-brandview.php">Article</a>
+        
+        
+        </ul>
         <h3>Toolbox</h3>
 
         <ul class="overview">

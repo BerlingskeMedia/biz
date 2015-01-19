@@ -8390,6 +8390,12 @@ a.header-tool-icon:hover {
 .teaser a + time {
   padding-left: 4px;
 }
+.teaser .teaser-tagline {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  display: block;
+  font-weight: 600;
+}
 .list-staff {
   list-style: none;
   margin: 0;
@@ -8468,6 +8474,7 @@ a.header-tool-icon:hover {
 }
 .teaser-fixed-height .header {
   height: 60px;
+  overflow: hidden;
 }
 .teaser-author {
   line-height: 1.2;
@@ -8679,6 +8686,13 @@ h2.page-header:before {
 }
 .logo-premium:hover span {
   background: #000;
+}
+.logo-brandview {
+  margin-top: 0;
+}
+.logo-brandview span {
+  display: inline-block;
+  font-weight: 200;
 }
 .section-title {
   margin-bottom: 10px;
@@ -9052,6 +9066,11 @@ h1.heading {
   line-height: 1.2;
   margin: 0 0 10px;
   font-family: Berlingske;
+}
+.article-category-brandview .heading {
+  font-family: "Proxima", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 50px;
 }
 .media-embeds iframe {
   text-align: center;
