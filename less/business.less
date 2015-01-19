@@ -431,22 +431,73 @@ h2.page-header {
 	}
 
 }
+.list-inline {
+	a {
+		display: inline-block;
+		&:before {
+			content: '\00b7';
+			display: inline-block;
+			margin: 0 5px;
+		}
+		&:first-of-type {
+			a:before {
+				display: none;
+			}
+		}
+	}
+}
+.header-premium {
+	line-height: 51px;
+	@media (max-width: @screen-xs-max) {
+		line-height: 2;
+	}
+	.clearfix;
+	.logo-premium {
+		float: left;
+		margin-bottom: 0;
+	}
+	nav {
+		text-align: right;
+		margin-bottom: 0;
+		font-weight: 600;
+		.list-inline;
+	}
+	@media (max-width: @screen-xs-max) {
+		.logo-premium {
+			float: none;
+		}
 
+	}
+	
+}
+.logo-premium {
+	a {
+		color: #000;
+	}
+	margin-top: 0;
+	
+	text-transform: uppercase;
+	font-weight: normal;
+	span {
+		display: inline-block;
+		background-color: #333;
+		color: #fff;
+		line-height: 1;
+		padding: 0 .1em;
+		font-family: @font-family-sans-serif;
+		font-family: Berlingske;
+
+	}
+}
 .section-header {
 	font-size: 14px;
 	font-weight: 600;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	margin-top: 0;
 	position: relative;
-	&:before {
-		background-color: rgba(0,0,0,.1);
-		height: 4px;
-		width: 100%;
-		position: absolute;
-		top: -14px;
-		left: 0;
-		content: ' ';
-	}
+	border-top: 4px solid rgba(0,0,0,.1);
+	padding-top: 10px;
 }
 
 .deck {
@@ -1206,6 +1257,13 @@ h1.heading {
 	}
 }
 
+.aside-premiumbox {
+	
+
+	header {
+		margin-bottom: 10px;
+	}
+}
 .article-fact-premium {
 	.fact-2-col;
 }

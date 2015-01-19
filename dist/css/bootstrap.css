@@ -8566,21 +8566,100 @@ h2.page-header:before {
   top: 0;
   background-color: #cc0066;
 }
+.list-inline a {
+  display: inline-block;
+}
+.list-inline a:before {
+  content: '\00b7';
+  display: inline-block;
+  margin: 0 5px;
+}
+.list-inline a:first-of-type a:before {
+  display: none;
+}
+.header-premium {
+  line-height: 51px;
+}
+@media (max-width: 767px) {
+  .header-premium {
+    line-height: 2;
+  }
+}
+.header-premium:before,
+.header-premium:after {
+  content: " ";
+  display: table;
+}
+.header-premium:after {
+  clear: both;
+}
+.header-premium:before,
+.header-premium:after {
+  content: " ";
+  display: table;
+}
+.header-premium:after {
+  clear: both;
+}
+.header-premium .logo-premium {
+  float: left;
+  margin-bottom: 0;
+}
+.header-premium nav {
+  text-align: right;
+  margin-bottom: 0;
+  font-weight: 600;
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+.header-premium nav > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.header-premium nav a {
+  display: inline-block;
+}
+.header-premium nav a:before {
+  content: '\00b7';
+  display: inline-block;
+  margin: 0 5px;
+}
+.header-premium nav a:first-of-type a:before {
+  display: none;
+}
+@media (max-width: 767px) {
+  .header-premium .logo-premium {
+    float: none;
+  }
+}
+.logo-premium {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.logo-premium a {
+  color: #000;
+}
+.logo-premium span {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 0 .1em;
+  font-family: "Proxima", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Berlingske;
+}
 .section-header {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 20px;
+  margin-top: 0;
   position: relative;
-}
-.section-header:before {
-  background-color: rgba(0, 0, 0, 0.1);
-  height: 4px;
-  width: 100%;
-  position: absolute;
-  top: -14px;
-  left: 0;
-  content: ' ';
+  border-top: 4px solid rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
 }
 .deck {
   margin-bottom: 50px;
@@ -9492,6 +9571,9 @@ h1.heading {
   .mousescroll ul {
     list-style-type: none;
   }
+}
+.aside-premiumbox header {
+  margin-bottom: 10px;
 }
 .article-fact-premium {
   -webkit-column-count: 2;
