@@ -52,7 +52,7 @@
       <section class="deck">
         
         <div class="col-md-12">
-            <code>.flex-4-2-1</code>
+            <code>.flex-4-2-2</code>
         </div>
 
         
