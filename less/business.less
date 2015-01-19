@@ -1206,7 +1206,9 @@ h1.heading {
 	}
 }
 
-
+.article-fact-premium {
+	.fact-2-col;
+}
 .article-fact-timeline {
 	.fact-content {
 		max-height: 450px;
@@ -1322,6 +1324,40 @@ h1.heading {
 				display: none;
 			}
 		}
+	}
+}
+.article-premium-buy {
+	.module;
+	.module-top;
+	border-top: 5px solid rgba(0,0,0,.1);
+	border-bottom: 5px solid rgba(0,0,0,.1);
+	padding-bottom: 10px;
+
+	h1 {
+		text-align: center;
+	}
+	.premium-buy-option {
+		margin-bottom: 5px;
+		@media  (max-width: @screen-sm-max) {
+			border-bottom: 1px solid rgba(0,0,0,.1);
+			padding-bottom: 10px;
+			&:last-child {
+				border-bottom: 0;
+			}
+		}	
+	}
+	.premium-buy-title {
+		text-align: center;
+		font-weight: 600;
+		display: block;
+	}
+	.premium-price {
+		text-align: center;
+		display: block;
+		margin-bottom: 5px;
+	}
+	footer {
+		.text-center;
 	}
 }
 
