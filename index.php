@@ -52,6 +52,9 @@
 
           <ul>
             <li><a href="page-text-premium-1.php">Premium help page 1</a></li>
+            <li><a href="page-text-premium-2.php">Premium help page 2</a></li>
+            <li><a href="page-text-premium-3.php">Premium help page 3</a></li>
+            <li><a href="page-text-premium-4.php">Premium help page 4</a></li>
           </ul>
         </li>
         <li><a href="/dist/staff.php">Staff</a></li>
