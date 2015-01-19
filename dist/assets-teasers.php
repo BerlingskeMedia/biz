@@ -79,7 +79,7 @@
 
     <section class="deck">
     <div class="col-md-12">
-    <h1>Fixed height</h1>    
+    <h1>Teasers - Fixed height</h1>    
     </div> 
      
         <div class="col-md-12">
@@ -116,21 +116,31 @@
     </div>  
 
     <div class="col-md-4">
-    <h1 class="aside-header"><code>.toplist</code></h1>
-      <ul class="toplist">
+    <section>
+    <code>.list .toplist</code>
+    <h1 class="section-header">I'm a toplist</h1>
+      <ul class="list list-xs toplist">
         <? while (dumb_luck("5")): ?>
-          <li><a href="article.php"><? dummy("text@headline") ?></a></li>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
         <? endwhile ?>
       </ul>
+      </section>
     </div>
 
     <div class="col-md-4">
-    <h1 class="aside-header"><code>.toplist-lg</code></h1>
-      <ul class="toplist toplist-lg">
+    <section>
+    <code>.list .toplist .toplist-lg</code>
+    <h1 class="section-header">I'm a toplist</h1>
+      <ul class="list toplist toplist-lg">
         <? while (dumb_luck("5")): ?>
-          <li><a href="article.php"><? dummy("text@headline") ?></a></li>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
         <? endwhile ?>
       </ul>
+      </section>
     </div>
     
 
@@ -142,7 +152,10 @@
   </div>
 
   <div class="col-md-4">
-    <h1 class="aside-header"><code>.list .list-image-right</code></h1>
+  <section>
+  <code>.list .list-image-right</code>
+    <h1 class="section-header">I'm a list</h1>
+    
                 <ul class="list  list-image-right ">
                     <? while (dumb_luck("5")): ?>
                       <li class="teaser">
@@ -153,9 +166,12 @@
                       </li>
                     <? endwhile ?>
                   </ul>
+      </section>
   </div>
   <div class="col-md-4">
-    <h1 class="aside-header"><code>.list .list-image-left</code></h1>
+  <section>
+    <code>.list .list-image-left</code>
+    <h1 class="section-header">I'm a list</h1>
                   <ul class="list  list-image-left ">
                     <? while (dumb_luck("5")): ?>
                       <li class="teaser">
@@ -166,6 +182,7 @@
                       </li>
                     <? endwhile ?>
                   </ul>
+      </section>
   </div>
 
   </div>
@@ -176,8 +193,9 @@
   
 
   <div class="col-md-4">
-      <h1 class="aside-header"><code>.list .list-xs</code></h1>
-                  
+  <section>
+      <code>.list .list-xs</code>
+                  <h1 class="section-header">I'm a list</h1>
                   <ul class="list list-xs  ">
                     <? while (dumb_luck("5")): ?>
                       <li class="teaser">
@@ -188,13 +206,16 @@
                       </li>
                     <? endwhile ?>
                   </ul>
+      </section>
     </div>
 
   
 
   <div class="col-md-4">
-      <h1 class="aside-header"><code>.list</code> (default)</h1>
-                  
+
+  <section>
+      <code>.list</code> (default)
+                  <h1 class="section-header">I'm a list</h1>
                   <ul class="list  ">
                     <? while (dumb_luck("5")): ?>
                       <li class="teaser">
@@ -205,13 +226,16 @@
                       </li>
                     <? endwhile ?>
                   </ul>
+        </section>
     </div>
 
   
 
   <div class="col-md-4">
-      <h1 class="aside-header"><code>.list .list-lg</code> </h1>
-                  
+  <section>
+
+      <code>.list .list-lg</code>
+        <h1 class="section-header">I'm a list</h1>                
                   <ul class="list list-lg">
                     <? while (dumb_luck("5")): ?>
                       <li class="teaser">
@@ -222,6 +246,7 @@
                       </li>
                     <? endwhile ?>
                   </ul>
+      </section>
     </div>
 
     <div class="col-md-12">
