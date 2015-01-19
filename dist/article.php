@@ -278,7 +278,7 @@
                   
                   <section>
     <h1 class="section-header">Most read</h1>
-      <ul class="list toplist-lg list-xs list-image-right">
+      <ul class="list toplist toplist-lg list-xs list-image-right">
         <? while (dumb_luck("5")): ?>
           <li class="teaser">
           <? if (dumb_luck("66%")): ?><figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure><? endif ?>
@@ -361,7 +361,7 @@
 
         
         
-          <ul class="list-clean flex-4-2-1">
+          <ul class="list-clean flex-4-2-2">
             <? while (dumb_luck("8")): ?>
               <li>
                 <article class="teaser col-md-3 col-sm-3 col-xs-6">

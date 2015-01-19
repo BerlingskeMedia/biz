@@ -28,7 +28,6 @@
         <div class="col-md-12">
             <code>.flex-4-3-2</code>
         </div>
-
         
         
           <ul class="list-clean flex-4-3-2">
