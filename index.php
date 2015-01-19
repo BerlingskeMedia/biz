@@ -45,21 +45,28 @@
 
         <h3>Page templates</h3>
 
+        <h4>Generel page templates</h4>
+
         <ul class="overview">
         <li><a href="/dist/index.php">Frontpage</a></li>
         <li><a href="/dist/article.php">Article</a></li>
-        <li><a href="/dist/article-premium.php">Article - Premium</a>
 
-          <ul>
-            <li><a href="/dist/page-text-premium-1.php">Premium help page 1</a></li>
-            <li><a href="/dist/page-text-premium-2.php">Premium help page 2</a></li>
-            <li><a href="/dist/page-text-premium-3.php">Premium help page 3</a></li>
-            <li><a href="/dist/page-text-premium-4.php">Premium help page 4</a></li>
-          </ul>
-        </li>
         <li><a href="/dist/staff.php">Staff</a></li>
         </ul>
 
+        <h4>Business <span class="logo-premium"><span>Premium</span></span></h4>
+        <ul>
+        <li><a href="/dist/frontpage-premium.php">Frontpage</a>
+        <li><a href="/dist/section-premium.php">Section</a>
+        <li><a href="/dist/article-premium.php">Article</a>
+          
+            <li><a href="/dist/page-text-premium-1.php">Help page 1</a></li>
+            <li><a href="/dist/page-text-premium-2.php">Help page 2</a></li>
+            <li><a href="/dist/page-text-premium-3.php">Help page 3</a></li>
+            <li><a href="/dist/page-text-premium-4.php">Help page 4</a></li>
+          
+        </li>
+        </ul>
         <h3>Toolbox</h3>
 
         <ul class="overview">

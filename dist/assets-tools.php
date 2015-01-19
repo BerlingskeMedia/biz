@@ -53,6 +53,22 @@
   </div>
 </section>
 
+<section class="deck">
+  <div class="row">
+    <div class="col-md-12">
+      <section class="deck deck-2-col">
+<h2>Deck with 2 cols</h2>  
+<p><code>.deck .deck-2-col</code> and <code>.deck-content</code> used in combination</p>
+  <h4>Example</h4>
+  <div class="deck-content">
+    <p><? dummy("text@paragraph") ?></p>
+    <p><a href="#">Read more</a></p>
+  </div>
+</section>
+    </div>    
+  </div>
+</section>
+
  
 
   </div><!-- container -->

@@ -248,6 +248,24 @@
       </section>
     </div>
 
+
+<div class="col-md-12">
+    <h1>List with arrows</h1>    
+    </div>  
+
+ <div class="col-md-4">
+  <section>
+
+      <code>.list-arrow</code>
+        <h1 class="section-header">I'm a list</h1>                
+                  <ul class="list-arrow">
+        <? while (dumb_luck("5")): ?><li><? dummy("text@item") ?></li><? endwhile ?>
+        
+      </ul>
+      </section>
+    </div>
+
+
     <div class="col-md-12">
       <code>.list-border</code>
     </div>
@@ -255,6 +273,12 @@
   </div>
 
 </div>
+
+
+to do:<br>
+.teaser-divider<br>
+.teaser-premium
+
 
 
   <?php include("./inc/footer.php"); ?>

@@ -8439,6 +8439,24 @@ a.header-tool-icon:hover {
   font-size: 15px;
   font-weight: 300;
 }
+.list-arrow {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list-arrow li {
+  margin: 0;
+}
+.list-arrow li {
+  padding: 5px 0;
+}
+.list-arrow li:before {
+  content: '\f0da';
+  display: inline;
+  font-family: fontawesome;
+  color: rgba(0, 0, 0, 0.8);
+  padding-right: 5px;
+}
 .list-lg .header {
   font-size: 17px;
   font-weight: 600;
@@ -8579,6 +8597,7 @@ h2.page-header:before {
 }
 .header-premium {
   line-height: 51px;
+  margin-bottom: 10px;
 }
 @media (max-width: 767px) {
   .header-premium {
@@ -8602,6 +8621,7 @@ h2.page-header:before {
   clear: both;
 }
 .header-premium .logo-premium {
+  line-height: 1;
   float: left;
   margin-bottom: 0;
 }
@@ -8659,6 +8679,21 @@ h2.page-header:before {
 }
 .logo-premium:hover span {
   background: #000;
+}
+.section-title {
+  margin-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 50px;
+  border-top: 3px solid rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+}
+.section-title span {
+  font-weight: 200;
+}
+.section-title a.home {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
 }
 .section-header {
   font-size: 14px;
@@ -8726,13 +8761,21 @@ h2.page-header:before {
 .list li footer {
   margin-bottom: 5px;
 }
+.header-25 .header {
+  font-size: 25px;
+}
+.header-30 .header {
+  font-size: 30px;
+}
+.header-35 .header {
+  font-size: 35px;
+}
 .teaser-body {
   overflow: hidden;
 }
 .teaser-body span {
-  font-size: 12px;
-  font-weight: 600;
-  color: #cc0066;
+  /*font-size: 12px;
+		font-weight: 600;*/
 }
 .list-border .teaser {
   margin-bottom: 10px;
@@ -8851,6 +8894,14 @@ h2.page-header:before {
   font-size: 10px;
   margin-left: -15px;
   color: #cc0066;
+}
+.teaser-image-left figure {
+  float: left;
+  margin: 4px 10px 0 0;
+}
+.teaser-divider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
 }
 .business-inventory-jobindex a {
   color: rgba(0, 0, 0, 0.8);
@@ -9825,6 +9876,17 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   -webkit-column-gap: 35px;
   -moz-column-gap: 35px;
   column-gap: 35px;
+}
+.deck-2-col .deck-content {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 35px;
+  -moz-column-gap: 35px;
+  column-gap: 35px;
+}
+.deck-2-col .deck-content li:first-child {
+  border-top: 0;
 }
 .flex-4-2-2 li {
   display: block;
