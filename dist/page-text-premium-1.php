@@ -60,7 +60,7 @@
 
 
 
-<h2 class="article-summary">Velkommen til Business Premium. Til venstre  kan du aktivere dit abonnement, hvis dette ikke er tegnet online, men f.eks. tegnet via tilsendt ordrenummer eller værdibevis (voucher).</h2>
+<h2 class="article-summary">Velkommen til Business Premium. Her kan du aktivere dit abonnement, hvis dette ikke er tegnet online, men f.eks. tegnet via tilsendt ordrenummer eller værdibevis (voucher).</h2>
 
 
 
@@ -68,7 +68,7 @@
 
 <h2>Log ind</h2>
 
-<p>Til venstre kan du aktivere dit abonnement, hvis dette ikke er tegnet elektronisk og du derfor har fået fremsendt ordrenummer, eller hvis du har fået udleveret værdibevis.</p>
+<p>Her kan du aktivere dit abonnement, hvis dette ikke er tegnet elektronisk og du derfor har fået fremsendt ordrenummer, eller hvis du har fået udleveret værdibevis.</p>
 
 <h2>Dine fordele</h2>
 
