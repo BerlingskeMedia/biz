@@ -48,7 +48,12 @@
         <ul class="overview">
         <li><a href="/dist/index.php">Frontpage</a></li>
         <li><a href="/dist/article.php">Article</a></li>
-        <li><a href="/dist/article-premium.php">Article - Premium</a></li>
+        <li><a href="/dist/article-premium.php">Article - Premium</a>
+
+          <ul>
+            <li><a href="page-text-premium-1.php">Premium help page 1</a></li>
+          </ul>
+        </li>
         <li><a href="/dist/staff.php">Staff</a></li>
         </ul>
 

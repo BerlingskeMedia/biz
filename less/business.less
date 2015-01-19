@@ -439,10 +439,10 @@ h2.page-header {
 			display: inline-block;
 			margin: 0 5px;
 		}
-		&:first-of-type {
-			a:before {
-				display: none;
-			}
+	}
+	a:first-child {
+		&:before {
+			display: none;
 		}
 	}
 }
@@ -455,6 +455,7 @@ h2.page-header {
 	.logo-premium {
 		float: left;
 		margin-bottom: 0;
+		font-size: 40px;
 	}
 	nav {
 		text-align: right;
@@ -465,17 +466,14 @@ h2.page-header {
 	@media (max-width: @screen-xs-max) {
 		.logo-premium {
 			float: none;
+			font-size: 25px;
 		}
 
 	}
 	
 }
 .logo-premium {
-	a {
-		color: #000;
-	}
 	margin-top: 0;
-	
 	text-transform: uppercase;
 	font-weight: normal;
 	span {
@@ -486,7 +484,12 @@ h2.page-header {
 		padding: 0 .1em;
 		font-family: @font-family-sans-serif;
 		font-family: Berlingske;
-
+		.transition (background-color .1s ease);
+	}
+	&:hover {
+		span {
+			background: #000;
+		}
 	}
 }
 .section-header {

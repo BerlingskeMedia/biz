@@ -8574,7 +8574,7 @@ h2.page-header:before {
   display: inline-block;
   margin: 0 5px;
 }
-.list-inline a:first-of-type a:before {
+.list-inline a:first-child:before {
   display: none;
 }
 .header-premium {
@@ -8604,6 +8604,7 @@ h2.page-header:before {
 .header-premium .logo-premium {
   float: left;
   margin-bottom: 0;
+  font-size: 40px;
 }
 .header-premium nav {
   text-align: right;
@@ -8626,21 +8627,19 @@ h2.page-header:before {
   display: inline-block;
   margin: 0 5px;
 }
-.header-premium nav a:first-of-type a:before {
+.header-premium nav a:first-child:before {
   display: none;
 }
 @media (max-width: 767px) {
   .header-premium .logo-premium {
     float: none;
+    font-size: 25px;
   }
 }
 .logo-premium {
   margin-top: 0;
   text-transform: uppercase;
   font-weight: normal;
-}
-.logo-premium a {
-  color: #000;
 }
 .logo-premium span {
   display: inline-block;
@@ -8650,6 +8649,12 @@ h2.page-header:before {
   padding: 0 .1em;
   font-family: "Proxima", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-family: Berlingske;
+  -webkit-transition: background-color 0.1s ease;
+  -o-transition: background-color 0.1s ease;
+  transition: background-color 0.1s ease;
+}
+.logo-premium:hover span {
+  background: #000;
 }
 .section-header {
   font-size: 14px;
