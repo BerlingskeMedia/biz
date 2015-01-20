@@ -283,9 +283,16 @@ a.header-tool-icon {
 	}
 	.teaser-tagline {
 		color: rgba(0,0,0,.5);
-		font-size: 12px;
+		font-size: 13px;
 		display: block;
 		font-weight: 600;
+	}
+}
+.teaser-theme {
+	border-bottom: 3px solid rgba(0,0,0,.1);
+	.clearfix;
+	.teaser {
+		margin-bottom: 10px;
 	}
 }
 .list-staff {
@@ -479,6 +486,9 @@ h2.page-header {
 		margin-bottom: 0;
 		font-weight: 600;
 		.list-inline;
+		a {
+			.a-gray;
+		}
 	}
 	@media (max-width: @screen-xs-max) {
 		.logo-premium {
@@ -504,7 +514,7 @@ h2.page-header {
 	}
 }
 .header-premium {
-	line-height: 51px;
+	line-height: 40px;
 	margin-bottom: 10px;
 	@media (max-width: @screen-xs-max) {
 		line-height: 2;
@@ -530,7 +540,8 @@ h2.page-header {
 	font-weight: normal;
 	span {
 		display: inline-block;
-		background-color: #333;
+		background-color: #222;
+		#gradient .vertical(#333; #000;  0%; 100%);
 		color: #fff;
 		line-height: 1;
 		padding: 0 .1em;
@@ -547,6 +558,7 @@ h2.page-header {
 
 .header-sponsor-article .logo-brandview {
 	float: left;
+
 }
 .logo-brandview {
 	margin-top: 0;
@@ -591,6 +603,13 @@ h2.page-header {
 	text-transform: none;
 }
 
+.deck-sm {
+	.module-sm;
+	border-top: 3px solid rgba(0,0,0,.1);
+	h2 {
+		margin-top: 10px;
+	}
+}
 .deck {
 	.module;
 
@@ -1409,7 +1428,7 @@ h1.heading {
 		margin-bottom: 10px;
 	}
 }
-.article-fact-premium {
+.article-fact-2-col {
 	.fact-2-col;
 }
 .article-fact-timeline {

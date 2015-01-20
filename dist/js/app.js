@@ -25,6 +25,16 @@ $(function () {
         });
     });
 
+     // Scroll to comments
+    $('.scroll-to-buy').on('click',function(){
+      var buyOptions = $('#article-buy-options')
+      $('html,body').animate({
+          scrollTop: buyOptions.offset().top - 40
+        },{
+           duration: 1500
+        });
+    });
+
     // GLOBAL TOGGLE SCRIPT
     $('.toggle-btn').on('click', function (e){
       e.preventDefault();

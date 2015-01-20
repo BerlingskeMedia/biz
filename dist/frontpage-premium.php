@@ -47,17 +47,17 @@
 
         <div class="row">
         
-          <div class="col-md-8 col-md-push-2">
+          <div class="col-md-8">
           
-            <div class="article-content">
+            <div class="section-content">
 
 
 
-
-<h1 >Velkommen til Business Premium. </h1>
+<img src="<? dummy("image@620x,16:4") ?>" width="" height="" alt="" />
+<h1 >Business Premium</h1>
 <p>Her finder du brancheanalyser, markedsrapporter, erhvervsrelaterede nøgletalsdatabaser, guides til virksomhedsledelse og strategiske beslutninger, kontaktsamlinger, overblik over dagens vigtige statistiske offentliggørelse mv. Med abonnement får du adgang til alt indhold i research- og analyseuniverset. Det er også muligt at købe indholdet i styksalg. </h2>
 
-<section class="deck deck-2-col">
+<section class="deck-sm deck-2-col">
 <h2>Analyser og markedsrapporter</h2>
 <div class="deck-content">
 <ul class="list-arrow" >
@@ -83,7 +83,7 @@
 </div>
 </section>
 
-<section class="deck deck-2-col">
+<section class="deck-sm deck-2-col">
 <h2>Berlingske Business Magasinet</h2>  
   <div class="deck-content">
     <p>Som abonnent på Business Premium har du også adgang til online-udgaven af det eksklusive magasin "Business Magasin", der hver måned sætter fokus på brancher, personer, tendenser og temaer inden for erhvervslivet. Dit Premium-abonnement giver også arkivadgang til tidligere udgaver af magasinet.</p>
@@ -91,7 +91,7 @@
   </div>
 </section>
 
-<section class="deck deck-2-col">
+<section class="deck-sm deck-2-col">
 <h2>Guides</h2>  
   <div class="deck-content">
 <ul class="list-arrow">
@@ -108,7 +108,7 @@
 </section>
 
 
-<section class="deck deck-2-col">
+<section class="deck-sm deck-2-col">
 <h2>Kontaktbaser</h2>  
   <div class="deck-content">
     <p>Få adgang til en samling af mailinglister på en række institutioner, foreninger og virksomheder. Lav dine egne undersøgelser og rundspørger med tusindvis af respondenter. Med abonnement får du adgang til samtlige.</p>
@@ -116,7 +116,7 @@
   </div>
 </section>
 
-<section class="deck deck-2-col">
+<section class="deck-sm deck-2-col">
 <h2>Custom search</h2>  
   <div class="deck-content">
       
@@ -133,7 +133,7 @@
   </div>
 </section>
 
-<section class="deck deck-2-col">
+<section class="deck-sm deck-2-col">
 <h2>Dags Dato</h2>  
   <div class="deck-content">
     <p>Her er overblik over ugens kommende offentliggørelser af regnskaber, statistik og nøgletal for ind- og udland</p>
@@ -143,18 +143,26 @@
 
 
 
-
-
-
-
-
-        
-
-
-
-            </div><!-- article-content -->
+            </div><!-- deck-content -->
           </div><!-- col -->
           
+          <div class="col-md-4">
+          <section>
+            <h1 class="section-header">Seneste fra Premium</h1>
+          </section>
+          <ul class="list list-image-right">
+            <? while (dumb_luck("10")): ?>
+
+            <li class="teaser teaser-premium">
+              <figure class="teaser-img"><a href="article-premium.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure>
+              <div class="teaser-body">
+              <h2 class="header"><a href="article-premium.php"><? dummy("text@headline") ?></a></h2>
+              <p class="price"><? dummy("text@number") ?> kr <span class="logo-premium"><span>PREMIUM</span></span></p>
+              </div>
+            </li>
+            <? endwhile ?>
+            </ul>
+          </div>
           <!-- SIDEBAR  -->
           
 

@@ -99,6 +99,10 @@
 <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
 
 
+<div class="text-center module-sm">
+  <button class="btn btn-sm btn-primary scroll-to-buy">Køb adgang til denne artikel <i class="fa fa-caret-down"></i></button> eller <a href="#" data-toggle="modal" data-target="#modal-login">Log ind</a>
+</div>
+
 
 
 <p>Rejsebranchen blev - ligesom de fleste andre brancher - også berørt af finanskrisen, men ikke i lige så høj grad som man kunne frygte. Selskabernes primære udgifter består af personaleomkostninge,hvilket man relativt hurtigt kunne nedbringe som følge af faldende indtægter.</p>
@@ -115,9 +119,18 @@
 <p>Analysen koster 990,- i styk-salg, men ved at købe et abonnement til Business Premium får du - udover analysen - også adgang til alt andet indhold i Premium-universet.</p>
 <p><strong>Køb analysen nedenfor og download den direkte fra siden.</strong></p>
 
-<div class="article-fact article-fact-premium ">
-<h4 class="header">Det får du med analysen af 60 rejsebureauer</h4><p><strong>Du får en 14 siders analyse skrevet af en analysemedarbejder i Berlingske Research i en PDF-fil skrevet på baggrund af de senest tilgængelige 3 årsregnskab&nbsp; (2013, 2012 og 2011).</strong></p><p><strong>Du får også en Excel-fil, som indeholder:</strong></p><ul><li>Grafik-ark med bl.a. bruttofortjenester, soliditet, egenkapitaler på brancheniveau</li><li>Indtjeningsanalyse (afkastningsgrad, egenkapitalforretning, payout etc.)</li><li>Vækstanalyse (bruttofortjeneste, aktiver, egenkapital fra 2011 til 2013)</li><li>Virksomhedernes rangering efter afkastningsgrad</li><li>Regnskabstal for de tre senest tilgængelige regnskaber</li><li>Kontaktoplysninger (adresse, mail og telefon, samt navn på adm. direktør)</li></ul><p><strong>Vi har samlet følgende oplysninger om hver virksomhed:</strong></p><p>CVR, virksomhedstype (f.eks. A/S), nettoomsætning (sporadisk registreret), bruttofortjeneste, primært resultat, finansielle indtægter, ordinært resultat før finansielle udgifter, finansielle udgifter, resultat før skat og ekstraordinære poster, ekstraordinære indtægter/udgifter (meget sporadisk registreret), ordinært resultat før skat, skat, ordinært resultat efter skat, minoritetsandel, årets resultat, dividende, henlagt til egenkapital, aktiver, likvider, egenkapital ultimo, minoritetsinteresser (meget sporadisk registreret), hensættelser, langfristet gæld, kortfristet gæld, antal medarbejdere (sporadisk registreret), startdato.</p><p><strong>De 60 virksomheder</strong></p><ul><li>Albatros Travel</li><li>AdventureDK</li><li>Atlantis</li><li>Akademisk Rejsebureau</li><li>Limpopo Travel</li><li>Stjernegaard Rejser</li><li>Dagama Travel</li><li>Unitas Rejser</li><li>Australienrejser</li><li>Euro Travel</li><li>Best Travel</li><li>Blixen Tours</li><li>Bravo Tours</li><li>C &amp; C Travel</li><li>Check Point Travel</li><li>Club La Santa</li><li>Dahl Andersen</li><li>Dansk Bilferie</li><li>Viktors farmor</li><li>Detur</li><li>Discovery Rejsebureau</li><li>FDM Travel</li><li>Top Tours</li><li>Fonden 65-Ferie</li><li>Magic Tours</li><li>Gislev Rejser</li><li>Grace Tours</li><li>Grupperejsebureauet</li><li>Holstebro Rejsecenter</li><li>Horizons</li><li>Seatravel</li><li>Comet Rejser</li><li>Kilroy Group Travel</li><li>Kipling Travel</li><li>Rejseselskabet Jesper Hannibal &amp; Company</li><li>MyCruise</li><li>MyPlanet International</li><li>Nortlander</li><li>Nyhavn Rejser</li><li>DTF Travel</li><li>Peacock Travel</li><li>Primo Tours</li><li>Profil Rejser</li><li>Rejsespecialisten</li><li>Riis Rejser</li><li>Risskov Travel Partner</li><li>Horisont Rejser</li><li>Spies</li><li>Star Tour</li><li>Sun Tours</li><li>Svane Rejsebureau</li><li>Take Offer</li><li>Topas</li><li>USATours.dk</li><li>Vacansoleil Danmark</li><li>Ruby Rejser</li><li>Happydays</li><li>Århus Charter</li><li>Store Verden Safari</li><li>Live Travel</li></ul><p>Du downloader PDF-rapporten og Excel-arket og kan gemme filerne, så længe du ønsker.</p><p>Kilder: Analysen er udarbejdet på baggrund af virksomhedernes tre seneste tilgængelige regnskaber. I analysen frasorteres virksomheder der ikke offentliggør regnskaber.</p>
+
+<div class="sm-notitification">Artiklen fortsætter efter faktaboksen &hellip;</div>
+<aside class="article-fact article-fact-embedded article-fact-2-col">
+<div class="fact-fader">
+  <span class="fact-toggle"><span>Udvid faktaboks</span> <i class="fa fa-chevron-down"></i></span>
 </div>
+  
+  <h4 class="header">Det får du med analysen af 60 rejsebureauer</h4><p><strong>Du får en 14 siders analyse skrevet af en analysemedarbejder i Berlingske Research i en PDF-fil skrevet på baggrund af de senest tilgængelige 3 årsregnskab&nbsp; (2013, 2012 og 2011).</strong></p><p><strong>Du får også en Excel-fil, som indeholder:</strong></p><ul><li>Grafik-ark med bl.a. bruttofortjenester, soliditet, egenkapitaler på brancheniveau</li><li>Indtjeningsanalyse (afkastningsgrad, egenkapitalforretning, payout etc.)</li><li>Vækstanalyse (bruttofortjeneste, aktiver, egenkapital fra 2011 til 2013)</li><li>Virksomhedernes rangering efter afkastningsgrad</li><li>Regnskabstal for de tre senest tilgængelige regnskaber</li><li>Kontaktoplysninger (adresse, mail og telefon, samt navn på adm. direktør)</li></ul><p><strong>Vi har samlet følgende oplysninger om hver virksomhed:</strong></p><p>CVR, virksomhedstype (f.eks. A/S), nettoomsætning (sporadisk registreret), bruttofortjeneste, primært resultat, finansielle indtægter, ordinært resultat før finansielle udgifter, finansielle udgifter, resultat før skat og ekstraordinære poster, ekstraordinære indtægter/udgifter (meget sporadisk registreret), ordinært resultat før skat, skat, ordinært resultat efter skat, minoritetsandel, årets resultat, dividende, henlagt til egenkapital, aktiver, likvider, egenkapital ultimo, minoritetsinteresser (meget sporadisk registreret), hensættelser, langfristet gæld, kortfristet gæld, antal medarbejdere (sporadisk registreret), startdato.</p><p><strong>De 60 virksomheder</strong></p><ul><li>Albatros Travel</li><li>AdventureDK</li><li>Atlantis</li><li>Akademisk Rejsebureau</li><li>Limpopo Travel</li><li>Stjernegaard Rejser</li><li>Dagama Travel</li><li>Unitas Rejser</li><li>Australienrejser</li><li>Euro Travel</li><li>Best Travel</li><li>Blixen Tours</li><li>Bravo Tours</li><li>C &amp; C Travel</li><li>Check Point Travel</li><li>Club La Santa</li><li>Dahl Andersen</li><li>Dansk Bilferie</li><li>Viktors farmor</li><li>Detur</li><li>Discovery Rejsebureau</li><li>FDM Travel</li><li>Top Tours</li><li>Fonden 65-Ferie</li><li>Magic Tours</li><li>Gislev Rejser</li><li>Grace Tours</li><li>Grupperejsebureauet</li><li>Holstebro Rejsecenter</li><li>Horizons</li><li>Seatravel</li><li>Comet Rejser</li><li>Kilroy Group Travel</li><li>Kipling Travel</li><li>Rejseselskabet Jesper Hannibal &amp; Company</li><li>MyCruise</li><li>MyPlanet International</li><li>Nortlander</li><li>Nyhavn Rejser</li><li>DTF Travel</li><li>Peacock Travel</li><li>Primo Tours</li><li>Profil Rejser</li><li>Rejsespecialisten</li><li>Riis Rejser</li><li>Risskov Travel Partner</li><li>Horisont Rejser</li><li>Spies</li><li>Star Tour</li><li>Sun Tours</li><li>Svane Rejsebureau</li><li>Take Offer</li><li>Topas</li><li>USATours.dk</li><li>Vacansoleil Danmark</li><li>Ruby Rejser</li><li>Happydays</li><li>Århus Charter</li><li>Store Verden Safari</li><li>Live Travel</li></ul><p>Du downloader PDF-rapporten og Excel-arket og kan gemme filerne, så længe du ønsker.</p><p>Kilder: Analysen er udarbejdet på baggrund af virksomhedernes tre seneste tilgængelige regnskaber. I analysen frasorteres virksomheder der ikke offentliggør regnskaber.</p>
+</aside><!-- Article factbox -->
+
+
+
 
               
               
@@ -137,7 +150,7 @@
               
               
 
-          <div class="article-premium-buy ">
+          <div class="article-premium-buy" id="article-buy-options">
             
             <h1>Køb adgang til denne artikel</h1>
 

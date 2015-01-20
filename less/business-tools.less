@@ -35,9 +35,15 @@
 }
 .a-blue {
 	color: @b-1;
+	&:hover {
+		color: lighten(@b-1, 10%);
+	}
 }
 .a-gray {
-	color: rgba(0,0,0,.8);
+	color: rgba(0,0,0,.6);
+	&:hover {
+		color: rgba(0,0,0,.8);	
+	}
 }
 
 .article-link-embedded img,
