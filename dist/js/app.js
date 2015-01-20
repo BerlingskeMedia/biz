@@ -27,8 +27,9 @@ $(function () {
 
     // GLOBAL TOGGLE SCRIPT
     $('.toggle-btn').on('click', function (e){
+      e.preventDefault();
       $(this).closest('.toggle-container').toggleClass('toggle-active');
-      // $(this).closest('.toggle-container').find('.toggle-content').slideToggle('fast');
     })
 
+    
 });

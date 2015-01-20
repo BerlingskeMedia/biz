@@ -77,7 +77,7 @@
         <div class="row">
         
 
-          <div class="col-md-8 col-md-push-2">
+          <div class="col-md-8 col-sm-push-4">
           
             <div class="article-content">
 
@@ -140,10 +140,13 @@
               <!-- READ ALSO -->
               
                 
-                <section class="module-top-lg module">
+                <section class="module-top-lg module toggle-container">
                 
-              <h1 class="section-header">More from Columbus</h1>
-              
+              <h1 class="section-header">More from Columbus <a class="section-header-link toggle-btn" href="#">Hvad er BrandView?</a></h1>
+              <div class="brandview-info toggle-content">
+                <p>BrandView er en service fra Berlingske Media, hvor virksomheder har mulighed for at kommunikere deres specialviden direkte til brugere og læsere af Berlingske.</p>
+                <p>Indhold under BrandView produceres i et tæt samarbejde mellem Berlingske Medias content marketing bureau og virksomheden, der er afsender på budskabet. Læs mere om <a href="http://www.publicimpact.dk/">BrandView</a> eller kontakt os direkte på <a href="mailto:moas@berlingslemedia.dk">moas@berlingslemedia.dk</a>.</p>    
+              </div>
               <ul class="list list-xs ">
               <? while (dumb_luck("5")): ?>
                 <li class="teaser">
@@ -160,30 +163,35 @@
               </section><!-- read also -->
               
 
-<section class="module-top-lg module">
-              <h1 class="section-header">More from BrandView</h1>
+<section class="module-top-lg module toggle-container">
+              <h1 class="section-header">More from BrandView<a class="section-header-link toggle-btn" href="#">Hvad er BrandView?</a></h1>
+              <div class="brandview-info toggle-content">
+                <p>BrandView er en service fra Berlingske Media, hvor virksomheder har mulighed for at kommunikere deres specialviden direkte til brugere og læsere af Berlingske.</p>
+                <p>Indhold under BrandView produceres i et tæt samarbejde mellem Berlingske Medias content marketing bureau og virksomheden, der er afsender på budskabet. Læs mere om <a href="http://www.publicimpact.dk/">BrandView</a> eller kontakt os direkte på <a href="mailto:moas@berlingslemedia.dk">moas@berlingslemedia.dk</a>.</p>    
+              </div>
+
               <div class="row">
                 <div class="col-md-12">
 
                   <article class="teaser teaser-brandview teaser-divider module-xs header-35">
                       <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
-                  
-                  <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
-                  <p><? dummy("text@teaser") ?></p>
                   <span class="teaser-tagline">
                     Sponseret af Columbus
                   </span>
+                  <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
+                  <p><? dummy("text@teaser") ?></p>
+                  
                   </article>
                 </div>
                 <? while (dumb_luck("3")): ?>
                 <div class="col-md-4">
                   <article class="teaser teaser-brandview teaser-fixed-height">
-                      <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" /></a></figure>
-
-                  <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
+                      <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@360x,16:9") ?>" width="" height="" alt="" /></a></figure>
                   <span class="teaser-tagline">
                     Sponseret af Columbus
                   </span>
+                  <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
+                  
                   </article>
                   
                 </div>
@@ -196,17 +204,17 @@
           </div><!-- col -->
           
           <!-- SIDEBAR  -->
-          <!-- <aside class="col-md-4 col-md-pull-8"> -->
-          <!-- <div class="article-sidebar"> -->
+          <aside class="col-md-4 col-md-pull-8">
+          <div class="article-sidebar">
 
           
           
-
+          <?php include('inc/article-content-stream.php'); ?>
           
             
               
-            <!-- </div> --><!-- article-sidebar -->
-          <!-- </aside> --><!-- col -->
+            </div><!-- article-sidebar -->
+          </aside><!-- col -->
 
 
         </div><!-- row -->

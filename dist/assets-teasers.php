@@ -143,7 +143,73 @@
     </div>
     
 
+  
+
+  <div class="col-md-4">
+    <section>
+    <code>.list .toplist .toplist-lg</code>
+    <h1 class="section-header">I'm a tabbed toplist</h1>
+      
+
+    <div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#tab-business" aria-controls="business" role="tab" data-toggle="tab">Business</a></li>
+    <li role="presentation"><a href="#tab-berlingske" aria-controls="tab-berlingske" role="tab" data-toggle="tab">Berlingske</a></li>
+    <li role="presentation"><a href="#tab-politiko" aria-controls="tab-politiko" role="tab" data-toggle="tab">Politiko</a></li>
+    <li role="presentation"><a href="#tab-aok" aria-controls="tab-aok" role="tab" data-toggle="tab">AOK</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="tab-business">
+      <ul class="list toplist toplist-lg">
+        <? while (dumb_luck("5")): ?>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-berlingske">
+    <ul class="list toplist toplist-lg">
+        <? while (dumb_luck("5")): ?>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul></div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-politiko">
+    <ul class="list toplist toplist-lg">
+        <? while (dumb_luck("5")): ?>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul></div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-aok">
+    <ul class="list toplist toplist-lg">
+        <? while (dumb_luck("5")): ?>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul></div>
   </div>
+
+</div>
+
+
+
+
+      </section>
+    </div>
+    
+
+  </div>
+
+
   <div class="row">
     
   <div class="col-md-12">

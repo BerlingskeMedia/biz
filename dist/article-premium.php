@@ -291,7 +291,7 @@
           <div class="article-sidebar">
 
           
-          
+          <?php include('inc/article-content-stream.php'); ?>
 
           
             

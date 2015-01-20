@@ -466,6 +466,37 @@ h2.page-header {
 		}
 	}
 }
+.header-sponsor-article {
+	// height: 51px;
+	nav {
+		text-align: right;
+		margin-bottom: 0;
+		font-weight: 600;
+		.list-inline;
+	}
+	@media (max-width: @screen-xs-max) {
+		.logo-premium {
+			float: none;
+			font-size: 25px;
+		}
+
+	}
+}
+.header-brandview {
+	.logo-brandview {
+		width: 200px;
+		height: 45px;
+		text-indent: -9999px;
+		margin-right: 10px;
+	}
+	h1 {
+		float: left;
+		margin-top: 0;
+	}
+	span {
+		font-weight: 600;
+	}
+}
 .header-premium {
 	line-height: 51px;
 	margin-bottom: 10px;
@@ -483,20 +514,9 @@ h2.page-header {
 			padding: 0 20px;
 		}
 	}
-	nav {
-		text-align: right;
-		margin-bottom: 0;
-		font-weight: 600;
-		.list-inline;
-	}
-	@media (max-width: @screen-xs-max) {
-		.logo-premium {
-			float: none;
-			font-size: 25px;
-		}
-
-	}
-	
+}
+.brandview-info {
+	clear: both;
 }
 .logo-premium {
 	margin-top: 0;
@@ -517,6 +537,10 @@ h2.page-header {
 			background: #000;
 		}
 	}
+}
+
+.header-sponsor-article .logo-brandview {
+	float: left;
 }
 .logo-brandview {
 	margin-top: 0;
@@ -554,7 +578,11 @@ h2.page-header {
 	position: relative;
 	border-top: 4px solid rgba(0,0,0,.1);
 	padding-top: 10px;
-
+}
+.section-header-link {
+	float: right;
+	font-weight: 300;
+	text-transform: none;
 }
 
 .deck {
@@ -826,6 +854,7 @@ h2.page-header {
 		font-weight: 600;
 		display: block;
 		position: relative;
+		clear: left;
 		
 		span {
 			background: @biz-pink;
