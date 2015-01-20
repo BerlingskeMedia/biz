@@ -96,13 +96,12 @@ body {
         <h4>Generel</h4>
 
         <ul class="overview">
-        <li class="a"><a href="/dist/index.php">Frontpage</a></li>
-        <li class="b"><a href="/dist/article.php">Article</a></li>
-        <li class="b"><a href="/dist/article-large.php">Article - Large</a></li>
-        <li class="b"><a href="/dist/article-advetorial.php">Article - Advetorial</a></li>
-        
-
-        <li class="c"><a href="/dist/staff.php">Staff</a></li>
+          <li class="a"><a href="/dist/index.php">Frontpage</a></li>
+          <li class="b"><a href="/dist/article.php">Article</a></li>
+          <li class="b"><a href="/dist/article-large.php">Article - Large</a></li>
+          <li class="b"><a href="/dist/article-advetorial.php">Article - Advetorial</a></li>
+          <li class="b"><a href="/dist/page-profile.php">Profile</a></li>
+          <li class="c"><a href="/dist/staff.php">Staff</a></li>
         </ul>
 
         <h4>Business <span class="logo-premium"><span>Premium</span></span></h4>
