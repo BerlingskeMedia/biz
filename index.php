@@ -98,6 +98,9 @@ body {
         <ul class="overview">
         <li class="a"><a href="/dist/index.php">Frontpage</a></li>
         <li class="b"><a href="/dist/article.php">Article</a></li>
+        <li class="b"><a href="/dist/article-large.php">Article - Large</a></li>
+        <li class="b"><a href="/dist/article-advetorial.php">Article - Advetorial</a></li>
+        
 
         <li class="c"><a href="/dist/staff.php">Staff</a></li>
         </ul>

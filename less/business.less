@@ -491,7 +491,7 @@ h2.page-header {
 .header-brandview {
 	.logo-brandview {
 		width: 200px;
-		height: 45px;
+		height: 41px;
 		text-indent: -9999px;
 		margin-right: 10px;
 	}
@@ -894,9 +894,9 @@ h1.heading {
 	font-family: Berlingske;
 }
 .article-category-brandview .heading {
-	font-family: @font-family-sans-serif;
+	/*font-family: @font-family-sans-serif;
 	font-weight: 200;
-	font-size: 50px;
+	font-size: 50px;*/
 }
 
 .media-embeds  iframe{
@@ -935,11 +935,15 @@ h1.heading {
 	text-transform: uppercase;
 	margin: 5px 0 20px;
 }
+
 .article-content {
 
 	padding-bottom: 50px;
 	b, strong {
 		font-weight: 600;
+	}
+	iframe {
+		clear: both;
 	}
 	blockquote {
 		.clearfix;
@@ -984,6 +988,12 @@ h1.heading {
 		margin-bottom: 25px;
 	}
 
+}
+.article-large .article-content {
+	p, h2, h3, h4 {
+		max-width: 620px;	
+	}
+	
 }
 
 .article-related {

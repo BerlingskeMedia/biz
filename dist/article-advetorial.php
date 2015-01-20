@@ -36,22 +36,22 @@
       <article class="col-md-12">
         <header class="article-head">
 
-          <a href="section.php" title="TITLE" class="article-tag"><span><? dummy("text@biz-cat") ?></span></a>
-          <h1 class="heading"><? dummy("text@headline") ?></h1>
+          <div class="article-tag"><span>Annonce</span></div>
+          <h1 class="heading">Danskernes økonomiske selvtillid vokser</h1>
 
 
-          <div class="article-date">Mandag d. <time datetime="2014-02-14"><? dummy("text@pol-date") ?> kl. <? dummy("text@time") ?></time> <? if (dumb_luck("25%")): ?><span class="date-updated">OPDATERET <time datetime="2014-02-14"> kl. <? dummy("text@time") ?></time></span><? endif ?></div>
+          <div class="article-date">Mandag d. <time datetime="2014-02-14"><? dummy("text@pol-date") ?> kl. <? dummy("text@time") ?></time> </div>
 
 
 
-            <div class="article-byline">
-              <? while (dumb_luck("1-3")): ?>
+            <!-- <div class="article-byline">
+              
                 <div class="article-author">
                   <figure><img src="<? dummy("image/!author@30x30,") ?>" width="" height="" alt="" /></figure>
                   <span><? dummy("text@author") ?><br><a href="#" class="follow-author">Follow <i class="fa fa-caret-down"></i></a></span>
               </div>
-            <? endwhile ?>
-            </div>    
+            
+            </div>     -->
 
 
           <? if (dumb_luck("50%")): ?>
@@ -67,9 +67,7 @@
 
         </header>
 
-        <div class="banner banner-top-article desktop-banner">
-          <? dummy("ad@930x80") ?>
-        </div>
+        
 
         <div class="row">
           <div class="col-md-8 col-md-push-4">
@@ -89,131 +87,41 @@
               
               
               
-              <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
-              <? if (dumb_luck("25%")): ?>
-                <!-- *** Asset - factbox theme-->
-                <?php include("inc/asset-article-factbox-theme.php"); ?>
-              <? endif ?>
-
-
-              <? if (dumb_luck("100%")): ?>
+              <h2 class="article-summary">Vi mener selv, at vi har bedre styr på privatøkonomien end sidste år, viser en undersøgelse fra TNS Gallup og Nordea.</h2>
               
-                <? if (dumb_luck("50%")): ?>
-                <!-- *** Asset - factbox float right-->
-                <?php include("inc/asset-article-factbox-float-right.php"); ?>
+
+
               
-                <? else: ?>
-                <!-- *** Asset - factbox timeline  -->
-                <?php include("inc/asset-article-factbox-timeline.php"); ?>
-                <? endif ?>
-
-
-              <? endif ?>
 
  
 
               
-              <? if (dumb_luck("50%")): ?>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <iframe src="http://cf.datawrapper.de/2W39o/1/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="417"></iframe>
-            <? endif ?>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-              <div class="article-link-embedded">
-                <figure>
-                <a href="article.php" title="TITLE"><img src="<? dummy("image@70x,16:9") ?>" width="" height="" alt="" /></a>
-                </figure>
-                <div class="teaser-body">
-                  <span>Læs også:</span>
-                  <a href="article.php" title="TITLE"><? dummy("text@headline") ?></a>  
-                </div>
-                
-              </div>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <div class="article-link-embedded">
-                <figure>
-                <a href="article.php" title="TITLE"><img src="<? dummy("image@70x,16:9") ?>" width="" height="" alt="" /></a>
-                </figure>
-                <div class="teaser-body">
-                  <span>Læs også:</span>
-                  <a href="article.php" title="TITLE"><? dummy("text@headline") ?></a>  
-                </div>
-                
-              </div>
+<p>2,2 millioner danskere vurderer, at deres privatøkonomi har det bedre, og det er 112.000 flere end for et år siden. Det viser en måling udført af TNS Gallup for Nordea.
 
-              <p><? dummy("text@paragraph") ?></p>
-                <!-- *** Asset - factbox float right-->
-                <?php include("inc/asset-article-factbox-embedded.php"); ?>
+<p>Bortset fra de 26-39-årige oplever alle aldersgrupper således, at de har godt styr på økonomien i forhold til sidste år. De 40-54 årige står for den største stigning, og her er det syv ud af ti, der nu siger, at de har godt styr på de private finanser.
 
+<p>Det er især dem, der er i arbejde, som har en større andel med godt styr på økonomien end for et år siden, mens andelene for ledige, studerende og pensionister er uændrede. Samtidig har kvinderne fået et godt greb om økonomien, hvor 63 pct. nu vurderer, at de har styr på økonomien mod 57 pct. sidste år.
 
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+<p>- Det er positive resultater, og det vidner om, at flere er interesserede i at have en bæredygtig økonomi, siger Nordeas forbrugerøkonom Ann Lehmann Erichsen.
 
-              <? if (dumb_luck("50%")): ?>
-                <!-- *** Asset - factbox theme-->
-                <?php include("inc/asset-article-quiz.php"); ?>
-              <? endif ?>
+<p>Undersøgelsen viser samtidig, at der er lige så stor andel af mænd som kvinder, der har brugt månedslønnen før næste lønningsdag, har fået ødelagt nattesøvnen af bekymringer for privatøkonomien, har fået et eller flere rykkerbreve for regninger, der ikke er betalt til tiden, eller som mere end én gang har haft et overtræk, der ikke var aftalt med banken.
 
-              <h2>H2:<? dummy("text@item") ?></h2>
+<p>- Mænd og kvinder har langt henad vejen de samme adfærdsmønstre. Men når det kommer til lån og kreditter, der er steget, selv om man har forsøgt at holde status quo, så har mænd oplevet det i deres økonomi dobbelt så ofte som kvinderne, siger Ann Lehmann Erichsen.
 
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+<p>Ikke overraskende er det ofte de ledige, der kæmper med økonomien, hvor hver fjerde ledige har haft problemer med at få indtægten til at strække hele måneden ud. Samtidig lægger de færreste ledige har lagt budget – blot 19 pct. har ifølge undersøgelsen fået lagt et nyt budget.
 
-              <? if (dumb_luck("50%")): ?>
-              <div class="media-embeds">
-              <blockquote class="twitter-tweet" lang="da"><p>Jubii! 11,8 millioner fra A. P. Møller Fonden til Helsingør Kommune! God dag;-) <a href="https://twitter.com/SthePol">@sthepol</a>&#10;<a href="http://t.co/LWfd9iStaU">http://t.co/LWfd9iStaU</a></p>&mdash; Benedikte Kiær (@benediktekiaer) <a href="https://twitter.com/benediktekiaer/status/533231937037414400">14. november 2014</a></blockquote>
-              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-              <? else: ?>
-              <blockquote class="bond-quote">
-                  
-                  <p>
-                    <? dummy("text@teaser") ?>
-                  </p>
-                  <small><? dummy("text@author") ?>- <? if (dumb_luck("50%")): ?><? dummy("text@teaser") ?><? endif ?></small>
-                  <div class="quote-share">SHARE QUOTE <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></div>
+<h2>Sådan kommer du i gang med at tage styring i din økonomi</h2>
 
-              </blockquote>
-              <? endif ?>
+<ol>
+<li>Læg et budget, hvor udgifterne ikke overstiger indtægterne, og hvor der er sat lidt af til opsparing til uventede udgifter. Find budgetark her <a href="http://www.nordea.dk/budget" class="_blank">www.nordea.dk/budget</a></li>
+<li>Hold øje med, at pengene strækker hele måneden ved eksempelvis at tjekke netbanken mindst en gang hver uge og få  SMS'er regelmæssigt med information om pengebeholdningen på din konto.</li>
+<li>Brug mere tid på at passe på dine penge og dermed på dig selv ved at indføre faste rutiner omkring budget, regninger og planlægning af dine indkøb.</li>
+<li>Læs om privatøkonomi og bid mærke i de nye regler, når de vedrører dig. Gem informationerne.</li>
+<li>Husk at bede om hjælp til de områder, hvor du selv savner viden.</li>
 
-              <h3>H3:<? dummy("text@item") ?></h3>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <div class="sm-notitification">Article continues after factbox &hellip;</div>
-              <aside class="article-related-chunk list-xs">
-                <h1 class="aside-header aside-header-small">Mere om OW Bunker sagen</h1>
-                <ul>
-                  <? while (dumb_luck("4")): ?>
-                  <li class="teaser">
-                      <figure><a href="article.php"><img src="<? dummy("image@60x60,") ?>" width="" height="" alt="" /></a></figure>
-                      <div class="teaser-body">
-                        <h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>
-                        <footer><time> 3d.</time></footer>
-                      </div>
+</ol>
 
-                  </li>
-                  <? endwhile ?>
-                </ul>
-
-              </aside>
-
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-
-              
-              <? if (dumb_luck("50%")): ?>
-              <!-- EMBEDDED IMAGE -->
-              <?php include("inc/asset-article-image-embedded.php"); ?>
-              
-              
-              <? endif ?>
-
-              
-              <? if (dumb_luck("50%")): ?>
-              <!-- VIDEOS -->
-              <div class="article-video">
-                <iframe width="425" height="349" src="http://www.youtube.com/embed/FKWwdQu6_ok" frameborder="0" allowfullscreen></iframe>
-              </div>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <? endif ?>
-
-              <?php include("inc/asset-article-letterbox.php"); ?>
 
               
               <?php include('inc/asset-article-tags.php'); ?>

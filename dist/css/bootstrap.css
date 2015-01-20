@@ -3772,29 +3772,36 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .nav-tabs-sm {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 0px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 .nav-tabs-sm > li {
-  float: left;
-  margin-bottom: -1px;
+  display: inline-block;
 }
 .nav-tabs-sm > li > a {
   margin-right: 2px;
-  line-height: 1.42857143;
-  border: 1px solid transparent;
-  border-radius: 4px 4px 0 0;
+  line-height: 19px;
+  padding: 0 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px 3px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+  color: #333;
 }
 .nav-tabs-sm > li > a:hover {
-  border-color: #eeeeee #eeeeee #dddddd;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #111;
 }
 .nav-tabs-sm > li.active > a,
 .nav-tabs-sm > li.active > a:hover,
 .nav-tabs-sm > li.active > a:focus {
   color: #555555;
-  background-color: #f5dfda;
-  border: 1px solid #dddddd;
-  border-bottom-color: transparent;
+  background-color: #cc0066;
   cursor: default;
+  color: #fff;
+  border-radius: 3px 3px 0 0;
 }
 .nav-tabs-sm.nav-justified {
   width: 100%;
@@ -8709,7 +8716,7 @@ h2.page-header:before {
 }
 .header-brandview .logo-brandview {
   width: 200px;
-  height: 45px;
+  height: 41px;
   text-indent: -9999px;
   margin-right: 10px;
 }
@@ -9168,9 +9175,9 @@ h1.heading {
   font-family: Berlingske;
 }
 .article-category-brandview .heading {
-  font-family: "Proxima", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  font-size: 50px;
+  /*font-family: @font-family-sans-serif;
+	font-weight: 200;
+	font-size: 50px;*/
 }
 .media-embeds iframe {
   text-align: center;
@@ -9212,6 +9219,9 @@ h1.heading {
 .article-content b,
 .article-content strong {
   font-weight: 600;
+}
+.article-content iframe {
+  clear: both;
 }
 .article-content blockquote:before,
 .article-content blockquote:after {
@@ -9263,6 +9273,12 @@ h1.heading {
 .article-content > ul,
 .article-content > ol {
   margin-bottom: 25px;
+}
+.article-large .article-content p,
+.article-large .article-content h2,
+.article-large .article-content h3,
+.article-large .article-content h4 {
+  max-width: 620px;
 }
 .article-related:before,
 .article-related:after {

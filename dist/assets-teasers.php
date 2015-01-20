@@ -147,14 +147,14 @@
 
   <div class="col-md-4">
     <section>
-    <code>.list .toplist .toplist-lg</code>
+    
     <h1 class="section-header">I'm a tabbed toplist</h1>
       
 
-    <div role="tabpanel">
+    <div role="tabpanel" class="tabs">
 
   <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
+  <ul class="nav nav-tabs-sm" role="tablist">
     <li role="presentation" class="active"><a href="#tab-business" aria-controls="business" role="tab" data-toggle="tab">Business</a></li>
     <li role="presentation"><a href="#tab-berlingske" aria-controls="tab-berlingske" role="tab" data-toggle="tab">Berlingske</a></li>
     <li role="presentation"><a href="#tab-politiko" aria-controls="tab-politiko" role="tab" data-toggle="tab">Politiko</a></li>
