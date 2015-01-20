@@ -9293,6 +9293,15 @@ h1.heading {
 .embedded-node:after {
   clear: both;
 }
+.article-advetorial .article-tag {
+  text-align: center;
+}
+.article-advetorial .article-tag span {
+  margin: 0 auto;
+  background: #cc0066;
+  padding: 0 5px;
+  color: #fff;
+}
 .article-large .article-content p,
 .article-large .article-content h2,
 .article-large .article-content h3,
