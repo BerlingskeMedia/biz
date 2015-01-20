@@ -9274,6 +9274,25 @@ h1.heading {
 .article-content > ol {
   margin-bottom: 25px;
 }
+.embedded-node {
+  margin-bottom: 25px;
+}
+.embedded-node:before,
+.embedded-node:after {
+  content: " ";
+  display: table;
+}
+.embedded-node:after {
+  clear: both;
+}
+.embedded-node:before,
+.embedded-node:after {
+  content: " ";
+  display: table;
+}
+.embedded-node:after {
+  clear: both;
+}
 .article-large .article-content p,
 .article-large .article-content h2,
 .article-large .article-content h3,
