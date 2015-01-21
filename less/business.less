@@ -484,6 +484,45 @@ h2.page-header {
 		}
 	}
 }
+.nav-responsive {
+	position: relative;
+	ul {
+		.list-clean;
+		li {
+			display: inline-block;
+			margin: 0 0 0 15px;
+		}
+	}
+
+	
+
+	.nav-toggle {
+		display: none;
+	}
+	@media (max-width: @screen-xs-max) {
+		.nav-toggle {
+			display: inline-block;
+		}		
+		ul {
+			display: none;
+		}
+	}
+	&.show-nav {
+
+		ul {
+			display: inline-block;
+			position: absolute;
+			top: 2em;
+			right: 0;
+			li {
+				float: none;
+				display: block;
+				max-width:100px; 
+			}
+		}
+	}
+
+}
 .header-sponsor-article {
 	// height: 51px;
 	h1 {
@@ -496,7 +535,7 @@ h2.page-header {
 		text-align: right;
 		margin-bottom: 0;
 		font-weight: 600;
-		.list-inline;
+		
 		a {
 			.a-gray;
 		}

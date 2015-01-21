@@ -41,5 +41,10 @@ $(function () {
       $(this).closest('.toggle-container').toggleClass('toggle-active');
     })
 
+    // RESPONSIVE MENU
+    $('.nav-toggle').on('click',function(e){
+      e.preventDefault();
+      $(this).closest('.nav-responsive').toggleClass('show-nav');
+    });
     
 });
