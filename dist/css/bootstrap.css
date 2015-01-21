@@ -8707,6 +8707,13 @@ h2.page-header:before {
   display: inline-block;
   margin: 0 5px;
 }
+.list-inline a.last {
+  margin-left: 5px;
+  color: #fff;
+}
+.list-inline a.last:before {
+  display: none;
+}
 .list-inline a:first-child:before {
   display: none;
 }
@@ -8736,6 +8743,13 @@ h2.page-header:before {
   content: '\00b7';
   display: inline-block;
   margin: 0 5px;
+}
+.header-sponsor-article nav a.last {
+  margin-left: 5px;
+  color: #fff;
+}
+.header-sponsor-article nav a.last:before {
+  display: none;
 }
 .header-sponsor-article nav a:first-child:before {
   display: none;

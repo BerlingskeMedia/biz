@@ -7,10 +7,7 @@
   <a href="page-text-premium-4.php">Betingelser</a>
   
   <? if (dumb_luck("50%")): ?>
-	<a href="#" data-toggle="modal" data-target="#modal-login">Log ind</a>
-	<? else: ?>
-	<a href="#">My articles (2)</a>
-	<a href="#">Log ud</a>
+	<a href="#" class="btn btn-xs btn-primary last" data-toggle="modal" data-target="#modal-login">Log ind</a>
   <? endif ?>
   </nav>
   

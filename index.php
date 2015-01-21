@@ -65,7 +65,7 @@ body {
 
   /* Ready for development */
   li.d a {
-    background: rgba(0,255,0,.2);
+    background: rgba(172,211,115,.5);
     color: #336633;
   }
   li.d:after  {
@@ -98,10 +98,23 @@ body {
         <ul class="overview">
           <li class="a"><a href="/dist/index.php">Frontpage</a></li>
           <li class="b"><a href="/dist/article.php">Article</a></li>
+          <li class="a"><a href="#">Article - Longreads</a></li>
           <li class="b"><a href="/dist/article-large.php">Article - Large</a></li>
           <li class="b"><a href="/dist/article-advetorial.php">Article - Advetorial</a></li>
+          <li class="b"><a href="/dist/page-profile.php">User profile</a></li>
+          <li class="b"><a href="/dist/staff.php">Staff - overview</a></li>
+          <li class="a"><a href="#">Staff - Author</a></li>
           <li class="b"><a href="/dist/page-profile.php">Profile</a></li>
-          <li class="c"><a href="/dist/staff.php">Staff</a></li>
+          <li class="a"><a href="#">404</a></li>
+          <li class="a"><a href="#">Search</a></li>
+          <li class="a"><a href="#">News overview</a></li>
+          <li class="a"><a href="#">Business TV</a></li>
+          <li class="a"><a href="#">Business TV - Section (?)</a></li>
+          <li class="a"><a href="#">Business TV - Article (?)</a></li>
+          <li class="a"><a href="#">Jobindex overview</a></li>
+          <li class="a"><a href="#">Events</a></li>
+          <li class="a"><a href="#">Business Magazine</a></li>
+
         </ul>
 
         <h4>Business <span class="logo-premium"><span>Premium</span></span></h4>
@@ -122,8 +135,13 @@ body {
         <h4>BrandView</h4>
         <ul>
         <li class="b"><a href="/dist/article-brandview.php">Article</a>
-        
-        
+        </ul>
+
+        <h4>BusinessDirect</h4>
+        <ul>
+        <li class="a"><a href="#">Frontpage</a>
+        <li class="a"><a href="#">Press announcment (article)</a>
+        <li class="a"><a href="#">Backend</a>
         </ul>
         <h3>Toolbox</h3>
 

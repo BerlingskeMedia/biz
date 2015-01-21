@@ -150,7 +150,7 @@
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-              <? if (dumb_luck("50%")): ?>
+              <? if (dumb_luck("100%")): ?>
                 <!-- *** Asset - factbox theme-->
                 <?php include("inc/asset-article-quiz.php"); ?>
               <? endif ?>
