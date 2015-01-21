@@ -152,8 +152,10 @@
             
             <p><a href="somedoc.pdf" class="btn btn-default btn-premium">Link to a pdf file</a>
             <a href="somedoc.xlsx" class="btn btn-default btn-premium">Link to a XLSX sheet</a>
-            <a href="somedoc.doc" class="btn btn-default btn-premium">Link to a doc file</a></p>
-            <a href="somedoc.ppt" class="btn btn-default btn-premium">Link to a PowerPoint file</a></p>
+            <a href="somedoc.doc" class="btn btn-default btn-premium">Link to a doc file</a>
+            <a href="somedoc.docx" class="btn btn-default btn-premium">Link to a docx file</a>
+            <a href="somedoc.ppt" class="btn btn-default btn-premium">Link to a PPT file</a>
+            <a href="somedoc.pptx" class="btn btn-default btn-premium">Link to a PPTX file</a></p>
           </div>              
 
           <div class="article-premium-buy" id="article-buy-options">

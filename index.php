@@ -146,14 +146,14 @@ body {
 
         <h4>Business <span class="logo-premium"><span>Premium</span></span></h4>
         <ul>
-        <li class="c"><a href="/dist/frontpage-premium.php">Frontpage</a>
-        <li class="c"><a href="/dist/section-premium.php">Section</a>
-        <li class="c"><a href="/dist/article-premium.php">Article</a>
+        <li class="d"><a href="/dist/frontpage-premium.php">Frontpage</a>
+        <li class="d"><a href="/dist/section-premium.php">Section</a>
+        <li class="d"><a href="/dist/article-premium.php">Article</a>
           
-          <li class="c"><a href="/dist/page-text-premium-1.php">Help page 1</a></li>
-          <li class="c"><a href="/dist/page-text-premium-2.php">Help page 2</a></li>
-          <li class="c"><a href="/dist/page-text-premium-3.php">Help page 3</a></li>
-          <li class="c"><a href="/dist/page-text-premium-4.php">Help page 4</a></li>
+          <li class="d"><a href="/dist/page-text-premium-1.php">Help page 1</a></li>
+          <li class="d"><a href="/dist/page-text-premium-2.php">Help page 2</a></li>
+          <li class="d"><a href="/dist/page-text-premium-3.php">Help page 3</a></li>
+          <li class="d"><a href="/dist/page-text-premium-4.php">Help page 4</a></li>
           <li class="nuke"><a href="#">My premium articles</a></li>
           
         
