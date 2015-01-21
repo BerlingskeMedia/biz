@@ -69,9 +69,54 @@
   </div>
 </section>
 
+
+
+<section class="deck">
+  <div class="row">
+    <div class="col-md-12">
+      <section class="deck deck-2-col">
+<h2>Responsive menu</h2>  
+<p>Use <code>.nav-responsive</code> on containing <code>nav</code> element</p>
+  <h4>Example</h4>
+  
+
+  <nav class="nav-responsive ">
+  <a href="#" class="nav-toggle btn btn-primary">Menu <i class="fa fa-caret-down"></i></a>
+  <ul>
+    <? while (dumb_luck("7")): ?>
+  <li><a href="page-text-premium-1.php"><? dummy("text@item") ?></a> 
+  <? endwhile ?>
+    
+  </ul>
+  
+  </nav>
+
+<h3>Responsive menu right aligned</h3>  
+<p>Use <code>.nav-responsive .nav-responsive-right</code> on containing <code>nav</code> element</p>
+<h4>Example</h4>
+  <nav class="nav-responsive nav-responsive-right">
+  <a href="#" class="nav-toggle btn btn-primary">Menu <i class="fa fa-caret-down"></i></a>
+  <ul>
+    <? while (dumb_luck("7")): ?>
+  <li><a href="page-text-premium-1.php"><? dummy("text@item") ?></a> 
+  <? endwhile ?>
+    
+  </ul>
+  
+  </nav>
+
+
+</section>
+    </div>    
+  </div>
+</section>
+
  
 
   </div><!-- container -->
+    
+
+
     
 
 

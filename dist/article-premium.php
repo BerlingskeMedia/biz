@@ -147,8 +147,14 @@
        
 
 
-              
-              
+              <p><code>Att. Developers. Remember body class name on Premium articles... </code></p>
+            <p>Du kan downloade rapporten <a href="http://www.b.dk/upload/Premium/Engelske_rapporter/PK15-DK-canned-preserved-food_274669.pdf" target="_blank">her</a></p>
+          <div class="article-embed">
+            
+            <p><a href="somedoc.pdf" class="btn btn-default btn-premium">Link to a pdf file</a>
+            <a href="somedoc.xlsx" class="btn btn-default btn-premium">Link to a XLSX sheet</a>
+            <a href="somedoc.doc" class="btn btn-default btn-premium">Link to a doc file</a></p>
+          </div>              
 
           <div class="article-premium-buy" id="article-buy-options">
             

@@ -1,6 +1,6 @@
 <header class="header-sponsor-article header-premium ">
   <h1 class="site-title logo-premium"><a href="frontpage-premium.php" title="Premium Forside"><span>Premium</span></a></h1>
-  <nav class="nav-responsive">
+  <nav class="nav-responsive nav-responsive-right">
   <a href="#" class="nav-toggle btn btn-primary">Menu <i class="fa fa-caret-down"></i></a>
   <ul>
     <li><a href="page-text-premium-1.php">Aktivér abonnement</a> 

@@ -8735,24 +8735,46 @@ h2.page-header:before {
 .nav-responsive .nav-toggle {
   display: none;
 }
+.nav-responsive ul {
+  top: 2em;
+  left: 0;
+}
+.nav-responsive.nav-responsive-right {
+  float: right;
+}
+.nav-responsive.nav-responsive-right ul {
+  right: 0;
+  left: auto;
+}
 @media (max-width: 767px) {
-  .nav-responsive .nav-toggle {
-    display: inline-block;
-  }
   .nav-responsive ul {
     display: none;
   }
+  .nav-responsive .nav-toggle {
+    display: inline-block;
+    color: #fff;
+  }
+}
+.nav-responsive.show-nav {
+  z-index: 9999;
 }
 .nav-responsive.show-nav ul {
   display: inline-block;
   position: absolute;
-  top: 2em;
-  right: 0;
 }
 .nav-responsive.show-nav ul li {
   float: none;
   display: block;
-  max-width: 100px;
+  max-width: 280px;
+  width: 170px;
+  background: #333;
+  padding: 0 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+  margin-left: 0;
+}
+.nav-responsive.show-nav ul li a {
+  color: #fff;
 }
 .header-sponsor-article h1 {
   font-size: 100%;
@@ -8776,6 +8798,34 @@ h2.page-header:before {
     float: none;
     font-size: 25px;
   }
+}
+.btn-premium {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.article-category-premium .article-content a[href*=".doc"]:before,
+a.btn-premium[href*=".doc"]:before {
+  content: '\f1c2';
+  font-family: fontawesome;
+  margin-right: 5px;
+}
+.article-category-premium .article-content a[href*=".pdf"]:before,
+a.btn-premium[href*=".pdf"]:before {
+  content: '\f1c1';
+  font-family: fontawesome;
+  margin-right: 5px;
+}
+.article-category-premium .article-content a[href*=".xlsx"]:before,
+a.btn-premium[href*=".xlsx"]:before {
+  content: '\f1c3';
+  font-family: fontawesome;
+  margin-right: 5px;
+}
+a.btn-premium:after {
+  content: "\f019";
+  font-family: fontawesome;
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.4);
 }
 .header-brandview .logo-brandview {
   width: 200px;
@@ -10077,7 +10127,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   display: none;
 }
 .article-premium-buy {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   margin-top: 25px;
   border-top: 5px solid rgba(0, 0, 0, 0.1);
   border-bottom: 5px solid rgba(0, 0, 0, 0.1);
