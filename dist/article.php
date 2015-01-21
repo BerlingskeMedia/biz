@@ -1,5 +1,7 @@
 <? require_once("../../dummy/dummy.php") ?>
 
+<?php $imageSize = rand(0,1); ?>
+
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9" lang="da"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="da"><!--<![endif]-->
@@ -16,6 +18,7 @@
 
   <?php include("./inc/header.php"); ?>
 
+Billedestørrelse: <?php echo $imageSize; ?>
   <div class="container">
     <div class="rat-tail desktop-banner">
     <? dummy("ad@960x180") ?>
@@ -54,12 +57,13 @@
             </div>    
 
 
-          <? if (dumb_luck("50%")): ?>
+          
+          <?php if($imageSize == '0'): ?>
             <figure class="article-image">
               <img src="<? dummy("image@940x,16:9") ?>" alt="" class="img-responsive" />
-              <? if (dumb_luck("50%")): ?><figcaption><i class="fa fa-camera"></i> <? dummy("text@teaser") ?> <span> Foto: <? dummy("text@author") ?></span></figcaption><? endif ?>
+              <? if (dumb_luck("90%")): ?><figcaption><i class="fa fa-camera"></i> <? dummy("text@teaser") ?> <span> Foto: <? dummy("text@author") ?></span></figcaption><? endif ?>
             </figure>
-          <? endif ?>
+          <?php endif; ?>
 
           
 
@@ -75,7 +79,12 @@
           <div class="col-md-8 col-md-push-4">
           
             <div class="article-content">
-
+              <?php if($imageSize == '1'): ?>
+            <figure class="article-image">
+              <img src="<? dummy("image@940x,16:9") ?>" alt="" class="img-responsive" />
+              <? if (dumb_luck("90%")): ?><figcaption><i class="fa fa-camera"></i> <? dummy("text@teaser") ?> <span> Foto: <? dummy("text@author") ?></span></figcaption><? endif ?>
+            </figure>
+          <?php endif; ?>
 
               <div class="article-social article-social-top">
                     <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
