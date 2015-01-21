@@ -155,7 +155,7 @@ body {
     
 <aside class="col-md-6">
 <h3>People</h3>
-    <p><a href="mailto:mih@berlingskemdia.dk">Mikael Hjort</a> - 25 45 63 49</p>
+    <p><a href="mailto:mih@berlingskemdia.dk">Mikael Hjorth</a> - 25 45 63 49</p>
     <p><a href="mailto:xjewa@berlingskemdia.dk">Jens Wartenberg</a> - 29 86 10 10</p>
     <p><a href="mailto:tvf@berlingskemdia.dk">Troels Frederiksen</a> - 27 22 20 80</p>
     <p><a href="mailto:bsk@berlingskemdia.dk">Bo Skakke</a> - 20 61 67 68</p>
