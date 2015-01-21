@@ -34,6 +34,9 @@ body {
     font-style: italic;
     font-size: 12px;
   }
+  li.nuke:after {
+    content: 'Deprecated...'; 
+  } 
 
   li a {
     padding: 0 4px;
@@ -55,6 +58,12 @@ body {
     content: 'Not started'; 
   }
   /* In pregress */
+  li.nuke a {
+     text-decoration: line-through;
+      color: #666;
+      cursor: default;
+  }
+  /* In pregress */
   li.b a {
     background: rgba(255,204,51,.3);
     color: #663300;
@@ -74,7 +83,7 @@ body {
     background: rgba(255,153,51,.7);
   }
   li.c:after  {
-    content: 'Needs approval'; 
+    content: 'Waiting for approval'; 
   }
 
   /* Ready for development */
@@ -145,7 +154,7 @@ body {
           <li class="c"><a href="/dist/page-text-premium-2.php">Help page 2</a></li>
           <li class="c"><a href="/dist/page-text-premium-3.php">Help page 3</a></li>
           <li class="c"><a href="/dist/page-text-premium-4.php">Help page 4</a></li>
-          <li class="a"><a href="#">My premium articles</a></li>
+          <li class="nuke"><a href="#">My premium articles</a></li>
           
         
         </ul>
