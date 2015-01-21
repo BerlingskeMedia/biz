@@ -1,5 +1,5 @@
 <? require_once("../../dummy/dummy.php") ?>
-
+<?php $imageSize = rand(0,2); ?>
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9" lang="da"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="da"><!--<![endif]-->
@@ -58,12 +58,9 @@
             </div>    
 
 
-          <? if (dumb_luck("50%")): ?>
-            <figure class="article-image">
-              <img src="<? dummy("image@940x,16:9") ?>" alt="" class="img-responsive" />
-              <? if (dumb_luck("50%")): ?><figcaption><i class="fa fa-camera"></i> <? dummy("text@teaser") ?> <span> Foto: <? dummy("text@author") ?></span></figcaption><? endif ?>
-            </figure>
-          <? endif ?>
+            <?php if($imageSize == '0'): ?>
+              <?php include('inc/asset-article-image.php') ?>
+            <?php endif; ?>
 
           
 
@@ -80,7 +77,9 @@
           <div class="col-md-8 col-md-push-4">
           
             <div class="article-content">
-
+            <?php if($imageSize == '1'): ?>
+              <?php include('inc/asset-article-image.php') ?>
+            <?php endif; ?>
 
               <div class="article-social article-social-top">
                     <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
@@ -154,6 +153,7 @@
             <p><a href="somedoc.pdf" class="btn btn-default btn-premium">Link to a pdf file</a>
             <a href="somedoc.xlsx" class="btn btn-default btn-premium">Link to a XLSX sheet</a>
             <a href="somedoc.doc" class="btn btn-default btn-premium">Link to a doc file</a></p>
+            <a href="somedoc.ppt" class="btn btn-default btn-premium">Link to a PowerPoint file</a></p>
           </div>              
 
           <div class="article-premium-buy" id="article-buy-options">

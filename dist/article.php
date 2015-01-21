@@ -58,10 +58,7 @@
 
           
           <?php if($imageSize == '0'): ?>
-            <figure class="article-image">
-              <img src="<? dummy("image@940x,16:9") ?>" alt="" class="img-responsive" />
-              <? if (dumb_luck("90%")): ?><figcaption><i class="fa fa-camera"></i> <? dummy("text@teaser") ?> <span> Foto: <? dummy("text@author") ?></span></figcaption><? endif ?>
-            </figure>
+           <?php include('inc/asset-article-image.php') ?>
           <?php endif; ?>
 
           
@@ -79,11 +76,8 @@
           
             <div class="article-content">
               <?php if($imageSize == '1'): ?>
-            <figure class="article-image">
-              <img src="<? dummy("image@940x,16:9") ?>" alt="" class="img-responsive" />
-              <figcaption><i class="fa fa-camera"></i> <? dummy("text@teaser") ?> <span> Foto: <? dummy("text@author") ?></span></figcaption>
-            </figure>
-          <?php endif; ?>
+                <?php include('inc/asset-article-image.php') ?>
+              <?php endif; ?>
 
               <div class="article-social article-social-top">
                     <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>

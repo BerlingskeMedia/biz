@@ -1,5 +1,5 @@
 <? require_once("../../dummy/dummy.php") ?>
-
+<?php $imageSize = rand(0,2); ?>
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9" lang="da"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="da"><!--<![endif]-->
@@ -60,10 +60,9 @@
 
 
           
-            <figure class="article-image">
-              <img src="<? dummy("image/!brandview@940x,16:9") ?>" alt="" class="img-responsive" />
-              <? if (dumb_luck("50%")): ?><figcaption><i class="fa fa-camera"></i> <? dummy("text@teaser") ?> <span> Foto: <? dummy("text@author") ?></span></figcaption><? endif ?>
-            </figure>
+           <?php if($imageSize == '0'): ?>
+              <?php include('inc/asset-article-image.php') ?>
+            <?php endif; ?>
           
 
           
@@ -81,6 +80,10 @@
           
             <div class="article-content">
 
+
+            <?php if($imageSize == '1'): ?>
+              <?php include('inc/asset-article-image.php') ?>
+            <?php endif; ?>
 
               <div class="article-social article-social-top">
                     <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
