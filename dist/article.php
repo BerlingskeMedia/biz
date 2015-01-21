@@ -1,6 +1,6 @@
 <? require_once("../../dummy/dummy.php") ?>
 
-<?php $imageSize = rand(0,1); ?>
+<?php $imageSize = rand(0,2); ?>
 
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9" lang="da"> <![endif]-->
@@ -18,7 +18,6 @@
 
   <?php include("./inc/header.php"); ?>
 
-Billedestørrelse: <?php echo $imageSize; ?>
   <div class="container">
     <div class="rat-tail desktop-banner">
     <? dummy("ad@960x180") ?>
@@ -82,7 +81,7 @@ Billedestørrelse: <?php echo $imageSize; ?>
               <?php if($imageSize == '1'): ?>
             <figure class="article-image">
               <img src="<? dummy("image@940x,16:9") ?>" alt="" class="img-responsive" />
-              <? if (dumb_luck("90%")): ?><figcaption><i class="fa fa-camera"></i> <? dummy("text@teaser") ?> <span> Foto: <? dummy("text@author") ?></span></figcaption><? endif ?>
+              <figcaption><i class="fa fa-camera"></i> <? dummy("text@teaser") ?> <span> Foto: <? dummy("text@author") ?></span></figcaption>
             </figure>
           <?php endif; ?>
 
