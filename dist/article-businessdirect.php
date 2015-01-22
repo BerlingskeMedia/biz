@@ -37,31 +37,16 @@
       
       <article class="col-md-12">
         <?php include('inc/article-header-businessdirect.php'); ?>
-        
 
-        <div class="banner banner-top-article desktop-banner">
-          <? dummy("ad@930x80") ?>
-        </div>
-
-        <div class="row">
-          <div class="col-md-8 col-md-push-4">
-          
-            <div class="article-content">
-            
-
-              <header class="article-head">
+        <header class="article-head">
 
           <a href="section.php" title="TITLE" class="article-tag"><span> <? if (dumb_luck("50%")): ?>Pressemeddelelse<? else: ?>Produktnyhed<? endif ?></span></a>
 
-          <?php if($imageSize == '1'): ?>
-           <?php include('inc/asset-article-image.php') ?>
-          <?php endif; ?>
+          
 
           
 
-           <h2 class="sponsor-header">
-           <? dummy("text@cat-bizdirect") ?>
-          </h2>
+           
 
            
 
@@ -69,7 +54,7 @@
           <h1 class="heading"><? dummy("text@headline") ?></h1>
 
 
-          <figure class="logo-article-sponsor"><img src="<? dummy("image!logo-bizdirect@150x,") ?>" width="" height="" alt="" /></figure>
+          
 
 
           
@@ -93,13 +78,28 @@
           
 
         </header>
+        
+
+        <div class="banner banner-top-article desktop-banner">
+          <? dummy("ad@930x80") ?>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8 col-md-push-4">
+          
+            <div class="article-content">
+            
+              <?php if($imageSize == '1'): ?>
+           <?php include('inc/asset-article-image.php') ?>
+          <?php endif; ?>
+              
 
               <div class="article-social article-social-top">
                     <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
                     <a href="#" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>
                     <a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>
                     <a href="#" class="icon-social-default"><i class="fa fa-envelope"></i></a>
-                    <span class="pull-right comments-teaser"><a href="#" class="icon-text scroll-comments"><? dummy("text@number") ?> kommentarer</a> <a href="#" class="icon-social-default scroll-comments"><i class="fa fa-comment"></i></a></span>
+                    <!-- <span class="pull-right comments-teaser"><a href="#" class="icon-text scroll-comments"><? dummy("text@number") ?> kommentarer</a> <a href="#" class="icon-social-default scroll-comments"><i class="fa fa-comment"></i></a></span> -->
               </div>
 
               
@@ -107,121 +107,39 @@
               
               
               <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
-              <? if (dumb_luck("25%")): ?>
-                <!-- *** Asset - factbox theme-->
-                <?php include("inc/asset-article-factbox-theme.php"); ?>
-              <? endif ?>
-
-
-              <? if (dumb_luck("100%")): ?>
               
-                <? if (dumb_luck("50%")): ?>
+
+
+
+              
+              
+              
                 <!-- *** Asset - factbox float right-->
-                <?php include("inc/asset-article-factbox-float-right.php"); ?>
+                <?php include("inc/asset-article-factbox-float-right-businessdirect.php"); ?>
               
-                <? else: ?>
-                <!-- *** Asset - factbox timeline  -->
-                <?php include("inc/asset-article-factbox-timeline.php"); ?>
-                <? endif ?>
-
-
-              <? endif ?>
+              
 
  
 
               
-              <? if (dumb_luck("50%")): ?>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <div class="embedded-node">
-                <iframe src="http://cf.datawrapper.de/2W39o/1/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="417"></iframe>
-               </div>
-            <? endif ?>
+              
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-              <div class="article-link-embedded">
-                <figure>
-                <a href="article.php" title="TITLE"><img src="<? dummy("image@70x,16:9") ?>" width="" height="" alt="" /></a>
-                </figure>
-                <div class="teaser-body">
-                  <span>Læs også:</span>
-                  <a href="article.php" title="TITLE"><? dummy("text@headline") ?></a>  
-                </div>
-                
-              </div>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <div class="article-link-embedded">
-                <figure>
-                <a href="article.php" title="TITLE"><img src="<? dummy("image@70x,16:9") ?>" width="" height="" alt="" /></a>
-                </figure>
-                <div class="teaser-body">
-                  <span>Læs også:</span>
-                  <a href="article.php" title="TITLE"><? dummy("text@headline") ?></a>  
-                </div>
-                
-              </div>
+              
 
-              <p><? dummy("text@paragraph") ?></p>
-                <!-- *** Asset - factbox float right-->
-                <?php include("inc/asset-article-factbox-embedded.php"); ?>
+              
+              
 
+              
 
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-
-              <? if (dumb_luck("100%")): ?>
-                <!-- *** Asset - factbox theme-->
-                <?php include("inc/asset-article-quiz.php"); ?>
-              <? endif ?>
-
-              <h2>H2:<? dummy("text@item") ?></h2>
-
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-
-              <? if (dumb_luck("50%")): ?>
-              <div class="media-embeds">
-              <blockquote class="twitter-tweet" lang="da"><p>Jubii! 11,8 millioner fra A. P. Møller Fonden til Helsingør Kommune! God dag;-) <a href="https://twitter.com/SthePol">@sthepol</a>&#10;<a href="http://t.co/LWfd9iStaU">http://t.co/LWfd9iStaU</a></p>&mdash; Benedikte Kiær (@benediktekiaer) <a href="https://twitter.com/benediktekiaer/status/533231937037414400">14. november 2014</a></blockquote>
-              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-              <? else: ?>
-              <blockquote class="bond-quote">
-                  
-                  <p>
-                    <? dummy("text@teaser") ?>
-                  </p>
-                  <small><? dummy("text@author") ?>- <? if (dumb_luck("50%")): ?><? dummy("text@teaser") ?><? endif ?></small>
-                  <div class="quote-share">SHARE QUOTE <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></div>
-
-              </blockquote>
-              <? endif ?>
-
+              
               <h3>H3:<? dummy("text@item") ?></h3>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <div class="sm-notitification">Article continues after factbox &hellip;</div>
-              <aside class="article-related-chunk list-xs">
-                <h1 class="aside-header aside-header-small">Mere om OW Bunker sagen</h1>
-                <ul>
-                  <? while (dumb_luck("4")): ?>
-                  <li class="teaser">
-                      <figure><a href="article.php"><img src="<? dummy("image@60x60,") ?>" width="" height="" alt="" /></a></figure>
-                      <div class="teaser-body">
-                        <h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>
-                        <footer><time> 3d.</time></footer>
-                      </div>
-
-                  </li>
-                  <? endwhile ?>
-                </ul>
-
-              </aside>
+              
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
               
-              <? if (dumb_luck("50%")): ?>
-              <!-- EMBEDDED IMAGE -->
-              <?php include("inc/asset-article-image-embedded.php"); ?>
-              
-              
-              <? endif ?>
+             
 
               
               <? if (dumb_luck("50%")): ?>
@@ -232,7 +150,7 @@
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
               <? endif ?>
 
-              <?php include("inc/asset-article-letterbox.php"); ?>
+              
 
               
               <?php include('inc/asset-article-tags.php'); ?>
