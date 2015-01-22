@@ -36,11 +36,26 @@
 
       
       <article class="col-md-12">
-        <?php include('inc/article-header-businessdirect.php'); ?>
+        
+<!-- 
+**********************************************
+Att. Bond dev: The header should be a custom content unit :-) 
+**********************************************
+-->
+<header class="header-sponsor-article header-businessdirect toggle-container">
+   <h1 class="site-title"><a href="frontpage-businessdirect.php" class="logo-businessdirect">BusinessDirect</a></h1>
+ <nav class="small">
+  <a href="#" class="toggle-btn">Hvad er BusinessDirect?</a>   
+  </nav>
+  <div class="brandview-info toggle-content">
+    <p>Business Direct er Berlingskes presseservice, hvor virksomheder kan offentliggøre pressemeddelelser på business.dk og i Berlingske Business.</p>
+    <p>Har du spørgsmål om Business Direct kan du kontakte Jesper Husen på tlf. 27 400 200 eller <a href="mailto:info@businessdirect.dk">info@businessdirect.dk</a> eller besøge vores hjemmeside: <a href="#">www.businessdirect.dk</a>.</p>    
+  </div>
+</header>
 
         <header class="article-head">
 
-          <a href="section-businessdirect.php" title="TITLE" class="article-tag"><span> <? if (dumb_luck("50%")): ?>Pressemeddelelse<? else: ?>Produktnyhed<? endif ?> :: <? dummy("text@cat-bizdirect") ?></span></a>
+          <a href="section.php" title="TITLE" class="article-tag"><span> Virksomhedsprofil</span></a>
 
           
 
@@ -51,23 +66,14 @@
            
 
           
-          <h1 class="heading"><? dummy("text@headline") ?></h1>
 
-
-          
 
 
           
-            <div class="article-byline-sponsored">
-              
-                <div class="article-author">
-                  
-                  <span>Toyota Danmark A/S<br>
-                  <div class="article-date">Mandag d. <time datetime="2014-02-14"><? dummy("text@pol-date") ?> kl. <? dummy("text@time") ?></time></div>
-                  </span>
-              </div>
-            
-            </div>    
+
+
+          
+           
 
 
           
@@ -80,81 +86,23 @@
         </header>
         
 
-        <div class="banner banner-top-article desktop-banner">
-          <? dummy("ad@930x80") ?>
-        </div>
+        
 
         <div class="row">
-          <div class="col-md-8 col-md-push-4">
+          <div class="col-md-8 col-md-push-2">
           
             <div class="article-content">
             
-              <?php if($imageSize == '1'): ?>
-           <?php include('inc/asset-article-image.php') ?>
-          <?php endif; ?>
+         
               
+            <figure class="logo-article-sponsor text-center"><img src="<? dummy("image!logo-bizdirect@200x,") ?>" width="" height="" alt="" /></figure>
 
-              <div class="article-social article-social-top">
-                    <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>
-                    <a href="#" class="icon-social-default"><i class="fa fa-envelope"></i></a>
-                    <!-- <span class="pull-right comments-teaser"><a href="#" class="icon-text scroll-comments"><? dummy("text@number") ?> kommentarer</a> <a href="#" class="icon-social-default scroll-comments"><i class="fa fa-comment"></i></a></span> -->
-              </div>
-
+              <h1 class="header">Toyota Danmark A/S</h1>
               
               
               
+              <h2 class="article-summary">Fra væv til vogn – Toyota har en lang historie og stolte traditioner. I dag har Toyota nogle af verdens mest tilfredse bilejere.</h2>
               
-              <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
-              
-
-
-
-              
-              
-              
-                <!-- *** Asset - factbox float right-->
-                <?php include("inc/asset-article-factbox-float-right-businessdirect.php"); ?>
-              
-              
-
- 
-
-              
-              
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-
-              
-
-              
-              
-
-              
-
-              
-              <h3>H3:<? dummy("text@item") ?></h3>
-              
-
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-
-              
-             
-
-              
-              <? if (dumb_luck("50%")): ?>
-              <!-- VIDEOS -->
-              <div class="article-video">
-                <iframe width="425" height="349" src="http://www.youtube.com/embed/FKWwdQu6_ok" frameborder="0" allowfullscreen></iframe>
-              </div>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <? endif ?>
-
-              
-
-              
-              <?php include('inc/asset-article-tags.php'); ?>
-
 
               <div class="article-social text-center">
                     <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
@@ -163,10 +111,82 @@
               </div>
 
 
+              <div class="sm-notitification">Article continues after factbox &hellip; </div>
+<aside class="article-fact article-fact-float-right">
+  
+  <h1 class="aside-header">Progressive</h1>
+  
+
+
+<dl>
+  <dt>Virksomhed</dt>
+  <dd>EDC</dd>
+  <dt>Branche</dt>
+  <dd>Ejendomme</dd>
+  <dt>Adresse</dt>
+  <dd>Mynstersvej 5, 1827, Frederiksberg C</dd>
+  <dt>Telefon</dt>
+  <dd>33 26 77 77</dd>
+  <dt>Web site</dt>
+  <dd><a href="http://somesite.dk" target="_blank" rel="nofollow">www.somesite.dk</a></dd>
+</dl>
+
+
+  
+</aside><!-- Article factbox -->
+              
+              
+               
+
+<p>
+Toyota Motor Corporation har kørt på alle verdens veje i mange år. Det startede i 1937 i Japan, hvor Kiichiro Toyoda kastede sig ud i at udvide sin fars banebrydende vævemaskine-virksomhed til bilmarkedet. I 1963, 16 år senere, landede den første Toyota i Danmark som det første land i Europa. Nu hvor Toyota har passeret sit 75-års jubilæum i verden og 50-års jubilæum i Danmark, er virksomheden blandt verdens ledende bilproducenter.
+
+<h2>Toyota i Danmark</h2>
+
+<p>Toyota er et af de mærker, der kører flest biler af på vejene i Danmark. Det løber op i næsten 300.000 biler. Vejen til denne succes skyldes primært tre ting – dygtige forhandlere, passionerede medarbejdere og gode biler.</p>
+
+<p>Toyota er verdens største bilproducent med et samlet årligt salg på over 10 millioner biler fordelt på over 170 lande. Toyota fremstiller et bredt udvalg af benzin-, diesel-, brint- og hybridbiler og beskæftiger globalt ca. 320.000 medarbejdere.</p>
+
+<p>I Danmark har vi samlet 2.000 medarbejdere og 26 forhandlere med tilsammen 68 udsalgssteder og 16 autoriserede reparatører, der alle er klar til at give Toyotas kunder branchens bedste kundeservice.</p>
+
+<h2>Spidskompetence: Kundetilfredshed!</h2>
+
+<p>Toyota-bilejere har i mange år været blandt de allermest tilfredse i Danmark. Toyota Avensis og Toyota Yaris har i flere år toppet listerne for kundetilfredshed i deres klasser på de største bilmarkeder i hele verden og i særlig grad i Europa, hvor Toyota har opbygget et stærkt ry for pålidelighed og god kundeservice.</p>
+
+<p>I 2014 kunne Toyotas forhandlere og Toyotas værksteder endnu engang glæde sig over at have Danmarks mest tilfredse kunder. Det viser tallene fra FDM's AutoIndex 2014, der er den største tilfredshedsundersøgelse i bilbranchen i Danmark, hvor 35.000 danske bilejere har svaret på spørgsmål om tilfredsheden med deres bil</p>
+
+<p>For 12. år i træk indtager Toyota førstepladsen som det bilmærke, der både har de mest tilfredse værkstedskunder, og det bilmærke, hvor kunderne er mest tilfredse med forhandleren.</p>
+
+<h2>Hybrid hitter hos Toyota</h2>
+
+<p>Tilfredsheden er ekstra høj hos de bilejere, der kører i en hybridbil fra Toyota. Toyota introducerede helt tilbage i 1997 verdens første masseproducerede hybridbil  Prius. Siden er produktionen af hybridbiler steget støt, og der er i dag solgt over 7 mio. Toyota-hybridbiler i verden. I Danmark fylder Toyota-hybridbiler også mere og mere på vejene, og flere og flere danskere har opdaget de mange fordele ved en hybridbil som fx øget køreglæde bag rattet, stressfri og støjsvag kørsel samt kørsel længere på literen og dermed lave driftsomkostninger.</p>
+
+<p>I Danmark sælges der over 1.000 Toyota hybridbiler om året, hvor Toyota Yaris Hybrid er den mest populære. Herefter følger Toyota Auris Hybrid, Toyota Prius og Toyota Prius+</p>
+              
+            
+
+              
+             
+
+              
+              
+
+              
+
+              
+              
+
+
+              <div class="article-social text-center">
+                    <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>
+              </div>
+
 <section class="module-sm ">
     <div class="ad-businessdirect">
 
-      <h1>Får din virksomhed nok opmærksomhed?</h1>
+      <h1>Øg din omsætning - Prøv Business Direct</h1>
       <p>Mangler dit produkt opmærksomhed fra den købedygtige kunde eller beslutningstager?</p> 
       <p><a href="http://www.businessdirect.dk" target="_blank">Læs mere om Business Direct</a></p>
     </div>
@@ -176,7 +196,7 @@
                
                 <section class="module-top-lg module">
                 
-              <h1 class="section-header">Read also</h1>
+              <h1 class="section-header">More from Toyota Danmark A/S</h1>
               
               <ul class="list list-xs ">
               <? while (dumb_luck("5")): ?>
@@ -252,16 +272,16 @@
           </div><!-- col -->
           
           <!-- SIDEBAR  -->
-          <aside class="col-md-4 col-md-pull-8">
-          <div class="article-sidebar">
+          <!-- <aside class="col-md-4 col-md-pull-8">
+          <div class="article-sidebar"> -->
 
 
-          <?php include('inc/article-content-stream.php'); ?>
+          
 
           
           
-            </div><!-- article-sidebar -->
-          </aside><!-- col -->
+            <!-- </div> --><!-- article-sidebar -->
+          <!-- </aside> --><!-- col -->
 
 
         </div><!-- row -->

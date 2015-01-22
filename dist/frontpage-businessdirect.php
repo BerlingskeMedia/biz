@@ -36,137 +36,74 @@
 
       
       <article class="col-md-12">
-        <?php include('inc/article-header-businessdirect.php'); ?>
+        
+<!-- 
+**********************************************
+Att. Bond dev: The header should be a custom content unit :-) 
+**********************************************
+-->
+<header class="header-sponsor-article header-businessdirect toggle-container">
+   <h1 class="site-title"><a href="frontpage-businessdirect.php" class="logo-businessdirect">BusinessDirect</a></h1>
+ <nav class="small">
+  <a href="#" class="toggle-btn">Hvad er BusinessDirect?</a>   
+  </nav>
+  <div class="brandview-info toggle-content">
+    <p>Business Direct er Berlingskes presseservice, hvor virksomheder kan offentliggøre pressemeddelelser på business.dk og i Berlingske Business.</p>
+    <p>Har du spørgsmål om Business Direct kan du kontakte Jesper Husen på tlf. 27 400 200 eller <a href="mailto:info@businessdirect.dk">info@businessdirect.dk</a> eller besøge vores hjemmeside: <a href="#">www.businessdirect.dk</a>.</p>    
+  </div>
+</header>
 
         <header class="article-head">
 
-          <a href="section-businessdirect.php" title="TITLE" class="article-tag"><span> <? if (dumb_luck("50%")): ?>Pressemeddelelse<? else: ?>Produktnyhed<? endif ?> :: <? dummy("text@cat-bizdirect") ?></span></a>
-
           
 
           
 
-           
-
-           
-
           
-          <h1 class="heading"><? dummy("text@headline") ?></h1>
-
-
-          
-
-
-          
-            <div class="article-byline-sponsored">
-              
-                <div class="article-author">
-                  
-                  <span>Toyota Danmark A/S<br>
-                  <div class="article-date">Mandag d. <time datetime="2014-02-14"><? dummy("text@pol-date") ?> kl. <? dummy("text@time") ?></time></div>
-                  </span>
-              </div>
-            
-            </div>    
-
-
-          
-          
-
-          
-
           
 
         </header>
         
 
-        <div class="banner banner-top-article desktop-banner">
-          <? dummy("ad@930x80") ?>
-        </div>
+        
 
         <div class="row">
-          <div class="col-md-8 col-md-push-4">
+          <div class="col-md-8">
           
-            <div class="article-content">
+            <div class="section-content">
             
-              <?php if($imageSize == '1'): ?>
-           <?php include('inc/asset-article-image.php') ?>
-          <?php endif; ?>
+         
               
+            <article class="teaser">
+              <figure class="teaser-img"><a href="article-businessdirect.php"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
+              <h2 class="header"><a href="article-business-direct.php"><? dummy("text@headline") ?></a></h2>
+            </article>
 
-              <div class="article-social article-social-top">
-                    <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>
-                    <a href="#" class="icon-social-default"><i class="fa fa-envelope"></i></a>
-                    <!-- <span class="pull-right comments-teaser"><a href="#" class="icon-text scroll-comments"><? dummy("text@number") ?> kommentarer</a> <a href="#" class="icon-social-default scroll-comments"><i class="fa fa-comment"></i></a></span> -->
+              <div class="row">
+                <? while (dumb_luck("2")): ?>
+                <div class="col-md-6">
+                  <article class="teaser">
+                  <figure class="teaser-img"><a href="article-businessdirect.php"><img src="<? dummy("image@300x,16:9") ?>" width="" height="" alt="" /></a></figure>
+                  <h2 class="header"><a href="article-business-direct.php"><? dummy("text@headline") ?></a></h2>
+                  </article>
+                </div>                  
+                <? endwhile ?>
               </div>
-
-              
-              
-              
-              
-              <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
+             
               
 
-
-
-              
-              
-              
-                <!-- *** Asset - factbox float right-->
-                <?php include("inc/asset-article-factbox-float-right-businessdirect.php"); ?>
-              
-              
-
- 
-
-              
-              
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-
-              
-
-              
-              
-
-              
-
-              
-              <h3>H3:<? dummy("text@item") ?></h3>
-              
-
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-
-              
              
 
-              
-              <? if (dumb_luck("50%")): ?>
-              <!-- VIDEOS -->
-              <div class="article-video">
-                <iframe width="425" height="349" src="http://www.youtube.com/embed/FKWwdQu6_ok" frameborder="0" allowfullscreen></iframe>
-              </div>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <? endif ?>
 
-              
-
-              
-              <?php include('inc/asset-article-tags.php'); ?>
+             
 
 
-              <div class="article-social text-center">
-                    <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>
-              </div>
-
+             
 
 <section class="module-sm ">
     <div class="ad-businessdirect">
 
-      <h1>Får din virksomhed nok opmærksomhed?</h1>
+      <h1>Øg din omsætning - Prøv Business Direct</h1>
       <p>Mangler dit produkt opmærksomhed fra den købedygtige kunde eller beslutningstager?</p> 
       <p><a href="http://www.businessdirect.dk" target="_blank">Læs mere om Business Direct</a></p>
     </div>
@@ -176,7 +113,7 @@
                
                 <section class="module-top-lg module">
                 
-              <h1 class="section-header">Read also</h1>
+              <h1 class="section-header">More from Toyota Danmark A/S</h1>
               
               <ul class="list list-xs ">
               <? while (dumb_luck("5")): ?>
@@ -252,12 +189,23 @@
           </div><!-- col -->
           
           <!-- SIDEBAR  -->
-          <aside class="col-md-4 col-md-pull-8">
+          <aside class="col-md-4 ">
           <div class="article-sidebar">
 
+          <section>
+            
+            <h1 class="section-header">
+              Seneste virksomheder
+            </h1>
 
-          <?php include('inc/article-content-stream.php'); ?>
+          </section>
+          
+          <ul class="list list-xs">
+            <? while (dumb_luck("10")): ?>
+            <li class="teaser"><h2 class="header"><a href="profile-businessdirect.php"><? dummy("text@businessnames") ?></a></li>
 
+          <? endwhile ?>
+          </ul>
           
           
             </div><!-- article-sidebar -->

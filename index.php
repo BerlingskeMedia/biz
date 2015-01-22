@@ -165,11 +165,11 @@ body {
 
         <h4>BusinessDirect</h4>
         <ul>
-        <li class="a"><a href="#">Frontpage</a>
+        <li class="b"><a href="dist/frontpage-businessdirect.php">Frontpage</a>
         <li class="b"><a href="dist/article-businessdirect.php">Press announcment (article)</a>
-        <li class="a"><a href="#">Company profile </a>
-        <li class="a"><a href="#">Latest press releases</a>
-        <li class="a"><a href="#">Text pages ("What is Business Direct")</a>
+        <li class="b"><a href="dist/profile-businessdirect.php">Company profile </a>
+        <li class="b"><a href="dist/section-businessdirect.php">Latest press releases</a>
+        <li class="nuke"><a href="#">Text pages ("What is Business Direct")</a>
         <li class="a"><a href="#">Backend</a>
         </ul>
         <h3>Toolbox</h3>

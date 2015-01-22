@@ -41,9 +41,16 @@
 }
 @font-face {
   font-family: 'Berlingske';
+  src: url('../fonts/berlingskeserif-rg.eot');
+  src: url('../fonts/berlingskeserif-rg.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-rg.woff2') format('woff2'), url('../fonts/berlingskeserif-rg.woff') format('woff'), url('../fonts/berlingskeserif-rg.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Berlingske';
   src: url('../fonts/berlingskeserif-bd.eot');
   src: url('../fonts/berlingskeserif-bd.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-bd.woff2') format('woff2'), url('../fonts/berlingskeserif-bd.woff') format('woff'), url('../fonts/berlingskeserif-bd.ttf') format('truetype');
-  font-weight: 300;
+  font-weight: 600;
   font-style: normal;
 }
 .quote-letter {
@@ -8833,13 +8840,25 @@ a.btn-premium:after {
   margin-left: 5px;
   color: rgba(0, 0, 0, 0.4);
 }
+.ad-businessdirect {
+  background: #003e51;
+  padding: 20px;
+  color: #fff;
+}
+.ad-businessdirect h1 {
+  font-size: 25px;
+}
+.ad-businessdirect p {
+  font-size: 90%;
+}
 .header-businessdirect .logo-businessdirect {
-  width: 240px;
+  width: 260px;
   float: left;
   display: inline-block;
   height: 41px;
   text-indent: -9999px;
   margin-right: 10px;
+  background-position: left bottom 3px;
 }
 .header-businessdirect h1 {
   float: left;
@@ -9055,6 +9074,9 @@ a.btn-premium:after {
 }
 .header-35 .header {
   font-size: 35px;
+}
+.teaser-nodate time {
+  display: none;
 }
 .teaser-body {
   overflow: hidden;
