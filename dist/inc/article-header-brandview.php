@@ -1,10 +1,10 @@
 <header class="header-sponsor-article header-brandview toggle-container">
   
-  <h1 class="site-title"><a href="#" class="logo-brandview">BrandView</a><span>Columbus</span></h1>
+  <a href="#" class="logo-brandview">BrandView</a>
   
 
 <nav class="small">
-  <a href="#" class="toggle-btn">Hvad er BrandView?</a>   
+  <a href="#" class="toggle-btn">Om BrandView</a>   
   </nav>
   <div class="brandview-info toggle-content">
     <p>BrandView er en service fra Berlingske Media, hvor virksomheder har mulighed for at kommunikere deres specialviden direkte til brugere og læsere af Berlingske.</p>

@@ -41,13 +41,6 @@
 }
 @font-face {
   font-family: 'Berlingske';
-  src: url('../fonts/berlingskeserif-rg.eot');
-  src: url('../fonts/berlingskeserif-rg.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-rg.woff2') format('woff2'), url('../fonts/berlingskeserif-rg.woff') format('woff'), url('../fonts/berlingskeserif-rg.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Berlingske';
   src: url('../fonts/berlingskeserif-bd.eot');
   src: url('../fonts/berlingskeserif-bd.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-bd.woff2') format('woff2'), url('../fonts/berlingskeserif-bd.woff') format('woff'), url('../fonts/berlingskeserif-bd.ttf') format('truetype');
   font-weight: 600;
@@ -8120,6 +8113,9 @@ form,
 figcaption {
   text-rendering: optimizeLegibility;
 }
+.site-header {
+  margin-bottom: 10px;
+}
 @media (max-width: 991px) {
   .site-header {
     display: none;
@@ -8419,16 +8415,12 @@ a.header-tool-icon:hover {
   overflow: hidden;
 }
 .toggle-content {
-  max-height: 0;
   overflow: hidden;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  display: none;
   height: auto;
 }
 .toggle-active .toggle-content {
-  max-height: none;
-  height: auto;
+  display: block;
 }
 .teaser {
   margin-bottom: 25px;
@@ -8449,9 +8441,7 @@ a.header-tool-icon:hover {
 .teaser:after {
   clear: both;
 }
-.teaser h1.header,
-.teaser h2.header,
-.teaser h3.header {
+.teaser .header {
   margin: 0 0 10px 0;
 }
 .teaser h2 {
@@ -8585,7 +8575,7 @@ a.header-tool-icon:hover {
 .list-xs .header {
   font-size: 14px;
   font-weight: 600;
-  margin-bottom: 5px!important;
+  margin-bottom: 0px;
 }
 .teaser-fixed-height .header {
   height: 60px;
@@ -8743,15 +8733,14 @@ h2.page-header:before {
   display: none;
 }
 .nav-responsive ul {
-  top: 2em;
-  left: 0;
-}
-.nav-responsive.nav-responsive-right {
-  float: right;
+  /*		top: 2em;
+		left: 0;
+*/
 }
 .nav-responsive.nav-responsive-right ul {
-  right: 0;
-  left: auto;
+  /*			right: 0;
+			left: auto;
+*/
 }
 @media (max-width: 767px) {
   .nav-responsive ul {
@@ -8782,29 +8771,6 @@ h2.page-header:before {
 }
 .nav-responsive.show-nav ul li a {
   color: #fff;
-}
-.header-sponsor-article h1 {
-  font-size: 100%;
-}
-.header-sponsor-article span {
-  font-size: 40px;
-}
-.header-sponsor-article nav {
-  text-align: right;
-  margin-bottom: 0;
-  font-weight: 600;
-}
-.header-sponsor-article nav a {
-  color: rgba(0, 0, 0, 0.6);
-}
-.header-sponsor-article nav a:hover {
-  color: rgba(0, 0, 0, 0.8);
-}
-@media (max-width: 767px) {
-  .header-sponsor-article .logo-premium {
-    float: none;
-    font-size: 25px;
-  }
 }
 .btn-premium {
   margin-bottom: 10px;
@@ -8851,38 +8817,68 @@ a.btn-premium:after {
 .ad-businessdirect p {
   font-size: 90%;
 }
+.header-sponsor-article {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 5px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+.header-sponsor-article:before,
+.header-sponsor-article:after {
+  content: " ";
+  display: table;
+}
+.header-sponsor-article:after {
+  clear: both;
+}
+.header-sponsor-article:before,
+.header-sponsor-article:after {
+  content: " ";
+  display: table;
+}
+.header-sponsor-article:after {
+  clear: both;
+}
+.header-sponsor-article nav {
+  margin-bottom: 0;
+  font-weight: 600;
+  line-height: 30px;
+  display: inline-block;
+  float: right;
+}
+.header-sponsor-article nav li {
+  font-size: 90%;
+}
+.header-sponsor-article nav a {
+  color: rgba(0, 0, 0, 0.6);
+}
+.header-sponsor-article nav a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+.header-sponsor-article .toggle-content {
+  padding-top: 10px;
+}
 .header-businessdirect .logo-businessdirect {
-  width: 260px;
+  width: 230px;
   float: left;
   display: inline-block;
-  height: 41px;
+  height: 30px;
   text-indent: -9999px;
   margin-right: 10px;
-  background-position: left bottom 3px;
-}
-.header-businessdirect h1 {
-  float: left;
-  margin-top: 0;
-}
-.header-businessdirect span {
-  font-weight: 600;
+  background-position: left 50%;
 }
 .header-brandview .logo-brandview {
-  width: 200px;
-  height: 41px;
+  width: 185px;
+  height: 30px;
+  float: left;
   text-indent: -9999px;
   margin-right: 10px;
-}
-.header-brandview h1 {
-  float: left;
-  margin-top: 0;
-}
-.header-brandview span {
-  font-weight: 600;
+  display: inline-block;
+  background-position: left center;
 }
 .header-premium {
-  line-height: 40px;
-  margin-bottom: 10px;
+  line-height: 30px;
 }
 @media (max-width: 767px) {
   .header-premium {
@@ -8906,24 +8902,9 @@ a.btn-premium:after {
   clear: both;
 }
 .header-premium .logo-premium {
-  line-height: 1;
-  float: left;
-  margin-bottom: 0;
-}
-.header-premium .logo-premium span {
-  font-size: 20px;
-  line-height: 40px;
-  padding: 0 20px;
-}
-.brandview-info {
-  clear: both;
-}
-.logo-premium {
   margin-top: 0;
   text-transform: uppercase;
   font-weight: normal;
-}
-.logo-premium span {
   display: inline-block;
   background-color: #222;
   background-image: -webkit-linear-gradient(top, #333333 0%, #000000 100%);
@@ -8932,30 +8913,19 @@ a.btn-premium:after {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff333333', endColorstr='#ff000000', GradientType=0);
   color: #fff;
-  line-height: 1;
-  padding: 0 .1em;
-  font-family: "Proxima", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 30px;
+  padding: 0 1em;
   font-family: Berlingske;
   -webkit-transition: background-color 0.1s ease;
   -o-transition: background-color 0.1s ease;
   transition: background-color 0.1s ease;
 }
-.logo-premium:hover span {
+.header-premium .logo-premium:hover {
   background: #000;
+  color: #fff;
 }
-.header-sponsor-article {
-  padding-top: 10px;
-  border-top: 5px solid rgba(0, 0, 0, 0.1);
-}
-.header-sponsor-article .logo-brandview {
-  float: left;
-}
-.logo-brandview {
-  margin-top: 0;
-}
-.logo-brandview span {
-  display: inline-block;
-  font-weight: 200;
+.brandview-info {
+  clear: both;
 }
 .section-title {
   margin-bottom: 10px;
@@ -9066,6 +9036,10 @@ a.btn-premium:after {
 .list li footer {
   margin-bottom: 5px;
 }
+.teaser-border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
 .header-25 .header {
   font-size: 25px;
 }
@@ -9084,6 +9058,9 @@ a.btn-premium:after {
 .teaser-body span {
   /*font-size: 12px;
 		font-weight: 600;*/
+}
+.teaser-body .header + footer {
+  margin-top: 5px;
 }
 .list-border .teaser {
   margin-bottom: 10px;
@@ -9120,7 +9097,7 @@ a.btn-premium:after {
   content: counter(toplist) ".";
   float: left;
   display: inline-block;
-  color: rgba(0, 0, 0, 0.5);
+  color: #cc0066;
   text-align: right;
   padding-right: .5em;
   font-weight: 200;
@@ -9232,9 +9209,10 @@ a.btn-premium:after {
 }
 .rat-tail {
   position: relative;
+  display: none;
   width: 960px;
   height: 180px;
-  margin: 20px -10px 10px;
+  margin: 0 -10px 10px;
 }
 .rat-tail .banner-left {
   position: absolute;
@@ -9372,6 +9350,11 @@ a.btn-premium:after {
   content: '';
   display: block;
   z-index: 0;
+}
+.article-head .article-tag-alt {
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: rgba(0, 0, 0, 0.8);
 }
 h1.heading {
   font-weight: normal;
@@ -9533,6 +9516,13 @@ h1.heading {
 }
 .article-related h1 {
   position: relative;
+}
+.article-byline-sponsored {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+.article-byline-sponsored .article-date {
+  margin-bottom: 0;
 }
 .article-byline {
   line-height: 1.2;

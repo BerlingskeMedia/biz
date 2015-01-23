@@ -40,29 +40,16 @@
 
         <header class="article-head">
 
-          <a href="section-businessdirect.php" title="TITLE" class="article-tag"><span> <? if (dumb_luck("50%")): ?>Pressemeddelelse<? else: ?>Produktnyhed<? endif ?> :: <? dummy("text@cat-bizdirect") ?></span></a>
+          <span  class="article-tag-alt"><? if (dumb_luck("50%")): ?>Press release<? else: ?>Product announcement<? endif ?> </span>
 
-          
-
-          
-
-           
-
-           
-
-          
+         
           <h1 class="heading"><? dummy("text@headline") ?></h1>
-
-
-          
-
-
           
             <div class="article-byline-sponsored">
               
                 <div class="article-author">
                   
-                  <span>Toyota Danmark A/S<br>
+                  <span>By <strong>Toyota Danmark A/S</strong> in category <strong><? dummy("text@cat-bizdirect") ?></strong><br>
                   <div class="article-date">Mandag d. <time datetime="2014-02-14"><? dummy("text@pol-date") ?> kl. <? dummy("text@time") ?></time></div>
                   </span>
               </div>

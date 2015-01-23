@@ -36,34 +36,8 @@
 
       
       <article class="col-md-12">
-        
-<!-- 
-**********************************************
-Att. Bond dev: The header should be a custom content unit :-) 
-**********************************************
--->
-<header class="header-sponsor-article header-businessdirect toggle-container">
-   <h1 class="site-title"><a href="frontpage-businessdirect.php" class="logo-businessdirect">BusinessDirect</a></h1>
- <nav class="small">
-  <a href="#" class="toggle-btn">Hvad er BusinessDirect?</a>   
-  </nav>
-  <div class="brandview-info toggle-content">
-    <p>Business Direct er Berlingskes presseservice, hvor virksomheder kan offentliggøre pressemeddelelser på business.dk og i Berlingske Business.</p>
-    <p>Har du spørgsmål om Business Direct kan du kontakte Jesper Husen på tlf. 27 400 200 eller <a href="mailto:info@businessdirect.dk">info@businessdirect.dk</a> eller besøge vores hjemmeside: <a href="#">www.businessdirect.dk</a>.</p>    
-  </div>
-</header>
-
-        <header class="article-head">
-
-          
-
-          
-
-          
-          
-
-        </header>
-        
+ 
+        <?php include('inc/article-header-businessdirect.php'); ?>       
 
         
 
@@ -74,17 +48,18 @@ Att. Bond dev: The header should be a custom content unit :-)
             
          
               
-            <article class="teaser">
+            <article class="teaser header-35 teaser-border-bottom">
               <figure class="teaser-img"><a href="article-businessdirect.php"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
-              <h2 class="header"><a href="article-business-direct.php"><? dummy("text@headline") ?></a></h2>
+              <h2 class="header"><a href="article-businessdirect.php"><? dummy("text@headline") ?></a></h2>
+              <p><? dummy("text@teaser") ?></p>
             </article>
 
               <div class="row">
-                <? while (dumb_luck("2")): ?>
-                <div class="col-md-6">
+                <? while (dumb_luck("3")): ?>
+                <div class="col-md-4">
                   <article class="teaser">
                   <figure class="teaser-img"><a href="article-businessdirect.php"><img src="<? dummy("image@300x,16:9") ?>" width="" height="" alt="" /></a></figure>
-                  <h2 class="header"><a href="article-business-direct.php"><? dummy("text@headline") ?></a></h2>
+                  <h2 class="header"><a href="article-businessdirect.php"><? dummy("text@headline") ?></a></h2>
                   </article>
                 </div>                  
                 <? endwhile ?>
@@ -111,78 +86,58 @@ Att. Bond dev: The header should be a custom content unit :-)
 
               <!-- READ ALSO -->
                
-                <section class="module-top-lg module">
+               <div class="row">
+                 
+                 <div class="col-md-6">
+                <section class=" module">
                 
-              <h1 class="section-header">More from Toyota Danmark A/S</h1>
+              <h1 class="section-header">Latests pressreleases</h1>
               
-              <ul class="list list-xs ">
+              <ul class="list list-xs list-image-left ">
               <? while (dumb_luck("5")): ?>
-                <li class="teaser">
-                  <div class="teaser-body">
-                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                  <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-                  </div>
-                  </li>
+
+              <li class="teaser">
+                      <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure>
+                      <div class="teaser-body">
+                        <h2 class="header"><a href="article-businessdirect.php"><? dummy("text@headline") ?></a></h2>
+                        <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> </footer>
+                      </div>
+                      </li>
                 <? endwhile ?>
               </ul>
 
-              </section><!-- read also -->
-              
+              </section><!-- read also -->   
 
+                 </div>
 
-              <div class="row">
+                 <div class="col-md-6">
+                <section class=" module">
                 
-              <div class="col-md-6">
-                
-                 <section>
-                
-              <h1 class="section-header">Read also</h1>
+              <h1 class="section-header">Latests product announcements</h1>
               
-              <ul class="list list-xs ">
+              <ul class="list list-xs list-image-left ">
               <? while (dumb_luck("5")): ?>
-                <li class="teaser">
-                  <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
-                  </li>
+
+              <li class="teaser">
+                      <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure>
+                      <div class="teaser-body">
+                        <h2 class="header"><a href="article-businessdirect.php"><? dummy("text@headline") ?></a></h2>
+                        <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> </footer>
+                      </div>
+                      </li>
                 <? endwhile ?>
               </ul>
 
-              
+              </section><!-- read also -->   
+                   
+                 </div>
 
-              </section><!-- read also -->
-
-
-              </div><!-- col -->
-              <div class="col-md-6">
-              
-                  
-      <section>
-    <h1 class="section-header">Most read</h1>
-      <ul class="list toplist toplist-lg list-xs list-image-right">
-        <? while (dumb_luck("5")): ?>
-          <li class="teaser">
-          <? if (dumb_luck("66%")): ?><figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure><? endif ?>
-          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
-          </li>
-        <? endwhile ?>
-      </ul>
-      </section>
-
-                  
-
-              </div>
-              </div>
-              <div class="comments" id="article-comments">
+               </div>
                 
-             
+              
 
 
-
-                <br><br><br>
-                  <div class="text-center">Comments from Disquss </div>
-                  <br><br><br>
-
-              </div>
-
+              
 
 
             </div><!-- article-content -->
@@ -192,21 +147,33 @@ Att. Bond dev: The header should be a custom content unit :-)
           <aside class="col-md-4 ">
           <div class="article-sidebar">
 
-          <section>
+          <section class="module">
             
             <h1 class="section-header">
-              Seneste virksomheder
+              New companies
             </h1>
 
-          </section>
+          
           
           <ul class="list list-xs">
             <? while (dumb_luck("10")): ?>
-            <li class="teaser"><h2 class="header"><a href="profile-businessdirect.php"><? dummy("text@businessnames") ?></a></li>
+            <li class="teaser"><h2 class="header"><a href="profile-businessdirect.php"><? dummy("text@businessnames") ?></a></h2></li>
 
           <? endwhile ?>
           </ul>
-          
+          </section>
+
+           <section class="module">
+          <h1 class="section-header">Most read</h1>
+        <ul class="list toplist toplist-lg list-xs list-image-right">
+        <? while (dumb_luck("5")): ?>
+          <li class="teaser">
+          <? if (dumb_luck("66%")): ?><figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure><? endif ?>
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul>
+      </section>
           
             </div><!-- article-sidebar -->
           </aside><!-- col -->
