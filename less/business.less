@@ -242,6 +242,7 @@ a.header-tool-icon {
 	overflow: hidden;
 	display: none;
 	height: auto;
+	clear: both;
 }
 
 .toggle-active .toggle-content {
@@ -712,6 +713,10 @@ a.btn-premium:after {
 	border-top: 4px solid rgba(0,0,0,.1);
 	padding-top: 10px;
 }
+.section-header-sm {
+	.section-header;
+	margin-bottom: 10px;
+}
 .section-header-link {
 	float: right;
 	font-weight: 300;
@@ -988,6 +993,28 @@ a.btn-premium:after {
 		background: #fff;
 		margin: 0 auto;
 	} 
+}
+.form-oneline {
+	position: relative;
+	button {
+		position: absolute;
+		top: .25em;
+		right: .3em;
+	}
+}
+.form-signup {
+	.checkbox {
+		margin: 5px 0;
+	}
+	.form-group {
+		margin-bottom: 0;
+	}
+}
+.label-small {
+	font-size: 11px;
+	input[type=checkbox]{
+		margin-top: 2px;
+	}
 }
 .article-head {
 	position: relative;

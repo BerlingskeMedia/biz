@@ -12,10 +12,9 @@ Att. Bond dev: The header should be a custom content unit :-)
 <nav class="nav-responsive nav-responsive-right">
   <a href="#" class="nav-toggle btn btn-primary">Menu <i class="fa fa-caret-down"></i></a>
   <ul>
-    <li><a href="#">Aktivér abonnement</a></li>
     <li><a href="#">Redigér profil</a></li>
     <li><a href="#">Opret nyhed</a></li>
-    <li><a href="#">Hjælp</a></li>
+    <li><a href="#">Om Business Direct</a></li>
    </ul>
   </nav>
 
@@ -23,6 +22,7 @@ Att. Bond dev: The header should be a custom content unit :-)
 <nav class="nav-responsive nav-responsive-right">
   <a href="#" class="nav-toggle btn btn-primary">Menu <i class="fa fa-caret-down"></i></a>
   <ul>
+    <li><a href="#" class="a-pink toggle-btn" >Om Business Direct</a></li>
     <li><a href="#" class="a-pink" data-toggle="modal" data-target="#modal-login">Log ind</a></li>
    </ul>
   </nav>
@@ -34,5 +34,3 @@ Att. Bond dev: The header should be a custom content unit :-)
   </div>
 
 </header>
-
-
