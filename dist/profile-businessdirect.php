@@ -39,13 +39,7 @@
         
         <?php include('inc/article-header-businessdirect.php'); ?>
 
-        <header class="article-head">
 
-          <a href="section.php" title="TITLE" class="article-tag-alt">Virksomhedsprofil</a>
-
-          
-
-        </header>
         
 
         
@@ -55,12 +49,12 @@
           
             <div class="article-content">
             
-         
-              
+         <header class="article-head">
+  <span class="article-tag-alt">Virksomhedsprofil</span>              
             <figure class="logo-article-sponsor"><img src="<? dummy("image!logo-bizdirect@200x,") ?>" width="" height="" alt="" /></figure>
 
               <h1 class="header">Toyota Danmark A/S</h1>
-              
+              </header>
               
               
               <h2 class="article-summary">Fra væv til vogn – Toyota har en lang historie og stolte traditioner. I dag har Toyota nogle af verdens mest tilfredse bilejere.</h2>
