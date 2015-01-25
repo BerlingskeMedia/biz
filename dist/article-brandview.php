@@ -41,7 +41,7 @@
         <header class="article-head">
 
 
-          <span class="article-tag"><span>SPONSERET INDHOLD</span></span>
+          <span class="article-tag sponsored"><span>SPONSERET INDHOLD</span></span>
           <h1 class="heading"><? dummy("text@headline") ?></h1>
 
 

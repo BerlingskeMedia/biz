@@ -315,6 +315,76 @@
     </div>
 
 
+
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+    <h1>List variations</h1>    
+    </div>  
+  
+
+  <div class="col-md-4">
+  <section>
+      <code>.list .list-light</code>
+                  <h1 class="section-header">I'm a list</h1>
+                  <ul class="list list-light">
+                    <? while (dumb_luck("5")): ?>
+                      <li class="teaser">
+                      <div class="teaser-body">
+                        <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+                      </div>
+                      </li>
+                    <? endwhile ?>
+                  </ul>
+      </section>
+    </div>
+
+  
+
+  <div class="col-md-4">
+
+ <section>
+      <code>.list .list-condenced</code>
+                  <h1 class="section-header">I'm a list</h1>
+                  <ul class="list list-condenced">
+                    <? while (dumb_luck("5")): ?>
+                      <li class="teaser">
+                      <div class="teaser-body">
+                        <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+                      </div>
+                      </li>
+                    <? endwhile ?>
+                  </ul>
+      </section>
+    </div>
+
+  
+
+  <div class="col-md-4">
+  <section>
+
+
+      </section>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="col-md-12">
     <h1>List with arrows</h1>    
     </div>  
