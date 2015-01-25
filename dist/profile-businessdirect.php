@@ -37,49 +37,11 @@
       
       <article class="col-md-12">
         
-<!-- 
-**********************************************
-Att. Bond dev: The header should be a custom content unit :-) 
-**********************************************
--->
-<header class="header-sponsor-article header-businessdirect toggle-container">
-   <h1 class="site-title"><a href="frontpage-businessdirect.php" class="logo-businessdirect">BusinessDirect</a></h1>
- <nav class="small">
-  <a href="#" class="toggle-btn">Hvad er BusinessDirect?</a>   
-  </nav>
-  <div class="brandview-info toggle-content">
-    <p>Business Direct er Berlingskes presseservice, hvor virksomheder kan offentliggøre pressemeddelelser på business.dk og i Berlingske Business.</p>
-    <p>Har du spørgsmål om Business Direct kan du kontakte Jesper Husen på tlf. 27 400 200 eller <a href="mailto:info@businessdirect.dk">info@businessdirect.dk</a> eller besøge vores hjemmeside: <a href="#">www.businessdirect.dk</a>.</p>    
-  </div>
-</header>
+        <?php include('inc/article-header-businessdirect.php'); ?>
 
         <header class="article-head">
 
-          <a href="section.php" title="TITLE" class="article-tag"><span> Virksomhedsprofil</span></a>
-
-          
-
-          
-
-           
-
-           
-
-          
-
-
-
-          
-
-
-          
-           
-
-
-          
-          
-
-          
+          <a href="section.php" title="TITLE" class="article-tag-alt">Virksomhedsprofil</a>
 
           
 
@@ -89,13 +51,13 @@ Att. Bond dev: The header should be a custom content unit :-)
         
 
         <div class="row">
-          <div class="col-md-8 col-md-push-2">
+          <div class="col-md-8">
           
             <div class="article-content">
             
          
               
-            <figure class="logo-article-sponsor text-center"><img src="<? dummy("image!logo-bizdirect@200x,") ?>" width="" height="" alt="" /></figure>
+            <figure class="logo-article-sponsor"><img src="<? dummy("image!logo-bizdirect@200x,") ?>" width="" height="" alt="" /></figure>
 
               <h1 class="header">Toyota Danmark A/S</h1>
               
@@ -254,17 +216,7 @@ Toyota Motor Corporation har kørt på alle verdens veje i mange år. Det starte
 
               </div>
               </div>
-              <div class="comments" id="article-comments">
-                
-             
-
-
-
-                <br><br><br>
-                  <div class="text-center">Comments from Disquss </div>
-                  <br><br><br>
-
-              </div>
+              
 
 
 
@@ -272,16 +224,64 @@ Toyota Motor Corporation har kørt på alle verdens veje i mange år. Det starte
           </div><!-- col -->
           
           <!-- SIDEBAR  -->
-          <!-- <aside class="col-md-4 col-md-pull-8">
-          <div class="article-sidebar"> -->
+          <aside class="col-md-4">
+          <div class="article-sidebar">
+
+          <section class="module-sm">
+            
+            <h1 class="section-header">
+              New companies
+            </h1>
+
+          
+          
+          <ul class="list list-xs list-light list-condenced">
+            <? while (dumb_luck("10")): ?>
+            <li class="teaser"><h2 class="header"><a href="profile-businessdirect.php"><? dummy("text@businessnames") ?></a></h2></li>
+
+          <? endwhile ?>
+          </ul>
+          </section>
+
+          <section class="module-sm">
+          <form class="form-signup">
+            <h1 class="section-header-sm">
+              Business Direct newsletter
+            </h1>
+            <p class="small"><? dummy("text@teaser") ?></p>
+            <div class="form-group form-oneline ">
+              
+              <input type="email" id="signup" class="form-control input-sm" placeholder="Indtast din email">
+              <button class="btn btn-sm btn-primary btn-xs ">Sign up</button>
+            </div>
+            <div class="checkbox">
+
+              <label for="permission" class="label-small">
+                <input type="checkbox" checked="" id="permission"> Receive occasional updates and special offers from Business.dk
+              </label>
+            </div>
+          </form>
+          </section>
+
+           <section class="module">
+          <h1 class="section-header">Most read</h1>
+        <ul class="list toplist toplist-lg list-xs list-image-right">
+        <? while (dumb_luck("5")): ?>
+          <li class="teaser">
+          <? if (dumb_luck("66%")): ?><figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure><? endif ?>
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul>
+      </section>
 
 
           
 
           
           
-            <!-- </div> --><!-- article-sidebar -->
-          <!-- </aside> --><!-- col -->
+            </div><!-- article-sidebar -->
+          </aside><!-- col -->
 
 
         </div><!-- row -->

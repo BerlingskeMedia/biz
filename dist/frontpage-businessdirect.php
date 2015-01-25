@@ -147,7 +147,7 @@
           <aside class="col-md-4 ">
           <div class="article-sidebar">
 
-          <section class="module">
+          <section class="module-sm">
             
             <h1 class="section-header">
               New companies
@@ -155,7 +155,7 @@
 
           
           
-          <ul class="list list-xs">
+          <ul class="list list-xs list-light list-condenced">
             <? while (dumb_luck("10")): ?>
             <li class="teaser"><h2 class="header"><a href="profile-businessdirect.php"><? dummy("text@businessnames") ?></a></h2></li>
 

@@ -12,8 +12,8 @@ Att. Bond dev: The header should be a custom content unit :-)
 <nav class="nav-responsive nav-responsive-right">
   <a href="#" class="nav-toggle btn btn-primary">Menu <i class="fa fa-caret-down"></i></a>
   <ul>
-    <li><a href="#">Redigér profil</a></li>
-    <li><a href="#">Opret nyhed</a></li>
+    <li><a href="backend-businessdirect.php">Redigér profil</a></li>
+    <li><a href="backend-businessdirect.php#news">Opret nyhed</a></li>
     <li><a href="#">Om Business Direct</a></li>
    </ul>
   </nav>
