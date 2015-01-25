@@ -56,9 +56,38 @@
             </div>    
 
 
-          
+          <?php $imageSize = 0; ?>
           <?php if($imageSize == '0'): ?>
-           <?php include('inc/asset-article-image.php') ?>
+           
+
+           <? if (dumb_luck("99%")): ?>
+           <div class="image-carousel article-slider">
+  
+            <? while (dumb_luck("3-5")): ?>
+              <div class="slide">
+                <figure class="article-image">
+                  <img data-lazy="<? dummy("image@940x,16:9") ?>" alt="" class="img-responsive" />
+                  <? if (dumb_luck("90%")): ?>
+                  <figcaption>
+                  <div class="toggle-caption"></div>
+                  
+                  <div class="caption-body"><i class="fa fa-camera"></i> <? dummy("text@teaser") ?> <span> Foto: <? dummy("text@author") ?></span></div></figcaption>
+
+                  <? endif ?>
+                  
+                </figure>
+            </div><!-- slide -->
+              
+            <? endwhile ?>
+
+            </div><!-- slider -->
+
+            <? else: ?>
+
+              <?php include('inc/asset-article-image.php') ?>
+
+            <? endif ?>
+
           <?php endif; ?>
 
           

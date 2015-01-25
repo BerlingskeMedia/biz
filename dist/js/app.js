@@ -58,5 +58,16 @@ $('.nav-tabs a').on('shown', function (e) {
     window.location.hash = e.target.hash;
 })
 
+$('.image-carousel').slick({
+    infinite: true,
+    slidesToShow: 1,
+    lazyLoad: 'ondemand',
+    slidesToScroll: 1
+  });
+
+$('.toggle-caption').on('click',function(){
+  $(this).closest('.article-slider').toggleClass('show-caption');
+})
+
 
 });

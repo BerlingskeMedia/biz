@@ -5,6 +5,10 @@
 <!-- Responsive videos -->
 <script src="js/plugins/jquery.fitvids.js"></script>
 
+<!-- Image slider -->
+<script src="js/plugins/slick.min.js"></script>
+
+
 <script>
   $('#myButton').on('click', function () {
     var $btn = $(this).button('loading')
