@@ -48,14 +48,7 @@
 
 
 
-            <div class="article-byline">
-              <? while (dumb_luck("1-3")): ?>
-                <div class="article-author">
-                  <figure><img src="<? dummy("image/!author@30x30,") ?>" width="" height="" alt="" /></figure>
-                  <span><? dummy("text@author") ?><br><a href="#" class="follow-author">Follow <i class="fa fa-caret-down"></i></a></span>
-              </div>
-            <? endwhile ?>
-            </div>    
+             <?php include('inc/asset-article-byline.php'); ?>
 
 
             <?php if($imageSize == '0'): ?>

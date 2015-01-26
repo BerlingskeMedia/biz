@@ -134,14 +134,12 @@
     cursor: pointer;
     background: rgba(255,255,255,.6);
     color: transparent;
-    top: 50%;
-    margin-top: -15px;
+    bottom: 0;
     padding: 0;
     border: none;
     outline: none;
     .transition(all .1s ease);
-    &:hover, 
-    &:focus {
+    &:hover{
       outline: none;
       background: rgba(255,255,255,.8);
       color: transparent;
@@ -149,6 +147,12 @@
         opacity: @slick-opacity-on-hover;
       }
     }
+    &:focus {
+      outline: none;
+      color: transparent;
+      
+    }
+
     &.slick-disabled:before {
         opacity: @slick-opacity-not-active;
     }
@@ -163,7 +167,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-prev {
-    left: 0;
+    right: 30px;
     
     &:before {
         content: '\f104';

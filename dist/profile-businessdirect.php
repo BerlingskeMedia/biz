@@ -51,7 +51,7 @@
             
          <header class="article-head">
   <span class="article-tag-alt">Virksomhedsprofil</span>              
-            <figure class="logo-article-sponsor"><img src="<? dummy("image!logo-bizdirect@200x,") ?>" width="" height="" alt="" /></figure>
+            
 
               <h1 class="header">Toyota Danmark A/S</h1>
               </header>
@@ -70,7 +70,9 @@
               <div class="sm-notitification">Article continues after factbox &hellip; </div>
 <aside class="article-fact article-fact-float-right">
   
-  <h1 class="aside-header">Progressive</h1>
+  <figure class="logo-article-sponsor"><img src="<? dummy("image!logo-bizdirect@200x,") ?>" width="" height="" alt="" /></figure>
+
+  
   
 
 

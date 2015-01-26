@@ -14,7 +14,7 @@ Att. Bond dev: The header should be a custom content unit :-)
   <ul>
     <li><a href="backend-businessdirect.php">Redigér profil</a></li>
     <li><a href="backend-businessdirect.php#news">Opret nyhed</a></li>
-    <li><a href="#">Om Business Direct</a></li>
+    <li><a href="#" class="toggle-btn">Om Business Direct</a></li>
    </ul>
   </nav>
 
@@ -29,8 +29,7 @@ Att. Bond dev: The header should be a custom content unit :-)
 <? endif ?>
 
   <div class="toggle-content">
-    <p>Business Direct er Berlingskes presseservice, hvor virksomheder kan offentliggøre pressemeddelelser på business.dk og i Berlingske Business.</p>
-    <p>Har du spørgsmål om Business Direct kan du kontakte Jesper Husen på tlf. 27 400 200 eller <a href="mailto:info@businessdirect.dk">info@businessdirect.dk</a> eller besøge vores hjemmeside: <a href="#">www.businessdirect.dk</a>.</p>    
+  <p>Har du spørgsmål om Business Direct kan du kontakte Michael Friislund på tlf. 2253 3351 eller <a href="mailto:info@businessdirect.dk">info@businessdirect.dk</a> eller besøge vores hjemmeside: <a href="http://www.businessdirect.dk" target="_blank">www.businessdirect.dk</a>.</p>
   </div>
 
 </header>

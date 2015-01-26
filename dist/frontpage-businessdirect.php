@@ -172,13 +172,13 @@
             <div class="form-group form-oneline ">
               
               <input type="email" id="signup" class="form-control input-sm" placeholder="Indtast din email">
-              <button class="btn btn-sm btn-primary btn-xs ">Sign up</button>
+              <button class="btn btn-sm btn-primary btn-sm ">Sign up</button>
             </div>
             <div class="checkbox">
 
-              <label for="permission" class="label-small">
+              <!-- <label for="permission" class="label-small">
                 <input type="checkbox" checked="" id="permission"> Receive occasional updates and special offers from Business.dk
-              </label>
+              </label> -->
             </div>
           </form>
           </section>

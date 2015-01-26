@@ -42,45 +42,20 @@
           <h1 class="heading"><? dummy("text@headline") ?></h1>
 
 
-          <div class="article-date">Mandag d. <time datetime="2014-02-14"><? dummy("text@pol-date") ?> kl. <? dummy("text@time") ?></time> <? if (dumb_luck("25%")): ?><span class="date-updated">OPDATERET <time datetime="2014-02-14"> kl. <? dummy("text@time") ?></time></span><? endif ?></div>
+          <div class="article-date">Mandag d. <time datetime="2014-02-14"><? dummy("text@pol-date") ?> kl. <? dummy("text@time") ?></time> <? if (dumb_luck("25%")): ?><span class="date-updated">- Opdateret <time datetime="2014-02-14"> kl. <? dummy("text@time") ?></time></span><? endif ?></div>
 
 
 
-            <div class="article-byline">
-              <? while (dumb_luck("1-3")): ?>
-                <div class="article-author">
-                  <figure><img src="<? dummy("image/!author@30x30,") ?>" width="" height="" alt="" /></figure>
-                  <span><? dummy("text@author") ?><br><a href="#" class="follow-author">Follow <i class="fa fa-caret-down"></i></a></span>
-              </div>
-            <? endwhile ?>
-            </div>    
+            <?php include('inc/asset-article-byline.php'); ?>
 
 
-          <?php $imageSize = 0; ?>
+          <?php $imageSize = 1; ?>
           <?php if($imageSize == '0'): ?>
            
 
-           <? if (dumb_luck("99%")): ?>
-           <div class="image-carousel article-slider">
-  
-            <? while (dumb_luck("3-5")): ?>
-              <div class="slide">
-                <figure class="article-image">
-                  <img data-lazy="<? dummy("image@940x,16:9") ?>" alt="" class="img-responsive" />
-                  <? if (dumb_luck("90%")): ?>
-                  <figcaption>
-                  <div class="toggle-caption"></div>
-                  
-                  <div class="caption-body"><i class="fa fa-camera"></i> <? dummy("text@teaser") ?> <span> Foto: <? dummy("text@author") ?></span></div></figcaption>
-
-                  <? endif ?>
-                  
-                </figure>
-            </div><!-- slide -->
-              
-            <? endwhile ?>
-
-            </div><!-- slider -->
+           <? if (dumb_luck("50%")): ?>
+           
+           <?php include('inc/asset-article-image-slider.php'); ?>
 
             <? else: ?>
 
@@ -105,7 +80,18 @@
           
             <div class="article-content">
               <?php if($imageSize == '1'): ?>
-                <?php include('inc/asset-article-image.php') ?>
+                
+
+            <? if (dumb_luck("50%")): ?>
+           
+           <?php include('inc/asset-article-image-slider.php'); ?>
+
+            <? else: ?>
+
+              <?php include('inc/asset-article-image.php') ?>
+
+            <? endif ?>
+
               <?php endif; ?>
 
               <div class="article-social article-social-top">
