@@ -107,6 +107,30 @@
 
 
 </section>
+
+
+<section class="module-sm">
+<h2>Email signup</h2>
+          <form class="form-signup">
+            <h1 class="section-header-sm">
+              Business Direct newsletter
+            </h1>
+            <p class="small"><? dummy("text@teaser") ?></p>
+            <div class="form-group form-oneline ">
+              
+              <input type="email" id="signup" class="form-control input-sm" placeholder="Indtast din email">
+              <button class="btn btn-sm btn-primary btn-sm ">Sign up</button>
+            </div>
+            <div class="checkbox">
+
+              <label for="permission" class="label-small">
+                <input type="checkbox" checked="" id="permission"> Receive occasional updates and special offers from Business.dk
+              </label>
+            </div>
+          </form>
+          </section>
+
+
     </div>    
   </div>
 </section>
