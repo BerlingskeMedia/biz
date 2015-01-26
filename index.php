@@ -160,17 +160,17 @@ body {
         </ul>
         <h4>BrandView</h4>
         <ul>
-        <li class="c"><a href="/dist/article-brandview.php">Article</a>
+        <li class="d"><a href="/dist/article-brandview.php">Article</a>
         </ul>
 
         <h4>BusinessDirect</h4>
         <ul>
-        <li class="c"><a href="dist/frontpage-businessdirect.php">Frontpage</a>
-        <li class="c"><a href="dist/article-businessdirect.php">Press announcment (article)</a>
-        <li class="c"><a href="dist/profile-businessdirect.php">Company profile </a>
-        <li class="c"><a href="dist/section-businessdirect.php">Latest press releases</a>
+        <li class="d"><a href="dist/frontpage-businessdirect.php">Frontpage</a>
+        <li class="d"><a href="dist/article-businessdirect.php">Press announcment (article)</a>
+        <li class="d"><a href="dist/profile-businessdirect.php">Company profile </a>
+        <li class="d"><a href="dist/section-businessdirect.php">Latest press releases</a>
         <li class="nuke"><a href="#">Text pages ("What is Business Direct")</a>
-        <li class="c"><a href="dist/backend-businessdirect.php">Backend</a>
+        <li class="d"><a href="dist/backend-businessdirect.php">Backend</a>
         </ul>
         <h3>Toolbox</h3>
 
