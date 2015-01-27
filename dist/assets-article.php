@@ -89,10 +89,7 @@
   <?php include('inc/asset-article-letterbox.php'); ?>
 </div>
 
-<div class="col-md-8"> 
-<h2>Image slider</h2>
-  <?php include('inc/asset-article-image-slider.php'); ?>
-</div>
+
 
 <div class="col-md-8">
 <h2>Embedded graph from Data Wrapper</h2>
