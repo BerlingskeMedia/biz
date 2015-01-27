@@ -1,6 +1,6 @@
 <? require_once("../../dummy/dummy.php") ?>
 
-<?php $imageSize = rand(0,2); ?>
+<?php $imageSize = rand(1,3); ?>
 
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9" lang="da"> <![endif]-->
@@ -11,9 +11,13 @@
     <?php include("./inc/head.php"); ?> 
   </head>
   <body>
+
+
+
   <!--[if lt IE 9]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+
 
 
   <?php include("./inc/header.php"); ?>
@@ -49,7 +53,7 @@
             <?php include('inc/asset-article-byline.php'); ?>
 
 
-          <?php $imageSize = 1; ?>
+          
           <?php if($imageSize == '0'): ?>
            
 
@@ -65,6 +69,7 @@
 
           <?php endif; ?>
 
+        
           
 
           
@@ -93,6 +98,12 @@
             <? endif ?>
 
               <?php endif; ?>
+
+              <?php if($imageSize == '3'): ?>
+              <div class="test-article-webtv">
+                WEB TV player
+              </div>
+            <?php endif; ?>
 
               <div class="article-social article-social-top">
                     <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
@@ -196,22 +207,7 @@
               <h3>H3:<? dummy("text@item") ?></h3>
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
               <div class="sm-notitification">Article continues after factbox &hellip;</div>
-              <aside class="article-related-chunk list-xs">
-                <h1 class="aside-header aside-header-small">Mere om OW Bunker sagen</h1>
-                <ul>
-                  <? while (dumb_luck("4")): ?>
-                  <li class="teaser">
-                      <figure><a href="article.php"><img src="<? dummy("image@60x60,") ?>" width="" height="" alt="" /></a></figure>
-                      <div class="teaser-body">
-                        <h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>
-                        <footer><time> 3d.</time></footer>
-                      </div>
-
-                  </li>
-                  <? endwhile ?>
-                </ul>
-
-              </aside>
+              
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
@@ -244,68 +240,29 @@
                     <a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>
               </div>
 
-              <!-- READ ALSO -->
-               
-                <section class="module-top-lg module">
-                
-              <h1 class="section-header">Read also</h1>
-              
-              <ul class="list list-xs ">
-              <? while (dumb_luck("5")): ?>
-                <li class="teaser">
-                  <div class="teaser-body">
-                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                  <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-                  </div>
+
+              <aside class="article-related-chunk list-xs">
+                <h1 class="aside-header">Related articles</h1>
+                <ul>
+                  <? while (dumb_luck("4")): ?>
+                  <li class="teaser">
+                      <figure><a href="article.php"><img src="<? dummy("image@60x60,") ?>" width="" height="" alt="" /></a></figure>
+                      <div class="teaser-body">
+                        <h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>
+                        <footer><time> 3d.</time></footer>
+                      </div>
+
                   </li>
-                <? endwhile ?>
-              </ul>
+                  <? endwhile ?>
+                </ul>
 
-              </section><!-- read also -->
-              
+                <div class="module-top text-center">
+                  <a href="#" class="btn btn-primary btn-xs">Load more</a>
+                </div>
+              </aside>
 
-
-              <div class="row">
-                
-              <div class="col-md-6">
-                
-                 <section>
-                
-              <h1 class="section-header">Read also</h1>
-              
-              <ul class="list list-xs ">
-              <? while (dumb_luck("5")): ?>
-                <li class="teaser">
-                  <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
-                  </li>
-                <? endwhile ?>
-              </ul>
 
               
-
-              </section><!-- read also -->
-
-
-              </div><!-- col -->
-              <div class="col-md-6">
-              
-                  
-      <section>
-    <h1 class="section-header">Most read</h1>
-      <ul class="list toplist toplist-lg list-xs list-image-right">
-        <? while (dumb_luck("5")): ?>
-          <li class="teaser">
-          <? if (dumb_luck("66%")): ?><figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure><? endif ?>
-          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
-          </li>
-        <? endwhile ?>
-      </ul>
-      </section>
-
-                  
-
-              </div>
-              </div>
               <div class="comments" id="article-comments">
                 
              

@@ -11,6 +11,7 @@
     <li><a href="#" data-toggle="modal" data-target="#follow-author"><i class="fa fa-envelope-o"></i> Abonnér på artikler (gratis)</a></li>
     <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
     <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+    <li><a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
     <li class="dropdown-divider"></li>
     <li><a href="author.php"><i class="fa fa-user"></i> Se profil</a></li>
   </ul>

@@ -125,7 +125,9 @@ body {
         <ul class="overview">
           <li class="a"><a href="/dist/index.php">Frontpage</a></li>
           <li class="b"><a href="/dist/article.php">Article</a></li>
+
           <li class="a"><a href="#">Article - Longreads</a></li>
+
           <li class="b"><a href="/dist/article-large.php">Article - Large</a></li>
           <li class="b"><a href="/dist/article-advetorial.php">Article - Advetorial</a></li>
           <li class="b"><a href="/dist/page-profile.php">User profile</a></li>
@@ -135,9 +137,8 @@ body {
           <li class="a"><a href="#">404</a></li>
           <li class="a"><a href="#">Search</a></li>
           <li class="a"><a href="#">News overview</a></li>
-          <li class="a"><a href="#">Business TV</a></li>
-          <li class="a"><a href="#">Business TV - Section (?)</a></li>
-          <li class="a"><a href="#">Business TV - Article (?)</a></li>
+          <li class="a"><a href="#">Business TV - Section</a></li>
+          <li class="b"><a href="#">Business TV - Article</a></li>
           <li class="a"><a href="#">Jobindex overview</a></li>
           <li class="a"><a href="#">Events</a></li>
           <li class="a"><a href="#">Business Magazine</a></li>
