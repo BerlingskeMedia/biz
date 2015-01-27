@@ -242,11 +242,11 @@
 
 
               <aside class="article-related-chunk list-xs">
-                <h1 class="aside-header">Related articles</h1>
+                <h1 class="aside-header">Read also</h1>
                 <ul>
                   <? while (dumb_luck("4")): ?>
                   <li class="teaser">
-                      <figure><a href="article.php"><img src="<? dummy("image@60x60,") ?>" width="" height="" alt="" /></a></figure>
+                      <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@100x,16:9,") ?>" width="" height="" alt="" /></a></figure>
                       <div class="teaser-body">
                         <h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>
                         <footer><time> 3d.</time></footer>
@@ -256,7 +256,7 @@
                   <? endwhile ?>
                 </ul>
 
-                <div class="module-top text-center">
+                <div class="module-top-sm text-center">
                   <a href="#" class="btn btn-primary btn-xs">Load more</a>
                 </div>
               </aside>
@@ -267,11 +267,21 @@
                 
              
 
+                <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'biztesting'; // required: replace example with your forum shortname
 
-
-                <br><br><br>
-                  <div class="text-center">Comments from Disquss </div>
-                  <br><br><br>
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+    
 
               </div>
 

@@ -139,11 +139,17 @@
 
   </div>
 
+
   <div class="col-md-8">
     <h2>Video embeds</h2>
     <div class="article-video">
         <iframe width="425" height="349" src="http://www.youtube.com/embed/FKWwdQu6_ok" frameborder="0" allowfullscreen></iframe>
     </div>
+  </div>
+
+  <div class="col-md-8">
+  <h2>Article tags</h2>
+    <?php include('inc/asset-article-tags.php'); ?>
   </div>
 
 

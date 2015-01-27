@@ -16,7 +16,7 @@
   touch-action: manipulation;
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid rgba(0,0,0,.1);
+  border: 1px solid rgba(0,0,0,.05);
   border-bottom: 2px solid rgba(0,0,0,.3);
   border-radius: 2px;
   white-space: nowrap;
@@ -135,7 +135,7 @@
   .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; 2px);
 }
 .btn-xs {
-  .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; 2px);
+  .button-size(@padding-xs-vertical; 9px; @font-size-small; @line-height-small; 2px);
 }
 
 .btn-xxs {

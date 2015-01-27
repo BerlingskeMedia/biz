@@ -2837,7 +2837,7 @@ select[multiple].form-group-lg .form-control {
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 2px;
   white-space: nowrap;
@@ -3143,7 +3143,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-xs,
 .btn-group-xs > .btn {
-  padding: 1px 5px;
+  padding: 1px 9px;
   font-size: 14px;
   line-height: 1.5;
   border-radius: 2px;
@@ -8361,9 +8361,6 @@ a.header-tool-icon:hover {
   transform: scale(1.2);
 }
 .article-related-chunk {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-top: 10px;
   margin-bottom: 25px;
 }
 .article-related-chunk:before,
@@ -8418,9 +8415,6 @@ a.header-tool-icon:hover {
     width: 100%;
     margin-bottom: 10px;
   }
-}
-.article-related-chunk .teaser .header {
-  margin-bottom: 5px;
 }
 .article-related-chunk figure {
   float: left;
@@ -9111,6 +9105,9 @@ a.btn-premium:after {
 .teaser-body span {
   /*font-size: 12px;
 		font-weight: 600;*/
+}
+.teaser-body .header {
+  margin-bottom: 0;
 }
 .teaser-body .header + footer {
   margin-top: 5px;
@@ -10268,7 +10265,7 @@ h1.heading {
   transition: background-color 0.1s ease;
   color: #ffffff;
   background-color: #cc0066;
-  padding: 1px 5px;
+  padding: 1px 9px;
   font-size: 14px;
   line-height: 1.5;
   border-radius: 2px;
