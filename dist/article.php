@@ -1,6 +1,6 @@
 <? require_once("../../dummy/dummy.php") ?>
 
-<?php $imageSize = rand(1,3); ?>
+<?php $imageSize = rand(0,2); ?>
 
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9" lang="da"> <![endif]-->
@@ -99,7 +99,7 @@
 
               <?php endif; ?>
 
-              <?php if($imageSize == '3'): ?>
+              <?php if($imageSize == '2'): ?>
               <div class="test-article-webtv">
                 WEB TV player
               </div>

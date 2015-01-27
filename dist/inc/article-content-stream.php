@@ -1,5 +1,7 @@
-ARTICE SIDEBAR START
-<section class="module business-inventory business-inventory-jobindex">
+<h2>Article sidebar </h2>
+"CONTENT STREAM"<br>
+TBA
+<!-- <section class="module business-inventory business-inventory-jobindex">
 <h1 class="module-header">Ledige job fra Jobindex A/S</h1>
 <ul class="list-jobs">
 <? while (dumb_luck("3")): ?>
@@ -31,6 +33,4 @@ ARTICE SIDEBAR START
       </article>
     <? endwhile ?>
   
-</section>
-
-ARTICE SIDEBAR END
+</section> -->
