@@ -124,7 +124,7 @@ body {
 
         <ul class="overview">
           <li class="a"><a href="/dist/index.php">Frontpage</a></li>
-          <li class="a"><a href="/dist/article.php">Article</a></li>
+          <li class="d"><a href="/dist/article.php">Article</a></li>
 
           <li class="a"><a href="#">Article - Longreads</a></li>
 

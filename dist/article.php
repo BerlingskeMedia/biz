@@ -281,7 +281,7 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     
-    
+
 
               </div>
 
@@ -305,6 +305,133 @@
 
         </div><!-- row -->
       </article>  
+
+
+      <div class="col-md-4">
+        
+        <section>
+    
+    <h1 class="section-header">Latest news</h1>
+      
+
+    <div role="tabpanel" class="tabs">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs-sm" role="tablist">
+    <li role="presentation" class="active"><a href="#tab-business" aria-controls="business" role="tab" data-toggle="tab">Business</a></li>
+    <li role="presentation"><a href="#tab-berlingske" aria-controls="tab-berlingske" role="tab" data-toggle="tab">Berlingske</a></li>
+    <li role="presentation"><a href="#tab-politiko" aria-controls="tab-politiko" role="tab" data-toggle="tab">Politiko</a></li>
+    <li role="presentation"><a href="#tab-aok" aria-controls="tab-aok" role="tab" data-toggle="tab">AOK</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="tab-business">
+      <ul class="list">
+        <? while (dumb_luck("5")): ?>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-berlingske">
+    <ul class="list ">
+        <? while (dumb_luck("5")): ?>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul></div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-politiko">
+    <ul class="list ">
+        <? while (dumb_luck("5")): ?>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul></div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-aok">
+    <ul class="list ">
+        <? while (dumb_luck("5")): ?>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul></div>
+  </div>
+
+</div>
+
+
+
+
+      </section>
+
+      </div>
+
+      <div class="col-md-4">
+        
+        <section>
+    
+    <h1 class="section-header">Most read</h1>
+      
+
+    <div role="tabpanel" class="tabs">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs-sm" role="tablist">
+    <li role="presentation" class="active"><a href="#tab-business2" aria-controls="business" role="tab" data-toggle="tab">Business</a></li>
+    <li role="presentation"><a href="#tab-berlingske2" aria-controls="tab-berlingske" role="tab" data-toggle="tab">Berlingske</a></li>
+    <li role="presentation"><a href="#tab-politiko2" aria-controls="tab-politiko" role="tab" data-toggle="tab">Politiko</a></li>
+    <li role="presentation"><a href="#tab-aok2" aria-controls="tab-aok" role="tab" data-toggle="tab">AOK</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="tab-business2">
+      <ul class="list toplist toplist-lg">
+        <? while (dumb_luck("5")): ?>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-berlingske2">
+    <ul class="list toplist toplist-lg">
+        <? while (dumb_luck("5")): ?>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul></div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-politiko2">
+    <ul class="list toplist toplist-lg">
+        <? while (dumb_luck("5")): ?>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul></div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-aok2">
+    <ul class="list toplist toplist-lg">
+        <? while (dumb_luck("5")): ?>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul></div>
+  </div>
+
+</div>
+
+
+
+
+      </section>
+
+      </div>
 
       <section class="deck">
       
