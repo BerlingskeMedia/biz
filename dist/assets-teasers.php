@@ -24,6 +24,30 @@
         <div class="col-md-12">
     <h1>Floating breakpoints</h1>    
     </div>  
+<div class="col-md-12">
+            <code>.flex-6-3-2</code>
+        </div>
+<section class="deck">
+        
+        <div class="col-md-12">
+          <h1 class="section-header">Blogs</h1>
+        </div>
+        <ul class="list-clean flex-6-3-2">
+            <? while (dumb_luck("6")): ?>
+            <li>
+              <article class="teaser teaser-round col-md-2 col-sm-4 col-xs-6">
+              <figure class="teaser-img"><a href="#"><img src="<? dummy("image/!author@100x100,") ?>" width="" height="" alt="" /></a></figure>
+              <footer><span class="author"><? dummy("text@author") ?></span></footer>
+              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+              <footer><span class="sitename">blogs.business.dk</span></footer>
+              </article>
+            </li>
+            <? endwhile ?>
+        </ul>
+      </section>
+
+
+
 
         <div class="col-md-12">
             <code>.flex-4-3-2</code>

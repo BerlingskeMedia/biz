@@ -71,11 +71,16 @@
 .btn-secondary {
   .button-variant(#fff; @biz-2;);
 }
+.btn-trans {
+  .button-variant(#333; transparent);
+}
 .btn-facebook {
   .button-variant(#fff; @col-facebook;);
 }
 
-
+.btn-trans {
+  border-color: transparent;
+}
 
 // Danger and error appear as red
 .btn-danger {
@@ -132,7 +137,7 @@
 }
 .btn-sm {
   // line-height: ensure proper height of button next to small input
-  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; 2px);
+  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; 1px);
 }
 .btn-xs {
   .button-size(@padding-xs-vertical; 9px; @font-size-small; @line-height-small; 2px);

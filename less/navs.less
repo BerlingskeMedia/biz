@@ -120,22 +120,21 @@
   margin-bottom: 15px;
   > li {
     display: inline-block;
-    
-
+    float: left;
     // Actual tabs (as links)
     > a {
-      margin-right: 2px;
+      margin-right: 5px;
       line-height: 19px;
-      padding: 0 10px;
-      background: rgba(0,0,0,.1);
+      padding: 0 10px 0 0;
       border-radius: 0;
       font-size: 13px;
       font-weight: 600;
       display: inline-block;
-      color: #333;
+      color: @biz-1;
+      background-color: transparent;
       &:hover {
-          background-color: rgba(0,0,0,.2);
-          color: #111;
+          color: darken(@biz-1, 10%);
+          background-color: transparent;
       }
     }
 
@@ -145,9 +144,10 @@
       &:hover,
       &:focus {
         color: @nav-tabs-active-link-hover-color;
-        background-color: @biz-pink;
+        background-color: transparent;
         cursor: default;
         color: #333;
+        color: rgba(0,0,0,.8);
         // border-radius: 3px 3px 0 0;
       }
     }
