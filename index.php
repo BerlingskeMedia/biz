@@ -178,6 +178,7 @@ body {
         <ul class="overview">
           <li><a href="/dist/assets-tools.php">Assets</a></li>
           <li><a href="/dist/assets-teasers.php">Lists and teasers</a></li>
+          <li><a href="/dist/assets-article.php">Article assets</a></li>
         </ul>
 
         
