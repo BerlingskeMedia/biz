@@ -2190,6 +2190,31 @@ th {
 .table-condensed > tfoot > tr > td {
   padding: 5px;
 }
+.table-stocks > tbody > tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.table-stocks > thead > tr > th,
+.table-stocks > tbody > tr > th,
+.table-stocks > tfoot > tr > th,
+.table-stocks > thead > tr > td,
+.table-stocks > tbody > tr > td,
+.table-stocks > tfoot > tr > td {
+  padding: 2px;
+}
+.table-stocks > thead > tr > td,
+.table-stocks > tbody > tr > td,
+.table-stocks > tfoot > tr > td {
+  border: 0;
+}
+.table-stocks .right {
+  text-align: right;
+}
+.table-stocks .plus .change {
+  color: #2da12d;
+}
+.table-stocks .minus .change {
+  color: #d92525;
+}
 .table-bordered {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -2839,6 +2864,19 @@ select[multiple].form-group-lg .form-control {
   right: 0;
   border-bottom-width: 1px;
   z-index: 99;
+}
+.form-oneline-alt {
+  position: relative;
+}
+.form-oneline-alt button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom-width: 1px;
+  z-index: 99;
+}
+.form-oneline-alt button {
+  right: auto;
 }
 .form-signup .checkbox {
   margin: 5px 0;
@@ -10798,6 +10836,25 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   .flex-4-3-2 li:nth-child(odd) {
     clear: left;
   }
+}
+.table-stocks {
+  font-size: 12px;
+}
+.table-stocks .stock-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.section-sponsor {
+  text-align: right;
+  vertical-align: middle;
+  font-size: 13px;
+}
+.section-sponsor img {
+  max-height: 40px;
+  width: auto;
+  vertical-align: middle;
+  margin-left: 10px;
 }
 .module {
   margin-bottom: 50px;

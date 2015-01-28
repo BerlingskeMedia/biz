@@ -143,6 +143,8 @@ body {
           <li class="a"><a href="#">Jobindex overview</a></li>
           <li class="a"><a href="#">Events</a></li>
           <li class="a"><a href="#">Business Magazine</a></li>
+          <li class="a"><a href="#">Business navne - Frontpage</a></li>
+          <li class="a"><a href="#">Business navne - Article</a></li>
 
         </ul>
 

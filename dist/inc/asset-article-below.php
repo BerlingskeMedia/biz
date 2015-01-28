@@ -148,15 +148,19 @@
             
             
 <? if (dumb_luck("50%")): ?>
-            <div class="col-md-12">
-            <div class="small">
-              Mobil: <b>20 61 67 68</b> <button class="btn btn-success btn-xs">OK <i class="fa fa-check"></i></button> <a href="page-profile.php" class=" micro">Edit number </a> 
+            <div class="col-sm-8 col-xs-10">
+            <form class="form-signup">
+            <div class="input-group input-group-sm form-oneline-alt">
+             <span class="input-group-addon" ><i class="fa fa-mobile"></i></span>
+            <input type="tel" class="form-control input-sm" placeholder="Mobilnummer" value="20616768" aria-describedby="">
+            <button class="btn btn-sm btn-trans btn-sm ">OK <i class="fa fa-caret-right"></i></button>
             </div>
+            </form>
             </div>
 <? else: ?>
             <div class="col-sm-8 col-xs-10">
             <form class="form-signup">
-            <div class="input-group input-group-sm form-oneline">
+            <div class="input-group input-group-sm form-oneline-alt">
              <span class="input-group-addon" ><i class="fa fa-mobile"></i></span>
             <input type="tel" class="form-control input-sm" placeholder="Mobilnummer" aria-describedby="">
             <button class="btn btn-sm btn-trans btn-sm ">OK <i class="fa fa-caret-right"></i></button>
@@ -177,16 +181,20 @@
          
             <? if (dumb_luck("50%")): ?>
 
-            <div class="col-md-12">
-            <div class="small">
-              <b>bsk@berlingskemedia.dk</b> <button class="btn btn-success btn-xs">OK <i class="fa fa-check"></i> </button> <a href="page-profile.php" class="micro">Edit email</a> 
+            <form class="form-signup">
+           <div class="col-sm-8 col-xs-10">
+            <div class="input-group input-group-sm form-oneline-alt">
+             <span class="input-group-addon" id="sizing-addon3"><i class="fa fa-envelope"></i></span>
+            <input type="text" class="form-control" placeholder="Email" value="bsk@berlingskemedia.dk" aria-describedby="sizing-addon3">
+            <button class="btn btn-sm btn-trans btn-sm ">OK <i class="fa fa-caret-right"></i></button>
             </div>
             </div>
+        </form>
 
           <? else: ?>
           <form class="form-signup">
            <div class="col-sm-8 col-xs-10">
-            <div class="input-group input-group-sm form-oneline">
+            <div class="input-group input-group-sm form-oneline-alt">
              <span class="input-group-addon" id="sizing-addon3"><i class="fa fa-envelope"></i></span>
   <input type="text" class="form-control" placeholder="Email" aria-describedby="sizing-addon3">
             <button class="btn btn-sm btn-trans btn-sm ">OK <i class="fa fa-caret-right"></i></button>
@@ -334,7 +342,7 @@
         
         <div class="col-md-12">
           <h1 class="section-header">
-            Business anbefaler
+            Business recommends
           </h1>
         </div>
 
@@ -445,25 +453,71 @@
       
       <div class="col-md-4">
       <h2 class="micro-header">OMX C20 CAP</h2>
-          <article class="teaser header-20 ">
-              <img src="<? dummy("image@394x,16:9") ?>" width="" height="" alt="" class="img-responsive" />
-            </article>
+          <img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=OMXC20CAP.co&prv=ms_dlc&points=288&ts=5&current={CURR}&w=300&h=200&bgcolor=f5dfda&isFP=true&st=false&tp=1" class="img-responsive">
+          <p class="micro">Kursdata kan være forsinket 15 minutter</p>
       </div>
 
       <div class="col-md-4">
       <h2 class="micro-header">Vindere</h2>
       
-          <article class="teaser header-20 ">
-              <figure class="teaser-img"><a href="#"><img src="<? dummy("image@394x,16:9") ?>" width="" height="" alt="" /></a></figure>
-            </article>
+          <div class="stock-deck table-responsive">
+            
+            <table class="table table-stocks">
+              <thead>
+                <tr>
+                  <th>Navn</th>
+                  <th class="right">Seneste</th>
+                  <th class="right">+/-</th>
+                  <th class="right">%</th>
+                </tr>
+              </thead>  
+              <tbody>
+              <? while (dumb_luck("10")): ?>
+                <tr class="<? if (dumb_luck("50%")): ?>plus<? else: ?>minus<? endif ?>">
+                  <td class="stock-name"><a href="#"><? dummy("text@stockcompanies") ?></a></td>
+                  <td class="right "><? dummy("text@stock-value") ?></td>
+                  <td class="right change">-<? dummy("text@stock-change") ?></td>
+                  <td class="right change"><? dummy("text@stock-change-2") ?></td>
+                </tr>
+              <? endwhile ?>
+              </tbody>
+            </table>
+
+          </div>
+
+
       </div>
       <div class="col-md-4">
       <h2 class="micro-header">Tabere</h2>
-          <article class="teaser header-20 ">
-              <figure class="teaser-img"><a href="#"><img src="<? dummy("image@394x,16:9") ?>" width="" height="" alt="" /></a></figure>
-            </article>
+           <div class="stock-deck table-responsive">
+            
+            <table class="table table-stocks">
+              <thead>
+                <tr>
+                  <th>Navn</th>
+                  <th class="right">Seneste</th>
+                  <th class="right">+/-</th>
+                  <th class="right">%</th>
+                </tr>
+              </thead>  
+              <tbody>
+              <? while (dumb_luck("10")): ?>
+                <tr class="<? if (dumb_luck("50%")): ?>plus<? else: ?>minus<? endif ?>">
+                  <td class="stock-name"><a href="#"><? dummy("text@stockcompanies") ?></a></td>
+                  <td class="right "><? dummy("text@stock-value") ?></td>
+                  <td class="right change">-<? dummy("text@stock-change") ?></td>
+                  <td class="right change"><? dummy("text@stock-change-2") ?></td>
+                </tr>
+              <? endwhile ?>
+              </tbody>
+            </table>
+
+          </div>
       </div>
       
+      <div class="col-md-12">
+        <div class="section-sponsor">Sponsored by Nykredit A/S <a href="http://www.nykredit.dk" target="_blank"><img src="images/nykredit_logo_negativ.jpg"></a></div>
+      </div>
 
       </section>  
 
@@ -542,7 +596,7 @@
         
         <div class="col-md-12">
           <h1 class="section-header">
-            Business i billeder <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
+            Business in pictures <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
           </h1>
         </div>
 

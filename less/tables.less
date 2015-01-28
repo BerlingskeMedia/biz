@@ -80,6 +80,34 @@ th {
   }
 }
 
+.table-stocks {
+   > tbody > tr:nth-child(odd) {
+    background-color: rgba(0,0,0,.05);
+  }
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: 2px;
+      }
+      > td {
+        border: 0;
+      }
+    }
+  }
+  .right {
+    text-align: right;
+  }
+  .plus .change {
+    color: @col-green;
+  }
+  .minus .change {
+    color: @col-red;
+  }
+}
+
 
 // Bordered version
 //
