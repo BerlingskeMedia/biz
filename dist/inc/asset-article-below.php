@@ -23,8 +23,8 @@
   <!-- Tab panes -->
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane fade in active" id="tab-business">
-      <ul class="list">
-        <? while (dumb_luck("5")): ?>
+      <ul class="list list-xs">
+        <? while (dumb_luck("10")): ?>
           <li class="teaser">
           <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
           </li>
@@ -32,29 +32,31 @@
       </ul>
     </div>
     <div role="tabpanel" class="tab-pane fade" id="tab-berlingske">
-    <ul class="list ">
-        <? while (dumb_luck("5")): ?>
-          <li class="teaser">
-          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
-          </li>
-        <? endwhile ?>
-      </ul></div>
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
     <div role="tabpanel" class="tab-pane fade" id="tab-politiko">
-    <ul class="list ">
-        <? while (dumb_luck("5")): ?>
-          <li class="teaser">
-          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
-          </li>
-        <? endwhile ?>
-      </ul></div>
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
     <div role="tabpanel" class="tab-pane fade" id="tab-aok">
-    <ul class="list ">
-        <? while (dumb_luck("5")): ?>
-          <li class="teaser">
-          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
-          </li>
-        <? endwhile ?>
-      </ul></div>
+    <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
   </div>
 
 </div>
@@ -87,8 +89,8 @@
   <!-- Tab panes -->
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane fade in active" id="tab-business2">
-      <ul class="list toplist toplist-lg">
-        <? while (dumb_luck("5")): ?>
+      <ul class="list toplist toplist-lg list-xs">
+        <? while (dumb_luck("10")): ?>
           <li class="teaser">
           <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
           </li>
@@ -96,29 +98,32 @@
       </ul>
     </div>
     <div role="tabpanel" class="tab-pane fade" id="tab-berlingske2">
-    <ul class="list toplist toplist-lg">
-        <? while (dumb_luck("5")): ?>
-          <li class="teaser">
-          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
-          </li>
-        <? endwhile ?>
-      </ul></div>
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
     <div role="tabpanel" class="tab-pane fade" id="tab-politiko2">
-    <ul class="list toplist toplist-lg">
-        <? while (dumb_luck("5")): ?>
-          <li class="teaser">
-          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
-          </li>
-        <? endwhile ?>
-      </ul></div>
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
     <div role="tabpanel" class="tab-pane fade" id="tab-aok2">
-    <ul class="list toplist toplist-lg">
-        <? while (dumb_luck("5")): ?>
-          <li class="teaser">
-          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
-          </li>
-        <? endwhile ?>
-      </ul></div>
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
   </div>
 
 </div>
@@ -136,21 +141,29 @@
         
         <section class="module-xs col-sm-6  col-md-12">
           <h1 class="section-header-sm">
-              Få <span class="tag-breaking">Breaking News</span> via SMS
+              <i class="fa fa-bolt"></i> Tilmeld Breaking News SMS
             </h1>
           <!-- <p class="small">Modtag <strong class="tag-breaking">BREAKING</strong> på SMS</p> -->
           <div class="row">
-            <div class="col-sm-8 col-xs-10">
             
-              <div class="input-group input-group-sm form-oneline">
-  <span class="input-group-addon" ><i class="fa fa-mobile"></i></span>
-  <input type="tel" class="form-control input-sm" placeholder="Mobilnummer" aria-describedby="">
-  <button class="btn btn-sm btn-trans btn-sm ">OK <i class="fa fa-caret-right"></i></button>
-</div>
-
+            
+<? if (dumb_luck("50%")): ?>
+            <div class="col-md-12">
+            <div class="small">
+              Mobil: <b>20 61 67 68</b> <button class="btn btn-success btn-xs">OK</button> <a href="page-profile.php" class=" micro">Edit number </a> 
             </div>
-            
-            
+            </div>
+<? else: ?>
+            <div class="col-sm-8 col-xs-10">
+            <form class="form-signup">
+            <div class="input-group input-group-sm form-oneline">
+             <span class="input-group-addon" ><i class="fa fa-mobile"></i></span>
+            <input type="tel" class="form-control input-sm" placeholder="Mobilnummer" aria-describedby="">
+            <button class="btn btn-sm btn-trans btn-sm ">OK <i class="fa fa-caret-right"></i></button>
+            </div>
+            </form>
+            </div>
+<? endif ?>
           </div>
         </section>
 
@@ -158,32 +171,39 @@
           
           <section class="module-xs col-sm-6  col-md-12">
             <h1 class="section-header-sm">
-              Business.dk nyhedsbrev
+              <i class="fa fa-envelope"></i> Tilmeld Business.dk nyhedsbrev
             </h1>
+            <div class="row">
          
+            <? if (dumb_luck("50%")): ?>
 
+            <div class="col-md-12">
+            <div class="small">
+              <b>bsk@berlingskemedia.dk</b> <button class="btn btn-success btn-xs">OK</button> <a href="page-profile.php" class="micro">Edit email</a> 
+            </div>
+            </div>
+
+          <? else: ?>
           <form class="form-signup">
-          
-          <div class="row">
-            <div class="col-sm-8 col-xs-10">
+           <div class="col-sm-8 col-xs-10">
             <div class="input-group input-group-sm form-oneline">
-  <span class="input-group-addon" id="sizing-addon3"><i class="fa fa-envelope"></i></span>
+             <span class="input-group-addon" id="sizing-addon3"><i class="fa fa-envelope"></i></span>
   <input type="text" class="form-control" placeholder="Email" aria-describedby="sizing-addon3">
-  <button class="btn btn-sm btn-trans btn-sm ">OK <i class="fa fa-caret-right"></i></button>        
+            <button class="btn btn-sm btn-trans btn-sm ">OK <i class="fa fa-caret-right"></i></button>
+            </div>
+            </div>
+        </form>
+<? endif ?>
 
 </div>
 
                             
-            </div>
+           
             
-            
-            
-          </div>
-            
-          </form>
+          
           </section>
 
-          <section class="module-sm col-sm-12 col-md-12">
+          <section class="module-xs col-sm-12 col-md-12">
           <h1 class="section-header-sm">
               Abonnement på Berlingske
             </h1>
@@ -202,12 +222,18 @@
 
 
      </div><!-- row -->
+
+     <div class="banner module-sm">
+       
+       <? dummy("ad@300x250") ?>
+
+     </div>
       </div>
 
       <section class="deck">
       
         <div class="col-md-12">
-            <h1 class="section-header">Business TV</h1>
+            <h1 class="section-header">Business TV <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a></h1>
         </div>
 
 
@@ -500,12 +526,69 @@
 
 
 <section class="deck">
-        <div class="banner">
-          Here comes banner
+    <div class="banner">
+      Here comes banner
+    </div>
+</section>  
+
+
+
+<section class="deck">
+    <div class="col-md-8 col-sm-8">
+      
+      <div class="row">
+        
+        <div class="col-md-12">
+          <h1 class="section-header">
+            Business i billeder <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
+          </h1>
         </div>
-      </section>  
 
+        <div class="col-md-12 col-xs-4">
+          <article class="teaser">
+            <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
+            <h2 class="header"><a href="article.php"><i class="fa fa-camera"></i> <? dummy("text@headline") ?></a></h2>
+          </article>
+        </div>
 
+        
+        <? while (dumb_luck("2")): ?>
+        <div class="col-xs-4 col-md-6">
+            <article class="teaser">
+            <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
+            <h2 class="header"><a href="article.php"><i class="fa fa-camera"></i> <? dummy("text@headline") ?></a></h2>
+          </article>
+        </div>
+        <? endwhile ?>
+
+      </div>
+      
+      
+    </div><!-- col 8 -->
+
+    <div class="col-md-4 col-sm-4">
+      
+      <section>
+  
+    <h1 class="section-header">Seneste <span class="logo-premium">Premium</span>
+    <a href="#" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
+    </h1>
+    
+                <ul class="list  list-image-right ">
+                    <? while (dumb_luck("5")): ?>
+                      <li class="teaser teaser-no-logo">
+                      <? if (dumb_luck("90%")): ?><figure class="teaser-img"><a href="article-premium.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure><? endif ?>
+                      <div class="teaser-body">
+                        <h2 class="header"><a href="article-premium.php"><? dummy("text@headline") ?></a></h2>
+                        <p class="price"><? dummy("text@number") ?> kr <span class="logo-premium"><span>PREMIUM</span></span></p>
+                      </div>
+                      </li>
+                    <? endwhile ?>
+                  </ul>
+      </section>
+
+    </div>
+</section>  
 
 
  

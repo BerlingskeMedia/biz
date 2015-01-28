@@ -210,7 +210,6 @@ a.header-tool-icon {
 }
 .marketing-subscription {
 	line-height: 1.2;
-	.module-sm;
 	font-size: 14px;
 }
 .subscription-logo {
@@ -319,6 +318,21 @@ a.header-tool-icon {
 		display: block;
 		font-weight: 600;
 	}
+	.logo-premium {
+		background-color: #222;
+		color: #fff;
+		font-family: berlingske;
+		text-transform: uppercase;
+		line-height: 1.2;
+		padding: 0 .2em;
+		display: inline-block;
+	}
+	.price {
+		color: rgba(0,0,0,.5);
+	}
+}
+.teaser-no-logo .logo-premium {
+	display: none;
 }
 .list .teaser .header {
 	margin-bottom: 0;
@@ -388,7 +402,7 @@ a.header-tool-icon {
 	margin-left: 2px;
 	vertical-align: middle;
 	font-size: 12px;
-	font-weight: 600;
+	font-weight: 300;
 	
 }
 
@@ -581,6 +595,8 @@ h2.page-header {
 	.clearfix;
 	b {
 		display: block;
+		font-weight: 300;
+		color: #fff;
 	}
 	li {
 		display: inline-block;
@@ -593,7 +609,7 @@ h2.page-header {
 		.transition(background-color .1s ease);
 	}
 	a {
-		color: #fff;
+		color: rgba(255,255,255,0.7);
 		display: inline-block;
 	}
 	.stock-green {
@@ -801,7 +817,16 @@ a.btn-premium:after {
 		color: rgba(0,0,0,.5);
 		margin-bottom: 20px;
 	}
+	.logo-premium {
+		background-color: #222;
+		color: #fff;
+		font-family: Berlingske;
+		text-transform: uppercase;
+		padding: 2px 5px;
+		display: inline-block;
+	}
 }
+
 .micro-header {
 	font-size: 14px;
 	margin: 10px 0 5px 0;
@@ -822,6 +847,7 @@ a.btn-premium:after {
 	float: right;
 	font-weight: 300;
 	text-transform: none;
+	font-size: 87%;
 }
 
 .deck-sm {
