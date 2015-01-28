@@ -9227,6 +9227,10 @@ a.btn-premium:after {
   font-size: 13px;
   font-weight: 600;
 }
+.section-border-bottom {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
 .section-header {
   font-size: 17px;
   font-weight: 600;

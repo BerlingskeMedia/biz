@@ -150,7 +150,7 @@
 <? if (dumb_luck("50%")): ?>
             <div class="col-md-12">
             <div class="small">
-              Mobil: <b>20 61 67 68</b> <button class="btn btn-success btn-xs">OK</button> <a href="page-profile.php" class=" micro">Edit number </a> 
+              Mobil: <b>20 61 67 68</b> <button class="btn btn-success btn-xs">OK <i class="fa fa-check"></i></button> <a href="page-profile.php" class=" micro">Edit number </a> 
             </div>
             </div>
 <? else: ?>
@@ -179,7 +179,7 @@
 
             <div class="col-md-12">
             <div class="small">
-              <b>bsk@berlingskemedia.dk</b> <button class="btn btn-success btn-xs">OK</button> <a href="page-profile.php" class="micro">Edit email</a> 
+              <b>bsk@berlingskemedia.dk</b> <button class="btn btn-success btn-xs">OK <i class="fa fa-check"></i> </button> <a href="page-profile.php" class="micro">Edit email</a> 
             </div>
             </div>
 
@@ -203,7 +203,8 @@
           
           </section>
 
-          <section class="module-xs col-sm-12 col-md-12">
+          <section class="module-xs col-sm-12 col-md-12 ">
+          <div class="section-border-bottom">
           <h1 class="section-header-sm">
               Abonnement på Berlingske
             </h1>
@@ -218,6 +219,7 @@
           
           
           </a>
+          </div>
      </section>
 
 
