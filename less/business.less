@@ -218,7 +218,7 @@ a.header-tool-icon {
 	color: #fff;
 	text-transform: uppercase;
 	padding: .5em 1em;
-	font-size: 13px;
+	font-size: 18px;
 	font-family: @font-family-serif;
 	text-align: center;
 	display: inline-block;
@@ -560,7 +560,20 @@ h2.page-header {
 	}
 
 }
+.nav-deck {
+	margin-top: -10px;
+	margin-bottom: 20px;
+	ul {
+		.list-clean;
 
+		li {
+			display: inline-block;
+			padding: 0 20px 0 0;
+			font-size: 13px;
+			font-weight: 600;
+		}
+	}
+}
 .stock-info {
 	.list-clean;
 	background-color: rgba(0,0,0,.1);
@@ -575,10 +588,9 @@ h2.page-header {
 		float: left;
 		text-align: center;
 		font-size: 12px;
-		border-right: 1px solid rgba(0,0,0,.1);
+		margin-right: 2px;
 		line-height: 14px;
 		.transition(background-color .1s ease);
-
 	}
 	a {
 		color: #fff;
@@ -609,8 +621,8 @@ h2.page-header {
 	@media (max-width: @screen-xs-max) {
 		background: transparent;
 		li {
-			border-bottom: 1px solid rgba(0,0,0,.1);
 			font-size: 11px;
+			margin-bottom: 2px;
 		}
 	}
 }
@@ -773,7 +785,15 @@ a.btn-premium:after {
 	position: relative;
 	border-top: 4px solid rgba(0,0,0,.1);
 	padding-top: 10px;
-
+	&+ p {
+		margin-top: -20px;
+		color: rgba(0,0,0,.5);
+		margin-bottom: 20px;
+	}
+}
+.micro-header {
+	font-size: 14px;
+	margin: 10px 0 5px 0;
 }
 .section-header-sm {
 	.section-header;

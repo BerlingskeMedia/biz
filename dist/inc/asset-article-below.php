@@ -134,7 +134,7 @@
         
         <div class="row">
         
-        <section class="module-sm col-sm-6  col-md-12">
+        <section class="module-xs col-sm-6  col-md-12">
           <h1 class="section-header-sm">
               Få <span class="tag-breaking">Breaking News</span> via SMS
             </h1>
@@ -156,7 +156,7 @@
 
 
           
-          <section class="module-sm col-sm-6  col-md-12">
+          <section class="module-xs col-sm-6  col-md-12">
             <h1 class="section-header-sm">
               Business.dk nyhedsbrev
             </h1>
@@ -246,26 +246,18 @@
           </ul>
     </div>
 
-    <div role="tabpanel" class="tab-pane fade " id="tab-tv-most-viewed">
-      <ul class="list-clean flex-4-2-2">
-            <? while (dumb_luck("4")): ?>
-              <li>
-                <article class="teaser teaser-fixed-height col-md-3 col-sm-3 col-xs-6">
-                  <figure class="teaser-img">
-                    <a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a>
-                  </figure>
-                  <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                  <footer class="teaser-author">
-        <figure class="author-image"><img src="<? dummy("image/!author@28x28,") ?>" width="" height="" alt="" />
-        <figcaption class="author-name"><? dummy("text@author") ?><span class="author-title">Analytiker</span></figcaption>
-        </figure>
+    <div role="tabpanel" class="tab-pane fade" id="tab-tv-most-viewed">
+      
+      <div class="col-md-12">
 
-      </footer>
-                </article>
-                </li>
-            <? endwhile ?>
-          </ul>
+      <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+      </div>
+
     </div>
     
     
@@ -365,10 +357,33 @@
       <section class="deck">
         
         <div class="col-md-12">
+
           <h1 class="section-header">
             Investor
           </h1>
 
+        <nav class="nav-deck">
+            <ul>
+              <li>
+                <a href="#">Aktier</a>
+              </li>
+              <li>
+                <a href="#">Obligationer</a>
+              </li>
+              <li>
+                <a href="#">Investeringsforeninger</a>
+              </li>
+              <li>
+                <a href="#">Valuta</a>
+              </li>
+              <li>
+                <a href="#">Markeder</a>
+              </li>
+            </ul>
+        </nav>
+          
+        </div>
+        <div class="col-md-12">
         
         <div class="stock-overview module-sm">
           <ul class="stock-info">
@@ -395,44 +410,27 @@
 
 
 
-        <!-- <nav class="nav-responsive">
-            <ul>
-              <li>
-                <a href="#">Aktier</a>
-              </li>
-              <li>
-                <a href="#">Obligationer</a>
-              </li>
-              <li>
-                <a href="#">Investeringsforeninger</a>
-              </li>
-              <li>
-                <a href="#">Valuta</a>
-              </li>
-              <li>
-                <a href="#">Markeder</a>
-              </li>
-            </ul>
-        </nav> -->
+        
 
         </div>
 
       
       <div class="col-md-4">
-      OMX C20 CAP
+      <h2 class="micro-header">OMX C20 CAP</h2>
           <article class="teaser header-20 ">
-              <figure class="teaser-img"><a href="#"><img src="<? dummy("image@394x,16:9") ?>" width="" height="" alt="" /></a></figure>
+              <img src="<? dummy("image@394x,16:9") ?>" width="" height="" alt="" class="img-responsive" />
             </article>
       </div>
 
       <div class="col-md-4">
-      Vindere
+      <h2 class="micro-header">Vindere</h2>
+      
           <article class="teaser header-20 ">
               <figure class="teaser-img"><a href="#"><img src="<? dummy("image@394x,16:9") ?>" width="" height="" alt="" /></a></figure>
             </article>
       </div>
       <div class="col-md-4">
-      Tabere
+      <h2 class="micro-header">Tabere</h2>
           <article class="teaser header-20 ">
               <figure class="teaser-img"><a href="#"><img src="<? dummy("image@394x,16:9") ?>" width="" height="" alt="" /></a></figure>
             </article>
@@ -440,3 +438,89 @@
       
 
       </section>  
+
+
+<section class="deck">
+        
+        <div class="col-md-12">
+          <h1 class="section-header">Meningsdannerne</h1>
+          <p>Blogs fra Berlingske, Politiko og Business</p>
+        </div>
+
+<div class="col-md-12">
+<div role="tabpanel" class="tabs">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs-sm" role="tablist">
+    <li role="presentation" class="active"><a href="#tab-blogs-1" aria-controls="tab-blogs-1" role="tab" data-toggle="tab">Seneste</a></li>
+    <li role="presentation"><a href="#tab-blogs-2" aria-controls="tab-blogs-2" role="tab" data-toggle="tab">Mest læste</a></li>
+    <li role="presentation"><a href="#tab-blogs-3" aria-controls="tab-blogs-3" role="tab" data-toggle="tab">Mest kommenterede</a></li>
+    
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="tab-blogs-1">
+       <ul class="list-clean flex-6-3-2">
+            <? while (dumb_luck("6")): ?>
+            <li>
+              <article class="teaser teaser-round col-md-2 col-sm-4 col-xs-6">
+              <figure class="teaser-img"><a href="#"><img src="<? dummy("image/!author@100x100,") ?>" width="" height="" alt="" /></a></figure>
+              <footer><span class="author"><? dummy("text@author") ?></span></footer>
+              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+              <footer><span class="sitename">blogs.business.dk</span></footer>
+              </article>
+            </li>
+            <? endwhile ?>
+        </ul>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-blogs-2">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-blogs-3">
+        <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+    </div>
+    
+  </div>
+</div>
+</div>
+
+       
+</section>
+
+
+
+<section class="deck">
+        <div class="banner">
+          Here comes banner
+        </div>
+      </section>  
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
