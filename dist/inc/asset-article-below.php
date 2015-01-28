@@ -390,7 +390,7 @@
           <? while (dumb_luck("8")): ?>
             <li class="<? if (dumb_luck("50%")): ?>stock-green<? else: ?>stock-red<? endif ?>">
             <a href="#">
-              <b>OMXC20</b>
+              <b><? dummy("text@stocknames") ?></b>
               -0,39%</a>
             </li>
           <? endwhile ?>
