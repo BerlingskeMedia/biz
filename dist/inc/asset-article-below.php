@@ -1,4 +1,8 @@
 
+<div class="col-md-12">
+  <div class="section-header text-center">Article footer start</div>
+</div>
+
       <div class="col-md-4 col-sm-6">
         
         <section class="module-sm">
@@ -135,12 +139,19 @@
               Få <span class="tag-breaking">Breaking News</span> via SMS
             </h1>
           <!-- <p class="small">Modtag <strong class="tag-breaking">BREAKING</strong> på SMS</p> -->
-          <form class="form-signup">
-            <div class="form-group form-oneline ">
-              <input type="email" id="breaking-signup" class="form-control input-sm" placeholder="Indtast mobil nummer">
-              <button class="btn btn-sm btn-primary btn-trans ">OK <i class="fa fa-caret-right"></i></button>
+          <div class="row">
+            <div class="col-sm-8 col-xs-10">
+            
+              <div class="input-group input-group-sm form-oneline">
+  <span class="input-group-addon" ><i class="fa fa-mobile"></i></span>
+  <input type="tel" class="form-control input-sm" placeholder="Mobilnummer" aria-describedby="">
+  <button class="btn btn-sm btn-trans btn-sm ">OK <i class="fa fa-caret-right"></i></button>
+</div>
+
             </div>
-          </form>
+            
+            
+          </div>
         </section>
 
 
@@ -149,12 +160,26 @@
             <h1 class="section-header-sm">
               Business.dk nyhedsbrev
             </h1>
-          <!-- <p class="small">Modtag Business.dk's nyhedsbrev</p> -->
+         
+
           <form class="form-signup">
-            <div class="form-group form-oneline ">
-              <input type="tel" id="newsletter-signup" class="form-control input-sm" placeholder="Indtast din email">
-              <button class="btn btn-sm btn-trans btn-sm ">OK <i class="fa fa-caret-right"></i></button>
+          
+          <div class="row">
+            <div class="col-sm-8 col-xs-10">
+            <div class="input-group input-group-sm form-oneline">
+  <span class="input-group-addon" id="sizing-addon3"><i class="fa fa-envelope"></i></span>
+  <input type="text" class="form-control" placeholder="Email" aria-describedby="sizing-addon3">
+  <button class="btn btn-sm btn-trans btn-sm ">OK <i class="fa fa-caret-right"></i></button>        
+
+</div>
+
+                            
             </div>
+            
+            
+            
+          </div>
+            
           </form>
           </section>
 
@@ -182,12 +207,25 @@
       <section class="deck">
       
         <div class="col-md-12">
-            <h1 class="section-header">Business TV  <a href="#">Seneste</a>  / <a href="#">Mest sete</a></h1>
+            <h1 class="section-header">Business TV</h1>
         </div>
 
-        
-        
-          <ul class="list-clean flex-4-2-2">
+
+
+    <div role="tabpanel" class="tabs">
+<div class="col-md-12">
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs-sm" role="tablist">
+    <li role="presentation" class="active"><a href="#tab-tv-latest" aria-controls="tab-tv-latest" role="tab" data-toggle="tab">Latest</a></li>
+    <li role="presentation"><a href="#tab-tv-most-viewed" aria-controls="tab-tv-most-viewed" role="tab" data-toggle="tab">Most viewed</a></li>
+    
+  </ul>
+</div>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="tab-tv-latest">
+      <ul class="list-clean flex-4-2-2">
             <? while (dumb_luck("4")): ?>
               <li>
                 <article class="teaser teaser-fixed-height col-md-3 col-sm-3 col-xs-6">
@@ -206,6 +244,39 @@
                 </li>
             <? endwhile ?>
           </ul>
+    </div>
+
+    <div role="tabpanel" class="tab-pane fade " id="tab-tv-most-viewed">
+      <ul class="list-clean flex-4-2-2">
+            <? while (dumb_luck("4")): ?>
+              <li>
+                <article class="teaser teaser-fixed-height col-md-3 col-sm-3 col-xs-6">
+                  <figure class="teaser-img">
+                    <a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a>
+                  </figure>
+                  <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+                  <footer class="teaser-author">
+        <figure class="author-image"><img src="<? dummy("image/!author@28x28,") ?>" width="" height="" alt="" />
+        <figcaption class="author-name"><? dummy("text@author") ?><span class="author-title">Analytiker</span></figcaption>
+        </figure>
+
+      </footer>
+                </article>
+                </li>
+            <? endwhile ?>
+          </ul>
+    </div>
+    
+    
+  </div>
+
+</div>
+
+
+        
+        
+          
 
           
 

@@ -2830,6 +2830,22 @@ select[multiple].form-group-lg .form-control {
     padding-top: 6px;
   }
 }
+.form-oneline {
+  position: relative;
+}
+.form-oneline button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom-width: 1px;
+  z-index: 99;
+}
+.form-signup .checkbox {
+  margin: 5px 0;
+}
+.form-signup .form-group {
+  margin-bottom: 0;
+}
 .btn {
   text-transform: uppercase;
   display: inline-block;
@@ -3641,8 +3657,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 1;
   color: #555555;
   text-align: center;
-  background-color: #eeeeee;
+  background-color: #fff;
   border: 1px solid #cccccc;
+  border-right: 0;
   border-radius: 2px;
 }
 .input-group-addon.input-sm {
@@ -3658,6 +3675,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .input-group-addon input[type="radio"],
 .input-group-addon input[type="checkbox"] {
   margin-top: 0;
+}
+.input-group .form-control {
+  border-left: 0;
+  box-shadow: none;
 }
 .input-group .form-control:first-child,
 .input-group-addon:first-child,
@@ -9136,7 +9157,7 @@ a.btn-premium:after {
   position: relative;
   border-top: 4px solid rgba(0, 0, 0, 0.1);
   padding-top: 10px;
-  text-transform: none;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 .sub-section-header {
@@ -9586,21 +9607,6 @@ a.btn-premium:after {
   padding: 5px 10px;
   background: #fff;
   margin: 0 auto;
-}
-.form-oneline {
-  position: relative;
-}
-.form-oneline button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-bottom-width: 1px;
-}
-.form-signup .checkbox {
-  margin: 5px 0;
-}
-.form-signup .form-group {
-  margin-bottom: 0;
 }
 .label-small {
   font-size: 11px;

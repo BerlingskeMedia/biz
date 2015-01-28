@@ -75,6 +75,7 @@
 @font-size-base:          16px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+@font-size-sx:         	  ceil((@font-size-base * 0.80)); // ~12px
 
 @font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
 @font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
@@ -125,6 +126,7 @@
 
 @line-height-large:         1.33;
 @line-height-small:         1.5;
+@line-height-sx:         	1.2;
 
 @border-radius-base:        2px;
 @border-radius-large:       6px;
@@ -217,6 +219,9 @@
 @input-height-large:             (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
 //** Small `.form-control` height
 @input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
+
+//** Small `.form-control` height
+@input-height-sx:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
 
 @legend-color:                   @gray-dark;
 @legend-border-color:            #e5e5e5;

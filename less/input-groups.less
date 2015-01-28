@@ -77,8 +77,9 @@
   line-height: 1;
   color: @input-color;
   text-align: center;
-  background-color: @input-group-addon-bg;
+  background-color: #fff;
   border: 1px solid @input-group-addon-border-color;
+  border-right: 0;
   border-radius: @border-radius-base;
 
   // Sizing
@@ -99,7 +100,12 @@
     margin-top: 0;
   }
 }
-
+.input-group {
+  .form-control {
+    border-left: 0;
+    box-shadow: none;
+  }
+}
 // Reset rounded corners
 .input-group .form-control:first-child,
 .input-group-addon:first-child,
