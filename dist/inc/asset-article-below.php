@@ -350,57 +350,7 @@
         </div>
 
 
-        <div class="col-md-8">
-          <article class="teaser teaser-img-right header-20 teaser-img-380 teaser-border-bottom">
-            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@540x,16:9") ?>" width="" height="" alt="" /></a></figure>
-            <div class="teaser-body">
-            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-            <p><? dummy("text@teaser") ?></p>
-            </div>
-          </article>
-
-          <article class="teaser teaser-img-left header-20 teaser-img-220 teaser-border-bottom">
-            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@540x,16:9") ?>" width="" height="" alt="" /></a></figure>
-            <div class="teaser-body">
-            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-            <p><? dummy("text@teaser") ?></p>
-              <ul class="related">
-                  <? dummy("text@biz-related") ?>
-              </ul>
-            </div>
-          </article>
-
-
-          <div class="row">
-            
-            <? while (dumb_luck("3")): ?>
-            <div class="col-md-4">
-            <article class="teaser ">
-            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@220x,16:9") ?>" width="" height="" alt="" /></a></figure>
-            <div class="teaser-body">
-            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-            
-            <!--   <ul class="related">
-                <li><a href="article.php"><span class="teaser-tag-video">Se video</span> <? dummy("text@headline") ?></li>
-                <li><a href="article.php"><span class="teaser-tag-gallery">Billedserie</span> <? dummy("text@headline") ?></li>
-              </ul> -->
-            </div>
-          </article>
-          </div>
-            <? endwhile ?>            
-
-          </div>
-
-        </div>
-
-        <div class="col-md-4">
-          <div class="banner module-sm">
-              <? dummy("ad@300x250") ?>
-            </div>
-        </div>
+        
         
           <div class="col-md-8">
             <article class="teaser header-35">

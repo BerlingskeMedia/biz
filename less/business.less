@@ -351,7 +351,7 @@ ul.related {
 		li {
 			font-size: 13px;
 			font-weight: 600;
-			margin-bottom: 3px;
+			margin-bottom: 5px;
 		}
 		a {
 			color: @text-color;
@@ -378,6 +378,24 @@ ul.related {
 .teaser-tag-gallery:before {
 	content: '\f030';
 }
+.teaser-tag-live {
+	background: @biz-1;
+	color: #fff;
+	padding: 1px 3px;
+	text-transform: uppercase;
+	font-size: 90%;
+}
+.teaser-tag-breaking {
+	color: #000;
+	background: @col-breaking;
+	padding-left: 3px;
+	padding-right: 3px;
+	text-transform: uppercase;
+	&:before {
+		content: '\f0e7';
+	}
+}
+
 
 .teaser-img-460 {
 	@media (min-width: @screen-sm) {
@@ -467,6 +485,10 @@ ul.related {
 	}
 }
 
+.teaser-fixed-height-lg .header {
+	height: 80px;
+	overflow: hidden;
+}
 
 .teaser-fixed-height .header {
 	height: 60px;
@@ -1041,10 +1063,29 @@ a.btn-premium:after {
 		}
 	}
 }
+.teaser-border-right-alt {
+	padding-right: 10px;
+	border-right: 1px solid rgba(0,0,0,.1);
+	margin-right: -10px;
+}
+.teaser-border-right {
+	.teaser-body {
+		border-right: 1px solid rgba(0,0,0,.1);
+		padding-right: 5px;
+	}
+}
 .teaser-border-bottom {
 	border-bottom: 1px solid rgba(0,0,0,.1);
 	margin-bottom: 15px;
 	padding-bottom: 15px;
+}
+.teaser-border-bottom-last-child {
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	&:last-child {
+		border-bottom: 0;
+	}
 }
 .header-20 .header {
 	font-size: 20px;

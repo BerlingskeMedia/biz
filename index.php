@@ -123,7 +123,7 @@ body {
         <h4>Generel</h4>
 
         <ul class="overview">
-          <li class="a"><a href="/dist/index.php">Frontpage</a></li>
+          <li class="b"><a href="/dist/index.php">Frontpage</a></li>
           <li class="d"><a href="/dist/article.php">Article</a></li>
           <li class="b"><a href="/dist/article-footer.php">Article footer</a></li>
 
