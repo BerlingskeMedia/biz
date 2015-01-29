@@ -73,14 +73,14 @@
         
         <div class="row">
 
-         <div class="banner module-sm">
+         <div class="banner  border-bottom">
        
        <? dummy("ad@300x250") ?>
 
      </div>
         
-        <section class="module-xs col-sm-6  col-md-12">
-          
+        <section class="col-sm-6  col-md-12">
+            <div class="border-bottom">
               <p><strong><i class="fa fa-mobile"></i> Tilmeld Breaking News SMS</strong></p>
           
           <!-- <p class="small">Modtag <strong class="tag-breaking">BREAKING</strong> på SMS</p> -->
@@ -107,11 +107,15 @@
             </div>
 
           </div>
+          
+          
+          </div>
         </section>
 
 
           
-          <section class="module-xs col-sm-6  col-md-12">
+          <section class="col-sm-6  col-md-12 ">
+          <div class="border-bottom">
               <p><strong>
               <i class="fa fa-envelope"></i> Tilmeld Business.dk nyhedsbrev</strong></p>
             
@@ -119,9 +123,9 @@
          
             
 
-            <form class="form-signup">
+            <form class="form-signup ">
            <div class="col-sm-9 col-xs-10">
-            <div class="form-group form-oneline-alt">
+            <div class="form-group form-oneline-alt ">
             
             <? if (dumb_luck("50%")): ?>
             <input type="email" class="form-control input-sm form-underline" placeholder="Email" value="bsk@berlingskemedia.dk" aria-describedby="sizing-addon3">
@@ -131,13 +135,14 @@
             <button class="btn btn-sm btn-primary btn-sm ">OK <!-- <i class="fa fa-caret-right"></i> --></button>
             </div>
             </div>
+
         </form>
 
 
-</div>
+          </div>
 
                             
-           
+           </div>
             
           
           </section>
