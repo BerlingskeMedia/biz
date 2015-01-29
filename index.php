@@ -128,6 +128,7 @@ body {
           <li class="b"><a href="/dist/article-footer.php">Article footer</a></li>
 
           <li class="a"><a href="#">Article - Longreads</a></li>
+          <li class="a"><a href="#">Section - "Millionnaire Club"</a></li>
 
           <li class="b"><a href="/dist/article-large.php">Article - Large</a></li>
           <li class="b"><a href="/dist/article-advetorial.php">Article - Advetorial</a></li>

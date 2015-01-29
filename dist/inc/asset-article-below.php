@@ -23,10 +23,10 @@
   <!-- Tab panes -->
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane fade in active" id="tab-business">
-      <ul class="list list-xs">
+      <ul class="list list-xs list-light">
         <? while (dumb_luck("10")): ?>
           <li class="teaser">
-          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a><footer class="inline"><time class=""><? dummy("text@time-ago-short") ?></time></footer></h2></div>
           </li>
         <? endwhile ?>
       </ul>
@@ -67,6 +67,107 @@
       </section>
 
       </div>
+
+
+ <div class="col-md-4">
+        
+        <div class="row">
+
+         <div class="banner module-sm">
+       
+       <? dummy("ad@300x250") ?>
+
+     </div>
+        
+        <section class="module-xs col-sm-6  col-md-12">
+          
+              <p><strong><i class="fa fa-mobile"></i> Tilmeld Breaking News SMS</strong></p>
+          
+          <!-- <p class="small">Modtag <strong class="tag-breaking">BREAKING</strong> på SMS</p> -->
+          <div class="row">
+            
+            
+
+            <div class="col-sm-9 col-xs-10">
+            <form class="form-signup">
+            <div class="form-group form-oneline-alt">
+
+            
+
+              <? if (dumb_luck("50%")): ?>
+            <input type="email" class="form-control input-sm form-underline" placeholder="Email" value="20616768" aria-describedby="sizing-addon3">
+            <? else: ?>
+            <input type="email" class="form-control input-sm form-underline" placeholder="Indtast mobilnr." aria-describedby="sizing-addon3">
+            <? endif ?> 
+
+
+            <button class="btn btn-sm btn-primary btn-sm ">OK</button>
+            </div>
+            </form>
+            </div>
+
+          </div>
+        </section>
+
+
+          
+          <section class="module-xs col-sm-6  col-md-12">
+              <p><strong>
+              <i class="fa fa-envelope"></i> Tilmeld Business.dk nyhedsbrev</strong></p>
+            
+            <div class="row">
+         
+            
+
+            <form class="form-signup">
+           <div class="col-sm-9 col-xs-10">
+            <div class="form-group form-oneline-alt">
+            
+            <? if (dumb_luck("50%")): ?>
+            <input type="email" class="form-control input-sm form-underline" placeholder="Email" value="bsk@berlingskemedia.dk" aria-describedby="sizing-addon3">
+            <? else: ?>
+            <input type="email" class="form-control input-sm form-underline" placeholder="Indtast email" aria-describedby="sizing-addon3">
+            <? endif ?> 
+            <button class="btn btn-sm btn-primary btn-sm ">OK <!-- <i class="fa fa-caret-right"></i> --></button>
+            </div>
+            </div>
+        </form>
+
+
+</div>
+
+                            
+           
+            
+          
+          </section>
+
+          <section class="module-xs col-sm-12 col-md-12 ">
+          
+          
+            
+          <div class="marketing-subscription">
+            <!-- <div class="subscription-logo">BERLINGSKE
+              <span class="newspaper"></span>
+            </div> -->
+            <p><strong>Abonnement på Berlingske</strong></p>
+            <a href="#" class="a-gray">
+            <p class="small"><strong>Få avisen i tre måneder inkl. digital adgang. Kun 199 kr/md. <span class="pink">Klik her <i class="fa fa-caret-right"></i></span> </strong> </p>
+            <p class="micro">Samlet engangspris 597,-. Abonnementet fortsætter til normalpris, indtil det opsiges</p>
+            </a>
+          </div>
+          
+          
+          
+          
+     </section>
+
+
+     </div><!-- row -->
+
+    
+      </div>
+      
 
       <div class="col-md-4 col-sm-6">
         
@@ -135,110 +236,7 @@
 
       </div>
 
-      <div class="col-md-4">
-        
-        <div class="row">
-        
-        <section class="module-xs col-sm-6  col-md-12">
-          <h1 class="section-header-sm">
-              <i class="fa fa-bolt"></i> Tilmeld Breaking News SMS
-            </h1>
-          <!-- <p class="small">Modtag <strong class="tag-breaking">BREAKING</strong> på SMS</p> -->
-          <div class="row">
-            
-            
-<? if (dumb_luck("50%")): ?>
-            <div class="col-sm-8 col-xs-10">
-            <form class="form-signup">
-            <div class="input-group input-group-sm form-oneline-alt">
-             <span class="input-group-addon" ><i class="fa fa-mobile"></i></span>
-            <input type="tel" class="form-control input-sm" placeholder="Mobilnummer" value="20616768" aria-describedby="">
-            <button class="btn btn-sm btn-trans btn-sm ">OK <i class="fa fa-caret-right"></i></button>
-            </div>
-            </form>
-            </div>
-<? else: ?>
-            <div class="col-sm-8 col-xs-10">
-            <form class="form-signup">
-            <div class="input-group input-group-sm form-oneline-alt">
-             <span class="input-group-addon" ><i class="fa fa-mobile"></i></span>
-            <input type="tel" class="form-control input-sm" placeholder="Mobilnummer" aria-describedby="">
-            <button class="btn btn-sm btn-trans btn-sm ">OK <i class="fa fa-caret-right"></i></button>
-            </div>
-            </form>
-            </div>
-<? endif ?>
-          </div>
-        </section>
-
-
-          
-          <section class="module-xs col-sm-6  col-md-12">
-            <h1 class="section-header-sm">
-              <i class="fa fa-envelope"></i> Tilmeld Business.dk nyhedsbrev
-            </h1>
-            <div class="row">
-         
-            <? if (dumb_luck("50%")): ?>
-
-            <form class="form-signup">
-           <div class="col-sm-8 col-xs-10">
-            <div class="input-group input-group-sm form-oneline-alt">
-             <span class="input-group-addon" id="sizing-addon3"><i class="fa fa-envelope"></i></span>
-            <input type="text" class="form-control" placeholder="Email" value="bsk@berlingskemedia.dk" aria-describedby="sizing-addon3">
-            <button class="btn btn-sm btn-trans btn-sm ">OK <i class="fa fa-caret-right"></i></button>
-            </div>
-            </div>
-        </form>
-
-          <? else: ?>
-          <form class="form-signup">
-           <div class="col-sm-8 col-xs-10">
-            <div class="input-group input-group-sm form-oneline-alt">
-             <span class="input-group-addon" id="sizing-addon3"><i class="fa fa-envelope"></i></span>
-  <input type="text" class="form-control" placeholder="Email" aria-describedby="sizing-addon3">
-            <button class="btn btn-sm btn-trans btn-sm ">OK <i class="fa fa-caret-right"></i></button>
-            </div>
-            </div>
-        </form>
-<? endif ?>
-
-</div>
-
-                            
-           
-            
-          
-          </section>
-
-          <section class="module-xs col-sm-12 col-md-12 ">
-          <div class="section-border-bottom">
-          <h1 class="section-header-sm">
-              Abonnement på Berlingske
-            </h1>
-            <a href="#" class="a-gray">
-          <div class="marketing-subscription">
-            <div class="subscription-logo">BERLINGSKE
-              <span class="newspaper"></span>
-            </div>
-            <div class="teaser-body"><p class="small"><strong>Få avisen i tre måneder inkl. digital adgang. Kun 199 kr/md. </strong><i class="fa fa-caret-right"></i></p></div>
-            <p class="micro">Samlet engangspris 597,-. Abonnementet fortsætter til normalpris, indtil det opsiges</p>
-          </div>
-          
-          
-          </a>
-          </div>
-     </section>
-
-
-     </div><!-- row -->
-
-     <div class="banner module-sm">
-       
-       <? dummy("ad@300x250") ?>
-
-     </div>
-      </div>
+     
 
       <section class="deck">
       
@@ -346,6 +344,58 @@
           </h1>
         </div>
 
+
+        <div class="col-md-8">
+          <article class="teaser teaser-img-right header-20 teaser-img-380 teaser-border-bottom">
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@540x,16:9") ?>" width="" height="" alt="" /></a></figure>
+            <div class="teaser-body">
+            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            <p><? dummy("text@teaser") ?></p>
+            </div>
+          </article>
+
+          <article class="teaser teaser-img-left header-20 teaser-img-220 teaser-border-bottom">
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@540x,16:9") ?>" width="" height="" alt="" /></a></figure>
+            <div class="teaser-body">
+            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            <p><? dummy("text@teaser") ?></p>
+              <ul class="related">
+                  <? dummy("text@biz-related") ?>
+              </ul>
+            </div>
+          </article>
+
+
+          <div class="row">
+            
+            <? while (dumb_luck("3")): ?>
+            <div class="col-md-4">
+            <article class="teaser ">
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@220x,16:9") ?>" width="" height="" alt="" /></a></figure>
+            <div class="teaser-body">
+            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            
+            <!--   <ul class="related">
+                <li><a href="article.php"><span class="teaser-tag-video">Se video</span> <? dummy("text@headline") ?></li>
+                <li><a href="article.php"><span class="teaser-tag-gallery">Billedserie</span> <? dummy("text@headline") ?></li>
+              </ul> -->
+            </div>
+          </article>
+          </div>
+            <? endwhile ?>            
+
+          </div>
+
+        </div>
+
+        <div class="col-md-4">
+          <div class="banner module-sm">
+              <? dummy("ad@300x250") ?>
+            </div>
+        </div>
         
           <div class="col-md-8">
             <article class="teaser header-35">
@@ -356,16 +406,25 @@
           </div>
           <div class="col-md-4 col-sm-6 col-xs-6">
             
-          
-          <article class="teaser header-20 ">
-              <figure class="teaser-img"><a href="#"><img src="<? dummy("image@394,16:9") ?>" width="" height="" alt="" /></a></figure>
-              <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-            </article>
-
-            <div class="banner">
+           <div class="banner module-sm">
               <? dummy("ad@300x250") ?>
             </div>
+
+            <? while (dumb_luck("2")): ?>
+            <ul class="list list-image-left">
+              
+              <li class="teaser">
+                      <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure>
+                      <div class="teaser-body">
+                        <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+                        <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+                      </div>
+                      </li>
+
+            </ul>
+           
+            <? endwhile ?>
+           
 
         
         </div>

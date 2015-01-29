@@ -559,7 +559,7 @@ input[type="checkbox"] {
 .form-oneline-alt {
   .form-oneline;
   button {
-    right: auto
+    right: -50px
   }
 }
 
@@ -570,4 +570,22 @@ input[type="checkbox"] {
   .form-group {
     margin-bottom: 0;
   }
+}
+
+
+.form-control {
+  position: relative;
+}
+.form-underline {
+  background-color: rgba(255,255,255,.5);
+  border: transparent;
+  padding-left: 6px;
+  position: relative;
+  box-shadow: none;
+  border-radius: 0;
+  &:focus {
+    background-color:#fff;
+    border-color: transparent;
+  }
+
 }
