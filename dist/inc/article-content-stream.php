@@ -46,10 +46,10 @@
 </section>
 
 <section class="">
-<div class="business-inventory business-inventory-jobindex">
-  
 
-  <h1 class="aside-header">Jobindex A/S</h1>
+
+  <h1 class="section-header">Jobindex A/S <a href="http://jobindex.dk" class="section-header-link">Søg job <i class="fa fa-caret-right"></i></a></h1>
+  <div class="business-inventory business-inventory-jobindex">
   <ul class="list-jobs">
   <? while (dumb_luck("3")): ?>
   <li>
@@ -60,9 +60,7 @@
   </li>
   <? endwhile ?>
   </ul>
-  <footer class="inventory-footer">
-    <a href="#">Se flere jobs på Jobindex.dk <i class="fa fa-angle-right"></i></a>
-  </footer>
+  
   </div>
 </section>
 
