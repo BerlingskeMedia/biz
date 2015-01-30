@@ -210,7 +210,9 @@ a.header-tool-icon {
 }
 .marketing-subscription {
 	line-height: 1.2;
-	
+	@media (max-width: @screen-sm-max) {
+		.text-center;
+	}
 }
 .subscription-logo {
 	background: @biz-2;
@@ -521,7 +523,9 @@ ul.related {
 	vertical-align: middle;
 	font-size: 12px;
 	font-weight: 300;
-	
+}
+h2 + .price {
+	margin-left: 0
 }
 
 .hover-border {
@@ -1137,7 +1141,11 @@ a.btn-premium:after {
 		border-bottom: 1px solid rgba(0,0,0,.1);
 	}
 }
-
+.teaser-no-logo {
+	[class*='logo-'] {
+		display: none;	
+	}
+}
 .toplist {
 	.list-clean;
 }

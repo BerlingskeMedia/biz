@@ -8523,6 +8523,11 @@ a.header-tool-icon:hover {
 .marketing-subscription {
   line-height: 1.2;
 }
+@media (max-width: 991px) {
+  .marketing-subscription {
+    text-align: center;
+  }
+}
 .subscription-logo {
   background: #193057;
   color: #fff;
@@ -8904,6 +8909,9 @@ ul.related li {
   vertical-align: middle;
   font-size: 12px;
   font-weight: 300;
+}
+h2 + .price {
+  margin-left: 0;
 }
 .hover-border {
   display: inline-block;
@@ -9626,6 +9634,9 @@ a.btn-premium:after {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.teaser-no-logo [class*='logo-'] {
+  display: none;
 }
 .toplist {
   list-style: none;
