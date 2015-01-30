@@ -221,7 +221,7 @@
       <section class="deck">
       
         <div class="col-md-12">
-            <h1 class="section-header">Business TV <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a></h1>
+            <h1 class="deck-header">Business TV <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a></h1>
         </div>
 
 
@@ -287,7 +287,7 @@
 <section class="deck">
   
   <div class="col-md-12">
-    <h1 class="section-header">
+    <h1 class="deck-header">
       Business Blogs
     </h1>
   </div>
@@ -361,7 +361,7 @@
        <section class="deck">
         
         <div class="col-md-12">
-          <h1 class="section-header">
+          <h1 class="deck-header">
             Business recommends
           </h1>
         </div>
@@ -434,7 +434,7 @@
         
         <div class="col-md-12">
 
-          <h1 class="section-header">
+          <h1 class="deck-header">
             Investor
           </h1>
 
@@ -565,7 +565,7 @@
 <section class="deck">
         
         <div class="col-md-12">
-          <h1 class="section-header">Meningsdannerne</h1>
+          <h1 class="deck-header">Meningsdannerne</h1>
           <p>Blogs fra Berlingske, Politiko og Business</p>
         </div>
 

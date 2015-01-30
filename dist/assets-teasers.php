@@ -37,9 +37,11 @@
             <li>
               <article class="teaser teaser-round col-md-2 col-sm-4 col-xs-6">
               <figure class="teaser-img"><a href="#"><img src="<? dummy("image/!author@100x100,") ?>" width="" height="" alt="" /></a></figure>
+                <div class="teaser-body">
               <footer><span class="author"><? dummy("text@author") ?></span></footer>
               <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
               <footer><span class="sitename">blogs.business.dk</span></footer>
+              </div>
               </article>
             </li>
             <? endwhile ?>
@@ -61,8 +63,10 @@
                   <figure class="teaser-img">
                     <a href="article.php"><img src="<? dummy("image/!ecommerce-biz@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a>
                   </figure>
+                  <div class="teaser-body">
                   <h2 class="header"><a href="article.php"><? dummy("text@ecommerce") ?></a></h2>
                   <div class="teaser-price"><a href="http://www.berlingske.dk/shop" target="_blank" class="btn btn-xxs btn-secondary">Køb</a> <span class="price"><? dummy("text@number") ?> kr.</span></div>
+                  </div>
                 </article>
                 </li>
             <? endwhile ?>
@@ -88,9 +92,10 @@
                   <figure class="teaser-img">
                     <a href="article.php"><img src="<? dummy("image/!ecommerce-biz@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a>
                   </figure>
-                  
+                  <div class="teaser-body">
                   <h2 class="header"><a href="article.php"><? dummy("text@ecommerce") ?></a></h2>
                   <div class="teaser-price"><a href="http://www.berlingske.dk/shop" target="_blank" class="btn btn-xxs btn-secondary">Køb</a> <span class="price"><? dummy("text@number") ?> kr.</span></div>
+                  </div>
                 </article>
                 </li>
             <? endwhile ?>
@@ -112,7 +117,9 @@
     <? while (dumb_luck("4")): ?>
     <div class="col-md-3 col-sm-6 col-xs-6">
       <article class="teaser teaser-fixed-height">
+      
       <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="" height="" alt="" /></a></figure>
+      <div class="teaser-body">
       <footer><a href="section.php" class="cat"><? dummy("text@item") ?></a>  <time> <? dummy("text@time-ago-short") ?></time></footer>
       <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
       <footer class="teaser-author">
@@ -121,6 +128,7 @@
         </figure>
 
       </footer>
+      </div>
       </article>
     </div>
     <? endwhile ?>

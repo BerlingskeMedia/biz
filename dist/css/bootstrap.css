@@ -9413,6 +9413,14 @@ a.btn-premium:after {
   padding: 2px 5px;
   display: inline-block;
 }
+.deck-header {
+  font-size: 35px;
+  font-weight: 200;
+  margin: 0 0 20px;
+  color: #111;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
+}
 .micro-header {
   font-size: 14px;
   margin: 10px 0 5px 0;
