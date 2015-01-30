@@ -130,12 +130,12 @@ body {
           <li class="a"><a href="#">Article - Longreads</a></li>
           <li class="a"><a href="#">Section - "Millionnaire Club"</a></li>
 
-          <li class="b"><a href="/dist/article-large.php">Article - Large</a></li>
-          <li class="b"><a href="/dist/article-advetorial.php">Article - Advetorial</a></li>
-          <li class="b"><a href="/dist/page-profile.php">User profile</a></li>
-          <li class="b"><a href="/dist/staff.php">Staff - overview</a></li>
-          <li class="a"><a href="#">Staff - Author</a></li>
-          <li class="b"><a href="/dist/page-profile.php">Profile</a></li>
+          <li class="c"><a href="/dist/article-large.php">Article - Large</a></li>
+          <li class="c"><a href="/dist/article-advetorial.php">Article - Advetorial</a></li>
+          <li class="c"><a href="/dist/page-profile.php">User profile</a></li>
+          <li class="c"><a href="/dist/staff.php">Staff - overview</a></li>
+          <li class="b"><a href="/dist/author.php">Staff - Author</a></li>
+          <li class="c"><a href="/dist/page-profile.php">Profile</a></li>
           <li class="a"><a href="#">404</a></li>
           <li class="a"><a href="#">Search</a></li>
           <li class="a"><a href="#">News overview</a></li>

@@ -9775,10 +9775,21 @@ a.btn-premium:after {
 .business-inventory-jobindex a {
   color: #333;
 }
-.inventory-footer {
+.business-inventory-jobindex .inventory-footer {
   font-size: 12px;
   font-weight: 600;
-  text-align: center;
+  text-align: right;
+  line-height: 25px;
+}
+.logo-jobindex {
+  display: block;
+  background: url("../images/logo-jobindex.gif") center center no-repeat;
+  background-size: 60px;
+  display: inline-block;
+  height: 25px;
+  width: 62px;
+  text-indent: -9999px;
+  text-align: left;
 }
 .banner {
   text-align: center;
@@ -10057,6 +10068,9 @@ h1.heading {
   display: block;
   font-size: 12px;
   color: #cc0066;
+}
+.article-sidebar section {
+  padding-bottom: 20px;
 }
 .article-sidebar .aside-header {
   font-size: 17px;
@@ -11026,6 +11040,21 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   width: auto;
   vertical-align: middle;
   margin-left: 10px;
+}
+.list-author {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list-author li {
+  margin: 0;
+}
+.list-author li {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.list-author b {
+  display: block;
 }
 .module {
   margin-bottom: 50px;

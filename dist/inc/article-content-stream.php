@@ -1,11 +1,6 @@
 
 
-<style type="text/css">
-  .article-sidebar section {
-    padding-bottom: 20px;
-  }
-  
-</style>
+
 
 <section class="">
     
@@ -48,7 +43,7 @@
 <section class="">
 
 
-  <h1 class="section-header">Jobindex A/S <a href="http://jobindex.dk" class="section-header-link">Søg job <i class="fa fa-caret-right"></i></a></h1>
+  <h1 class="section-header">Søg job <a href="section.php" class="section-header-link">Flere job <i class="fa fa-caret-right"></i></a></h1>
   <div class="business-inventory business-inventory-jobindex">
   <ul class="list-jobs">
   <? while (dumb_luck("3")): ?>
@@ -60,7 +55,11 @@
   </li>
   <? endwhile ?>
   </ul>
-  
+  <footer class="inventory-footer">
+    
+    Presenteret af <a href="http://www.jobindex.dk" tagret="_blank" class="logo-jobindex">Jobindex</a>
+
+  </footer>
   </div>
 </section>
 

@@ -33,21 +33,17 @@
       
 
       
-      <article class="col-md-12">
+      
         
-        <?php // include('inc/article-header-premium.php'); ?>
-
+      <div class="col-md-12">
+        <h1>Profil</h1>
+      </div>
         
-
-        
-
-        <div class="row">
-        
-          <div class="col-md-8 col-md-push-2">
+          <div class="col-md-8 ">
             
-            <div class="article-content">
+            
 
-            <h1>Profil</h1>
+            
             
             
 
@@ -62,62 +58,78 @@ bsk@berlingskemedia.dk</p>
 <p class="small"><a href="page-profile-edit.php">Ret profil <i class="fa fa-pencil"></i></a></p>
             </div>
 
-<h2>Opsigelse eller ændringer</h2>
+<h3>Opsigelse eller ændringer</h3>
 <p> Ønsker du at opsige eller ændre dit abonnement?</a> <a href="https://b.kundeunivers.dk/" target="_blank">Gå til Kundeunivers <i class="fa fa-caret-right"></i></a></p>
 
 
-<section >
+
+  
+
+
+
+
+            
+          </div><!-- col -->
+          
+          <!-- SIDEBAR  -->
+          <div class="col-md-4 ">
+            
+  <section class="module-sm">
+          <h1 class="section-header">
+            Adgang via ordrenummer
+          </h1>
+          <form class="form-inline">
+            <p>Har du et ordrenummer, skal du logge ind og derefter indtaste dit 9-cifrede ordrenummer i feltet nedenfor.</p>
+<div class="form-group">
+ <label>Ordrenummer: </label>
+ <div class="row">
+   <div class="col-md-12">
+  <input maxlength="128" value="" disabled="disabled" class="form-control input-sm" type="text">    
+  <button class="btn btn-sm btn-default">OK</button>
+   </div>
+ </div>
+ <p class="help-block">Indtast dit ordrenummer, hvis du har betalt via girokort</p>
+</div>
+</form>
+
+          </section>
+
+          <section class="module-sm">
+          <h1 class="section-header">
+            Aktiveringskode
+          </h1>
+          <form class="form-inline">
+            
+<div class="form-group">
+ <label>Indtast aktiveringskode: </label>
+ <div class="row">
+   <div class="col-md-12">
+  <input maxlength="128" value="" disabled="disabled" class="form-control input-sm" type="text">    
+  <button class="btn btn-sm btn-default">OK</button>
+   </div>
+ </div>
+ 
+</div>
+</form>
+
+          </section>
+
+          <section >
 <h1 class="section-header">Seneste pressemeddelelser</h1>
-<ul class="list">
+<ul class="list list-xs">
   <? while (dumb_luck("1-3")): ?>
 <li class="teaser"><div class="teaser-body">
     <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
     </div>
     </li>
 <? endwhile ?>
+</ul>       
 </section>
-  </div>
-</ul>
 
-
-
-
-
-
-       
-
-
-              
-              
-
-        
-              
-
-              
-
-              
-              
-
-              <!-- READ ALSO -->
-              
-                
-        
-              
+          </div>
 
 
         
-
-
-
-            </div><!-- article-content -->
-          </div><!-- col -->
-          
-          <!-- SIDEBAR  -->
-          
-
-
-        </div><!-- row -->
-      </article>  
 
       
 
