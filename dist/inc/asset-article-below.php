@@ -23,7 +23,7 @@
   <!-- Tab panes -->
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane fade in active" id="tab-business">
-      <ul class="list list-xs list-light">
+      <ul class="list list-xs ">
         <? while (dumb_luck("10")): ?>
           <li class="teaser">
           <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a><footer class="inline"><time class=""><? dummy("text@time-ago-short") ?></time></footer></h2></div>
