@@ -124,6 +124,7 @@ body {
 
         <ul class="overview">
           <li class="b"><a href="/dist/index.php">Frontpage</a></li>
+          <li class="b"><a href="/dist/section.php">Section</a></li>
           <li class="d"><a href="/dist/article.php">Article</a></li>
           <li class="b"><a href="/dist/article-footer.php">Article footer</a></li>
 
