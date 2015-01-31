@@ -129,7 +129,7 @@
         <div class="banner module-sm">BANNER</div>
       </div>
     </div>
-    <? while (dumb_luck("2")): ?>
+
 
     <div class="row">
       
@@ -163,7 +163,7 @@
 
     </div>
 
-  <? endwhile ?>
+
 
 
 <div class="row">
@@ -242,6 +242,7 @@
     <a href="article-longread.php">
       <div class="teaser-body">
         <h2 class="header"><? dummy("text@headline") ?></h2>
+        <div><p><? dummy("text@teaser") ?></p></div>
       </div>
       <div class="splash-img" style="background-image: url(<? dummy("image/!longread@800x,1:1") ?>)"></div>
       </a>
@@ -299,7 +300,7 @@
       </h1>
     </div>
       <? while (dumb_luck("2")): ?>
-      <div class="col-md-6">
+      <div class="col-md-6 col-sm-6">
         <article class="teaser header-20">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@540x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
@@ -314,8 +315,17 @@
 
       <div class="row">
       <section class="deck">
-      <? while (dumb_luck("3")): ?>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <article class="teaser header-20">
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@540x,16:9") ?>" width="" height="" alt="" /></a></figure>
+            <div class="teaser-body">
+            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            </div>
+          </article>
+      </div>
+      <? while (dumb_luck("2")): ?>
+      <div class="col-md-4 col-sm-4 col-xs-6">
         <article class="teaser header-20">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@540x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">

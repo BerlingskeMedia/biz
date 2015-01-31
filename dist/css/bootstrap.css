@@ -8272,6 +8272,8 @@ form,
 figcaption,
 .subscription-logo {
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .site-header {
   margin-bottom: 10px;
@@ -11117,9 +11119,6 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   vertical-align: middle;
   text-align: right;
 }
-.theme-title .theme-header {
-  font-family: berlingske;
-}
 @media (max-width: 991px) {
   .theme-title {
     width: 100%;
@@ -11128,34 +11127,30 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   }
 }
 .theme-header {
-  margin: 0 0 10px 0;
+  margin: 0;
 }
 .theme-splash {
   background: #000;
   height: 60vh;
-  padding: 5px;
-}
-.theme-splash {
+  padding: 1px;
   position: relative;
 }
 .theme-splash .splash-title {
   position: absolute;
-  left: 10px;
-  top: 10px;
-  background-color: #3795a0;
+  left: -10px;
+  top: -10px;
+  background-color: #222;
   color: #fff;
   display: inline-block;
   margin: 0;
-  padding: 0;
   z-index: 3;
-  font-size: 15px;
+  font-size: 35px;
   padding: 0 5px;
   line-height: 1.3;
-  font-family: berlingske;
 }
 .teaser-splash {
   background-color: #444;
-  border: 5px solid #000;
+  border: 1px solid #000;
   display: none;
   float: left;
   overflow: hidden;
@@ -11164,7 +11159,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   position: relative;
   display: block;
 }
-.teaser-splash a {
+.teaser-splash:before {
   position: absolute;
   left: 0;
   right: 0;
@@ -11174,6 +11169,8 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   background-image: -webkit-linear-gradient(45deg, #cc0066, #3795a0);
   background-image: -o-linear-gradient(45deg, #cc0066, #3795a0);
   background-image: linear-gradient(45deg, #cc0066, #3795a0);
+  content: ' ';
+  display: block;
 }
 .teaser-splash .teaser-body {
   position: absolute;
@@ -11184,12 +11181,10 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 .teaser-splash .teaser-body .header {
   background: #111;
   color: #fff;
-  line-height: 1.4;
+  line-height: 1.1;
   display: inline;
   box-shadow: 5px 0 0 #111111, -5px 0 0 #111111;
-  font-weight: 200;
-  font-family: berlingske;
-  font-weight: normal;
+  font-weight: 600;
 }
 .teaser-splash:hover .splash-img {
   -webkit-transform: scale(1.05);
@@ -11213,7 +11208,6 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 }
 .teaser-splash:nth-child(1) .header {
   font-size: 40px;
-  line-height: 1.4;
 }
 .teaser-splash:nth-child(2) {
   height: 50%;
@@ -11231,10 +11225,39 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 .teaser-splash:nth-child(4) .header {
   font-size: 20px;
 }
+@media (max-width: 767px) {
+  .teaser-splash:nth-child(1) {
+    height: 40%;
+    width: 100%;
+  }
+  .teaser-splash:nth-child(1) .header {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+  .teaser-splash:nth-child(2),
+  .teaser-splash:nth-child(3),
+  .teaser-splash:nth-child(4) {
+    height: 20%;
+    width: 100%;
+  }
+  .teaser-splash:nth-child(2) .header,
+  .teaser-splash:nth-child(3) .header,
+  .teaser-splash:nth-child(4) .header {
+    font-size: 20px;
+  }
+}
 .theme-splash-wide {
   height: 30vh;
   position: relative;
   overflow: hidden;
+}
+.theme-splash-wide p {
+  background: #cc0066;
+  color: #fff;
+  margin: 0;
+  display: inline;
+  font-size: 19px;
+  font-weight: 600;
 }
 .theme-splash-wide a {
   position: absolute;
@@ -11247,21 +11270,20 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   background-image: -o-linear-gradient(45deg, #cc0066, #3795a0);
   background-image: linear-gradient(45deg, #cc0066, #3795a0);
 }
+.theme-splash-wide .header {
+  background: #111;
+  color: #fff;
+  font-size: 50px;
+  line-height: 1.1;
+  display: inline;
+  box-shadow: 5px 0 0 #111111, -5px 0 0 #111111;
+  font-weight: 600;
+}
 .theme-splash-wide .teaser-body {
   position: absolute;
   bottom: 20px;
   left: 0;
   z-index: 2;
-}
-.theme-splash-wide .teaser-body .header {
-  background: #111;
-  font-weight: normal;
-  color: #fff;
-  line-height: 1.4;
-  display: inline;
-  box-shadow: 5px 0 0 #111111, -5px 0 0 #111111;
-  font-weight: 200;
-  font-family: berlingske;
 }
 .theme-splash-wide:hover .splash-img {
   -webkit-transform: scale(1.05);
