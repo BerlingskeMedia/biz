@@ -166,6 +166,107 @@
   <? endwhile ?>
 
 
+<div class="row">
+  
+
+<div class="col-md-12 ">
+<section class="deck">    
+
+<div class="theme-splash">
+
+  
+
+  <? while (dumb_luck("4")): ?>
+    <article class="teaser-splash">
+    <a href="article-longread.php">
+      <div class="teaser-body">
+        <h2 class="header"><? dummy("text@headline") ?></h2>
+      </div>
+      <div class="splash-img" style="background-image: url(<? dummy("image/!longread@800x,1:1") ?>)"></div>
+      </a>
+    </article>
+  <? endwhile ?>
+
+  <h1 class="splash-title">Longreads</h1>
+</div>        
+
+
+</section>
+    </div>
+  
+</div><!-- row -->
+
+
+   <div class="row">
+      
+      <div class="col-md-3">
+        <article class="teaser header-20 teaser-border-right-alt">
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@540x,16:9") ?>" width="" height="" alt="" /></a></figure>
+            <div class="teaser-body">
+            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            
+
+            
+  
+
+            </div>
+          </article>
+      </div>
+
+      <? while (dumb_luck("3")): ?>
+      <div class="col-md-3">
+        <? while (dumb_luck("2")): ?>
+        <article class="teaser header-15 teaser-border-bottom-last-child teaser-border-right teaser-fixed-height-lg">
+            <div class="teaser-body">
+            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+           </div>
+          </article>
+      <? endwhile ?>
+      </div>
+      <? endwhile ?>
+
+    </div>
+
+
+
+<div class="row">
+  
+
+<div class="col-md-12 ">
+<section class="deck">    
+
+<div class="theme-splash-wide">
+    <article class="teaser-splash-wide">
+    <a href="article-longread.php">
+      <div class="teaser-body">
+        <h2 class="header"><? dummy("text@headline") ?></h2>
+      </div>
+      <div class="splash-img" style="background-image: url(<? dummy("image/!longread@800x,1:1") ?>)"></div>
+      </a>
+    </article>
+  
+
+  
+</div>        
+
+
+</section>
+    </div>
+  
+</div><!-- row -->
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="row">
   

@@ -51,8 +51,8 @@
         <? while (dumb_luck("2")): ?>
           
             <div class="col-md-6 col-sm-6">
-              <article class="teaser header-20 teaser-margin-bottom-0">
-                <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" /></a></figure>
+              <article class="teaser header-20 teaser-margin-bottom-0 teaser-sx-500">
+                <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@500x,16:9") ?>" width="" height="" alt="" /></a></figure>
                 <div class="teaser-body">
                 <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
                 <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></a> </h2>
@@ -117,7 +117,7 @@
       </div>
 
       <div class="col-md-4 col-sm-4 hidden-xs">
-      <div class="banner module-sm">
+      <div class="banner module-sm hidden-sm hidden-sx">
         <? dummy("ad@300x600") ?>
       </div>
         <section class="module-sm">
@@ -132,7 +132,7 @@
       </ul>
       </section>
 
-       <div class="banner module-sm">
+       <div class="banner module-sm hidden-sm hidden-sx">
         <? dummy("ad@300x250") ?>
       </div>
 
