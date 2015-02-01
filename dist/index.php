@@ -44,10 +44,13 @@
       <div class="col-md-8">
           
       <div class="row">
-      
+        
+        <div class="col-md-12">
+          <? if (dumb_luck("20%")): ?><article class="teaser teaser-breaking"><span>Breaking</span><a href="article.php"><? dummy("text@headline") ?></a></article><? endif ?>
+        </div>
       <div class="col-md-8">
 
-      <article class="teaser teaser-breaking"><span>Breaking</span><a href="article.php"><? dummy("text@headline") ?></a></article>
+      
 
           <article class="teaser header-20 teaser-overlay-gradient header-40">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,9:16") ?>" width="" height="" alt="" /></a></figure>
@@ -122,15 +125,35 @@
               <? dummy("ad@300x250") ?>
             </div>
 
-            <? while (dumb_luck("3")): ?>
-              <article class="teaser header-20 teaser-border-bottom">
+            
+            <article class="teaser header-20 teaser-border-bottom">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
             </div>
           </article>
-          <? endwhile ?>
+          <article class="teaser header-20 ">
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
+            <div class="teaser-body">
+            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            </div>
+          </article>
+
+
+          
+
+          <article class="teaser teaser-quote header-30">
+            <h1 class="section-header">Dagens kommentar</h1>
+            
+            <figure class="teaser-img">
+              <img src="<? dummy("image/!author@60x60,") ?>" width="" height="" alt="" />
+            </figure>
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            <cite><? dummy("text@author") ?></cite>
+
+          </article>
 
 
         </div>
@@ -139,6 +162,9 @@
     </div><!-- row -->
 
     <div class="row">
+    <div class="col-md-12 ">
+      <div class="divider"></div>
+    </div>
       <? while (dumb_luck("4")): ?>
 
       <div class="col-md-3">
@@ -353,7 +379,7 @@
     <a href="article-longread.php">
       <div class="teaser-body">
         
-        <h2 class="header"><i class="fa fa-camera"></i> <? dummy("text@headline") ?></h2>
+        <h2 class="header"><? dummy("text@headline") ?></h2>
         <div><p><? dummy("text@teaser") ?></p></div>
       </div>
       <div class="splash-img" style="background-image: url(<? dummy("image/!longread@800x,1:1") ?>)"></div>
@@ -468,6 +494,9 @@
 
       <div class="row">
       <section class="deck">
+      <div class="col-md-12">
+        <h1 class="deck-header">Random news</h1>
+      </div>
       <div class="col-md-4 col-sm-4 col-xs-12">
         <article class="teaser header-20">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@540x,16:9") ?>" width="" height="" alt="" /></a></figure>

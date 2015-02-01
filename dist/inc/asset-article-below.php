@@ -218,70 +218,24 @@
 
      </section>
 
-      <section class="deck">
-      
-        <div class="col-md-12">
-            <h1 class="deck-header">Business TV <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a></h1>
-        </div>
-
-
-
-    <div role="tabpanel" class="tabs">
-<div class="col-md-12">
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs-sm" role="tablist">
-    <li role="presentation" class="active"><a href="#tab-tv-latest" aria-controls="tab-tv-latest" role="tab" data-toggle="tab">Latest</a></li>
-    <li role="presentation"><a href="#tab-tv-most-viewed" aria-controls="tab-tv-most-viewed" role="tab" data-toggle="tab">Most viewed</a></li>
-    
-  </ul>
-</div>
-
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade in active" id="tab-tv-latest">
-      <ul class="list-clean flex-4-2-2">
-            <? while (dumb_luck("4")): ?>
-              <li>
-                <article class="teaser  col-md-3 col-sm-3 col-xs-6">
-                  <figure class="teaser-img">
-                    <a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a>
-                  </figure>
-                  <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                  
-      
-                </article>
-                </li>
+<section class="deck">    
+        <div class=" theme-container theme-dark">
+            <div class="td-25 theme-title">
+              <h2 class="theme-header">Business TV</h2>
+              <p><a href="#">Se LIVE TV <i class="fa fa-caret-right"></i></a></p>
+            </div>
+            <? while (dumb_luck("3")): ?>
+            
+            <article class="teaser td-25">
+              <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
+              <h2 class="header"><a href="article.php"><span class="teaser-tag"><i class="fa fa-play"></i></span> <? dummy("text@headline") ?></a></h2>
+            </article>
             <? endwhile ?>
-          </ul>
 
-          <div class="col-md-12 text-center">
-              <button class="btn-sm btn btn-primary">Hent flere <i class="fa fa-caret-down"></i></button>
-          </div>
-    </div>
+        </div>
+</section>
 
-    <div role="tabpanel" class="tab-pane fade" id="tab-tv-most-viewed">
-      
-      <div class="col-md-12">
-
-      <div class="spinner">
-          <div class="bounce1"></div>
-          <div class="bounce2"></div>
-          <div class="bounce3"></div>
-      </div>
-
-      </div>
-
-    </div>
-    
-    
-  </div>
-
-</div>
-
-
-        
-      </section>
+     
 
       
 <section class="deck">
@@ -367,7 +321,9 @@
         </div>
 
 
-        
+
+        <div class="col-md-12">
+        <div class="row">
         
           <div class="col-md-8">
             <article class="teaser header-35">
@@ -375,56 +331,41 @@
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
               <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
             </article>
-          
+        
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+           
+         
+           <div class="banner module-sm">
+              <? dummy("ad@300x250") ?>
+            </div>
+            
+           
 
-            <div class="row">
+        
+        </div>
+</div>
+
+
+          <div class="row">
               
-              <? while (dumb_luck("2")): ?>
-      <div class="col-md-6 col-sm-6 col-xs-6 ">
-          <article class="teaser header-20 ">
+              <? while (dumb_luck("4")): ?>
+      <div class="col-md-3 col-sm-4 col-xs-6 ">
+          <article class="teaser header-15 ">
               <figure class="teaser-img"><a href="#"><img src="<? dummy("image@394,16:9") ?>" width="" height="" alt="" /></a></figure>
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
               <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
             </article>
       </div>
 
+
       <? endwhile ?>
-
-            </div>
-
-
-          </div>
+      </div>
         
-
-        
-
+</div>
 
 
-      <div class="col-md-4 col-sm-6 col-xs-12">
-            
-           <div class="banner module-sm">
-              <? dummy("ad@300x250") ?>
-            </div>
 
-            <section class="module-sm"> 
-                
-
-                <ul class="list  list-image-right ">
-                    <? while (dumb_luck("5")): ?>
-                      <li class="teaser">
-                      <? if (dumb_luck("90%")): ?><figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@100x,16:9") ?>" width="" height="" alt="" /></a></figure><? endif ?>
-                      <div class="teaser-body">
-                        <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                      </div>
-                      </li>
-                    <? endwhile ?>
-                  </ul>
-
-            </section>
-           
-
-        
-        </div>
       
         
       </section>  
@@ -501,39 +442,37 @@
 
 
 <section class="deck">
-    <div class="col-md-8 col-sm-8">
-      
-      <div class="row">
-        
-        <div class="col-md-12">
-          <h1 class="section-header">
+    <div class="col-md-12 ">
+      <h1 class="deck-header">
             Business in pictures <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
           </h1>
         </div>
+      
 
-        <div class="col-md-12 col-sm-12">
-          <article class="teaser">
-            <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
-            <h2 class="header"><a href="article.php"><i class="fa fa-camera"></i> <? dummy("text@headline") ?></a></h2>
-          </article>
-        </div>
-
-        
-        <? while (dumb_luck("2")): ?>
-        <div class="col-xs-6 col-md-6">
-            <article class="teaser">
-            <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
-            <h2 class="header"><a href="article.php"><i class="fa fa-camera"></i> <? dummy("text@headline") ?></a></h2>
-          </article>
-        </div>
-        <? endwhile ?>
-
+        <div class="col-md-12">
+          
+<div class="theme-splash-wide module-sm">
+    <article class="teaser-splash-wide header-50">
+    <a href="article-longread.php">
+      <div class="teaser-body">
+        <h2 class="header"><? dummy("text@headline") ?></h2>
       </div>
-      
-      
-    </div><!-- col 8 -->
+      <div class="splash-img" style="background-image: url(<? dummy("image/!longread@800x,1:1") ?>)"></div>
+      </a>
+    </article>
+</div>        
 
-    <div class="col-md-4 col-sm-4">
+        </div>
+        
+  
+      
+      
+    
+
+  </section>
+  <section class="deck">
+
+    <div class="col-md-4 ">
       
       <section class="toggle-container">
 
@@ -546,7 +485,7 @@
         <p class="small">Indhold under BrandView produceres i et tæt samarbejde mellem Berlingske Medias content marketing bureau og virksomheden, der er afsender på budskabet. <a href="http://www.publicimpact.dk/">Læs mere om BrandView</a> eller kontakt os direkte på <a href="mailto:moas@berlingslemedia.dk">moas@berlingslemedia.dk</a>.</p>    
       </div>
       
-        <article class="teaser teaser-brandview ">
+        <article class="teaser teaser-brandview header-25">
             <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@360x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <span class="teaser-tagline">
               Sponseret af Columbus
@@ -554,15 +493,20 @@
             <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
         </article>
       
-        </section>
+</section>
 
-        <section>
+
+        
+
+    </div>
+    <div class="col-md-4">
+      <section >
   
     <h1 class="section-header">Seneste <span class="logo-premium">Premium</span>
     <a href="#" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
     </h1>
     
-                <ul class="list  list-image-right ">
+                <ul class="list  list-image-right list-condenced">
                     <? while (dumb_luck("4")): ?>
                       <li class="teaser teaser-no-logo">
                       <? if (dumb_luck("90%")): ?><figure class="teaser-img"><a href="article-premium.php"><img src="<? dummy("image@100x,16:9") ?>" width="" height="" alt="" /></a></figure><? endif ?>
