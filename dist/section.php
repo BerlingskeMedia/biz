@@ -66,7 +66,7 @@
         <div class="row">
         <div class="col-md-12">
         <article class="teaser teaser-section header-20 teaser-border-bottom teaser-border-top">
-                <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@150x,16:9") ?>" width="" height="" alt="" /></a></figure>
+                <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
                 <div class="teaser-body">
                 <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
                 <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></a> </h2>
@@ -76,7 +76,7 @@
           <? while (dumb_luck("20")): ?>
           
               <article class="teaser teaser-section header-20 teaser-border-bottom">
-                <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@150x,16:9") ?>" width="" height="" alt="" /></a></figure>
+                <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
                 <div class="teaser-body">
                 <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
                 <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></a> </h2>

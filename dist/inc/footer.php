@@ -1,4 +1,44 @@
 
+<footer class="main-footer">
+	
+	<div class="footer-newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					Never miss a story. Sign up for Business Newsletter			
+				</div>
+				
+
+					
+						<form class="form-inline">
+						
+						
+						
+							<div class="form-group  ">
+								<input type="email" class="form-control input-lg" placeholder="Indtast email" aria-describedby="email-newsletter">
+							</div>
+						
+						
+							
+							<button class="btn  btn-primary btn-lg ">Tilmeld nu </button>
+						
+						
+						</div>
+					</form>				
+
+
+					</div>
+					</div>
+		
+
+
+	
+
+
+	</div>
+
+</footer>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
