@@ -17,7 +17,7 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<header class="site-header">
+<header class="site-header sr-only">
 <div class="header-wrapper">
   <div class="container">
     <div class="row">

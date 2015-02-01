@@ -38,16 +38,16 @@
     <div class="row">
       
 
-
+      <div class="col-md-12">
+        <? if (dumb_luck("20%")): ?><article class="teaser teaser-breaking"><span>Breaking</span><a href="article.php"><? dummy("text@headline") ?></a></article><? endif ?>
+      </div>
 
       
       <div class="col-md-8">
           
       <div class="row">
         
-        <div class="col-md-12">
-          <? if (dumb_luck("20%")): ?><article class="teaser teaser-breaking"><span>Breaking</span><a href="article.php"><? dummy("text@headline") ?></a></article><? endif ?>
-        </div>
+        
       <div class="col-md-8">
 
       
@@ -57,10 +57,10 @@
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-            <? if (dumb_luck("50%")): ?>
+            <? if (dumb_luck("25%")): ?>
             <ul class="related">
-              <? while (dumb_luck("1-3")): ?>
-              <li><a href="article.php"><? dummy("text@biz-related") ?></a></li>
+              <? while (dumb_luck("3")): ?>
+              <? dummy("text@biz-related") ?>
               <? endwhile ?>
             </ul>
             <? endif ?>
@@ -95,8 +95,14 @@
           
 
           <div class="row">
+          <? if (dumb_luck("0%")): ?>
+
           
+
+          <? else: ?>
+
           <div class="col-md-8">
+
 
           <article class="teaser   header-25 teaser-border-top-pink ">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
@@ -118,6 +124,8 @@
           </article>
           
           </div>
+
+          <? endif ?>
           
             </div>
 
@@ -128,31 +136,25 @@
         </div>
 
         <div class="col-md-4">
-          <div class="banner module-sm">
+          <div class="banner module-xs">
               <? dummy("ad@300x250") ?>
             </div>
 
-            
-            <article class="teaser header-20 teaser-border-bottom-pink">
+          <? while (dumb_luck("2")): ?>
+            <article class="teaser header-20 teaser-border-top-pink">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
             </div>
           </article>
-          <article class="teaser header-20 ">
-            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
-            <div class="teaser-body">
-            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-            </div>
-          </article>
-
+          
+          <? endwhile ?>  
 
           
 
-          <article class="teaser teaser-quote header-20">
-            <h1 class="section-header">Dagens kommentar</h1>
+          <article class="teaser teaser-quote header-20 teaser-border-top-pink">
+            Dagens kommentar
             
             <figure class="teaser-img">
               <img src="<? dummy("image/!author@60x60,") ?>" width="" height="" alt="" />
@@ -188,17 +190,46 @@
 
     <div class="row">
       <div class="col-md-12">
-        <div class="banner module-sm">BANNER</div>
+        <div class="banner module-xs">BANNER</div>
       </div>
     </div>
 
-
+<? if (dumb_luck("50%")): ?>
     
+<section class="deck">
+<div class="row">
+  
 
+  <div class="col-md-6">
+    <div class="theme-cover">
+    <div class="theme-caption">
+      <a href="article.php">
+      <b><span>Tema</span></b>
+        <i><? if (dumb_luck("50%")): ?>OW Bunker<? else: ?>Olieprisens fald<? endif ?></i></a>
+      </div>
+        <figure style="background-image: url(<? dummy("image/!biz-theme@600x,9:13") ?>);"></figure>
+    </div>
+  </div>
 
+  <div class="col-md-6">
+    <div class="theme-wrapper">
+      <ul>
+      <li class="teaser"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+      <p><? dummy("text@teaser") ?></li>
+        <? while (dumb_luck("3-5")): ?>
+        <li class="teaser"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></li>
+        <? endwhile ?>
+        
+      </ul>
+    </div>
+  </div>
+</div>
 
+</section>
+<? else: ?>
 
 <div class="row">
+
   
 
 <div class="col-md-12 ">
@@ -228,10 +259,11 @@
     </div>
   
 </div><!-- row -->
+<? endif ?>
 
 
    <div class="row">
-      
+      <section class="deck">
       <div class="col-md-8 ">
         <? while (dumb_luck("8")): ?>
         <article class="teaser header-20 teaser-img-left teaser-border-bottom">
@@ -246,7 +278,7 @@
       </div>
 
       <div class="col-md-4">
-        <div class="banner module-sm">
+        <div class="banner module-xs">
           <? dummy("ad@300x250") ?>
         </div>
         <section class="module-sm">
@@ -268,14 +300,14 @@
         </section>
       </div>
      
-
+</section>
     </div>
 
 
 <div class="row">
-  
-    <div class="col-md-12 ">
   <section class="deck">    
+    <div class="col-md-12 ">
+  
         <div class=" theme-container theme-dark theme-magazine">
             
 
@@ -302,9 +334,9 @@
             </div><!-- row -->
 
         </div>
-</section>
+
     </div>
-  
+</section>  
 </div>
 
 
@@ -324,7 +356,7 @@
       </div>
 
       <div class="col-md-4">
-        <div class="banner module-sm">
+        <div class="banner module-xs">
           <? dummy("ad@300x250") ?>
         </div>
         <section class="module-sm">
@@ -382,7 +414,7 @@
 <section class="deck">    
 
 <div class="theme-splash-wide">
-    <article class="teaser-splash-wide">
+    <article class="teaser-splash-wide header-50">
     <a href="article-longread.php">
       <div class="teaser-body">
         
@@ -405,7 +437,7 @@
 
 
  <div class="row">
-      
+      <section class="deck">
       <div class="col-md-8 ">
         <? while (dumb_luck("8")): ?>
         <article class="teaser header-20 teaser-img-left teaser-border-bottom">
@@ -420,12 +452,12 @@
       </div>
 
       <div class="col-md-4">
-        <div class="banner module-sm">
+        <div class="banner module-xs">
           <? dummy("ad@300x250") ?>
         </div>
         <section class="module-sm">
           <h1 class="section-header">
-            Ask Business <a class="section-header-link" href="section.php">See all</a>
+            Ask Business <a class="section-header-link" href="section.php">See all <i class="fa fa-caret-right"></i></a>
           </h1>
         
         <ul class="list   list-light">
@@ -462,7 +494,7 @@
 </section>
       </div>
      
-
+</section>
     </div>
 
 
