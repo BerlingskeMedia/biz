@@ -416,15 +416,20 @@ ul.related {
 	time {
 		color: rgba(255,255,255,.9);
 	}
-	&:before {
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		height: 80%;
-		#gradient .vertical(transparent; #111;  0%; 100%);
-		content: ' ';
-		display: block;
+	.teaser-img a {
+		&:before {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 80%;
+			#gradient .vertical(transparent; #111;  0%; 100%);
+			content: ' ';
+			display: block;
+		}
+	}
+	.related li a {
+		color: #eee;
 	}
 	.teaser-body {
 		position: absolute;
@@ -1242,11 +1247,17 @@ a.btn-premium:after {
 	margin-top: 15px;
 	padding-top: 15px;
 }
+.teaser-border-top-pink {
+	border-top: 4px solid @biz-1;
+	margin-top: 15px;
+	padding-top: 15px;
+}
 .teaser-border-bottom {
 	border-bottom: 1px solid rgba(0,0,0,.1);
 	margin-bottom: 15px;
 	padding-bottom: 15px;
 }
+
 .teaser-border-bottom-last-child {
 	border-bottom: 1px solid rgba(0,0,0,.1);
 	margin-bottom: 15px;
@@ -1254,6 +1265,11 @@ a.btn-premium:after {
 	&:last-child {
 		border-bottom: 0;
 	}
+}
+.teaser-border-bottom-pink {
+	border-bottom: 4px solid @biz-1;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
 }
 .list-condenced {
 	li {
@@ -2742,7 +2758,7 @@ h1.heading {
 }
 
 .theme-splash-wide {
-	height: 30vh;
+	height: 35vh;
 	min-height: 300px;
 	position: relative;
 	overflow: hidden;

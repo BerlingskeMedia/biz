@@ -52,11 +52,18 @@
 
       
 
-          <article class="teaser header-20 teaser-overlay-gradient header-40">
+          <article class="teaser header-20 teaser-overlay-gradient header-40 teaser-margin-bottom-0 ">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,9:16") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            <? if (dumb_luck("50%")): ?>
+            <ul class="related">
+              <? while (dumb_luck("1-3")): ?>
+              <li><a href="article.php"><? dummy("text@biz-related") ?></a></li>
+              <? endwhile ?>
+            </ul>
+            <? endif ?>
             </div>
           </article>
 </div>
@@ -91,7 +98,7 @@
           
           <div class="col-md-8">
 
-          <article class="teaser   header-25 ">
+          <article class="teaser   header-25 teaser-border-top-pink ">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -101,7 +108,7 @@
           </div>
           <div class="col-md-4">
           
-          <article class="teaser  header-15">
+          <article class="teaser  header-15 teaser-border-top-pink">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -126,7 +133,7 @@
             </div>
 
             
-            <article class="teaser header-20 teaser-border-bottom">
+            <article class="teaser header-20 teaser-border-bottom-pink">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -144,7 +151,7 @@
 
           
 
-          <article class="teaser teaser-quote header-30">
+          <article class="teaser teaser-quote header-20">
             <h1 class="section-header">Dagens kommentar</h1>
             
             <figure class="teaser-img">
@@ -163,7 +170,7 @@
 
     <div class="row">
     <div class="col-md-12 ">
-      <div class="divider"></div>
+      <div class="divider-pink"></div>
     </div>
       <? while (dumb_luck("4")): ?>
 
