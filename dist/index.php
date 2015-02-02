@@ -39,7 +39,7 @@
       
 
       <div class="col-md-12">
-        <? if (dumb_luck("20%")): ?><article class="teaser teaser-breaking"><span>Breaking</span><a href="article.php"><? dummy("text@headline") ?></a></article><? endif ?>
+        <? if (dumb_luck("100%")): ?><article class="teaser teaser-breaking"><span>Breaking</span><a href="article.php"><? dummy("text@headline") ?></a></article><? endif ?>
       </div>
 
       
@@ -204,8 +204,11 @@
     <div class="theme-cover">
     <div class="theme-caption">
       <a href="article.php">
-      <b><span>Tema</span></b>
-        <i><? if (dumb_luck("50%")): ?>OW Bunker<? else: ?>Olieprisens fald<? endif ?></i></a>
+      
+        <i><? if (dumb_luck("50%")): ?>OW Bunker<? else: ?>Olieprisens fald<? endif ?></i>
+
+        </a>
+
       </div>
         <figure style="background-image: url(<? dummy("image/!biz-theme@600x,9:13") ?>);"></figure>
     </div>
@@ -214,8 +217,9 @@
   <div class="col-md-6">
     <div class="theme-wrapper">
       <ul>
-      <li class="teaser"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-      <p><? dummy("text@teaser") ?></li>
+      <li class="teaser">
+      <footer><span class="cat"><? dummy("text@biz-cat") ?></span></footer>
+      <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></li>
         <? while (dumb_luck("3-5")): ?>
         <li class="teaser"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></li>
         <? endwhile ?>
@@ -234,7 +238,7 @@
 
 <div class="col-md-12 ">
 <section class="deck">    
-
+<h1 class="deck-header">Longreads</h1>
 <div class="theme-splash">
 
   
@@ -415,7 +419,9 @@
 
 <div class="theme-splash-wide">
     <article class="teaser-splash-wide header-50">
-    <a href="article-longread.php">
+    <a href="section.php" class="theme-caption"><i class="fa fa-camera"></i> More galleries</a>
+    <a href="article-longread.php" class="theme-link">
+
       <div class="teaser-body">
         
         <h2 class="header"><? dummy("text@headline") ?></h2>
