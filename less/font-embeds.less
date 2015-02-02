@@ -27,7 +27,7 @@
 /*SKAKKE*/
 
 // Font embeds
-.font( @fontname; @filename; @fontweight) {
+.font( @fontname; @filename; @fontweight; @fontstyle) {
 @font-face {
     font-family: '@{fontname}';
     src: url('@{font-path}@{filename}.eot');
@@ -36,13 +36,15 @@
          url('@{font-path}@{filename}.woff') format('woff'),
          url('@{font-path}@{filename}.ttf') format('truetype');
     font-weight: @fontweight;
-    font-style: normal;
+    font-style: @fontstyle;
     }
 }
-.font(Proxima; proximanova-light; 200);
-.font(Proxima; proximanova-regular; 300);
-.font(Proxima; proximanova-bold; 600);
-// .font(Proxima; proximanova-extrabold; 700);
-.font(Berlingske-text; berlingskeseriftx-rg; 300);
-.font(Berlingske; berlingskeserif-bd; 600);
+.font(Proxima; proximanova-light; 200; normal);
+.font(Proxima; proximanova-regular; 300; normal);
+.font(Proxima; proximanova-bold; 600; normal);
+// .font(Proxima; proximanova-extrabold; 700; normal);
+.font(Berlingske-text; berlingskeseriftx-rg; 300; normal);
+.font(Berlingske; berlingskeserif-bd; 600; normal);
+.font(Berlingske; berlingskeserif-blk; 900; normal);
+.font(Berlingske; berlingskeserif-blkit; 900; italic);
 

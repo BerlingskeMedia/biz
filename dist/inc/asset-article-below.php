@@ -451,16 +451,8 @@
 
         <div class="col-md-12">
           
-<div class="theme-splash-wide module-sm">
-    <article class="teaser-splash-wide header-50">
-    <a href="article-longread.php">
-      <div class="teaser-body">
-        <h2 class="header"><? dummy("text@headline") ?></h2>
-      </div>
-      <div class="splash-img" style="background-image: url(<? dummy("image/!longread@800x,1:1") ?>)"></div>
-      </a>
-    </article>
-</div>        
+          <?php include('inc/asset-teaser-gallery.php'); ?>
+
 
         </div>
         
