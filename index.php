@@ -142,7 +142,7 @@ ul {
           <li class="b"><a href="/dist/section.php">Section</a> <date>Feb. 5th</date></li>
           <li class="d"><a href="/dist/article.php">Article</a> </li>
           <li class="b"><a href="/dist/article-footer.php">Article footer</a><date>Feb. 5th</date></li>
-          <li class="b"><a href="#">Content Stream</a></li>
+          <li class="b"><a href="/dist/assets-article-contentstream.php">Content Stream</a></li>
 
           <li class="a"><a href="#">Article - Longreads</a></li>
           <li class="a"><a href="#">Section - "Millionnaire Club"</a></li>

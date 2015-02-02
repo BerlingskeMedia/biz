@@ -152,6 +152,10 @@
     <?php include('inc/asset-article-tags.php'); ?>
   </div>
 
+  <div class="col-md-8"> 
+<h2>Quiz</h2>
+  <?php include('inc/asset-article-quiz.php'); ?>
+</div>
 
 </div>
 
