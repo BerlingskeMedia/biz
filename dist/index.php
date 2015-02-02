@@ -39,7 +39,11 @@
       
 
       <div class="col-md-12">
-        <? if (dumb_luck("100%")): ?><article class="teaser teaser-breaking"><span><i>Breaking</i></span><a href="article.php"><? dummy("text@headline") ?></a></article><? endif ?>
+        <? if (dumb_luck("20%")): ?><article class="teaser teaser-breaking"><span><i>Breaking</i></span><a href="article.php"><? dummy("text@headline") ?></a></article><? endif ?>
+      </div>
+
+      <div class="col-md-12">
+        <? if (dumb_luck("100%")): ?><article class="teaser teaser-mega header-40"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></article><? endif ?>
       </div>
 
       
@@ -110,6 +114,14 @@
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            <p><? dummy("text@teaser") ?></p>
+            <? if (dumb_luck("25%")): ?>
+            <ul class="related">
+              <? while (dumb_luck("1-3")): ?>
+              <? dummy("text@biz-related") ?>
+              <? endwhile ?>
+            </ul>
+            <? endif ?>
             </div>
           </article>
           </div>

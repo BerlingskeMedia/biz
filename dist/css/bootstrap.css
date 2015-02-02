@@ -8843,6 +8843,16 @@ ul.related li {
   color: #fff;
   padding: 0 5px;
 }
+.teaser-mega {
+  background: #333;
+  padding: 5px;
+}
+.teaser-mega .header {
+  margin: 0;
+}
+.teaser-mega .header a {
+  color: #fff;
+}
 .teaser-breaking {
   display: table;
   min-height: 50px;
@@ -8851,8 +8861,8 @@ ul.related li {
 }
 .teaser-breaking span {
   display: table-cell;
-  background-color: #ff3333;
-  color: #fff;
+  background-color: #ffdb5e;
+  color: #333;
   text-align: left;
   vertical-align: middle;
   font-weight: 600;
@@ -8882,6 +8892,12 @@ ul.related li {
   vertical-align: middle;
   padding: 0 15px;
   font-weight: 600;
+  -webkit-transition: background-color 0.1s ease;
+  -o-transition: background-color 0.1s ease;
+  transition: background-color 0.1s ease;
+}
+.teaser-breaking a:hover {
+  background: #111;
 }
 [class*="teaser-tag-"] {
   color: #cc0066;
@@ -8908,7 +8924,7 @@ ul.related li {
 }
 .teaser-tag-breaking {
   color: #000;
-  background: #ffff33;
+  background: #ffdb5e;
   padding-left: 3px;
   padding-right: 3px;
   text-transform: uppercase;
@@ -11798,7 +11814,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   color: #5cb85c;
 }
 .tag-breaking {
-  background: #ffff33;
+  background: #ffdb5e;
   color: #000;
   padding: .1em .2em;
 }

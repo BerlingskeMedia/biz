@@ -469,6 +469,16 @@ ul.related {
 		padding: 0 5px;
 	}
 }
+.teaser-mega {
+	background: #333;
+	padding: 5px;
+	.header {
+		margin: 0;
+		a {
+			color: #fff;
+		}
+	}
+}
 .teaser-breaking {
 	display: table;
 	min-height: 50px;
@@ -476,8 +486,8 @@ ul.related {
 	margin-bottom: 10px;
 	span {
 		display: table-cell;
-		background-color: @col-red;
-		color: #fff;
+		background-color: @col-breaking;
+		color: #333;
 		text-align: left;
 		vertical-align: middle;
 		font-weight: 600;
@@ -500,7 +510,12 @@ ul.related {
 		vertical-align: middle;
 		padding: 0 15px;
 		font-weight: 600;
+		.transition (background-color .1s ease);
+		&:hover {
+			background: #111;
+		}
 	}
+
 }
 [class*="teaser-tag-"] {
 	color: @biz-1;

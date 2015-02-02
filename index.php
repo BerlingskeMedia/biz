@@ -145,7 +145,7 @@ ul {
           <li class="b"><a href="/dist/assets-article-contentstream.php">Content Stream</a></li>
 
           <li class="a"><a href="#">Article - Longreads</a></li>
-          <li class="a"><a href="#">Section - "Millionnaire Club"</a></li>
+          <li class="nuke"><a href="#">Section - "Millionnaire Club"</a></li>
           <li class="a"><a href="#">Topic page</a><date>Feb. 6th</date></li>
           <li class="c"><a href="/dist/article-large.php">Article - Large</a><date>Feb. 6th</date></li>
           <li class="c"><a href="/dist/article-advetorial.php">Article - Advetorial</a><date>Feb. 6th</date></li>
