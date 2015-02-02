@@ -27,12 +27,27 @@
 body {
   background: #fff;
 }
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+  a {
+    min-width: 200px;
+  }
+  date {
+    position: absolute;
+    left: 250px;
+    font-size: 12px;
+  }
+
   li:after {
     color: rgba(0,0,0,.4);
     display: inline-block;
     padding-left: 10px;
     font-style: italic;
     font-size: 12px;
+    position: absolute;
+    left: 300px;
   }
   li.nuke:after {
     content: 'Deprecated...'; 
@@ -123,27 +138,29 @@ body {
         <h4>Generel</h4>
 
         <ul class="overview">
-          <li class="b"><a href="/dist/index.php">Frontpage</a></li>
-          <li class="b"><a href="/dist/section.php">Section</a></li>
-          <li class="d"><a href="/dist/article.php">Article</a></li>
-          <li class="b"><a href="/dist/article-footer.php">Article footer</a></li>
+          <li class="b"><a href="/dist/index.php">Frontpage</a> <date>Feb. 5th</date></li>
+          <li class="b"><a href="/dist/section.php">Section</a> <date>Feb. 5th</date></li>
+          <li class="d"><a href="/dist/article.php">Article</a> </li>
+          <li class="b"><a href="/dist/article-footer.php">Article footer</a><date>Feb. 5th</date></li>
+          <li class="b"><a href="#">Content Stream</a></li>
 
           <li class="a"><a href="#">Article - Longreads</a></li>
           <li class="a"><a href="#">Section - "Millionnaire Club"</a></li>
-
-          <li class="c"><a href="/dist/article-large.php">Article - Large</a></li>
-          <li class="c"><a href="/dist/article-advetorial.php">Article - Advetorial</a></li>
-          <li class="c"><a href="/dist/page-profile.php">User profile</a></li>
-          <li class="c"><a href="/dist/staff.php">Staff - overview</a></li>
-          <li class="b"><a href="/dist/author.php">Staff - Author</a></li>
-          <li class="c"><a href="/dist/page-profile.php">Profile</a></li>
-          <li class="a"><a href="#">404</a></li>
-          <li class="a"><a href="#">Search</a></li>
-          <li class="a"><a href="#">News overview</a></li>
+          <li class="a"><a href="#">Topic page</a><date>Feb. 6th</date></li>
+          <li class="c"><a href="/dist/article-large.php">Article - Large</a><date>Feb. 6th</date></li>
+          <li class="c"><a href="/dist/article-advetorial.php">Article - Advetorial</a><date>Feb. 6th</date></li>
+          <li class="c"><a href="/dist/page-profile.php">User profile</a> <date>Feb. 12th</date></li>
+          <li class="c"><a href="/dist/staff.php">Staff - overview</a><date>Feb. 3rd</date></li>
+          <li class="b"><a href="/dist/author.php">Staff - Author</a><date>Feb. 10th</date></li>
+          <li class="a"><a href="#">Header</a> </li>
+          <li class="a"><a href="#">Footer</a> <date>Feb. 5th</date></li>
+          <li class="a"><a href="#">404</a> <date>Feb. 12th</date></li>
+          <li class="a"><a href="#">Search</a> <date>Feb. 12th</date></li>
+          <li class="a"><a href="#">News overview</a> <date>Feb. 12th</date></li>
           <li class="a"><a href="#">Business TV - Section</a></li>
           <li class="b"><a href="#">Business TV - Article</a></li>
           <li class="a"><a href="#">Jobindex overview</a></li>
-          <li class="a"><a href="#">Events</a></li>
+          <li class="a"><a href="#">Events</a> <date>Feb. 14th</date></li>
           <li class="a"><a href="#">Business Magazine</a></li>
           <li class="a"><a href="#">Business navne - Frontpage</a></li>
           <li class="a"><a href="#">Business navne - Article</a></li>
