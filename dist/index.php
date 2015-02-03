@@ -186,11 +186,12 @@
           
 
           <article class="teaser teaser-quote header-20 teaser-border-top-thick">
-            Dagens kommentar
+            <footer><span class="cat">Dagens kommentar</span></footer>
             
             <figure class="teaser-img">
               <img src="<? dummy("image/!author@60x60,") ?>" width="" height="" alt="" />
             </figure>
+            
             <h2 class="header"><a href="article.php"><? dummy("text@teaser") ?></a></h2>
             <cite><? dummy("text@author") ?></cite>
 

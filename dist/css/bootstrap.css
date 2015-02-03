@@ -8590,16 +8590,8 @@ a.header-tool-icon:hover {
   border-radius: 50%;
   border: 3px solid #fff;
 }
-.teaser-quote footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 5px 0;
-  margin: 15px 0;
-}
 .teaser-quote .header {
-  font-family: berlingske;
-  font-weight: 900;
-  font-style: italic;
+  font-weight: 300;
 }
 .teaser-quote .header a:before {
   content: '\201C';
@@ -11518,10 +11510,12 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   padding-right: 20px;
   height: auto;
   text-align: center;
-  font-weight: 600;
 }
 .theme-wrapper ul li:first-child .header {
-  font-size: 30px;
+  font-size: 40px;
+  font-family: berlingske;
+  font-weight: 900;
+  font-style: italic;
 }
 .theme-wrapper ul li:nth-child(even) {
   clear: left;
