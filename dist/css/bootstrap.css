@@ -9067,6 +9067,11 @@ ul.related li {
   text-align: center;
   position: relative;
 }
+.list-staff figure button {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
 .list-staff img {
   display: block;
   max-width: 100%;
