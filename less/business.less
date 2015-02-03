@@ -464,9 +464,9 @@ ul.related {
 	}
 	.cat {
 		display: inline-block;
-		background-color: @biz-1;
+		
 		color: #fff;
-		padding: 0 5px;
+		
 	}
 }
 .teaser-mega {
@@ -479,27 +479,23 @@ ul.related {
 		}
 	}
 }
-.teaser-breaking {
+[class*="teaser-oneliner"] {
 	display: table;
 	min-height: 50px;
 	width: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 0;
 	span {
 		display: table-cell;
-		background-color: @col-breaking;
 		color: #333;
 		text-align: left;
 		vertical-align: middle;
 		font-weight: 600;
 		text-transform: uppercase;
 		width: 100px;
-
 	}
 	i {
-		.stretchRight;
 		display: inline-block;
 		padding: 0 15px;
-		visibility: hidden;
 		font-style: normal;
 		
 	}
@@ -515,8 +511,16 @@ ul.related {
 			background: #111;
 		}
 	}
-
 }
+
+.teaser-oneliner-breaking {
+	background-color: @col-breaking;
+	i {
+		.stretchRight;
+		visibility: hidden;
+	}
+}
+
 [class*="teaser-tag-"] {
 	color: @biz-1;
 	font-weight: 600;
@@ -1288,11 +1292,12 @@ a.btn-premium:after {
 	margin-top: 15px;
 	padding-top: 5px;
 }
-.teaser-border-top-pink {
+.teaser-border-top-thick {
 	border-top: 4px solid #333;
 	margin-top: 15px;
 	padding-top: 15px;
 }
+
 .teaser-border-bottom {
 	border-bottom: 1px solid rgba(0,0,0,.1);
 	margin-bottom: 15px;
@@ -1338,6 +1343,18 @@ a.btn-premium:after {
 }
 .header-50 .header {
 	font-size: 50px;
+}
+.header-55 .header {
+	font-size: 55px;
+}
+.header-60 .header {
+	font-size: 60px;
+}
+.header-65 .header {
+	font-size: 65px;
+}
+.header-70 .header {
+	font-size: 70px;
 }
 .teaser-nodate {
 	time {

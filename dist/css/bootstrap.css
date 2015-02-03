@@ -1163,6 +1163,10 @@ h6,
 .h6 {
   font-size: 14px;
 }
+.teaser .large,
+.teaser .related.large li {
+  font-size: 105%;
+}
 p {
   margin: 0 0 11px;
 }
@@ -8839,9 +8843,7 @@ ul.related li {
 }
 .teaser-overlay-gradient .cat {
   display: inline-block;
-  background-color: #cc0066;
   color: #fff;
-  padding: 0 5px;
 }
 .teaser-mega {
   background: #333;
@@ -8853,15 +8855,14 @@ ul.related li {
 .teaser-mega .header a {
   color: #fff;
 }
-.teaser-breaking {
+[class*="teaser-oneliner"] {
   display: table;
   min-height: 50px;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
-.teaser-breaking span {
+[class*="teaser-oneliner"] span {
   display: table-cell;
-  background-color: #ffdb5e;
   color: #333;
   text-align: left;
   vertical-align: middle;
@@ -8869,23 +8870,12 @@ ul.related li {
   text-transform: uppercase;
   width: 100px;
 }
-.teaser-breaking i {
-  animation-name: stretchRight;
-  -webkit-animation-name: stretchRight;
-  animation-duration: 1.5s;
-  -webkit-animation-duration: 1.5s;
-  animation-timing-function: ease-out;
-  -webkit-animation-timing-function: ease-out;
-  transform-origin: 0% 0%;
-  -ms-transform-origin: 0% 0%;
-  -webkit-transform-origin: 0% 0%;
-  visibility: visible !important;
+[class*="teaser-oneliner"] i {
   display: inline-block;
   padding: 0 15px;
-  visibility: hidden;
   font-style: normal;
 }
-.teaser-breaking a {
+[class*="teaser-oneliner"] a {
   background-color: #333;
   color: #fff;
   display: table-cell;
@@ -8896,8 +8886,24 @@ ul.related li {
   -o-transition: background-color 0.1s ease;
   transition: background-color 0.1s ease;
 }
-.teaser-breaking a:hover {
+[class*="teaser-oneliner"] a:hover {
   background: #111;
+}
+.teaser-oneliner-breaking {
+  background-color: #ffdb5e;
+}
+.teaser-oneliner-breaking i {
+  animation-name: stretchRight;
+  -webkit-animation-name: stretchRight;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+  visibility: visible !important;
+  visibility: hidden;
 }
 [class*="teaser-tag-"] {
   color: #cc0066;
@@ -9793,7 +9799,7 @@ a.btn-premium:after {
   margin-top: 15px;
   padding-top: 5px;
 }
-.teaser-border-top-pink {
+.teaser-border-top-thick {
   border-top: 4px solid #333;
   margin-top: 15px;
   padding-top: 15px;
@@ -9839,6 +9845,18 @@ a.btn-premium:after {
 }
 .header-50 .header {
   font-size: 50px;
+}
+.header-55 .header {
+  font-size: 55px;
+}
+.header-60 .header {
+  font-size: 60px;
+}
+.header-65 .header {
+  font-size: 65px;
+}
+.header-70 .header {
+  font-size: 70px;
 }
 .teaser-nodate time {
   display: none;

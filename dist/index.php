@@ -39,13 +39,32 @@
       
 
       <div class="col-md-12">
-        <? if (dumb_luck("20%")): ?><article class="teaser teaser-breaking"><span><i>Breaking</i></span><a href="article.php"><? dummy("text@headline") ?></a></article><? endif ?>
+        <? if (dumb_luck("20%")): ?><article class="teaser teaser-oneliner-breaking"><span><i>Breaking</i></span><a href="article.php"><? dummy("text@headline") ?></a></article><? endif ?>
       </div>
 
+      <? if (dumb_luck("100%")): ?>
       <div class="col-md-12">
-        <? if (dumb_luck("100%")): ?><article class="teaser teaser-mega header-40"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></article><? endif ?>
-      </div>
+        <article class="teaser header-60 teaser-border-top-thick teaser-img-left ">
+        <figure class="teaser-img"><img src="<? dummy("image@400x,1:1") ?>" width="" height="" alt="" /></figure>
+        <div class="teaser-body">
+        <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
 
+        <p class="large"><? dummy("text@teaser") ?></p>
+
+        <? if (dumb_luck("50%")): ?>
+            <ul class="related large">
+              <? while (dumb_luck("1-3")): ?>
+              <? dummy("text@biz-related") ?>
+              <? endwhile ?>
+            </ul>
+        <? endif ?>
+        </div>
+
+        </article>
+
+
+      </div>
+      <? endif ?>
       
       <div class="col-md-8">
           
@@ -109,7 +128,7 @@
           <div class="col-md-8">
 
 
-          <article class="teaser   header-25 teaser-border-top-pink ">
+          <article class="teaser   header-25 teaser-border-top-thick ">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -127,7 +146,7 @@
           </div>
           <div class="col-md-4">
           
-          <article class="teaser  header-15 teaser-border-top-pink">
+          <article class="teaser  header-15 teaser-border-top-thick">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -154,7 +173,7 @@
             </div>
 
           <? while (dumb_luck("2")): ?>
-            <article class="teaser header-20 teaser-border-top-pink">
+            <article class="teaser header-20 teaser-border-top-thick">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -166,7 +185,7 @@
 
           
 
-          <article class="teaser teaser-quote header-20 teaser-border-top-pink">
+          <article class="teaser teaser-quote header-20 teaser-border-top-thick">
             Dagens kommentar
             
             <figure class="teaser-img">
