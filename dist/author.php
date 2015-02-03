@@ -30,10 +30,11 @@
 
   <div class="row">
     <div class="col-md-12">
-      <h1><? dummy("text@author") ?></h1>
+      <h1><? dummy("text@author") ?> <button class=" btn btn-default btn-sm"><i class="fa fa-plus"></i> Subscribe</button></h1>
     </div>
+    <section class="deck">
     <div class="col-md-4">
-        <figure><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt=""  class="img-responsive"/></figure>
+        <figure class="teaser-img"><img src="<? dummy("image/!author@400x,1:1") ?>" width="" height="" alt=""  class="img-responsive"/></figure>
     </div>
 
     <div class="col-md-5">
@@ -41,6 +42,11 @@
     </div>
     <div class="col-md-3">
       <ul class="list-author">
+      <li>
+          <b>Email</b>
+          <i class="fa fa-envelope"></i> <a href="mailto:mih@berlingske.kd">mih@berlingske.dk</a>
+        </li>
+
         <li>
           <b>Twitter</b>
           <i class="fa fa-twitter"></i> <a href="#">@username</a>
@@ -53,9 +59,91 @@
           <b>LinkedIn</b>
           <i class="fa fa-linkedin"></i> <a href="#">linkedin.com/username</a>
         </li>
+
+        
       </ul>
     </div>
+    </section>
   </div>
+
+  
+  <section class="deck">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="deck-header">Articles by <? dummy("text@author") ?></h1>
+    </div>
+  </div>
+  <div class="row">
+    <? while (dumb_luck("2")): ?>
+    <div class="col-md-6 col-sm-6 col-xs-6">
+      <article class="teaser">
+        <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@540x,16:9") ?>" width="" height="" alt="" /></a></figure>
+        <div class="teaser-body">
+          <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+        </div>
+      </article>
+
+    </div>
+    <? endwhile ?>
+</div>
+
+  <div class="row">
+    <ul class="list-clean flex-4-3-2">
+      <? while (dumb_luck("24")): ?>
+
+      <li class="col-md-3 col-sm-4 col-xs-6">
+        <article class="teaser">
+          <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@540x,16:9") ?>" width="" height="" alt="" /></a></figure>
+          
+          <div class="teaser-body">
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+          </div>
+
+      </article>
+      </li>
+
+      <? endwhile ?>
+      </ul>
+
+
+      
+
+
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <nav>
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">Previous</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li class="active"><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    <li><a href="#">8</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </div>
+    </section>
+
+
+    
+
+
+  </div>
+
   
 
   </div><!-- container -->
