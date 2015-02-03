@@ -77,7 +77,7 @@
       
 
           <article class="teaser header-20 teaser-overlay-gradient header-40 teaser-margin-bottom-0 ">
-            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,9:16") ?>" width="" height="" alt="" /></a></figure>
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image/!bizpics@620x,9:16") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
@@ -94,22 +94,18 @@
 </div>
 <div class="col-md-4">
 <section>
-  <h1 class="section-header">
-    Most read today
-  </h1>
+<? while (dumb_luck("3")): ?>
+            <article class="teaser  teaser-border-bottom-thick">
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
+            <div class="teaser-body">
+            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            <? if (dumb_luck("50%")): ?><p><? dummy("text@teaser") ?></p><? endif ?>
+            </div>
+          </article>
+          
+          <? endwhile ?>  
 
-  <ul class="list toplist list-light list-condenced">
-    <? while (dumb_luck("10")): ?>
-    <li class="teaser">
-    <div class="teaser-body">
-    <h2 class="header">
-      <a href="article.php">
-      <? dummy("text@headline") ?></a>
-      </h2>
-      </div>
-    </li>
-  <? endwhile ?>
-  </ul>
   </section>
 </div>
           </div>
@@ -173,16 +169,26 @@
               <? dummy("ad@300x250") ?>
             </div>
 
-          <? while (dumb_luck("2")): ?>
-            <article class="teaser header-20 teaser-border-top-thick">
-            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
-            <div class="teaser-body">
-            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-            </div>
-          </article>
+
+              <h1 class="section-header">
+    Most read today
+  </h1>
+
+  <ul class="list toplist list-light list-condenced">
+    <? while (dumb_luck("10")): ?>
+    <li class="teaser">
+    <div class="teaser-body">
+    <h2 class="header">
+      <a href="article.php">
+      <? dummy("text@headline") ?></a>
+      </h2>
+      </div>
+    </li>
+  <? endwhile ?>
+  </ul>
+
+
           
-          <? endwhile ?>  
 
           
 

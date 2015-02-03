@@ -30,7 +30,7 @@
 
   <div class="row">
     <div class="col-md-12">
-      <h1><? dummy("text@author") ?> <button class=" btn btn-default btn-sm"><i class="fa fa-plus"></i> Subscribe</button></h1>
+      <h1><? dummy("text@author") ?> <button class=" btn btn-default btn-sm" data-toggle="modal" data-target="#follow-author"><i class="fa fa-plus"></i> Subscribe</button></h1>
     </div>
     <section class="deck">
     <div class="col-md-4">
@@ -119,10 +119,10 @@
         <span aria-hidden="true">Previous</span>
       </a>
     </li>
-    <li><a href="#">1</a></li>
+    <li class="active"><a href="#">1</a></li>
     <li><a href="#">2</a></li>
     <li><a href="#">3</a></li>
-    <li class="active"><a href="#">4</a></li>
+    <li><a href="#">4</a></li>
     <li><a href="#">5</a></li>
     <li><a href="#">6</a></li>
     <li><a href="#">7</a></li>
@@ -149,7 +149,39 @@
   </div><!-- container -->
     
 
+    
+<!-- Modal -->
+<div class="modal fade" id="follow-author" tabindex="-1" role="dialog" aria-labelledby="Follow author" aria-hidden="true">
+  
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        
+      </div>
+      <div class="modal-body">
 
+      <? if (dumb_luck("50%")): ?><!-- If user is logged in -->
+      <p><i class="fa fa-check color-green"></i> You are now subscribing to <? dummy("text@author") ?>'s articles (initials@somesite.com). </p>
+      <p class="small"><a href="page-profile.php">Edit your subscriptions</a></p>
+      <? else: ?>
+      <!-- If user is NOT logged in -->
+      <p >Modtag e-mail når <? dummy("text@author") ?> publicerer en ny artikel</p>
+      <form class="form-signup">
+      <div class="form-group form-oneline ">
+              <input type="email" id="signup" class="form-control input-sm" placeholder="Indtast din email">
+              <button class="btn btn-sm btn-primary btn-sm ">Sign up</button>
+            </div>
+          </form>
+          <? endif ?>
+        
+
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
 
   <?php include("./inc/footer.php"); ?>
 

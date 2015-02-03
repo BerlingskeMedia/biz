@@ -425,6 +425,7 @@ ul.related {
 			#gradient .vertical(transparent; #333;  0%; 100%);
 			content: ' ';
 			display: block;
+			z-index: 2;
 		}
 	}
 	.related li {
@@ -445,6 +446,7 @@ ul.related {
 		left: 0;
 		right: 0;
 		padding: 0 15px 5px;
+		z-index: 3;
 	}
 	.header {
 		a {
@@ -501,7 +503,7 @@ ul.related {
 }
 [class*="teaser-oneliner"] {
 	display: table;
-	min-height: 50px;
+	height: 50px;
 	width: 100%;
 	margin-bottom: 10px;
 	span {
@@ -512,12 +514,13 @@ ul.related {
 		font-weight: 600;
 		text-transform: uppercase;
 		width: 100px;
+		
 	}
 	i {
 		display: inline-block;
 		padding: 0 15px;
 		font-style: normal;
-		
+
 	}
 	a {
 		background-color: #333;
@@ -1322,6 +1325,22 @@ a.btn-premium:after {
 	border-top: 4px solid #333;
 	margin-top: 15px;
 	padding-top: 15px;
+}
+.teaser-border-bottom-thick {
+	border-bottom: 4px solid #333;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	&:last-child {
+		border-bottom: 0;
+	}
+}
+.teaser-border-bottom-thick-last-child {
+	border-bottom: 4px solid #333;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	&:last-child {
+		border-bottom: 0;
+	}
 }
 
 .teaser-border-bottom {

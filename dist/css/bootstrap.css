@@ -8808,6 +8808,7 @@ ul.related li {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#ff333333', GradientType=0);
   content: ' ';
   display: block;
+  z-index: 2;
 }
 .teaser-overlay-gradient .related li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -8826,6 +8827,7 @@ ul.related li {
   left: 0;
   right: 0;
   padding: 0 15px 5px;
+  z-index: 3;
 }
 .teaser-overlay-gradient .header a {
   color: #fff;
@@ -8869,7 +8871,7 @@ ul.related li {
 }
 [class*="teaser-oneliner"] {
   display: table;
-  min-height: 50px;
+  height: 50px;
   width: 100%;
   margin-bottom: 10px;
 }
@@ -9818,6 +9820,22 @@ a.btn-premium:after {
   border-top: 4px solid #333;
   margin-top: 15px;
   padding-top: 15px;
+}
+.teaser-border-bottom-thick {
+  border-bottom: 4px solid #333;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.teaser-border-bottom-thick:last-child {
+  border-bottom: 0;
+}
+.teaser-border-bottom-thick-last-child {
+  border-bottom: 4px solid #333;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.teaser-border-bottom-thick-last-child:last-child {
+  border-bottom: 0;
 }
 .teaser-border-bottom {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);

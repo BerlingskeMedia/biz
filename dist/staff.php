@@ -62,7 +62,7 @@
 
               <h1><a href="author.php"><? dummy("text@author") ?></a></h1>
 
-              <div class="text-center"><p class="small"><strong><a href="#" class="btn btn-default btn-sm a-gray" data-toggle="modal" data-target="#follow-author"><i class="fa fa-envelope-o"></i> Subscribe </a></strong></p></div>
+              <div class="text-center"><p class="small"><strong><a href="#" class="btn btn-default btn-sm a-gray" data-toggle="modal" data-target="#follow-author"><i class="fa fa-plus"></i> Subscribe </a></strong></p></div>
               
               <h2><? dummy("text@teaser") ?>...</h2>
 

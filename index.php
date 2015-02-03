@@ -151,7 +151,7 @@ ul {
           <li class="c"><a href="/dist/article-advetorial.php">Article - Advetorial</a><date>Feb. 6th</date></li>
           <li class="c"><a href="/dist/page-profile.php">User profile</a> <date>Feb. 12th</date></li>
           <li class="c"><a href="/dist/staff.php">Staff - overview</a><date>Feb. 3rd</date></li>
-          <li class="b"><a href="/dist/author.php">Staff - Author</a><date>Feb. 10th</date></li>
+          <li class="c"><a href="/dist/author.php">Staff - Author</a><date>Feb. 10th</date></li>
           <li class="a"><a href="#">Header</a> </li>
           <li class="a"><a href="#">Footer</a> <date>Feb. 5th</date></li>
           <li class="a"><a href="#">404</a> <date>Feb. 12th</date></li>
