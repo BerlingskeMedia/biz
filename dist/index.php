@@ -44,7 +44,7 @@
 
       <? if (dumb_luck("100%")): ?>
       <div class="col-md-12">
-        <article class="teaser header-60 teaser-border-top-thick teaser-img-left ">
+        <article class="teaser header-60 teaser-border-top-thick teaser-img-left teaser-header-tag-breaking">
         <figure class="teaser-img"><img src="<? dummy("image@400x,1:1") ?>" width="" height="" alt="" /></figure>
         <div class="teaser-body">
         <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>

@@ -8855,6 +8855,16 @@ ul.related li {
 .teaser-mega .header a {
   color: #fff;
 }
+[class*="teaser-header-tag"] .header a:before {
+  font-size: 90%;
+  color: #333;
+  padding: 0 5px;
+  margin-right: 5px;
+}
+.teaser-header-tag-breaking .header a:before {
+  background: #ffdb5e;
+  content: 'Breaking';
+}
 [class*="teaser-oneliner"] {
   display: table;
   min-height: 50px;
