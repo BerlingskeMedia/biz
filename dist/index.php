@@ -37,14 +37,15 @@
     </div>
     <div class="row">
       
-
+    <? if (dumb_luck("50%")): ?>
       <div class="col-md-12">
-        <? if (dumb_luck("20%")): ?><article class="teaser teaser-oneliner-breaking"><span><i>Breaking</i></span><a href="article.php"><? dummy("text@headline") ?></a></article><? endif ?>
+        <article class="teaser teaser-oneliner-breaking"><span><i>Breaking</i></span><a href="article.php"><? dummy("text@headline") ?></a></article>
       </div>
-
-      <? if (dumb_luck("100%")): ?>
+    
+    <? else: ?>
+      
       <div class="col-md-12">
-        <article class="teaser header-60 teaser-border-top-thick teaser-img-left teaser-header-tag-breaking">
+        <article class="teaser header-60 teaser-border-top-thick teaser-img-left <? dummy("text@biz-teaserclass") ?>">
         <figure class="teaser-img"><img src="<? dummy("image@400x,1:1") ?>" width="" height="" alt="" /></figure>
         <div class="teaser-body">
         <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
@@ -191,7 +192,7 @@
             <figure class="teaser-img">
               <img src="<? dummy("image/!author@60x60,") ?>" width="" height="" alt="" />
             </figure>
-            
+
             <h2 class="header"><a href="article.php"><? dummy("text@teaser") ?></a></h2>
             <cite><? dummy("text@author") ?></cite>
 
@@ -227,7 +228,7 @@
       </div>
     </div>
 
-<? if (dumb_luck("50%")): ?>
+<? if (dumb_luck("100%")): ?>
     
 <section class="deck">
 <div class="row">
@@ -237,7 +238,7 @@
     <div class="theme-cover">
     <div class="theme-caption">
       <a href="article.php">
-        <footer class="cat">Theme</footer>
+        <footer class="cat"></footer>
         <i><? if (dumb_luck("50%")): ?>OW Bunker<? else: ?>Olieprisens fald<? endif ?></i>
 
         </a>

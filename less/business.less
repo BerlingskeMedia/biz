@@ -256,7 +256,7 @@ a.header-tool-icon {
 			border: 3px solid #fff;
 		}
 	}
-	
+
 	.header {
 		
 		font-weight: 300;
@@ -474,9 +474,9 @@ ul.related {
 [class*="teaser-header-tag"]{
 	.header a:before {
 		font-size: 90%;
-		color: #333;
 		padding: 0 5px;
 		margin-right: 5px;
+		display: inline-block;
 	}
 }
 .teaser-header-tag-breaking {
@@ -484,13 +484,26 @@ ul.related {
 		background: @col-breaking;
 		content: 'Breaking'
 	}
-	
+}
+.teaser-header-tag-comingup {
+	.header a:before {
+		background-color: @biz-3;
+		content: 'Nyhed på vej';
+		color: #fff;
+	}
+}
+.teaser-header-tag-live {
+	.header a:before {
+		background: @col-red;
+		content: 'Live';
+		color: #fff;
+	}
 }
 [class*="teaser-oneliner"] {
 	display: table;
 	min-height: 50px;
 	width: 100%;
-	margin-bottom: 0;
+	margin-bottom: 10px;
 	span {
 		display: table-cell;
 		color: #333;
@@ -523,8 +536,8 @@ ul.related {
 .teaser-oneliner-breaking {
 	background-color: @col-breaking;
 	i {
-		.stretchRight;
-		visibility: hidden;
+		.blink;
+		// visibility: hidden;
 	}
 }
 
@@ -532,6 +545,7 @@ ul.related {
 	color: @biz-1;
 	font-weight: 600;
 	// text-transform: uppercase;
+	font-size: 90%;
 	&:before {
 		display: inline;
 		font-family: fontawesome;
@@ -2750,7 +2764,7 @@ h1.heading {
 		position: absolute;
 		left: 0;
 		right: 0;
-		bottom: 0;
+		bottom: 100px;
 		opacity: 1;
 		padding: 0 20px 50px 20px;
 		z-index: 2;
@@ -2764,6 +2778,7 @@ h1.heading {
 			color: #fff;
 			position: relative;
 			display: block;
+			text-align: center;
 			text-shadow: 1px 1px 0 rgba(0,0,0,.5);
 			/*&:after {
 				position: absolute;
@@ -2777,12 +2792,21 @@ h1.heading {
 			}*/
 		}
 		.cat {
-			display: inline-block;
-			background: #333;
-			padding: 0 5px;
-			color: #fff;
-			text-transform: uppercase;
-			font-weight: 300;
+			
+
+			&:before {
+				display: inline-block;
+				width: 26px;
+				height: 25px;
+				float: left;
+				margin-right: 5px;
+				position: relative;
+				left: 50%;
+				top: -25px;
+				margin: 0 0 0 -13px;
+				.logo-b;
+				content: ' ';
+			}
 		}
 		
 		
