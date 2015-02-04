@@ -332,6 +332,33 @@
               <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
             </article>
         
+          <div class="row">
+              
+              
+
+      <div class="col-md-4 col-sm-4 col-xs-12 ">
+          <article class="teaser header-15 ">
+              <figure class="teaser-img"><a href="#"><img src="<? dummy("image@394,16:9") ?>" width="" height="" alt="" /></a></figure>
+              <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            </article>
+          </div>
+            <? while (dumb_luck("2")): ?>
+      <div class="col-md-4 col-sm-4 col-xs-6 ">
+          <article class="teaser header-15 ">
+              <figure class="teaser-img"><a href="#"><img src="<? dummy("image@394,16:9") ?>" width="" height="" alt="" /></a></figure>
+              <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            </article>
+      </div>
+
+
+      <? endwhile ?>
+      <div class="col-md-12">
+        <div class="text-center module-sm"><button class="btn btn-primary button-sm">Load more <i class="fa fa-caret-down"></i></button></div>
+      </div>
+      </div>
+
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
            
@@ -347,20 +374,7 @@
 </div>
 
 
-          <div class="row">
-              
-              <? while (dumb_luck("4")): ?>
-      <div class="col-md-3 col-sm-4 col-xs-6 ">
-          <article class="teaser header-15 ">
-              <figure class="teaser-img"><a href="#"><img src="<? dummy("image@394,16:9") ?>" width="" height="" alt="" /></a></figure>
-              <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-            </article>
-      </div>
-
-
-      <? endwhile ?>
-      </div>
+          
         
 </div>
 
