@@ -1,5 +1,9 @@
 
 
+<h1 class="section-header-alt">
+  Forsiden lige nu:
+</h1>
+
 
 
 <section class="">
@@ -24,9 +28,9 @@
 </div>
 
 
-<section class="">
+<section>
     
-      <ul class="list list-sx">
+      <ul class="list list-sx list-first-child">
     <? while (dumb_luck("4")): ?>
       
         <li class="teaser">
@@ -40,7 +44,7 @@
   
 </section>
 
-<section class="">
+<section class="section-border-bottom">
 
 
   <h1 class="section-header">Søg job <a href="section.php" class="section-header-link">Flere job <i class="fa fa-caret-right"></i></a></h1>
@@ -57,14 +61,14 @@
   </ul>
   <footer class="inventory-footer">
     
-    Presenteret af <a href="http://www.jobindex.dk" tagret="_blank" class="logo-jobindex">Jobindex</a>
+    Præsenteret af <a href="http://www.jobindex.dk" tagret="_blank" class="logo-jobindex">Jobindex</a>
 
   </footer>
   </div>
 </section>
 
-<section class="">
-    <ul class="list list-sx">
+<section>
+    <ul class="list list-sx list-first-child">
     <? while (dumb_luck("4")): ?>
         <li class="teaser">
             <div class="teaser-body">
@@ -85,7 +89,7 @@
 
 <section class="">
     
-      <ul class="list list-sx">
+      <ul class="list list-sx list-first-child">
     <? while (dumb_luck("4")): ?>
       
         <li class="teaser">
@@ -100,15 +104,14 @@
 </section>
 
 
-<section >
-
-<h1 class="section-header"><span class="logo-premium">Premium</span> <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></h1>
+<section class="section-border-bottom">
+<h1 class="section-header"><span class="logo-premium">Premium</span> <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a></h1>
 <div class="row">
 <? while (dumb_luck("2")): ?>
 <div class="col-xs-6">
-<article class="teaser teaser-no-logo">
+<article class="teaser teaser-no-logo teaser-sm">
   <figure class="teaser-img"><a href="article-premium.php"><img src="<? dummy("image@200x,16:9") ?>" width="" height="" alt="" /></a></figure>
-  <h2 class="header"><? dummy("text@headline") ?></h2>
+  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
   <p class="price"><? dummy("text@number") ?> kr <span class="logo-premium"><span>PREMIUM</span></span></p>
 </article>
 </div>
@@ -120,7 +123,7 @@
 
 <section class="">
     
-      <ul class="list list-sx">
+      <ul class="list list-sx list-first-child">
     <? while (dumb_luck("4")): ?>
       
         <li class="teaser">
@@ -135,12 +138,12 @@
 </section>
 
 
-<section >
-  <h1 class="aside-header">BrandView <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></h1>
+<section class="section-border-bottom">
+  <h1 class="aside-header">BrandView <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a></h1>
   <div class="row">
 <? while (dumb_luck("2")): ?>
 <div class="col-xs-6">
-<article class="teaser">
+<article class="teaser teaser-sm teaser-brandview">
   <figure class="teaser-img"><a href="article-premium.php"><img src="<? dummy("image@200x,16:9") ?>" width="" height="" alt="" /></a></figure>
   <span class="teaser-tagline">
                     Sponseret af Columbus
@@ -159,7 +162,7 @@
 
 <section class="">
     
-      <ul class="list list-sx">
+      <ul class="list list-sx list-first-child">
     <? while (dumb_luck("4")): ?>
       
         <li class="teaser">
@@ -175,12 +178,12 @@
 
 
 
-<section>
-  <h1 class="aside-header">Shopping <a href="section.php" class="section-header-link">Flere tilbud <i class="fa fa-caret-right"></i></h1>
+<section class="section-border-bottom">
+  <h1 class="aside-header">Shopping <a href="section.php" class="section-header-link">Flere tilbud <i class="fa fa-caret-right"></i></a></h1>
   <div class="row">
 <? while (dumb_luck("2")): ?>
 <div class="col-xs-6">
-<article class="teaser">
+<article class="teaser teaser-sm">
   <figure class="teaser-img"><a href="article-premium.php"><img src="<? dummy("image/!ecommerce-biz@200x,16:9") ?>" width="" height="" alt="" /></a></figure>
   <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
   <div class="teaser-price"><a href="http://www.berlingske.dk/shop" target="_blank" class="btn btn-xxs btn-secondary">Køb</a> <span class="price"><? dummy("text@number") ?> kr.</span></div>
@@ -197,7 +200,7 @@
 
 <section class="">
     
-      <ul class="list list-sx">
+      <ul class="list list-sx list-first-child">
     <? while (dumb_luck("4")): ?>
       
         <li class="teaser">

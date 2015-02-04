@@ -1,6 +1,6 @@
 
 <footer class="main-footer">
-	
+	<h1 class="text-center">This is a temporary footer. Do not code</h1>	
 	<div class="footer-newsletter">
 		<div class="container">
 			<div class="row">

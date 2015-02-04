@@ -74,10 +74,26 @@
         
       <div class="col-md-8">
 
-      
+       <!--  <article class="teaser header-40   teaser-margin-bottom-0 ">
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image/!bizpics@620x,1:1") ?>" width="" height="" alt="" /></a></figure>
+            <div class="teaser-body">
+            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            <p class="large"><? dummy("text@teaser") ?></p>
+            <? if (dumb_luck("25%")): ?>
+            <ul class="related large">
+              <? while (dumb_luck("1-3")): ?>
+              <? dummy("text@biz-related") ?>
+              <? endwhile ?>
+            </ul>
+            <? endif ?>
+            </div>
+          </article> -->
 
-          <article class="teaser header-20 teaser-overlay-gradient header-40 teaser-margin-bottom-0 ">
-            <figure class="teaser-img"><a href="#"><img src="<? dummy("image/!bizpics@620x,9:16") ?>" width="" height="" alt="" /></a></figure>
+
+
+           <article class="teaser teaser-overlay-gradient header-40 teaser-margin-bottom-0 ">
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image/!bizpics@540x,9:16") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
@@ -90,7 +106,7 @@
             </ul>
             <? endif ?>
             </div>
-          </article>
+          </article> 
 </div>
 <div class="col-md-4">
 <section>
@@ -171,10 +187,10 @@
 
 
               <h1 class="section-header">
-    Most read today
+    Latest news
   </h1>
 
-  <ul class="list toplist list-light list-condenced">
+  <ul class="list  list-light  list-condenced">
     <? while (dumb_luck("10")): ?>
     <li class="teaser">
     <div class="teaser-body">
@@ -182,6 +198,7 @@
       <a href="article.php">
       <? dummy("text@headline") ?></a>
       </h2>
+      <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a>  <time><? dummy("text@time-ago-short") ?></time></footer>
       </div>
     </li>
   <? endwhile ?>

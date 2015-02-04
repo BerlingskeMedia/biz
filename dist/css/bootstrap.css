@@ -3337,6 +3337,9 @@ fieldset[disabled] .btn-link:focus {
   line-height: 14px;
   border-radius: 1px;
 }
+.btn-xxs {
+  font-weight: 600;
+}
 .btn-block {
   display: block;
   width: 100%;
@@ -8779,6 +8782,9 @@ ul.related li {
 .teaser .related a:hover {
   opacity: .8;
 }
+.teaser-sm {
+  margin-bottom: 0;
+}
 .teaser-overlay-gradient {
   position: relative;
 }
@@ -9629,6 +9635,11 @@ a.btn-premium:after {
   padding: 2px 5px;
   display: inline-block;
 }
+.section-header-alt {
+  font-size: 12px;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
 .page-header {
   border-top: 5px solid rgba(0, 0, 0, 0.1);
   padding-top: 10px;
@@ -9769,6 +9780,9 @@ a.btn-premium:after {
 .list li footer {
   margin-bottom: 0px;
 }
+.list-first-child li:first-child {
+  border-top: 0;
+}
 .list-arrow {
   list-style: none;
   margin: 0;
@@ -9854,9 +9868,6 @@ a.btn-premium:after {
   border-bottom: 4px solid #333;
   margin-bottom: 15px;
   padding-bottom: 15px;
-}
-.list-condenced li {
-  padding: 5px 0;
 }
 .header-20 .header {
   font-size: 20px;
@@ -9969,6 +9980,12 @@ a.btn-premium:after {
   font-weight: 200;
   width: 25px;
   font-size: 16px;
+}
+.list-condenced li {
+  padding: 5px 0;
+}
+.toplist.list-condenced li {
+  margin: 5px 0;
 }
 .toplist-lg li:before {
   width: 50px;
@@ -10354,8 +10371,15 @@ h1.heading {
   font-size: 12px;
   color: #cc0066;
 }
-.article-sidebar section {
-  padding-bottom: 20px;
+.article-sidebar {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.05);
+}
+.article-sidebar .banner {
+  margin: 10px -10px;
+}
+.article-sidebar .section-border-bottom {
+  border-bottom: 4px solid #333;
 }
 .article-sidebar .aside-header {
   font-size: 17px;
@@ -10378,6 +10402,9 @@ h1.heading {
   text-transform: uppercase;
   padding: 2px 5px;
   display: inline-block;
+}
+.article-sidebar section {
+  margin-bottom: 20px;
 }
 .aside-header-small {
   font-size: 12px;
@@ -10423,10 +10450,12 @@ h1.heading {
 .article-content h2 {
   font-size: 17px;
   font-weight: 600;
+  font-family: berlingske;
 }
 .article-content h3 {
   font-size: 16px;
   font-weight: 600;
+  font-family: berlingske;
 }
 .article-content .article-summary {
   font-weight: 300;
