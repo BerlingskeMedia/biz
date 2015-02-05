@@ -76,25 +76,229 @@
       </div>  
     </section>
 
-    <section class="deck">
-      
-      <div class="col-md-12">
+    
+
+
+<section class="deck">
+
+
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
         
-        <div class="well">
-          
-          <h1 class="page-header">
-            Contact Business.dk
-          </h1>
+        <section class="module-sm">
+    
+    <h1 class="section-header">Latest news</h1>
+      
 
-          <div class="text-center"><a href="mailto:mih@berlingskemedia.dk" class="btn btn-primary">Skriv en mail</a></div>
+    <div role="tabpanel" class="tabs">
 
-          <br>
-          
-        </div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs-sm" role="tablist">
+    <li role="presentation" class="active"><a href="#tab-business" aria-controls="business" role="tab" data-toggle="tab">Business</a></li>
+    <li role="presentation"><a href="#tab-berlingske" aria-controls="tab-berlingske" role="tab" data-toggle="tab">Berlingske</a></li>
+    <li role="presentation"><a href="#tab-politiko" aria-controls="tab-politiko" role="tab" data-toggle="tab">Politiko</a></li>
+    <li role="presentation"><a href="#tab-aok" aria-controls="tab-aok" role="tab" data-toggle="tab">AOK</a></li>
+  </ul>
 
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="tab-business">
+      <ul class="list list-xs ">
+        <? while (dumb_luck("10")): ?>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a><footer class="inline"><time class=""><? dummy("text@time-ago-short") ?></time></footer></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-berlingske">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
       </div>
 
-    </section>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-politiko">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-aok">
+    <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+      </section>
+
+      </div><!-- col -->
+
+
+ 
+      
+
+      <div class="col-md-4 col-sm-6 col-xs-12 col-md-push-4">
+        
+        <section class="module-sm">
+    
+
+    <h1 class="section-header">Most read</h1>
+      
+
+    <div role="tabpanel" class="tabs">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs-sm" role="tablist">
+    <li role="presentation" class="active"><a href="#tab-business2" aria-controls="business" role="tab" data-toggle="tab">Business</a></li>
+    <li role="presentation"><a href="#tab-berlingske2" aria-controls="tab-berlingske" role="tab" data-toggle="tab">Berlingske</a></li>
+    <li role="presentation"><a href="#tab-politiko2" aria-controls="tab-politiko" role="tab" data-toggle="tab">Politiko</a></li>
+    <li role="presentation"><a href="#tab-aok2" aria-controls="tab-aok" role="tab" data-toggle="tab">AOK</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="tab-business2">
+      <ul class="list toplist toplist-lg list-xs">
+        <? while (dumb_luck("10")): ?>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-berlingske2">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-politiko2">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-aok2">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+      </section>
+
+      </div><!-- col -->
+
+
+
+      <div class="col-md-4 col-sm-12 col-xs-12 col-md-pull-4">
+        
+        <div class="row">
+
+         <div class="banner  border-bottom">
+            <? dummy("ad@300x250") ?>
+         </div>
+        
+        <section class="col-md-12 col-sm-6">
+            <div class="border-bottom">
+              <p><strong><i class="fa fa-mobile"></i> Tilmeld Breaking News SMS</strong></p>
+          <div class="row">
+            <div class="col-sm-9 col-xs-10">
+            <form class="form-signup">
+            <div class="form-group form-oneline-alt">
+              <? if (dumb_luck("50%")): ?>
+            <input type="tel" class="form-control input-sm form-underline" placeholder="Indtast mobilnr." value="20616768" aria-describedby="sizing-addon3">
+            <? else: ?>
+            <input type="tel" class="form-control input-sm form-underline" placeholder="Indtast mobilnr." aria-describedby="sizing-addon3">
+            <? endif ?> 
+            <button class="btn btn-sm btn-primary btn-sm ">OK</button>
+            </div>
+            </form>
+            </div>
+
+          </div>
+          
+          
+          </div>
+        </section>
+
+
+          
+          <section class="col-md-12 col-sm-6">
+          <div class="border-bottom">
+              <p><strong>
+              <i class="fa fa-envelope"></i> Tilmeld Business.dk nyhedsbrev</strong></p>
+            <div class="row">
+            <form class="form-signup ">
+           <div class="col-sm-9 col-xs-10">
+            <div class="form-group form-oneline-alt ">
+            
+            <? if (dumb_luck("50%")): ?>
+            <input type="email" class="form-control input-sm form-underline" placeholder="Email" value="bsk@berlingskemedia.dk" aria-describedby="sizing-addon3">
+            <? else: ?>
+            <input type="email" class="form-control input-sm form-underline" placeholder="Indtast email" aria-describedby="sizing-addon3">
+            <? endif ?> 
+            <button class="btn btn-sm btn-primary btn-sm ">OK <!-- <i class="fa fa-caret-right"></i> --></button>
+            </div>
+            </div>
+
+          </form>
+          </div>
+           </div>
+          </section>
+
+          <section class=" col-sm-12 col-md-12 ">
+          <div class="marketing-subscription">
+            <!-- <div class="subscription-logo">BERLINGSKE
+              <span class="newspaper"></span>
+            </div> -->
+            <!-- <p><strong>Abonnement på Berlingske</strong></p> -->
+            <a href="#" class="a-gray">
+            <p class="small"><strong>Få avisen i tre måneder inkl. digital adgang. Kun 199 kr/md. <span class="pink">Klik her <i class="fa fa-caret-right"></i></span> </strong> </p>
+            <p class="micro">Samlet engangspris 597,-. Abonnementet fortsætter til normalpris, indtil det opsiges</p>
+            </a>
+          </div>          
+          </section>
+
+
+     </div><!-- row -->
+
+    
+      </div><!-- col -->
+
+     </section>
+
+
     </div>
 
   

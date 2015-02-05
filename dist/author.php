@@ -30,17 +30,22 @@
 
   <div class="row">
     <div class="col-md-12">
-      <h1><? dummy("text@author") ?> <button class=" btn btn-default btn-sm" data-toggle="modal" data-target="#follow-author"><i class="fa fa-plus"></i> Subscribe</button></h1>
+    
+      <h1 class="deck-header"><? dummy("text@author") ?> <button class=" btn btn-default btn-sm" data-toggle="modal" data-target="#follow-author"><i class="fa fa-plus"></i> Subscribe</button></h1>
+    
     </div>
     <section class="deck">
-    <div class="col-md-4">
-        <figure class="teaser-img"><img src="<? dummy("image/!author@400x,1:1") ?>" width="" height="" alt=""  class="img-responsive"/></figure>
+    <div class="col-md-4 col-sm-4 col-xs-3">
+        <figure class="teaser-img"><img src="<? dummy("image/!author@400x,1:1") ?>" width="" height="" alt=""  class="img-responsive img-rounded"/></figure>
     </div>
 
-    <div class="col-md-5">
+    <div class="col-md-8 col-sm-8">
+    <div class="row">
+
+    <div class="col-md-8 col-sm-12 ">
       <p><? dummy("text@paragraph") ?></p>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4 col-sm-12">
       <ul class="list-author">
       <li>
           <b>Email</b>
@@ -62,6 +67,8 @@
 
         
       </ul>
+    </div>
+    </div>
     </div>
     </section>
   </div>

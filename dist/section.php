@@ -40,9 +40,9 @@
 
     <div class="row">
     <div class="col-md-12">
-      <div class="page-header">
-          <h1 class="page-title"><? dummy("text@biz-cat") ?></h1>
-      </div>
+      
+          <h1 class="deck-header"><? dummy("text@biz-cat") ?></h1>
+      
       
     </div>
       

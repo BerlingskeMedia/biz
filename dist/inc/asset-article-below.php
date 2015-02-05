@@ -218,90 +218,17 @@
 
      </section>
 
-<section class="deck">    
-        <div class=" theme-container theme-dark">
-            <div class="td-25 theme-title">
-              <h2 class="theme-header">Business TV</h2>
-              <p><a href="#">Se LIVE TV <i class="fa fa-caret-right"></i></a></p>
-            </div>
-            <? while (dumb_luck("3")): ?>
-            
-            <article class="teaser td-25">
-              <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
-              <h2 class="header"><a href="article.php"><span class="teaser-tag"><i class="fa fa-play"></i></span> <? dummy("text@headline") ?></a></h2>
-            </article>
-            <? endwhile ?>
 
-        </div>
+<section class="deck">   
+
+   <?php include('inc/asset-deck-tv.php'); ?>
+
 </section>
 
      
 
       
-<section class="deck">
-  
-  <div class="col-md-12">
-    <h1 class="deck-header">
-      Business Blogs
-    </h1>
-  </div>
 
-
-
-
-
- <div role="tabpanel" class="tabs">
-<div class="col-md-12">
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs-sm" role="tablist">
-    <li role="presentation" class="active"><a href="#tab-blogs-latest" aria-controls="tab-blogs-latest" role="tab" data-toggle="tab">Latest</a></li>
-    <li role="presentation"><a href="#tab-blogs-most-viewed" aria-controls="tab-blogs-most-viewed" role="tab" data-toggle="tab">Most viewed</a></li>
-  </ul>
-</div>
-
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade in active" id="tab-blogs-latest">
-      
-
-
-        <ul class="list-clean flex-6-3-2">
-            <? while (dumb_luck("6")): ?>
-            <li>
-              <article class="teaser teaser-round col-md-2 col-sm-4 col-xs-6">
-              <figure class="teaser-img"><a href="#"><img src="<? dummy("image/!author@100x100,") ?>" width="" height="" alt="" /></a></figure>
-              <footer><span class="author"><? dummy("text@author") ?></span></footer>
-              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-              <footer><span class="sitename">blogs.business.dk</span></footer>
-              </article>
-            </li>
-            <? endwhile ?>
-        </ul>
-
-
-    </div>
-
-    <div role="tabpanel" class="tab-pane fade" id="tab-blogs-most-viewed">
-      
-      <div class="col-md-12">
-
-      <div class="spinner">
-          <div class="bounce1"></div>
-          <div class="bounce2"></div>
-          <div class="bounce3"></div>
-      </div>
-
-      </div>
-
-    </div>
-    
-    
-  </div>
-
-</div>
-
-
-</section>
 
 
 
@@ -367,6 +294,28 @@
               <? dummy("ad@300x250") ?>
             </div>
             
+
+
+
+            <section class="module-sm">
+          <h1 class="section-header">
+            Business blogs <a href="#" class="section-header-link">More blogs <i class="fa fa-caret-right"></i></a>
+          </h1>
+        
+        <ul class="list  teaser-round list-light">
+          <? while (dumb_luck("6")): ?>
+          <li class="teaser teaser-img-left">
+          <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image/!author@50x50,") ?>" width="" height="" alt="" /></a></figure>
+          <div class="teaser-body">
+          <footer><a href="section.php" class="cat"><? dummy("text@author") ?></a> <time>3d.</time></footer>
+          <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+          </div>
+          </li>
+          <? endwhile ?>
+        </ul>
+        </section>
+
+
            
 
         

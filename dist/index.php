@@ -557,28 +557,11 @@
 
 
 
-<div class="row">
-  
-    <div class="col-md-12 ">
-  <section class="deck">    
-        <diw class=" theme-container theme-dark">
-            <div class="td-25 theme-title">
-              <h2 class="theme-header">Business TV</h2>
-              <p><a href="#">Se LIVE TV <i class="fa fa-caret-right"></i></a></p>
-            </div>
-            <? while (dumb_luck("3")): ?>
-            
-            <article class="teaser td-25">
-              <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
-              <h2 class="header"><a href="article.php"><span class="teaser-tag"><i class="fa fa-play"></i></span> <? dummy("text@headline") ?></a></h2>
-            </article>
-            <? endwhile ?>
+<section class="deck">
 
-        </diw>
+   <?php include('inc/asset-deck-tv.php'); ?>
+
 </section>
-    </div>
-  
-</div>
 
     
 
