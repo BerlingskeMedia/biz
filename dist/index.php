@@ -75,11 +75,12 @@
       <div class="row">
         
         <div class="col-md-12">
-          <article class="teaser teaser-img-right header-30 teaser-border-top-thick margin-top-0">
+          <article class="teaser teaser-img-right header-30 teaser-border-top-thick margin-top-0 teaser-overflow">
             
               <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
                 <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+                <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
                 <p><? dummy("text@teaser") ?></p>
                 <ul class="related">
               <? while (dumb_luck("1-3")): ?>
