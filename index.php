@@ -31,6 +31,10 @@ ul {
   list-style: none;
   padding-left: 0;
 }
+li ul {
+  padding-left: 20px;
+  list-style: disc;
+}
   a {
     min-width: 200px;
   }
@@ -61,11 +65,11 @@ ul {
     transition: all .1s ease;
   }
   /* Not started */
-  li.a a {
+  li.a > a {
     background: rgba(0,0,0,.05);
     color: #333;  
   }
-  li.a a:hover {
+  li.a > a:hover {
     background: rgba(0,0,0,.1);
     
   }
@@ -73,28 +77,28 @@ ul {
     content: 'Not started'; 
   }
   /* In pregress */
-  li.nuke a {
+  li.nuke > a {
      text-decoration: line-through;
       color: #666;
       cursor: default;
   }
   /* In pregress */
-  li.b a {
+  li.b  > a {
     background: rgba(255,204,51,.3);
     color: #663300;
   }
-  li.b a:hover {
+  li.b  > a:hover {
     background: rgba(255,204,51,.5);
   }
   li.b:after  {
     content: 'In progress'; 
   }
   /* Done - needs approval */
-  li.c a {
+  li.c  >  a {
     background: rgba(255,153,51,.5);
     color: #663300;
   }
-  li.c a:hover {
+  li.c  >  a:hover {
     background: rgba(255,153,51,.7);
   }
   li.c:after  {
@@ -102,11 +106,11 @@ ul {
   }
 
   /* Ready for development */
-  li.d a {
+  li.d  > a {
     background: rgba(172,211,115,.5);
     color: #336633;
   }
-  li.d a:hover {
+  li.d  > a:hover {
     background: rgba(172,211,115,.7);
     
   }
@@ -140,12 +144,12 @@ ul {
         <ul class="overview">
           <li class="b"><a href="/dist/index.php">Frontpage</a> <date>Feb. 6th</date></li>
           <li class="d"><a href="/dist/section.php">Section</a> <date>Feb. 5th</date></li>
-          <li class="d"><a href="/dist/article.php">Article</a> 
-          <ul>
+          <li class="d"><a href="/dist/article.php">Article</a> </li>
+          
             <li class="d"><a href="/dist/article-footer.php">Article footer</a><date>Feb. 5th</date></li>
             <li class="d"><a href="/dist/assets-article-contentstream.php">Content Stream</a></li>
-          </ul>
-          </li>
+          
+          
           
 
           <li class="a"><a href="#">Article - Longreads</a></li>

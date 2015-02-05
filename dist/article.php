@@ -256,7 +256,7 @@
                 </ul>
 
                 <div class="module-top-sm text-center">
-                  <a href="#" class="btn btn-primary btn-xs">Load more</a>
+                  <a href="#" class="btn btn-primary btn-sm">Load more</a>
                 </div>
               </aside>
 

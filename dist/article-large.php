@@ -124,137 +124,83 @@
                     <a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>
               </div>
 
-              <!-- READ ALSO -->
+              
                
-                <section class="module-top-lg module">
-                
-              <h1 class="section-header">Read also</h1>
-              
-              <ul class="list list-xs ">
-              <? while (dumb_luck("5")): ?>
-                <li class="teaser">
-                  <div class="teaser-body">
-                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                  <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-                  </div>
-                  </li>
-                <? endwhile ?>
-              </ul>
-
-              </section><!-- read also -->
+               
               
 
 
-              <div class="row">
-                
-              <div class="col-md-6">
-                
-                 <section>
-                
-              <h1 class="section-header">Read also</h1>
-              
-              <ul class="list list-xs ">
-              <? while (dumb_luck("5")): ?>
-                <li class="teaser">
-                  <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
-                  </li>
-                <? endwhile ?>
-              </ul>
-
-              
-
-              </section><!-- read also -->
-
-
-              </div><!-- col -->
-              <div class="col-md-6">
-              
-                  
-      <section>
-    <h1 class="section-header">Most read</h1>
-      <ul class="list toplist toplist-lg list-xs list-image-right">
-        <? while (dumb_luck("5")): ?>
-          <li class="teaser">
-          <? if (dumb_luck("66%")): ?><figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure><? endif ?>
-          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
-          </li>
-        <? endwhile ?>
-      </ul>
-      </section>
-
+                <div class="row">
                   
 
-              </div>
-              </div>
+                  <div class="col-md-8 col-md-push-2">
+                    
+                     <aside class="article-related-chunk list-xs ">
+                <h1 class="aside-header">Read also</h1>
+                <ul>
+                  <? while (dumb_luck("4")): ?>
+                  <li class="teaser">
+                      <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@100x,16:9,") ?>" width="" height="" alt="" /></a></figure>
+                      <div class="teaser-body">
+                        <h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>
+                        <footer><time> 3d.</time></footer>
+                      </div>
+
+                  </li>
+                  <? endwhile ?>
+                </ul>
+
+                <div class="module-top-sm text-center">
+                  <a href="#" class="btn btn-primary btn-sm">Load more</a>
+                </div>
+              </aside>
+
               <div class="comments" id="article-comments">
                 
              
 
+                <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'biztesting'; // required: replace example with your forum shortname
 
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
 
-                <br><br><br>
-                  <div class="text-center">Comments from Disquss </div>
-                  <br><br><br>
 
               </div>
 
 
 
-            </div><!-- article-content -->
+                  </div><!-- col -->
+                </div>
+              
+              
+
+
+
           </div><!-- col -->
           
           <!-- SIDEBAR  -->
-          <aside class="col-md-4 col-md-pull-8">
-          <div class="article-sidebar">
-
-
-          <?php include('inc/article-content-stream.php'); ?>
-
           
-          
-            </div><!-- article-sidebar -->
-          </aside><!-- col -->
 
 
         </div><!-- row -->
       </article>  
 
-      <section class="deck">
-      
-        <div class="col-md-12">
-            <h1 class="section-header">Seneste nyt</h1>
-        </div>
-
-        
-        
-          <ul class="list-clean flex-4-2-2">
-            <? while (dumb_luck("8")): ?>
-              <li>
-                <article class="teaser col-md-3 col-sm-3 col-xs-6">
-                  <figure class="teaser-img">
-                    <a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a>
-                  </figure>
-                  <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                </article>
-                </li>
-            <? endwhile ?>
-          </ul>
-
-          <footer class="deck-footer text-center">
-            <button type="button"  data-loading-text="Loading..." class="btn btn-primary btn-sm btn-loading" autocomplete="off">Load more</button>
-          </footer>
-
-      </section>
-
       
 
+        <?php include('./inc/asset-article-below.php'); ?>
 
-    <section class="deck">
-      <div class="col-md-12">
-      <? // dummy("ad@biz-features") ?>
-      </div>  
-    </section>
+
+    
     </div>
 
   
