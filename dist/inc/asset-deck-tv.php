@@ -1,8 +1,9 @@
+<div class="col-md-12">
 <div class="theme-container theme-dark">
             
             <div class="theme-title col-md-3">
               <h2 class="theme-header">Business TV</h2>
-              <p><a href="#">Se LIVE TV <i class="fa fa-caret-right"></i></a></p>
+              <p><a href="#">Se alle <i class="fa fa-caret-right"></i></a></p>
             </div>
 
             <div class="col-md-9">
@@ -42,4 +43,4 @@
 
             </div><!-- col 9 -->
 </div><!-- theme dark -->
-        
+</div>

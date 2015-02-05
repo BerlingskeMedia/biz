@@ -8988,6 +8988,22 @@ ul.related li {
     margin: 0 0 5px;
   }
 }
+.teaser-section:before,
+.teaser-section:after {
+  content: " ";
+  display: table;
+}
+.teaser-section:after {
+  clear: both;
+}
+.teaser-section:before,
+.teaser-section:after {
+  content: " ";
+  display: table;
+}
+.teaser-section:after {
+  clear: both;
+}
 .teaser-section .teaser-img {
   float: left;
   margin-right: 20px;
@@ -10392,7 +10408,6 @@ h1.heading {
   color: #cc0066;
 }
 .article-content-stream {
-  border-top: 4px solid #333;
   padding: 10px;
   background: rgba(0, 0, 0, 0.05);
 }

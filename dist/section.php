@@ -46,7 +46,7 @@
       
     </div>
       
-      <div class="col-md-8 col-sm-8">
+      <div class="col-md-8 col-sm-12 module-sm">
         <div class="row">
         <? while (dumb_luck("2")): ?>
           
@@ -73,7 +73,7 @@
                 <p><? dummy("text@teaser") ?></p>
                 </div>
               </article>
-          <? while (dumb_luck("20")): ?>
+          <? while (dumb_luck("10")): ?>
           
               <article class="teaser teaser-section header-20 teaser-border-bottom">
                 <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
@@ -89,52 +89,156 @@
         </div>
         </div><!-- row -->
 
-
-        <nav>
-  <ul class="pagination">
-    <li>
-      <a href="#" aria-label="Previous">
-        <span aria-hidden="true">Previous</span>
-      </a>
-    </li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li class="active"><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#">6</a></li>
-    <li><a href="#">7</a></li>
-    <li><a href="#">8</a></li>
-    <li>
-      <a href="#" aria-label="Next">
-        <span aria-hidden="true">Next</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-
+        <div class="text-center">
+          
+          <button class="btn btn-primary btn-sm">Load more <i class="fa fa-caret-down"></i></button>
+        </div>
+        
 
       </div>
 
-      <div class="col-md-4 col-sm-4 hidden-xs">
-      <div class="banner module-sm hidden-sm hidden-sx">
-        <? dummy("ad@300x600") ?>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+       <div class="banner module-sm hidden-sm hidden-sx">
+        <? dummy("ad@300x250") ?>
       </div>
-        <section class="module-sm">
+        
+
+      <div class="row">
+      <div class="col-md-12 col-sm-6">
+
+         <section class="module-sm">
+    
+
     <h1 class="section-header">Most read</h1>
-      <ul class="list toplist toplist-lg list-xs list-image-right">
-        <? while (dumb_luck("5")): ?>
+      
+
+    <div role="tabpanel" class="tabs">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs-sm" role="tablist">
+    <li role="presentation" class="active"><a href="#tab-business2" aria-controls="business" role="tab" data-toggle="tab">Business</a></li>
+    <li role="presentation"><a href="#tab-berlingske2" aria-controls="tab-berlingske" role="tab" data-toggle="tab">Berlingske</a></li>
+    <li role="presentation"><a href="#tab-politiko2" aria-controls="tab-politiko" role="tab" data-toggle="tab">Politiko</a></li>
+    <li role="presentation"><a href="#tab-aok2" aria-controls="tab-aok" role="tab" data-toggle="tab">AOK</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="tab-business2">
+      <ul class="list toplist toplist-lg list-xs">
+        <? while (dumb_luck("10")): ?>
           <li class="teaser">
-          <? if (dumb_luck("66%")): ?><figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure><? endif ?>
           <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
           </li>
         <? endwhile ?>
       </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-berlingske2">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-politiko2">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-aok2">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
       </section>
 
-       <div class="banner module-sm hidden-sm hidden-sx">
-        <? dummy("ad@300x250") ?>
       </div>
+
+      <div class="col-md-12 col-sm-6">
+
+
+      
+
+      <section class="module-sm">
+    
+    <h1 class="section-header">Latest news</h1>
+      
+
+    <div role="tabpanel" class="tabs">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs-sm" role="tablist">
+    <li role="presentation" class="active"><a href="#tab-business" aria-controls="business" role="tab" data-toggle="tab">Business</a></li>
+    <li role="presentation"><a href="#tab-berlingske" aria-controls="tab-berlingske" role="tab" data-toggle="tab">Berlingske</a></li>
+    <li role="presentation"><a href="#tab-politiko" aria-controls="tab-politiko" role="tab" data-toggle="tab">Politiko</a></li>
+    <li role="presentation"><a href="#tab-aok" aria-controls="tab-aok" role="tab" data-toggle="tab">AOK</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="tab-business">
+      <ul class="list list-xs ">
+        <? while (dumb_luck("10")): ?>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a><footer class="inline"><time class=""><? dummy("text@time-ago-short") ?></time></footer></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-berlingske">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-politiko">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-aok">
+    <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+      </section>
+
+</div>
+      </div><!-- row -->
 
       </div>
 

@@ -219,6 +219,38 @@
      </section>
 
 
+<section class="deck">
+  <div class="col-md-12">
+    <h1 class="deck-header">Forsiden lige nu <a href="index.php" class="section-header-link">Til forsiden <i class="fa fa-caret-right"></i></a></h1>
+  </div>
+
+
+
+  <ul class="list-clean flex-4-2-2">
+<? while (dumb_luck("4")): ?>
+  <li class="col-md-3 col-sm-6 col-xs-6">
+    <article class="teaser teaser-fixed-height">
+      <figure class="teaser-img">
+        <a href="article.php"><img src="<? dummy("image@440x,16:9") ?>" width="" height="" alt="" /></a>
+      </figure>
+      <div class="teaser-body">
+      <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+      <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+      
+      </div>
+    </article>
+    </li>
+<? endwhile ?>
+
+</ul>
+
+
+
+  
+  <div class="col-md-12 text-center"><button class="btn-primary btn btn-sm">Load more <i class="fa fa-caret-down"></i></button></div>
+</section>
+
+
 <section class="deck">   
 
    <?php include('inc/asset-deck-tv.php'); ?>
@@ -243,7 +275,7 @@
         
         <div class="col-md-12">
           <h1 class="deck-header">
-            Business recommends
+            Business recommends <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
           </h1>
         </div>
 
@@ -282,7 +314,7 @@
 
       <? endwhile ?>
       <div class="col-md-12">
-        <div class="text-center module-sm"><button class="btn btn-primary button-sm">Load more <i class="fa fa-caret-down"></i></button></div>
+        <div class="text-center module-sm"><button class="btn btn-primary btn-sm">Load more <i class="fa fa-caret-down"></i></button></div>
       </div>
       </div>
 
@@ -303,7 +335,7 @@
           </h1>
         
         <ul class="list  teaser-round list-light">
-          <? while (dumb_luck("6")): ?>
+          <? while (dumb_luck("5")): ?>
           <li class="teaser teaser-img-left">
           <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image/!author@50x50,") ?>" width="" height="" alt="" /></a></figure>
           <div class="teaser-body">

@@ -1,7 +1,7 @@
 
 
 <h1 class="section-header-alt">
-  Forsiden lige nu:
+  Topnyheder:
 </h1>
 
 
@@ -139,7 +139,7 @@
 
 
 <section class="section-border-bottom">
-  <h1 class="aside-header">BrandView <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a></h1>
+  <h1 class="section-header">BrandView <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a></h1>
   <div class="row">
 <? while (dumb_luck("2")): ?>
 <div class="col-xs-6">
@@ -179,7 +179,7 @@
 
 
 <section class="section-border-bottom">
-  <h1 class="aside-header">Shopping <a href="section.php" class="section-header-link">Flere tilbud <i class="fa fa-caret-right"></i></a></h1>
+  <h1 class="section-header">Shopping <a href="section.php" class="section-header-link">Flere tilbud <i class="fa fa-caret-right"></i></a></h1>
   <div class="row">
 <? while (dumb_luck("2")): ?>
 <div class="col-xs-6">
