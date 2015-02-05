@@ -142,8 +142,8 @@ ul {
           <li class="d"><a href="/dist/section.php">Section</a> <date>Feb. 5th</date></li>
           <li class="d"><a href="/dist/article.php">Article</a> 
           <ul>
-            <li class="b"><a href="/dist/article-footer.php">Article footer</a><date>Feb. 5th</date></li>
-          <li class="d"><a href="/dist/assets-article-contentstream.php">Content Stream</a></li>
+            <li class="d"><a href="/dist/article-footer.php">Article footer</a><date>Feb. 5th</date></li>
+            <li class="d"><a href="/dist/assets-article-contentstream.php">Content Stream</a></li>
           </ul>
           </li>
           
