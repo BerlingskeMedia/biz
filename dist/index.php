@@ -37,14 +37,14 @@
     </div>
     <div class="row">
       
-    <? if (dumb_luck("50%")): ?>
-      <div class="col-md-12">
-        <article class="teaser teaser-oneliner-breaking"><span><i>Breaking</i></span><a href="article.php"><? dummy("text@headline") ?></a></article>
-      </div>
     
-    <? else: ?>
+    <!--   <div class="col-md-12">
+        <article class="teaser teaser-oneliner-breaking"><span><i>Breaking</i></span><a href="article.php"><? dummy("text@headline") ?></a></article>
+      </div> -->
+    
+    
       
-      <div class="col-md-12">
+      <!-- <div class="col-md-12">
         <article class="teaser header-60 teaser-border-top-thick teaser-img-left <? dummy("text@biz-teaserclass") ?>">
         <figure class="teaser-img"><img src="<? dummy("image@400x,1:1") ?>" width="" height="" alt="" /></figure>
         <div class="teaser-body">
@@ -64,35 +64,55 @@
         </article>
 
 
-      </div>
-      <? endif ?>
+      </div> -->
+    
       
       <div class="col-md-8">
-          
+      
+
+
+
       <div class="row">
         
+        <div class="col-md-12">
+          <article class="teaser teaser-img-right header-30 teaser-border-top-thick margin-top-0">
+            
+              <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="" height="" alt="" /></a></figure>
+              <div class="teaser-body">
+                <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+                <p><? dummy("text@teaser") ?></p>
+                <ul class="related">
+              <? while (dumb_luck("1-3")): ?>
+              <? dummy("text@biz-related") ?>
+              <? endwhile ?>
+            </ul>
+                </div>
+              </article>
+
+          
+        </div>
         
       <div class="col-md-8">
 
-       <!--  <article class="teaser header-40   teaser-margin-bottom-0 ">
-            <figure class="teaser-img"><a href="#"><img src="<? dummy("image/!bizpics@620x,1:1") ?>" width="" height="" alt="" /></a></figure>
+       <article class="teaser header-40   teaser-margin-bottom-0 teaser-solid ">
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image/!bizpics@620x,3:4") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
             <p class="large"><? dummy("text@teaser") ?></p>
             <? if (dumb_luck("25%")): ?>
-            <ul class="related large">
+            <ul class="related">
               <? while (dumb_luck("1-3")): ?>
               <? dummy("text@biz-related") ?>
               <? endwhile ?>
             </ul>
             <? endif ?>
             </div>
-          </article> -->
+          </article>
 
 
 
-           <article class="teaser teaser-overlay-gradient header-40 teaser-margin-bottom-0 ">
+           <!-- <article class="teaser teaser-overlay-gradient header-40 teaser-margin-bottom-0 teaser-border-top-thick ">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image/!bizpics@540x,9:16") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -106,17 +126,27 @@
             </ul>
             <? endif ?>
             </div>
-          </article> 
+          </article>  -->
 </div>
 <div class="col-md-4">
 <section>
+
+
 <? while (dumb_luck("3")): ?>
-            <article class="teaser  teaser-border-bottom-thick">
+
+
+            <article class="teaser  header-20 teaser-border-bottom-thick-last-child ">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-            <? if (dumb_luck("50%")): ?><p><? dummy("text@teaser") ?></p><? endif ?>
+            <? if (dumb_luck("50%")): ?>
+            <ul class="related">
+              <? while (dumb_luck("0-2")): ?>
+              <? dummy("text@biz-related") ?>
+              <? endwhile ?>
+            </ul>
+          <? endif ?>
             </div>
           </article>
           
@@ -146,10 +176,10 @@
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-            <p><? dummy("text@teaser") ?></p>
+            
             <? if (dumb_luck("25%")): ?>
             <ul class="related">
-              <? while (dumb_luck("1-3")): ?>
+              <? while (dumb_luck("0-2")): ?>
               <? dummy("text@biz-related") ?>
               <? endwhile ?>
             </ul>
@@ -159,12 +189,25 @@
           </div>
           <div class="col-md-4">
           
-          <article class="teaser  header-15 teaser-border-top-thick">
-            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
+           <article class="teaser teaser-quote header-20 teaser-border-top-thick">
+            <footer><span class="cat">Dagens kommentar</span></footer>
+            
+            
+
+            <h2 class="header"><a href="article.php"><? dummy("text@teaser") ?></a></h2>
+            <figure class="teaser-img">
+              <img src="<? dummy("image/!author@30x30,") ?>" width="" height="" alt="" />
+              <figcaption><cite><? dummy("text@author") ?></cite></figcaption>
+            </figure>
+
+
+          </article>
+
+           <article class="teaser  header-20 teaser-border-top-thick">
+            <!-- <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure> -->
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-            <p><? dummy("text@teaser") ?></p>
             </div>
           </article>
           
@@ -181,45 +224,141 @@
         </div>
 
         <div class="col-md-4">
-          <div class="banner module-xs">
+          
+
+
+ <section class="module-sm">
+    
+    <h1 class="section-header">Latest news</h1>
+      
+
+    <div role="tabpanel" class="tabs">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs-sm" role="tablist">
+    <li role="presentation" class="active"><a href="#tab-business" aria-controls="business" role="tab" data-toggle="tab">Business</a></li>
+    <li role="presentation"><a href="#tab-berlingske" aria-controls="tab-berlingske" role="tab" data-toggle="tab">Berlingske</a></li>
+    <li role="presentation"><a href="#tab-politiko" aria-controls="tab-politiko" role="tab" data-toggle="tab">Politiko</a></li>
+    <li role="presentation"><a href="#tab-aok" aria-controls="tab-aok" role="tab" data-toggle="tab">AOK</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="tab-business">
+      <ul class="list list-xs list-light">
+        <? while (dumb_luck("10")): ?>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a><footer class="inline"><time class=""><? dummy("text@time-ago-short") ?></time></footer></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-berlingske">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-politiko">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-aok">
+    <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+      </section>
+
+
+            <div class="banner module-xs">
               <? dummy("ad@300x250") ?>
             </div>
 
+               <section class="module-sm">
+    
 
-              <h1 class="section-header">
-    Latest news
-  </h1>
+    <h1 class="section-header">Most read</h1>
+      
 
-  <ul class="list  list-light  list-condenced">
-    <? while (dumb_luck("10")): ?>
-    <li class="teaser">
-    <div class="teaser-body">
-    <h2 class="header">
-      <a href="article.php">
-      <? dummy("text@headline") ?></a>
-      </h2>
-      <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a>  <time><? dummy("text@time-ago-short") ?></time></footer>
-      </div>
-    </li>
-  <? endwhile ?>
+    <div role="tabpanel" class="tabs">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs-sm" role="tablist">
+    <li role="presentation" class="active"><a href="#tab-business2" aria-controls="business" role="tab" data-toggle="tab">Business</a></li>
+    <li role="presentation"><a href="#tab-berlingske2" aria-controls="tab-berlingske" role="tab" data-toggle="tab">Berlingske</a></li>
+    <li role="presentation"><a href="#tab-politiko2" aria-controls="tab-politiko" role="tab" data-toggle="tab">Politiko</a></li>
+    <li role="presentation"><a href="#tab-aok2" aria-controls="tab-aok" role="tab" data-toggle="tab">AOK</a></li>
   </ul>
 
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="tab-business2">
+      <ul class="list toplist toplist-lg list-xs list-light">
+        <? while (dumb_luck("10")): ?>
+          <li class="teaser">
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></div>
+          </li>
+        <? endwhile ?>
+      </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-berlingske2">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-politiko2">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-aok2">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+      </section>
 
           
 
-          
-
-          <article class="teaser teaser-quote header-20 teaser-border-top-thick">
-            <footer><span class="cat">Dagens kommentar</span></footer>
-            
-            <figure class="teaser-img">
-              <img src="<? dummy("image/!author@60x60,") ?>" width="" height="" alt="" />
-            </figure>
-
-            <h2 class="header"><a href="article.php"><? dummy("text@teaser") ?></a></h2>
-            <cite><? dummy("text@author") ?></cite>
-
-          </article>
+         
 
 
         </div>

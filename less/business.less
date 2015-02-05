@@ -248,10 +248,9 @@ a.header-tool-icon {
 }
 .teaser-quote {
 	.teaser-img {
-		float: right;
-		margin: 30px 0 0 10px;
-		clear: left;
+		margin: 0 0 10px;
 		img {
+			display: none;
 			border-radius: 50%;
 			border: 3px solid #fff;
 		}
@@ -318,6 +317,7 @@ a.header-tool-icon {
 }
 ul.related {
 	.list-clean;
+	margin-top: 10px;
 
 }
 .teaser {
@@ -347,7 +347,6 @@ ul.related {
 	// }
 	p {
 		margin-top: 5px;
-		.small;
 		color: #333;
 	}
 	.header a {
@@ -399,6 +398,7 @@ ul.related {
 		}
 	}
 }
+
 .teaser-sm {
 	margin-bottom: 0;
 }
@@ -465,6 +465,26 @@ ul.related {
 		
 	}
 }
+.teaser-solid {
+	.teaser-body {
+		background: #333;
+		padding: 15px;
+
+		a, p {
+		color: #fff;
+	}
+	.related {
+		li {
+			font-size: 15px;
+		}
+	}
+	}
+	.teaser-img {
+		margin-bottom: 0;
+	}
+	
+}
+
 .teaser-mega {
 	background: #333;
 	padding: 5px;
@@ -550,7 +570,7 @@ ul.related {
 	color: @biz-1;
 	font-weight: 600;
 	// text-transform: uppercase;
-	font-size: 90%;
+	// font-size: 90%;
 	&:before {
 		display: inline;
 		font-family: fontawesome;
@@ -1342,14 +1362,13 @@ a.btn-premium:after {
 	border-top: 4px solid #333;
 	margin-top: 15px;
 	padding-top: 15px;
+	
 }
 .teaser-border-bottom-thick {
 	border-bottom: 4px solid #333;
 	margin-bottom: 15px;
 	padding-bottom: 15px;
-	&:last-child {
-		border-bottom: 0;
-	}
+	
 }
 .teaser-border-bottom-thick-last-child {
 	border-bottom: 4px solid #333;
