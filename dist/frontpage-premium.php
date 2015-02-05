@@ -37,11 +37,7 @@
         
         <?php include('inc/article-header-premium.php'); ?>
 
-        <header class="article-head">
-
-
         
-        </header>
 
         
 

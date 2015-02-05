@@ -200,7 +200,7 @@
           
           <!-- SIDEBAR  -->
           <aside class="col-md-4 col-md-pull-8">
-          <div class="article-sidebar">
+          <div class="article-sidebar article-content-stream">
 
           
           
