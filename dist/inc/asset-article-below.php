@@ -459,9 +459,9 @@
   </section>
   <section class="deck">
 
-    <div class="col-md-4 ">
+    <div class="col-md-4 col-sm-6 ">
       
-      <section class="toggle-container">
+      <section class="toggle-container module-sm">
 
       <h1 class="section-header">
         BrandView <a class="section-header-link toggle-btn" href="#">Hvad er BrandView?</a>
@@ -486,8 +486,8 @@
         
 
     </div>
-    <div class="col-md-4">
-      <section >
+    <div class="col-md-4 col-sm-6 ">
+      <section class="module-sm">
   
     <h1 class="section-header">Seneste <span class="logo-premium">Premium</span>
     <a href="#" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
@@ -505,6 +505,27 @@
                     <? endwhile ?>
                   </ul>
       </section>
+
+    </div>
+
+    <div class="col-md-4">
+      
+      <section class="module-sm">
+  <h1 class="section-header">Shopping <a href="section.php" class="section-header-link">Flere tilbud <i class="fa fa-caret-right"></i></a></h1>
+  <div class="row">
+<? while (dumb_luck("2")): ?>
+<div class="col-xs-6">
+<article class="teaser teaser-sm">
+  <figure class="teaser-img"><a href="article-premium.php"><img src="<? dummy("image/!ecommerce-biz@400x,16:9") ?>" width="" height="" alt="" /></a></figure>
+  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+  <div class="teaser-price"><a href="http://www.berlingske.dk/shop" target="_blank" class="btn btn-xxs btn-secondary">Køb</a> <span class="price"><? dummy("text@number") ?> kr.</span></div>
+
+</article>
+</div>
+<? endwhile ?>
+</div>
+</section>
+
 
     </div>
 </section>  

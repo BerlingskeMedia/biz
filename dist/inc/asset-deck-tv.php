@@ -19,8 +19,13 @@
     <div class="tab-content row">
 
       <div role="tabpanel" class="tab-pane fade in active" id="tab-tv-1">
-           <? while (dumb_luck("3")): ?>
-              <article class="teaser col-md-4 col-sm-4 teaser-sx-400 ">
+            <article class="teaser col-md-4 col-sm-4 col-xs-12  ">
+                <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@600x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
+                <h2 class="header"><a href="article.php"><span class="teaser-tag"><i class="fa fa-play"></i></span> <? dummy("text@headline") ?></a></h2>
+              </article>
+
+           <? while (dumb_luck("2")): ?>
+              <article class="teaser col-md-4 col-sm-4 col-xs-6  ">
                 <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
                 <h2 class="header"><a href="article.php"><span class="teaser-tag"><i class="fa fa-play"></i></span> <? dummy("text@headline") ?></a></h2>
               </article>
