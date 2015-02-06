@@ -8883,6 +8883,9 @@ ul.related li:before {
   display: inline-block;
   color: #fff;
 }
+.teaser-solid {
+  position: relative;
+}
 .teaser-solid .teaser-body {
   background: #333;
   padding: 15px;
@@ -8899,6 +8902,29 @@ ul.related li:before {
 }
 .teaser-solid .teaser-img {
   margin-bottom: 0;
+}
+.teaser-solid .related li:before {
+  color: #999;
+}
+@media (max-width: 767px) {
+  .teaser-solid {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 4px solid #333;
+  }
+  .teaser-solid .teaser-body {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.8);
+  }
+  .teaser-solid .header {
+    font-size: 20px!important;
+  }
+  .teaser-solid p {
+    font-size: 14px!important;
+  }
 }
 .teaser-mega {
   background: #333;
