@@ -48,8 +48,8 @@
     
       
       <div class="col-md-12">
-        <article class="teaser header-60 teaser-border-top-thick teaser-img-left <? dummy("text@biz-teaserclass") ?>">
-        <figure class="teaser-img"><img src="<? dummy("image@400x,1:1") ?>" width="" height="" alt="" /></figure>
+        <article class="teaser header-60 teaser-border-top-thick teaser-img-left teaser-float-mobile <? dummy("text@biz-teaserclass") ?>">
+        <figure class="teaser-img"><img src="<? dummy("image@414x,1:1") ?>" width="" height="" alt="" /></figure>
         <div class="teaser-body">
         <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
 
@@ -82,10 +82,10 @@
       <div class="row">
         
         <div class="col-md-12">
-          <article class="teaser teaser-img-right header-35 teaser-border-top-thick margin-top-0 teaser-overflow">
+          <article class="teaser teaser-img-right teaser-float-mobile header-35 teaser-border-top-thick margin-top-0 teaser-overflow">
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
               <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-              <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@350x,16:9") ?>" width="" height="" alt="" /></a></figure>
+              <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@420x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
                 
                 
@@ -103,7 +103,7 @@
         
       <div class="col-md-8 col-sm-8">
 
-       <article class="teaser header-40   teaser-margin-bottom-0 teaser-solid ">
+       <article class="teaser header-40 teaser-margin-bottom-0 teaser-solid module-sm">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image/!bizpics@620x,3:4") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -215,10 +215,6 @@
           
           
             </div>
-
-
-
-
 
         </div>
 
@@ -445,12 +441,11 @@
       <section class="deck">
       <div class="col-md-8 ">
         <? while (dumb_luck("8")): ?>
-        <article class="teaser header-20 teaser-img-left teaser-border-bottom">
+        <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
               <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-              <p><? dummy("text@teaser") ?></p>
             </div>
           </article>
           <? endwhile ?>
@@ -499,14 +494,16 @@
             </div>
 
             <div class="col-md-9">
-            <div class="fact-2-col">
+            <div class="fact-2-col-not-xs">
               <? while (dumb_luck("5")): ?>
               <article class="teaser">
                 <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
               </article>
 
               <? endwhile ?>
+              <div class="module-sm">
               <button class="btn btn-primary">Read magazine <i class="fa fa-caret-right"></i></button>
+              </div>
             </div>
               
             </div>
@@ -523,12 +520,11 @@
       
       <div class="col-md-8 ">
         <? while (dumb_luck("8")): ?>
-        <article class="teaser header-20 teaser-img-left teaser-border-bottom">
+        <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
               <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-              <p><? dummy("text@teaser") ?></p>
             </div>
           </article>
           <? endwhile ?>
@@ -569,7 +565,7 @@
       </div>
       
         <article class="teaser teaser-brandview header-20 ">
-            <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@300x,16:9") ?>" width="" height="" alt="" /></a></figure>
+            <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@420x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <span class="teaser-tagline">
               Sponseret af Columbus
             </span>
@@ -608,12 +604,12 @@
       <section class="deck">
       <div class="col-md-8 ">
         <? while (dumb_luck("8")): ?>
-        <article class="teaser header-20 teaser-img-left teaser-border-bottom">
+        <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
               <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-              <p><? dummy("text@teaser") ?></p>
+              
             </div>
           </article>
           <? endwhile ?>
@@ -689,7 +685,7 @@
       </div>
       <div class="col-md-12">
       <nav class="nav-deck">
-        <ul>  <li><strong>GENVEJE:</strong></li>
+        <ul>  <li class="hidden-xs"><strong>GENVEJE:</strong></li>
             <li><a href="section.php">Bank</a></li>
             <li><a href="section.php">Bolig</a></li>
             <li><a href="section.php">Pension</a></li>
@@ -699,7 +695,7 @@
         </ul>
       </nav>
       </div>
-      <div class="col-md-4 col-sm-12">
+      <div class="col-md-4 col-sm-12 col-xs-6">
         <article class="teaser header-20">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@540x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
@@ -708,7 +704,7 @@
             </div>
           </article>
       </div>
-      <div class="col-md-4 col-sm-12">
+      <div class="col-md-4 col-sm-12 col-xs-6">
         <article class="teaser header-20">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@540x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
@@ -717,7 +713,7 @@
             </div>
           </article>
       </div>
-      <div class="col-md-4 col-sm-12">
+      <div class="col-md-4 col-sm-12 col-xs-12">
       
       
           
@@ -751,7 +747,7 @@
         <h1 class="deck-header">Business Events <a href="section.php" class="section-header-link">See all <i class="fa fa-caret-right"></i></a></h1>
       </div>
       
-      <div class="col-md-4 col-sm-12">
+      <div class="col-md-4 col-sm-12 col-xs-6">
         <article class="teaser header-20">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@540x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
@@ -760,7 +756,7 @@
             </div>
           </article>
       </div>
-      <div class="col-md-4 col-sm-12">
+      <div class="col-md-4 col-sm-12 col-xs-6">
         <article class="teaser header-20">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@540x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
@@ -769,7 +765,7 @@
             </div>
           </article>
       </div>
-      <div class="col-md-4 col-sm-12">
+      <div class="col-md-4 col-sm-12 col-xs-12">
       
       
           

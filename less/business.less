@@ -447,7 +447,13 @@ ul.related {
 		}
 	}
 }
-
+@media (max-width: @screen-xs-max) {
+	.img-xs-100 {
+		.teaser-img img {
+			max-width: 100px;
+		}
+	}
+}
 .teaser-sm {
 	margin-bottom: 0;
 }
@@ -693,6 +699,12 @@ ul.related {
 	}
 }
 
+.teaser-float-mobile {
+	.teaser-img {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
 .teaser-section {
 	.clearfix;
 	.teaser-img {
@@ -728,8 +740,8 @@ ul.related {
 	}
 	@media (max-width: @screen-xs-max) {
 		.teaser-img {
-			float: none;
-			margin: 0 0 5px;
+			// float: none;
+			// margin: 0 0 5px;
 		}
 	}
 }
@@ -1452,15 +1464,27 @@ a.btn-premium:after {
 
 .header-20 .header {
 	font-size: 20px;
+	@media (max-width: @screen-sm-max) {
+		font-size: 15px;
+	}
 }
 .header-25 .header {
 	font-size: 25px;
+	@media (max-width: @screen-sm-max) {
+		font-size: 20px;
+	}
 }
 .header-30 .header {
 	font-size: 30px;
+	@media (max-width: @screen-sm-max) {
+		font-size: 20px;
+	}
 }
 .header-35 .header {
 	font-size: 35px;
+	@media (max-width: @screen-sm-max) {
+		font-size: 25px;
+	}
 }
 .header-40 .header {
 	font-size: 40px;
@@ -2668,12 +2692,13 @@ h1.heading {
 
 
 .fact-2-col {
-	-webkit-column-count: 2;
-	-moz-column-count: 2;
-	column-count: 2;
-	-webkit-column-gap: 35px;
-	-moz-column-gap: 35px;
-	column-gap: 35px;
+	.content-columns(2, 35px);
+}
+.fact-2-col-not-xs {
+	.content-columns(2, 35px);
+	@media (max-width: @screen-sm-max) {
+		.content-columns(1, 0);
+	}
 }
 .deck-2-col {
 	.deck-content {
@@ -2974,6 +2999,22 @@ h1.heading {
 	}
 }
 
+
+
+
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+	.theme-cover {
+			.theme-caption {
+				.header {
+					font-size: 4vw;
+			}	
+		}
+	}
+}
+
+
+
+
 @media (max-width: @screen-xs-max) {
 	.theme-wrapper{
 		min-height: initial;
@@ -2984,19 +3025,31 @@ h1.heading {
 		padding: 10px;
 		margin-top: 20px;
 
+		ul {
+			position: relative;
+			li {
+				clear: left;
+				&:nth-child(even){
+					clear: none;
+				}
+				&:first-child, 
+				&:nth-child(2) {
+					border-top: 0;
+				}
+			}
+			
+		}
 	}
-
 	.theme-cover {
 		height: 50vh;
 
 			.theme-caption {
-				.header {
+				padding-bottom: 20px;
+				.header{
 					font-size: 10vw;
 			}	
 		}
 	}
-
-	
 }
 
 .theme-splash {
