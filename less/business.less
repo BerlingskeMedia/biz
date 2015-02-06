@@ -546,9 +546,7 @@ ul.related {
 		color: #999;
 	}
 	@media (max-width: @screen-xs-max) {
-		padding-top: 10px;
-		margin-top: 10px;
-		border-top: 4px solid #333;
+		
 		.teaser-body {
 			position: absolute;
 			bottom: 20px;
@@ -1446,8 +1444,15 @@ a.btn-premium:after {
 	border-top: 4px solid #333;
 	margin-top: 15px;
 	padding-top: 15px;
-	
 }
+.teaser-border-top-thick-xs {
+	@media (max-width: @screen-sm-max) {
+		border-top: 4px solid #333;
+		margin-top: 15px;
+		padding-top: 15px;
+	}
+}
+
 .teaser-border-bottom-thick {
 	border-bottom: 4px solid #333;
 	margin-bottom: 15px;
@@ -2935,7 +2940,7 @@ h1.heading {
 		opacity: .6;
 		z-index: 1;
 		.scale(1.1);
-		.transition(transform 1s ease);
+		.transition(all 1s ease);
 	}
 	.theme-caption {
 		visibility: hidden;
@@ -2964,6 +2969,9 @@ h1.heading {
 				width: 50%;
 				content: ' ';
 				left: 0; 
+				@media (max-width: @screen-xs-max) {
+					height: 10px;
+				}
 			}
 		}
 		
@@ -2976,6 +2984,7 @@ h1.heading {
 	
 	&:hover figure {
 		.scale(1);
+		opacity: 1;
 	}
 
 }

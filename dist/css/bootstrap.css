@@ -8907,11 +8907,6 @@ ul.related li:before {
   color: #999;
 }
 @media (max-width: 767px) {
-  .teaser-solid {
-    padding-top: 10px;
-    margin-top: 10px;
-    border-top: 4px solid #333;
-  }
   .teaser-solid .teaser-body {
     position: absolute;
     bottom: 20px;
@@ -9955,6 +9950,13 @@ a.btn-premium:after {
   border-top: 4px solid #333;
   margin-top: 15px;
   padding-top: 15px;
+}
+@media (max-width: 991px) {
+  .teaser-border-top-thick-xs {
+    border-top: 4px solid #333;
+    margin-top: 15px;
+    padding-top: 15px;
+  }
 }
 .teaser-border-bottom-thick {
   border-bottom: 4px solid #333;
@@ -11644,9 +11646,9 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
-  -webkit-transition: transform 1s ease;
-  -o-transition: transform 1s ease;
-  transition: transform 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 .theme-cover .theme-caption {
   visibility: hidden;
@@ -11678,6 +11680,11 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   content: ' ';
   left: 0;
 }
+@media (max-width: 767px) {
+  .theme-cover .theme-caption .header:after {
+    height: 10px;
+  }
+}
 .theme-cover.in-screen .theme-caption {
   animation-name: slideDown;
   -webkit-animation-name: slideDown;
@@ -11692,6 +11699,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
+  opacity: 1;
 }
 .theme-wrapper {
   border-width: 15px 15px 15px 0;

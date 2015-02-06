@@ -103,7 +103,7 @@
         
       <div class="col-md-8 col-sm-8">
 
-       <article class="teaser header-40 teaser-margin-bottom-0 teaser-solid module-sm">
+       <article class="teaser header-40 teaser-margin-bottom-0 teaser-solid teaser-border-top-thick-xs module-sm">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image/!bizpics@620x,3:4") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -126,8 +126,22 @@
 <div class="col-md-4 col-sm-4">
 <section>
 
+<article class="teaser  header-20 teaser-border-bottom-thick-last-child teaser-border-top-thick-xs">
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
+            <div class="teaser-body">
+            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            <? if (dumb_luck("50%")): ?>
+            <ul class="related">
+              <? while (dumb_luck("0-2")): ?>
+              <? dummy("text@biz-related") ?>
+              <? endwhile ?>
+            </ul>
+          <? endif ?>
+            </div>
+          </article>
 
-<? while (dumb_luck("3")): ?>
+<? while (dumb_luck("2")): ?>
 
 
             <article class="teaser  header-20 teaser-border-bottom-thick-last-child ">
