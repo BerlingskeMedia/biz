@@ -406,11 +406,123 @@
     
     </div>
 
-    <div class="row">
+   
+
+
+<div class="row">
+<section class="deck">
+
+   <?php include('inc/asset-deck-tv.php'); ?>
+
+</section>
+
+</div>
+
+
+
+<div class="row">
+<section class="deck">
+        
+        <div class="col-md-12">
+          <h1 class="deck-header">
+            Business recommends <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
+          </h1>
+        </div>
+
+
+
+        <div class="col-md-12">
+        <div class="row">
+        
+          <div class="col-md-8">
+            <article class="teaser header-35">
+              <figure class="teaser-img"><a href="#"><img src="<? dummy("image@940x,16:9") ?>" width="" height="" alt="" /></a></figure>
+              <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            </article>
+        
+          <div class="row">
+              
+              
+
+      <div class="col-md-4 col-sm-4 col-xs-12 ">
+          <article class="teaser header-15 ">
+              <figure class="teaser-img"><a href="#"><img src="<? dummy("image@394,16:9") ?>" width="" height="" alt="" /></a></figure>
+              <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            </article>
+          </div>
+            <? while (dumb_luck("2")): ?>
+      <div class="col-md-4 col-sm-4 col-xs-6 ">
+          <article class="teaser header-15 ">
+              <figure class="teaser-img"><a href="#"><img src="<? dummy("image@394,16:9") ?>" width="" height="" alt="" /></a></figure>
+              <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            </article>
+      </div>
+
+
+      <? endwhile ?>
+      <div class="col-md-12">
+        <div class="text-center module-sm"><button class="btn btn-primary btn-sm">Load more <i class="fa fa-caret-down"></i></button></div>
+      </div>
+      </div>
+
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+           
+         
+           <div class="banner module-sm">
+              <? dummy("ad@300x250") ?>
+            </div>
+            
+
+
+
+            <section class="module-sm">
+          <h1 class="section-header">
+            Business blogs <a href="#" class="section-header-link">More blogs <i class="fa fa-caret-right"></i></a>
+          </h1>
+        
+        <ul class="list  teaser-round list-light">
+          <? while (dumb_luck("5")): ?>
+          <li class="teaser teaser-img-left">
+          <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image/!author@50x50,") ?>" width="" height="" alt="" /></a></figure>
+          <div class="teaser-body">
+          <footer><a href="section.php" class="cat"><? dummy("text@author") ?></a> <time>3d.</time></footer>
+          <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+          </div>
+          </li>
+          <? endwhile ?>
+        </ul>
+        </section>
+
+
+           
+
+        
+        </div>
+</div>
+
+
+          
+        
+</div>
+
+
+
+      
+        
+      </section>  
+    </div>
+
+
+ <div class="row">
       <div class="col-md-12">
         <div class="banner module-xs">BANNER</div>
       </div>
     </div>
+
 
 <? if (dumb_luck("100%")): ?>
     
@@ -684,11 +796,7 @@
 
 
 
-<section class="deck">
 
-   <?php include('inc/asset-deck-tv.php'); ?>
-
-</section>
 
     
 
