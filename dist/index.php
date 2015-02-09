@@ -82,7 +82,7 @@
       <div class="row">
         
         <div class="col-md-12">
-          <article class="teaser teaser-img-right teaser-float-mobile header-35 teaser-border-top-thick margin-top-0 teaser-overflow">
+          <article class="teaser teaser-img-right teaser-float-mobile header-35 teaser-border-top-thick teaser-border-bottom-thick margin-top-0 teaser-overflow">
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
               <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
               <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@420x,16:9") ?>" width="" height="" alt="" /></a></figure>
@@ -103,7 +103,7 @@
         
       <div class="col-md-8 col-sm-8">
 
-       <article class="teaser header-40 teaser-margin-bottom-0 teaser-solid teaser-border-top-thick-xs module-sm">
+       <article class="teaser header-40 teaser-margin-bottom-0 teaser-solid  module-sm">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image/!bizpics@620x,3:4") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -126,7 +126,7 @@
 <div class="col-md-4 col-sm-4">
 <section>
 
-<article class="teaser  header-20 teaser-border-bottom-thick-last-child teaser-border-top-thick-xs">
+<article class="teaser  header-20 teaser-border-bottom-thick-last-child ">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -383,6 +383,7 @@
     </div><!-- row -->
 
     <div class="row">
+    <section class="deck">
     <div class="col-md-12 ">
       <div class="divider-pink hidden-sm"></div>
     </div>
@@ -401,7 +402,7 @@
 
     </ul>
       
-
+</section>
       
     
     </div>

@@ -9071,10 +9071,12 @@ ul.related li:before {
     margin: 0 0 5px;
   }
 }
-.teaser-float-mobile .teaser-img {
-  margin-left: 0;
-  margin-right: 0;
-}
+/*.teaser-float-mobile {
+	.teaser-img {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}*/
 .teaser-section:before,
 .teaser-section:after {
   content: " ";
@@ -9973,13 +9975,13 @@ a.btn-premium:after {
 }
 .teaser-border-bottom {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 15px;
-  padding-bottom: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 .teaser-border-bottom-last-child {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 15px;
-  padding-bottom: 15px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 .teaser-border-bottom-last-child:last-child {
   border-bottom: 0;
