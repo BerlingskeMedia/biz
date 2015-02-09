@@ -678,7 +678,7 @@
 </div>
 
 
-
+<!-- 
       <div class="row">
       <section class="deck">
       <div class="col-md-12">
@@ -738,7 +738,7 @@
       </section>
       
 
-    </div>
+    </div> -->
 
 
 <div class="row">
