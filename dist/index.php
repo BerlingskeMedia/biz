@@ -615,6 +615,9 @@
         <div class="banner module-xs">
           <? dummy("ad@300x250") ?>
         </div>
+
+        <div class="row">
+        <div class="col-sm-6 col-md-12">
         <section class="module-sm">
           <h1 class="section-header">
             Business Events <a href="section.php" class="section-header-link">See all <i class="fa fa-caret-right"></i></a>
@@ -632,6 +635,8 @@
           <? endwhile ?>
         </ul>
         </section>
+        </div>
+ <div class="col-sm-6 col-md-12">
 
 
         <section class="toggle-container">
@@ -645,15 +650,24 @@
         <p class="small">Indhold under BrandView produceres i et tæt samarbejde mellem Berlingske Medias content marketing bureau og virksomheden, der er afsender på budskabet. <a href="http://www.publicimpact.dk/">Læs mere om BrandView</a> eller kontakt os direkte på <a href="mailto:moas@berlingslemedia.dk">moas@berlingslemedia.dk</a>.</p>    
       </div>
       
-        <article class="teaser teaser-brandview header-20 ">
+        <div class="row">
+          <? while (dumb_luck("2")): ?>
+
+          <div class="col-md-6 col-xs-6">
+            <article class="teaser teaser-brandview ">
             <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@420x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <span class="teaser-tagline">
               Sponseret af Columbus
             </span>
             <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
         </article>
+          </div>
+        <? endwhile ?>
+        </div>
       
         </section>
+
+        </div><!-- row -->
 
 
       </div>
@@ -661,7 +675,7 @@
 
     </div>
 
-
+</div>
 
 
 
@@ -830,8 +844,8 @@
 <? while (dumb_luck("2")): ?>
 <div class="col-xs-6">
   <article class="teaser teaser-no-logo">
-    <figure class="teaser-img"><a href="section.php" class="section-header-link"></a><a href="article-premium.php"><img src="<? dummy("image@200x,16:9") ?>" width="" height="" alt="" /></a></figure>
-    <h2 class="header"><? dummy("text@headline") ?></h2>
+    <figure class="teaser-img"><a href="section.php" class="section-header-link"></a><a href="article-premium.php"><img src="<? dummy("image@420x,16:9") ?>" width="" height="" alt="" /></a></figure>
+    <h2 class="header"><a href="#"><? dummy("text@headline") ?></a></h2>
     <p class="price"><? dummy("text@number") ?> kr <span class="logo-premium"><span>PREMIUM</span></span></p>
   </article>
 

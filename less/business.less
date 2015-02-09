@@ -2918,7 +2918,6 @@ h1.heading {
 		margin-bottom: 0;
 		.header {
 			font-size: 20px;
-			font-weight: 300;
 			margin-bottom: 20px;
 			border-bottom: 1px solid rgba(255,255,255,.1);
 			padding-bottom: 20px;
@@ -2932,8 +2931,6 @@ h1.heading {
 		margin-bottom: 0;
 		.header {
 			font-size: 30px;
-			font-weight: 600;
-
 		}
 	}
 	.nav-responsive {
@@ -2953,10 +2950,7 @@ h1.heading {
 
 
 .theme-title {
-
 	text-align: right;
-
-	
 	@media (max-width: @screen-sm-max) {
 		width: 100%;
 		display: block;
@@ -2986,22 +2980,13 @@ h1.heading {
 		.scale(1.1);
 		.transition(all 1s ease);
 	}
-	.theme-caption {
-		visibility: hidden;
+	a {
+		display: block;
 		position: absolute;
 		left: 0;
 		right: 0;
-		bottom: 20px;
-		opacity: 1;
-		padding: 0 20px 50px 20px;
-		z-index: 2;
-		
-		
-		
-
-	}
-	&.in-screen .theme-caption  {
-		.slideDown;
+		top: 0;
+		bottom: 0;
 	}
 	
 	&:hover figure {
@@ -3102,7 +3087,7 @@ h1.heading {
 		overflow: visible;
 		.clearfix;
 		border-width: 0 10px 10px 10px;
-		padding: 10px;
+		padding: 20px 10px 10px;
 		margin-top: 0;
 
 		ul {

@@ -11648,7 +11648,6 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 }
 .theme-magazine .teaser .header {
   font-size: 20px;
-  font-weight: 300;
   margin-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding-bottom: 20px;
@@ -11664,7 +11663,6 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 }
 .theme-magazine .teaser:first-child .header {
   font-size: 30px;
-  font-weight: 600;
 }
 .theme-magazine .nav-responsive.show-nav ul {
   display: block;
@@ -11713,24 +11711,13 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   -o-transition: all 1s ease;
   transition: all 1s ease;
 }
-.theme-cover .theme-caption {
-  visibility: hidden;
+.theme-cover a {
+  display: block;
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 20px;
-  opacity: 1;
-  padding: 0 20px 50px 20px;
-  z-index: 2;
-}
-.theme-cover.in-screen .theme-caption {
-  animation-name: slideDown;
-  -webkit-animation-name: slideDown;
-  animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  animation-timing-function: ease;
-  -webkit-animation-timing-function: ease;
-  visibility: visible !important;
+  top: 0;
+  bottom: 0;
 }
 .theme-cover:hover figure {
   -webkit-transform: scale(1);
@@ -11821,7 +11808,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
     height: auto;
     overflow: visible;
     border-width: 0 10px 10px 10px;
-    padding: 10px;
+    padding: 20px 10px 10px;
     margin-top: 0;
   }
   .theme-wrapper:before,
