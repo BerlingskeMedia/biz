@@ -40,6 +40,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'Berlingske';
+  src: url('../fonts/berlingskeserif-blk.eot');
+  src: url('../fonts/berlingskeserif-blk.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-blk.woff2') format('woff2'), url('../fonts/berlingskeserif-blk.woff') format('woff'), url('../fonts/berlingskeserif-blk.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
   font-family: 'BerlingskeTxt';
   src: url('../fonts/berlingskeseriftx-rg.eot');
   src: url('../fonts/berlingskeseriftx-rg.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeseriftx-rg.woff2') format('woff2'), url('../fonts/berlingskeseriftx-rg.woff') format('woff'), url('../fonts/berlingskeseriftx-rg.ttf') format('truetype');
