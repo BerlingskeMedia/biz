@@ -109,7 +109,7 @@
   <ul class="list-clean flex-4-2-2">
 <? while (dumb_luck("4")): ?>
   <li class="col-md-3 col-sm-6 col-xs-6">
-    <article class="teaser teaser-fixed-height">
+    <article class="teaser header-20">
       <figure class="teaser-img">
         <a href="article.php"><img src="<? dummy("image@440x,16:9") ?>" width="" height="" alt="" /></a>
       </figure>

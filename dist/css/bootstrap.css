@@ -40,13 +40,6 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'Berlingske-text';
-  src: url('../fonts/berlingskeseriftx-rg.eot');
-  src: url('../fonts/berlingskeseriftx-rg.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeseriftx-rg.woff2') format('woff2'), url('../fonts/berlingskeseriftx-rg.woff') format('woff'), url('../fonts/berlingskeseriftx-rg.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
   font-family: 'Berlingske';
   src: url('../fonts/berlingskeserif-bd.eot');
   src: url('../fonts/berlingskeserif-bd.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-bd.woff2') format('woff2'), url('../fonts/berlingskeserif-bd.woff') format('woff'), url('../fonts/berlingskeserif-bd.ttf') format('truetype');
@@ -61,11 +54,32 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'Berlingske';
-  src: url('../fonts/berlingskeserif-blkit.eot');
-  src: url('../fonts/berlingskeserif-blkit.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-blkit.woff2') format('woff2'), url('../fonts/berlingskeserif-blkit.woff') format('woff'), url('../fonts/berlingskeserif-blkit.ttf') format('truetype');
-  font-weight: 900;
-  font-style: italic;
+  font-family: 'BerlingskeTxt';
+  src: url('../fonts/berlingskeseriftx-rg.eot');
+  src: url('../fonts/berlingskeseriftx-rg.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeseriftx-rg.woff2') format('woff2'), url('../fonts/berlingskeseriftx-rg.woff') format('woff'), url('../fonts/berlingskeseriftx-rg.ttf') format('truetype');
+  font-weight: 300;
+  font-style: regular;
+}
+@font-face {
+  font-family: 'BerlingskeTxt';
+  src: url('../fonts/berlingskeseriftx-md.eot');
+  src: url('../fonts/berlingskeseriftx-md.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeseriftx-md.woff2') format('woff2'), url('../fonts/berlingskeseriftx-md.woff') format('woff'), url('../fonts/berlingskeseriftx-md.ttf') format('truetype');
+  font-weight: 500;
+  font-style: regular;
+}
+@font-face {
+  font-family: 'BerlingskeTxt';
+  src: url('../fonts/berlingskeseriftx-bd.eot');
+  src: url('../fonts/berlingskeseriftx-bd.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeseriftx-bd.woff2') format('woff2'), url('../fonts/berlingskeseriftx-bd.woff') format('woff'), url('../fonts/berlingskeseriftx-bd.ttf') format('truetype');
+  font-weight: 600;
+  font-style: regular;
+}
+@font-face {
+  font-family: 'BerlingskeTxt';
+  src: url('../fonts/berlingskeseriftx-xbd.eot');
+  src: url('../fonts/berlingskeseriftx-xbd.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeseriftx-xbd.woff2') format('woff2'), url('../fonts/berlingskeseriftx-xbd.woff') format('woff'), url('../fonts/berlingskeseriftx-xbd.ttf') format('truetype');
+  font-weight: 700;
+  font-style: regular;
 }
 .quote-letter {
   background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTAuNTY1IDEyNS44MzUiPjxwYXRoIGQ9Ik0wLDYyLjQ5NEMwLDI2Ljg2NCwyNy44NTMsMCw2NC4zMzEsMGMxNS41NTMsMCwyOS45NzUsNS41MTQsNDEuODUxLDE1LjEyOWwtMy4yNTIsMy4yNTJDOTIuMDQzLDEwLjAzOSw3OC43NTMsNC45NDksNjQuMzMxLDQuOTQ5Yy0zNC4wNzQsMC01OS44MDcsMjQuNjAyLTU5LjgwNyw1Ny41NDVjMCwxMC4xOCwyLjY4NiwxOS4yMjksNi41MDMsMjcuNDI5Yy0xLjI3Mi00LjgwNy0xLjk3OS05Ljc1Ni0xLjk3OS0xNC44NDZjMC0yOC4xMzYsMjIuNjIyLTUxLjA0MSw1MC43NTgtNTEuMDQxYzI3LjcxMiwwLDUwLjc1OCwyMi45MDUsNTAuNzU4LDUxLjA0MWMwLDI3Ljk5NS0yMy4wNDYsNTAuNzU4LTUwLjc1OCw1MC43NThDMjcuNDI5LDEyNS44MzUsMCw5OS4zOTYsMCw2Mi40OTR6Ii8+PC9zdmc+) no-repeat center center;
@@ -8557,7 +8571,7 @@ a.header-tool-icon:hover {
   text-transform: uppercase;
   padding: .5em 1em;
   font-size: 18px;
-  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
+  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
   text-align: center;
   display: inline-block;
   position: relative;
@@ -8649,69 +8663,6 @@ a.header-tool-icon:hover {
   content: '\2014 ';
   margin-right: 4px;
 }
-.article-related-chunk {
-  margin-bottom: 25px;
-}
-.article-related-chunk:before,
-.article-related-chunk:after {
-  content: " ";
-  display: table;
-}
-.article-related-chunk:after {
-  clear: both;
-}
-.article-related-chunk:before,
-.article-related-chunk:after {
-  content: " ";
-  display: table;
-}
-.article-related-chunk:after {
-  clear: both;
-}
-.article-related-chunk ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.article-related-chunk ul li {
-  margin: 0;
-}
-.article-related-chunk ul li {
-  vertical-align: top;
-  width: 47%;
-  display: inline-block;
-  margin-bottom: 20px;
-  padding-right: 5px;
-}
-.article-related-chunk ul li:before,
-.article-related-chunk ul li:after {
-  content: " ";
-  display: table;
-}
-.article-related-chunk ul li:after {
-  clear: both;
-}
-.article-related-chunk ul li:before,
-.article-related-chunk ul li:after {
-  content: " ";
-  display: table;
-}
-.article-related-chunk ul li:after {
-  clear: both;
-}
-@media (max-width: 767px) {
-  .article-related-chunk ul li {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-}
-.article-related-chunk figure {
-  float: left;
-  margin: 0 10px 0 0;
-}
-.article-related-chunk .teaser-body {
-  overflow: hidden;
-}
 .toggle-content {
   overflow: hidden;
   display: none;
@@ -8747,6 +8698,7 @@ ul.related li:before {
 }
 .teaser h2 {
   font-size: 15px;
+  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
 }
 .teaser footer {
@@ -8794,7 +8746,7 @@ ul.related li:before {
 .teaser .logo-premium {
   background-color: #222;
   color: #fff;
-  font-family: berlingske;
+  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
   line-height: 1.2;
   padding: 0 .2em;
@@ -9292,7 +9244,7 @@ h1.page-header {
   font-size: 60px;
   font-weight: 200;
   margin-bottom: 30px;
-  font-family: berlingske;
+  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
   text-align: center;
 }
 @media (max-width: 767px) {
@@ -9679,7 +9631,7 @@ a.btn-premium:after {
   color: #fff;
   line-height: 30px;
   padding: 0 1em;
-  font-family: Berlingske;
+  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
   -webkit-transition: background-color 0.1s ease;
   -o-transition: background-color 0.1s ease;
   transition: background-color 0.1s ease;
@@ -9724,7 +9676,7 @@ a.btn-premium:after {
 .section-header .logo-premium {
   background-color: #222;
   color: #fff;
-  font-family: Berlingske;
+  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
   padding: 2px 5px;
   display: inline-block;
@@ -9775,7 +9727,7 @@ a.btn-premium:after {
   font-size: 35px;
   font-weight: 200;
   margin: 0 0 20px;
-  color: #111;
+  color: #333;
   border-top: 5px solid #333;
   padding-top: 5px;
 }
@@ -9801,7 +9753,7 @@ a.btn-premium:after {
 .section-header-sm .logo-premium {
   background-color: #222;
   color: #fff;
-  font-family: Berlingske;
+  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
   padding: 2px 5px;
   display: inline-block;
@@ -9889,6 +9841,9 @@ a.btn-premium:after {
 .list li h2 {
   margin: 0;
 }
+.list li .header {
+  font-family: "Proxima", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .list li:first-child {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -9930,6 +9885,73 @@ a.btn-premium:after {
 }
 .list-light li .header {
   font-weight: 300;
+}
+.article-related-chunk {
+  margin-bottom: 25px;
+}
+.article-related-chunk:before,
+.article-related-chunk:after {
+  content: " ";
+  display: table;
+}
+.article-related-chunk:after {
+  clear: both;
+}
+.article-related-chunk:before,
+.article-related-chunk:after {
+  content: " ";
+  display: table;
+}
+.article-related-chunk:after {
+  clear: both;
+}
+.article-related-chunk ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.article-related-chunk ul li {
+  margin: 0;
+}
+.article-related-chunk ul li {
+  vertical-align: top;
+  width: 47%;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-right: 5px;
+}
+.article-related-chunk ul li:before,
+.article-related-chunk ul li:after {
+  content: " ";
+  display: table;
+}
+.article-related-chunk ul li:after {
+  clear: both;
+}
+.article-related-chunk ul li:before,
+.article-related-chunk ul li:after {
+  content: " ";
+  display: table;
+}
+.article-related-chunk ul li:after {
+  clear: both;
+}
+@media (max-width: 767px) {
+  .article-related-chunk ul li {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.article-related-chunk figure {
+  float: left;
+  margin: 0 10px 0 0;
+}
+.article-related-chunk .teaser-body {
+  overflow: hidden;
+}
+.article-related-chunk .header {
+  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-size: 17px;
 }
 .teaser-margin-bottom-0 {
   margin-bottom: 0;
@@ -9996,7 +10018,7 @@ a.btn-premium:after {
 }
 @media (max-width: 991px) {
   .header-20 .header {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 .header-25 .header {
@@ -10004,7 +10026,7 @@ a.btn-premium:after {
 }
 @media (max-width: 991px) {
   .header-25 .header {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 .header-30 .header {
@@ -10012,7 +10034,7 @@ a.btn-premium:after {
 }
 @media (max-width: 991px) {
   .header-30 .header {
-    font-size: 20px;
+    font-size: 27px;
   }
 }
 .header-35 .header {
@@ -10020,7 +10042,7 @@ a.btn-premium:after {
 }
 @media (max-width: 991px) {
   .header-35 .header {
-    font-size: 25px;
+    font-size: 32px;
   }
 }
 .header-40 .header {
@@ -10469,12 +10491,12 @@ a.btn-premium:after {
   font-weight: 600;
 }
 h1.heading {
-  font-weight: normal;
+  font-weight: 600;
   font-size: 40px;
   color: #000;
   line-height: 1.2;
   margin: 0 0 10px;
-  font-family: Berlingske;
+  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
 }
 @media (max-width: 991px) {
   h1.heading {
@@ -10543,7 +10565,7 @@ h1.heading {
 .article-content-stream .aside-header .logo-premium {
   background-color: #222;
   color: #fff;
-  font-family: Berlingske;
+  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
   padding: 2px 5px;
   display: inline-block;
@@ -10736,15 +10758,16 @@ h1.heading {
     margin-bottom: 5px;
   }
 }
+.article-byline .article-author > span {
+  font-weight: 600;
+  overflow: hidden;
+  display: inline-block;
+  min-width: 70px;
+}
 .article-byline .article-author .author-follow {
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
-}
-.article-byline .article-author span {
-  font-weight: 600;
-  overflow: hidden;
-  display: inline-block;
 }
 .article-byline .follow-author {
   font-size: 10px;
@@ -10753,6 +10776,22 @@ h1.heading {
 }
 .article-byline .btn-group {
   clear: left;
+}
+.article-byline .btn-group:before,
+.article-byline .btn-group:after {
+  content: " ";
+  display: table;
+}
+.article-byline .btn-group:after {
+  clear: both;
+}
+.article-byline .btn-group:before,
+.article-byline .btn-group:after {
+  content: " ";
+  display: table;
+}
+.article-byline .btn-group:after {
+  clear: both;
 }
 .article-byline .dropdown-menu {
   border-radius: 0;
@@ -11552,6 +11591,15 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 }
 .theme-container .theme-header {
   margin-top: 31px;
+  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+}
+@media (max-width: 991px) {
+  .theme-container .theme-header {
+    margin-top: 0;
+  }
+}
+.theme-container p {
+  font-weight: 600;
 }
 .theme-dark {
   background-color: #333;
@@ -11569,7 +11617,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 }
 .theme-header-underline {
   margin-bottom: 20px;
-  font-family: berlingske;
+  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
   position: relative;
   font-weight: 900;
   font-style: italic;
@@ -11666,7 +11714,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   font-size: 60px;
   font-style: normal;
   line-height: 1;
-  font-family: berlingske;
+  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
   font-weight: 900;
   color: #fff;
   position: relative;
@@ -11738,6 +11786,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
     margin-bottom: 20px;
     padding-right: 20px;
     height: auto;
+    border-top: 0;
   }
   .theme-wrapper ul li:first-child .header {
     font-size: 40px;
@@ -11936,7 +11985,6 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 .theme-splash-wide p {
   color: #fff;
   font-size: 19px;
-  font-weight: 600;
 }
 .theme-splash-wide .cat {
   display: inline-block;
@@ -11963,6 +12011,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   line-height: 1.1;
   display: inline;
   font-weight: 600;
+  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
 }
 .theme-splash-wide .teaser-body {
   position: absolute;

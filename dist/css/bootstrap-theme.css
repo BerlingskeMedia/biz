@@ -40,13 +40,6 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'Berlingske-text';
-  src: url('../fonts/berlingskeseriftx-rg.eot');
-  src: url('../fonts/berlingskeseriftx-rg.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeseriftx-rg.woff2') format('woff2'), url('../fonts/berlingskeseriftx-rg.woff') format('woff'), url('../fonts/berlingskeseriftx-rg.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
   font-family: 'Berlingske';
   src: url('../fonts/berlingskeserif-bd.eot');
   src: url('../fonts/berlingskeserif-bd.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-bd.woff2') format('woff2'), url('../fonts/berlingskeserif-bd.woff') format('woff'), url('../fonts/berlingskeserif-bd.ttf') format('truetype');
@@ -61,11 +54,32 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'Berlingske';
-  src: url('../fonts/berlingskeserif-blkit.eot');
-  src: url('../fonts/berlingskeserif-blkit.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-blkit.woff2') format('woff2'), url('../fonts/berlingskeserif-blkit.woff') format('woff'), url('../fonts/berlingskeserif-blkit.ttf') format('truetype');
-  font-weight: 900;
-  font-style: italic;
+  font-family: 'BerlingskeTxt';
+  src: url('../fonts/berlingskeseriftx-rg.eot');
+  src: url('../fonts/berlingskeseriftx-rg.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeseriftx-rg.woff2') format('woff2'), url('../fonts/berlingskeseriftx-rg.woff') format('woff'), url('../fonts/berlingskeseriftx-rg.ttf') format('truetype');
+  font-weight: 300;
+  font-style: regular;
+}
+@font-face {
+  font-family: 'BerlingskeTxt';
+  src: url('../fonts/berlingskeseriftx-md.eot');
+  src: url('../fonts/berlingskeseriftx-md.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeseriftx-md.woff2') format('woff2'), url('../fonts/berlingskeseriftx-md.woff') format('woff'), url('../fonts/berlingskeseriftx-md.ttf') format('truetype');
+  font-weight: 500;
+  font-style: regular;
+}
+@font-face {
+  font-family: 'BerlingskeTxt';
+  src: url('../fonts/berlingskeseriftx-bd.eot');
+  src: url('../fonts/berlingskeseriftx-bd.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeseriftx-bd.woff2') format('woff2'), url('../fonts/berlingskeseriftx-bd.woff') format('woff'), url('../fonts/berlingskeseriftx-bd.ttf') format('truetype');
+  font-weight: 600;
+  font-style: regular;
+}
+@font-face {
+  font-family: 'BerlingskeTxt';
+  src: url('../fonts/berlingskeseriftx-xbd.eot');
+  src: url('../fonts/berlingskeseriftx-xbd.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeseriftx-xbd.woff2') format('woff2'), url('../fonts/berlingskeseriftx-xbd.woff') format('woff'), url('../fonts/berlingskeseriftx-xbd.ttf') format('truetype');
+  font-weight: 700;
+  font-style: regular;
 }
 .quote-letter {
   background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTAuNTY1IDEyNS44MzUiPjxwYXRoIGQ9Ik0wLDYyLjQ5NEMwLDI2Ljg2NCwyNy44NTMsMCw2NC4zMzEsMGMxNS41NTMsMCwyOS45NzUsNS41MTQsNDEuODUxLDE1LjEyOWwtMy4yNTIsMy4yNTJDOTIuMDQzLDEwLjAzOSw3OC43NTMsNC45NDksNjQuMzMxLDQuOTQ5Yy0zNC4wNzQsMC01OS44MDcsMjQuNjAyLTU5LjgwNyw1Ny41NDVjMCwxMC4xOCwyLjY4NiwxOS4yMjksNi41MDMsMjcuNDI5Yy0xLjI3Mi00LjgwNy0xLjk3OS05Ljc1Ni0xLjk3OS0xNC44NDZjMC0yOC4xMzYsMjIuNjIyLTUxLjA0MSw1MC43NTgtNTEuMDQxYzI3LjcxMiwwLDUwLjc1OCwyMi45MDUsNTAuNzU4LDUxLjA0MWMwLDI3Ljk5NS0yMy4wNDYsNTAuNzU4LTUwLjc1OCw1MC43NThDMjcuNDI5LDEyNS44MzUsMCw5OS4zOTYsMCw2Mi40OTR6Ii8+PC9zdmc+) no-repeat center center;
