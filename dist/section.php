@@ -56,7 +56,7 @@
                 <div class="teaser-body">
                 <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
                 <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></a> </h2>
-                <p><? dummy("text@teaser") ?></p>
+                
                 </div>
               </article>
             </div>
@@ -70,7 +70,7 @@
                 <div class="teaser-body">
                 <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
                 <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></a> </h2>
-                <p><? dummy("text@teaser") ?></p>
+                
                 </div>
               </article>
           <? while (dumb_luck("10")): ?>
@@ -80,7 +80,7 @@
                 <div class="teaser-body">
                 <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
                 <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></a> </h2>
-                <p><? dummy("text@teaser") ?></p>
+                
                 </div>
               </article>
             

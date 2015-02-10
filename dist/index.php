@@ -863,7 +863,19 @@
 
 
 
+<div class="row">
+<section class="deck"> 
+  <div class="col-md-12">
+    <h1 class="deck-header">Business in pictures <a href="section.php" class="section-header-link">See all <i class="fa fa-caret-right"></i></a></h1>
+  </div>
+  <div class="col-md-12 ">
+  
+  <?php include('inc/asset-teaser-gallery.php'); ?>
 
+  </div>
+</section>
+  
+</div><!-- row -->
 
 
 
