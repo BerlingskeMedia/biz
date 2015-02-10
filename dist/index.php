@@ -59,7 +59,7 @@
         <article class="teaser header-60 teaser-border-top-thick teaser-img-left teaser-float-mobile <? dummy("text@biz-teaserclass") ?>">
         <figure class="teaser-img"><a href="#"><img src="<? dummy("image@414x,1:1") ?>" width="" height="" alt="" /></a></figure>
         <div class="teaser-body">
-        <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+        <h2 class="header"><b><i class="fa fa-circle zoomfade"></i> Live</b> <a href="article.php"><? dummy("text@headline") ?></a></h2>
 
         <p class="large"><? dummy("text@teaser") ?></p>
 
