@@ -446,7 +446,7 @@
         
         
           <div class="col-md-8">
-            <article class="teaser header-35 teaser-border-bottom-thick">
+            <article class="teaser header-35 header-xs-20 teaser-border-bottom-thick">
               <figure class="teaser-img"><a href="#"><img src="<? dummy("image@940x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
               <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>

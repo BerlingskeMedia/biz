@@ -80,7 +80,7 @@
 
       <h1>Øg din omsætning - Prøv Business Direct</h1>
       <p>Mangler dit produkt opmærksomhed fra den købedygtige kunde eller beslutningstager?</p> 
-      <p><a href="http://www.businessdirect.dk" target="_blank">Læs mere om Business Direct</a></p>
+      <p><strong><a href="http://www.businessdirect.dk" target="_blank">Læs mere om Business Direct <i class="fa fa-caret-right"></i></a></strong></p>
     </div>
 </section>
 
@@ -91,10 +91,10 @@
                  <div class="col-md-6">
                 <section class=" module">
                 
-              <h1 class="section-header">Latests pressreleases</h1>
+              <h1 class="section-header">Latests pressreleases </h1>
               
               <ul class="list list-xs list-image-left ">
-              <? while (dumb_luck("5")): ?>
+              <? while (dumb_luck("10")): ?>
 
               <li class="teaser">
                       <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure>
@@ -105,6 +105,7 @@
                       </li>
                 <? endwhile ?>
               </ul>
+              <button class="btn btn-sm btn-primary">See all <i class="fa fa-caret-right"></i></button>
 
               </section><!-- read also -->   
 
@@ -113,10 +114,10 @@
                  <div class="col-md-6">
                 <section class=" module">
                 
-              <h1 class="section-header">Latests product announcements</h1>
+              <h1 class="section-header">Latests product announcements </h1> 
               
               <ul class="list list-xs list-image-left ">
-              <? while (dumb_luck("5")): ?>
+              <? while (dumb_luck("10")): ?>
 
               <li class="teaser">
                       <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure>
@@ -127,7 +128,7 @@
                       </li>
                 <? endwhile ?>
               </ul>
-
+              <button class="btn btn-sm btn-primary">See all <i class="fa fa-caret-right"></i></button>
               </section><!-- read also -->   
                    
                  </div>
