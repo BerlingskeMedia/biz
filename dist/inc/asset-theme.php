@@ -16,7 +16,7 @@
       
       
       
-        <? while (dumb_luck("3-6")): ?>
+        <? while (dumb_luck("5")): ?>
         <li class="teaser"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2></li>
         <? endwhile ?>
         <li class="load-more"><button class="btn btn-primary btn-sm">See all <i class="fa fa-caret-right"></i></button></li>

@@ -37,19 +37,27 @@
     </div>
     <div class="row">
       
-    <? if (dumb_luck("10%")): ?>
-
-    <? if (dumb_luck("50%")): ?>
+    
+      
       <div class="col-md-12">
-        <article class="teaser teaser-oneliner-breaking"><span><i>Breaking</i></span><a href="article.php"><? dummy("text@headline") ?></a></article>
+        <article class="teaser teaser-oneliner-red"><a href="article.php"><b>Opdateres</b> <? dummy("text@headline") ?></a></article>
+      </div>
+
+      <div class="col-md-12">
+        <article class="teaser teaser-oneliner-red"><a href="article.php"><b><i class="fa fa-circle zoomfade"></i> Live</b> <? dummy("text@headline") ?></a></article>
+      </div>
+
+    
+      <div class="col-md-12">
+        <article class="teaser teaser-oneliner-yellow"><a href="article.php"><b>Breaking</b> <? dummy("text@headline") ?></a></article>
       </div>
     
-    <? else: ?>
+    
     
       
       <div class="col-md-12">
         <article class="teaser header-60 teaser-border-top-thick teaser-img-left teaser-float-mobile <? dummy("text@biz-teaserclass") ?>">
-        <figure class="teaser-img"><img src="<? dummy("image@414x,1:1") ?>" width="" height="" alt="" /></figure>
+        <figure class="teaser-img"><a href="#"><img src="<? dummy("image@414x,1:1") ?>" width="" height="" alt="" /></a></figure>
         <div class="teaser-body">
         <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
 
@@ -69,9 +77,9 @@
 
       </div>
     
-      <? endif ?>
+    
       <!-- End breaking -->
-      <? endif ?>
+    
 
 
       <div class="col-md-8">
@@ -680,70 +688,6 @@
 </div>
 
 
-<!-- 
-      <div class="row">
-      <section class="deck">
-      <div class="col-md-12">
-      <div class="deck-header">
-        <h1>Privatøkonomi</h1>
-      </div>
-      </div>
-      <div class="col-md-12">
-      <nav class="nav-deck">
-        <ul>  <li class="hidden-xs"><strong>GENVEJE:</strong></li>
-            <li><a href="section.php">Bank</a></li>
-            <li><a href="section.php">Bolig</a></li>
-            <li><a href="section.php">Pension</a></li>
-            <li><a href="section.php">Skat</a></li>
-            <li><a href="section.php">Forsikring</a></li>
-            <li><a href="section.php">Brevkassen</a></li>
-        </ul>
-      </nav>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-6">
-        <article class="teaser header-20">
-            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@540x,16:9") ?>" width="" height="" alt="" /></a></figure>
-            <div class="teaser-body">
-            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-            </div>
-          </article>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-6">
-        <article class="teaser header-20">
-            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@540x,16:9") ?>" width="" height="" alt="" /></a></figure>
-            <div class="teaser-body">
-            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-            </div>
-          </article>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12">
-      
-      
-          
-
-      <ul class="list ">
-        <? while (dumb_luck("3")): ?>
-          <li class="teaser  ">
-              
-              <div class="teaser-body">
-              <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-              </div>
-            </li>
-            <? endwhile ?>
-           </ul>
-        
-      
-      
-      </div>
-
-      </section>
-      
-
-    </div> -->
-
 
 <div class="row">
   <section class="deck">    
@@ -821,23 +765,32 @@
         <div class="banner module-xs">
           <? dummy("ad@300x250") ?>
         </div>
-        <section class="module-sm">
-          <h1 class="section-header">
-            Ask Business <a class="section-header-link" href="section.php">See all <i class="fa fa-caret-right"></i></a>
-          </h1>
         
-        <ul class="list   list-light">
-          <? while (dumb_luck("5")): ?>
-          <li class="teaser teaser-img-left">
-          
-          <div class="teaser-body">
-          <!-- <footer><a href="section.php" class="cat"><? dummy("text@author") ?></a> <time>3d.</time></footer> -->
-          <h2 class="header"><a href="article.php"><? dummy("text@biz-letters") ?></a></h2>
+        <section>
+        <h2 class="section-header-serif">Business Nyhedsbrev</h2>
+        <p>Få nyheder fra Business.dk i din mailbox</p>
+        <form class="form-oneline">
+          <div class="form-group">
+            <input class="form-control" type="email" placeholder="Indtast email"></input> 
+            <button class="btn btn-primary">OK</button>
           </div>
-          </li>
-          <? endwhile ?>
-        </ul>
+        </form>
         </section>
+
+        <section>
+        <h2 class="section-header-serif">Breaking på mobilen</h2>
+        <p>Tilmeld dig Breaking News SMS</p>
+        <form class="form-oneline">
+          <div class="form-group">
+            <input class="form-control" type="tel" placeholder="Indtast mobil nr."></input> 
+            <button class="btn btn-primary">OK</button>
+          </div>
+        </form>
+        </section>
+
+        
+
+        
 
         <section class="module-sm">
 
