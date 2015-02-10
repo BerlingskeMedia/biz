@@ -4,11 +4,9 @@
 
   <div class="col-md-6 col-sm-6 col-xs-12">
     <div class="theme-cover">
-    <a href="article.php">
-    
-    
-        <figure style="background-image: url(<? dummy("image/!biz-theme@600x,9:13") ?>);"></figure>
-          </a>
+    <div class="padding-xs">
+    <a href="article.php"><figure style="background-image: url(<? dummy("image/!biz-theme@600x,9:13") ?>);"></figure></a>
+      </div>
     </div>
   </div>
 
