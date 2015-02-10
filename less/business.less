@@ -1276,15 +1276,36 @@ a.btn-premium:after {
 	padding-top: 10px;
 	border-top: 5px solid #333;
 }
-.deck-header {
+/*.deck-header {
 	font-size: 35px;
 	font-weight: 200;
 	margin: 0 0 20px;
 	color: #111;
 	border-top: 5px solid #333;
 	padding-top: 5px;
-}
+}*/
 
+
+.deck-header {
+	border-top: 5px solid #333;
+	padding: 5px 0 10px;
+	font-weight: 200;
+
+	h1 {
+		display: inline-block;
+		font-size: 35px;
+		font-weight: 200;
+		color: #111;
+		margin: 0;
+		padding-right: 5px;
+	}
+}
+h1.deck-header {
+	font-weight: 200;	
+	margin: 0;
+	color: #111;
+	margin: 0;
+}
 .micro-header {
 	font-size: 14px;
 	margin: 10px 0 5px 0;
@@ -1729,7 +1750,7 @@ a.btn-premium:after {
 
 .teaser-brandview {
 	.header {
-		font-family: Georgia, Helvetica, arial,sans-serif;
+		font-family: Georgia, Helvetica, arial,sans-serif!important;
 	}
 }
 
@@ -2030,6 +2051,10 @@ h1.heading {
 	}
 	section {
 		margin-bottom: 20px;
+	}
+	.teaser .header {
+		font-family: @font-family-serif;
+		font-size: 17px;
 	}
 }
 .article-sidebar {
@@ -2883,7 +2908,7 @@ h1.heading {
 }
 .theme-header-underline {
 	margin-bottom: 20px;
-	font-family: berlingske;
+	font-family: @font-family-serif;
 	position: relative;
 	font-weight: 900;
 	span {

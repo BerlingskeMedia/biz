@@ -101,7 +101,11 @@
 
 <section class="deck">
   <div class="col-md-12">
-    <h1 class="deck-header">Forsiden lige nu <a href="index.php" class="section-header-link">Til forsiden <i class="fa fa-caret-right"></i></a></h1>
+  <div class="deck-header">
+      <h1>Forsiden lige nu</h1>
+      <a href="index.php" class="section-header-link">Til forsiden <i class="fa fa-caret-right"></i></a>
+  </div>
+    
   </div>
 
 
@@ -154,9 +158,11 @@
        <section class="deck">
         
         <div class="col-md-12">
-          <h1 class="deck-header">
+        <div class="deck-header">
+          <h1>
             Business recommends <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
           </h1>
+          </div>
         </div>
 
 
@@ -252,8 +258,12 @@
 <section class="deck">
         
         <div class="col-md-12">
-          <h1 class="deck-header">Meningsdannerne</h1>
+        <div class="deck-header">
+          <h1>Meningsdannerne</h1>
           <p>Blogs fra Berlingske, Politiko og Business</p>
+        </div>
+          
+          
         </div>
 
 <div class="col-md-12">
@@ -318,9 +328,13 @@
 
 <section class="deck">
     <div class="col-md-12 ">
-      <h1 class="deck-header">
-            Business in pictures <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
+    <div class="deck-header">
+        <h1>
+            Business in pictures
           </h1>
+          <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
+    </div>
+      
         </div>
       
 

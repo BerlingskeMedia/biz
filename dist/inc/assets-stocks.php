@@ -1,10 +1,12 @@
  <section class="deck">
         
         <div class="col-md-12">
-
-          <h1 class="deck-header">
+        <div class="deck-header">
+            <h1 >
             Investor
           </h1>
+        </div>
+          
 
         <nav class="nav-deck">
             <ul>

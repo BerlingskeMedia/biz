@@ -1,8 +1,10 @@
 
 <section class="deck"> 
 <div class="col-md-12 ">
-   
-<h1 class="deck-header">Longreads <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a></h1>
+   <div class="deck-header">
+      <h1>Longreads</h1>
+      <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
+    </div>
 <div class="theme-splash">
 
   

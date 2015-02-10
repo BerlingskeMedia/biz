@@ -425,9 +425,11 @@
 <section class="deck">
         
         <div class="col-md-12">
-          <h1 class="deck-header">
-            Business recommends <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
-          </h1>
+        <div class="deck-header">
+          <h1>
+            Business recommends 
+          </h1><a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
+          </div>
         </div>
 
 
@@ -682,7 +684,9 @@
       <div class="row">
       <section class="deck">
       <div class="col-md-12">
-        <h1 class="deck-header">Privatøkonomi</h1>
+      <div class="deck-header">
+        <h1>Privatøkonomi</h1>
+      </div>
       </div>
       <div class="col-md-12">
       <nav class="nav-deck">
@@ -866,7 +870,11 @@
 <div class="row">
 <section class="deck"> 
   <div class="col-md-12">
-    <h1 class="deck-header">Business in pictures <a href="section.php" class="section-header-link">See all <i class="fa fa-caret-right"></i></a></h1>
+  <div class="deck-header">
+    <h1>Business in pictures</h1>
+    <a href="section.php" class="section-header-link">See all <i class="fa fa-caret-right"></i></a>
+
+    </div>
   </div>
   <div class="col-md-12 ">
   

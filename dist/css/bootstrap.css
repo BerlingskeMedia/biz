@@ -7322,13 +7322,31 @@ a.btn-premium:after {
   padding-top: 10px;
   border-top: 5px solid #333;
 }
+/*.deck-header {
+	font-size: 35px;
+	font-weight: 200;
+	margin: 0 0 20px;
+	color: #111;
+	border-top: 5px solid #333;
+	padding-top: 5px;
+}*/
 .deck-header {
+  border-top: 5px solid #333;
+  padding: 5px 0 10px;
+  font-weight: 200;
+}
+.deck-header h1 {
+  display: inline-block;
   font-size: 35px;
   font-weight: 200;
-  margin: 0 0 20px;
   color: #111;
-  border-top: 5px solid #333;
-  padding-top: 5px;
+  margin: 0;
+  padding-right: 5px;
+}
+h1.deck-header {
+  font-weight: 200;
+  color: #111;
+  margin: 0;
 }
 .micro-header {
   font-size: 14px;
@@ -7837,7 +7855,7 @@ a.btn-premium:after {
   margin: 4px 10px 0 0;
 }
 .teaser-brandview .header {
-  font-family: Georgia, Helvetica, arial, sans-serif;
+  font-family: Georgia, Helvetica, arial, sans-serif !important;
 }
 .teaser-divider {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -8174,6 +8192,10 @@ h1.heading {
 }
 .article-content-stream section {
   margin-bottom: 20px;
+}
+.article-content-stream .teaser .header {
+  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-size: 17px;
 }
 .aside-header-small {
   font-size: 12px;
@@ -9219,7 +9241,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 }
 .theme-header-underline {
   margin-bottom: 20px;
-  font-family: berlingske;
+  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
   position: relative;
   font-weight: 900;
 }
