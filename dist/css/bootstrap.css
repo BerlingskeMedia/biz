@@ -7366,6 +7366,7 @@ a.btn-premium:after {
   font-weight: 600;
   text-transform: none;
   font-size: 13px;
+  white-space: nowrap;
 }
 .deck-sm {
   margin-bottom: 25px;
