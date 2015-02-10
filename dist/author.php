@@ -30,8 +30,10 @@
 
   <div class="row">
     <div class="col-md-12">
-    
-      <h1 class="deck-header"><? dummy("text@author") ?> <button class=" btn btn-default btn-sm" data-toggle="modal" data-target="#follow-author"><i class="fa fa-plus"></i> Subscribe</button></h1>
+    <div class="deck-header">
+      <h1><? dummy("text@author") ?></h1> <button class=" btn btn-default btn-sm" data-toggle="modal" data-target="#follow-author"><i class="fa fa-plus"></i> Subscribe</button>
+    </div>
+      
     
     </div>
     <section class="deck">
@@ -77,7 +79,9 @@
   <section class="deck">
   <div class="row">
     <div class="col-md-12">
-      <h1 class="deck-header">Articles by <? dummy("text@author") ?></h1>
+    <div class="deck-header">
+      <h1>Articles by <? dummy("text@author") ?></h1>
+    </div>
     </div>
   </div>
   <div class="row">
