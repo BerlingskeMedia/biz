@@ -41,25 +41,22 @@
       
       <div class="col-md-12">
         <article class="teaser teaser-oneliner-red"><a href="article.php"><b>Opdateres</b> <? dummy("text@headline") ?></a></article>
-      </div>
-
-      <div class="col-md-12">
         <article class="teaser teaser-oneliner-red"><a href="article.php"><b><i class="fa fa-circle zoomfade"></i> Live</b> <? dummy("text@headline") ?></a></article>
-      </div>
-
-    
-      <div class="col-md-12">
         <article class="teaser teaser-oneliner-yellow"><a href="article.php"><b>Breaking</b> <? dummy("text@headline") ?></a></article>
       </div>
+
+      
     
     
     
       
       <div class="col-md-12">
-        <article class="teaser header-60 teaser-border-top-thick teaser-img-left teaser-float-mobile <? dummy("text@biz-teaserclass") ?>">
+        <article class="teaser header-60 teaser-border-top-thick teaser-img-left teaser-float-mobile ">
         <figure class="teaser-img"><a href="#"><img src="<? dummy("image@414x,1:1") ?>" width="" height="" alt="" /></a></figure>
         <div class="teaser-body">
-        <h2 class="header"><b><i class="fa fa-circle zoomfade"></i> Live</b> <a href="article.php"><? dummy("text@headline") ?></a></h2>
+        <? dummy("text@biz-headertags") ?>
+        <h2 class="header">
+         <a href="article.php"><? dummy("text@headline") ?></a></h2>
 
         <p class="large"><? dummy("text@teaser") ?></p>
 
@@ -92,7 +89,10 @@
         <div class="col-md-12">
           <article class="teaser teaser-img-right teaser-float-mobile header-35 teaser-border-top-thick teaser-border-bottom-thick margin-top-0 teaser-overflow">
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+              <? dummy("text@biz-headertags") ?>
+                <h2 class="header">
+                
+                <a href="article.php"><? dummy("text@headline") ?></a></h2>
               <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@420x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
                 
