@@ -40,19 +40,19 @@
     
       
       <div class="col-md-12">
+        <? if (dumb_luck("50%")): ?>
+        <? if (dumb_luck("33%")): ?>
         <article class="teaser teaser-oneliner-red"><a href="article.php"><b>Opdateres</b> <? dummy("text@headline") ?></a></article>
+        <? else: ?>
+        <? if (dumb_luck("50%")): ?>
         <article class="teaser teaser-oneliner-red"><a href="article.php"><b><i class="fa fa-circle zoomfade"></i> Live</b> <? dummy("text@headline") ?></a></article>
+        <? else: ?>
         <article class="teaser teaser-oneliner-yellow"><a href="article.php"><b>Breaking</b> <? dummy("text@headline") ?></a></article>
-      </div>
-
-      
-    
-    
-    
-      
-      <div class="col-md-12">
-        <article class="teaser header-60 teaser-border-top-thick teaser-img-left teaser-float-mobile ">
-        <figure class="teaser-img"><a href="#"><img src="<? dummy("image@414x,1:1") ?>" width="" height="" alt="" /></a></figure>
+        <? endif ?>
+        <? endif ?>
+        <? else: ?>
+        <article class="teaser header-60 teaser-border-top-thick teaser-img-left teaser-float-mobile margin-top-0">
+        <figure class="teaser-img"><a href="#"><img src="<? dummy("image@414x,16:9") ?>" width="" height="" alt="" /></a></figure>
         <div class="teaser-body">
         <? dummy("text@biz-headertags") ?>
         <h2 class="header">
@@ -71,8 +71,15 @@
 
         </article>
 
-
+        <? endif ?>
       </div>
+
+      
+    
+    
+    
+      
+      
     
     
       <!-- End breaking -->
@@ -115,6 +122,7 @@
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image/!bizpics@620x,3:4") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+            <? dummy("text@biz-headertags") ?>
             <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
             <p class="large"><? dummy("text@teaser") ?></p>
             <? if (dumb_luck("25%")): ?>
@@ -138,6 +146,7 @@
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+            <? dummy("text@biz-headertags") ?>
             <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
             <? if (dumb_luck("50%")): ?>
             <ul class="related">
@@ -704,10 +713,10 @@
               <nav class="nav-responsive">
               <button class="nav-toggle btn ">Tools <i class="fa fa-caret-down"></i></button>
                 <ul >
-                  <li><button class="btn btn-block" href="#">Guld 1000 <i class="fa fa-caret-right"></i></button></li>
-                  <li><button class="btn btn-block" href="#">Talent 100 <i class="fa fa-caret-right"></i></button></li>
-                  <li><button class="btn btn-block" href="#">Danmarks rigeste <i class="fa fa-caret-right"></i></button></li>
-                  <li><button class="btn btn-block" href="#">Magtanalysen <i class="fa fa-caret-right"></i></button></li>
+                  <li><button class="btn btn-default" href="#">Guld 1000 <i class="fa fa-caret-right"></i></button></li>
+                  <li><button class="btn btn-default" href="#">Talent 100 <i class="fa fa-caret-right"></i></button></li>
+                  <li><button class="btn btn-default" href="#">Danmarks rigeste <i class="fa fa-caret-right"></i></button></li>
+                  <li><button class="btn btn-default" href="#">Magtanalysen <i class="fa fa-caret-right"></i></button></li>
                 </ul>
                 </nav>
               </div>
@@ -792,7 +801,7 @@
 
         
 
-        <section class="module-sm">
+        <section >
 
 <h1 class="section-header">
 <span class="logo-premium">Premium</span> 
