@@ -441,7 +441,10 @@ ul.related {
 		padding-top: 40%;
 		background-position: center 25%;
 		background-repeat: no-repeat;
-
+		.transition (opacity .1s ease);
+		&:hover {
+			opacity: .9;
+		}
 	}
 	
 	@media (max-width: @screen-xs-max) {
@@ -463,7 +466,10 @@ ul.related {
 		background-size: cover;
 		background-position: center center;
 		background-repeat: no-repeat;
-
+		.transition (opacity .1s ease);
+		&:hover {
+			opacity: .9;
+		}
 	}
 	
 	@media (max-width: @screen-xs-max) {

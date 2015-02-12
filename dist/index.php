@@ -120,7 +120,6 @@
 
        <article class="teaser header-40 teaser-margin-bottom-0 teaser-solid teaser-background-img-tall  module-sm">
             <a href="article.php"><figure class="teaser-img" style="background-image: url(<? dummy("image@620x,1:1") ?>);"></figure></a>
-            <!-- <figure class="teaser-img"><a href="#"><img src="<? dummy("image/!bizpics@620x,3:4") ?>" width="" height="" alt="" /></a></figure> -->
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <? dummy("text@biz-headertags") ?>

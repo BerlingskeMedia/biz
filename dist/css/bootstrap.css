@@ -6387,6 +6387,12 @@ ul.related li:before {
   padding-top: 40%;
   background-position: center 25%;
   background-repeat: no-repeat;
+  -webkit-transition: opacity 0.1s ease;
+  -o-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+}
+.teaser-background-img .teaser-img:hover {
+  opacity: .9;
 }
 @media (max-width: 767px) {
   .teaser-background-img {
@@ -6405,6 +6411,12 @@ ul.related li:before {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  -webkit-transition: opacity 0.1s ease;
+  -o-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+}
+.teaser-background-img-tall .teaser-img:hover {
+  opacity: .9;
 }
 @media (max-width: 767px) {
   .teaser-background-img-tall {
