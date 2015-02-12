@@ -51,8 +51,9 @@
         <? endif ?>
         <? endif ?>
         <? else: ?>
-        <article class="teaser header-60 teaser-border-top-thick teaser-img-left teaser-float-mobile margin-top-0 teaser-background-img">
-        <a href="article.php"><figure class="teaser-img" style="background-image: url(<? dummy("image@420x,1:1") ?>);"></figure></a>
+        
+        <article class="teaser header-60 teaser-border-top-thick  margin-top-0 teaser-background-img">
+        
         <div class="teaser-body">
         <? dummy("text@biz-headertags") ?>
         <h2 class="header">
@@ -68,6 +69,7 @@
             </ul>
         <? endif ?>
         </div>
+        <a href="article.php"><figure class="teaser-img" style="background-image: url(<? dummy("image@420x,1:1") ?>);"></figure></a>
 
         </article>
 
@@ -94,13 +96,13 @@
       <div class="row">
         
         <div class="col-md-12">
-          <article class="teaser teaser-img-right teaser-float-mobile header-35 teaser-border-top-thick teaser-border-bottom-thick margin-top-0 teaser-overflow">
+          <article class="teaser header-35 teaser-border-top-thick teaser-border-bottom-thick margin-top-0 teaser-overflow teaser-top">
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
               <? dummy("text@biz-headertags") ?>
                 <h2 class="header">
                 
                 <a href="article.php"><? dummy("text@headline") ?></a></h2>
-              <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@420x,16:9") ?>" width="" height="" alt="" /></a></figure>
+              <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@732x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
                 
                 
@@ -143,7 +145,7 @@
 <section>
 
 <article class="teaser  header-20 teaser-border-bottom-thick-last-child ">
-            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@732x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <? dummy("text@biz-headertags") ?>
@@ -162,7 +164,7 @@
 
 
             <article class="teaser  header-20 teaser-border-bottom-thick-last-child ">
-            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@732x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
@@ -194,7 +196,7 @@
 
 
           <article class="teaser  header-20 teaser-border-top-thick ">
-            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@732x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
@@ -496,15 +498,19 @@
         </div>
         <div class="col-md-4 col-sm-12 col-xs-12">
            
-         
-           <div class="banner module-sm">
+          <div class="row">
+            
+
+
+          
+           <div class="banner module-sm col-md-12 col-sm-6">
               <? dummy("ad@300x250") ?>
             </div>
             
 
 
 
-            <section class="module-sm">
+            <section class="module-sm col-md-12 col-sm-6">
           <h1 class="section-header">
             Business blogs <a href="#" class="section-header-link">More blogs <i class="fa fa-caret-right"></i></a>
           </h1>
@@ -522,7 +528,7 @@
         </ul>
         </section>
 
-
+        </div>
            
 
         
@@ -713,10 +719,10 @@
               <nav class="nav-responsive">
               <button class="nav-toggle btn ">Tools <i class="fa fa-caret-down"></i></button>
                 <ul >
-                  <li><button class="btn btn-default" href="#">Guld 1000 <i class="fa fa-caret-right"></i></button></li>
-                  <li><button class="btn btn-default" href="#">Talent 100 <i class="fa fa-caret-right"></i></button></li>
-                  <li><button class="btn btn-default" href="#">Danmarks rigeste <i class="fa fa-caret-right"></i></button></li>
-                  <li><button class="btn btn-default" href="#">Magtanalysen <i class="fa fa-caret-right"></i></button></li>
+                  <li><button class="btn btn-border" href="#">Guld 1000 <i class="fa fa-caret-right"></i></button></li>
+                  <li><button class="btn btn-border" href="#">Talent 100 <i class="fa fa-caret-right"></i></button></li>
+                  <li><button class="btn btn-border" href="#">Danmarks rigeste <i class="fa fa-caret-right"></i></button></li>
+                  <li><button class="btn btn-border" href="#">Magtanalysen <i class="fa fa-caret-right"></i></button></li>
                 </ul>
                 </nav>
               </div>
@@ -774,10 +780,11 @@
         <div class="banner module-xs">
           <? dummy("ad@300x250") ?>
         </div>
+          
+          <div class="row">
+        <section class="module-sm col-md-12 col-sm-6 ">
+        <h2 class="section-header">Business Nyhedsbrev</h2>
         
-        <section>
-        <h2 class="section-header-serif">Business Nyhedsbrev</h2>
-        <p>Få nyheder fra Business.dk i din mailbox</p>
         <form class="form-oneline">
           <div class="form-group">
             <input class="form-control" type="email" placeholder="Indtast email"></input> 
@@ -786,9 +793,9 @@
         </form>
         </section>
 
-        <section>
-        <h2 class="section-header-serif">Breaking på mobilen</h2>
-        <p>Tilmeld dig Breaking News SMS</p>
+        <section class="module-sm col-md-12 col-sm-6">
+        <h2 class="section-header">Breaking på mobilen</h2>
+        
         <form class="form-oneline">
           <div class="form-group">
             <input class="form-control" type="tel" placeholder="Indtast mobil nr."></input> 
@@ -796,7 +803,7 @@
           </div>
         </form>
         </section>
-
+        </div>
         
 
         

@@ -432,6 +432,21 @@ ul.related {
 	}
 }
 
+.teaser-top {
+	.clearfix;
+	.teaser-img {
+		float: right;
+		margin: 0 0 0 20px;
+		width: 300px;
+		@media (max-width: @screen-xs-max) {
+			width: 100%;
+			margin: 0 0 20px 0;
+			float: none;
+		}
+	}
+
+}
+
 .teaser-background-img {
 	
 
@@ -442,9 +457,15 @@ ul.related {
 		background-position: center 25%;
 		background-repeat: no-repeat;
 		.transition (opacity .1s ease);
+
 		&:hover {
 			opacity: .9;
 		}
+	}
+	.teaser-body {
+		width: 60%;
+		float: right;
+		padding-left: 20px;
 	}
 	
 	@media (max-width: @screen-xs-max) {
@@ -454,6 +475,12 @@ ul.related {
 			height: auto;
 			width: 100%;
 			margin: 0 0 20px 0;
+			float: none;
+		}
+		.teaser-body {
+			width: 100%;
+			float: none;
+			padding: 0;
 		}
 	}
 }
@@ -715,7 +742,6 @@ footer + [class*="teaser-tag-"] {
 	color: @biz-1;
 	font-weight: 600;
 	line-height: 1.3;
-	padding: 0 4px;
 	display: inline-block;
 	text-transform: uppercase;
 	&:before {
@@ -734,21 +760,21 @@ footer + [class*="teaser-tag-"] {
 }
 .teaser-tag-live {
 	color: @col-red;
-	padding-left: 0;
 }
 .teaser-tag-breaking {
 	color: #333;
 	background: @col-breaking;
+	padding: 0 4px;
 }
 
 .teaser-tag-comingup {
 	color: @col-red;
-	padding: 0;
+	
 }
 
 .teaser-solid .teaser-tag-comingup {
 	color: @col-red;
-	padding: 0;
+	
 }
 
 
@@ -3204,14 +3230,19 @@ h1.heading {
 					.header {
 						font-size: 30px;
 						&:before {
-							content: 'Business Fokus \A';
-							line-height: 1;
+							content: 'Business Fokus';
+							line-height: 26px;
 							display: block;
-							text-decoration: underline;
+							// text-decoration: underline;
 							font-size: 15px;
-							font-weight: 300;
-							margin-bottom: 10px;
+							font-weight: 600;
+							position: absolute;
+							top: -20px;
+							padding-left: 31px;
+							.logo-b;
+							background-position: left center;
 						}
+						
 					}
 				}
 				&:nth-child(even){
@@ -3256,6 +3287,13 @@ h1.heading {
 			.scale(1);
 			opacity: 1;
 		}
+		.theme-title {
+			font-size: 8vw;
+			text-align: left;
+			text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+
+		}
+
 	}
 	.padding-xs {
 		position: absolute;
@@ -3278,6 +3316,7 @@ h1.heading {
 			li {
 				&:first-child {
 					border-top: 0;
+					margin-top: 30px;
 				}
 			}
 			
