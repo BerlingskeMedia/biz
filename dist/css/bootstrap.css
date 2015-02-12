@@ -6381,15 +6381,12 @@ ul.related li:before {
     max-width: 100px;
   }
 }
-.teaser-background-img {
-  height: 350px;
-}
 .teaser-background-img .teaser-img {
   background-size: cover;
-  height: 100%;
   width: 40%;
-  display: block;
+  padding-top: 40%;
   background-position: center center;
+  background-repeat: no-repeat;
 }
 @media (max-width: 767px) {
   .teaser-background-img {

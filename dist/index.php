@@ -40,7 +40,7 @@
     
       
       <div class="col-md-12">
-        <? if (dumb_luck("50%")): ?>
+        <? if (dumb_luck("0%")): ?>
         <? if (dumb_luck("33%")): ?>
         <article class="teaser teaser-oneliner-red"><a href="article.php"><b>Opdateres</b> <? dummy("text@headline") ?></a></article>
         <? else: ?>
