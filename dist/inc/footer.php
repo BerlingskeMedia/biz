@@ -6,8 +6,8 @@
 			<div class="row">
 				<div class="col-md-12">
 								
-						 <p><strong>Få Berlingske i tre mdr. inkl. digital adgang for kun 199 kr./md.</strong></p>
-						 <p class="small">Samlet engangspris 597,- Abonnementet fortsætter til normalpris indtil det opsiges <button class="btn btn-primary">Klik her</button></p>
+						 <a href="#"><p><strong>Få Berlingske i tre mdr. inkl. digital adgang for kun 199 kr./md.</strong></p>
+						 <p class="small">Samlet engangspris 597,- Abonnementet fortsætter til normalpris indtil det opsiges <button class="btn btn-primary">Klik her</button></p></a>
 					
 					
 				</div>

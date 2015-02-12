@@ -3489,14 +3489,20 @@ h1.heading {
 .footer-marketing {
 	padding: 40px 0;
 	text-align: center;
-	background: @biz-2;
+	background-color: @biz-2;
+	.transition (background-color .2s ease);
 	color: #fff;
 	font-weight: 200;
 	strong {
 		font-family: @font-family-serif;
 		font-size: 30px;
 	}
-
+	a {
+		color: #fff;
+	}
+	&:hover {
+		background-color: darken(@biz-2, 4%);
+	}
 	@media (max-width: @screen-xs-max) {
 		strong {
 			font-family: @font-family-serif;

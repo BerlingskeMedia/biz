@@ -9826,13 +9826,22 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 .footer-marketing {
   padding: 40px 0;
   text-align: center;
-  background: #193057;
+  background-color: #193057;
+  -webkit-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
   color: #fff;
   font-weight: 200;
 }
 .footer-marketing strong {
   font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
   font-size: 30px;
+}
+.footer-marketing a {
+  color: #fff;
+}
+.footer-marketing:hover {
+  background-color: #142747;
 }
 @media (max-width: 767px) {
   .footer-marketing strong {

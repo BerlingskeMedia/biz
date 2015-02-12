@@ -193,7 +193,7 @@
           <div class="col-md-8 col-sm-6">
 
 
-          <article class="teaser   header-25 teaser-border-top-thick ">
+          <article class="teaser  header-20 teaser-border-top-thick ">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
