@@ -51,8 +51,9 @@
         <? endif ?>
         <? endif ?>
         <? else: ?>
-        <article class="teaser header-60 teaser-border-top-thick teaser-img-left teaser-float-mobile margin-top-0">
-        <figure class="teaser-img"><a href="#"><img src="<? dummy("image@414x,16:9") ?>" width="" height="" alt="" /></a></figure>
+        <article class="teaser header-60 teaser-border-top-thick teaser-img-left teaser-float-mobile margin-top-0 teaser-background-img">
+        <figure class="teaser-img" style="background-image: url(<? dummy("image@420x,1:1") ?>);"><a href="article.php"></a></figure>
+        <!-- <figure class="teaser-img"><a href="#"><img src="<? dummy("image@414x,16:9") ?>" width="" height="" alt="" /></a></figure> -->
         <div class="teaser-body">
         <? dummy("text@biz-headertags") ?>
         <h2 class="header">

@@ -6381,6 +6381,27 @@ ul.related li:before {
     max-width: 100px;
   }
 }
+.teaser-background-img {
+  height: 350px;
+}
+.teaser-background-img .teaser-img {
+  background-size: cover;
+  height: 100%;
+  width: 40%;
+  display: block;
+  background-position: center center;
+}
+@media (max-width: 767px) {
+  .teaser-background-img {
+    height: auto;
+  }
+  .teaser-background-img .teaser-img {
+    padding-top: 56.25%;
+    height: auto;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
 .teaser-sm {
   margin-bottom: 0;
 }

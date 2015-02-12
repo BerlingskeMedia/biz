@@ -431,6 +431,27 @@ ul.related {
 		}
 	}
 }
+
+.teaser-background-img {
+	height: 350px;
+	.teaser-img {
+		background-size: cover;
+		height: 100%;
+		width: 40%;
+		display: block;
+		background-position: center center;
+	}
+	
+	@media (max-width: @screen-xs-max) {
+		height: auto;
+		.teaser-img {
+			padding-top: 56.25%;
+			height: auto;
+			width: 100%;
+			margin: 0 0 20px 0;
+		}
+	}
+}
 .teaser-sm {
 	margin-bottom: 0;
 }
