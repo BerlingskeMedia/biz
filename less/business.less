@@ -3121,8 +3121,12 @@ h1.heading {
 			position: relative;
 				li {
 					padding: 0; 
+					max-width: none;
 				}
-
+				.btn {
+					display: block;
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -3131,11 +3135,11 @@ h1.heading {
 
 
 .theme-title {
-	text-align: right;
+	// text-align: right;
 	@media (max-width: @screen-sm-max) {
 		width: 100%;
 		display: block;
-		text-align: center;
+		// text-align: center;
 	}
 }
 
@@ -3425,8 +3429,7 @@ h1.heading {
 	height: 50%;
 	width: 100%;
 	.header {
-		font-size: 30px;
-		line-height: 1.4;
+		font-size: 20px;
 	}
 }
 

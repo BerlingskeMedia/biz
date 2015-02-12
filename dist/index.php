@@ -717,7 +717,7 @@
             <div class="row ">
               <div class="col-md-12 module-sm">
               <nav class="nav-responsive">
-              <button class="nav-toggle btn ">Tools <i class="fa fa-caret-down"></i></button>
+              <button class="nav-toggle btn btn-border ">Tools <i class="fa fa-bars"></i></button>
                 <ul >
                   <li><button class="btn btn-border" href="#">Guld 1000 <i class="fa fa-caret-right"></i></button></li>
                   <li><button class="btn btn-border" href="#">Talent 100 <i class="fa fa-caret-right"></i></button></li>

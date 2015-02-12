@@ -67,7 +67,7 @@
           <p class="micro">Kursdata kan være forsinket 15 minutter</p>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6">
       <h2 class="micro-header">Vindere</h2>
       
           <div class="stock-deck table-responsive">
@@ -97,7 +97,7 @@
 
 
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6">
       <h2 class="micro-header">Tabere</h2>
            <div class="stock-deck table-responsive">
             

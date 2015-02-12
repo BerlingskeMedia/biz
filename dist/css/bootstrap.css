@@ -2545,7 +2545,8 @@ fieldset[disabled] .btn-facebook.active {
 }
 .btn-border {
   color: #ffffff;
-  background-color: transparent;
+  background-color: #333333;
+  border: 1px solid #fff;
 }
 .btn-border:hover,
 .btn-border:focus,
@@ -2554,7 +2555,7 @@ fieldset[disabled] .btn-facebook.active {
 .btn-border.active,
 .open > .dropdown-toggle.btn-border {
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #1a1a1a;
 }
 .btn-border:active,
 .btn-border.active,
@@ -2579,10 +2580,10 @@ fieldset[disabled] .btn-border:active,
 .btn-border.disabled.active,
 .btn-border[disabled].active,
 fieldset[disabled] .btn-border.active {
-  background-color: transparent;
+  background-color: #333333;
 }
 .btn-border .badge {
-  color: transparent;
+  color: #333333;
   background-color: #ffffff;
 }
 .btn-trans {
@@ -9503,15 +9504,16 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 }
 .theme-magazine .nav-responsive.show-nav ul li {
   padding: 0;
+  max-width: none;
 }
-.theme-title {
-  text-align: right;
+.theme-magazine .nav-responsive.show-nav ul .btn {
+  display: block;
+  width: 100%;
 }
 @media (max-width: 991px) {
   .theme-title {
     width: 100%;
     display: block;
-    text-align: center;
   }
 }
 .theme-wrapper,
@@ -9808,8 +9810,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
     width: 100%;
   }
   .teaser-splash:nth-child(1) .header {
-    font-size: 30px;
-    line-height: 1.4;
+    font-size: 20px;
   }
   .teaser-splash:nth-child(2),
   .teaser-splash:nth-child(3) {
