@@ -51,7 +51,7 @@
         <? while (dumb_luck("2")): ?>
           
             <div class="col-md-6 col-sm-6">
-              <article class="teaser header-20 teaser-margin-bottom-0 teaser-sx-500">
+              <article class="teaser header-20 teaser-margin-bottom-0 teaser-sx-500 module-sm">
                 <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@500x,16:9") ?>" width="" height="" alt="" /></a></figure>
                 <div class="teaser-body">
                 <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
