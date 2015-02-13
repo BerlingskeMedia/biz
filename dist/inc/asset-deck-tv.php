@@ -30,9 +30,9 @@
  <ul class="list-clean flex-4-2-2">
     <? while (dumb_luck("4")): ?>
       <li class="col-md-3 col-sm-6 col-xs-6">
-        <article class="teaser">
+        <article class="teaser teaser-video">
           <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
-          <h2 class="header"><a href="article.php"><span class="teaser-tag"><i class="fa fa-play"></i></span> <? dummy("text@headline") ?></a></h2>
+          <h2 class="header"><a href="article.php"> <? dummy("text@headline") ?></a></h2>
         </article>
         </li>
       <? endwhile ?>

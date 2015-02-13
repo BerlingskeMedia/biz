@@ -777,6 +777,27 @@ footer + [class*="teaser-tag-"] {
 	
 }
 
+.teaser-video {
+	.teaser-img {
+		position: relative;
+		&:before {
+			content: '\f04b';
+			font-family: fontawesome;
+			border-radius: 3px;
+			color: #fff;
+			background: rgba(51,51,51,.8);
+			background: @biz-1;
+			display: inline-block;
+			width: 25px;
+			line-height: 25px;
+			text-align: center;
+			position: absolute;
+			bottom: 5px;
+			left: 5px;
+			z-index: 2;
+		}
+	}
+}
 
 .teaser-img-460 {
 	@media (min-width: @screen-sm) {

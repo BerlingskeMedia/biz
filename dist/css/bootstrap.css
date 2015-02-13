@@ -6739,6 +6739,25 @@ footer + [class*="teaser-tag-"] {
 .teaser-solid .teaser-tag-comingup {
   color: #ff3333;
 }
+.teaser-video .teaser-img {
+  position: relative;
+}
+.teaser-video .teaser-img:before {
+  content: '\f04b';
+  font-family: fontawesome;
+  border-radius: 3px;
+  color: #fff;
+  background: rgba(51, 51, 51, 0.8);
+  background: #cc0066;
+  display: inline-block;
+  width: 25px;
+  line-height: 25px;
+  text-align: center;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  z-index: 2;
+}
 @media (min-width: 768px) {
   .teaser-img-460 img {
     max-width: 460px!important;
