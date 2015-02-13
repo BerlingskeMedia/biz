@@ -45,6 +45,16 @@
       </div>
       
     </div>
+
+    <div class="col-md-12">
+      
+
+    
+      
+
+
+
+    </div>
       
       <div class="col-md-8 col-sm-12 module-sm">
         <div class="row">
@@ -103,9 +113,61 @@
       </div>
         
 
+
       <div class="row">
       <div class="col-md-12 col-sm-6">
 
+
+      <section class="module-sm">
+        <h1 class="section-header">
+          Mærsk Oil
+        </h1>
+            <div role="tabpanel" class="tabs">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs-sm" role="tablist">
+    <li role="presentation" class="active"><a href="#tab-topic1" aria-controls="Aktiekurs" role="tab" data-toggle="tab">Aktiekurs</a></li>
+    <li role="presentation"><a href="#tab-topic2" aria-controls="tab-profile" role="tab" data-toggle="tab">Virksomhedsprofil</a></li>
+    <li role="presentation"><a href="#tab-topic3" aria-controls="tab-keyfigures" role="tab" data-toggle="tab">Nøgletal</a></li>
+    <li role="presentation"><a href="#tab-topic4" aria-controls="tab-management" role="tab" data-toggle="tab">Ledelsesposter</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="tab-topic1">
+      STOCK
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-topic2">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-topic3">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-topic4">
+    
+<div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+      </section>
       <section class="module-sm">
       <h1 class="section-header">Om Mærsk Oil</h1>
       <p><? dummy("text@teaser") ?></p>
@@ -122,7 +184,7 @@
       <div class="col-md-12 col-sm-6">
 
       <section class="module-sm">
-      <h1 class="section-header">Seneste Business TV</h1>
+      <h1 class="section-header">Latest Business TV</h1>
         <div class="row">
         <? while (dumb_luck("2")): ?>
         <article class="teaser teaser-video col-xs-6">
@@ -135,6 +197,44 @@
           <button class="btn btn-primary btn-sm">Load more <i class="fa fa-caret-down"></i></button>
         </div>
       </section>
+
+      <section class="module-sm">
+      <h1 class="section-header">Latest galleries</h1>
+        <div class="row">
+        <? while (dumb_luck("2")): ?>
+        <article class="teaser teaser-gallery col-xs-6">
+        <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@360x,16:9") ?>" width="" height="" alt="" /></a></figure>
+        <h2 class="header"><a href="#"><i class="fa fa-camera"></i>  <? dummy("text@headline") ?></a></h2>
+        </article>
+        <? endwhile ?>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-primary btn-sm">Load more <i class="fa fa-caret-down"></i></button>
+        </div>
+      </section>
+
+       <section class="module-sm">
+      <h1 class="section-header">From YouTube <a href="#" class="section-header-link">See all <i class="fa fa-caret-right"></i></a></h1>
+        <div class="row">
+        <? while (dumb_luck("2")): ?>
+        <article class="teaser teaser-gallery teaser-video col-xs-6">
+        <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@360x,16:9") ?>" width="" height="" alt="" /></a></figure>
+        <h2 class="header"><a href="#"><i class="fa fa-camera"></i>  <? dummy("text@headline") ?></a></h2>
+        </article>
+        <? endwhile ?>
+        </div>
+        
+      </section>
+
+      <section class="module-sm">
+      <h1 class="section-header">Facebook</h1>
+      
+      <iframe src="http://www.facebook.com/plugins/likebox.php?width=300&amp;height=400&amp;href=http%3A%2F%2Fwww.facebook.com%2Fdanskebank&amp;connections=10&amp;stream=true&amp;header=false&amp;locale=da_DK" scrolling="no" frameborder="0" style="overflow:hidden;border:none;width:100%;height:400px; background:#fff"></iframe>
+        
+        
+      </section>
+
+
 
 
       </div>
