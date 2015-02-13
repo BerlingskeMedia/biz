@@ -142,7 +142,7 @@ li ul {
         <h4>Generel</h4>
 
         <ul class="overview">
-          <li class="b"><a href="/dist/index.php">Frontpage</a> <date>Feb. 6th</date></li>
+          <li class="d"><a href="/dist/index.php">Frontpage</a> <date>Feb. 6th</date></li>
           <li class="d"><a href="/dist/section.php">Section</a> <date>Feb. 5th</date></li>
           <li class="d"><a href="/dist/article.php">Article</a> </li>
           
