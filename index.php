@@ -154,7 +154,7 @@ li ul {
 
           <li class="a"><a href="#">Article - Longreads</a></li>
           <li class="nuke"><a href="#">Section - "Millionnaire Club"</a></li>
-          <li class="c"><a href="topic.php">Topic page</a><date>Feb. 6th</date></li>
+          <li class="c"><a href="/dist/topic.php">Topic page</a><date>Feb. 6th</date></li>
           <li class="d"><a href="/dist/article-large.php">Article - Large</a><date>Feb. 6th</date></li>
           <li class="d"><a href="/dist/article-advetorial.php">Article - Advetorial</a><date>Feb. 6th</date></li>
           <li class="b"><a href="/dist/page-profile.php">User profile</a> <date>Feb. 12th</date></li>
