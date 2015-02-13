@@ -246,6 +246,7 @@ a.header-tool-icon {
 		.scale(1);
 	}
 }
+
 .teaser-quote {
 	.teaser-img {
 		margin: 0 0 10px;
@@ -280,6 +281,19 @@ a.header-tool-icon {
 		&:before {
 			// content : '\2014 ';
 		}
+	}
+}
+.ie9 {
+	.teaser-quote {
+		img {
+			width: 35px;
+			height: 35px;
+		}
+	}
+	.header a:before {
+		display: block;
+		width: 25px;
+		height: 25px;
 	}
 }
 .teaser-tweet {
@@ -783,7 +797,7 @@ footer + [class*="teaser-tag-"] {
 		&:before {
 			content: '\f04b';
 			font-family: fontawesome;
-			border-radius: 3px;
+			border-radius: 2px;
 			color: #fff;
 			background: rgba(51,51,51,.8);
 			background: @biz-1;
@@ -795,6 +809,15 @@ footer + [class*="teaser-tag-"] {
 			bottom: 5px;
 			left: 5px;
 			z-index: 2;
+			.transition (background-color .2s ease);
+		}
+
+	}
+	&:hover {
+		.teaser-img {
+			&:before {
+				background: darken(@biz-1, 5%);
+			}
 		}
 	}
 }

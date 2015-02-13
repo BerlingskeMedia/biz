@@ -6281,6 +6281,15 @@ a.header-tool-icon:hover {
   font-size: 13px;
   text-transform: uppercase;
 }
+.ie9 .teaser-quote img {
+  width: 35px;
+  height: 35px;
+}
+.ie9 .header a:before {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
 .teaser-tweet .teaser-img {
   margin: 0 0 10px;
   display: block;
@@ -6745,7 +6754,7 @@ footer + [class*="teaser-tag-"] {
 .teaser-video .teaser-img:before {
   content: '\f04b';
   font-family: fontawesome;
-  border-radius: 3px;
+  border-radius: 2px;
   color: #fff;
   background: rgba(51, 51, 51, 0.8);
   background: #cc0066;
@@ -6757,6 +6766,12 @@ footer + [class*="teaser-tag-"] {
   bottom: 5px;
   left: 5px;
   z-index: 2;
+  -webkit-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.teaser-video:hover .teaser-img:before {
+  background: #b30059;
 }
 @media (min-width: 768px) {
   .teaser-img-460 img {
