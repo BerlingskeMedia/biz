@@ -2417,46 +2417,46 @@ fieldset[disabled] .btn-primary.active {
   color: #cc0066;
   background-color: #ffffff;
 }
-.btn-secondary {
+.btn-rss {
   color: #ffffff;
-  background-color: #193057;
+  background-color: #ff9900;
 }
-.btn-secondary:hover,
-.btn-secondary:focus,
-.btn-secondary.focus,
-.btn-secondary:active,
-.btn-secondary.active,
-.open > .dropdown-toggle.btn-secondary {
+.btn-rss:hover,
+.btn-rss:focus,
+.btn-rss.focus,
+.btn-rss:active,
+.btn-rss.active,
+.open > .dropdown-toggle.btn-rss {
   color: #ffffff;
-  background-color: #0e1a2f;
+  background-color: #cc7a00;
 }
-.btn-secondary:active,
-.btn-secondary.active,
-.open > .dropdown-toggle.btn-secondary {
+.btn-rss:active,
+.btn-rss.active,
+.open > .dropdown-toggle.btn-rss {
   background-image: none;
 }
-.btn-secondary.disabled,
-.btn-secondary[disabled],
-fieldset[disabled] .btn-secondary,
-.btn-secondary.disabled:hover,
-.btn-secondary[disabled]:hover,
-fieldset[disabled] .btn-secondary:hover,
-.btn-secondary.disabled:focus,
-.btn-secondary[disabled]:focus,
-fieldset[disabled] .btn-secondary:focus,
-.btn-secondary.disabled.focus,
-.btn-secondary[disabled].focus,
-fieldset[disabled] .btn-secondary.focus,
-.btn-secondary.disabled:active,
-.btn-secondary[disabled]:active,
-fieldset[disabled] .btn-secondary:active,
-.btn-secondary.disabled.active,
-.btn-secondary[disabled].active,
-fieldset[disabled] .btn-secondary.active {
-  background-color: #193057;
+.btn-rss.disabled,
+.btn-rss[disabled],
+fieldset[disabled] .btn-rss,
+.btn-rss.disabled:hover,
+.btn-rss[disabled]:hover,
+fieldset[disabled] .btn-rss:hover,
+.btn-rss.disabled:focus,
+.btn-rss[disabled]:focus,
+fieldset[disabled] .btn-rss:focus,
+.btn-rss.disabled.focus,
+.btn-rss[disabled].focus,
+fieldset[disabled] .btn-rss.focus,
+.btn-rss.disabled:active,
+.btn-rss[disabled]:active,
+fieldset[disabled] .btn-rss:active,
+.btn-rss.disabled.active,
+.btn-rss[disabled].active,
+fieldset[disabled] .btn-rss.active {
+  background-color: #ff9900;
 }
-.btn-secondary .badge {
-  color: #193057;
+.btn-rss .badge {
+  color: #ff9900;
   background-color: #ffffff;
 }
 .btn-trans {
