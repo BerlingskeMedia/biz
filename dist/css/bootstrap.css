@@ -9979,6 +9979,17 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   background: #111;
   color: #fff;
 }
+.browsehappy {
+  background-color: #333;
+  margin: 0 0 10px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 3;
+  color: #fff;
+}
+.browsehappy a {
+  color: #00aeef;
+}
 .module {
   margin-bottom: 50px;
 }
