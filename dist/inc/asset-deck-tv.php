@@ -1,12 +1,16 @@
 <div class="col-md-12">
+  <div class="deck-header">
+  <h1>Business TV</h1>
+  <a href="#" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
+  </div>
+</div>
+<div class="col-md-12">
+
 <div class="theme-container theme-dark">
             
-            <div class="theme-title col-md-3">
-              <h2 class="theme-header">Business TV</h2>
-              <p><a href="#">Se alle <i class="fa fa-caret-right"></i></a></p>
-            </div>
+            
 
-            <div class="col-md-9">
+            <div class="col-md-12">
             
               <div role="tabpanel">
   <ul class="nav nav-tabs-sm" role="tablist">
@@ -19,17 +23,23 @@
     <div class="tab-content row">
 
       <div role="tabpanel" class="tab-pane fade in active" id="tab-tv-1">
-            <article class="teaser col-md-4 col-sm-4 col-xs-12  ">
-                <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@600x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
-                <h2 class="header"><a href="article.php"><span class="teaser-tag"><i class="fa fa-play"></i></span> <? dummy("text@headline") ?></a></h2>
-              </article>
+            
 
-           <? while (dumb_luck("2")): ?>
-              <article class="teaser col-md-4 col-sm-4 col-xs-6  ">
-                <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
-                <h2 class="header"><a href="article.php"><span class="teaser-tag"><i class="fa fa-play"></i></span> <? dummy("text@headline") ?></a></h2>
-              </article>
-            <? endwhile ?>
+
+
+ <ul class="list-clean flex-4-2-2">
+    <? while (dumb_luck("4")): ?>
+      <li class="col-md-3 col-sm-6 col-xs-6">
+        <article class="teaser">
+          <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
+          <h2 class="header"><a href="article.php"><span class="teaser-tag"><i class="fa fa-play"></i></span> <? dummy("text@headline") ?></a></h2>
+        </article>
+        </li>
+      <? endwhile ?>
+    </ul>
+
+
+           
         </div>
 
       <div role="tabpanel" class="tab-pane fade" id="tab-tv-2">

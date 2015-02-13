@@ -753,7 +753,7 @@ footer + [class*="teaser-tag-"] {
 }
 
 .teaser-tag-video:before {
-	content: '\f01d';
+	content: '\f04b';
 }
 .teaser-tag-gallery:before {
 	content: '\f030';
@@ -3184,6 +3184,9 @@ h1.heading {
 			bottom: -10px;
 			background: #fff;
 			content: '';
+			@media (max-width: @screen-sm-max) {
+				height: 10px;
+			}
 		}
 	}
 	a {
