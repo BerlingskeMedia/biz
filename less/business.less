@@ -216,6 +216,11 @@ a.header-tool-icon {
 		.text-center;
 	}
 }
+.text-center img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .subscription-logo {
 	background: @biz-2;
 	color: #fff;
@@ -340,9 +345,16 @@ a.header-tool-icon {
 	height: auto;
 	clear: both;
 }
-
-.toggle-active .toggle-content {
-	display: block;
+.toggle-btn .fa-caret-down {
+	.transition(transform .4s linear);
+}
+.toggle-active {
+	.toggle-content {
+		display: block;
+	} 
+	.toggle-btn .fa-caret-down {
+		.rotate(180deg);
+	}
 }
 ul.related {
 	.list-clean;
@@ -1405,8 +1417,7 @@ a.btn-premium:after {
 	// font-size: 30px;
 	&+ p {
 		
-		color: rgba(0,0,0,.5);
-		margin-bottom: 20px;
+		
 	}
 	.logo-premium {
 		background-color: #222;
@@ -2971,6 +2982,10 @@ h1.heading {
 		}
 	}
 }
+.flex {
+	display: flex;
+	vertical-align: middle;
+}
 .flex-6-3-2 {
 	li {
 		display: block;
@@ -3099,6 +3114,7 @@ h1.heading {
 	.teaser-tag {
 		color: @biz-1;
 	}
+	
 }
 .theme-header-underline {
 	margin-bottom: 20px;

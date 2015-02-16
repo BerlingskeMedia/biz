@@ -145,15 +145,9 @@ li ul {
           <li class="d"><a href="/dist/index.php">Frontpage</a> <date>Feb. 6th</date></li>
           <li class="d"><a href="/dist/section.php">Section</a> <date>Feb. 5th</date></li>
           <li class="d"><a href="/dist/article.php">Article</a> </li>
-          
-            <li class="d"><a href="/dist/article-footer.php">Article footer</a><date>Feb. 5th</date></li>
-            <li class="d"><a href="/dist/assets-article-contentstream.php">Content Stream</a></li>
-          
-          
-          
-
+          <li class="d"><a href="/dist/article-footer.php">Article footer</a><date>Feb. 5th</date></li>
+          <li class="d"><a href="/dist/assets-article-contentstream.php">Content Stream</a></li>
           <li class="a"><a href="#">Article - Longreads</a></li>
-          <li class="nuke"><a href="#">Section - "Millionnaire Club"</a></li>
           <li class="c"><a href="/dist/topic.php">Topic page</a><date>Feb. 6th</date></li>
           <li class="d"><a href="/dist/article-large.php">Article - Large</a><date>Feb. 6th</date></li>
           <li class="d"><a href="/dist/article-advetorial.php">Article - Advetorial</a><date>Feb. 6th</date></li>
@@ -169,11 +163,10 @@ li ul {
           <li class="b"><a href="#">Business TV - Article</a></li>
           <li class="a"><a href="#">Jobindex overview</a></li>
           <li class="a"><a href="#">Events</a> <date>Feb. 14th</date></li>
-          <li class="a"><a href="#">Business Magazine</a></li>
+          <li class="b"><a href="/dist/magazine.php">Business Magazine</a></li>
           <li class="a"><a href="#">Business navne - Frontpage</a></li>
           <li class="a"><a href="#">Business navne - Article</a></li>
           <li class="a"><a href="#">Image galleries</a></li>
-
         </ul>
 
         <h4>Business <span class="logo-premium"><span>Premium</span></span></h4>
@@ -181,14 +174,11 @@ li ul {
         <li class="d"><a href="/dist/frontpage-premium.php">Frontpage</a>
         <li class="d"><a href="/dist/section-premium.php">Section</a>
         <li class="d"><a href="/dist/article-premium.php">Article</a>
-          
-          <li class="d"><a href="/dist/page-text-premium-1.php">Help page 1</a></li>
-          <li class="d"><a href="/dist/page-text-premium-2.php">Help page 2</a></li>
-          <li class="d"><a href="/dist/page-text-premium-3.php">Help page 3</a></li>
-          <li class="d"><a href="/dist/page-text-premium-4.php">Help page 4</a></li>
-          <li class="nuke"><a href="#">My premium articles</a></li>
-          
-        
+        <li class="d"><a href="/dist/page-text-premium-1.php">Help page 1</a></li>
+        <li class="d"><a href="/dist/page-text-premium-2.php">Help page 2</a></li>
+        <li class="d"><a href="/dist/page-text-premium-3.php">Help page 3</a></li>
+        <li class="d"><a href="/dist/page-text-premium-4.php">Help page 4</a></li>
+        <li class="nuke"><a href="#">My premium articles</a></li>
         </ul>
         <h4>BrandView</h4>
         <ul>
