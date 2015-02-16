@@ -349,7 +349,7 @@ img {
   height: auto;
 }
 .img-rounded {
-  border-radius: 6px;
+  border-radius: 1px;
 }
 .img-thumbnail {
   padding: 4px;
@@ -1998,7 +1998,7 @@ select[multiple].form-group-sm .form-control {
   padding: 10px 16px;
   font-size: 20px;
   line-height: 1.33;
-  border-radius: 6px;
+  border-radius: 1px;
 }
 select.input-lg,
 select.form-group-lg .form-control {
@@ -2287,7 +2287,9 @@ input.form-autocomplete:throbbing {
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
+  border: 1px solid rgba(0, 0, 0, 0.05);
   border: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 2px;
   white-space: nowrap;
   padding: 6px 12px;
@@ -2711,7 +2713,7 @@ fieldset[disabled] .btn-link:focus {
   padding: 10px 16px;
   font-size: 20px;
   line-height: 1.33;
-  border-radius: 3px;
+  border-radius: 1px;
 }
 .btn-sm,
 .btn-group-sm > .btn {
@@ -3116,7 +3118,7 @@ tbody.collapse.in {
   padding: 10px 16px;
   font-size: 20px;
   line-height: 1.33;
-  border-radius: 6px;
+  border-radius: 1px;
 }
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
@@ -3191,7 +3193,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .input-group-addon.input-lg {
   padding: 10px 16px;
   font-size: 20px;
-  border-radius: 6px;
+  border-radius: 1px;
 }
 .input-group-addon input[type="radio"],
 .input-group-addon input[type="checkbox"] {
@@ -3589,13 +3591,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .pagination-lg > li:first-child > a,
 .pagination-lg > li:first-child > span {
-  border-bottom-left-radius: 6px;
-  border-top-left-radius: 6px;
+  border-bottom-left-radius: 1px;
+  border-top-left-radius: 1px;
 }
 .pagination-lg > li:last-child > a,
 .pagination-lg > li:last-child > span {
-  border-bottom-right-radius: 6px;
-  border-top-right-radius: 6px;
+  border-bottom-right-radius: 1px;
+  border-top-right-radius: 1px;
 }
 .pagination-sm > li > a,
 .pagination-sm > li > span {
@@ -5493,7 +5495,7 @@ button.close {
   background-color: #ffffff;
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
+  border-radius: 1px;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;

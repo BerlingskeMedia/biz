@@ -42,15 +42,13 @@
     <div class="col-md-12">
       
           <h1 class="deck-header text-center">
-          <span class="header-404 shake">Fejl 404</span>
-          Siden ikke fundet</h1>
+          <span class="header-404 shake">Undskyld!</span>
+          Vi kunne ikke finde den side, du forsøgte at få adgang til. </h1>
 
-<div class="text-center">
-      <p><strong>Undskyld!</strong></p> 
 
-<p>Vi kunne ikke finde den side, du forsøgte at få adgang til. </p>
+
 </div>      
-    </div>
+    
       
       <div class="col-md-8 col-md-push-2  module-sm">
         
@@ -177,7 +175,7 @@
 
      </section>
 
-      
+
     </div>
 
 
