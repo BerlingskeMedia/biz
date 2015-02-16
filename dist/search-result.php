@@ -72,7 +72,7 @@
 
 <div class="form-group" id="edit-interval-wrapper">
  <label for="edit-interval">Prædefineret tidsinterval: </label>
-  <select name="interval" class="form-control input-sm" id="edit-interval"><option value="0" selected="selected">Ethvert tidsinterval</option><option value="1">I dag</option><option value="2">Den seneste uge</option><option value="3">Den seneste måned</option><option value="4">Efter relevans</option></select>
+  <select name="interval" class="form-control input-sm" id="edit-interval"><option value="0" selected="selected">Ethvert tidsinterval</option><option value="1">I dag</option><option value="2">Den seneste uge</option><option value="3">Den seneste måned</option></select>
 </div>
 
 </div>
