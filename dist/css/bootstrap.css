@@ -3441,6 +3441,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-bottom-color: #f5dfda;
   }
 }
+.nav-tabs-xs > li > a {
+  padding: 0 5px 0 0;
+  font-size: 12px;
+}
 .theme-dark .active > a,
 .theme-dark .active > a:hover,
 .theme-dark .active > a:focus {

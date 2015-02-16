@@ -120,53 +120,97 @@
 
       <section class="module-sm">
         <h1 class="section-header">
-          Mærsk Oil
+          Carlsberg A
         </h1>
-            <div role="tabpanel" class="tabs">
 
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs-sm" role="tablist">
-    <li role="presentation" class="active"><a href="#tab-topic1" aria-controls="Aktiekurs" role="tab" data-toggle="tab">Aktiekurs</a></li>
-    <li role="presentation"><a href="#tab-topic2" aria-controls="tab-profile" role="tab" data-toggle="tab">Virksomhedsprofil</a></li>
-    <li role="presentation"><a href="#tab-topic3" aria-controls="tab-keyfigures" role="tab" data-toggle="tab">Nøgletal</a></li>
-    <li role="presentation"><a href="#tab-topic4" aria-controls="tab-management" role="tab" data-toggle="tab">Ledelsesposter</a></li>
+
+         <!-- Nav tabs -->
+  <ul class="nav nav-tabs-sm nav-tabs-xs" role="tablist">
+    <li role="presentation" class="active"><a href="#">1 dag</a></li>
+    <li role="presentation"><a href="#">1 uge</a></li>
+    <li role="presentation"><a href="#">1 mdr</a></li>
+    <li role="presentation"><a href="#">3 mdr</a></li>
+    <li role="presentation"><a href="#">1 år</a></li>
+    <li role="presentation"><a href="#">3 år</a></li>
+    <li role="presentation"><a href="#" >Max</a></li>
   </ul>
 
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade in active" id="tab-topic1">
-      STOCK
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="tab-topic2">
     
-<div class="spinner">
-          <div class="bounce1"></div>
-          <div class="bounce2"></div>
-          <div class="bounce3"></div>
-      </div>
+          <p><img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=CARL/A.co&prv=ms_dlc&points=288&ts=5&current={CURR}&w=300&h=200&bgcolor=f5dfda&isFP=true&st=false&tp=1" class="img-responsive"></p>
 
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="tab-topic3">
-    
-<div class="spinner">
-          <div class="bounce1"></div>
-          <div class="bounce2"></div>
-          <div class="bounce3"></div>
-      </div>
+<table class="table table-stocks">
+ 
+  <tbody>
+    <tr >
+    <td>Seneste kurs</td>
+    <td class="right change"><strong>553,50</strong></td>
+    </tr>
+    <tr class="minus">
+    <td>Ændring</td>
+    <td class="change right"><strong>-10,00</strong></td>
+    </tr>
+    <tr class="minus">
+    <td>Ændring i %</td>
+    <td class="change right"><strong>-1,78%</strong></td>
+    </tr>
+    <tr>
+    <td>Tid</td>
+    <td class="right">09:44:55, 16.Feb.15</td>
+    </tr>
+    <tr >
+    <td>Dagens højeste</td>
+    <td class="change right">555,00</td>
+    </tr>
+    <tr >
+    <td>Dagens lavestse</td>
+    <td class="right">552,00</td>
+    </tr>
+    <tr >
+    <td>Åbenkurs</td>
+    <td class="right">555,00</td>
+    </tr>
+    <tr >
+    <td>Lukkekurs</td>
+    <td class="right">563,00</td>
+    </tr>
 
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="tab-topic4">
-    
-<div class="spinner">
-          <div class="bounce1"></div>
-          <div class="bounce2"></div>
-          <div class="bounce3"></div>
-      </div>
+    <tr>
+      <td>Kurs ult. sidste år</td>
+      <td class="right">523,00</td>
+    </tr>
+    <tr>
+      <td>Årets ændring</td>
+      <td class="right">30,00</td>
+    </tr>
+    <tr>
+      <td>Årets ændring i %</td>
+      <td class="right">5,74%</td>
+    </tr>
 
-    </div>
-  </div>
+    <tr>
+      <td>52 ugers højeste</td>
+      <td class="right">624,50</td>
+    </tr>
 
-</div>
+    <tr>
+      <td>52 ugers laveste</td>
+      <td class="right">464,00</td>
+    </tr>
+
+    <tr>
+      <td>Volumen</td>
+      <td class="right">40</td>
+    </tr>
+
+    <tr>
+      <td>Antal handler i dag</td>
+      <td class="right">20</td>
+    </tr>
+
+  </tbody>
+</table>
+
+
       </section>
       <section class="module-sm">
       <h1 class="section-header">Om Mærsk Oil</h1>
