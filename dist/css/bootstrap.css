@@ -7939,7 +7939,7 @@ h1.deck-header {
   }
 }
 .header-404 {
-  font-size: 12vw;
+  font-size: 8vmax;
   display: block;
   text-align: center;
 }
@@ -10301,8 +10301,8 @@ p.small {
 .shake {
   -webkit-animation-name: shake;
   animation-name: shake;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
