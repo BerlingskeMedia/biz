@@ -339,6 +339,11 @@ a.header-tool-icon {
 	}
 }
 
+.search-word, .highlight {
+	background-color: #fcf8e3;
+	color: #8a6d3b;
+	box-shadow: -1px 0 #fcf8e3, 1px 0 #fcf8e3;
+}
 .toggle-content {
 	overflow: hidden;
 	display: none;
@@ -346,7 +351,7 @@ a.header-tool-icon {
 	clear: both;
 }
 .toggle-btn .fa-caret-down {
-	.transition(transform .4s linear);
+	.transition(transform .4s ease);
 }
 .toggle-active {
 	.toggle-content {
@@ -399,6 +404,9 @@ ul.related {
 	p {
 		margin-top: 5px;
 		color: #333;
+	}
+	.summary {
+		font-size: 90%;
 	}
 	.header a {
 		color: @text-color;
@@ -1664,7 +1672,7 @@ h1.deck-header {
 .teaser-border-top {
 	border-top: 1px solid rgba(0,0,0,.1);
 	margin-top: 15px;
-	padding-top: 5px;
+	padding-top: 15px;
 }
 .teaser-border-top-thick {
 	border-top: 4px solid #333;

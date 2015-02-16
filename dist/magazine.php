@@ -47,7 +47,7 @@
       <div class="col-md-8">
       
         <div class="deck-header">
-          <h1>Business Magasinet</h1>
+          <h1>Business Magasin</h1>
         </div>
 
 
@@ -448,7 +448,7 @@
         <section class="module-sm ">
         <div class="">
           <h1 class="section-header">
-            Om Magasinet
+            Om Business Magasin
           </h1>
 
           <div class="row">
@@ -462,7 +462,7 @@
             </div>
             <div class="col-sm-7 text-center" >
             <p>
-              <strong>Styksalg 99,- kr.</strong> <button class="btn btn-primary btn-sm">Køb magasinet <i class="fa fa-caret-right"></i></button>    
+              <strong>Styksalg 99,- kr.</strong> <button class="btn btn-primary btn-sm">Køb <i class="fa fa-caret-right"></i></button>    
             
             </p>
 

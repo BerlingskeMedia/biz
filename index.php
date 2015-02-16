@@ -157,7 +157,7 @@ li ul {
           <li class="a"><a href="#">Header</a> </li>
           <li class="a"><a href="#">Footer</a> <date>Feb. 5th</date></li>
           <li class="a"><a href="#">404</a> <date>Feb. 12th</date></li>
-          <li class="a"><a href="#">Search</a> <date>Feb. 12th</date></li>
+          <li class="c"><a href="/dist/search-result.php">Search</a> <date>Feb. 12th</date></li>
           <li class="a"><a href="#">News overview</a> <date>Feb. 12th</date></li>
           <li class="a"><a href="#">Business TV - Section</a></li>
           <li class="b"><a href="#">Business TV - Article</a></li>

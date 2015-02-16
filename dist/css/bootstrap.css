@@ -6329,6 +6329,12 @@ a.header-tool-icon:hover {
   content: '\2014 ';
   margin-right: 4px;
 }
+.search-word,
+.highlight {
+  background-color: #fcf8e3;
+  color: #8a6d3b;
+  box-shadow: -1px 0 #fcf8e3, 1px 0 #fcf8e3;
+}
 .toggle-content {
   overflow: hidden;
   display: none;
@@ -6336,9 +6342,9 @@ a.header-tool-icon:hover {
   clear: both;
 }
 .toggle-btn .fa-caret-down {
-  -webkit-transition: transform 0.4s linear;
-  -o-transition: transform 0.4s linear;
-  transition: transform 0.4s linear;
+  -webkit-transition: transform 0.4s ease;
+  -o-transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
 }
 .toggle-active .toggle-content {
   display: block;
@@ -6394,6 +6400,9 @@ ul.related li:before {
 .teaser p {
   margin-top: 5px;
   color: #333;
+}
+.teaser .summary {
+  font-size: 90%;
 }
 .teaser .header a {
   color: #333333;
@@ -7816,7 +7825,7 @@ h1.deck-header {
 .teaser-border-top {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 15px;
-  padding-top: 5px;
+  padding-top: 15px;
 }
 .teaser-border-top-thick {
   border-top: 4px solid #333;
