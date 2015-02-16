@@ -148,7 +148,7 @@ li ul {
           <li class="d"><a href="/dist/article-footer.php">Article footer</a><date>Feb. 5th</date></li>
           <li class="d"><a href="/dist/assets-article-contentstream.php">Content Stream</a></li>
           <li class="a"><a href="#">Article - Longreads</a></li>
-          <li class="c"><a href="/dist/topic.php">Topic page</a><date>Feb. 6th</date></li>
+          <li class="d"><a href="/dist/topic.php">Topic page</a><date>Feb. 6th</date></li>
           <li class="d"><a href="/dist/article-large.php">Article - Large</a><date>Feb. 6th</date></li>
           <li class="d"><a href="/dist/article-advetorial.php">Article - Advetorial</a><date>Feb. 6th</date></li>
           <li class="b"><a href="/dist/page-profile.php">User profile</a> <date>Feb. 12th</date></li>
@@ -163,7 +163,7 @@ li ul {
           <li class="b"><a href="#">Business TV - Article</a></li>
           <li class="a"><a href="#">Jobindex overview</a></li>
           <li class="a"><a href="#">Events</a> <date>Feb. 14th</date></li>
-          <li class="b"><a href="/dist/magazine.php">Business Magazine</a></li>
+          <li class="c"><a href="/dist/magazine.php">Business Magazine</a></li>
           <li class="a"><a href="#">Business navne - Frontpage</a></li>
           <li class="a"><a href="#">Business navne - Article</a></li>
           <li class="a"><a href="#">Image galleries</a></li>
