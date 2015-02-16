@@ -41,16 +41,14 @@
       
     
 
-    <div class="col-md-12">
-      <div class="deck-header">
-          <h1>Business Magasinet</h1>
-        </div>
-    </div>
+    
 
 
       <div class="col-md-8">
       
-
+        <div class="deck-header">
+          <h1>Business Magasinet</h1>
+        </div>
 
 
       <div class="row">
