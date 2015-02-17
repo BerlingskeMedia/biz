@@ -6349,8 +6349,10 @@ a.header-tool-icon:hover {
   -o-transition: transform 0.4s ease;
   transition: transform 0.4s ease;
 }
-.toggle-active .toggle-content {
-  display: block;
+.toggle-active {
+  /*.toggle-content {
+		display: block;
+	} */
 }
 .toggle-active .toggle-btn .fa-caret-down {
   -webkit-transform: rotate(180deg);

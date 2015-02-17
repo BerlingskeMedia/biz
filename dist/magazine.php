@@ -462,7 +462,8 @@
             </div>
             <div class="col-sm-7 text-center" >
             <p>
-              <strong>Styksalg 99,- kr.</strong> <button class="btn btn-primary btn-sm">Køb <i class="fa fa-caret-right"></i></button>    
+              <strong>Styksalg kr. 99,-</strong><p>
+              <p> <button class="btn btn-primary btn-xs">Køb magasin <i class="fa fa-caret-right"></i></button>    
             
             </p>
 
@@ -496,7 +497,8 @@ Julie Brix, teamchef<br>
 Mobil: 25 45 61 18<br>
 <a href="mailto:jub@berlingskemedia.dk">jub@berlingskemedia.dk</a></p>
 </div>
-<p class="small text-center"><strong><a href="#" class="toggle-btn ">Vis mere <i class="fa fa-caret-down"></i></strong></p>
+
+<p class="small text-center"><a href="#" class="toggle-btn btn btn-sm btn-primary ">Kontakt Busines Magasin <i class="fa fa-caret-down"></i></a></p>
 
         </div><!-- col -->
 
