@@ -36,7 +36,11 @@
       
         
       <div class="col-md-12">
+        
+      <div class="deck-header">
         <h1>Profil</h1>
+      </div>
+
       </div>
         
           <div class="col-md-8 ">
@@ -47,19 +51,54 @@
             
             
 
-<p>Med denne brugerprofil, har du mulighed for at se kommenterede artikler, samt seneste pressemeddelelser. Derudover kan du på Business oprette din virksomhed i Business Direct og dermed udgive pressemeddelelser m.m.</p>
+
 
 <div class="article-profile module-sm">
-<p><strong>Bo Skakke</strong><br>              
-Skovkanten 74<br>
-2850 Nærum<br>
-bsk@berlingskemedia.dk</p>
 
-<p class="small"><a href="page-profile-edit.php">Ret profil <i class="fa fa-pencil"></i></a></p>
+<form>
+<div class="form-group">
+  <label>Navn</label>
+  <input type="text" class="form-control" Placeholder="Navn" value="Bo Skakke"></input>
+</div>
+
+<div class="form-group">
+  <label>Adresse</label>
+  <input type="text" class="form-control" Placeholder="Adresse" value="Skovkante 74"></input>
+</div>
+
+<div class="row">
+<div class="form-group col-md-4">
+  <label>Postnr.</label>
+  <input type="text" class="form-control" Placeholder="Postnr." value="2850"></input>
+</div>  
+<div class="form-group col-md-8">
+  <label>By</label>
+  <input type="text" class="form-control" Placeholder="By" value="Nærum"></input>
+</div>
+</div>
+
+<div class="form-group">
+  <label>Email</label>
+  <input type="email" class="form-control" Placeholder="Email" value="bo@skakke.dk"></input>
+</div>
+
+<button type="submit" class="btn btn-primary btn-sm">Gem ændringer</button>
+
+
+</form>
+
+
+
             </div>
 
+
+<h3>Online abonnement</h3>
+<p>Her kan du <a href="https://b.kundeunivers.dk/" target="_blank">aktivere dit onlineabonnement <i class="fa fa-caret-right"></i></a>  </p>
 <h3>Opsigelse eller ændringer</h3>
-<p> Ønsker du at opsige eller ændre dit abonnement?</a> <a href="https://b.kundeunivers.dk/" target="_blank">Gå til Kundeunivers <i class="fa fa-caret-right"></i></a></p>
+<p>Her kan du <a href="https://b.kundeunivers.dk/" target="_blank">opsige eller ændre dit abonnement <i class="fa fa-caret-right"></i></a>?</p>
+
+
+
 
 
 
