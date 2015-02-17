@@ -81,8 +81,26 @@
   <label>Email</label>
   <input type="email" class="form-control" Placeholder="Email" value="bo@skakke.dk"></input>
 </div>
+<div class="checkbox">
+    <label>
+      <input type="checkbox"> Tilmeld Business.dk nyhedsbrev
+    </label>
+  </div>
 
-<button type="submit" class="btn btn-primary btn-sm">Gem ændringer</button>
+<div class="form-group">
+  <label>Telefon</label>
+  <input type="phone" class="form-control" Placeholder="Telefon" value="20616768"></input>
+</div>
+<div class="checkbox">
+  <label>
+    <input type="checkbox"> Modtag breaking nyt på SMS
+  </label>
+</div>
+
+<div class="text-right">
+  <button type="submit" class="btn btn-primary btn-sm">Gem ændringer</button>  
+</div>
+
 
 
 </form>
@@ -91,11 +109,23 @@
 
             </div>
 
+<div class="row">
+  <div class="col-md-6">
+  <h2 class="section-header">Aktivering af online abonnement</h3>
+<p>Er du abonnent på papiravisen, skal du aktivere dit online abonnement for at få adgang til Business.dk </p>
 
-<h3>Aktivering af online abonnement</h3>
-<p>Er du abonnent på papirudgaven kan du her aktivere dit online abonnement og få gratis adgang til Business.dk <a href="https://b.kundeunivers.dk/" target="_blank">Aktivér onlineabonnement <i class="fa fa-caret-right"></i></a>  </p>
-<h3>Opsigelse eller ændringer</h3>
-<p>Her kan du <a href="https://b.kundeunivers.dk/" target="_blank">opsige eller ændre dit abonnement <i class="fa fa-caret-right"></i></a></p>
+<p><a href="https://b.kundeunivers.dk/" target="_blank" >Aktivér abonnement <i class="fa fa-caret-right"></i></a>  </p>
+
+  </div>
+  <div class="col-md-6">
+  <h2 class="section-header">Opsigelse eller ændringer</h3>
+<p>Her kan du opsige eller ændre i dit abonnement</p>
+<p><a href="https://b.kundeunivers.dk/" target="_blank" >Kundeunivers <i class="fa fa-caret-right"></i></a></p>    
+  </div>
+</div>
+
+
+
 
 
 
@@ -177,66 +207,10 @@
       </section>
 
  
-   <section class="border-top-thick">
-            <div class="border-bottom">
-              <p><strong><i class="fa fa-mobile"></i> Tilmeld Breaking News SMS</strong></p>
-          <div class="row">
-            <div class="col-sm-9 col-xs-10">
-            <form class="form-signup">
-            <div class="form-group form-oneline-alt">
-              <? if (dumb_luck("50%")): ?>
-            <input type="email" class="form-control input-sm form-underline" placeholder="Email" value="20616768" aria-describedby="sizing-addon3">
-            <? else: ?>
-            <input type="email" class="form-control input-sm form-underline" placeholder="Indtast mobilnr." aria-describedby="sizing-addon3">
-            <? endif ?> 
-            <button class="btn btn-sm btn-primary btn-sm ">OK</button>
-            </div>
-            </form>
-            </div>
-
-          </div>
-          
-          
-          </div>
-        </section>
+  
 
 
-          
-          <section>
-          <div class="border-bottom">
-              <p><strong>
-              <i class="fa fa-envelope"></i> Tilmeld Business.dk nyhedsbrev</strong></p>
-            <div class="row">
-            <form class="form-signup ">
-           <div class="col-sm-9 col-xs-10">
-            <div class="form-group form-oneline-alt ">
-            
-            <? if (dumb_luck("50%")): ?>
-            <input type="email" class="form-control input-sm form-underline" placeholder="Email" value="bsk@berlingskemedia.dk" aria-describedby="sizing-addon3">
-            <? else: ?>
-            <input type="email" class="form-control input-sm form-underline" placeholder="Indtast email" aria-describedby="sizing-addon3">
-            <? endif ?> 
-            <button class="btn btn-sm btn-primary btn-sm ">OK <!-- <i class="fa fa-caret-right"></i> --></button>
-            </div>
-            </div>
-
-          </form>
-          </div>
-           </div>
-          </section>
-
-          <section class="module-sm">
-          <div class="marketing-subscription">
-            <!-- <div class="subscription-logo">BERLINGSKE
-              <span class="newspaper"></span>
-            </div> -->
-            <!-- <p><strong>Abonnement på Berlingske</strong></p> -->
-            <a href="#" class="a-gray">
-            <p class="small"><strong>Få avisen i tre måneder inkl. digital adgang. Kun 199 kr/md. <span class="pink">Klik her <i class="fa fa-caret-right"></i></span> </strong> </p>
-            <p class="micro">Samlet engangspris 597,-. Abonnementet fortsætter til normalpris, indtil det opsiges</p>
-            </a>
-          </div>          
-          </section>
+        
       
 
       <section class="module-sm">

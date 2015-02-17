@@ -6,7 +6,7 @@
 .button-variant(@color; @background; ) {
   color: @color;
   background-color: @background;
-  
+  .transition (background-color .2s ease);
   &:hover,
   &:focus,
   &.focus,
@@ -14,12 +14,14 @@
   &.active,
   .open > .dropdown-toggle& {
     color: @color;
-    background-color: darken(@background, 10%);
+    background-color: darken(@background, 5%);
+    outline: none!important;
   }
   &:active,
   &.active,
   .open > .dropdown-toggle& {
     background-image: none;
+    outline: none;
   }
   &.disabled,
   &[disabled],
@@ -31,7 +33,6 @@
     &:active,
     &.active {
       background-color: @background;
-  
     }
   }
 
