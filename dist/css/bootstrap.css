@@ -2290,7 +2290,7 @@ input.form-autocomplete:throbbing {
   border: 1px solid rgba(0, 0, 0, 0.05);
   border: 0;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
   border-radius: 2px;
   white-space: nowrap;
   padding: 6px 12px;
@@ -2708,6 +2708,9 @@ fieldset[disabled] .btn-link:hover,
 fieldset[disabled] .btn-link:focus {
   color: #777777;
   text-decoration: none;
+}
+.form-oneline .btn {
+  box-shadow: none;
 }
 .btn-lg,
 .btn-group-lg > .btn {
@@ -10028,9 +10031,6 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 }
 .footer-marketing a {
   color: #fff;
-}
-.footer-marketing:hover {
-  background-color: #142747;
 }
 @media (max-width: 767px) {
   .footer-marketing strong {
