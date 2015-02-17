@@ -2924,7 +2924,7 @@ h1.heading {
 	}
 	.fact-fader {
 		height: 80px;
-		#gradient > .vertical(rgba(245,223,218,0); rgba(246,223,218,1); 0; 80%);  
+		#gradient > .vertical(rgba(250,220,210,0); rgba(250,220,210,1); 0; 80%);  
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -2939,12 +2939,13 @@ h1.heading {
 			cursor: pointer;
 			position: relative;
 			text-transform: uppercase;
-			font-weight: 700;
-			font-size: 12px;
-			top: 52px;
+			
+			bottom: -38px;
+			box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
 			.transition (background-color .1s ease);
+			.btn;
 			.btn-primary;
-			.btn-xs;
+			
 			
 			.fa {
 				color: #fff;
@@ -2966,6 +2967,8 @@ h1.heading {
 			bottom: 10px;
 			top: auto!important;
 			background: transparent!important;
+			box-shadow: none;
+			border-bottom: 0;
 			.fa {
 				background-color: @biz-1;
 				padding: 4px;
@@ -3685,4 +3688,9 @@ h1.heading {
 	a {
 		color: #00aeef;
 	}
+}
+.iframe-jobindex {
+	height: 300px;
+	border: 0;
+	overflow: auto;
 }
