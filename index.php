@@ -155,18 +155,18 @@ li ul {
           <li class="d"><a href="/dist/staff.php">Staff - overview</a><date>Feb. 3rd</date></li>
           <li class="d"><a href="/dist/author.php">Staff - Author</a><date>Feb. 10th</date></li>
           <li class="a"><a href="#">Header</a> </li>
-          <li class="a"><a href="#">Footer</a> <date>Feb. 5th</date></li>
+          <li class="a"><a href="#">Footer</a> <date>Feb. 20th</date></li>
+          <li class="a"><a href="#">Paywall</a> <date>Feb. 20th</date></li>
           <li class="d"><a href="/dist/404.php">404</a> <date>Feb. 12th</date></li>
           <li class="d"><a href="/dist/search-result.php">Search</a> <date>Feb. 12th</date></li>
           <li class="c"><a href="/dist/news-overview.php">News overview</a> <date>Feb. 12th</date></li>
-          <li class="a"><a href="#">Business TV - Section</a></li>
-          <li class="b"><a href="#">Business TV - Article</a></li>
+          <li class="a"><a href="#">Business TV - Section</a><date>Feb. 14th</date></li>
+          <li class="b"><a href="#">Business TV - Article</a><date>Feb. 14th</date></li>
           <li class="a"><a href="#">Jobindex overview</a></li>
           <li class="a"><a href="#">Events</a> <date>Feb. 14th</date></li>
           <li class="d"><a href="/dist/magazine.php">Business Magazine</a></li>
-          <li class="a"><a href="#">Business navne - Frontpage</a></li>
-          <li class="a"><a href="#">Business navne - Article</a></li>
-          <li class="a"><a href="#">Image galleries</a></li>
+          <li class="a"><a href="#">Image galleries - Section</a></li>
+          <li class="a"><a href="#">Image galleries - Article</a></li>
         </ul>
 
         <h4>Business <span class="logo-premium"><span>Premium</span></span></h4>

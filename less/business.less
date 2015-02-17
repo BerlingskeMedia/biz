@@ -632,6 +632,7 @@ ul.related {
 			opacity: .8;
 		}
 	}
+	.teaser-tag-trumpet,
 	.external-href {
 		color: rgba(255,255,255,.5);
 	}
@@ -784,21 +785,24 @@ ul.related {
 
 
 footer + [class*="teaser-tag-"] {
-	margin-top: 5px;
+	margin: 0;
 }
 
 [class*="teaser-tag-"] {
-	color: @biz-1;
-	font-weight: 600;
-	line-height: 1.3;
+	font-weight: 300;
 	display: inline-block;
 	text-transform: uppercase;
+	font-size: 87%;
+
 	&:before {
 		display: inline;
 		font-family: fontawesome;
 		padding-right: 3px;
 		font-weight: normal;
 	}
+}
+.related [class*="teaser-tag-"] {
+	font-weight: 600;
 }
 
 .teaser-tag-video:before {
@@ -809,21 +813,40 @@ footer + [class*="teaser-tag-"] {
 }
 .teaser-tag-live {
 	color: @col-red;
+	font-weight: 600;
+	padding-right: 3px;
 }
 .teaser-tag-breaking {
 	color: #333;
 	background: @col-breaking;
 	padding: 0 4px;
+	line-height: 1.3;
+	font-weight: 600;
 }
 
 .teaser-tag-comingup {
 	color: @col-red;
-	
+	font-weight: 600;
+	padding-right: 3px;
+}
+.teaser-tag-trumpet {
+	color: #333;
+	text-transform: none;
 }
 
 .teaser-solid .teaser-tag-comingup {
 	color: @col-red;
-	
+}
+
+.list .teaser-tag-trumpet {
+	font-size: 12px;
+	font-weight: 300;
+	color: rgba(0,0,0,.5);
+	display: block;
+
+}
+.theme-dark .teaser-tag-trumpet {
+	color: #eee;
 }
 
 .teaser-video {
@@ -3255,11 +3278,13 @@ h1.heading {
 	}
 	.theme-title {
 		position: absolute;
-		bottom: 30px;
+		bottom: 40px;
 		display: inline-block;
 		left: 20px;
+		right: 20px;
 		z-index: 99;
-		font-size: 3.5vw;
+		line-height: .9;
+		font-size: 3vw;
 		color: #fff;
 		font-family: @font-family-serif;
 		font-weight: 600;
@@ -3269,7 +3294,7 @@ h1.heading {
 			display: inline-block;
 			width: 50%;
 			position: absolute;
-			bottom: -10px;
+			bottom: -20px;
 			background: #fff;
 			content: '';
 			@media (max-width: @screen-sm-max) {
@@ -3469,7 +3494,7 @@ h1.heading {
 		.header {
 			background: #333;
 			color: #fff;
-			line-height: 1.3;
+			line-height: 1.4;
 			display: inline;
 			box-shadow: 5px 0 0 #333, -5px 0 0 #333;
 			font-weight: 600;

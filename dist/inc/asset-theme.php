@@ -6,7 +6,7 @@
     <div class="theme-cover">
     <div class="padding-xs">
     <a href="article.php">
-    <span class="theme-title">OW Bunker</span>
+    <span class="theme-title">Forsvaret af Kronen</span>
     <figure style="background-image: url(<? dummy("image/!biz-theme@600x,9:13") ?>);"></figure></a>
       </div>
     </div>

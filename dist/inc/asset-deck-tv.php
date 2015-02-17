@@ -32,7 +32,9 @@
       <li class="col-md-3 col-sm-6 col-xs-6">
         <article class="teaser teaser-video">
           <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
-          <h2 class="header"><a href="article.php"> <? dummy("text@headline") ?></a></h2>
+          <? dummy("text@biz-headertags") ?>
+          <h2 class="header"><a href="article.php">
+          <? dummy("text@headline") ?></a></h2>
         </article>
         </li>
       <? endwhile ?>
