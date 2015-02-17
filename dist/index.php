@@ -100,8 +100,9 @@
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
               <? dummy("text@biz-headertags") ?>
                 <h2 class="header">
-                
-                <a href="article.php"><? dummy("text@headline") ?></a></h2>
+                <a href="article.php"><? dummy("text@headline") ?>
+                <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+                </a></h2>
               <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@732x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
                 
@@ -125,7 +126,9 @@
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <? dummy("text@biz-headertags") ?>
-            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?>
+              <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+            </a></h2>
             <p class="large"><? dummy("text@teaser") ?></p>
             <? if (dumb_luck("25%")): ?>
             <ul class="related">
@@ -149,7 +152,9 @@
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <? dummy("text@biz-headertags") ?>
-            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?>
+            <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+            </a></h2>
             <? if (dumb_luck("50%")): ?>
             <ul class="related">
               <? while (dumb_luck("0-2")): ?>
@@ -167,7 +172,9 @@
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@732x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?>
+            <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+            </a></h2>
             <? if (dumb_luck("50%")): ?>
             <ul class="related">
               <? while (dumb_luck("0-2")): ?>
@@ -199,7 +206,9 @@
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@732x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?>
+              <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+            </a></h2>
             
             <? if (dumb_luck("25%")): ?>
             <ul class="related">
@@ -217,7 +226,9 @@
            <article class="teaser teaser-quote header-20 teaser-border-top-thick">
           
 
-            <h2 class="header"><a href="article.php"><? dummy("text@teaser") ?></a></h2>
+            <h2 class="header"><a href="article.php"><? dummy("text@teaser") ?>
+            <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+            </a></h2>
             <figure class="teaser-img">
 
               <a href="article.php"><img src="<? dummy("image/!author@35x35,") ?>" width="" height="" alt="" /></a>
@@ -231,7 +242,8 @@
           <article class="teaser teaser-tweet header-20 teaser-border-top-thick">
           
 
-            <h2 class="header"><a href="article.php"><? dummy("text@teaser") ?></a></h2>
+            <h2 class="header"><a href="article.php"><? dummy("text@teaser") ?>
+            </a></h2>
             <figure class="teaser-img">
               
               <figcaption><cite><? dummy("text@author") ?></cite></figcaption>
@@ -277,7 +289,9 @@
       <ul class="list list-xs list-light">
         <? while (dumb_luck("10")): ?>
           <li class="teaser">
-          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a><footer class="inline"><time class=""><? dummy("text@time-ago-short") ?></time></footer></h2></div>
+          <div class="teaser-body"><h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a><footer class="inline"><time class=""><? dummy("text@time-ago-short") ?></time></footer>
+          <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+          </h2></div>
           </li>
         <? endwhile ?>
       </ul>
@@ -413,7 +427,9 @@
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?>
+            <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+            </a></h2>
             </div>
           </article>
         </li>
@@ -460,7 +476,9 @@
             <article class="teaser header-35 header-xs-20 teaser-border-bottom-thick">
               <figure class="teaser-img"><a href="#"><img src="<? dummy("image@940x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a>
+              <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+              </h2>
             </article>
         
           <div class="row">
@@ -471,7 +489,9 @@
           <article class="teaser header-20 teaser-border-bottom-thick-xs">
               <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@394,16:9") ?>" width="" height="" alt="" /></a></figure>
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?>
+              <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+              </a></h2>
             </article>
           </div>
             <? while (dumb_luck("2")): ?>
@@ -479,7 +499,9 @@
           <article class="teaser header-20 ">
               <figure class="teaser-img"><a href="#"><img src="<? dummy("image@394,16:9") ?>" width="" height="" alt="" /></a></figure>
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?>
+              <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+              </a></h2>
             </article>
       </div>
 
@@ -569,7 +591,9 @@
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?>
+              <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+              </a></h2>
             </div>
           </article>
           <? endwhile ?>
@@ -630,7 +654,9 @@
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?>
+              <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+              </a></h2>
             </div>
           </article>
           <? endwhile ?>
@@ -769,7 +795,8 @@
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?>
+              <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?></a></h2>
               
             </div>
           </article>

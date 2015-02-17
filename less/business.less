@@ -7,6 +7,11 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+.header {
+	-webkit-font-smoothing: auto;
+	-moz-osx-font-smoothing: auto;	
+}
+
 .site-header {
 	margin-bottom: 10px;
 	@media (max-width: @screen-sm-max) {
@@ -414,6 +419,13 @@ ul.related {
 			opacity: .8;
 		}
 	}
+	.external-href {
+		font-family: @font-family-sans-serif;
+		font-weight: 600;
+		font-size: 12px;
+		display: block;
+		color: rgba(0,0,0,.5); // indianred; // firebrick; // indianred; // rosybrown; 
+	}
 	.cat {
 		.pink;
 		text-transform: uppercase;
@@ -619,6 +631,9 @@ ul.related {
 		&:hover {
 			opacity: .8;
 		}
+	}
+	.external-href {
+		color: rgba(255,255,255,.5);
 	}
 	.teaser-body {
 		background: #333;

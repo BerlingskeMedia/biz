@@ -20,16 +20,16 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'BerlingskeTxt';
-  src: url('../fonts/berlingskeseriftx-rg.eot');
-  src: url('../fonts/berlingskeseriftx-rg.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeseriftx-rg.woff2') format('woff2'), url('../fonts/berlingskeseriftx-rg.woff') format('woff'), url('../fonts/berlingskeseriftx-rg.ttf') format('truetype');
+  font-family: 'Berlingske';
+  src: url('../fonts/berlingskeserif-rg.eot');
+  src: url('../fonts/berlingskeserif-rg.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-rg.woff2') format('woff2'), url('../fonts/berlingskeserif-rg.woff') format('woff'), url('../fonts/berlingskeserif-rg.ttf') format('truetype');
   font-weight: 300;
   font-style: regular;
 }
 @font-face {
-  font-family: 'BerlingskeTxt';
-  src: url('../fonts/berlingskeseriftx-bd.eot');
-  src: url('../fonts/berlingskeseriftx-bd.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeseriftx-bd.woff2') format('woff2'), url('../fonts/berlingskeseriftx-bd.woff') format('woff'), url('../fonts/berlingskeseriftx-bd.ttf') format('truetype');
+  font-family: 'Berlingske';
+  src: url('../fonts/berlingskeserif-bd.eot');
+  src: url('../fonts/berlingskeserif-bd.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-bd.woff2') format('woff2'), url('../fonts/berlingskeserif-bd.woff') format('woff'), url('../fonts/berlingskeserif-bd.ttf') format('truetype');
   font-weight: 600;
   font-style: regular;
 }

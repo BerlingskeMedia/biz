@@ -20,16 +20,16 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'BerlingskeTxt';
-  src: url('../fonts/berlingskeseriftx-rg.eot');
-  src: url('../fonts/berlingskeseriftx-rg.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeseriftx-rg.woff2') format('woff2'), url('../fonts/berlingskeseriftx-rg.woff') format('woff'), url('../fonts/berlingskeseriftx-rg.ttf') format('truetype');
+  font-family: 'Berlingske';
+  src: url('../fonts/berlingskeserif-rg.eot');
+  src: url('../fonts/berlingskeserif-rg.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-rg.woff2') format('woff2'), url('../fonts/berlingskeserif-rg.woff') format('woff'), url('../fonts/berlingskeserif-rg.ttf') format('truetype');
   font-weight: 300;
   font-style: regular;
 }
 @font-face {
-  font-family: 'BerlingskeTxt';
-  src: url('../fonts/berlingskeseriftx-bd.eot');
-  src: url('../fonts/berlingskeseriftx-bd.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeseriftx-bd.woff2') format('woff2'), url('../fonts/berlingskeseriftx-bd.woff') format('woff'), url('../fonts/berlingskeseriftx-bd.ttf') format('truetype');
+  font-family: 'Berlingske';
+  src: url('../fonts/berlingskeserif-bd.eot');
+  src: url('../fonts/berlingskeserif-bd.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-bd.woff2') format('woff2'), url('../fonts/berlingskeserif-bd.woff') format('woff'), url('../fonts/berlingskeserif-bd.ttf') format('truetype');
   font-weight: 600;
   font-style: regular;
 }
@@ -5978,6 +5978,10 @@ figcaption,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.header {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
 .site-header {
   margin-bottom: 10px;
 }
@@ -6231,7 +6235,7 @@ a.header-tool-icon:hover {
   text-transform: uppercase;
   padding: .5em 1em;
   font-size: 18px;
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   text-align: center;
   display: inline-block;
   position: relative;
@@ -6386,7 +6390,7 @@ ul.related li:before {
 }
 .teaser h2 {
   font-size: 15px;
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
 }
 .teaser footer {
@@ -6415,6 +6419,13 @@ ul.related li:before {
 .teaser .header a:hover {
   opacity: .8;
 }
+.teaser .external-href {
+  font-family: "Proxima", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+}
 .teaser .cat {
   color: #cc0066;
   text-transform: uppercase;
@@ -6437,7 +6448,7 @@ ul.related li:before {
 .teaser .logo-premium {
   background-color: #222;
   color: #fff;
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
   line-height: 1.2;
   padding: 0 .2em;
@@ -6622,6 +6633,9 @@ ul.related li:before {
 }
 .teaser-solid .header a:hover {
   opacity: .8;
+}
+.teaser-solid .external-href {
+  color: rgba(255, 255, 255, 0.5);
 }
 .teaser-solid .teaser-body {
   background: #333;
@@ -7071,7 +7085,7 @@ h1.page-header {
   font-size: 60px;
   font-weight: 600;
   margin-bottom: 30px;
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   text-align: center;
 }
 @media (max-width: 767px) {
@@ -7457,7 +7471,7 @@ a.btn-premium:after {
   color: #fff;
   line-height: 30px;
   padding: 0 1em;
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   -webkit-transition: background-color 0.1s ease;
   -o-transition: background-color 0.1s ease;
   transition: background-color 0.1s ease;
@@ -7498,7 +7512,7 @@ a.btn-premium:after {
 .section-header .logo-premium {
   background-color: #222;
   color: #fff;
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
   padding: 2px 5px;
   display: inline-block;
@@ -7511,13 +7525,13 @@ a.btn-premium:after {
   position: relative;
   border-top: 4px solid #333;
   padding-top: 10px;
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   margin-bottom: 5px;
 }
 .section-header-serif .logo-premium {
   background-color: #222;
   color: #fff;
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
   padding: 2px 5px;
   display: inline-block;
@@ -7614,7 +7628,7 @@ h1.deck-header {
 .section-header-sm .logo-premium {
   background-color: #222;
   color: #fff;
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
   padding: 2px 5px;
   display: inline-block;
@@ -7812,7 +7826,7 @@ h1.deck-header {
   overflow: hidden;
 }
 .article-related-chunk .header {
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   font-size: 17px;
 }
 .teaser-margin-bottom-0 {
@@ -8376,7 +8390,7 @@ h1.heading {
   color: #000;
   line-height: 1.2;
   margin: 0 0 10px;
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
 }
 @media (max-width: 991px) {
   h1.heading {
@@ -8441,7 +8455,7 @@ h1.heading {
 .article-content-stream .aside-header .logo-premium {
   background-color: #222;
   color: #fff;
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
   padding: 2px 5px;
   display: inline-block;
@@ -8450,7 +8464,7 @@ h1.heading {
   margin-bottom: 20px;
 }
 .article-content-stream .teaser .header {
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   font-size: 17px;
 }
 .aside-header-small {
@@ -9475,7 +9489,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 }
 .theme-container .theme-header {
   margin-top: 31px;
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
 }
 @media (max-width: 991px) {
   .theme-container .theme-header {
@@ -9501,7 +9515,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 }
 .theme-header-underline {
   margin-bottom: 20px;
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   position: relative;
   font-weight: 900;
 }
@@ -9614,7 +9628,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   z-index: 99;
   font-size: 3.5vw;
   color: #fff;
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
 }
 .theme-cover .theme-title:before {
@@ -9827,7 +9841,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   -webkit-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
   transition: all 0.1s ease;
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
 }
 .teaser-splash:hover .splash-img {
   -webkit-transform: scale(1);
@@ -9933,7 +9947,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   line-height: 1.1;
   display: inline;
   font-weight: 600;
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
 }
 .theme-splash-wide .teaser-body {
   position: absolute;
@@ -9985,7 +9999,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   font-weight: 200;
 }
 .footer-marketing strong {
-  font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   font-size: 30px;
 }
 .footer-marketing a {
@@ -9996,7 +10010,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 }
 @media (max-width: 767px) {
   .footer-marketing strong {
-    font-family: BerlingskeTxt, Georgia, "Times New Roman", Times, serif;
+    font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
     font-size: 20px;
   }
 }
