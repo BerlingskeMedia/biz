@@ -70,15 +70,7 @@ $('.toggle-caption').on('click',function(){
   $(this).closest('.article-slider').toggleClass('show-caption');
 })
 
-// $(window).scroll(function() {
-//     $('.theme-cover').each(function(){
-//     var imagePos = $(this).offset().top;
-
-//     var topOfWindow = $(window).scrollTop();
-//       if (imagePos < topOfWindow+800) {
-//         $(this).addClass("in-screen");
-//       }
-//     });
-//   });
-
+$('.btn-closecookie').on('click', function(){
+  $(this).closest('.cookiewarning').remove();
+})
 });

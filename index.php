@@ -168,6 +168,7 @@ li ul {
           <li class="d"><a href="/dist/magazine.php">Business Magazine</a></li>
           <li class="a"><a href="#">Image galleries - Section</a></li>
           <li class="a"><a href="#">Image galleries - Article</a></li>
+          <li class="c"><a href="/dist/assets-cookiewarning.php">Cookiewarning</a></li>
         </ul>
 
         <h4>Business <span class="logo-premium"><span>Premium</span></span></h4>
