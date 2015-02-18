@@ -53,7 +53,7 @@
 
 
 <? while (dumb_luck("20")): ?>
-<article class="teaser teaser-image-left teaser-premium teaser-divider header-25 ">
+<article class="teaser teaser-section header-20 teaser-border-bottom ">
   
   <figure class="teaser-img">
     <a href="article-premium.php"><img src="<? dummy("image@200x,16:9") ?>" width="" height="" alt="" /></a>
