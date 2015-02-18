@@ -2624,7 +2624,7 @@ fieldset[disabled] .btn-border.active {
 }
 .btn-success {
   color: #ffffff;
-  background-color: #5cb85c;
+  background-color: #339900;
   -webkit-transition: background-color 0.2s ease;
   -o-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
@@ -2636,7 +2636,7 @@ fieldset[disabled] .btn-border.active {
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
   color: #ffffff;
-  background-color: #4cae4c;
+  background-color: #2b8000;
   outline: none!important;
 }
 .btn-success:active,
@@ -2663,10 +2663,10 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #5cb85c;
+  background-color: #339900;
 }
 .btn-success .badge {
-  color: #5cb85c;
+  color: #339900;
   background-color: #ffffff;
 }
 .btn-danger {
@@ -10161,10 +10161,13 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 20px 0;
+  padding: 50px 0 70px;
   background: #fff;
-  min-height: 400px;
   overflow: visible;
+}
+.article-metered img {
+  margin-top: 20px;
+  margin: 20px auto 0 auto;
 }
 .article-metered .branding {
   background: #333;
@@ -10191,6 +10194,9 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   font-size: 45px;
   font-weight: 600;
 }
+.article-metered .payheader2 .btn {
+  vertical-align: text-bottom;
+}
 .article-metered .payheader {
   font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
 }
@@ -10213,6 +10219,18 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   left: 0;
   right: 0;
 }
+@media (max-width: 991px) {
+  .article-metered {
+    text-align: center;
+  }
+  .article-metered h1 {
+    font-size: 200%;
+  }
+  .article-metered img {
+    margin-top: 0;
+    max-height: 140px;
+  }
+}
 @media (max-width: 767px) {
   .article-metered {
     overflow: auto;
@@ -10224,15 +10242,32 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
     top: 20px;
     bottom: 20px;
     border-radius: 5px;
+    text-align: center;
   }
-  .article-metered .branding {
-    display: none;
+  .article-metered .payheader2 {
+    font-size: 15px;
+    margin-top: 10px;
   }
-  .article-metered h1 {
-    font-size: 200%;
+  .article-metered .payheader2 .line-4 {
+    font-size: 25px;
   }
-  .article-metered:before {
-    display: none;
+  .article-metered h1 + p {
+    font-size: 15px;
+  }
+  .article-metered p {
+    font-size: 12px;
+  }
+  .article-metered .small {
+    font-size: 11px;
+  }
+  .article-metered img {
+    margin-top: 0;
+    max-height: 120px;
+  }
+  .article-metered .btn {
+    display: block;
+    margin: 5px 0 0 0;
+    width: 100%;
   }
 }
 .module {
@@ -10360,7 +10395,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   height: auto;
 }
 .color-green {
-  color: #5cb85c;
+  color: #339900;
 }
 .tag-breaking {
   background: #ffdb5e;

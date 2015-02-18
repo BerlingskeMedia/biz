@@ -3702,10 +3702,14 @@ h1.heading {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	padding: 20px 0;
+	padding: 50px 0 70px;
 	background: #fff;
-	min-height: 400px;
 	overflow: visible;
+
+	img {
+		margin-top: 20px;
+		margin: 20px auto 0 auto;
+	}
 	.branding {
 		background: #333;
 		width: 100%;
@@ -3731,6 +3735,9 @@ h1.heading {
 			font-size: 45px;
 			font-weight: 600;
 		}
+		.btn {
+			vertical-align: text-bottom;
+		}
 	}
 
 	.payheader {
@@ -3752,13 +3759,22 @@ h1.heading {
 		right: 0;
 	}
 
-	@media (max-width: @screen-xs-max) {
-		.branding {
-			display: none;
-		}
+	@media (max-width: @screen-sm-max) {
+		text-align:center;
 		h1 {
 			font-size: 200%;
 		}
+		
+		&:before {
+		// 	display: none
+		}
+		img {
+			margin-top: 0;
+			max-height: 140px
+		}
+	}
+	
+	@media (max-width: @screen-xs-max) {
 		overflow: auto;
 		padding: 20px;
 		position: absolute;
@@ -3768,9 +3784,34 @@ h1.heading {
 		top: 20px;
 		bottom: 20px;
 		border-radius: 5px;
-		&:before {
-			display: none
+
+		text-align: center;
+		.payheader2 {
+			font-size: 15px;
+			margin-top: 10px;
+			.line-4 {
+				font-size: 25px;
+			}
+		}
+		h1 + p {
+			font-size: 15px;
+		}
+		p {
+			font-size: 12px;
+		}
+		.small {
+			font-size: 11px;
+		}
+		img {
+			margin-top: 0;
+			max-height: 120px
+		}
+		.btn {
+			display: block;
+			margin: 5px 0 0 0;
+			width: 100%;
 		}
 	}
 }
+
 
