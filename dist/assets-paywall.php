@@ -29,16 +29,24 @@
   
   <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    
 
 
  <? if (dumb_luck("100%")): ?>
+<div class="col-md-3"></div>
+<div class="col-md-9">
+ <p>Du har ikke flere gratis artikler tilbage</p>
 
- Du har ikke flere gratis artikler tilbage
+<h1 class="payheader2">
+<span class="line-3">Tegn abonnement på både Berlingske.dk og Business.dk</span>
+<span class="line-4">Første måned fra kr. 29,-</span>
+</h1>
 
+<p><button class="btn btn-success btn-lg">Se tilbud <i class="fa fa-caret-right"></i></button>  eller <strong><a href="#" data-toggle="modal" data-target="#modal-login">log ind</a></strong> for at fortsætte.</p>
+</div>
 <? else: ?>
-  
-  <h1>
+  <div class="col-md-12">
+  <h1 class="payheader">
     <span class="line-1">Kære læser</span>
     <span class="line-2">Vil du læse videre?</span>
   </h1>
@@ -47,10 +55,10 @@
   <p><button class="btn btn-primary btn-sm">Køb abonnement <i class="fa fa-caret-right"></i></button>  eller <strong><a href="#" data-toggle="modal" data-target="#modal-login">log ind</a></strong> for at fortsætte.</p>
   <p class="small">Brug for hjælp? Ring til Kundeservice på 33 75 36 36 mandag - fredag kl. 08 - 17.</p>
 
-
+</div>
 <? endif ?>
 
-    </div>
+    
     
   </div>
 </div>

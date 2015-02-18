@@ -98,4 +98,5 @@ Annoncesalg
 	</div>
 
 </footer>
-<?php include('/inc/scripts.php'); ?>
+
+<?php include('inc/scripts.php'); ?>

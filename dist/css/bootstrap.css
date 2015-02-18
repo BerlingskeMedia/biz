@@ -10161,6 +10161,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   bottom: 0;
   left: 0;
   right: 0;
+  padding: 20px 0;
   background: #fff;
   min-height: 400px;
   overflow: visible;
@@ -10181,13 +10182,22 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   color: #111;
   display: inline-block;
 }
-.article-metered h1 {
+.article-metered .payheader2 {
+  font-size: 25px;
+  font-weight: 300;
+}
+.article-metered .payheader2 .line-4 {
+  display: block;
+  font-size: 45px;
+  font-weight: 600;
+}
+.article-metered .payheader {
   font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
 }
-.article-metered h1 span {
+.article-metered .payheader span {
   display: block;
 }
-.article-metered h1 .line-2 {
+.article-metered .payheader .line-2 {
   font-size: 160%;
 }
 .article-metered:before {
