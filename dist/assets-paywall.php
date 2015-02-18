@@ -43,7 +43,7 @@
  <? if (dumb_luck("100%")): ?>
 
 <div class="col-sm-12">
-  <p class="hidden-md hidden-lg text-center">Du har ikke flere gratis artikler tilbage</p>
+  <p class="text-center">Du har ikke flere gratis artikler tilbage.</p>
 </div>
 
 
@@ -53,8 +53,7 @@
 
 
 <div class="col-md-9 col-sm-12">
- 
-<p class="hidden-xs hidden-sm">Du har ikke flere gratis artikler tilbage</p>
+
 <h1 class="payheader2">
 <span class="line-3">Tegn abonnement på Berlingske.dk og Business.dk</span>
 <span class="line-4">Første måned fra kr. 29,- <a href="http://b.kundeunivers.dk/koeb-abonnement/b?r=Yml6X3BheXdhbGw=&return_url=http://www.business.dk&callback_url=http://login.berlingskemedia.net/sso/server/multisite-update/biz&ns_campaign=_Kundeunivers_abonnement_berlingske&ns_mchannel=&ns_source=Abonnement_link_bus&ns_linkname=link_top&ns_fee=&sa=D&usg=ALhdy2-kiZDD7y8npyIWBt91N-LT6BJ85w"  class="btn btn-success btn-lg" >Se tilbud <i class="fa fa-caret-right"></i></a></span>
