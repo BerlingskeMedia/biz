@@ -3689,8 +3689,78 @@ h1.heading {
 		color: #00aeef;
 	}
 }
-.iframe-jobindex {
-	height: 300px;
-	border: 0;
-	overflow: auto;
+
+
+.show-paywall {
+	overflow: hidden;
+	@media (max-width: @screen-xs-max) {
+		overflow: auto;
+	}
 }
+.article-metered {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	min-height: 400px;
+	overflow: visible;
+	.branding {
+		background: #333;
+		width: 100%;
+		color: #fff;
+		font-family: @font-family-serif;
+		font-size: 30px;
+		font-weight: 600;
+	}
+	.business-brand {
+		color: #fff;
+		text-transform: uppercase;
+		background: @biz-pink;
+		padding: 0 15px;
+		color: #111;
+		display: inline-block;
+
+	}
+
+	h1 {
+		font-family: @font-family-serif;
+		span {
+			display: block;
+		}
+		.line-2 {
+			font-size: 160%;
+		}
+	}
+	&:before {
+		content: '';
+		height: 50%;
+		#gradient .vertical(rgba(51,51,51,.0); rgba(51,51,51,.6);  0%; 100%);
+		position: absolute;
+		top: -50%;
+		left: 0;
+		right: 0;
+	}
+
+	@media (max-width: @screen-xs-max) {
+		.branding {
+			display: none;
+		}
+		h1 {
+			font-size: 200%;
+		}
+		overflow: auto;
+		padding: 20px;
+		position: absolute;
+		box-shadow: 0 0 10px rgba(0,0,0,.6);
+		left: 20px;
+		right: 20px;
+		top: 20px;
+		bottom: 20px;
+		border-radius: 5px;
+		&:before {
+			display: none
+		}
+	}
+}
+

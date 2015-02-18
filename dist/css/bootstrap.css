@@ -10148,10 +10148,82 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 .browsehappy a {
   color: #00aeef;
 }
-.iframe-jobindex {
-  height: 300px;
-  border: 0;
-  overflow: auto;
+.show-paywall {
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .show-paywall {
+    overflow: auto;
+  }
+}
+.article-metered {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  min-height: 400px;
+  overflow: visible;
+}
+.article-metered .branding {
+  background: #333;
+  width: 100%;
+  color: #fff;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+.article-metered .business-brand {
+  color: #fff;
+  text-transform: uppercase;
+  background: #fadcd2;
+  padding: 0 15px;
+  color: #111;
+  display: inline-block;
+}
+.article-metered h1 {
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
+}
+.article-metered h1 span {
+  display: block;
+}
+.article-metered h1 .line-2 {
+  font-size: 160%;
+}
+.article-metered:before {
+  content: '';
+  height: 50%;
+  background-image: -webkit-linear-gradient(top, rgba(51, 51, 51, 0) 0%, rgba(51, 51, 51, 0.6) 100%);
+  background-image: -o-linear-gradient(top, rgba(51, 51, 51, 0) 0%, rgba(51, 51, 51, 0.6) 100%);
+  background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0) 0%, rgba(51, 51, 51, 0.6) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00333333', endColorstr='#99333333', GradientType=0);
+  position: absolute;
+  top: -50%;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 767px) {
+  .article-metered {
+    overflow: auto;
+    padding: 20px;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    border-radius: 5px;
+  }
+  .article-metered .branding {
+    display: none;
+  }
+  .article-metered h1 {
+    font-size: 200%;
+  }
+  .article-metered:before {
+    display: none;
+  }
 }
 .module {
   margin-bottom: 50px;
