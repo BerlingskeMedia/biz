@@ -744,7 +744,7 @@
             <h1 class="theme-header-underline"><span>The Business Magazine</span></h1>
 
 
-            <div class="row ">
+            <!-- <div class="row ">
               <div class="col-md-12 module-sm">
               <nav class="nav-responsive">
               <button class="nav-toggle btn btn-border ">Tools <i class="fa fa-bars"></i></button>
@@ -756,7 +756,7 @@
                 </ul>
                 </nav>
               </div>
-            </div>
+            </div> -->
 
 
 

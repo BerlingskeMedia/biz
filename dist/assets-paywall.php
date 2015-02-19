@@ -40,7 +40,7 @@
     
 
 
- <? if (dumb_luck("100%")): ?>
+ <? if (dumb_luck("0%")): ?>
 
 <div class="col-sm-12">
   <p class="text-center">Du har ikke flere gratis artikler tilbage.</p>
@@ -56,7 +56,7 @@
 
 <h1 class="payheader2">
 <span class="line-3">Tegn abonnement på Berlingske.dk og Business.dk</span>
-<span class="line-4">Første måned fra kr. 29,- <a href="http://b.kundeunivers.dk/koeb-abonnement/b?r=Yml6X3BheXdhbGw=&return_url=http://www.business.dk&callback_url=http://login.berlingskemedia.net/sso/server/multisite-update/biz&ns_campaign=_Kundeunivers_abonnement_berlingske&ns_mchannel=&ns_source=Abonnement_link_bus&ns_linkname=link_top&ns_fee=&sa=D&usg=ALhdy2-kiZDD7y8npyIWBt91N-LT6BJ85w"  class="btn btn-success btn-lg" >Se tilbud <i class="fa fa-caret-right"></i></a></span>
+<span class="line-4">Første måned fra kr. 29,- <a href="http://b.kundeunivers.dk/koeb-abonnement/b?ns_campaign=_Kundeunivers_abonnement_berlingske&ns_mchannel=&ns_source=Paywall_koeb_bdk&ns_linkname=popup_business&ns_fee="  class="btn btn-success btn-lg" >Se tilbud <i class="fa fa-caret-right"></i></a></span>
 </h1>
 
 
@@ -67,15 +67,25 @@
 </div>
 
 <? else: ?>
-  <div class="col-md-12">
-  <h1 class="payheader">
-    <span class="line-1">Kære læser</span>
-    <span class="line-2">Vil du læse videre?</span>
-  </h1>
 
-  <p>Du har læst 10 gratis artikler på B.dk inden for de seneste 30 dage. Vi håber, du har nydt dem.</p>
-  <p><button class="btn btn-primary btn-sm">Køb abonnement <i class="fa fa-caret-right"></i></button>  eller <strong><a href="#" data-toggle="modal" data-target="#modal-login">log ind</a></strong> for at fortsætte.</p>
-  <p class="small">Brug for hjælp? Ring til Kundeservice på 33 75 36 36 mandag - fredag kl. 08 - 17.</p>
+<div class="col-md-3 col-sm-12">
+  <figure><img src="images/paywall-desktop.jpg" class="img-responsive"></figure>
+</div>
+
+
+<div class="col-md-9 col-sm-12">
+
+<h1 class="payheader">
+  <span class="line-1">Kære læser</span>
+    <span class="line-1">Vil du læse videre?</span>
+</h1>
+<p>Du har læst 10 gratis artikler på B.dk inden for de seneste 30 dage. Vi håber, du har nydt dem.</p>
+<p><strong>Få ubegrænset adgang til B.dk og Business.dk fra 29 kr. pr. md.</strong> <a href="http://b.kundeunivers.dk/koeb-abonnement/b?ns_campaign=_Kundeunivers_abonnement_berlingske&ns_mchannel=&ns_source=Paywall_koeb_bdk&ns_linkname=popup_business&ns_fee=" target="_blank" class="btn btn-primary btn-sm">Køb abonnement <i class="fa fa-caret-right"></i></a></p>
+
+
+ <p>Allerede abonnent? <strong><a href="http://b.kundeunivers.dk/allerede-abonnent?ns_campaign=_Kundeunivers_login_berlingske&ns_mchannel=&ns_source=Paywall_login_bdk&ns_linkname=popup_business&ns_fee=" data-toggle="modal" data-target="#modal-login">Få gratis adgang</a></strong>.</p>
+
+ <p class="small">Brug for hjælp? Ring til kundeservice på 3375 3636 mandag-fredag kl. 8-17.</p>
 
 </div>
 <? endif ?>
