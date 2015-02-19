@@ -156,7 +156,7 @@ li ul {
           <li class="d"><a href="/dist/author.php">Staff - Author</a><date>Feb. 10th</date></li>
           <li class="a"><a href="#">Header</a> </li>
           <li class="a"><a href="#">Footer</a> <date>Feb. 20th</date></li>
-          <li class="b"><a href="/dist/assets-paywall.php">Paywall</a> <date>Feb. 20th</date></li>
+          <li class="c"><a href="/dist/assets-paywall.php">Paywall</a> <date>Feb. 20th</date></li>
           <li class="a"><a href="#">Bempay</a> </li>
           <li class="d"><a href="/dist/404.php">404</a> <date>Feb. 12th</date></li>
           <li class="d"><a href="/dist/search-result.php">Search</a> <date>Feb. 12th</date></li>
@@ -164,7 +164,7 @@ li ul {
           <li class="a"><a href="#">Business TV - Section</a><date>Feb. 14th</date></li>
           <li class="b"><a href="#">Business TV - Article</a><date>Feb. 14th</date></li>
           <li class="a"><a href="#">Jobindex overview</a></li>
-          <li class="a"><a href="#">"Brevkassen"</a></li>
+          <li class="b"><a href="./dist/section-askbusiness.php">"Ask Business"</a></li>
           <li class="a"><a href="#">Events</a> <date>Feb. 14th</date></li>
           <li class="d"><a href="/dist/magazine.php">Business Magazine</a></li>
           <li class="a"><a href="#">Image galleries - Section</a></li>

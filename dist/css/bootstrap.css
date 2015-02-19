@@ -8035,6 +8035,12 @@ h1.deck-header {
   border-radius: 50%;
   margin: 0 auto;
 }
+.teaser-sans .header {
+  font-family: "Proxima", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.teaser-small p {
+  font-size: 87%;
+}
 .teaser .sitename {
   color: rgba(0, 0, 0, 0.6);
 }
