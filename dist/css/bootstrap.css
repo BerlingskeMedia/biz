@@ -9561,6 +9561,12 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
     clear: left;
   }
 }
+.flex-2-2-2 li {
+  display: block;
+}
+.flex-2-2-2 li:nth-child(odd) {
+  clear: left;
+}
 .table-stocks {
   font-size: 12px;
 }

@@ -64,13 +64,24 @@ $('.image-carousel').slick({
     slidesToShow: 1,
     lazyLoad: 'ondemand',
     slidesToScroll: 1
-  });
+});
 
 $('.toggle-caption').on('click',function(){
   $(this).closest('.article-slider').toggleClass('show-caption');
 })
 
+// This is a test code just to hide the message. Not a real cookie warning....
 $('.btn-closecookie').on('click', function(){
   $(this).closest('.cookiewarning').remove();
 })
+
+// Business Events image carousel
+$('.events-image-carousel').slick({
+    infinite: true,
+    slidesToShow: 4,
+    lazyLoad: 'ondemand',
+    slidesToScroll: 4
+});
+
+
 });

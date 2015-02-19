@@ -41,218 +41,154 @@
     <div class="row">
     <div class="col-md-12">
       
-          <h1 class="deck-header">Brevkassen</h1>
+          <h1 class="deck-header">Events</h1>
       
       
     </div>
       
       <div class="col-md-8 col-sm-12 module-sm">
+      <h1 class="section-header">Kommende events</h1>
         <div class="row">
-        <? while (dumb_luck("2")): ?>
+        <ul class="list-clean flex-2-2-2">
+        <? while (dumb_luck("6")): ?>
           
-            <div class="col-md-6 col-sm-6">
+            <li class="col-md-6 col-sm-6 col-xs-6">
               <article class="teaser header-20 teaser-margin-bottom-0 teaser-sx-500 module-sm">
                 <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@500x,16:9") ?>" width="" height="" alt="" /></a></figure>
                 <div class="teaser-body">
                 <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
                 <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></a> </h2>
                 
+                <p><? dummy("text@teaser") ?></p>  
+
                 </div>
               </article>
-            </div>
+            </li>
           
         <? endwhile ?>
-        </div>
+        </ul>
+        </div><!-- row -->
+
+        
+
+
+  <h1 class="section-header">TV fra Business Events <a href="#" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a></h1>
+
+
+   <div class=" row">
+
+ <ul class="list-clean flex-3-2-2">
+    <? while (dumb_luck("3")): ?>
+      <li class="col-md-4 col-sm-6 col-xs-6">
+        <article class="teaser teaser-video">
+          <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
+          <? dummy("text@biz-headertags") ?>
+          <h2 class="header"><a href="article.php">
+          <? dummy("text@headline") ?></a></h2>
+        </article>
+        </li>
+      <? endwhile ?>
+    </ul>
+
+    </div><!-- row -->
+
+
+
+
+      <h1 class="section-header">Afholdte events</h1>
         <div class="row">
-        <div class="col-md-12">
-        <article class="teaser teaser-section header-20 teaser-border-bottom teaser-border-top">
-                <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
+        <ul class="list-clean flex-2-2-2">
+        <? while (dumb_luck("6")): ?>
+          
+            <li class="col-md-6 col-sm-6 col-xs-6">
+              <article class="teaser header-20 teaser-margin-bottom-0 teaser-sx-500 module-sm">
+                <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@500x,16:9") ?>" width="" height="" alt="" /></a></figure>
                 <div class="teaser-body">
                 <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
                 <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></a> </h2>
                 
+                <p><? dummy("text@teaser") ?></p>  
+
                 </div>
               </article>
-          <? while (dumb_luck("10")): ?>
-          
-              <article class="teaser teaser-section header-20 teaser-border-bottom">
-                <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
-                <div class="teaser-body">
-                <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-                <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></a> </h2>
-                
-                </div>
-              </article>
-            
+            </li>
           
         <? endwhile ?>
-        </div>
+        </ul>
         </div><!-- row -->
 
-        <div class="row">
+        
+
+
+  <h1 class="section-header">Faste Events</h1>
+
+
+   <div class=" row">
+
+ <ul class="list-clean flex-3-2-2">
+    
+      <li class="col-md-4 col-sm-6 col-xs-6">
+        <article class="teaser ">
+          <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
+          <? dummy("text@biz-headertags") ?>
+          <h2 class="header"><a href="article.php">
+          Talent 100-konferencen</a></h2>
+        </article>
+        </li>
+
+        <li class="col-md-4 col-sm-6 col-xs-6">
+        <article class="teaser ">
+          <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
+          <? dummy("text@biz-headertags") ?>
+          <h2 class="header"><a href="article.php">
+          Revisortopmøde</a></h2>
+        </article>
+        </li>
+
+        <li class="col-md-4 col-sm-6 col-xs-6">
+        <article class="teaser ">
+          <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
+          <? dummy("text@biz-headertags") ?>
+          <h2 class="header"><a href="article.php">
+          Årets CFO 2014</a></h2>
+        </article>
+        </li>
+    
+
+    
+    
+    </ul>
+
+    </div><!-- row -->
+
+
+
+  <h1 class="section-header">Talent 100 netværket 2014</h1>
+
+
+   <div class="row">
+
+ <ul class="list-clean flex-3-2-2">
+    
+    <? while (dumb_luck("15")): ?>
+      <li class="col-md-4 col-sm-6 col-xs-6">
+        <article class="teaser ">
+          <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image/!author@200x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
           
-        <div class="col-sm-6">
-          <section class="module-sm">
-            <h1 class="section-header">Arv og testamente <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></h1>
-            <ul class="list list-light list-condenced list-xs">
-              <? while (dumb_luck("5")): ?>
-              <li class="teaser">
-                <div class="teaer-body">
-                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                </div>
-              </li>
-              <? endwhile ?>
-            </ul>
-          </section>
-        </div>
-        <div class="col-sm-6">
-          <section class="module-sm">
-            <h1 class="section-header">Skilsmisse <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></h1>
-            <ul class="list list-light list-condenced list-xs">
-              <? while (dumb_luck("5")): ?>
-              <li class="teaser">
-                <div class="teaer-body">
-                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                </div>
-              </li>
-              <? endwhile ?>
-            </ul>
-          </section>
-        </div>
+          <h2 class="header"><a href="article.php">
+          <? dummy("text@author") ?></a></h2>
+        </article>
+        </li>
+<? endwhile ?>
+        
+    
 
-        </div><!-- row -->
+    
+    
+    </ul>
 
-        <div class="row">
-          
-        <div class="col-sm-6">
-          <section class="module-sm">
-            <h1 class="section-header">Ægtepagt og særeje <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></h1>
-            <ul class="list list-light list-condenced list-xs">
-              <? while (dumb_luck("5")): ?>
-              <li class="teaser">
-                <div class="teaer-body">
-                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                </div>
-              </li>
-              <? endwhile ?>
-            </ul>
-          </section>
-        </div>
-        <div class="col-sm-6">
-          <section class="module-sm">
-            <h1 class="section-header">Ugifte samlevende <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></h1>
-            <ul class="list list-light list-condenced list-xs">
-              <? while (dumb_luck("5")): ?>
-              <li class="teaser">
-                <div class="teaer-body">
-                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                </div>
-              </li>
-              <? endwhile ?>
-            </ul>
-          </section>
-        </div>
+    </div><!-- row -->
 
-        </div><!-- row -->
-
-          <div class="row">
-          
-        <div class="col-sm-6">
-          <section class="module-sm">
-            <h1 class="section-header">Bolig <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></h1>
-            <ul class="list list-light list-condenced list-xs">
-              <? while (dumb_luck("5")): ?>
-              <li class="teaser">
-                <div class="teaer-body">
-                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                </div>
-              </li>
-              <? endwhile ?>
-            </ul>
-          </section>
-        </div>
-        <div class="col-sm-6">
-          <section class="module-sm">
-            <h1 class="section-header">Skat og pension <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></h1>
-            <ul class="list list-light list-condenced list-xs">
-              <? while (dumb_luck("5")): ?>
-              <li class="teaser">
-                <div class="teaer-body">
-                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                </div>
-              </li>
-              <? endwhile ?>
-            </ul>
-          </section>
-        </div>
-
-        </div><!-- row -->
-
-        <div class="row">
-          
-        <div class="col-sm-6">
-          <section class="module-sm">
-            <h1 class="section-header">Gaver og lån <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></h1>
-            <ul class="list list-light list-condenced list-xs">
-              <? while (dumb_luck("5")): ?>
-              <li class="teaser">
-                <div class="teaer-body">
-                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                </div>
-              </li>
-              <? endwhile ?>
-            </ul>
-          </section>
-        </div>
-        <div class="col-sm-6">
-          <section class="module-sm">
-            <h1 class="section-header">Naboer <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></h1>
-            <ul class="list list-light list-condenced list-xs">
-              <? while (dumb_luck("5")): ?>
-              <li class="teaser">
-                <div class="teaer-body">
-                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                </div>
-              </li>
-              <? endwhile ?>
-            </ul>
-          </section>
-        </div>
-
-        </div><!-- row -->
-
-        <div class="row">
-          
-        <div class="col-sm-6">
-          <section class="module-sm">
-            <h1 class="section-header">Bank og gæld <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></h1>
-            <ul class="list list-light list-condenced list-xs">
-              <? while (dumb_luck("5")): ?>
-              <li class="teaser">
-                <div class="teaer-body">
-                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                </div>
-              </li>
-              <? endwhile ?>
-            </ul>
-          </section>
-        </div>
-        <div class="col-sm-6">
-          <section class="module-sm">
-            <h1 class="section-header">Børn <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></h1>
-            <ul class="list list-light list-condenced list-xs">
-              <? while (dumb_luck("5")): ?>
-              <li class="teaser">
-                <div class="teaer-body">
-                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                </div>
-              </li>
-              <? endwhile ?>
-            </ul>
-          </section>
-        </div>
-
-        </div><!-- row -->
 
 
         
@@ -266,87 +202,30 @@
       </div>
         
 
+
       <div class="row">
       <div class="col-md-12 col-sm-6">
 
 
       <section class="module-sm">
-        <h1 class="section-header">Brevkassen</h1>
+        <h1 class="section-header">Business Events</h1>
 
-        <p class="small">Få svar på spørgsmål om blandt andet arv, testamenter, skilsmisse, skat, boligkøb, jura og økonomi.</p>
-        <p class="small">Alle spørgsmål anonymiseres. Det er desværre ikke muligt at svare på alle henvendelser. Svar gives i Brevkassen på <a href="http://business.dk/brevkassen">business.dk/brevkassen</a> samt i Berlingske Business om lørdagen - svar gives ikke privat. Berlingske Media forbeholder sig ret til at offentliggøre spørgsmål og svar i alle husets medier.</p>
-        <p class="small">Skriv til <a href="mailto:brevkassen@business.dk">brevkassen@business.dk</a></p>
-
-      </section>
-      </div>
-      <div class="col-md-12 col-sm-6">
-      <section class="module-sm">
-        <h1 class="section-header">
-          Brevkassens eksperter
-        </h1>
-        <teaser class=" teaser teaser-round teaser-sans teaser-small" >
-          <figure class="teaser-img"><img src="./images/eksperter/Viggo_Bækgaard.jpg"></figure>
-        <h2 class="header text-center">Viggo Bækgaard</h2>
-        <p>Advokat (H) og mediator, Forum Advokater i Roskilde. Beskæftiger sig med bl.a. arv og testamenter, ægteskabssager, samvær og forældremyndighed, bodeling og ægtepagter.</p>
-        </teaser>
-
-        <teaser class=" teaser teaser-round teaser-sans teaser-small" >
-          <figure class="teaser-img"><img src="./images/eksperter/Erik_Øvlisen.jpg"></figure>
-        <h2 class="header text-center">Erik Øvlisen</h2>
-        <p>Advokat (H), Forum Advokater i Roskilde. Beskæftiger sig med bl.a. dansk og international skatteret, bobehandling og erhvervsret.</p>
-        </teaser>
-
-        <teaser class=" teaser teaser-round teaser-sans teaser-small">
-          <figure class="teaser-img"><img src="./images/eksperter/maria_larsen.jpg"></figure>
-        <h2 class="header text-center">Maria Larsen</h2>
-        <p>Advokatfuldmægtig, Forum Advokater i Roskilde. Beskæftiger sig med bl.a. arv og testamenter, ægteskabssager, bodeling, ægtepagter samt samvær og forældremyndighed.</p>
-        </teaser>
-
-        <teaser class=" teaser teaser-round teaser-sans teaser-small">
-          <figure class="teaser-img"><img src="./images/eksperter/allan_ohms.jpg"></figure>
-        <h2 class="header text-center">Allan Ohms</h2>
-        <p>Advokat (H) og mediator, Forum Advokater i Roskilde. Beskæftiger sig med bl.a. arv og testamenter, ægtepagter, bobehandling, mediation og erhvervsret.</p>
-        </teaser>
-
-        <p class="small">Læs mere på <a href="http://www.forumadvokater.dk/" target="_blank">Forumadvokater.dk</a>
+        <p class="small">Business Events udbyder aktuelle arrangementer, der hjælper den erhvervsaktive beslutningstager til at få succes i forretningslivet i form af ny viden, cases, værktøjer og inspiration. Eksempler på store årlige events er Revisor-topmødet, Årets CFO og Talent 100-konferencen. </p>
+        <p class="small">Business Events bygger på partnerskaber og stærke kunderelationer.</p>
+        <p class="small">Som partner opnår man flere fordele ved at samarbejde med Berlingske end andre mediehuse, fordi vi supplerer eventsamarbejdet med en bred vifte af kommercielle tilbud.</p>
 
         
 
       </section>
       </div>
-
-      <div class="col-md-12">
-      <div class="row">
-         <section class="col-md-12 col-sm-6">
-            <div class="border-bottom">
-              <p><strong><i class="fa fa-mobile"></i> Tilmeld Breaking News SMS</strong></p>
-          <div class="row">
-            <div class="col-sm-9 col-xs-10">
-            <form class="form-signup">
-            <div class="form-group form-oneline-alt">
-              <? if (dumb_luck("50%")): ?>
-            <input type="email" class="form-control input-sm form-underline" placeholder="Email" value="20616768" aria-describedby="sizing-addon3">
-            <? else: ?>
-            <input type="email" class="form-control input-sm form-underline" placeholder="Indtast mobilnr." aria-describedby="sizing-addon3">
-            <? endif ?> 
-            <button class="btn btn-sm btn-primary btn-sm ">OK</button>
-            </div>
-            </form>
-            </div>
-
-          </div>
-          
-          
-          </div>
-        </section>
-
-
-          
-          <section class="col-md-12 col-sm-6">
-          <div class="module-sm">
-              <p><strong>
-              <i class="fa fa-envelope"></i> Tilmeld Business.dk nyhedsbrev</strong></p>
-            <div class="row">
+      <div class="col-md-12 col-sm-6">
+      
+<section class="module-sm">
+<h1 class="section-header">Nyhedsbrev</h1>
+<form class="form-inline">
+<div class="form-group">
+ 
+ <div class="row">
             <form class="form-signup ">
            <div class="col-sm-9 col-xs-10">
             <div class="form-group form-oneline-alt ">
@@ -362,12 +241,15 @@
 
           </form>
           </div>
-           </div>
-          </section>
+ <p class="small help-block">Tilmeld dig Business Events' nyhedsbrev og få tilsendt tilbud om nye arrangementer.</p>
+</div>
+</form>
+</section>
 
-          </div>
 
       </div>
+
+      
 
       <div class="col-md-12 col-sm-6">
          <section class="module-sm">
