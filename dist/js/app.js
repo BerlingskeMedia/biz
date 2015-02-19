@@ -99,6 +99,16 @@ var activityIndicatorOn = function()
       {
         $( '#imagelightbox-overlay' ).remove();
       },
+// CLOSE BUTTON
+
+      closeButtonOn = function( instance )
+      {
+        $( '<button type="button" id="imagelightbox-close" title="Close"></button>' ).appendTo( 'body' ).on( 'click touchend', function(){ $( this ).remove(); instance.quitImageLightbox(); return false; });
+      },
+      closeButtonOff = function()
+      {
+        $( '#imagelightbox-close' ).remove();
+      },
 
 // CAPTION
 
@@ -156,8 +166,8 @@ var instanceG = $( selectorG ).imageLightbox(
   // onStart:    function() { overlayOn(); closeButtonOn( instanceF ); arrowsOn( instanceF, selectorF ); },
   //     onEnd:      function() { overlayOff(); captionOff(); closeButtonOff(); arrowsOff(); activityIndicatorOff(); },
 
-  onStart:    function(){ overlayOn(); arrowsOn( instanceG, selectorG ); },
-  onEnd:      function(){ captionOff(); overlayOff(); arrowsOff(); activityIndicatorOff(); },
+  onStart:    function(){ overlayOn(); arrowsOn( instanceG, selectorG ); closeButtonOn( instanceG ) },
+  onEnd:      function(){ captionOff(); overlayOff(); arrowsOff(); activityIndicatorOff(); closeButtonOff();},
   onLoadStart:  function(){ captionOff(); activityIndicatorOn(); },
   onLoadEnd:    function(){ captionOn(); $( '.imagelightbox-arrow' ).css( 'display', 'block' ); activityIndicatorOff(); }
 });

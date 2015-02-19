@@ -166,10 +166,10 @@ li ul {
           <li class="a"><a href="#">Jobindex overview</a></li>
           <li class="d"><a href="./dist/section-askbusiness.php">"Ask Business"</a></li>
           <li class="c"><a href="./dist/section-events.php">Events</a> <date>Feb. 14th</date></li>
-          <li class="d"><a href="/dist/magazine.php">Business Magazine</a></li>
+          <li class="d"><a href="./dist/magazine.php">Business Magazine</a></li>
           <li class="a"><a href="#">Image galleries - Section</a></li>
-          <li class="a"><a href="#">Image galleries - Article</a></li>
-          <li class="d"><a href="/dist/assets-cookiewarning.php">Cookiewarning</a></li>
+          <li class="b"><a href="./dist/image-gallery.php">Image galleries - Article</a></li>
+          <li class="d"><a href="./dist/assets-cookiewarning.php">Cookiewarning</a></li>
         </ul>
 
         <h4>Business <span class="logo-premium"><span>Premium</span></span></h4>

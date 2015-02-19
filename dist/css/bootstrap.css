@@ -6088,19 +6088,20 @@ button.close {
 }
 /* "CLOSE" BUTTON */
 #imagelightbox-close {
-  width: 2.5em;
+  width: 50px;
   /* 40 */
-  height: 2.5em;
+  height: 50px;
   /* 40 */
   text-align: left;
-  background-color: #666;
   border-radius: 50%;
   position: fixed;
   z-index: 10002;
-  top: 2.5em;
+  top: 20px;
   /* 40 */
-  right: 2.5em;
+  right: 20px;
   /* 40 */
+  background: transparent;
+  border: 0;
   -webkit-transition: color .3s ease;
   transition: color .3s ease;
 }
@@ -6177,16 +6178,17 @@ button.close {
 .imagelightbox-arrow {
   width: 3.75em;
   /* 60 */
-  height: 7.5em;
+  height: 3.75em;
   /* 120 */
-  background-color: #444;
-  background-color: rgba(0, 0, 0, 0.5);
+  border: 0;
+  background-color: rgba(51, 51, 51, 0.5);
   vertical-align: middle;
+  border-radius: 50%;
   display: none;
   position: fixed;
   z-index: 10001;
   top: 50%;
-  margin-top: -3.75em;
+  margin-top: -1.75em;
   /* 60 */
 }
 .imagelightbox-arrow:hover,
