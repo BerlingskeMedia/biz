@@ -11010,6 +11010,316 @@ slideUp
     -webkit-transform: translateY(0%);
   }
 }
+body.billede {
+  padding: 20px;
+  background: #333;
+}
+body.billede .btn {
+  color: #ffffff;
+  background-color: #cc0066;
+  -webkit-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+  margin-bottom: 20px;
+}
+body.billede .btn:hover,
+body.billede .btn:focus,
+body.billede .btn.focus,
+body.billede .btn:active,
+body.billede .btn.active,
+.open > .dropdown-togglebody.billede .btn {
+  color: #ffffff;
+  background-color: #b30059;
+  outline: none!important;
+}
+body.billede .btn:active,
+body.billede .btn.active,
+.open > .dropdown-togglebody.billede .btn {
+  background-image: none;
+  outline: none;
+}
+body.billede .btn.disabled,
+body.billede .btn[disabled],
+fieldset[disabled] body.billede .btn,
+body.billede .btn.disabled:hover,
+body.billede .btn[disabled]:hover,
+fieldset[disabled] body.billede .btn:hover,
+body.billede .btn.disabled:focus,
+body.billede .btn[disabled]:focus,
+fieldset[disabled] body.billede .btn:focus,
+body.billede .btn.disabled.focus,
+body.billede .btn[disabled].focus,
+fieldset[disabled] body.billede .btn.focus,
+body.billede .btn.disabled:active,
+body.billede .btn[disabled]:active,
+fieldset[disabled] body.billede .btn:active,
+body.billede .btn.disabled.active,
+body.billede .btn[disabled].active,
+fieldset[disabled] body.billede .btn.active {
+  background-color: #cc0066;
+}
+body.billede .btn .badge {
+  color: #cc0066;
+  background-color: #ffffff;
+}
+body.billede .row-fluid {
+  margin-bottom: 40px;
+}
+body.billede .row-fluid:before,
+body.billede .row-fluid:after {
+  content: " ";
+  display: table;
+}
+body.billede .row-fluid:after {
+  clear: both;
+}
+body.billede .row-fluid:before,
+body.billede .row-fluid:after {
+  content: " ";
+  display: table;
+}
+body.billede .row-fluid:after {
+  clear: both;
+}
+body.billede .headline-1 {
+  text-align: left;
+  display: block;
+  clear: both;
+  color: #fff;
+  font-size: 20px;
+  border-top: 4px solid #fff;
+  padding-top: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+body.billede .ig-slide {
+  float: left;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+body.billede .gallery-overview {
+  overflow: hidden;
+  text-align: left;
+}
+body.billede .gallery-overview .row-fluid {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+body.billede .gallery-overview .span3 {
+  width: 25%;
+  padding: 10px;
+}
+body.billede a {
+  color: #ddd;
+}
+body.billede a:hover {
+  color: #fff;
+}
+body.billede .arrow {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  margin-top: -20px;
+  left: 0;
+  background: #222;
+  opacity: .3;
+  line-height: 40px;
+  z-index: 999;
+}
+body.billede .arrow i {
+  font-style: normal;
+}
+body.billede .arrow i:before {
+  display: inline-block;
+  content: '\f104';
+  font-family: fontawesome;
+  color: #fff;
+  font-size: 30px;
+}
+body.billede .arrow:hover {
+  opacity: 1;
+}
+body.billede .arrow.next {
+  left: auto;
+  right: 0;
+}
+body.billede .arrow.next i:before {
+  content: '\f105';
+}
+body.billede .picture-series-watermark {
+  display: none;
+}
+body.billede .image-container {
+  overflow: visible!important;
+  overflow-x: hidden!important;
+}
+@media (max-width: 991px) {
+  body.billede {
+    padding: 10px;
+  }
+  body.billede .span3,
+  body.billede .span9 {
+    padding: 0;
+    width: 100%;
+    max-width: none;
+  }
+  body.billede .gallery-overview .span3 {
+    width: 50%;
+  }
+  body.billede #logo {
+    display: none;
+  }
+  body.billede h2 {
+    font-size: 17px;
+    margin-top: 0;
+  }
+  body.billede .ig-slide-info-inner {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  body.billede .smt {
+    display: none;
+  }
+  body.billede .ig-slide {
+    padding: 0;
+    margin: 0;
+  }
+  body.billede .gallery-title {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+}
+.container-fluid {
+  width: 100%;
+}
+.row-fluid {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.span3 {
+  width: 300px;
+  max-width: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  min-height: 1px;
+}
+.span9 {
+  width: calc(100% - 300px);
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 1px;
+}
+@media (max-width: 991px) {
+  .span9 {
+    width: 100%;
+  }
+}
+.headline {
+  color: #fff;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+.ig-slide-info-inner {
+  height: auto!important;
+  overflow: visible!important;
+  color: #fff;
+}
+.ig-slide,
+.image-container {
+  text-align: center;
+}
+.image-container img {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+.ig-slide-info .date {
+  color: #ccc;
+}
+.ig-slide-info .counter {
+  font-weight: 600;
+}
+.ig-slide-info .caption {
+  color: #ccc;
+  font-size: 87%;
+}
+.smt {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+.smt li {
+  margin: 0;
+}
+.smt li {
+  display: inline-block;
+}
+.smt [class*='icon-'] {
+  color: transparent;
+  overflow: hidden;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  -webkit-transition: background-color 0.1s ease;
+  -o-transition: background-color 0.1s ease;
+  transition: background-color 0.1s ease;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.smt [class*='icon-']:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.smt [class*='icon-']:before {
+  color: #fff;
+  font-family: fontawesome;
+  font-size: 20px;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+}
+.smt .icon-facebook {
+  background-color: #4c66a4;
+}
+.smt .icon-facebook:hover {
+  background-color: #445b93;
+}
+.smt .icon-facebook:before {
+  content: '\f09a';
+}
+.smt .icon-twitter {
+  background-color: #54a9f0;
+}
+.smt .icon-twitter:hover {
+  background-color: #3d9dee;
+}
+.smt .icon-twitter:before {
+  content: '\f099';
+}
+.smt .icon-google {
+  background-color: #d73d32;
+}
+.smt .icon-google:hover {
+  background-color: #3d9dee;
+}
+.smt .icon-google:before {
+  content: '\f0d5';
+}
+.gallery-overview {
+  text-align: left;
+}
+.gallery-overview .gallery-title {
+  font-size: 20px;
+  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
+}
 /* Slider */
 .slick-slider {
   position: relative;

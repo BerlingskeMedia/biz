@@ -1,0 +1,277 @@
+body.billede {
+	padding: 20px;
+	background: #333;
+	.btn {
+		.btn-primary;
+		margin-bottom: 20px;
+	}
+	.row-fluid {
+		.clearfix;
+		margin-bottom: 40px;
+	}
+	.headline-1 {
+		text-align: left;
+		display: block;
+		clear: both;
+		color: #fff;
+		font-size: 20px;
+		border-top: 4px solid #fff;
+		padding-top: 10px;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	.ig-slide {
+		float: left;
+		height: 100%;
+		text-align: center;
+		width: 100%;
+	}
+
+	.gallery-overview {
+		overflow: hidden;
+		text-align: left;
+		.row-fluid {
+			margin-right: -10px;
+			margin-left: -10px;
+		}
+		.span3 {
+			width: 25%;
+			padding: 10px;
+		}
+	}
+
+	a {
+		color: #ddd;
+		&:hover {
+			color: #fff;
+		}
+	}
+	.arrow {
+		position: absolute;
+		height: 40px;
+		width: 40px;
+		top: 50%;
+		margin-top: -20px;
+		left: 0;
+		background: #222;
+		opacity: .3;
+		line-height: 40px;
+		z-index: 999;
+		i {
+			font-style: normal;
+			&:before {
+				display: inline-block;
+				content: '\f104';
+				font-family: fontawesome;
+				color: #fff;
+				font-size: 30px;
+			}
+		}
+		
+		&:hover {
+			opacity: 1;
+		}
+		&.next  {
+			left: auto;
+			right: 0;
+			i:before {
+				content: '\f105';
+			}
+
+			
+		}
+	}
+	.picture-series-watermark {
+		display: none;
+	}
+
+	.image-container {
+		overflow: visible!important;
+		overflow-x: hidden!important;
+	}
+}
+
+
+
+
+@media (max-width: @screen-sm-max) {
+
+body.billede {
+
+	
+	padding: 10px;
+	.span3, 
+	.span9 {
+		padding: 0;
+		width: 100%;
+		max-width: none;
+	}
+	.gallery-overview .span3 {
+		width: 50%;
+	}
+
+	#logo {
+		display: none;
+	}
+	h2 {
+		font-size: 17px;
+		margin-top: 0;
+	}
+	.ig-slide-info-inner {
+		font-size: 13px;
+		margin-bottom: 10px;
+	}
+	.smt {
+		display: none;
+	}
+	.ig-slide {
+		padding: 0;
+		margin: 0;
+	}
+	.gallery-title {
+		font-size: 14px;
+		margin-top: 5px;
+	}
+
+}
+}
+.container-fluid {
+	width: 100%;
+}
+.row-fluid {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.span3 {
+	width: 300px;
+	max-width: 300px;
+	padding-left: 10px;
+	padding-right: 10px; 
+	float: left;
+	min-height: 1px; 
+	@media (max-width: @screen-sm-max) {
+
+	}
+}
+.span9 {
+	width: calc(100% - 300px);
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px; 
+	min-height: 1px;
+	@media (max-width: @screen-sm-max) {
+		width: 100%;
+	}
+}
+.headline {
+	color: #fff;
+	font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
+	font-weight: 600;
+}
+.ig-slide-info-inner {
+	height: auto!important;
+	overflow: visible!important;
+	color: #fff;
+}
+
+.ig-slide,
+.image-container {
+	text-align: center;
+}
+.image-container img {
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+ 
+.ig-slide-info {
+	.date {
+		color: #ccc;
+	}
+	.counter {
+		font-weight: 600;
+	}
+	.caption {
+		color: #ccc;
+		.small;
+	}
+}
+#ig-images {
+	
+	
+}
+
+.smt {
+	.list-clean;
+		margin-top: 20px;
+	li {
+		display: inline-block;
+	}
+
+	[class*='icon-'] {
+	color: transparent;
+	overflow: hidden;
+	width: @icon-size;
+	height: @icon-size;
+	line-height: @icon-size;
+	border-radius: 50%;
+	text-align: center;
+	display: inline-block;
+	font-size: 18px;
+	// text-indent: -9999px;
+	.transition (background-color .1s ease);
+	background-color: rgba(0,0,0,.3);
+	position: relative;
+
+	&:hover {
+		background-color: rgba(0,0,0,.4); 
+	}
+	&:before {
+		color: #fff;
+		font-family: fontawesome;
+		font-size: 20px;
+		position: absolute;
+		top: 2px;
+		left: 9px;
+	}
+	}
+}
+
+.smt {
+	.icon-facebook {
+		background-color: @col-facebook;
+		&:hover {
+			background-color: darken(@col-facebook, 5%);
+		}
+		&:before {
+			content: '\f09a';
+		}
+	}
+	.icon-twitter {
+		background-color: @col-twitter;
+		&:hover {
+			background-color: darken(@col-twitter, 5%);
+		}
+		&:before {
+			content: '\f099';
+		}
+	}
+	.icon-google {
+		background-color: @col-google;
+		&:hover {
+			background-color: darken(@col-twitter, 5%);
+		}
+		&:before {
+			content: '\f0d5';
+		}
+	}
+}
+.gallery-overview {
+	text-align: left;
+	.gallery-title {
+		font-size: 20px;
+		font-family: @font-family-serif;
+	}
+}
+
+

@@ -1,0 +1,107 @@
+body.billede {
+	padding: 20px;
+	background: #333;
+}
+.container-fluid {
+	width: 100%;
+}
+.row-fluid {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.span3 {
+	width: 300px;
+	max-width: 300px;
+	padding-left: 10px;
+	padding-right: 10px; 
+	float: left;
+	min-height: 1px; 
+}
+.span9 {
+	width: calc(100% - 300px);
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px; 
+	min-height: 1px;
+}
+.headline {
+	color: #fff;
+	font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
+	font-weight: 600;
+}
+.ig-slide-info-inner {
+	height: auto!important;
+	overflow: visible!important;
+	color: #fff;
+}
+
+.ig-slide,
+.image-container {
+	text-align: center;
+}
+.image-container img {
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+ 
+
+.smt {
+	list-style: none;
+	margin-top: 20px;
+	padding: 0;
+}
+.smt li {
+	display: inline-block;
+
+}
+
+
+	[class*='icon-'] {
+		color: #fff;
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		border-radius: 50%;
+		text-align: center;
+		display: inline-block;
+		font-size: 18px;
+		// .transition (background-color .1s ease);
+		background-color: rgba(0,0,0,.3);
+		
+		&:hover {
+			background-color: rgba(0,0,0,.4); 
+		}
+	}
+	.icon-facebook{
+		background-color: @col-facebook;
+		&:hover {
+			background-color: darken(@col-facebook, 5%);
+		}
+	}
+	.icon-twitter {
+		background-color: @col-twitter;
+		&:hover {
+			background-color: darken(@col-twitter, 5%);
+		}
+	}
+	.icon-linkedin {
+		background-color: @col-linkedin;
+		&:hover {
+			background-color: darken(@col-linkedin, 5%);
+		}
+	}
+	.icon-text {
+		color: #000;
+	}
+	.comments-teaser {
+		font-size: 13px;
+		font-weight: 600;
+		
+		.icon-letter {
+			color: #fff;
+			&:hover {
+				background-color: rgba(0,0,0,.5); 
+			}
+		}
+	}
