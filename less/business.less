@@ -215,6 +215,8 @@ a.header-tool-icon {
 	display: inline-block;
 	text-indent: -9999px;
 }
+
+
 .marketing-subscription {
 	line-height: 1.2;
 	@media (max-width: @screen-sm-max) {
@@ -1590,6 +1592,26 @@ h1.deck-header {
 	padding: 0;
 	li {
 		margin: 0;
+	}
+}
+.list-button {
+	li {
+		margin-bottom: 4px;
+	}
+	a {
+		// background: rgba(255,255,255,.05);
+		padding: 4px 8px;
+		border-radius: 2px;
+		display: inline-block;
+		.transition (background-color .2s ease);
+		&:hover {
+			background: rgba(255,255,255,.1);
+		}
+	}
+}
+.list-icons {
+	.fa {
+		width: 1.5em;
 	}
 }
 
@@ -3697,7 +3719,19 @@ h1.heading {
 .footer-main {
 	padding: 40px 0;
 	background: #111;
-	color: #fff;
+	color: #aaa;
+	ul {
+		margin-bottom: 20px;
+	}
+	p, li {
+		font-size: 14px;
+	}
+	a {
+		color: #eee;
+		&:hover {
+			color: #fff;
+		}
+	}
 }
 
 .browsehappy {

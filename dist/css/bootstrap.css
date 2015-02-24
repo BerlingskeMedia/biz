@@ -8054,6 +8054,23 @@ h1.deck-header {
 .list-clean li {
   margin: 0;
 }
+.list-button li {
+  margin-bottom: 4px;
+}
+.list-button a {
+  padding: 4px 8px;
+  border-radius: 2px;
+  display: inline-block;
+  -webkit-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.list-button a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.list-icons .fa {
+  width: 1.5em;
+}
 .list {
   list-style: none;
   margin: 0;
@@ -10438,6 +10455,19 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 .footer-main {
   padding: 40px 0;
   background: #111;
+  color: #aaa;
+}
+.footer-main ul {
+  margin-bottom: 20px;
+}
+.footer-main p,
+.footer-main li {
+  font-size: 14px;
+}
+.footer-main a {
+  color: #eee;
+}
+.footer-main a:hover {
   color: #fff;
 }
 .browsehappy {

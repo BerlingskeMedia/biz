@@ -142,21 +142,21 @@ li ul {
         <h4>Generel</h4>
 
         <ul class="overview">
-          <li class="d"><a href="/dist/index.php">Frontpage</a> <date>Feb. 6th</date></li>
-          <li class="d"><a href="/dist/section.php">Section</a> <date>Feb. 5th</date></li>
-          <li class="d"><a href="/dist/article.php">Article</a> </li>
-          <li class="d"><a href="/dist/article-footer.php">Article footer</a><date>Feb. 5th</date></li>
-          <li class="d"><a href="/dist/assets-article-contentstream.php">Content Stream</a></li>
+          <li class="d"><a href="./dist/index.php">Frontpage</a> <date>Feb. 6th</date></li>
+          <li class="d"><a href="./dist/section.php">Section</a> <date>Feb. 5th</date></li>
+          <li class="d"><a href="./dist/article.php">Article</a> </li>
+          <li class="d"><a href="./dist/article-footer.php">Article footer</a><date>Feb. 5th</date></li>
+          <li class="d"><a href="./dist/assets-article-contentstream.php">Content Stream</a></li>
           <li class="a"><a href="#">Article - Longreads</a></li>
-          <li class="d"><a href="/dist/topic.php">Topic page</a><date>Feb. 6th</date></li>
-          <li class="d"><a href="/dist/article-large.php">Article - Large</a><date>Feb. 6th</date></li>
-          <li class="d"><a href="/dist/article-advetorial.php">Article - Advetorial</a><date>Feb. 6th</date></li>
-          <li class="d"><a href="/dist/page-profile.php">User profile</a> <date>Feb. 12th</date></li>
-          <li class="d"><a href="/dist/staff.php">Staff - overview</a><date>Feb. 3rd</date></li>
-          <li class="d"><a href="/dist/author.php">Staff - Author</a><date>Feb. 10th</date></li>
+          <li class="d"><a href="./dist/topic.php">Topic page</a><date>Feb. 6th</date></li>
+          <li class="d"><a href="./dist/article-large.php">Article - Large</a><date>Feb. 6th</date></li>
+          <li class="d"><a href="./dist/article-advetorial.php">Article - Advetorial</a><date>Feb. 6th</date></li>
+          <li class="d"><a href="./dist/page-profile.php">User profile</a> <date>Feb. 12th</date></li>
+          <li class="d"><a href="./dist/staff.php">Staff - overview</a><date>Feb. 3rd</date></li>
+          <li class="d"><a href="./dist/author.php">Staff - Author</a><date>Feb. 10th</date></li>
           <li class="a"><a href="#">Header</a> </li>
-          <li class="a"><a href="#">Footer</a> <date>Feb. 20th</date></li>
-          <li class="c"><a href="/dist/assets-paywall.php">Paywall</a> <date>Feb. 20th</date></li>
+          <li class="c"><a href="./dist/assets-footer.php">Footer</a> <date>Feb. 20th</date></li>
+          <li class="c"><a href="./dist/assets-paywall.php">Paywall</a> <date>Feb. 20th</date></li>
           <li class="a"><a href="#">Bempay</a> </li>
           <li class="d"><a href="/dist/404.php">404</a> <date>Feb. 12th</date></li>
           <li class="d"><a href="/dist/search-result.php">Search</a> <date>Feb. 12th</date></li>
@@ -165,9 +165,9 @@ li ul {
           <li class="b"><a href="#">Business TV - Article</a><date>Feb. 14th</date></li>
           <li class="a"><a href="#">Jobindex overview</a></li>
           <li class="d"><a href="./dist/section-askbusiness.php">"Ask Business"</a></li>
-          <li class="c"><a href="./dist/section-events.php">Events</a> <date>Feb. 14th</date></li>
+          <li class="d"><a href="./dist/section-events.php">Events</a> <date>Feb. 14th</date></li>
           <li class="d"><a href="./dist/magazine.php">Business Magazine</a></li>
-          <li class="a"><a href="#">Image galleries - Section</a></li>
+          <li class="c"><a href="./dist/section-galleries.php">Image galleries - Section</a></li>
           <li class="c"><a href="./dist/gallery-bond.php">Image galleries - BOND version</a></li>
           <li class="b"><a href="./dist/image-gallery.php">Image galleries - Article</a></li>
           <li class="d"><a href="./dist/assets-cookiewarning.php">Cookiewarning</a></li>
