@@ -1,6 +1,6 @@
 <? require_once("../../dummy/dummy.php") ?>
 
-<?php $imageSize = rand(0,2); ?>
+<?php $imageSize = rand(0,1); ?>
 
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9" lang="da"> <![endif]-->
@@ -99,11 +99,7 @@
 
               <?php endif; ?>
 
-              <?php if($imageSize == '2'): ?>
-              <div class="test-article-webtv">
-                WEB TV player
-              </div>
-            <?php endif; ?>
+              
 
               <div class="article-social article-social-top">
                     <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
@@ -117,48 +113,33 @@
               
               
               <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
-              <? if (dumb_luck("25%")): ?>
+              <? if (dumb_luck("50%")): ?>
                 <!-- *** Asset - factbox theme-->
                 <?php include("inc/asset-article-factbox-theme.php"); ?>
               <? endif ?>
 
 
-              <? if (dumb_luck("100%")): ?>
               
-                <? if (dumb_luck("50%")): ?>
-                <!-- *** Asset - factbox float right-->
-                <?php include("inc/asset-article-factbox-float-right.php"); ?>
-              
-                <? else: ?>
-                <!-- *** Asset - factbox timeline  -->
-                <?php include("inc/asset-article-factbox-timeline.php"); ?>
-                <? endif ?>
-
-
-              <? endif ?>
 
  
 
               
-              <? if (dumb_luck("50%")): ?>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <div class="embedded-node">
-                <iframe src="http://cf.datawrapper.de/2W39o/1/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="417"></iframe>
-               </div>
-            <? endif ?>
+              
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-              <div class="article-link-embedded">
+              <div class="article-link-embedded article-link-embedded-brandview ">
                 <figure>
                 <a href="article.php" title="TITLE"><img src="<? dummy("image@70x,16:9") ?>" width="" height="" alt="" /></a>
                 </figure>
                 <div class="teaser-body">
-                  <span>Læs også:</span>
+                  <span>I samarbejde med <? dummy("text@item") ?></span>
                   <a href="article.php" title="TITLE"><? dummy("text@headline") ?></a>  
                 </div>
                 
               </div>
+
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+              
               <div class="article-link-embedded">
                 <figure>
                 <a href="article.php" title="TITLE"><img src="<? dummy("image@70x,16:9") ?>" width="" height="" alt="" /></a>
@@ -177,35 +158,17 @@
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-              <? if (dumb_luck("100%")): ?>
-                <!-- *** Asset - factbox theme-->
-                <?php include("inc/asset-article-quiz.php"); ?>
-              <? endif ?>
+              
 
               <h2>H2:<? dummy("text@item") ?></h2>
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-              <? if (dumb_luck("50%")): ?>
-              <div class="media-embeds">
-              <blockquote class="twitter-tweet" lang="da"><p>Jubii! 11,8 millioner fra A. P. Møller Fonden til Helsingør Kommune! God dag;-) <a href="https://twitter.com/SthePol">@sthepol</a>&#10;<a href="http://t.co/LWfd9iStaU">http://t.co/LWfd9iStaU</a></p>&mdash; Benedikte Kiær (@benediktekiaer) <a href="https://twitter.com/benediktekiaer/status/533231937037414400">14. november 2014</a></blockquote>
-              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-              <? else: ?>
-              <blockquote class="bond-quote">
-                  
-                  <p>
-                    <? dummy("text@teaser") ?>
-                  </p>
-                  <small><? dummy("text@author") ?>- <? if (dumb_luck("50%")): ?><? dummy("text@teaser") ?><? endif ?></small>
-                  <div class="quote-share">SHARE QUOTE <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></div>
-
-              </blockquote>
-              <? endif ?>
+              
 
               <h3>H3:<? dummy("text@item") ?></h3>
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <div class="sm-notitification">Article continues after factbox &hellip;</div>
+              
               
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
@@ -219,15 +182,9 @@
               <? endif ?>
 
               
-              <? if (dumb_luck("50%")): ?>
-              <!-- VIDEOS -->
-              <div class="article-video">
-                <iframe width="425" height="349" src="http://www.youtube.com/embed/FKWwdQu6_ok" frameborder="0" allowfullscreen></iframe>
-              </div>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <? endif ?>
+              
 
-              <?php include("inc/asset-article-letterbox.php"); ?>
+              
 
               
               <?php include('inc/asset-article-tags.php'); ?>
