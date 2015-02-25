@@ -9225,6 +9225,33 @@ h1.heading {
   float: left;
   margin-right: 10px;
 }
+.article-link-embedded-brandview {
+  padding-left: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.article-link-embedded-brandview:before,
+.article-link-embedded-brandview:after {
+  content: " ";
+  display: table;
+}
+.article-link-embedded-brandview:after {
+  clear: both;
+}
+.article-link-embedded-brandview:before,
+.article-link-embedded-brandview:after {
+  content: " ";
+  display: table;
+}
+.article-link-embedded-brandview:after {
+  clear: both;
+}
+.article-link-embedded-brandview figure {
+  line-height: 0;
+}
+.article-link-embedded-brandview span {
+  color: #cc0066;
+  text-transform: none;
+}
 .article-video {
   margin-bottom: 25px;
   clear: both;

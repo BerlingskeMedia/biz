@@ -113,6 +113,20 @@
               
               
               <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
+
+              <div class="article-link-embedded article-link-embedded-brandview ">
+
+                <figure>
+                <a href="article.php" title="TITLE"><img src="<? dummy("image@70x,16:9") ?>" width="" height="" alt="" /></a>
+                </figure>
+                <div class="teaser-body">
+                  <span>I samarbejde med Nykredit</span>
+                  <a href="article.php" title="TITLE"><? dummy("text@headline") ?></a>  
+                </div>
+                
+              </div>
+
+
               <? if (dumb_luck("50%")): ?>
                 <!-- *** Asset - factbox theme-->
                 <?php include("inc/asset-article-factbox-theme.php"); ?>
@@ -125,18 +139,9 @@
 
               
               
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+              
 
-              <div class="article-link-embedded article-link-embedded-brandview ">
-                <figure>
-                <a href="article.php" title="TITLE"><img src="<? dummy("image@70x,16:9") ?>" width="" height="" alt="" /></a>
-                </figure>
-                <div class="teaser-body">
-                  <span>I samarbejde med <? dummy("text@item") ?></span>
-                  <a href="article.php" title="TITLE"><? dummy("text@headline") ?></a>  
-                </div>
-                
-              </div>
+              
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
               
@@ -159,6 +164,17 @@
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
               
+
+              <aside class="factbox-brandview">
+                
+                <figure class="brandview-illu">
+                    <img src="<? dummy("image@200x,16:9") ?>" width="" height="" alt="" />
+                    <figcaption>Brandview: <span>IT Sikkerhed</span></figcaption>
+                </figure>
+                <p><? dummy("text@teaser") ?></p>
+                <p class="small"><a href="section-brandview.php">Læs mere <i class="fa fa-caret-right"></i></a></p>
+
+              </aside>
 
               <h2>H2:<? dummy("text@item") ?></h2>
 
