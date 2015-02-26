@@ -1,6 +1,6 @@
 <header class="header-sponsor-article header-brandview toggle-container">
   
-  <a href="#" class="logo-brandview">BrandView</a>
+  <a href="section-brandview.php" class="logo-brandview-dark">BrandView</a>
   
 
 <nav class="small">

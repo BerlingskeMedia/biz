@@ -588,7 +588,7 @@
    <div class="row">
       <section class="deck">
       <div class="col-md-8 ">
-        <? while (dumb_luck("8")): ?>
+        <? while (dumb_luck("7")): ?>
         <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
@@ -600,19 +600,40 @@
             </div>
           </article>
           <? endwhile ?>
+
+          
+
+    <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom teaser-brandview">
+    <div class="ad-label"><i class="fa fa-caret-down"></i> Annonce</div>
+    
+
+            <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
+              <div class="teaser-body">
+              <a href="section-brandview-php"><div class="logo-brandview"></div></a>          
+              
+              <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
+              <p>I samarbejde med Nykredit</p>
+            </div>
+          </article>
+
+
       </div>
 
       <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-12 col-sm-6">
         <div class="banner module-xs">
           <? dummy("ad@300x250") ?>
+        </div>  
         </div>
-        <section class="module-sm">
-          <h1 class="section-header">
-            Jobindex iframe
-          </h1>
-        
-        
+        <div class="col-md-12 col-sm-6">
+          <section class="module-sm text-center">
+          <iframe src="http://www.jobindex.dk/cgi/partnerbanner.cgi?size=300x400&partner=business&pagetype=front;cre=mu;target=_blank;ord=6ca81a82-b751-11e4-b4f6-00259006236a;EASClick=http://ad1.emediate.dk/eas/cu=24881::camp=347212::no=360322::kw=link1-360322::cat1=bond-2944::encoding=utf-8::EASTpage_type=frontpage::EASTpath=%2Fforside::EASTauth=0::c2-2=0::uuid=6ca81a82-b751-11e4-b4f6-00259006236a::EASLink=" height="400" width="300" frameborder="0" scrolling="auto"></iframe>
         </section>
+        </div>
+      </div>
+        
+        
       </div>
      
 </section>
@@ -652,7 +673,7 @@
  <div class="row">
       
       <div class="col-md-8 ">
-        <? while (dumb_luck("8")): ?>
+        <? while (dumb_luck("7")): ?>
         <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
@@ -664,6 +685,21 @@
             </div>
           </article>
           <? endwhile ?>
+
+          <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom teaser-brandview">
+    <div class="ad-label"><i class="fa fa-caret-down"></i> Annonce</div>
+    
+
+            <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
+              <div class="teaser-body">
+              <a href="section-brandview-php"><div class="logo-brandview"></div></a>          
+              
+              <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
+              <p>I samarbejde med Nykredit</p>
+            </div>
+          </article>
+
+
       </div>
 
       <div class="col-md-4">
@@ -691,38 +727,7 @@
         </ul>
         </section>
         </div>
- <div class="col-sm-6 col-md-12">
-
-
-        <section class="toggle-container">
-
-      <h1 class="section-header">
-        BrandView <a class="section-header-link toggle-btn" href="#">Hvad er BrandView?</a>
-      </h1>
-
-      <div class="brandview-info toggle-content">
-        <p class="small">BrandView er en service fra Berlingske Media, hvor virksomheder har mulighed for at kommunikere deres specialviden direkte til brugere og læsere af Berlingske.</p>
-        <p class="small">Indhold under BrandView produceres i et tæt samarbejde mellem Berlingske Medias content marketing bureau og virksomheden, der er afsender på budskabet. <a href="http://www.publicimpact.dk/">Læs mere om BrandView</a> eller kontakt os direkte på <a href="mailto:moas@berlingslemedia.dk">moas@berlingslemedia.dk</a>.</p>    
-      </div>
-      
-        <div class="row">
-          <? while (dumb_luck("2")): ?>
-
-          <div class="col-md-6 col-xs-6">
-            <article class="teaser teaser-brandview ">
-            <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@420x,16:9") ?>" width="" height="" alt="" /></a></figure>
-            <span class="teaser-tagline">
-              Sponseret af Columbus
-            </span>
-            <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
-        </article>
-          </div>
-        <? endwhile ?>
-        </div>
-      
-        </section>
-
-        </div><!-- row -->
+ 
 
 
       </div>
@@ -794,7 +799,7 @@
  <div class="row">
       <section class="deck">
       <div class="col-md-8 ">
-        <? while (dumb_luck("8")): ?>
+        <? while (dumb_luck("7")): ?>
         <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
@@ -806,6 +811,21 @@
             </div>
           </article>
           <? endwhile ?>
+
+          <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom teaser-brandview">
+    <div class="ad-label"><i class="fa fa-caret-down"></i> Annonce</div>
+    
+
+            <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
+              <div class="teaser-body">
+              <a href="section-brandview-php"><div class="logo-brandview"></div></a>          
+              
+              <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
+              <p>I samarbejde med Nykredit</p>
+            </div>
+          </article>
+
+          
       </div>
 
       <div class="col-md-4">

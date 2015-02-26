@@ -114,17 +114,7 @@
               
               <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
 
-              <div class="article-link-embedded article-link-embedded-brandview ">
-
-                <figure>
-                <a href="article.php" title="TITLE"><img src="<? dummy("image@70x,16:9") ?>" width="" height="" alt="" /></a>
-                </figure>
-                <div class="teaser-body">
-                  <span>I samarbejde med Nykredit</span>
-                  <a href="article.php" title="TITLE"><? dummy("text@headline") ?></a>  
-                </div>
-                
-              </div>
+              
 
 
               <? if (dumb_luck("50%")): ?>
@@ -133,15 +123,25 @@
               <? endif ?>
 
 
-              
+<aside class="article-fact article-fact-brandview <? if (dumb_luck("50%")): ?>dark<? endif ?>">
+<span class="ad-label"><i class="fa fa-caret-down"></i> Annonce</span>
+<div class="aside-content">
 
- 
+  <a href="section-brandview.php"><span class="logo-brandview"></span></a>
+  
+  <figure>
+  <a href="article-brandview.php"><img src="<? dummy("image@200x,16:9,") ?>" width="" height="" alt="" /></a>
+  </figure>
+  <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
+  <p>I samarbejde med Nykredit</p>
+  </div>
+  
 
-              
-              
-              
+</aside><!-- Article factbox -->
 
+               
               
+           
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
               
@@ -165,16 +165,7 @@
 
               
 
-              <aside class="factbox-brandview">
-                
-                <figure class="brandview-illu">
-                    <img src="<? dummy("image@200x,16:9") ?>" width="" height="" alt="" />
-                    <figcaption>Brandview: <span>IT Sikkerhed</span></figcaption>
-                </figure>
-                <p><? dummy("text@teaser") ?></p>
-                <p class="small"><a href="section-brandview.php">Læs mere <i class="fa fa-caret-right"></i></a></p>
-
-              </aside>
+             
 
               <h2>H2:<? dummy("text@item") ?></h2>
 
@@ -187,17 +178,16 @@
               
               
 
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+              
 
               
               <? if (dumb_luck("50%")): ?>
               <!-- EMBEDDED IMAGE -->
               <?php include("inc/asset-article-image-embedded.php"); ?>
               
-              
               <? endif ?>
 
-              
+              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
               
 
               
