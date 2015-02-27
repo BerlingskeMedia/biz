@@ -3098,11 +3098,10 @@ h1.heading {
 
 
 	.ad-label {
-		
+		top: -12px;
+		color: #666;
 		display: block;
-		
 		position: absolute;
-		top: -10px;
 		right: 0;
 	}
 	.logo-brandview {
@@ -3111,6 +3110,7 @@ h1.heading {
 		width: 100%;
 		background-position: 0 center;
 		margin-bottom: 5px;
+		.logo-brandview-dark;
 	}
 	.header {
 		margin: 5px 0 0 0;
@@ -3123,9 +3123,9 @@ h1.heading {
 		font-size: 11px;
 		line-height: 1.2;
 		margin: 5px 0 0 0;
-		color: #666;
+		color: rgba(255,255,255,.9);
 	}
-	&.dark {
+	
 		
 		&:before {
 			background: @brandview;
@@ -3138,17 +3138,10 @@ h1.heading {
 				}
 			}
 		}
-		p {
-				color: rgba(255,255,255,.9);
-		}
-		.logo-brandview {
-			.logo-brandview-dark;
-		}
-		.ad-label {
-			top: -12px;
-			color: #666;
-		}
-	}
+		
+		
+		
+	
 }
 
 .article-fact-embedded {

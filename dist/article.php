@@ -123,8 +123,8 @@
               <? endif ?>
 
 
-<aside class="article-fact article-fact-brandview <? if (dumb_luck("50%")): ?>dark<? endif ?>">
-<span class="ad-label"><i class="fa fa-caret-down"></i> Annonce</span>
+<aside class="article-fact article-fact-brandview ">
+<span class="ad-label"><i class="fa fa-caret-down"></i> Sponseret</span>
 <div class="aside-content">
 
   <a href="section-brandview.php"><span class="logo-brandview"></span></a>

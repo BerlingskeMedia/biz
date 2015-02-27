@@ -21,7 +21,7 @@
 
     <li class="teaser teaser-brandview-contentstream teaser-border-bottom">
             <div class="teaser-body">
-            <div class="ad-label"><i class="fa fa-caret-down"></i> Annonce</div>
+            <div class="ad-label"><i class="fa fa-caret-down"></i> Sponseret</div>
             <a href="section-brandview-php"><div class="logo-brandview"></div></a>
           <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
           <p>I samarbejde med Nykredit</p>
@@ -132,7 +132,7 @@
 
     <li class="teaser teaser-brandview-contentstream teaser-border-bottom">
             <div class="teaser-body">
-            <div class="ad-label"><i class="fa fa-caret-down"></i> Annonce</div>
+            <div class="ad-label"><i class="fa fa-caret-down"></i> Sponseret</div>
             <a href="section-brandview-php"><div class="logo-brandview"></div></a>
           <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
           <p>I samarbejde med Nykredit</p>
@@ -156,7 +156,7 @@
 
 <li class="teaser teaser-brandview-contentstream teaser-border-bottom">
             <div class="teaser-body">
-            <div class="ad-label"><i class="fa fa-caret-down"></i> Annonce</div>
+            <div class="ad-label"><i class="fa fa-caret-down"></i> Sponseret</div>
             <a href="section-brandview-php"><div class="logo-brandview"></div></a>
           <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
           <p>I samarbejde med Nykredit</p>
