@@ -604,7 +604,7 @@
           
 
     <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom teaser-brandview">
-    <div class="ad-label"><i class="fa fa-caret-down"></i> Annonce</div>
+    <div class="ad-label"><i class="fa fa-caret-down"></i> Sponseret</div>
     
 
             <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
@@ -687,7 +687,7 @@
           <? endwhile ?>
 
           <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom teaser-brandview">
-    <div class="ad-label"><i class="fa fa-caret-down"></i> Annonce</div>
+    <div class="ad-label"><i class="fa fa-caret-down"></i> Sponseret</div>
     
 
             <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
@@ -813,7 +813,7 @@
           <? endwhile ?>
 
           <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom teaser-brandview">
-    <div class="ad-label"><i class="fa fa-caret-down"></i> Annonce</div>
+    <div class="ad-label"><i class="fa fa-caret-down"></i> Sponseret</div>
     
 
             <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
