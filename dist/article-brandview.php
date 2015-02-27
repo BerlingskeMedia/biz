@@ -35,27 +35,43 @@
       
       <article class="col-md-12">
         
-        <?php include('inc/article-header-brandview.php'); ?>
+         <header class="section-header-brandview ">
+      <div class="ad-label"><span>Udarbejdet i samarbejde med </span>
+      <a href="http://kmd.dk"><img src="./images/logos/kmd_logo_it_med_indsigt.png"></a>
+    </div>
+
+      <a href="section-brandview.php" class="logo-brandview">BrandView</a>
+
+    
+
+</header>
+
+
         
+<div class="header-deck-display">
+            
+              <h1><a href="section-brandview.php" class="a-dark" >Datasikkerhed</a> <a href="section-brandview.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a></h1>
+
+
+          </div>
+
 
         <header class="article-head">
 
 
-          <span class="article-tag sponsored"><span>SPONSERET INDHOLD</span></span>
+
           <h1 class="heading"><? dummy("text@headline") ?></h1>
 
 
           <div class="article-date">Mandag d. <time datetime="2014-02-14"><? dummy("text@pol-date") ?> kl. <? dummy("text@time") ?></time> </div>
 
 
-          <?php include('inc/asset-article-byline.php'); ?>
+          <?php include('inc/asset-article-byline-brandview.php'); ?>
             
 
 
           
-           <?php if($imageSize == '0'): ?>
-              <?php include('inc/asset-article-image.php') ?>
-            <?php endif; ?>
+           
           
 
           
@@ -69,14 +85,14 @@
         <div class="row">
         
 
-          <div class="col-md-8 col-sm-push-4">
+          <div class="col-md-8 col-md-push-4">
           
             <div class="article-content">
 
 
-            <?php if($imageSize == '1'): ?>
+
               <?php include('inc/asset-article-image.php') ?>
-            <?php endif; ?>
+
 
               <div class="article-social article-social-top">
                     <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
@@ -135,66 +151,11 @@
               <!-- READ ALSO -->
               
                 
-                <section class="module-top-lg module toggle-container">
                 
-              <h1 class="section-header">More from Columbus <a class="section-header-link toggle-btn" href="#">Hvad er BrandView?</a></h1>
-              <div class="brandview-info toggle-content">
-                <p>BrandView er en service fra Berlingske Media, hvor virksomheder har mulighed for at kommunikere deres specialviden direkte til brugere og læsere af Berlingske.</p>
-                <p>Indhold under BrandView produceres i et tæt samarbejde mellem Berlingske Medias content marketing bureau og virksomheden, der er afsender på budskabet. Læs mere om <a href="http://www.publicimpact.dk/">BrandView</a> eller kontakt os direkte på <a href="mailto:moas@berlingslemedia.dk">moas@berlingslemedia.dk</a>.</p>    
-              </div>
-              <ul class="list list-xs ">
-              <? while (dumb_luck("5")): ?>
-                <li class="teaser">
-                  <div class="teaser-body">
-                  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-                  <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-                  </div>
-                  </li>
-                <? endwhile ?>
-              </ul>
-
+                <?php include('./inc/deck-brandview.php'); ?>
               
 
-              </section><!-- read also -->
-              
 
-<section class="module-top-lg module toggle-container">
-              <h1 class="section-header">More from BrandView<a class="section-header-link toggle-btn" href="#">Hvad er BrandView?</a></h1>
-              <div class="brandview-info toggle-content">
-                <p>BrandView er en service fra Berlingske Media, hvor virksomheder har mulighed for at kommunikere deres specialviden direkte til brugere og læsere af Berlingske.</p>
-                <p>Indhold under BrandView produceres i et tæt samarbejde mellem Berlingske Medias content marketing bureau og virksomheden, der er afsender på budskabet. Læs mere om <a href="http://www.publicimpact.dk/">BrandView</a> eller kontakt os direkte på <a href="mailto:moas@berlingslemedia.dk">moas@berlingslemedia.dk</a>.</p>    
-              </div>
-
-              <div class="row">
-                <div class="col-md-12">
-
-                  <article class="teaser teaser-brandview teaser-divider module-xs header-35">
-                      <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
-                  <span class="teaser-tagline">
-                    Sponseret af Columbus
-                  </span>
-                  <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
-                  <p><? dummy("text@teaser") ?></p>
-                  
-                  </article>
-                </div>
-                <? while (dumb_luck("3")): ?>
-                <div class="col-md-4">
-                  <article class="teaser teaser-brandview teaser-fixed-height">
-                      <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@360x,16:9") ?>" width="" height="" alt="" /></a></figure>
-                  <span class="teaser-tagline">
-                    Sponseret af Columbus
-                  </span>
-                  <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
-                  
-                  </article>
-                  
-                </div>
-                <? endwhile ?>
-              </div>
-
-
-</section>
             </div><!-- article-content -->
           </div><!-- col -->
           

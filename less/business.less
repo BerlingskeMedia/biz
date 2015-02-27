@@ -1378,6 +1378,29 @@ a.btn-premium:after {
 .header-sponsor-article + .article-head {
 	border-top: 0;
 }
+.section-header-brandview {
+	border-top: 4px solid #333;
+	padding: 10px 0 10px 0;
+	margin-bottom: 10px;
+	.logo-brandview {
+		height: 38px;
+		width: 185px;
+		text-indent: -9999px;
+		display: block;
+	}
+	.ad-label {
+		float: right;
+		height: 38px;
+		font-size: 12px;
+		text-align: right;
+		img {
+			max-height: 28px;
+		}
+	}
+	&+ .article-head {
+		border-top: 0;
+	}
+}
 
 .header-businessdirect {
 	.logo-businessdirect {
@@ -1390,21 +1413,26 @@ a.btn-premium:after {
 		background-position: left 50%;
 	}
 }
+
 .header-brandview {
 	border-top: 0;
-	background: @brandview;
-	padding: 25px 10px 15px;
-	.logo-brandview-dark {
-		width: 185px;
-		height: 30px;
+	padding: 10px 0 0;
+	border-top: 4px solid #333;
 
-		float: left;
-		text-indent: -9999px;
-		margin-right: 10px;
-		display: inline-block;
-		background-position: left center;
+	h1 {
+		font-weight: 200;
+		font-size: 22px;
+		line-height: 50px;
+		margin: 0;
+		text-align: right;
+		border-bottom: 1px solid rgba(0,0,0,.1);
+		padding-bottom: 5px;
 	}
-	
+	.logo-brandview {
+		height: 38px;
+		float: left;
+		width: 185px;
+	}
 }
 .header-premium {
 	line-height: 30px;
@@ -1472,10 +1500,10 @@ a.btn-premium:after {
 	padding-top: 10px;
 	// font-family: @font-family-serif;
 	// font-size: 30px;
-	&+ p {
-		
-		
-	}
+	 
+	 .light {
+	 	font-weight: 300;
+	 }
 	.logo-premium {
 		background-color: #222;
 		color: #fff;
@@ -1486,46 +1514,48 @@ a.btn-premium:after {
 	}
 }
 .deck-display {
+	margin-bottom: 80px;
 	
-	padding: 5px 5px 20px;
-	
-	
-	margin-bottom: 70px;
-	.ad-label {
-		float:right;
-	}
-	[class*='col-'] {
-	// 	padding: 2px;
-		background: @brandview;
-	}
-	.teaser-body {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		padding: 15px;
-		#gradient > .vertical(rgba(0,0,0,0); @brandview; 0; 80%);  
-		.header a {
-			color: #fff;
-		}
-		p {
-			color: #fff;
-		}
-	}
+	padding-bottom: 20px;
+	border-top: 1px solid rgba(0,0,0,.1);
 	.teaser-img {
 		margin-bottom: 0;
 	}
 	.teaser {
-		margin-bottom: 0;
+		// margin-bottom: 15px;
 	}
-
+	
 }
 .header-deck-display {
-	font-weight: 600;
+	margin-bottom: 10px;
+	border-top: 1px solid rgba(0,0,0,.1);
+	padding-top: 10px;
+	h1 {
+		font-weight: 200;
+		padding-top: 0;
+		margin-top: 0;
+		font-size: 38px;
+		display: inline-block;
+		margin: 0;
+	}
+	.ad-label {
+		text-align: right;
+		font-size: 12px;
+		img {
+			max-height: 45px;
+			margin-left: 5px;
+		}
+	}
 	
-	padding-top: 0;
-	margin-top: 0;
-	font-size: 20px;
+	@media (max-width: @screen-xs-max) {
+		h1 {
+			font-size: 20px;
+		}
+		.logo-brandview {
+			height: 20px;
+		}
+
+	}
 
 }
 .section-header-serif {
@@ -2545,13 +2575,8 @@ h1.heading {
 		position: relative;
 	}
 }
-.article-byline-sponsored {
-	border-bottom: 1px solid rgba(0,0,0,.1);
-	padding-bottom: 10px;	
-	.article-date {
-		margin-bottom: 0;
-	}
-}
+
+
 
 .article-byline {
 	line-height: 1.2;
@@ -2609,6 +2634,28 @@ h1.heading {
 		box-shadow: none;
 	}
 }
+.article-byline-sponsored {
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	padding-bottom: 10px;	
+	.article-author {
+		line-height: 1.4;
+	}
+	span {
+		font-weight: 600;
+	}
+	a {
+		.a-dark;
+	}
+	img {
+		border-radius: 0;
+		padding: 4px;
+		background-color: #fff;
+	}
+	.article-date {
+		margin-bottom: 0;
+	}
+}
+
 .article-social-top {
 	border-top: 1px solid rgba(0,0,0,.1);
 	border-bottom: 1px solid rgba(0,0,0,.1);
@@ -3032,9 +3079,10 @@ h1.heading {
 
 .ad-label {
 		font-size: 10px; 
-		
 		color: #666;
-		
+	span {
+		display: block;
+	}
 	}
 .article-fact-brandview {
 	background: transparent;

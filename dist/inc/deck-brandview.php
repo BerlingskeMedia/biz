@@ -7,8 +7,14 @@
         <div class="row">
 
           <div class="col-md-12">
-          <div class="ad-label"><i class="fa fa-caret-down"></i> Annonce</div>
-          <h1 class="header-deck-display"><? dummy("text@brandview-topics") ?></h1>
+          
+            
+            <h1 class="section-header">Datasikkerhed</h1>
+        
+
+            
+          
+
           </div>
         </div>
 
@@ -16,7 +22,7 @@
 
           <? while (dumb_luck("2")): ?>
 
-          <div class="col-md-6 col-sm-6">
+          <div class="col-md-6 col-sm-6 col-xs-6">
 
           <article class="teaser teaser-brandview header-20">
             <figure class="teaser-img">
