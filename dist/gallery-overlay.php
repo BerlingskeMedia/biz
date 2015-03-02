@@ -339,7 +339,7 @@
         <div class="gallery-counter">
           <strong>2</strong> out of <strong>22</strong>
         </div>
-        <button class="gallery-btn-show-caption">Vis beskrivelse</button>
+        <button class="gallery-btn-show-caption"><i class="fa fa-caret-up"></i> <span>Vis beskrivelse</span> </button>
       </div>
       <figure style="background-image: url(<? dummy("image@1600x,") ?>);" class="gallery-image">
       

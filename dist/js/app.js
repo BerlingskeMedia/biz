@@ -176,15 +176,15 @@ var instanceG = $( selectorG ).imageLightbox(
 
   // Gallery caption show / hide
   $('.gallery-btn-show-caption').on('click', function() {
-    var button = $(this);
-    var caption = $(this).closest('.gallery-overlay').find('.gallery-caption');
+    var buttonTxt = $(this).find('span');
+    var caption = $(this).closest('.gallery-overlay');
     
     caption.toggleClass('show-caption');
     
     if ((caption).hasClass('show-caption')) {
-      $(this).text('Skjul beskrivelse'); 
+      $(buttonTxt).text('Skjul beskrivelse'); 
     } else {
-      $(this).text('Vis beskrivelse'); 
+      $(buttonTxt).text('Vis beskrivelse'); 
     }
   });
 
