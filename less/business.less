@@ -3859,4 +3859,54 @@ h1.heading {
 	}
 }
 
+.gallery-overlay {
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #000;
+	z-index: 10;
+
+	.gallery-arrow {
+		width: 100px;
+		height: 100px;
+		font-size: 30px;
+		background-color: #333;
+		color: #eee;
+		border-radius: 50%;
+		line-height: 100px;
+		position: absolute;
+		top: 50%;
+		
+		margin-top: -50px;
+		&.arrow-prev {
+			left: -50px;
+		}
+		&.arrow-next {
+			left:auto;
+			right: -50px;
+		}
+		&:hover {
+			background-color: #444;
+			color: #fff;
+		}
+	}
+	@media (max-width: @screen-xs-max) {
+		.gallery-arrow {
+			width: 50px;
+			height: 50px;
+			font-size: 20px;
+			line-height: 50px;
+			margin-top: -25px;
+			&.arrow-prev {
+				left: -25px;
+			}
+			&.arrow-next {
+				right: -25px;
+			}
+			
+		}
+	}
+}
 
