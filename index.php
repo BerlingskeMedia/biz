@@ -161,8 +161,8 @@ li ul {
           <li class="d"><a href="/dist/404.php">404</a> <date>Feb. 12th</date></li>
           <li class="d"><a href="/dist/search-result.php">Search</a> <date>Feb. 12th</date></li>
           <li class="d"><a href="/dist/news-overview.php">News overview</a> <date>Feb. 12th</date></li>
-          <li class="b"><a href="./dist/section-tv.php">Business TV - Section</a><date>Feb. 14th</date></li>
-          <li class="b"><a href="./dist/article-tv.php">Business TV - Article</a><date>Feb. 14th</date></li>
+          <li class="b"><a href="./dist/section-video.php">Business TV - Section</a><date>Feb. 14th</date></li>
+          <li class="b"><a href="./dist/article-video.php">Business TV - Article</a><date>Feb. 14th</date></li>
           <li class="a"><a href="#">Jobindex overview</a></li>
           <li class="d"><a href="./dist/section-askbusiness.php">"Ask Business"</a></li>
           <li class="d"><a href="./dist/section-events.php">Events</a> <date>Feb. 14th</date></li>
