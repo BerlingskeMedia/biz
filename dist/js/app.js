@@ -174,8 +174,24 @@ var instanceG = $( selectorG ).imageLightbox(
 
 
 
+  // Gallery caption show / hide
+  $('.gallery-btn-show-caption').on('click', function() {
+    var button = $(this);
+    var caption = $(this).closest('.gallery-overlay').find('.gallery-caption');
+    
+    caption.toggleClass('show-caption');
+    
+    if ((caption).hasClass('show-caption')) {
+      $(this).text('Skjul beskrivelse'); 
+    } else {
+      $(this).text('Vis beskrivelse'); 
+    }
+  });
 
-
+  // Hide gallery
+  $('.gallery-close').on('click', function() {
+    $('.gallery-overlay').fadeOut('fast');
+  });
 
 
 

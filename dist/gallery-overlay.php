@@ -328,9 +328,22 @@
 
     
     <div class="gallery-overlay">
-      
+      <button class="gallery-close"><i class="fa fa-close"></i></button>
       <a class="gallery-arrow arrow-prev" href="#" ></a>
       <a class="gallery-arrow arrow-next" href="#" ></a>
+      <div class="gallery-caption">
+        <p><? dummy("text@teaser") ?> <span>Photo: <? dummy("text@author") ?></span></p>
+      </div>
+      <div class="gallery-tools">
+      
+        <div class="gallery-counter">
+          <strong>2</strong> out of <strong>22</strong>
+        </div>
+        <button class="gallery-btn-show-caption">Vis beskrivelse</button>
+      </div>
+      <figure>
+      <img src="<? dummy("image@1600x,") ?>" width="" height="" alt="" class="gallery-img" />
+      </figure>
     </div>
 
 

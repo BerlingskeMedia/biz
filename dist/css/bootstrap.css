@@ -10600,17 +10600,114 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   background-color: #000;
   z-index: 10;
 }
+.gallery-overlay button {
+  outline: 0;
+}
+.gallery-overlay .gallery-tools {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: #333;
+  font-size: 13px;
+  padding: 0 20px;
+}
+.gallery-overlay .gallery-caption {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  background: rgba(51, 51, 51, 0.8);
+  padding: 10px 20px;
+  z-index: 10;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  color: #ddd;
+  display: none;
+}
+.gallery-overlay .gallery-caption.show-caption {
+  display: block;
+}
+.gallery-overlay .gallery-caption span {
+  color: #999;
+  font-weight: 700;
+}
+.gallery-overlay .gallery-caption p:last-child {
+  margin-bottom: 0;
+}
+.gallery-overlay .gallery-counter {
+  color: #fff;
+  line-height: 40px;
+  display: inline-block;
+}
+.gallery-overlay .gallery-btn-show-caption {
+  background: transparent;
+  border: 1px solid #999;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ddd;
+  margin: 0 20px;
+}
+.gallery-overlay .gallery-btn-show-caption:hover {
+  border-color: #bbb;
+  color: #eee;
+}
+.gallery-overlay figure {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.gallery-overlay .gallery-img {
+  display: block;
+  max-width: 100%;
+  width: 100% \9;
+  height: auto;
+  margin: 0 auto;
+  max-height: 100%;
+}
+.gallery-overlay .gallery-close {
+  border-radius: 50%;
+  background-color: #333;
+  border: 0;
+  padding: 0;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 20;
+  -webkit-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.gallery-overlay .gallery-close:hover {
+  background: #444;
+}
 .gallery-overlay .gallery-arrow {
   width: 100px;
   height: 100px;
-  font-size: 30px;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.8);
   color: #eee;
   border-radius: 50%;
-  line-height: 100px;
   position: absolute;
   top: 50%;
+  z-index: 20;
+  display: inline-block;
   margin-top: -50px;
+  -webkit-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 .gallery-overlay .gallery-arrow.arrow-prev {
   left: -50px;
@@ -10619,8 +10716,27 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   left: auto;
   right: -50px;
 }
+.gallery-overlay .gallery-arrow.arrow-next:before {
+  content: "\f105";
+  text-align: left;
+  padding-right: 0;
+  position: relative;
+  left: 25%;
+}
+.gallery-overlay .gallery-arrow:before {
+  content: "\f104";
+  font-family: fontawesome;
+  display: inline-block;
+  font-size: 50px;
+  width: 100%;
+  height: 100%;
+  line-height: 100px;
+  text-align: right;
+  position: relative;
+  right: 25%;
+}
 .gallery-overlay .gallery-arrow:hover {
-  background-color: #444;
+  background-color: #333333;
   color: #fff;
 }
 @media (max-width: 767px) {
@@ -10628,7 +10744,6 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
     width: 50px;
     height: 50px;
     font-size: 20px;
-    line-height: 50px;
     margin-top: -25px;
   }
   .gallery-overlay .gallery-arrow.arrow-prev {
@@ -10636,6 +10751,20 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   }
   .gallery-overlay .gallery-arrow.arrow-next {
     right: -25px;
+  }
+  .gallery-overlay .gallery-arrow:before {
+    font-size: 25px;
+    line-height: 50px;
+  }
+  .gallery-overlay .gallery-arrow.arrow-next {
+    left: auto;
+    right: -25px;
+  }
+  .gallery-overlay .gallery-arrow.arrow-next:before {
+    content: "\f105";
+    text-align: left;
+    padding-right: 0;
+    padding-left: 25%;
   }
 }
 .module {
