@@ -10739,6 +10739,9 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   background-color: #333333;
   color: #fff;
 }
+.gallery-overlay .gallery-arrow:active {
+  background-color: rgba(51, 51, 51, 0.8);
+}
 @media (max-width: 767px) {
   .gallery-overlay .gallery-arrow {
     width: 50px;
@@ -10763,8 +10766,10 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   .gallery-overlay .gallery-arrow.arrow-next:before {
     content: "\f105";
     text-align: left;
-    padding-right: 0;
-    padding-left: 25%;
+  }
+  .gallery-overlay .gallery-close {
+    top: 10px;
+    right: 10px;
   }
 }
 .module {
