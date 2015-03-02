@@ -3875,7 +3875,7 @@ h1.heading {
 	right: 0;
 	background-color: #000;
 	z-index: 10;
-	cursor: move;
+	
 	button {
 		outline: 0;
 	}
@@ -3937,7 +3937,7 @@ h1.heading {
 			color: #eee;
 		}
 	}
-	figure {
+	.gallery-image {
 		position: absolute;
 		top: 20px;
 		left: 20px;
@@ -3948,14 +3948,9 @@ h1.heading {
 		background-position: center center;
 		background-size: contain;
 		background-repeat: no-repeat; 
+		cursor: move;
 	}
-	.gallery-img {
-		.img-responsive;
-		margin: 0 auto;
-		max-height: 100%;
-		
-
-	}
+	
 	.gallery-close {
 		border-radius: 50%;
 		background-color: #333;
@@ -3991,6 +3986,10 @@ h1.heading {
 		&.arrow-prev {
 			left: -50px;
 		}
+		&.arrow-passive {
+			display: none;
+		}
+
 			&.arrow-next {
 				left:auto;
 				right: -50px;
@@ -4027,7 +4026,7 @@ h1.heading {
 
 	}
 	@media (max-width: @screen-xs-max) {
-		figure {
+		.gallery-image {
 			top: 0;
 			left: 0;
 			right: 0;
@@ -4064,4 +4063,13 @@ h1.heading {
 		}
 	}
 }
-
+.gallery-finale {
+	color: #999;
+	padding-top: 100px;
+	.header a {
+		color: #999;
+		&:hover {
+			color: #ddd;
+		}
+	}
+}

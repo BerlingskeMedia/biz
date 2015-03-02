@@ -330,9 +330,9 @@
     <div class="gallery-overlay">
       <button class="gallery-close"><i class="fa fa-close"></i></button>
       <a class="gallery-arrow arrow-prev" href="#" ></a>
-      <a class="gallery-arrow arrow-next" href="#" ></a>
+      <a class="gallery-arrow arrow-next arrow-passive" href="#" ></a>
       <div class="gallery-caption">
-        <p><? dummy("text@teaser") ?> <span>Photo: <? dummy("text@author") ?></span></p>
+        <!-- <p><? dummy("text@teaser") ?> <span>Photo: <? dummy("text@author") ?></span></p> -->
       </div>
       <div class="gallery-tools">
       
@@ -341,9 +341,46 @@
         </div>
         <button class="gallery-btn-show-caption"><i class="fa fa-caret-up"></i> <span>Vis beskrivelse</span></button>
       </div>
-      <figure style="background-image: url(<? dummy("image@1600x,") ?>);" class="gallery-image">
-      
-      </figure>
+      <div class="gallery-finale">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12" ><h2 class="section-header"> You might also like</h2></div>
+          </div>
+          <div class="row">
+            <ul class="list-clean flex-4-2-2 module-sm">
+              <? while (dumb_luck("4")): ?>
+              <li class="col-md-3 col-xs-6 col-sm-6 ">
+                  <article class="teaser teaser-gallery ">
+                    <figure class="teaser-img"><a href="#"><img src="<? dummy("image@220x,16:9") ?>" width="" height="" alt="" /></a></figure>
+                    <h2 class="header"><a href="#"><? dummy("text@headline") ?></a></h2>
+                  </article>
+              </li>
+            <? endwhile ?>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-md-12 " ><h2 class="section-header"> Latest galleries</h2></div>
+          </div>
+          <div class="row">
+            <ul class="list-clean flex-4-2-2 module-sm">
+              <? while (dumb_luck("4")): ?>
+              <li class="col-md-3 col-xs-6 col-sm-6 ">
+                  <article class="teaser teaser-gallery ">
+                    <figure class="teaser-img"><a href="#"><img src="<? dummy("image@220x,16:9") ?>" width="" height="" alt="" /></a></figure>
+                    <h2 class="header"><a href="#"><? dummy("text@headline") ?></a></h2>
+                  </article>
+              </li>
+            <? endwhile ?>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+                <button class="btn btn-sm btn-primary"><i class="fa fa-refresh"></i> Play again</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
 
 

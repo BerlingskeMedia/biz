@@ -10611,7 +10611,6 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   right: 0;
   background-color: #000;
   z-index: 10;
-  cursor: move;
 }
 .gallery-overlay button {
   outline: 0;
@@ -10673,7 +10672,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   border-color: #bbb;
   color: #eee;
 }
-.gallery-overlay figure {
+.gallery-overlay .gallery-image {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -10684,14 +10683,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-}
-.gallery-overlay .gallery-img {
-  display: block;
-  max-width: 100%;
-  width: 100% \9;
-  height: auto;
-  margin: 0 auto;
-  max-height: 100%;
+  cursor: move;
 }
 .gallery-overlay .gallery-close {
   border-radius: 50%;
@@ -10733,6 +10725,9 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 .gallery-overlay .gallery-arrow.arrow-prev {
   left: -50px;
 }
+.gallery-overlay .gallery-arrow.arrow-passive {
+  display: none;
+}
 .gallery-overlay .gallery-arrow.arrow-next {
   left: auto;
   right: -50px;
@@ -10764,7 +10759,7 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   background-color: rgba(51, 51, 51, 0.8);
 }
 @media (max-width: 767px) {
-  .gallery-overlay figure {
+  .gallery-overlay .gallery-image {
     top: 0;
     left: 0;
     right: 0;
@@ -10798,6 +10793,16 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
     top: 10px;
     right: 10px;
   }
+}
+.gallery-finale {
+  color: #999;
+  padding-top: 100px;
+}
+.gallery-finale .header a {
+  color: #999;
+}
+.gallery-finale .header a:hover {
+  color: #ddd;
 }
 .module {
   margin-bottom: 50px;
