@@ -123,21 +123,7 @@
               <? endif ?>
 
 
-<aside class="article-fact article-fact-brandview ">
-<span class="ad-label"><i class="fa fa-caret-down"></i> Sponseret</span>
-<div class="aside-content">
 
-  <a href="section-brandview.php"><span class="logo-brandview"></span></a>
-  
-  <figure>
-  <a href="article-brandview.php"><img src="<? dummy("image@200x,16:9,") ?>" width="" height="" alt="" /></a>
-  </figure>
-  <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
-  <p>I samarbejde med Nykredit</p>
-  </div>
-  
-
-</aside><!-- Article factbox -->
 
                
               
