@@ -7099,9 +7099,10 @@ footer + [class*="teaser-tag-"] {
 }
 [class*="teaser-tag-"] {
   font-weight: 300;
-  display: inline-block;
+  display: block;
   text-transform: uppercase;
   font-size: 87%;
+  line-height: 1;
 }
 [class*="teaser-tag-"]:before {
   display: inline;
@@ -8853,6 +8854,11 @@ h1.heading {
 }
 .article-content {
   padding-bottom: 50px;
+}
+.article-content .article-video {
+  height: 0;
+  padding-top: 56.25%;
+  background: #000;
 }
 .article-content .slick-slider {
   margin-bottom: 15px;

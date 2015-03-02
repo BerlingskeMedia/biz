@@ -1,7 +1,7 @@
 <div class="col-md-12">
   <div class="deck-header">
   <h1>Business TV</h1>
-  <a href="#" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
+  <a href="section-video.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
   </div>
 </div>
 <div class="col-md-12">
@@ -31,9 +31,9 @@
     <? while (dumb_luck("4")): ?>
       <li class="col-md-3 col-sm-6 col-xs-6">
         <article class="teaser teaser-video">
-          <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
+          <figure class="teaser-img"><a href="article-video.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
           <? dummy("text@biz-headertags") ?>
-          <h2 class="header"><a href="article.php">
+          <h2 class="header"><a href="article-video.php">
           <? dummy("text@headline") ?></a></h2>
         </article>
         </li>
