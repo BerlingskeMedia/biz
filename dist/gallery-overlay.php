@@ -341,8 +341,8 @@
         </div>
         <button class="gallery-btn-show-caption">Vis beskrivelse</button>
       </div>
-      <figure>
-      <img src="<? dummy("image@1600x,") ?>" width="" height="" alt="" class="gallery-img" />
+      <figure style="background-image: url(<? dummy("image@1600x,") ?>);" class="gallery-image">
+      
       </figure>
     </div>
 

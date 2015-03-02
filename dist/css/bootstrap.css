@@ -10670,6 +10670,9 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
   bottom: 20px;
   padding-bottom: 20px;
   text-align: center;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .gallery-overlay .gallery-img {
   display: block;
