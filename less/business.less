@@ -3867,9 +3867,17 @@ h1.heading {
 	right: 0;
 	background-color: #000;
 	z-index: 10;
+	
+	cursor: move;
+
+
+	
+
+
 	button {
 		outline: 0;
 	}
+
 	.gallery-tools {
 		z-index: 10;
 		position: absolute;
@@ -3930,11 +3938,21 @@ h1.heading {
 		bottom: 20px;
 		padding-bottom: 20px;
 		text-align: center;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		-webkit-box-align: center;
+		align-items: center;
+
 	}
 	.gallery-img {
 		.img-responsive;
 		margin: 0 auto;
 		max-height: 100%;
+		
+
 	}
 	.gallery-close {
 		border-radius: 50%;
