@@ -7125,7 +7125,7 @@ footer + [class*="teaser-tag-"] {
   padding-right: 3px;
 }
 .teaser-tag-breaking {
-  color: #333;
+  color: #000;
   background: #ffdb5e;
   padding: 0 4px;
   line-height: 1.3;
