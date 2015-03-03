@@ -327,21 +327,21 @@
   <?php include("./inc/footer.php"); ?>
 
     
-    <div class="gallery-overlay">
+    <div class="gallery-overlay gallery-finale">
       <button class="gallery-close"><i class="fa fa-close"></i></button>
       <a class="gallery-arrow arrow-prev" href="#" ></a>
       <a class="gallery-arrow arrow-next arrow-passive" href="#" ></a>
       <div class="gallery-caption">
-        <!-- <p><? dummy("text@teaser") ?> <span>Photo: <? dummy("text@author") ?></span></p> -->
+        
       </div>
       <div class="gallery-tools">
       
         <div class="gallery-counter">
-          <strong>2</strong> out of <strong>22</strong>
+          <strong>22</strong> out of <strong>22</strong>
         </div>
         <button class="gallery-btn-show-caption"><i class="fa fa-caret-up"></i> <span>Vis beskrivelse</span></button>
       </div>
-      <div class="gallery-finale">
+      
         <div class="container">
           <div class="row">
             <div class="col-md-12" ><h2 class="section-header"> You might also like</h2></div>
@@ -352,7 +352,7 @@
               <li class="col-md-3 col-xs-6 col-sm-6 ">
                   <article class="teaser teaser-gallery ">
                     <figure class="teaser-img"><a href="#"><img src="<? dummy("image@220x,16:9") ?>" width="" height="" alt="" /></a></figure>
-                    <h2 class="header"><a href="#"><? dummy("text@headline") ?></a></h2>
+                    <h2 class="header"><a href="#"><i class="fa fa-camera"></i> <? dummy("text@headline") ?></a></h2>
                   </article>
               </li>
             <? endwhile ?>
@@ -367,7 +367,7 @@
               <li class="col-md-3 col-xs-6 col-sm-6 ">
                   <article class="teaser teaser-gallery ">
                     <figure class="teaser-img"><a href="#"><img src="<? dummy("image@220x,16:9") ?>" width="" height="" alt="" /></a></figure>
-                    <h2 class="header"><a href="#"><? dummy("text@headline") ?></a></h2>
+                    <h2 class="header"><a href="#"><i class="fa fa-camera"></i> <? dummy("text@headline") ?></a></h2>
                   </article>
               </li>
             <? endwhile ?>
@@ -380,7 +380,7 @@
           </div>
 
         </div>
-      </div>
+      
     </div>
 
 

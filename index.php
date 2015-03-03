@@ -172,7 +172,8 @@ li ul {
           <li class="d"><a href="./dist/magazine.php">Business Magazine</a></li>
           <li class="c"><a href="./dist/section-galleries.php">Image galleries - Section</a></li>
           <li class="d"><a href="./dist/gallery-bond.php">Image galleries - BOND version</a></li>
-          <li class="c"><a href="./dist/gallery-overlay.php">Image galleries - Symfony</a></li>
+          <li class="d"><a href="./dist/gallery-overlay.php">Image galleries - Symfony</a></li>
+          <li class="d"><a href="./dist/gallery-overlay-finale.php">Image galleries - Symfony - final slide</a></li>
           <li class="d"><a href="./dist/assets-cookiewarning.php">Cookiewarning</a></li>
         </ul>
 
