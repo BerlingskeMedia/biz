@@ -46,11 +46,7 @@
 	<div class="footer-main">
 		<div class="container">
 
-		<div class="col-md-12 text-center">
-			
-			<h1>Følg pengene</h1>
-
-		</div>
+		
 			<div class="col-md-3">
 <p><strong>KONTAKT</strong></p>
 <p>Berlingske Media<br>
