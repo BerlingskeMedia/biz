@@ -327,19 +327,21 @@
   <?php include("./inc/footer.php"); ?>
 
     
-    <div class="gallery-overlay">
+    <div class="gallery-overlay show-caption">
       <button class="gallery-close"><i class="fa fa-close"></i></button>
       <a class="gallery-arrow arrow-prev" href="#" ></a>
       <a class="gallery-arrow arrow-next" href="#" ></a>
       <div class="gallery-caption">
+        
         <p><? dummy("text@teaser") ?> <span>Photo: <? dummy("text@author") ?></span></p>
+
       </div>
       <div class="gallery-tools">
       
         <div class="gallery-counter">
           <strong>2</strong> out of <strong>22</strong>
         </div>
-        <button class="gallery-btn-show-caption"><i class="fa fa-caret-up"></i> <span>Vis beskrivelse</span></button>
+        <button class="gallery-btn-show-caption"><i class="fa fa-caret-up"></i> <span>Skjul beskrivelse</span></button>
       </div>
       <figure style="background-image: url(<? dummy("image@1600x,") ?>);" class="gallery-image">
       

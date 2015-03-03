@@ -47,11 +47,29 @@
     </div>
       
       <div class="col-md-8 col-sm-12 module-sm">
-       <div class="row">
+       <? while (dumb_luck("4")): ?>
+
+
+
+
+        
+          
+            
+              <article class="teaser header-30 ">
+                <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
+                <div class="teaser-body">
+                <footer><a href="section.php" class="cat"><i class="fa fa-camera"></i> Billedgalleri</a> <time><? dummy("text@time-ago-short") ?></time></footer>
+                <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></a> </h2>
+                
+                </div>
+              </article>
+
+
+              <div class="row">
        <ul class="list-clean flex-2-2-2 ">
          
         
-        <? while (dumb_luck("10")): ?>
+        <? while (dumb_luck("2")): ?>
             <li class="col-xs-6">
               <article class="teaser header-20 ">
                 <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
@@ -66,20 +84,11 @@
         </ul>
         </div>
 
-        <? while (dumb_luck("10")): ?>
-          
-            
-              <article class="teaser header-30 ">
-                <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
-                <div class="teaser-body">
-                <footer><a href="section.php" class="cat"><i class="fa fa-camera"></i> Billedgalleri</a> <time><? dummy("text@time-ago-short") ?></time></footer>
-                <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></a> </h2>
-                
-                </div>
-              </article>
+
+      <? endwhile ?>
             
           
-        <? endwhile ?>
+        
         
         
 

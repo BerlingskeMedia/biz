@@ -30,10 +30,12 @@ body {
 ul {
   list-style: none;
   padding-left: 0;
+  font-size: 15px;
 }
 li ul {
   padding-left: 20px;
   list-style: disc;
+
 }
   a {
     min-width: 200px;
@@ -42,6 +44,7 @@ li ul {
     position: absolute;
     left: 250px;
     font-size: 12px;
+    display: none;
   }
 
   li:after {
@@ -168,7 +171,7 @@ li ul {
           <li class="d"><a href="./dist/section-events.php">Events</a> <date>Feb. 14th</date></li>
           <li class="d"><a href="./dist/magazine.php">Business Magazine</a></li>
           <li class="c"><a href="./dist/section-galleries.php">Image galleries - Section</a></li>
-          <li class="c"><a href="./dist/gallery-bond.php">Image galleries - BOND version</a></li>
+          <li class="d"><a href="./dist/gallery-bond.php">Image galleries - BOND version</a></li>
           <li class="c"><a href="./dist/gallery-overlay.php">Image galleries - Symfony</a></li>
           <li class="d"><a href="./dist/assets-cookiewarning.php">Cookiewarning</a></li>
         </ul>
