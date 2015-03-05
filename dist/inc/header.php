@@ -17,82 +17,59 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<header class="site-header sr-only">
-<div class="header-wrapper">
-  <div class="container">
-    <div class="row">
-    
-    <div class="col-sm-12">
-      <nav class="super-header">
-        <ul>
-          <li><a href="#">Berlingske.dk</a></li>
-          <li><a href="#">Politiko.dk</a></li>
-        </ul>
-        <ul class="right-nav">
-          <li><a href="http://www.berlingskemedia.dk/cookie-og-privatlivspolitik/" target="_blank" class="sosume">Privatlivspolitik</a></li>
-          <li><a href="#">Annoncør</a></li>
-          <li><a href="#">Kontakt</a></li>
-          <li><a href="#">Køb abonnement</a></li>
-        </ul>
-      </nav>
-    </div><!-- col -->
-    
-      <div class="col-sm-6">
-        <a href="/" class="logo">
-          Berlingske Business
-        </a>    
-      </div>
-      <div class="col-sm-6">
-        <div class="text-right">
-        <div class="tools thanks-mic-dot-com">
-          <div class="tool-likeus">
-            <a href="https://www.facebook.com/berlingskebusiness" target="_blank" class="header-tool-icon"><i class="fa fa-facebook"></i></a>
-            <div class="social-iframe">
-              <!-- Remember to insert button with correct App id -->
-              <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fberlingskebusiness&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=362425483926972" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>
-            </div>
-          </div>
-          <div class="tool-likeus">
-            <a href="https://twitter.com/businessdk" target="_blank" class="header-tool-icon"><i class="fa fa-twitter"></i></a>
-            <div class="social-iframe">
-            <a href="https://twitter.com/businessdk" class="twitter-follow-button" data-show-count="false">Follow @businessdk</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-            </div>
-          </div>
-          <a href="#" class="header-tool-icon toggle-search"><i class="fa fa-search"></i></a>
-          <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-login">Log ind</a>  
-        </div>
+<div class="site-main-header main-header-top">
+  <div class="container-main-header">
+    <div class="row ">
+      <div class="header-right col-md-6 ">
+         <ul>
+          <li><a href="http://www.b.dk">Berlingske.dk</a></li>
+          <li><a href="#" class="btn btn-primary ">Buy subscription</a></li>
           
-        </div>
+         </ul>
       </div>
-    </div>
-  </div> 
 
-
-  <div class="site-menu">
-  <div class="container">
-  <div class="row">
-  <div class="col-md-12">
-    <ul>
-      <? while (dumb_luck("7")): ?><li><a href="#" title="Title"><? dummy("text@item") ?></a></li><? endwhile ?>
-      <li class="pull-right"><a href="#" title="Title">Seneste nyt</a></li>
-    </ul>
+      <div class="header-left col-md-6 text-right">
+      <ul>
+        <li class="social-icons">Follow us: <a href="#"><i class="fa fa-facebook"></i> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a></li>  
+        <li><a href="#" class="sosume">Privacy</a></li>
+      </ul>
+      
+        <!-- <a href="#" class="ticker-item ticker-item-neg"><time><i class="fa fa-clock-o"></i> 9:17</time> <b>OMXC20</b> <span class="change">-2,65%</span></a>
+        <a href="#" class="ticker-item ticker-item-pos">
+            <b>A.P. Møller Mærsk A</b> <span class="change">0,40%</span>
+        </a>
+        <a href="#" class="ticker-item ticker-item-neg">
+            <b>Carlsberg B</b> <span class="change">-0,35%</span>
+        </a> -->
+      </div>
+        
     </div>
-    </div>
-  </div>
-  </div>
-</div><!-- header-wrapper -->
-
-<div class="global-search">
-  <div class="container">
-    <div  class="toggle-search fa fa-times"></div>
-    <form action="search.php" method="get">
-      <input type="search" class="nav-search-input" placeholder="Indtast søgeord" name="q" autocomplete="off" value="" accesskey="s" tabindex="1" size="65">
-      <button type="submit" tabindex="2" class="nav-search-query-btn fa fa-search"></button>
-    </form>
   </div>
 </div>
-</header>
+
+<div class="site-main-header main-header-bottom">
+  <div class="container-main-header">
+    <div class="header-bottom">
+        <a href="./" class="logo-business">Business</a>
+        <nav class="site-nav">
+        <ul class="list-clean">
+        <li class="active"><a href="./"><i class="fa fa-home"></i></a></li>
+        <li><a href="#">Nyheder</a></li>
+        <li><a href="#">Investor</a></li>
+        <li><a href="#">Virksomheder</a></li>
+        <li><a href="#">Privatøkonomi</a></li>
+        <li><a href="#">Karriere</a></li>
+        <li><a href="#">Opinion</a></li>
+        <li><a href="#">Business TV</a></li>
+        <li><a href="./"><i class="fa fa-search"></i></a></li>
+        <li><a href="./"><i class="fa fa-user"></i></a></li>
+        </ul>
+        </nav>
+    </div>
+  </div>
+</div>
+  
+
 
 
 
