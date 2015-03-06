@@ -1,5 +1,44 @@
 $(function () {
 
+    // Navigation
+    var sticky_navigation_offset_top = $('.main-header-bottom').offset().top;
+    
+    var sticky_navigation = function()  {
+    var scroll_top = $(window).scrollTop(); 
+    
+    if (scroll_top > sticky_navigation_offset_top) {
+      $('body').addClass('make-fixed-menu');
+    } else {
+        $('body').removeClass('make-fixed-menu');
+      }
+    };
+  
+    sticky_navigation();
+    $(window).on('resize scroll', function() {
+      sticky_navigation();
+    }).resize();
+    
+
+    $('.menu-search a, .btn-close-search').on('click', function(e){
+      e.preventDefault();
+      var searchHeader = $('.header-bottom');
+
+      if ((searchHeader).hasClass('show-search')) {
+        searchHeader.removeClass('show-search'); 
+      } else {
+        searchHeader.addClass('show-search'); 
+        $('#site-search').focus();
+      }
+
+      // $('.header-bottom').toggleClass('show-search');
+    })
+
+
+    // $('').on('click', function() {
+    //   $(this).closest('.btn-close-toggle').fadeOut('fast');
+    // })
+
+
     // SEARCH 
     $('.toggle-search').on('click', function() {
     	$('.global-search').toggleClass('show-search');
