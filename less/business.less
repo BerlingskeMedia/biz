@@ -96,6 +96,9 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 		width: 740px;
 		padding: 0 10px;
 	}	
+	@media (max-width: @screen-xs-max) {
+		width: 100%;
+	}	
 }
 .header-bottom {
 	text-align: right;
@@ -141,7 +144,7 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 	}
 	.menu-login:before {
 		content: 'LOG IND';
-		display: block;
+		display: none;
 		position: absolute;
 		bottom: 5px;
 		font-size: 10px;
@@ -164,50 +167,58 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 	}
 	
 }
+.menu-md {
+	@media (max-width: @screen-sm-max) {
+		display: none!important;
+	}
+
+}
 .site-search {
-		display: none;
-		position: absolute;
+	display: none;
+	position: absolute;
+	height: 54px;
+	line-height: 54px;
+	left: 10px;
+	top: 0;
+	right: 10px;
+	text-align: left;
+	background-color: @biz-pink;
+	.btn-close-search {
 		height: 54px;
 		line-height: 54px;
-		left: 10px;
+		position: absolute;
+		right: 0;
 		top: 0;
-		right: 10px;
-		text-align: left;
-		background-color: @biz-pink;
-		.btn-close-search {
-			height: 54px;
-			line-height: 54px;
-			position: absolute;
-			right: 0;
-			top: 0;
-			line-height: 1;
-			padding: 0 20px;
-			font-size: 20px;
-			box-shadow: none;
-			background-color: transparent;
-			border: 0;
-			outline: 0;
+		line-height: 1;
+		padding: 0 10px;
+		font-size: 20px;
+		box-shadow: none;
+		background-color: transparent;
+		border: 0;
+		outline: 0;
+		&:hover {
+			color: #666;
 		}
-		input[type=search] {
-			width: 95%;
-
-			line-height: 40px;
-			height: 40px;
-			background-color: transparent;
-			border-left: 0;
-			border-right: 0;
-			border-top: 0; 
-			font-size: 25px;
-			font-weight: 300;
-			border-bottom: 2px solid rgba(0,0,0,.2);
+	}
+	input[type=search] {
+		width: 100%;
+		line-height: 40px;
+		height: 40px;
+		background-color: transparent;
+		border-left: 0;
+		border-right: 0;
+		border-top: 0; 
+		font-size: 25px;
+		font-weight: 300;
+		border-bottom: 2px solid rgba(0,0,0,.2);
+		color: #333;
+		padding-left: 5px;
+		.placeholder(#666);
+		outline: 0!important;
+		&:active {
 			color: #333;
-			padding-left: 5px;
-			.placeholder(#666);
-			outline: 0!important;
-			&:active {
-				color: #333;
-			}
 		}
+	}
 }
 
 .show-search .site-search {
@@ -249,11 +260,16 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 	text-indent: -9999px;
 	@media (max-width: @screen-md-max) {
 		width: 235px;
-		height: 54px;
+	}
+	@media (max-width: @screen-xs-max) {
+		width: 150px;
 	}
 }
 .make-fixed-menu .logo-business {
 	width: 236px;
+	@media (max-width: @screen-xs-max) {
+			width: 150px;
+	}
 }
 .sosume {
 	display: inline-block;

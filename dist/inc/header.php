@@ -59,13 +59,13 @@
         <nav class="site-nav">
           <ul class="list-clean">
             <!-- <li class="active"><a href="./"><i class="fa fa-home"></i></a></li> -->
-            <li class="hidden-xs"><a href="section.php">Nyheder</a></li>
-            <li class="hidden-xs"><a href="section.php">Investor</a></li>
-            <li class="hidden-xs"><a href="section.php">Virksomheder</a></li>
-            <li class="hidden-xs"><a href="section.php">Privatøkonomi</a></li>
-            <li class="hidden-xs"><a href="section.php">Karriere</a></li>
-            <li class="hidden-xs"><a href="section.php">Opinion</a></li>
-            <li ><a href="section.php">TV</a></li>
+            <li class="menu-md"><a href="section.php">Nyheder</a></li>
+            <li class="menu-md"><a href="section.php">Investor</a></li>
+            <li class="menu-md"><a href="section.php">Virksomheder</a></li>
+            <li class="menu-md"><a href="section.php">Privatøkonomi</a></li>
+            <li class="menu-md"><a href="section.php">Karriere</a></li>
+            <li class="menu-md"><a href="section.php">Opinion</a></li>
+            <li class="menu-md"><a href="section.php">TV</a></li>
             <li class="menu-search"><a href="./"><i class="fa fa-search"></i></a></li>
             <li class="menu-login"><a href="./"><i class="fa fa-user"></i></a></li>
             

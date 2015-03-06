@@ -6406,6 +6406,11 @@ figcaption,
     padding: 0 10px;
   }
 }
+@media (max-width: 767px) {
+  .container-main-header {
+    width: 100%;
+  }
+}
 .header-bottom {
   text-align: right;
   position: relative;
@@ -6449,7 +6454,7 @@ figcaption,
 }
 .site-nav .menu-login:before {
   content: 'LOG IND';
-  display: block;
+  display: none;
   position: absolute;
   bottom: 5px;
   font-size: 10px;
@@ -6469,6 +6474,11 @@ figcaption,
 .site-nav a:hover {
   color: #666;
 }
+@media (max-width: 991px) {
+  .menu-md {
+    display: none!important;
+  }
+}
 .site-search {
   display: none;
   position: absolute;
@@ -6487,15 +6497,18 @@ figcaption,
   right: 0;
   top: 0;
   line-height: 1;
-  padding: 0 20px;
+  padding: 0 10px;
   font-size: 20px;
   box-shadow: none;
   background-color: transparent;
   border: 0;
   outline: 0;
 }
+.site-search .btn-close-search:hover {
+  color: #666;
+}
 .site-search input[type=search] {
-  width: 95%;
+  width: 100%;
   line-height: 40px;
   height: 40px;
   background-color: transparent;
@@ -6554,11 +6567,20 @@ figcaption,
 @media (max-width: 1199px) {
   .logo-business {
     width: 235px;
-    height: 54px;
+  }
+}
+@media (max-width: 767px) {
+  .logo-business {
+    width: 150px;
   }
 }
 .make-fixed-menu .logo-business {
   width: 236px;
+}
+@media (max-width: 767px) {
+  .make-fixed-menu .logo-business {
+    width: 150px;
+  }
 }
 .sosume {
   display: inline-block;
