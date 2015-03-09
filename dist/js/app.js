@@ -21,7 +21,7 @@ $(function () {
 
     $('.menu-search a, .btn-close-search').on('click', function(e){
       e.preventDefault();
-      var searchHeader = $('.header-bottom');
+      var searchHeader = $('body');
 
       if ((searchHeader).hasClass('show-search')) {
         searchHeader.removeClass('show-search'); 

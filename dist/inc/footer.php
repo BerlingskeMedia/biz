@@ -15,23 +15,6 @@
 
 						
 
-						<!-- <form class="">
-						
-						
-						<div class="row">
-							
-								<input type="email" class="form-control col-md-9 input-lg" placeholder="Indtast email" aria-describedby="email-newsletter">
-								<button class="btn  btn-primary btn-lg col-md-3">Tilmeld nu </button>
-							
-						</div>
-						
-							
-							
-						
-						
-						</div>
-					</form>				 -->
-
 
 					</div>
 					</div>
