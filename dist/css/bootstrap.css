@@ -6647,10 +6647,6 @@ figcaption,
 .show-menu {
   height: 100%;
 }
-.show-menu .site-main-header,
-.show-menu div {
-  height: 100%;
-}
 .show-menu .site-nav {
   display: block;
 }
@@ -6716,7 +6712,7 @@ figcaption,
     left: 0;
     right: 0;
     background: #333;
-    z-index: 9999;
+    z-index: 200;
     overflow-x: hidden;
     overflow-y: scroll;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
