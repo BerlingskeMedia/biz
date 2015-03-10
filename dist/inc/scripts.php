@@ -8,9 +8,5 @@
 <!-- Image slider -->
 <script src="js/plugins/slick.min.js"></script>
 
-<!-- Lightbox -->
-<script src="http://osvaldas.info/examples/image-lightbox-responsive-touch-friendly/imagelightbox.min.js"></script>
-
-
 
 <script src="js/app.js?ver=<? dummy("text@number") ?>"></script>
