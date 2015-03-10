@@ -51,6 +51,8 @@
         <a href="#" class="btn-toggle-mobile-search toggle-global-search"><i class="fa fa-search"></i></a>
         <nav class="site-nav">
         
+        <a href="#" class="mobile-login" data-toggle="modal" data-target="#modal-login"><i class="fa fa-user"></i> <small>Log ind</small></a>
+        
         <a class="close-menu" href="#"><i class="fa fa-times"></i></a>
 
           <ul class="main-nav">

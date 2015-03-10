@@ -6622,15 +6622,27 @@ figcaption,
   position: absolute;
   right: 0;
   top: 0;
-  color: #ddd;
+  color: #fadcd2;
   font-size: 25px;
   line-height: 50px;
   display: inline-block;
   width: 50px;
   text-align: center;
 }
-.close-menu:hover {
-  color: #fff;
+.mobile-login {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 55px;
+  font-size: 17px;
+  padding: 0 15px;
+  color: #eee;
+}
+@media (max-width: 767px) {
+  .mobile-login {
+    display: block;
+  }
 }
 .show-menu {
   height: 100%;
@@ -6712,6 +6724,7 @@ figcaption,
   .site-nav ul.main-nav {
     margin: 0;
     padding: 0 ;
+    list-style: none;
   }
   .site-nav ul.main-nav > li:first-child {
     border-top: 1px solid #666;

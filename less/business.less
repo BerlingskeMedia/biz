@@ -310,14 +310,26 @@ ul.main-nav {
 	position: absolute;
 	right: 0;
 	top: 0;
-	color: #ddd;
+	color: @biz-pink;
 	font-size: 25px;
 	line-height: 50px;
 	display: inline-block;
 	width: 50px;
 	text-align: center;
-	&:hover {
-		color: #fff;
+}
+
+.mobile-login {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	line-height: 55px;
+	font-size: 17px;
+	padding: 0 15px;
+	color: #eee;
+	@media (max-width: @screen-xs-max) {
+		display:block;
+		
 	}
 }
 
@@ -403,6 +415,7 @@ ul.main-nav {
 		ul.main-nav {
 			margin: 0;
 			padding: 0 ;
+			list-style: none;
 			&> li:first-child {
 				border-top: 1px solid #666;
 			} 
