@@ -6620,11 +6620,14 @@ figcaption,
 .close-menu {
   display: none;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 0;
+  top: 0;
   color: #ddd;
   font-size: 25px;
-  line-height: 1;
+  line-height: 50px;
+  display: inline-block;
+  width: 50px;
+  text-align: center;
 }
 .close-menu:hover {
   color: #fff;
@@ -6688,7 +6691,7 @@ figcaption,
   }
   .site-nav {
     display: none;
-    padding: 20px 0px;
+    padding: 50px 0px 0 0;
     -webkit-transition: transform 0.2s ease;
     -o-transition: transform 0.2s ease;
     transition: transform 0.2s ease;
@@ -6846,6 +6849,28 @@ figcaption,
   font-family: fontawesome;
   padding-left: 4px;
 }
+.mobile-icons {
+  display: none;
+  line-height: 35px;
+  padding: 20px;
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .mobile-icons {
+    display: block;
+  }
+}
+.mobile-icons a {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+}
 .logo-business {
   width: 300px;
   height: 54px;
@@ -6866,7 +6891,7 @@ figcaption,
 }
 @media (max-width: 767px) {
   .logo-business {
-    width: 190px;
+    width: 210px;
   }
 }
 @media (min-width: 992px) {

@@ -308,11 +308,14 @@ ul.main-nav {
 .close-menu {
 	display: none;
 	position: absolute;
-	right: 10px;
-	top: 10px;
+	right: 0;
+	top: 0;
 	color: #ddd;
 	font-size: 25px;
-	line-height: 1;
+	line-height: 50px;
+	display: inline-block;
+	width: 50px;
+	text-align: center;
 	&:hover {
 		color: #fff;
 	}
@@ -380,7 +383,7 @@ ul.main-nav {
 
 	.site-nav {
 		display: none;
-		padding: 20px 0px;
+		padding: 50px 0px 0 0;
 		.transition (transform .2s ease);
 		-webkit-backface-visibility: hidden;
 		-webkit-overflow-scrolling: touch;
@@ -530,6 +533,27 @@ ul.main-nav {
 }
 
 
+.mobile-icons {
+	display: none;
+	line-height: 35px;
+	padding: 20px;
+	color: #ccc;
+	font-size: 14px;
+	font-weight: 700;
+	@media (max-width: @screen-xs-max) {
+		display: block;
+	}
+	a {
+		border-radius: 50%;
+		height: 35px;
+		width: 35px;
+		display: inline-block;
+		background-color: #222;
+		color: #ccc;
+		text-align: center;
+
+	}
+}
 
 .logo-business {
 	width: 300px;
@@ -545,7 +569,7 @@ ul.main-nav {
 		width: 160px;
 	}
 	@media (max-width: @screen-xs-max) {
-		width: 190px;
+		width: 210px;
 	}
 }
 .make-fixed-menu .logo-business {

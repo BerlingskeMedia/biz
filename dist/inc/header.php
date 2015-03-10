@@ -1,9 +1,4 @@
-<div class="tester">
-<span class="visible-xs">XS</span>
-<span class="visible-sm">SM</span>
-<span class="visible-md">MD</span>
-<span class="visible-lg">LG</span>
-</div>
+
 
 <div class="modal fade" id="modal-login">
   <div class="modal-dialog">
@@ -97,6 +92,13 @@
             </ul>
             </li>
           </ul>
+          <div class="mobile-icons">
+          Følg:
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </div>
+
           <ul class="nav-tools main-nav">
             <li class=" menu-latest"><a href="./"><i class="fa fa-clock-o"></i><ins><? dummy("text@number") ?></ins></a></li>
             <li class="menu-md menu-search"><a href="./"><i class="fa fa-search"></i></a></li>
