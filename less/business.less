@@ -535,22 +535,31 @@ ul.main-nav {
 
 .mobile-icons {
 	display: none;
-	line-height: 35px;
+	
 	padding: 20px;
 	color: #ccc;
 	font-size: 14px;
 	font-weight: 700;
+	span {
+		display: inline-block;
+		float: left;
+		line-height: 45px;
+		margin-right: 5px;
+	}
 	@media (max-width: @screen-xs-max) {
 		display: block;
 	}
 	a {
 		border-radius: 50%;
-		height: 35px;
-		width: 35px;
+		line-height: 45px;
+		height: 45px;
+		width: 45px;
 		display: inline-block;
 		background-color: #222;
 		color: #ccc;
 		text-align: center;
+		margin: 0 5px;
+		font-size: 25px;
 
 	}
 }
