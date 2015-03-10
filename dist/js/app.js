@@ -20,7 +20,7 @@ $(function () {
     
 
 
-    $('.menu-search a, .btn-close-search').on('click', function(e){
+    $('.menu-search a, .btn-close-search, .toggle-global-search').on('click', function(e){
       e.preventDefault();
       var searchHeader = $('body');
 
@@ -66,7 +66,7 @@ $(function () {
       
 
     // SEARCH 
-    $('.toggle-search').on('click', function() {
+    $('toggle-search').on('click', function() {
     	$('.global-search').toggleClass('show-search');
     });
 

@@ -6733,6 +6733,7 @@ figcaption,
     display: none;
   }
 }
+.btn-toggle-mobile-search,
 .btn-toggle-nav {
   display: none;
   height: 54px;
@@ -6742,16 +6743,22 @@ figcaption,
   font-size: 21px;
   color: #193057;
 }
+.btn-toggle-mobile-search:hover,
 .btn-toggle-nav:hover {
   color: #24467f;
 }
+.btn-toggle-mobile-search:focus,
 .btn-toggle-nav:focus {
   color: #193057;
 }
 @media (max-width: 767px) {
+  .btn-toggle-mobile-search,
   .btn-toggle-nav {
     display: inline-block;
   }
+}
+.btn-toggle-mobile-search {
+  float: right;
 }
 .site-search {
   display: none;
@@ -6777,7 +6784,7 @@ figcaption,
   right: 0;
   top: 0;
   line-height: 1;
-  padding: 0 10px;
+  padding: 0 5px;
   font-size: 20px;
   box-shadow: none;
   background-color: transparent;

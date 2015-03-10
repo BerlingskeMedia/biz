@@ -53,6 +53,7 @@
     <div class="header-bottom col-md-12">
         <a href="./" class="logo-business">Business</a>
         <a href="#" class="btn-toggle-nav"><i class="fa fa-bars"></i></a>
+        <a href="#" class="btn-toggle-mobile-search toggle-global-search"><i class="fa fa-search"></i></a>
         <nav class="site-nav">
         
         <a class="close-menu" href="#"><i class="fa fa-times"></i></a>
