@@ -88,4 +88,5 @@ Fax: 33 75 20 20</p>
 
 </footer>
 
+
 <?php include('inc/scripts.php'); ?>

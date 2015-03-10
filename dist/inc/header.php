@@ -1,23 +1,6 @@
 
 
-<div class="modal fade" id="modal-login">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Luk"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Log ind på Business.dk</h4>
-      </div>
-      <div class="modal-body">
-        <p>Log ind eller bliv medlem</p>
-        <p>Her kommer en log ind formular</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Luk</button>
-        <button type="button" class="btn btn-primary btn-sm">Log ind</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+
 
 <div class="site-main-header main-header-top">
   <div class="container-main-header">
@@ -50,9 +33,28 @@
         <a href="#" class="btn-toggle-nav"><i class="fa fa-bars"></i></a>
         <a href="#" class="btn-toggle-mobile-search toggle-global-search"><i class="fa fa-search"></i></a>
         <nav class="site-nav">
-        
+<div class="modal fade" id="modal-login">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Luk"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Log ind på Business.dk</h4>
+      </div>
+      <div class="modal-body">
+        <p>Log ind eller bliv medlem</p>
+        <p>Her kommer en log ind formular</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Luk</button>
+        <button type="button" class="btn btn-primary btn-sm">Log ind</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
         <a href="#" class="mobile-login" data-toggle="modal" data-target="#modal-login"><i class="fa fa-user"></i> <small>Log ind</small></a>
-        
+
         <a class="close-menu" href="#"><i class="fa fa-times"></i></a>
 
           <ul class="main-nav">
