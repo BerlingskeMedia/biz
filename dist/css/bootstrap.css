@@ -6677,9 +6677,9 @@ figcaption,
   transform: translate3d(-280px, 0, 0);
   left: 0;
   opacity: 0;
-  -webkit-transition: transform 0.2s ease;
-  -o-transition: transform 0.2s ease;
-  transition: transform 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .mobile-nav .sub-menu {
   display: none;
@@ -6696,6 +6696,27 @@ figcaption,
 .mobile-nav .sub-menu li:first-child {
   font-weight: 700;
 }
+.mobile-nav ul.main-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.mobile-nav ul.main-nav > li:first-child {
+  border-top: 1px solid #666;
+}
+.mobile-nav ul.main-nav > li {
+  position: relative;
+  line-height: 55px;
+  font-size: 25px;
+  border-bottom: 1px solid #666;
+  padding: 0 0 0 15px;
+}
+.mobile-nav ul.main-nav > li a:not(.show-sub) {
+  display: block;
+}
+.mobile-nav ul.main-nav > li a {
+  color: #ddd;
+}
 .mobile-nav .active-sub .sub-menu {
   display: block;
 }
@@ -6705,6 +6726,17 @@ figcaption,
 }
 .mobile-nav .active-sub .show-sub .fa:before {
   content: '\2014';
+}
+.mobile-nav .show-sub {
+  display: inline-block;
+  float: right;
+  width: 50px;
+  line-height: 55px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-left: 1px solid #666;
+  text-align: center;
 }
 .show-menu .mobile-nav {
   visibility: visible;
@@ -6719,41 +6751,9 @@ figcaption,
   overflow-x: hidden;
   overflow-y: scroll;
 }
-.show-menu .mobile-nav ul.main-nav {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.show-menu .mobile-nav ul.main-nav > li:first-child {
-  border-top: 1px solid #666;
-}
-.show-menu .mobile-nav ul.main-nav > li {
-  position: relative;
-  line-height: 55px;
-  font-size: 25px;
-  border-bottom: 1px solid #666;
-  padding: 0 0 0 15px;
-}
-.show-menu .mobile-nav ul.main-nav > li a:not(.show-sub) {
-  display: block;
-}
-.show-menu .mobile-nav ul.main-nav > li a {
-  color: #ddd;
-}
 @media (max-width: 767px) {
   .site-nav {
     display: none;
-  }
-  .show-sub {
-    display: inline-block;
-    float: right;
-    width: 50px;
-    line-height: 55px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-left: 1px solid #666;
-    text-align: center;
   }
   .nav-tools {
     display: none;
