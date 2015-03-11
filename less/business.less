@@ -334,12 +334,14 @@ ul.main-nav {
 }
 @media (max-width: @screen-xs-max) {
 	.show-menu {
+		overflow: hidden;
 		height: 100%;
-		.site-main-header, .site-main-header, .container-main-header, .container-main-header > div, .header-bottom {
+		/*.site-main-header, .site-main-header, .container-main-header, .container-main-header > div, .header-bottom {
 			height: 100%;
-		}
+		}*/
 		.site-nav {
 			display: block;
+
 		}
 		.close-menu {
 			display: inline-block;
@@ -400,15 +402,16 @@ ul.main-nav {
 		-webkit-backface-visibility: hidden;
 		-webkit-overflow-scrolling: touch;
   		-ms-overflow-style: -ms-autohiding-scrollbar;
-		position: fixed;
+		position: absolute;
 		top: 0;
-		height: 100%;
+		height: auto;
 		left: 0;
 		right: 0;
 		background: #333;
 		z-index: 200;
-		overflow-x: hidden;
-		overflow-y: scroll;
+		/*overflow-x: hidden;
+		overflow-y: scroll;*/
+		overflow: hidden;
 		box-shadow: 0 0 5px rgba(0,0,0,.5);
 
 		ul.main-nav {

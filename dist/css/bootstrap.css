@@ -6646,14 +6646,11 @@ figcaption,
 }
 @media (max-width: 767px) {
   .show-menu {
+    overflow: hidden;
     height: 100%;
-  }
-  .show-menu .site-main-header,
-  .show-menu .site-main-header,
-  .show-menu .container-main-header,
-  .show-menu .container-main-header > div,
-  .show-menu .header-bottom {
-    height: 100%;
+    /*.site-main-header, .site-main-header, .container-main-header, .container-main-header > div, .header-bottom {
+			height: 100%;
+		}*/
   }
   .show-menu .site-nav {
     display: block;
@@ -6715,15 +6712,16 @@ figcaption,
     -webkit-backface-visibility: hidden;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    position: fixed;
+    position: absolute;
     top: 0;
-    height: 100%;
+    height: auto;
     left: 0;
     right: 0;
     background: #333;
     z-index: 200;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    /*overflow-x: hidden;
+		overflow-y: scroll;*/
+    overflow: hidden;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   }
   .site-nav ul.main-nav {
