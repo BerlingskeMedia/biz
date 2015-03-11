@@ -332,22 +332,22 @@ ul.main-nav {
 		
 	}
 }
-
-.show-menu {
-	height: 100%;
-	.site-main-header, .site-main-header, .container-main-header, .container-main-header > div, .header-bottom {
+@media (max-width: @screen-xs-max) {
+	.show-menu {
 		height: 100%;
+		.site-main-header, .site-main-header, .container-main-header, .container-main-header > div, .header-bottom {
+			height: 100%;
+		}
+		.site-nav {
+			display: block;
+		}
+		.close-menu {
+			display: inline-block;
+		}
+		.main-header-bottom {
+			height: 100%;
+		}
 	}
-	.site-nav {
-		display: block;
-	}
-	.close-menu {
-		display: inline-block;
-	}
-	.main-header-bottom {
-		height: 100%;
-	}
-
 }
 .show-menu.make-fixed-menu .main-header-bottom {
 	height: 100%;

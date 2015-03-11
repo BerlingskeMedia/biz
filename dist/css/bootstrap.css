@@ -6644,24 +6644,26 @@ figcaption,
     display: block;
   }
 }
-.show-menu {
-  height: 100%;
-}
-.show-menu .site-main-header,
-.show-menu .site-main-header,
-.show-menu .container-main-header,
-.show-menu .container-main-header > div,
-.show-menu .header-bottom {
-  height: 100%;
-}
-.show-menu .site-nav {
-  display: block;
-}
-.show-menu .close-menu {
-  display: inline-block;
-}
-.show-menu .main-header-bottom {
-  height: 100%;
+@media (max-width: 767px) {
+  .show-menu {
+    height: 100%;
+  }
+  .show-menu .site-main-header,
+  .show-menu .site-main-header,
+  .show-menu .container-main-header,
+  .show-menu .container-main-header > div,
+  .show-menu .header-bottom {
+    height: 100%;
+  }
+  .show-menu .site-nav {
+    display: block;
+  }
+  .show-menu .close-menu {
+    display: inline-block;
+  }
+  .show-menu .main-header-bottom {
+    height: 100%;
+  }
 }
 .show-menu.make-fixed-menu .main-header-bottom {
   height: 100%;
