@@ -341,56 +341,50 @@ ul.main-nav {
 .site-wrapper {
 	position: relative;
 	width: 100%;
+	height: 100%;
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
 }
 .inner-wrap {
 	position: relative;
 	width: 100%;
+	height: 100%;
 }
 
 .mobile-nav {
 	-webkit-backface-visibility: hidden;
-  width: 280px;
-  top: 0;
-  bottom: 0;
-  position: fixed;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background: #1f1f1f;
-  z-index: 100;
-  box-sizing: content-box;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  -ms-transform: translate(-280px);
-  -webkit-transform: translateX(-280px);
-  -moz-transform: translateX(-280px);
-  -ms-transform: translateX(-280px);
-  -o-transform: translateX(-280px);
-  transform: translateX(-280px);
-  left: 0;
-  opacity: 0;
-.transition (all .2s ease);
+	width: 280px;
+	top: 0;
+	bottom: 0;
+	position: fixed;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: #1f1f1f;
+	z-index: 100;
+	box-sizing: content-box;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	.translate3d(-280px; 0; 0);
+	left: 0;
+	opacity: 0;
+	.transition (all .2s ease);
 }
 
 .show-menu .mobile-nav {
 	visibility: visible;
 	opacity: 1;
+	height: 100%;
 	-webkit-overflow-scrolling: touch;
 	-ms-overflow-style: -ms-autohiding-scrollbar;
-	-ms-transform: translateX(0px);
-	-webkit-transform: translateX(0px);
-	-moz-transform: translateX(0px);
-	-o-transform: translateX(0px);
-	transform: translateX(0px);
+	.translate3d(0; 0; 0);
 	padding: 50px 0px 0 0;
 	background: #333;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
+	
 	ul.main-nav {
 		margin: 0;
-		padding: 0 ;
+		padding: 0;
 		list-style: none;
 		&> li:first-child {
 			border-top: 1px solid #666;

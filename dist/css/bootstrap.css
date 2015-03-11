@@ -6651,12 +6651,14 @@ figcaption,
 .site-wrapper {
   position: relative;
   width: 100%;
+  height: 100%;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
 }
 .inner-wrap {
   position: relative;
   width: 100%;
+  height: 100%;
 }
 .mobile-nav {
   -webkit-backface-visibility: hidden;
@@ -6671,12 +6673,8 @@ figcaption,
   box-sizing: content-box;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
-  -ms-transform: translate(-280px);
-  -webkit-transform: translateX(-280px);
-  -moz-transform: translateX(-280px);
-  -ms-transform: translateX(-280px);
-  -o-transform: translateX(-280px);
-  transform: translateX(-280px);
+  -webkit-transform: translate3d(-280px, 0, 0);
+  transform: translate3d(-280px, 0, 0);
   left: 0;
   opacity: 0;
   -webkit-transition: all 0.2s ease;
@@ -6686,21 +6684,19 @@ figcaption,
 .show-menu .mobile-nav {
   visibility: visible;
   opacity: 1;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
-  -ms-transform: translateX(0px);
-  -webkit-transform: translateX(0px);
-  -moz-transform: translateX(0px);
-  -o-transform: translateX(0px);
-  transform: translateX(0px);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   padding: 50px 0px 0 0;
   background: #333;
   overflow-x: hidden;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 .show-menu .mobile-nav ul.main-nav {
   margin: 0;
-  padding: 0 ;
+  padding: 0;
   list-style: none;
 }
 .show-menu .mobile-nav ul.main-nav > li:first-child {
