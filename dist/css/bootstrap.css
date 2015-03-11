@@ -6793,6 +6793,28 @@ figcaption,
   border-left: 1px solid #666;
   text-align: center;
 }
+.mobile-nav .site-search form {
+  line-height: 1;
+  padding: 15px 0;
+}
+.mobile-nav .site-search button {
+  background-color: transparent;
+  border: 0;
+}
+.mobile-nav .site-search .fa {
+  color: #fff;
+  font-size: 20px;
+}
+.mobile-nav .site-search input[type="search"] {
+  line-height: 32px;
+  border: 0;
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 0 10px;
+  margin: 0;
+  width: 220px;
+  vertical-align: inherit;
+}
 .show-menu .exit-mobile-nav {
   display: block;
 }

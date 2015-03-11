@@ -3,13 +3,16 @@
 <aside class="mobile-nav">
   <a href="#" class="mobile-login" data-toggle="modal" data-target="#modal-login"><i class="fa fa-user"></i> <small>Log ind</small></a>
   <a class="close-menu" href="#"><i class="fa fa-times"></i></a>
-  <div class="site-search">
-    <form action="./search-result.php" method="POST">
-    <input type="search" class="" placeholder="What are you searching for?"> 
-    </form>
-  </div>
+  
 
   <ul class="mobile-main-nav">
+  <li class="site-search">
+    <form action="./search-result.php" method="POST">
+    <input type="search" class="" placeholder="What are you searching for?"> 
+    <button><i class="fa fa-search"></i></button>
+    </form>
+  </li>
+
     <li ><a href="section.php">Investor</a><a href="#" class="show-sub"><i class="fa fa-angle-down"></i></a>
     <ul class="sub-menu">
       <li><a href="section.php">Se alle</a></li>
