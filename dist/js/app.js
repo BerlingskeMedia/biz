@@ -6,7 +6,7 @@ $(function () {
     var sticky_navigation = function()  {
     var scroll_top = $(window).scrollTop(); 
     
-    if (scroll_top > sticky_navigation_offset_top &&  $('body').not('.show-menu') {
+    if (scroll_top > sticky_navigation_offset_top && $('body').not('.show-menu')) {
       $('body').addClass('make-fixed-menu');
     } else {
         $('body').removeClass('make-fixed-menu');
