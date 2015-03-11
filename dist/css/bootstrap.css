@@ -6800,6 +6800,9 @@ figcaption,
 .mobile-nav .site-search button {
   background-color: transparent;
   border: 0;
+  float: right;
+  padding: 0 5px;
+  display: inline-block;
 }
 .mobile-nav .site-search .fa {
   color: #fff;
