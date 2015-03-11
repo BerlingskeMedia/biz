@@ -4,8 +4,8 @@
   <a href="#" class="mobile-login" data-toggle="modal" data-target="#modal-login"><i class="fa fa-user"></i> <small>Log ind</small></a>
   <a class="close-menu" href="#"><i class="fa fa-times"></i></a>
 
-  <ul class="main-nav">
-    <li class="menu-md"><a href="section.php">Investor</a><a href="#" class="show-sub"><i class="fa fa-angle-down"></i></a>
+  <ul class="mobile-main-nav">
+    <li ><a href="section.php">Investor</a><a href="#" class="show-sub"><i class="fa fa-angle-down"></i></a>
     <ul class="sub-menu">
       <li><a href="section.php">Se alle</a></li>
       <li><a href="section.php">Økonomi</a></li>
@@ -18,25 +18,25 @@
       <li><a href="section.php">Markeder</a></li>
     </ul>
     </li>
-    <li class="menu-md"><a href="section.php">Virksomheder</a><a href="#" class="show-sub"><i class="fa fa-angle-down"></i></a>
+    <li ><a href="section.php">Virksomheder</a><a href="#" class="show-sub"><i class="fa fa-angle-down"></i></a>
     <ul class="sub-menu">
       <li><a href="section.php">Se alle</a></li>
       <? while (dumb_luck("6-9")): ?><li><a href="section.php"><? dummy("text@item") ?></a></li><? endwhile ?>
     </ul>
     </li>
-    <li class="menu-md"><a href="section.php">Privatøkonomi</a><a href="#" class="show-sub"><i class="fa fa-angle-down"></i></a>
+    <li ><a href="section.php">Privatøkonomi</a><a href="#" class="show-sub"><i class="fa fa-angle-down"></i></a>
     <ul class="sub-menu">
       <li><a href="section.php">Se alle</a></li>
       <? while (dumb_luck("6-9")): ?><li><a href="section.php"><? dummy("text@item") ?></a></li><? endwhile ?>
     </ul>
     </li>
-    <li class="menu-md <? if (dumb_luck("25%")): ?>active<? endif ?>"><a href="section.php">Karriere</a><a href="#" class="show-sub"><i class="fa fa-angle-down"></i></a>
+    <li><a href="section.php">Karriere</a><a href="#" class="show-sub"><i class="fa fa-angle-down"></i></a>
     <ul class="sub-menu">
       <li><a href="section.php">Se alle</a></li>
       <? while (dumb_luck("6-9")): ?><li><a href="section.php"><? dummy("text@item") ?></a></li><? endwhile ?>
     </ul>
     </li>
-    <li class="menu-md"><a href="section.php">TV</a><a href="#" class="show-sub"><i class="fa fa-angle-down"></i></a>
+    <li><a href="section.php">TV</a><a href="#" class="show-sub"><i class="fa fa-angle-down"></i></a>
     <ul class="sub-menu">
       <li><a href="section.php">Se alle</a></li>
       <? while (dumb_luck("6-9")): ?><li><a href="section.php"><? dummy("text@item") ?></a></li><? endwhile ?>

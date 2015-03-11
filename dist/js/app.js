@@ -38,12 +38,12 @@ $(function () {
 
 
     // Mobile Nav toggle 
-    $('.btn-toggle-nav, .close-menu').on('click', function(e) {
+    $('.btn-toggle-nav, .close-menu, .exit-mobile-nav').on('click', function(e) {
       e.preventDefault();
       $('body').toggleClass('show-menu');
     });
 
-    $('.main-nav').on('click', '.show-sub', function(e) {
+    $('.mobile-main-nav').on('click', '.show-sub', function(e) {
       var parentItem = $(this).closest('li');
       
         e.preventDefault();
@@ -51,7 +51,7 @@ $(function () {
         if (parentItem.hasClass('active-sub')) {
           parentItem.removeClass('active-sub');
         } else {
-          $('.main-nav .active-sub').removeClass('active-sub');
+          $('.mobile-main-nav .active-sub').removeClass('active-sub');
           parentItem.addClass('active-sub');  
         }
     });

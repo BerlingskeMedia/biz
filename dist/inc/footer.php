@@ -87,7 +87,7 @@ Fax: 33 75 20 20</p>
 	</div>
 
 </footer>
-
+<a href="#" class="exit-mobile-nav"></a>
 </div><!-- inner-wrap -->
 </div><!-- site-wrap -->
 <div class="modal fade" id="modal-login">
