@@ -6292,6 +6292,10 @@ button.close {
     right: 0;
   }
 }
+body,
+html {
+  height: 100%;
+}
 .example-element {
   background: rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -6387,7 +6391,7 @@ figcaption,
   height: 54px;
   background-color: #fadcd2;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
-  z-index: 10000;
+  z-index: 20;
   margin-bottom: 10px;
 }
 .make-fixed-menu .main-header-bottom {
@@ -6644,28 +6648,81 @@ figcaption,
     display: block;
   }
 }
-@media (max-width: 767px) {
-  .show-menu {
-    overflow: hidden;
-    height: 100%;
-    /*.site-main-header, .site-main-header, .container-main-header, .container-main-header > div, .header-bottom {
-			height: 100%;
-		}*/
-  }
-  .show-menu .site-nav {
-    display: block;
-  }
-  .show-menu .close-menu {
-    display: inline-block;
-  }
-  .show-menu .main-header-bottom {
-    height: 100%;
-  }
+.site-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
 }
-.show-menu.make-fixed-menu .main-header-bottom {
-  height: 100%;
+.inner-wrap {
+  position: relative;
+  width: 100%;
+}
+.mobile-nav {
+  -webkit-backface-visibility: hidden;
+  width: 280px;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #1f1f1f;
+  z-index: 100;
+  box-sizing: content-box;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-transform: translate(-280px);
+  -webkit-transform: translateX(-280px);
+  -moz-transform: translateX(-280px);
+  -ms-transform: translateX(-280px);
+  -o-transform: translateX(-280px);
+  transform: translateX(-280px);
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.show-menu .mobile-nav {
+  visibility: visible;
+  opacity: 1;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  padding: 50px 0px 0 0;
+  background: #333;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.show-menu .mobile-nav ul.main-nav {
+  margin: 0;
+  padding: 0 ;
+  list-style: none;
+}
+.show-menu .mobile-nav ul.main-nav > li:first-child {
+  border-top: 1px solid #666;
+}
+.show-menu .mobile-nav ul.main-nav > li {
+  position: relative;
+  line-height: 55px;
+  font-size: 25px;
+  border-bottom: 1px solid #666;
+  padding: 0 0 0 15px;
+}
+.show-menu .mobile-nav ul.main-nav > li a:not(.show-sub) {
+  display: block;
+}
+.show-menu .mobile-nav ul.main-nav > li a {
+  color: #ddd;
 }
 @media (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
   .show-sub {
     display: inline-block;
     float: right;
@@ -6676,9 +6733,6 @@ figcaption,
     top: 0;
     border-left: 1px solid #666;
     text-align: center;
-  }
-  h1 {
-    color: #fff;
   }
   .sub-menu {
     padding: 0;
@@ -6702,48 +6756,6 @@ figcaption,
   }
   .active-sub .show-sub .fa:before {
     content: '\2014';
-  }
-  .site-nav {
-    display: none;
-    padding: 50px 0px 0 0;
-    -webkit-transition: transform 0.2s ease;
-    -o-transition: transform 0.2s ease;
-    transition: transform 0.2s ease;
-    -webkit-backface-visibility: hidden;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    position: absolute;
-    top: 0;
-    height: auto;
-    left: 0;
-    right: 0;
-    background: #333;
-    z-index: 200;
-    /*overflow-x: hidden;
-		overflow-y: scroll;*/
-    overflow: hidden;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  }
-  .site-nav ul.main-nav {
-    margin: 0;
-    padding: 0 ;
-    list-style: none;
-  }
-  .site-nav ul.main-nav > li:first-child {
-    border-top: 1px solid #666;
-  }
-  .site-nav ul.main-nav > li {
-    position: relative;
-    line-height: 55px;
-    font-size: 25px;
-    border-bottom: 1px solid #666;
-    padding: 0 0 0 15px;
-  }
-  .site-nav ul.main-nav > li a:not(.show-sub) {
-    display: block;
-  }
-  .site-nav ul.main-nav > li a {
-    color: #ddd;
   }
   .sub-menu {
     display: none;

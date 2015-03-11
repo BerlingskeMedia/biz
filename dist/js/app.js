@@ -6,13 +6,10 @@ $(function () {
     var sticky_navigation = function()  {
     var scroll_top = $(window).scrollTop();
 
-    var showMenu = false;
-    if ( $('body').hasClass('show-menu') ) {
-      showMenu = true;
-    }
-    console.log (showMenu);
     
-    if (scroll_top > sticky_navigation_offset_top && showMenu == false ) {
+    
+    
+    if (scroll_top > sticky_navigation_offset_top) {
       $('body').addClass('make-fixed-menu');
     } else {
         $('body').removeClass('make-fixed-menu');

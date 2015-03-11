@@ -1,3 +1,7 @@
+body, 
+html {
+	height: 100%;
+}
 .example-element {
 	background: rgba(0,0,0,.1);
 	padding: 20px;
@@ -86,7 +90,7 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 	height: 54px;
 	background-color: @biz-pink;
 	box-shadow: 0 2px 3px rgba(0,0,0,.5);
-	z-index: 10000;
+	z-index: 20;
 	margin-bottom: 10px;
 }
 .make-fixed-menu .main-header-bottom {
@@ -137,6 +141,7 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 
 @media (min-width: @screen-sm) {
 .site-nav {
+
 	.show-sub {
 		display: none;
 	}
@@ -332,29 +337,86 @@ ul.main-nav {
 		
 	}
 }
-@media (max-width: @screen-xs-max) {
-	.show-menu {
-		overflow: hidden;
-		height: 100%;
-		/*.site-main-header, .site-main-header, .container-main-header, .container-main-header > div, .header-bottom {
-			height: 100%;
-		}*/
-		.site-nav {
-			display: block;
 
-		}
-		.close-menu {
-			display: inline-block;
-		}
-		.main-header-bottom {
-			height: 100%;
-		}
+.site-wrapper {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+.inner-wrap {
+	position: relative;
+	width: 100%;
+}
+
+.mobile-nav {
+	-webkit-backface-visibility: hidden;
+  width: 280px;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #1f1f1f;
+  z-index: 100;
+  box-sizing: content-box;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-transform: translate(-280px);
+  -webkit-transform: translateX(-280px);
+  -moz-transform: translateX(-280px);
+  -ms-transform: translateX(-280px);
+  -o-transform: translateX(-280px);
+  transform: translateX(-280px);
+  left: 0;
+  opacity: 0;
+.transition (all .2s ease);
+}
+
+.show-menu .mobile-nav {
+	visibility: visible;
+	opacity: 1;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	-ms-transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
+	transform: translateX(0px);
+	padding: 50px 0px 0 0;
+	background: #333;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	ul.main-nav {
+		margin: 0;
+		padding: 0 ;
+		list-style: none;
+		&> li:first-child {
+			border-top: 1px solid #666;
+		} 
+		&> li {
+			position: relative;
+			line-height: 55px;
+			font-size: 25px;
+			border-bottom: 1px solid #666;
+			padding: 0 0 0 15px;
+
+			a:not(.show-sub) {
+				display: block;
+			}
+			a {
+				color: #ddd;
+			}
+		} 
 	}
+	
 }
-.show-menu.make-fixed-menu .main-header-bottom {
-	height: 100%;
-}
+
 @media (max-width: @screen-xs-max) {
+	.site-nav {
+		display: none;
+	}
 	.show-sub {
 		display: inline-block;
 		float: right;
@@ -366,9 +428,7 @@ ul.main-nav {
 		border-left: 1px solid #666;
 		text-align: center;
 	}
-	h1 {
-		color: #fff;
-	}
+	
 	.sub-menu {
 		padding: 0;
 		background-color: #222;
@@ -395,49 +455,7 @@ ul.main-nav {
 		}
 	}
 
-	.site-nav {
-		display: none;
-		padding: 50px 0px 0 0;
-		.transition (transform .2s ease);
-		-webkit-backface-visibility: hidden;
-		-webkit-overflow-scrolling: touch;
-  		-ms-overflow-style: -ms-autohiding-scrollbar;
-		position: absolute;
-		top: 0;
-		height: auto;
-		left: 0;
-		right: 0;
-		background: #333;
-		z-index: 200;
-		/*overflow-x: hidden;
-		overflow-y: scroll;*/
-		overflow: hidden;
-		box-shadow: 0 0 5px rgba(0,0,0,.5);
-
-		ul.main-nav {
-			margin: 0;
-			padding: 0 ;
-			list-style: none;
-			&> li:first-child {
-				border-top: 1px solid #666;
-			} 
-			&> li {
-				position: relative;
-				line-height: 55px;
-				font-size: 25px;
-				border-bottom: 1px solid #666;
-				padding: 0 0 0 15px;
-
-				a:not(.show-sub) {
-					display: block;
-				}
-				a {
-					color: #ddd;
-				}
-				
-			} 
-		}
-	}
+	
 	.sub-menu {
 		display: none;
 	}
