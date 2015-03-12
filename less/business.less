@@ -415,6 +415,30 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 	display: none;
 	z-index: 30;
 }
+
+.show-social-menu .sticky-social {
+	visibility: visible;
+	opacity: 1;
+
+}
+.sticky-social {
+	visibility: hidden;
+	height: 54px;
+	opacity: 0;
+	background-color: @biz-pink;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 30;
+
+	text-align: center;
+	.transition (opacity .2s ease);
+	.inner {
+		max-width: 1280px;
+		padding: 0 30px;
+	}
+}
 .show-latest {
 
 	@media (max-width: @screen-xs-max) {
@@ -3070,6 +3094,7 @@ h1.heading {
 	}
 }
 @icon-size : 35px;
+.sticky-social,
 .article-social {
 	.module-xs;
 	padding: 10px 0;

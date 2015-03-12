@@ -74,6 +74,29 @@ $(function () {
     });
     
 
+    // Show social icons on scrolling
+    var top = $('.site-wrap').offset().top;
+    var showShareMenu = $('.article-social-top');
+    var lastScrollTop = 0;
+    var body = $('body');
+
+    if (showShareMenu.length) {
+      showShareMenu = showShareMenu.offset().top;
+    }
+    console.log (showShareMenu);
+
+    $(window).scroll(function (event) {
+        var y = $(this).scrollTop();
+        
+        if (showShareMenu) {
+            if (y >= showShareMenu && y >= lastScrollTop) 
+                body.addClass('show-social-menu');
+            else 
+                body.removeClass('show-social-menu');
+        }
+        lastScrollTop = y
+    });
+
       
 
     // SEARCH 
