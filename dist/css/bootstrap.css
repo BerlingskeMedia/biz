@@ -6715,6 +6715,11 @@ figcaption,
   display: none;
   z-index: 30;
 }
+@media (max-width: 767px) {
+  .show-latest .exit-mobile-nav {
+    display: block;
+  }
+}
 .show-latest .slider-latest-news {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);

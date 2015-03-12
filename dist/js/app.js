@@ -46,12 +46,18 @@ $(function () {
 
 
     // Mobile Nav toggle 
-    $('.btn-toggle-nav, .close-menu, .exit-mobile-nav').on('click', function(e) {
+    $('.btn-toggle-nav, .close-menu').on('click', function(e) {
       e.preventDefault();
       $('.mobile-main-nav .active-sub').removeClass('active-sub');
       $('body').toggleClass('show-menu');
     });
 
+    // Close slider navs
+    $('.exit-mobile-nav').on('click', function(e) {
+      e.preventDefault();
+      $('body').removeClass('show-menu');
+      $('body').removeClass('show-latest');
+    });
 
     // Show subs on mobile menu 
     $('.mobile-main-nav').on('click', '.show-sub', function(e) {
