@@ -34,7 +34,15 @@ $(function () {
         $('#site-search').focus();
       }
 
-    })
+    });
+
+    // Toggle latest news
+    $('.menu-latest a, .btn-close-latest').on('click', function(e){
+      e.preventDefault();
+      $('body').toggleClass('show-latest'); 
+    });
+
+
 
 
     // Mobile Nav toggle 
