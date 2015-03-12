@@ -2235,7 +2235,7 @@ select[multiple].form-group-lg .form-control {
   top: 1px;
   right: 0;
   border-bottom-width: 1px;
-  z-index: 99;
+  z-index: 20;
 }
 .form-oneline-alt {
   position: relative;
@@ -2245,7 +2245,7 @@ select[multiple].form-group-lg .form-control {
   top: 1px;
   right: 0;
   border-bottom-width: 1px;
-  z-index: 99;
+  z-index: 20;
 }
 .form-oneline-alt button {
   right: -50px;
@@ -6734,9 +6734,15 @@ figcaption,
   -o-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
 }
+.sticky-social span {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+}
 .sticky-social .inner {
-  max-width: 1280px;
-  padding: 0 30px;
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 0 10px;
 }
 @media (max-width: 767px) {
   .show-latest .exit-mobile-nav {
@@ -9147,6 +9153,11 @@ h1.deck-header {
   margin-bottom: 20px;
   border-top: 4px solid #333;
   padding-top: 5px;
+}
+@media (max-width: 767px) {
+  .article-head {
+    border-top: 0;
+  }
 }
 .article-head .sponsor-header {
   font-weight: 200;

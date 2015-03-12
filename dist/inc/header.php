@@ -92,12 +92,12 @@
 <div class="sticky-social">
   
   <div class="inner">
-  
+    <span>Del<span class="hidden-xs"> artiklen</span>:</span>
     <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
     <a href="#" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>
     <a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>
     <a href="#" class="icon-social-mail"><i class="fa fa-envelope"></i></a>
-    <span class="pull-right comments-teaser"><a href="#" class="icon-text scroll-comments">48 kommentarer</a> <a href="#" class="icon-social-default scroll-comments"><i class="fa fa-comment"></i></a></span>
+    <span class="pull-right comments-teaser"><a href="#" class="icon-text scroll-comments hidden-xs">48 kommentarer</a> <a href="#" class="icon-social-default scroll-comments"><i class="fa fa-comment"></i></a></span>
     
   </div>        
 

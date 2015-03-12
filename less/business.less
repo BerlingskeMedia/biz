@@ -431,13 +431,21 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 	left: 0;
 	right: 0;
 	z-index: 30;
-
 	text-align: center;
 	.transition (opacity .2s ease);
-	.inner {
-		max-width: 1280px;
-		padding: 0 30px;
+	span {
+		display: inline-block;
+		font-size: 13px;
+		font-weight: 700;
 	}
+	.inner {
+		margin: 0 auto; 
+		max-width: 940px;
+		padding: 0 10px;
+		
+	}
+	
+
 }
 .show-latest {
 
@@ -2744,6 +2752,9 @@ h1.deck-header {
 	margin-bottom: 20px;
 	border-top: 4px solid #333;
 	padding-top: 5px;
+	@media (max-width: @screen-xs-max) {
+		border-top: 0;
+	}
 	.sponsor-header {
 		font-weight: 200;
 		text-transform: uppercase;
