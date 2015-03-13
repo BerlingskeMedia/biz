@@ -3475,6 +3475,40 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #ffffff;
   cursor: not-allowed;
 }
+.media {
+  margin-top: 15px;
+}
+.media:first-child {
+  margin-top: 0;
+}
+.media-right,
+.media > .pull-right {
+  padding-left: 10px;
+}
+.media-left,
+.media > .pull-left {
+  padding-right: 10px;
+}
+.media-left,
+.media-right,
+.media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+.media-middle {
+  vertical-align: middle;
+}
+.media-bottom {
+  vertical-align: bottom;
+}
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.media-list {
+  padding-left: 0;
+  list-style: none;
+}
 .close {
   float: right;
   font-size: 24px;
@@ -6046,7 +6080,8 @@ figcaption,
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
+  bottom: 1px;
+  overflow: hidden;
   line-height: 34px;
   padding: 0 50px;
   background-color: #fadcd2;
