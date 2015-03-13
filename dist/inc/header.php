@@ -126,7 +126,7 @@
          <ul>
           <li><a href="http://www.b.dk">Berlingske.dk</a></li>
           <li><a href="http://www.politiko.dk">Politiko.dk</a></li>
-          <li class="hidden-xs"><a href="#" class="btn btn-primary ">Buy subscription</a></li>
+          <li class="hidden-xs"><a href="#" class="btn-subscription">Køb abonnement</a></li>
           <li class="hidden-xs"><a href="#">E-avis</a></li>
          </ul>
 
