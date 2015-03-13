@@ -513,7 +513,7 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 		  position: absolute;
 		  right: -5px;
 		  text-shadow: none!important;
-		  color: #fff;
+		  color: #fff!important;
 	}
 	
 
@@ -607,7 +607,7 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 		padding: 0 15px;
 		box-shadow: 0 0 5px rgba(0,0,0,.5);
 		a {
-			color: #fff;
+			color: @biz-1;
 			font-size: 14px;
 			font-weight: 700;
 		}
@@ -3173,6 +3173,7 @@ h1.heading {
 				border-radius: 10px;
 				padding: 1px 10px;
 				line-height: 14px;
+				color: #333;
 				.transition (background-color .1s ease);
 				&:hover {
 					background-color: rgba(0,0,0,.1);
@@ -3200,10 +3201,10 @@ h1.heading {
 		display: inline-block;
 		font-size: 18px;
 		.transition (background-color .1s ease);
-		background-color: rgba(0,0,0,.3);
+		background-color: @biz-1;
 		//default	
 		&:hover {
-			background-color: rgba(0,0,0,.4); 
+			background-color: darken(@biz-1, 5%); 
 		}
 	}
 	.icon-social-facebook{
@@ -3224,7 +3225,15 @@ h1.heading {
 			background-color: darken(@col-linkedin, 5%);
 		}
 	}
-	
+	.icon-social-letter {
+		background-color: @biz-1;
+		&:hover {
+			background-color: darken(@biz-1, 5%);
+		}
+	}
+	.icon-text {
+		color: #333;
+	}
 	.comments-teaser {
 		font-size: 13px;
 		font-weight: 600;
@@ -3251,6 +3260,7 @@ h1.heading {
 		font-size: 11px;
 		line-height: 1.2;
 		font-weight: 600;
+		color: @biz-1;
 	}
 	
 	a {
@@ -3623,6 +3633,7 @@ h1.heading {
 			right: 5px;
 			bottom: 10px;
 			top: auto!important;
+			padding: 0;
 			background: transparent!important;
 			box-shadow: none;
 			border-bottom: 0;

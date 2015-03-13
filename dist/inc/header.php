@@ -110,7 +110,7 @@
     <a href="#" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>
     <a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>
     <a href="#" class="icon-social-mail"><i class="fa fa-envelope"></i></a>
-    <span class="comments-teaser"><a href="#" class="icon-social-default scroll-comments"><i class="fa fa-comment"></i><span class="icon-text scroll-comments">48</span></a></span>
+    <span class="comments-teaser"><a href="#" class="icon-social-letter scroll-comments"><i class="fa fa-comment"></i><span class="icon-text scroll-comments">48</span></a></span>
     
   </div>        
 
