@@ -24,7 +24,19 @@
 </aside>
 
 <aside class="mobile-nav slider-nav">
-  <a href="#" class="mobile-login" data-toggle="modal" data-target="#modal-login"><i class="fa fa-user"></i> <small>Log ind</small></a>
+<? if (dumb_luck("50%")): ?>
+          <span class="mobile-logout">
+            <a href="page-profile.php" class="username"><i class="fa fa-user"></i> <? dummy("text@author") ?></a>
+            <a href="#" title="Log ud">Log ud <i class="fa fa-caret-right"></i></a>
+          </span>
+
+          <? else: ?>
+          <span class="mobile-login">
+          <a href="#" title="Log ind" data-toggle="modal" data-target="#modal-login" class=""><i class="fa fa-user"></i> Log ind</a>
+          </span>
+          <? endif ?>
+          
+
   <a class="close-menu" href="#"><i class="fa fa-times"></i></a>
   
 
@@ -74,6 +86,7 @@
     </ul>
     </li>
     <li class="tool"><a href="#">Læs E-avis</a></li>
+    <li class="tool"><a href="#">Køb abonnement</a></li>
     <li class="tool"><a href="#">Kontakt</a></li>
     <li class="tool"><a href="#">Annoncering</a></li>
     <li class="tool sosume"><a href="#">Privatlivspolitik</a></li>
@@ -92,12 +105,12 @@
 <div class="sticky-social">
   
   <div class="inner">
-    <span>Del<span class="hidden-xs"> artiklen</span>:</span>
+    <span>Del <span class="hidden-xs"> artiklen</span>:</span>
     <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
     <a href="#" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>
     <a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>
     <a href="#" class="icon-social-mail"><i class="fa fa-envelope"></i></a>
-    <span class="pull-right comments-teaser"><a href="#" class="icon-text scroll-comments hidden-xs">48 kommentarer</a> <a href="#" class="icon-social-default scroll-comments"><i class="fa fa-comment"></i></a></span>
+    <span class="comments-teaser"><a href="#" class="icon-social-default scroll-comments"><i class="fa fa-comment"></i><span class="icon-text scroll-comments">48</span></a></span>
     
   </div>        
 
@@ -113,13 +126,18 @@
          <ul>
           <li><a href="http://www.b.dk">Berlingske.dk</a></li>
           <li><a href="http://www.politiko.dk">Politiko.dk</a></li>
-          <li><a href="#" class="btn btn-primary ">Buy subscription</a></li>
+          <li class="hidden-xs"><a href="#" class="btn btn-primary ">Buy subscription</a></li>
           <li class="hidden-xs"><a href="#">E-avis</a></li>
          </ul>
 
          <ul class="pull-right nav-tools hidden-xs">
-          <li class="social-icons">Follow us: <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a></li>  
-          <li><a href="#" class="sosume">Privacy</a></li>
+          <li><a href="#" class="sosume">Privatlivspolitik</a></li>
+          <li class="social-icons"><a href="#" title="Følg os via Facebook"><i class="fa fa-facebook"></i></a> <a href="#" title="Følg os via Twitter"><i class="fa fa-twitter"></i></a> <a href="#" title="Følg os via LinkedIn"><i class="fa fa-linkedin"></i></a></li>  
+          <? if (dumb_luck("50%")): ?>
+          <li class="menu-login"><a href="page-profile.php" class="username"><i class="fa fa-user"></i> <? dummy("text@author") ?></a> <a href="#" class="btn-login" title="Log ud" >Log ud <i class="fa fa-caret-right"></i></a></li>
+          <? else: ?>
+          <li class="menu-login"><a href="#" title="Log ind" data-toggle="modal" data-target="#modal-login" class="btn-login">Log ind <i class="fa fa-user"></i></a></li>
+          <? endif ?>
         </ul>
       
 
@@ -186,7 +204,6 @@
             <li class="menu-menu"><a href="#" class="btn-toggle-nav"><i class="fa fa-bars"></i></a></li>
             <li class="menu-latest"><a href="#" title="Seneste nyt"><i class="fa fa-clock-o"></i><ins><? dummy("text@number") ?></ins></a></li>
             <li class="menu-search hidden-xs"><a href="#" title="Søg"><i class="fa fa-search"></i></a></li>
-            <li class="menu-login hidden-xs"><a href="#" title="Log ind" data-toggle="modal" data-target="#modal-login"><i class="fa fa-user"></i> <small>Log ind</small></a></li>
           </ul>
         
         </nav>

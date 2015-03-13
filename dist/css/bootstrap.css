@@ -6339,7 +6339,7 @@ figcaption,
   font-weight: 700;
 }
 .main-header-top .social-icons .fa {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1;
   margin: 0 5px;
   position: relative;
@@ -6377,10 +6377,38 @@ figcaption,
 }
 .main-header-top ul li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 .main-header-top ul li:last-child {
   margin-right: 0;
+}
+.main-header-top .btn-login {
+  background-color: #cc0066;
+  border-radius: 2px;
+  padding: 0 5px;
+  line-height: 18px;
+  font-size: 11px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  outline: 0!important;
+}
+.main-header-top .btn-login:hover {
+  background-color: #b30059;
+}
+.main-header-top .username {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  float: left;
+  margin-right: 5px;
+  max-width: 150px;
+}
+@media (max-width: 991px) {
+  .main-header-top .username {
+    max-width: 50px;
+  }
 }
 .main-header-bottom {
   height: 54px;
@@ -6441,9 +6469,6 @@ figcaption,
   display: inline-block;
   text-align: left;
   vertical-align: top;
-}
-.header-bottom .menu-login {
-  text-align: center;
 }
 .header-bottom .site-search {
   display: none;
@@ -6512,7 +6537,7 @@ figcaption,
 .site-nav ins {
   display: inline-block;
   background-color: red;
-  border-radius: 3px;
+  border-radius: 8px;
   font-size: 11px;
   font-weight: 900;
   color: #fff;
@@ -6528,14 +6553,6 @@ figcaption,
 }
 .site-nav .menu-menu {
   display: none;
-}
-.site-nav .menu-login small {
-  font-size: 12px;
-}
-@media (max-width: 991px) {
-  .site-nav .menu-login small {
-    display: none;
-  }
 }
 .site-nav .nav-tools li {
   font-size: 19px;
@@ -6679,19 +6696,52 @@ figcaption,
   text-align: center;
 }
 .mobile-login {
-  display: none;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0 15px;
+  color: #eee;
+  line-height: 55px;
+}
+.mobile-login a {
+  background: #cc0066;
+  border-radius: 2px;
+  padding: 0 5px;
+  line-height: 20px;
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+.mobile-logout {
+  display: block;
   position: absolute;
   left: 0;
   top: 0;
   line-height: 55px;
-  font-size: 17px;
+  font-size: 12px;
   padding: 0 15px;
+}
+.mobile-logout .username {
+  max-width: 145px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+  margin-right: 5px;
+}
+.mobile-logout a {
   color: #eee;
 }
-@media (max-width: 767px) {
-  .mobile-login {
-    display: block;
-  }
+.mobile-logout a + a {
+  font-weight: 700;
+  background: #cc0066;
+  border-radius: 2px;
+  padding: 0 5px;
+  line-height: 20px;
+  display: inline-block;
 }
 .site-wrapper {
   position: relative;
@@ -6744,6 +6794,27 @@ figcaption,
   max-width: 940px;
   padding: 0 10px;
 }
+.sticky-social .comments-teaser a {
+  position: relative;
+  display: inline-block;
+}
+.sticky-social .icon-text {
+  display: inline-block;
+  background-color: #cc0066;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 900;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  line-height: 1.1;
+  text-decoration: none;
+  height: auto;
+  padding: 0 3px;
+  top: 3px;
+  position: absolute;
+  right: -5px;
+  text-shadow: none!important;
+  color: #fff;
+}
 @media (max-width: 767px) {
   .show-latest .exit-mobile-nav {
     display: block;
@@ -6752,6 +6823,7 @@ figcaption,
 .show-latest .slider-latest-news {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .show-latest .slider-latest-news .btn-close-latest {
   display: inline-block;
@@ -6770,7 +6842,6 @@ figcaption,
   right: 0;
   background-color: #fff;
   z-index: 100;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .slider-latest-news .inner {
   -webkit-overflow-scrolling: touch;
@@ -7052,6 +7123,10 @@ figcaption,
   padding-right: 16px;
   color: rgba(255, 255, 255, 0.8);
   background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2Njk2RTdFRjMwNDUxMUU0OTZFOEUyNTg4QzYxMzVBQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2Njk2RTdGMDMwNDUxMUU0OTZFOEUyNTg4QzYxMzVBQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY2OTZFN0VEMzA0NTExRTQ5NkU4RTI1ODhDNjEzNUFDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY2OTZFN0VFMzA0NTExRTQ5NkU4RTI1ODhDNjEzNUFDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+gADOFwAAAHZJREFUeNqcUdsNgDAILMR/nUxn1cl0AoRWTG2xWi5pUo7H5QCIKFgAAE2AVWOT0rTuKVgmsw6DE9Wkh5rCUpUgf0JxIynkH7miFj/VBIkjzt/U8OphO/55LNVoHusBmVf3VrHpreHVf8dr/X1d7BX0Rr04BRgANuZZWKEvmS4AAAAASUVORK5CYII=') right center no-repeat;
+}
+.nav-tools .sosume {
+  background-position: left center;
+  padding: 0 0 0 16px;
 }
 .teaser-hover {
   -webkit-transition: transform 0.2s ease-out;
@@ -8418,6 +8493,11 @@ a.btn-premium:after {
   padding: 5px 0 15px;
   font-weight: 200;
 }
+@media (max-width: 767px) {
+  .deck-header {
+    border-top: 0;
+  }
+}
 .deck-header .btn {
   vertical-align: text-bottom;
 }
@@ -9681,10 +9761,6 @@ h1.heading {
 .sticky-social .icon-social-linkedin:hover,
 .article-social .icon-social-linkedin:hover {
   background-color: #006a9d;
-}
-.sticky-social .icon-text,
-.article-social .icon-text {
-  color: #000;
 }
 .sticky-social .comments-teaser,
 .article-social .comments-teaser {
