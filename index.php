@@ -170,7 +170,7 @@ li ul {
           <li class="d"><a href="./dist/section-askbusiness.php">"Ask Business"</a></li>
           <li class="d"><a href="./dist/section-sub-askbusiness.php">"Ask Business sub section"</a></li>
           <li class="d"><a href="./dist/section-events.php">Events</a> <date>Feb. 14th</date></li>
-          <li class="d"><a href="./dist/magazine.php">Business Magazine</a></li>
+          <li class="c"><a href="./dist/magazine.php">Business Magazine</a></li>
           <li class="d"><a href="./dist/section-galleries.php">Image galleries - Section</a></li>
           <li class="d"><a href="./dist/gallery-bond.php">Image galleries - BOND version</a></li>
           <li class="d"><a href="./dist/gallery-overlay.php">Image galleries - Symfony</a></li>
