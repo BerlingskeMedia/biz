@@ -50,15 +50,13 @@
 @biz-pink-alt:			#fadcd2;
 
 
-@biz-1:					#991118; // #3997be; // #0077a1; // #00bff0; // @biz-2; // #9c0f17; // #ef662f; //#cc0066; // e74700
+@biz-1:					#369;// #991118; // #3997be; // #0077a1; // #00bff0; // @biz-2; // #9c0f17; // #ef662f; //#cc0066; // e74700
 @biz-1: 				darken(@biz-pink, 40%);
 @biz-2: 				#193057; // Dark blue
 @biz-3: 				#3795a0;
 @biz-tabs: 				#666;
 @biz-tabs-active:		@biz-1;
-.main-header-bottom {
-	background-color: @biz-pink-alt!important;
-}
+
 
 
 //== Scaffolding
@@ -66,7 +64,7 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               @biz-pink;
+@body-bg:                @biz-pink;
 //** Global text color on `<body>`.
 @text-color:            #333;
 
@@ -217,7 +215,7 @@
 //** Text color for `<input>`s
 @input-color:                    @gray;
 //** `<input>` border color
-@input-border:                   #ccc;
+@input-border:                   rgba(0,0,0,.4);
 
 // TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -623,7 +621,7 @@
 @modal-title-line-height:     @line-height-base;
 
 //** Background color of modal content area
-@modal-content-bg:                             #fff;
+@modal-content-bg:                             @biz-pink;
 //** Modal content border color
 @modal-content-border-color:                   rgba(0,0,0,.2);
 //** Modal content border color **for IE8**

@@ -2,23 +2,47 @@
 
 <aside class="slider-latest-news slider-nav">
   
-    <button class="btn-close-latest"><i class="fa fa-times"></i></button>
+    <header>
+      
+      <!-- Nav tabs -->
+  <ul class="nav nav-tabs-sm" role="tablist">
+    <li role="presentation" class="active"><a href="#tab-topstories" aria-controls="tab-topstories" role="tab" data-toggle="tab">Tophistorier</a></li>
+    <li role="presentation"><a href="#tab-latest" aria-controls="tab-latest" role="tab" data-toggle="tab">Seneste nyt</a></li>
+  </ul>
+
+      <button class="btn-close-latest">
+        <i class="fa fa-times"></i>
+      </button>
+    </header>
+    
   
   <div class="inner">
 
-  <? if (dumb_luck("50%")): ?>
-    <div class="spinner">
-          <div class="bounce1"></div>
-          <div class="bounce2"></div>
-          <div class="bounce3"></div>
-      </div>
-    <? else: ?>
-    <ul class="list-clean">
+    <div role="tabpanel" class="tab-pane fade in active" id="tab-topstories">
+      
+        <ul class="list-clean">
       <? while (dumb_luck("25")): ?>
         <li><a href="article.php?<? dummy("text@time-ago-short") ?>"><time><? dummy("text@time-ago-short") ?></time> <? dummy("text@headline") ?></a></li>
       <? endwhile ?>
     </ul>
-    <? endif ?>
+
+
+    </div>
+
+    <div role="tabpanel" class="tab-pane fade" id="tab-latest">
+    
+     <ul class="list-clean">
+      <? while (dumb_luck("25")): ?>
+        <li><a href="article.php?<? dummy("text@time-ago-short") ?>"><time><? dummy("text@time-ago-short") ?></time> <? dummy("text@headline") ?></a></li>
+      <? endwhile ?>
+    </ul>
+
+        
+    </div>
+
+
+
+  
   </div>
   <footer><a href="section.php">Se alle <i class=" fa fa-caret-right"></i></a></footer>
 </aside>

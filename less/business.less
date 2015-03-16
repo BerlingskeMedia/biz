@@ -29,6 +29,9 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 	-moz-osx-font-smoothing: auto;	
 }
 
+.fa.form-control-feedback {
+	line-height: 38px;
+}
 .main-header-top {
 	background: @biz-2;
 	font-size: 12px;
@@ -308,7 +311,7 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 			padding: 0 15px;
 			vertical-align: top;
 			border-bottom: 0px solid transparent;
-			color: @biz-2;
+			color: #333;
 			.transition (all .2s ease);
 			@media (max-width: @screen-sm-max) {
 				padding: 0 10px;
@@ -532,7 +535,7 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 	
 
 	.slider-latest-news {
-		.translate3d(-0; 0; 0);
+		.translate3d(0; 0; 0);
 		box-shadow: 0 0 5px rgba(0,0,0,.5);
 		.btn-close-latest {
 			display: inline-block;
@@ -540,10 +543,10 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 	}
 }
 .slider-latest-news {
-	.translate3d(280px; 0; 0);
+	.translate3d(100%; 0; 0);
 	-webkit-backface-visibility: hidden;
 	.transition (all .2s ease);
-	width: 280px;
+	width: 100%;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -551,13 +554,49 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 	background-color: #fff;
 	z-index: 100;
 
+	.btn-close-latest {
+		position: absolute;
+		display: none;
+		top: 0;
+		right: 0;
+		width: 40px;
+		height: 40px;
+		border: 0;
+		padding: 0;
+		text-align: center;
+		outline: 0;
+	}
+
+	.tab-pane {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	header {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		line-height: 40px;
+		background-color: #ddd;
+		padding: 0 15px;
+		
+		a {
+			color: @biz-1;
+			font-size: 14px;
+			font-weight: 700;
+		}
+	}
 	.inner {
 		-webkit-overflow-scrolling: touch;
 		-ms-overflow-style: -ms-autohiding-scrollbar;
 		overflow-x: hidden;
 		overflow-y: scroll;
 		position: absolute;
-		top: 0;
+		top: 40px;
 		bottom: 40px;
 		left: 0;
 		right: 0;
@@ -566,19 +605,7 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 		background-color: #fff;
 	}
 
-	.btn-close-latest {
-		position: fixed;
-		display: none;
-		top: 0;
-		left: -40px;
-		right: 0;
-		width: 40px;
-		height: 40px;
-		border: 0;
-		background-color: #fff;
-		text-align: center;
-		box-shadow: 0 0 5px rgba(0,0,0,.5);
-	}
+	
 	ul {
 		overflow: auto;
 		time {
@@ -600,16 +627,19 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo {
 		border-bottom: 1px solid rgba(0,0,0,.1);
 		font-size: 14px;
 	}
+	.nav li {
+		padding: 0 10px;
+	}
 	footer {
 		position: absolute;
 		left: 0;
 		right: 0;
 		bottom: 0;
 		line-height: 40px;
-		background-color: #333;
+		background-color: #ddd;
 		text-align: right;
 		padding: 0 15px;
-		box-shadow: 0 0 5px rgba(0,0,0,.5);
+		
 		a {
 			color: @biz-1;
 			font-size: 14px;
@@ -3143,7 +3173,6 @@ h1.heading {
 		text-transform: uppercase;
 	}
 	.btn-group {
-		clear: left;
 		.clearfix;
 	}
 
