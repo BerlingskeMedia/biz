@@ -2,7 +2,7 @@
 
 <aside class="slider-latest-news slider-nav">
   
-    <header>
+    <header class="slider-header">
       
       <!-- Nav tabs -->
   <ul class="nav nav-tabs-sm" role="tablist">
@@ -20,12 +20,7 @@
 
     <div role="tabpanel" class="tab-pane fade in active" id="tab-topstories">
       
-        <ul class="list-clean">
-      <? while (dumb_luck("25")): ?>
-        <li><a href="article.php?<? dummy("text@time-ago-short") ?>"><time><? dummy("text@time-ago-short") ?></time> <? dummy("text@headline") ?></a></li>
-      <? endwhile ?>
-    </ul>
-
+        <?php include('./inc/article-content-stream.php'); ?>
 
     </div>
 
@@ -44,7 +39,7 @@
 
   
   </div>
-  <footer><a href="section.php">Se alle <i class=" fa fa-caret-right"></i></a></footer>
+  <footer class="slider-footer"><a href="section.php">Se alle <i class=" fa fa-caret-right"></i></a></footer>
 </aside>
 
 <aside class="mobile-nav slider-nav">
