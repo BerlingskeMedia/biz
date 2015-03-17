@@ -165,12 +165,12 @@ li ul {
           <li class="d"><a href="/dist/search-result.php">Search</a> <date>Feb. 12th</date></li>
           <li class="d"><a href="/dist/news-overview.php">News overview</a> <date>Feb. 12th</date></li>
           <li class="d"><a href="./dist/section-video.php">Business TV - Section</a><date>Feb. 14th</date></li>
-          <li class="b"><a href="./dist/article-video.php">Business TV - Article</a><date>Feb. 14th</date></li>
+          <li class="d"><a href="./dist/article-video.php">Business TV - Article</a><date>Feb. 14th</date></li>
           <li class="a"><a href="#">Jobindex overview</a></li>
           <li class="d"><a href="./dist/section-askbusiness.php">"Ask Business"</a></li>
           <li class="d"><a href="./dist/section-sub-askbusiness.php">"Ask Business sub section"</a></li>
           <li class="d"><a href="./dist/section-events.php">Events</a> <date>Feb. 14th</date></li>
-          <li class="c"><a href="./dist/magazine.php">Business Magazine</a></li>
+          <li class="d"><a href="./dist/magazine.php">Business Magazine</a></li>
           <li class="d"><a href="./dist/section-galleries.php">Image galleries - Section</a></li>
           <li class="d"><a href="./dist/gallery-bond.php">Image galleries - BOND version</a></li>
           <li class="d"><a href="./dist/gallery-overlay.php">Image galleries - Symfony</a></li>

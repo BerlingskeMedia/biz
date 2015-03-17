@@ -36,12 +36,22 @@ $(function () {
 
     });
 
-    // Toggle latest news
-    $('.menu-latest a, .btn-close-latest').on('click', function(e){
-      e.preventDefault();
-      $('body').toggleClass('show-latest'); 
-    });
 
+    
+    $('.btn-close-latest').on('click', function(){
+      $('body').removeClass('show-latest');
+    });
+  
+  
+    // Toggle latest news. Show slide-in if viewport is iPad or phone
+    $('.menu-latest a').on('click', function(e){
+      e.preventDefault();
+      if($(window).width()>992) {
+        window.location =  $(this).attr('href');
+      } else {
+        $('body').toggleClass('show-latest');   
+      }
+    });
 
 
 

@@ -2,44 +2,55 @@
 
 <aside class="slider-latest-news slider-nav">
   
-    <header class="slider-header">
-      
-      <!-- Nav tabs -->
-  <ul class="nav nav-tabs-sm" role="tablist">
-    <li role="presentation" class="active"><a href="#tab-topstories" aria-controls="tab-topstories" role="tab" data-toggle="tab">Tophistorier</a></li>
-    <li role="presentation"><a href="#tab-latest" aria-controls="tab-latest" role="tab" data-toggle="tab">Seneste nyt</a></li>
-  </ul>
+  <header class="slider-header ">
+    <ul class="nav nav-tabs-sm" role="tablist">
+      <li role="presentation" class="active"><a href="#tab-topstories-slider" aria-controls="tab-topstories-slider" role="tab" data-toggle="tab">Topnyheder</a></li>
+      <li role="presentation" class="tab-label"><a href="#tab-latest-slider" aria-controls="tab-latest-slider" role="tab" data-toggle="tab">Seneste nyt<ins class="text-label">48</ins></a></li>
+    </ul>
 
-      <button class="btn-close-latest">
-        <i class="fa fa-times"></i>
-      </button>
-    </header>
+    <button class="btn-close-latest">
+      <i class="fa fa-times"></i>
+    </button>
+  </header>
     
-  
-  <div class="inner">
 
-    <div role="tabpanel" class="tab-pane fade in active" id="tab-topstories">
+<div class="inner">
+
+     <div role="tabpanel" class="tabs">  
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    
+    <div role="tabpanel" class="tab-pane fade in active " id="tab-topstories-slider">
       
-        <?php include('./inc/article-content-stream.php'); ?>
-
+      <?php include('./inc/article-content-stream.php'); ?>
+      
     </div>
 
-    <div role="tabpanel" class="tab-pane fade" id="tab-latest">
+    <div role="tabpanel" class="tab-pane fade" id="tab-latest-slider">
     
-     <ul class="list-clean">
+    <ul class="list list-clean list-visited">
       <? while (dumb_luck("25")): ?>
-        <li><a href="article.php?<? dummy("text@time-ago-short") ?>"><time><? dummy("text@time-ago-short") ?></time> <? dummy("text@headline") ?></a></li>
+        <li class="teaser">
+        <div class="teaser-body">
+        <h2 class="header"><a href="article.php?<? dummy("text@time-ago-short") ?>">
+         <? dummy("text@headline") ?></a></h2>
+         <footer>
+          <time><? dummy("text@time-ago-short") ?></time>
+         </footer>
+         </div>
+         </li>
       <? endwhile ?>
     </ul>
 
-        
     </div>
-
-
-
-  
   </div>
-  <footer class="slider-footer"><a href="section.php">Se alle <i class=" fa fa-caret-right"></i></a></footer>
+
+  </div>
+
+</div>
+  
+
 </aside>
 
 <aside class="mobile-nav slider-nav">
@@ -221,7 +232,7 @@
 
           <ul class="main-nav nav-tools">
             <li class="menu-menu"><a href="#" class="btn-toggle-nav"><i class="fa fa-bars"></i></a></li>
-            <li class="menu-latest"><a href="#" title="Seneste nyt"><i class="fa fa-clock-o"></i><ins><? dummy("text@number") ?></ins></a></li>
+            <li class="menu-latest"><a href="news-overview.php" title="Seneste nyt"><i class="fa fa-clock-o"></i><ins class="text-label"><? dummy("text@number") ?></ins></a></li>
             <li class="menu-search hidden-xs"><a href="#" title="Søg"><i class="fa fa-search"></i></a></li>
           </ul>
         

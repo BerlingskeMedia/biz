@@ -123,9 +123,9 @@
     float: left;
     // Actual tabs (as links)
     > a {
-      margin-right: 5px;
+      margin-right: 20px;
       line-height: 19px;
-      padding: 0 10px 0 0;
+      padding: 0;
       border-radius: 0;
       font-size: 13px;
       font-weight: 600;
@@ -137,6 +137,9 @@
           background-color: transparent;
       }
     }
+    &:last-child {
+      a {margin-right: 0;}
+    }
 
     // Active state, and its :hover to override normal :hover
     &.active > a {
@@ -146,6 +149,7 @@
         color: @nav-tabs-active-link-hover-color;
         background-color: transparent;
         cursor: default;
+        border-bottom: 3px solid rgba(0,0,0,.1);
         color: @biz-tabs-active;
         
         // border-radius: 3px 3px 0 0;

@@ -292,7 +292,7 @@
           </div><!-- col -->
           
           <!-- SIDEBAR  -->
-          <aside class="col-md-4 col-md-pull-8">
+          <aside class="col-md-4 col-md-pull-8 hidden-sm hidden-xs">
           <div class="article-sidebar article-content-stream">
 
 

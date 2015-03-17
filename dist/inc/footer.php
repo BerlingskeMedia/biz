@@ -63,7 +63,10 @@ Fax: 33 75 20 20</p>
 <ul class="list-clean list-button">
 <li><a href="#">RSS</a></li>
 <li><a href="#">Artikelarkiv</a></li>
-<li><a href="#">SERVICE</a></li>
+</ul>
+
+<p><strong>SERVICE</strong></p>
+<ul>
 <li><a href="#">Bestil abonnement</a></li>
 <li><a href="#">Læs e-avisen</a></li>
 <li><a href="#">Er avisen ikke kommet?</a></li>
