@@ -118,22 +118,28 @@
               
               
               <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
-              <? if (dumb_luck("25%")): ?>
-                <!-- *** Asset - factbox theme-->
-                <?php include("inc/asset-article-factbox-theme.php"); ?>
-              <? endif ?>
 
               <div class="article-fact-float-right article-fact-graph module-sm">
                 <div class="visible-xs text-center">
-                  <img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=MAERSK/A.co&prv=ms_dlc&points=20&ts=1440&current=1426690728590&w=320&h=206&bgcolor=edd0c7&fullName=[name]%20-%201%20mdr.&end=2015-03-17" class="img-responsive">
+                  <img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=MAERSK/A.co&prv=ms_dlc&points=20&ts=1440&current=1426690728590&w=340&h=206&bgcolor=edd0c7&fullName=[name]%20-%201%20mdr.&end=2015-03-17" class="img-responsive">
                 </div>
                 <div class="visible-sm text-center">
                   <img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=MAERSK/A.co&prv=ms_dlc&points=20&ts=1440&current=1426690728590&w=278&h=150&bgcolor=edd0c7&fullName=[name]%20-%201%20mdr.&end=2015-03-17" class="img-responsive">
                 </div>
                 <div class="visible-md visible-lg">
-                  <img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=MAERSK/A.co&prv=ms_dlc&points=20&ts=1440&current=1426690728590&w=235&h=150&bgcolor=edd0c7&fullName=[name]%20-%201%20mdr.&end=2015-03-17" class="img-responsive">
+                  <img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=MAERSK/A.co&prv=ms_dlc&points=20&ts=1440&current=1426690728590&w=208&h=150&bgcolor=edd0c7&fullName=[name]%20-%201%20mdr.&end=2015-03-17" class="img-responsive">
                 </div>
+                  
+                <div class="section-sponsor">Sponsored by Nykredit A/S <a href="http://www.nykredit.dk" target="_blank"><img src="images/nykredit_logo_negativ.jpg"></a></div>
+
               </div>
+
+              
+              <? if (dumb_luck("25%")): ?>
+                <!-- *** Asset - factbox theme-->
+                <?php include("inc/asset-article-factbox-theme.php"); ?>
+              <? endif ?>
+
               <? if (dumb_luck("100%")): ?>
               
                 <? if (dumb_luck("50%")): ?>
@@ -148,6 +154,9 @@
 
               <? endif ?>
 
+
+
+              
  
 
               

@@ -66,7 +66,7 @@ Fax: 33 75 20 20</p>
 </ul>
 
 <p><strong>SERVICE</strong></p>
-<ul>
+<ul class="list-clean list-button">
 <li><a href="#">Bestil abonnement</a></li>
 <li><a href="#">Læs e-avisen</a></li>
 <li><a href="#">Er avisen ikke kommet?</a></li>

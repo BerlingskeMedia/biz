@@ -9816,8 +9816,9 @@ h1.heading {
   margin-left: 20px;
   margin-bottom: 10px;
   clear: right;
-  padding: 5px;
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.05);
+  color: #333;
 }
 @media (max-width: 767px) {
   .article-fact-graph {
@@ -9828,6 +9829,27 @@ h1.heading {
 }
 .article-fact-graph figure {
   margin-bottom: 20px;
+}
+.article-fact-graph img {
+  margin: 0 auto;
+}
+.article-fact-graph .green {
+  color: #2da12d;
+}
+.article-fact-graph .red {
+  color: #ff3333;
+}
+.article-fact-graph .section-sponsor {
+  font-size: 11px;
+  text-align: right;
+  line-height: 18px;
+  margin-top: 10px;
+}
+.article-fact-graph .section-sponsor img {
+  max-width: 60px;
+  height: auto;
+  vertical-align: middle;
+  float: right;
 }
 .aside-premiumbox header {
   margin-bottom: 10px;
