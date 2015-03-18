@@ -224,32 +224,20 @@
       <div class="col-md-4 col-sm-12 col-xs-12 col-md-pull-4">
         
         <div class="row">
-
-         <div class="banner  border-bottom">
+          <div class="col-md-12 col-sm-6">
+         <div class="banner module-sm">
             <? dummy("ad@300x250") ?>
+         </div>
          </div>
         
         <section class="col-md-12 col-sm-6">
-            <div class="border-bottom">
-              <p><strong><i class="fa fa-mobile"></i> Tilmeld Breaking News SMS</strong></p>
-          <div class="row">
-            <div class="col-sm-9 col-xs-10">
-            <form class="form-signup">
-            <div class="form-group form-oneline-alt">
-              <? if (dumb_luck("50%")): ?>
-            <input type="tel" class="form-control input-sm form-underline" placeholder="Indtast mobilnr." value="20616768" aria-describedby="sizing-addon3">
-            <? else: ?>
-            <input type="tel" class="form-control input-sm form-underline" placeholder="Indtast mobilnr." aria-describedby="sizing-addon3">
-            <? endif ?> 
-            <button class="btn btn-sm btn-primary btn-sm ">OK</button>
-            </div>
-            </form>
-            </div>
-
-          </div>
+            
           
           
-          </div>
+          
+          <h2 class="section-header"><i class="fa fa-mobile"></i> Gratis breaking news på mobilen</h2>
+          <p class="micro">Send <strong>BUSINESS BREAK</strong> til 1929 og modtag en SMS med en bekræftelse. Det er gratis - tilmelding koster kun almindeligt takst. Du kan til hver en tid afmelde tjenesten igen.</p>
+          <p class="micro">Afmeld: sms <strong>BUSINESS BREAK STOP</strong> til 1929</p>          
         </section>
 
 

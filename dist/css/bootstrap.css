@@ -9810,6 +9810,25 @@ h1.heading {
     list-style-type: none;
   }
 }
+.article-fact-graph {
+  max-width: 40%;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  clear: right;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 767px) {
+  .article-fact-graph {
+    max-width: 100%;
+    float: none;
+    margin: 0 0 20px;
+  }
+}
+.article-fact-graph figure {
+  margin-bottom: 20px;
+}
 .aside-premiumbox header {
   margin-bottom: 10px;
 }
@@ -11248,6 +11267,10 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 }
 p.small {
   margin-bottom: 5px;
+}
+.border-top {
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .border-bottom {
   padding-bottom: 15px;

@@ -188,14 +188,13 @@
         </section>
 
         <section class=" col-md-12 col-sm-6">
-        <h2 class="section-header">Breaking på mobilen</h2>
         
-        <form class="form-oneline">
-          <div class="form-group">
-            <input class="form-control" type="tel" placeholder="Indtast mobil nr."> 
-            <button class="btn btn-primary">OK</button>
-          </div>
-        </form>
+        
+        
+          <h2 class="section-header"><i class="fa fa-mobile"></i> Gratis breaking news på mobilen</h2>
+          <p class="micro">Send <strong>BUSINESS BREAK</strong> til 1929 og modtag en SMS med en bekræftelse. Det er gratis - tilmelding koster kun almindeligt takst. Du kan til hver en tid afmelde tjenesten igen.</p>
+          <p class="micro">Afmeld: sms <strong>BUSINESS BREAK STOP</strong> til 1929</p>          
+        
         </section>
         
 
