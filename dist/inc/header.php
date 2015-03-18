@@ -25,6 +25,10 @@
       
       <?php include('./inc/article-content-stream.php'); ?>
       
+      <div class="text-right slider-footer">
+      <small ><strong><a href="./index.php">Forsiden <i class="fa fa-caret-right"></i></a></strong></small>  
+    </div>
+
     </div>
 
     <div role="tabpanel" class="tab-pane fade" id="tab-latest-slider">
@@ -42,7 +46,10 @@
          </li>
       <? endwhile ?>
     </ul>
-
+    <div class="text-right slider-footer">
+      <small ><strong><a href="news-overview.php">Se alle <i class="fa fa-caret-right"></i></a></strong></small>  
+    </div>
+    
     </div>
   </div>
 
