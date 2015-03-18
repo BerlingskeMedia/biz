@@ -8386,6 +8386,9 @@ h1.deck-header {
 .list-first-child li:first-child {
   border-top: 0;
 }
+.list-last-child li:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
 .list-arrow {
   list-style: none;
   margin: 0;

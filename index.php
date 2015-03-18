@@ -176,7 +176,7 @@ li ul {
           <li class="d"><a href="./dist/gallery-overlay.php">Image galleries - Symfony</a></li>
           <li class="d"><a href="./dist/gallery-overlay-finale.php">Image galleries - Symfony - final slide</a></li>
           <li class="d"><a href="./dist/assets-cookiewarning.php">Cookiewarning</a></li>
-          <li class="a"><a href="#">Article archive</a></li>
+          <li class="d"><a href="./dist/section-archive.php">Article archive</a></li>
 
         </ul>
 

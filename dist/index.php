@@ -23,6 +23,7 @@
   <?php include("./inc/header.php"); ?>
 
   <div class="container">
+  <div class="visible-xs banner module-sm">MOBIL BANNER</div>
     <div class="rat-tail desktop-banner">
     <? dummy("ad@960x180") ?>
     <div class="banner-left">
