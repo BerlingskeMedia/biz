@@ -33,7 +33,7 @@
 
           
 
-          <a href="section.php" title="TITLE" class="article-tag"><span><? dummy("text@biz-cat") ?></span></a>
+          <a href="section.php" title="TITLE" class="article-tag"><span>Longread</span></a>
           <h1 class="heading"><? dummy("text@headline") ?></h1>
 
 
@@ -136,10 +136,8 @@
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
               
-              <? if (dumb_luck("50%")): ?>
               <!-- EMBEDDED IMAGE -->
-              <?php include("inc/asset-article-image-embedded.php"); ?>
-              <? endif ?>
+              <?php include("inc/asset-article-longread-image-embedded.php"); ?>
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
@@ -181,13 +179,7 @@
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-              
-              
 
-              
-              
-
-              
 
               
               <?php include('inc/asset-article-tags.php'); ?>
@@ -201,26 +193,7 @@
               </div>
 
 
-              <aside class="article-related-chunk list-xs">
-                <h1 class="aside-header">Read also</h1>
-                <ul>
-                  <? while (dumb_luck("4")): ?>
-                  <li class="teaser">
-                      <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@100x,16:9,") ?>" width="" height="" alt="" /></a></figure>
-                      <div class="teaser-body">
-                        <h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>
-                        <footer><time> 3d.</time></footer>
-                      </div>
-
-                  </li>
-                  <? endwhile ?>
-                </ul>
-
-                <div class="module-top-sm text-center">
-                  <a href="#" class="btn btn-primary btn-sm">Load more</a>
-                </div>
-              </aside>
-
+              
 
               
               <div class="comments" id="article-comments">
@@ -258,15 +231,144 @@
 
 
       
+      
+      <div class="row">
+    
+      <div class="col-md-12">
+  <div class="deck-header">
+  <h1>Longreads</h1>
+  <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
+  </div>
+</div>
+
+
+  
+  
+        <ul class="list-clean flex-4-2-2">
+    <? while (dumb_luck("4")): ?>
+      <li class="col-md-3 col-sm-6 col-xs-6">
+        <article class="teaser header-20 ">
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
+            <div class="teaser-body">
+            <footer><a href="section.php" class="cat">Longread</a> <time><? dummy("text@time-ago-short") ?></time></footer>
+            <? dummy("text@biz-headertags") ?>
+            <h2 class="header"><a href="article.php"><? dummy("text@headline") ?>
+            <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+            </a></h2>
+            </div>
+          </article>
+        </li>
+        <? endwhile ?>
+
+    </ul>
+  
+
+      <div class="col-md-12 text-center module-sm">
+        <button class="btn btn-sm btn-primary">Load more <i class="fa fa-caret-down"></i></button>
+    </div>
+    
+    
+
+    </div>
+
 
       
-      <?php include('./inc/asset-article-below.php'); ?>
+    <div class="row">
+      <section class="deck">
+
+
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        
+       <?php include('inc/asset-latest-news.php'); ?>
+
+      </div><!-- col -->
+
+
+ 
+      
+
+      <div class="col-md-4 col-sm-6 col-xs-12 col-md-push-4">
+        
+       <?php include('inc/asset-most-read.php'); ?>
+
+      </div><!-- col -->
+
+
+
+      <div class="col-md-4 col-sm-12 col-xs-12 col-md-pull-4">
+        
+        <div class="row">
+
+         <div class="banner module-sm">
+            <? dummy("ad@300x250") ?>
+         </div>
+        
+        <section class="col-md-12 col-sm-6">
+            
+          
+          
+          
+          <h2 class="section-header">Gratis breaking news på mobilen</h2>
+          <p class="micro">Send <strong>BUSINESS BREAK</strong> til 1929 og modtag en SMS med en bekræftelse. Det er gratis - tilmelding koster kun almindeligt takst. Du kan til hver en tid afmelde tjenesten igen.</p>
+          <p class="micro">Afmeld: sms <strong>BUSINESS BREAK STOP</strong> til 1929</p>
+        
+
+          
+          
+          
+        </section>
+
+
+          
+          <section class="col-md-12 col-sm-6 module-sm">
+          
+              <h2 class="section-header">Tilmeld Business.dk nyhedsbrev</h2>
+
+            <div class="row">
+            <form class="form-signup ">
+           <div class="col-sm-9 col-xs-10">
+            <div class="form-group form-oneline-alt ">
+            
+            <? if (dumb_luck("50%")): ?>
+            <input type="email" class="form-control input-sm form-underline" placeholder="Email" value="bsk@berlingskemedia.dk" aria-describedby="sizing-addon3">
+            <? else: ?>
+            <input type="email" class="form-control input-sm form-underline" placeholder="Indtast email" aria-describedby="sizing-addon3">
+            <? endif ?> 
+            <button class="btn btn-sm btn-primary btn-sm ">OK <!-- <i class="fa fa-caret-right"></i> --></button>
+            </div>
+            </div>
+
+          </form>
+          </div>
+          
+          </section>
+
+          <section class=" col-sm-12 col-md-12 ">
+          <div class="marketing-subscription">
+    <h2 class="section-header">Køb abonnement</h2>          
+              <a href="#" class="a-gray">
+            <p class="small"><strong>Få avisen i tre måneder inkl. digital adgang. Kun 199 kr/md. <span class="pink">Klik her <i class="fa fa-caret-right"></i></span> </strong> </p>
+            <p class="micro">Samlet engangspris 597,-. Abonnementet fortsætter til normalpris, indtil det opsiges</p>
+            </a>
+          </div>          
+          </section>
+
+
+     </div><!-- row -->
+
+    
+      </div><!-- col -->
+
+     </section>
+      
 
       
 
     </div>
 
   
+
 
   
 

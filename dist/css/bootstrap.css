@@ -719,6 +719,7 @@ blockquote .quote-share .fa {
   height: 30px;
   line-height: 30px;
   text-align: center;
+  border-radius: 50%;
   color: #333;
   font-size: 15px;
   -webkit-transition: background-color 0.1s ease;
@@ -9275,11 +9276,17 @@ h1.heading {
   right: -125px;
   width: 250px;
 }
+.article-longread .article-fact-embedded {
+  clear: none;
+}
 .article-longread .article-lognread-image-embedded {
   margin-bottom: 30px;
 }
 .article-longread .article-lognread-image-embedded figcaption {
   font-size: 13px;
+}
+.article-longread .article-lognread-image-embedded figcaption span {
+  color: rgba(0, 0, 0, 0.6);
 }
 .article-longread .article-lognread-image-embedded img {
   margin: 0 -80px 10px;
@@ -9292,7 +9299,20 @@ h1.heading {
 }
 @media (max-width: 991px) {
   .article-longread .article-content > p {
-    width: calc(100% - 240px);
+    width: 100%;
+  }
+  .article-longread .article-fact-float-theme,
+  .article-longread .article-fact-float-right,
+  .article-longread .article-image-embedded {
+    margin-left: 0;
+    right: -25px;
+  }
+  .article-longread .article-lognread-image-embedded img {
+    margin: 0 0 10px;
+    display: block;
+    max-width: 100%;
+    width: 100% \9;
+    height: auto;
   }
 }
 @media (max-width: 767px) {
@@ -9300,6 +9320,13 @@ h1.heading {
     padding-top: 56%;
   }
   .article-longread .article-content > p {
+    width: 100%;
+  }
+  .article-longread .article-fact-float-theme,
+  .article-longread .article-fact-float-right,
+  .article-longread .article-image-embedded {
+    margin: 0 0 20px;
+    right: 0;
     width: 100%;
   }
 }
@@ -9666,8 +9693,9 @@ h1.heading {
 }
 .article-image-embedded figcaption {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 300;
   color: rgba(0, 0, 0, 0.8);
+  line-height: 1.4;
   padding-top: 5px;
 }
 .article-image-embedded figcaption span {
