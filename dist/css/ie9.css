@@ -12,9 +12,10 @@
 	max-width: 150px;
 }
 
-.ie9 .show-latest .slider-nav {
-	right: 0;
+
+.ie9 .slider-nav {
+	right: -340px;
 }
 .ie9 .show-latest .slider-nav {
-	right: -340px;
+	right: 0;
 }
