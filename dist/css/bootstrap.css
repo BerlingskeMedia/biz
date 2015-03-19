@@ -703,7 +703,7 @@ blockquote {
   clear: both;
   display: block;
   margin: 30px 0;
-  font-weight: 500;
+  font-weight: 300;
   padding-left: 40px;
 }
 blockquote .quote-share {
