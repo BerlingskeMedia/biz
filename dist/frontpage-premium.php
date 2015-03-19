@@ -49,7 +49,7 @@
 
 
 
-<img src="<? dummy("image@620x,16:4") ?>" width="" height="" alt="" />
+<img src="<? dummy("image@620x,16:4") ?>" width="" height="" alt="" class="img-responsive" />
 <h1 >Business Premium</h1>
 <p>Her finder du brancheanalyser, markedsrapporter, erhvervsrelaterede nøgletalsdatabaser, guides til virksomhedsledelse og strategiske beslutninger, kontaktsamlinger, overblik over dagens vigtige statistiske offentliggørelse mv. Med abonnement får du adgang til alt indhold i research- og analyseuniverset. Det er også muligt at købe indholdet i styksalg. </h2>
 
