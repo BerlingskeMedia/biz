@@ -11256,6 +11256,11 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
 .gallery-finale .gallery-tools {
   display: none;
 }
+.bempay-footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  text-align: center;
+}
 .module {
   margin-bottom: 50px;
 }

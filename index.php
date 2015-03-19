@@ -160,7 +160,7 @@ li ul {
           <li class="d"><a href="./dist/assets-header.php">Header</a> </li>
           <li class="d"><a href="./dist/assets-footer.php">Footer</a> <date>Feb. 20th</date></li>
           <li class="c"><a href="./dist/assets-paywall.php">Paywall</a> <date>Feb. 20th</date></li>
-          <li class="a"><a href="#">Bempay</a> </li>
+          <li class="d"><a href="./dist/bempay.php">Bempay</a> </li>
           <li class="d"><a href="/dist/404.php">404</a> <date>Feb. 12th</date></li>
           <li class="d"><a href="/dist/search-result.php">Search</a> <date>Feb. 12th</date></li>
           <li class="d"><a href="/dist/news-overview.php">News overview</a> <date>Feb. 12th</date></li>
