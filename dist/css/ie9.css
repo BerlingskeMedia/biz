@@ -20,8 +20,8 @@
 	right: 0;
 }
 
-@media (max-width: 991px) {
-	.ie9 .slider-nav
-		display:none;
+@media screen and (max-width: 991px) {
+	 .slider-nav
+		display:none!important;
 	}
 }
