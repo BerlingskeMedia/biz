@@ -9230,6 +9230,27 @@ h1.heading {
     font-size: 16px;
   }
 }
+.article-longread .article-head {
+  text-align: center;
+}
+.article-longread .article-fact-float-theme,
+.article-longread .article-fact-float-right,
+.article-longread .article-fact-embedded {
+  max-width: 300px;
+}
+.article-longread .article-content > p {
+  width: calc(100% - 300px);
+}
+@media (max-width: 991px) {
+  .article-longread .article-content > p {
+    width: calc(100% - 240px);
+  }
+}
+@media (max-width: 767px) {
+  .article-longread .article-content > p {
+    width: 100%;
+  }
+}
 .embedded-node {
   margin-bottom: 25px;
 }

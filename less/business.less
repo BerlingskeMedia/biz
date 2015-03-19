@@ -3126,9 +3126,39 @@ h1.heading {
 			font-size: 16px;
 		}
 	}
-
-
 }
+
+
+.article-longread {
+	.article-head {
+		text-align: center;
+	}
+	.article-fact-float-theme,
+	.article-fact-float-right,
+	.article-fact-embedded {
+		max-width: 300px;
+	}
+	.article-content {
+		> p {
+			width: calc(100% - 300px);
+		}
+	}
+	@media (max-width: @screen-sm-max) {
+		.article-content {
+			> p {
+				width: calc(100% - 240px);
+			}
+		}
+	}
+	@media (max-width: @screen-xs-max) {
+		.article-content {
+		> p {
+			width: 100%;
+		}
+		}
+	}
+}
+
 .embedded-node {
 	.module-sm;
 }

@@ -4,8 +4,9 @@
   
   <header class="slider-header ">
     <ul class="nav nav-tabs-sm" role="tablist">
-      <li role="presentation" class="active"><a href="#tab-topstories-slider" aria-controls="tab-topstories-slider" role="tab" data-toggle="tab">Topnyheder</a></li>
-      <li role="presentation" class="tab-label"><a href="#tab-latest-slider" aria-controls="tab-latest-slider" role="tab" data-toggle="tab">Seneste nyt<ins class="text-label">48</ins></a></li>
+      <li role="presentation" class="tab-label active"><a href="#tab-latest-slider" aria-controls="tab-latest-slider" role="tab" data-toggle="tab">Seneste nyt<ins class="text-label">48</ins></a></li>
+      <li role="presentation"><a href="#tab-topstories-slider" aria-controls="tab-topstories-slider" role="tab" data-toggle="tab">Topnyheder</a></li>
+      
     </ul>
 
     <button class="btn-close-latest">
@@ -21,7 +22,7 @@
   <!-- Tab panes -->
   <div class="tab-content">
     
-    <div role="tabpanel" class="tab-pane fade in active " id="tab-topstories-slider">
+    <div role="tabpanel" class="tab-pane fade  " id="tab-topstories-slider">
       
       <?php include('./inc/article-content-stream.php'); ?>
       
@@ -31,7 +32,7 @@
 
     </div>
 
-    <div role="tabpanel" class="tab-pane fade" id="tab-latest-slider">
+    <div role="tabpanel" class="tab-pane fade in active" id="tab-latest-slider">
     
     <ul class="list list-clean list-visited">
       <? while (dumb_luck("25")): ?>
