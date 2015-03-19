@@ -9279,16 +9279,23 @@ h1.heading {
 .article-longread .article-fact-embedded {
   clear: none;
 }
-.article-longread .article-lognread-image-embedded {
+.article-longread .article-longread-image-embedded {
   margin-bottom: 30px;
 }
-.article-longread .article-lognread-image-embedded figcaption {
-  font-size: 13px;
+.article-longread .article-longread-image-embedded figure {
+  text-align: center;
 }
-.article-longread .article-lognread-image-embedded figcaption span {
+.article-longread .article-longread-image-embedded img {
+  max-width: 940px;
+}
+.article-longread .article-longread-image-embedded figcaption {
+  font-size: 13px;
+  text-align: left;
+}
+.article-longread .article-longread-image-embedded figcaption span {
   color: rgba(0, 0, 0, 0.6);
 }
-.article-longread .article-lognread-image-embedded img {
+.article-longread .article-longread-image-embedded img {
   margin: 0 -80px 10px;
 }
 .article-longread .article-content {
@@ -9307,8 +9314,8 @@ h1.heading {
     margin-left: 0;
     right: -25px;
   }
-  .article-longread .article-lognread-image-embedded img {
-    margin: 0 0 10px;
+  .article-longread .article-longread-image-embedded img {
+    margin: 0 auto 10px;
     display: block;
     max-width: 100%;
     width: 100% \9;
