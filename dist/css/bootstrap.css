@@ -6943,6 +6943,12 @@ ins.text-label {
   color: #8a6d3b;
   box-shadow: -1px 0 #fcf8e3, 1px 0 #fcf8e3;
 }
+.searchList .summary strong {
+  background-color: #FCF8E3;
+  color: #8A6D3B;
+  box-shadow: -1px 0px #fcf8e3, 1px 0px #fcf8e3;
+  font-weight: normal;
+}
 .toggle-content {
   overflow: hidden;
   display: none;
@@ -9145,9 +9151,23 @@ h1.heading {
   padding-bottom: 50px;
 }
 .article-content .article-video {
-  height: 0;
-  padding-top: 56.25%;
-  background: #000;
+  margin-bottom: 25px;
+}
+.article-content .article-video:before,
+.article-content .article-video:after {
+  content: " ";
+  display: table;
+}
+.article-content .article-video:after {
+  clear: both;
+}
+.article-content .article-video:before,
+.article-content .article-video:after {
+  content: " ";
+  display: table;
+}
+.article-content .article-video:after {
+  clear: both;
 }
 .article-content .slick-slider {
   margin-bottom: 15px;

@@ -244,8 +244,8 @@
           
           <section class="col-md-12 col-sm-6">
           <div class="border-bottom">
-              <p><strong>
-              <i class="fa fa-envelope"></i> Tilmeld Business.dk nyhedsbrev</strong></p>
+              <h2 class="section-header">
+              <i class="fa fa-envelope"></i> Tilmeld Business.dk nyhedsbrev</h2>
             <div class="row">
             <form class="form-signup ">
            <div class="col-sm-9 col-xs-10">
