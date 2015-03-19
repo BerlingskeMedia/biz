@@ -21,7 +21,7 @@
 }
 
 @media screen and (max-width: 991px) {
-	 .slider-nav
+	 .slider-nav {
 		display:none!important;
 	}
 }
