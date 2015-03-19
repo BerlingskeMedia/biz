@@ -9133,6 +9133,9 @@ h1.heading {
   font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   font-size: 17px;
 }
+.article-content-stream .teaser-brandview .header {
+  font-size: 15px;
+}
 .aside-header-small {
   font-size: 12px;
   text-transform: uppercase;
