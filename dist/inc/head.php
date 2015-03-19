@@ -5,7 +5,7 @@
     <link href="css/bootstrap.css?ver=<? dummy("text@number") ?>" rel="stylesheet">
 
     <!--[if lte IE 9]>
-    <link href="css/ie9.css" rel="stylesheet">      
+    <link href="css/ie9.css?ver=<? dummy("text@number") ?>" rel="stylesheet">      
     <![endif]-->
 
     <!--[if lt IE 9]>
