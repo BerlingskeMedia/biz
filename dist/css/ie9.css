@@ -19,3 +19,9 @@
 .ie9 .show-latest .slider-nav {
 	right: 0;
 }
+
+@media (max-width: 991px) {
+	.ie9 .slider-nav
+		display:none;
+	}
+}
