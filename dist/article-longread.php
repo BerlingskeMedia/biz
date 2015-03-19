@@ -20,29 +20,18 @@
 
 
 
-  <?php include("./inc/header.php"); ?>
+<?php include("./inc/header.php"); ?>
 
-  <div class="container">
-    <div class="rat-tail desktop-banner">
-    <? dummy("ad@960x180") ?>
-    <div class="banner-left">
-      <? dummy("ad@160x600-2") ?>
-    </div>
-    <div class="banner-right">
-      <? dummy("ad@160x600-2") ?>
-    </div>
+  
+<?php include('inc/asset-article-longread-image.php') ?>
 
-      
-    
-    </div>
+<div class="container">
     <div class="row">
       
-
-      
-      <article class="col-md-12">
+      <div class="col-md-12">
         <header class="article-head">
 
-          <?php include('inc/asset-article-longread-image.php') ?>
+          
 
           <a href="section.php" title="TITLE" class="article-tag"><span><? dummy("text@biz-cat") ?></span></a>
           <h1 class="heading"><? dummy("text@headline") ?></h1>
@@ -50,58 +39,38 @@
 
           <div class="article-date">Mandag d. <time datetime="2014-02-14"><? dummy("text@pol-date") ?> kl. <? dummy("text@time") ?></time> <? if (dumb_luck("25%")): ?><span class="date-updated">- Opdateret <time datetime="2014-02-14"> kl. <? dummy("text@time") ?></time></span><? endif ?></div>
 
-
-          
+         
 
 
             <?php include('inc/asset-article-byline.php'); ?>
 
-
-
-          
-
         </header>
+    </div>
+  </div>
+</div>
 
-        <div class="banner banner-top-article desktop-banner">
-          <? dummy("ad@930x80") ?>
-        </div>
-
+        
+<div class="container">
         <div class="row">
-          <div class="col-md-12">
-          
-            <div class="article-content">
-              
-                
+          <div class="col-md-10 col-md-push-1">
 
-           
-           
-           
-
-           
-
-              
-
-           
-
-              
-
-              
-
-              <div class="article-social article-social-top">
+           <div class="article-social article-social-top">
                     <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
                     <a href="#" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>
                     <a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>
                     <a href="#" class="icon-social-mail"><i class="fa fa-envelope"></i></a>
                     <span class="pull-right comments-teaser"><a href="#" class="icon-text scroll-comments"><? dummy("text@number") ?> kommentarer</a> <a href="#" class="icon-social-default scroll-comments"><i class="fa fa-comment"></i></a></span>
-              </div>
+            </div>
 
-              
-              
-              
-              
-              <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
+            <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
+          
+            <div class="article-content">
 
-              <div class="article-fact-float-right article-fact-graph module-sm">
+             
+
+            <? if (dumb_luck("100%")): ?>
+
+            <div class="article-fact article-fact-float-right article-fact-graph module-sm">
                 <div class="visible-xs text-center">
                   <img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=MAERSK/A.co&prv=ms_dlc&points=20&ts=1440&current=1426690728590&w=340&h=206&bgcolor=edd0c7&fullName=[name]%20-%201%20mdr.&end=2015-03-17" class="img-responsive">
                 </div>
@@ -115,6 +84,7 @@
                 <div class="section-sponsor">Sponsored by Nykredit A/S <a href="http://www.nykredit.dk" target="_blank"><img src="images/nykredit_logo_negativ.jpg"></a></div>
 
               </div>
+            <? endif ?>
 
               
               <? if (dumb_luck("25%")): ?>
@@ -142,24 +112,10 @@
  
 
               
-              <? if (dumb_luck("50%")): ?>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <div class="embedded-node">
-                <iframe src="http://cf.datawrapper.de/2W39o/1/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="417"></iframe>
-               </div>
-            <? endif ?>
+              
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-              <div class="article-link-embedded">
-                <figure>
-                <a href="article.php" title="TITLE"><img src="<? dummy("image@70x,16:9") ?>" width="" height="" alt="" /></a>
-                </figure>
-                <div class="teaser-body">
-                  <span>Læs også:</span>
-                  <a href="article.php" title="TITLE"><? dummy("text@headline") ?></a>  
-                </div>
-                
-              </div>
+              
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
               <div class="article-link-embedded">
                 <figure>
@@ -179,12 +135,25 @@
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-              <? if (dumb_luck("100%")): ?>
-                <!-- *** Asset - factbox theme-->
-                <?php include("inc/asset-article-quiz.php"); ?>
+              
+              <? if (dumb_luck("50%")): ?>
+              <!-- EMBEDDED IMAGE -->
+              <?php include("inc/asset-article-image-embedded.php"); ?>
               <? endif ?>
 
-              <h2>H2:<? dummy("text@item") ?></h2>
+              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+
+
+              
+              <!-- EMBEDDED IMAGE -->
+              <?php include("inc/asset-article-longread-image-embedded.php"); ?>
+              
+
+              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+
+
+
+              <h2><? dummy("text@item") ?></h2>
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
@@ -213,23 +182,12 @@
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
               
-              <? if (dumb_luck("50%")): ?>
-              <!-- EMBEDDED IMAGE -->
-              <?php include("inc/asset-article-image-embedded.php"); ?>
               
-              
-              <? endif ?>
 
               
-              <? if (dumb_luck("50%")): ?>
-              <!-- VIDEOS -->
-              <div class="article-video">
-                <iframe width="425" height="349" src="http://www.youtube.com/embed/FKWwdQu6_ok" frameborder="0" allowfullscreen></iframe>
-              </div>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <? endif ?>
+              
 
-              <?php include("inc/asset-article-letterbox.php"); ?>
+              
 
               
               <?php include('inc/asset-article-tags.php'); ?>
