@@ -6513,12 +6513,12 @@ ins.text-label {
     display: block;
   }
 }
-.show-latest .slider-latest-news {
+.show-latest .slider-nav {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-.show-latest .slider-latest-news .btn-close-latest {
+.show-latest .slider-nav .btn-close-latest {
   display: inline-block;
 }
 .tab-label {
@@ -6905,15 +6905,6 @@ ins.text-label {
   color: #333;
   font-size: 13px;
   text-transform: uppercase;
-}
-.ie9 .teaser-quote img {
-  width: 35px;
-  height: 35px;
-}
-.ie9 .header a:before {
-  display: block;
-  width: 25px;
-  height: 25px;
 }
 .teaser-tweet .teaser-img {
   margin: 0 0 10px;

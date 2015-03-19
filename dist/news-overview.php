@@ -41,7 +41,7 @@
     <div class="row">
     <div class="col-md-12">
       
-          <h1 class="deck-header">News overview <button class="btn btn-rss btn-sm">Følg Business.dk via RSS <i class="fa fa-rss"></i></h1>
+          <h1 class="deck-header">News overview <button class="btn btn-rss btn-sm">Følg via RSS <i class="fa fa-rss"></i></button></h1>
       
       
     </div>
