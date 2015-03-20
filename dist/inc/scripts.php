@@ -8,5 +8,7 @@
 <!-- Image slider -->
 <script src="js/plugins/slick.min.js"></script>
 
+<!-- Lazyload images -->
+<script src="js/plugins/jquery.lazyload.min.js" type="text/javascript"></script>
 
 <script src="js/app.js?ver=<? dummy("text@number") ?>"></script>

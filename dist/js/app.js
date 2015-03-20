@@ -1,5 +1,10 @@
 $(function () {
 
+
+    // Lazyload images 
+    $("img.lazy").lazyload();
+
+
     // Navigation
     var sticky_navigation_offset_top = $('.main-header-bottom').offset().top;
     
