@@ -228,6 +228,7 @@ li ul {
     </div>
 
     
+    <p>Test:<a href="mailto:?body=dette er en artikel test">Test</a></p>
 
   
 
