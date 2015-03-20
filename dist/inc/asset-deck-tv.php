@@ -33,7 +33,7 @@
         <article class="teaser teaser-video">
           <figure class="teaser-img"><a href="article-video.php">
 
-          <img class="lazy img-responsive"  data-original="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" /></a></figure>
+          <img class="lazy"  data-original="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" /></a></figure>
           <? dummy("text@biz-headertags") ?>
           <h2 class="header"><a href="article-video.php">
           <? dummy("text@headline") ?></a></h2>
