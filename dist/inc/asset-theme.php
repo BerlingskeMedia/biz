@@ -7,7 +7,7 @@
     <div class="padding-xs">
     <a href="article.php">
     <span class="theme-title">Forsvaret af Kronen</span>
-    <figure style="background-image: url(<? dummy("image/!biz-theme@600x,9:13") ?>);"></figure></a>
+    <figure class="lazy" data-original="<? dummy("image/!biz-theme@600x,9:13") ?>" style="background-image: url(images/blank.gif)"></figure></a>
       </div>
     </div>
   </div>

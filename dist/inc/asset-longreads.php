@@ -15,7 +15,7 @@
       <div class="teaser-body">
         <h2 class="header"><? dummy("text@headline") ?></h2>
       </div>
-      <div class="splash-img" style="background-image: url(<? dummy("image/!longread@800x,1:1") ?>)"></div>
+      <div class="splash-img lazy"  data-original="<? dummy("image/!longread@800x,1:1") ?>" style="background-image: url(images/blank.gif)"></div>
       </a>
     </article>
   <? endwhile ?>

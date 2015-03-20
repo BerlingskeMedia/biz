@@ -2,7 +2,7 @@ $(function () {
 
 
     // Lazyload images 
-    $("img.lazy").lazyload();
+    $(".lazy").lazyload();
 
 
     // Navigation
