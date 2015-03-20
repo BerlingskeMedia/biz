@@ -31,7 +31,9 @@
     <? while (dumb_luck("4")): ?>
       <li class="col-md-3 col-sm-6 col-xs-6">
         <article class="teaser teaser-video">
-          <figure class="teaser-img"><a href="article-video.php"><img src="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" class="img-responsive" /></a></figure>
+          <figure class="teaser-img"><a href="article-video.php">
+
+          <img class="lazy img-responsive" src="images/blank.gif" data-original="<? dummy("image@400x,16:9") ?>" width="" height="" alt="" /></a></figure>
           <? dummy("text@biz-headertags") ?>
           <h2 class="header"><a href="article-video.php">
           <? dummy("text@headline") ?></a></h2>

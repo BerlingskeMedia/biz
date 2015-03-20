@@ -5988,6 +5988,12 @@ html {
   background: rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
+.lazy {
+  display: block;
+  max-width: 100%;
+  width: 100% \9;
+  height: auto;
+}
 .tester {
   position: fixed;
   bottom: 0;
