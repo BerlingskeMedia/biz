@@ -1,6 +1,7 @@
 body.billede {
 	padding: 20px;
 	background: #333;
+	overflow: hidden;
 	.btn {
 		.btn-primary;
 		margin-bottom: 20px;
@@ -83,13 +84,17 @@ body.billede {
 		display: none;
 	}
 
-	.image-container {
-		overflow: visible!important;
-		overflow-x: hidden!important;
-	}
+	
 }
 
+.image-container {
+	overflow: hidden;
+}
 
+.gallery-overview {
+	overflow-x: hidden!important;
+	overflow-y: auto!important;
+}
 
 
 @media (max-width: @screen-sm-max) {
