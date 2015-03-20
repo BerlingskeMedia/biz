@@ -228,7 +228,12 @@ li ul {
     </div>
 
     
-    <p>Test:<a href="mailto:?body=dette er en artikel test">Test</a></p>
+
+
+<p><a href="sms:+4520616768?body=Her kommer tekst">Link til Android</a><br>
+<a href="sms:+4520616768;body=Test en hest">Link for iOs</a></p>
+
+
 
   
 
