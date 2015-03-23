@@ -9218,7 +9218,8 @@ h1.heading {
   margin-top: 0;
   color: rgba(0, 0, 0, 0.8);
 }
-.article-content > p {
+.article-content > p,
+.article-content .content > p {
   line-height: 1.6;
   margin-bottom: 25px;
   font-size: 18px;
@@ -9228,10 +9229,14 @@ h1.heading {
 .article-content div + p {
   clear: left;
 }
+.article-content .content > ul,
+.article-content .content > ol,
 .article-content > ul,
 .article-content > ol {
   margin-bottom: 25px;
 }
+.article-content .content > ol li,
+.article-content .content > ul li,
 .article-content > ol li,
 .article-content ul li {
   margin-bottom: 15px;
@@ -9241,6 +9246,7 @@ h1.heading {
     font-size: 19px;
     line-height: 1.3;
   }
+  .article-content .content > p,
   .article-content > p {
     font-size: 16px;
   }
