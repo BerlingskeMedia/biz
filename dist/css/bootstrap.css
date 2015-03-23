@@ -6513,12 +6513,12 @@ ins.text-label {
     display: block;
   }
 }
-.show-latest .slider-nav {
+.show-latest .slider-latest-news {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-.show-latest .slider-nav .btn-close-latest {
+.show-latest .slider-latest-news .btn-close-latest {
   display: inline-block;
 }
 .tab-label {
