@@ -12,16 +12,23 @@
 	max-width: 150px;
 }
 
-
-.ie9 .slider-nav {
+.ie9 .mobile-nav {
+	left: -280px;
+}
+.ie9 .show-menu .mobile-nav {
+	left: 0;
+	display: block;
+}
+.ie9 .slider-latest-news  {
 	right: -340px;
 }
-.ie9 .show-latest .slider-nav {
+.ie9 .show-latest .slider-latest-news  {
 	right: 0;
+	display: block;
 }
 
 @media screen and (max-width: 991px) {
 	 .slider-nav {
-		display:none!important;
+		display:none;
 	}
 }
