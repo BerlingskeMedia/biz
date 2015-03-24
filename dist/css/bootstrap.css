@@ -6163,7 +6163,8 @@ figcaption,
   padding: 0 50px;
   background-color: #fadcd2;
 }
-.header-bottom .site-search input[type=search] {
+.header-bottom .site-search input[type=search],
+.header-bottom .site-search input[type=text] {
   background-color: transparent;
   border: 0;
   margin-top: 8px;
@@ -6171,17 +6172,21 @@ figcaption,
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   color: #333;
 }
-.header-bottom .site-search input[type=search]::-moz-placeholder {
+.header-bottom .site-search input[type=search]::-moz-placeholder,
+.header-bottom .site-search input[type=text]::-moz-placeholder {
   color: #666666;
   opacity: 1;
 }
-.header-bottom .site-search input[type=search]:-ms-input-placeholder {
+.header-bottom .site-search input[type=search]:-ms-input-placeholder,
+.header-bottom .site-search input[type=text]:-ms-input-placeholder {
   color: #666666;
 }
-.header-bottom .site-search input[type=search]::-webkit-input-placeholder {
+.header-bottom .site-search input[type=search]::-webkit-input-placeholder,
+.header-bottom .site-search input[type=text]::-webkit-input-placeholder {
   color: #666666;
 }
-.header-bottom .site-search input[type=search]:focus {
+.header-bottom .site-search input[type=search]:focus,
+.header-bottom .site-search input[type=text]:focus {
   outline: none;
 }
 .header-bottom .site-search .btn-search {
