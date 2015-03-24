@@ -10300,6 +10300,10 @@ fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
     column-gap: 0;
   }
 }
+.fact-2-col-not-xs .teaser {
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid-column;
+}
 .deck-2-col .deck-content {
   -webkit-column-count: 2;
   -moz-column-count: 2;

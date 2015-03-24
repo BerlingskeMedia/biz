@@ -3927,6 +3927,11 @@ h1.heading {
 	@media (max-width: @screen-sm-max) {
 		.content-columns(1, 0);
 	}
+	.teaser {
+		break-inside: avoid-column;
+		-webkit-column-break-inside: avoid;
+		break-inside: avoid-column;   
+	}
 }
 .deck-2-col {
 	.deck-content {
