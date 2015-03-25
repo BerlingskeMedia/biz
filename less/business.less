@@ -3811,7 +3811,7 @@ h1.heading {
 	clear: right;
 	position: relative;
 	max-height: 200px;
-	
+	padding-bottom: 70px;
 	overflow: hidden;
 	// .transition (height .2s ease);
 	margin-bottom: 25px;
@@ -3824,7 +3824,8 @@ h1.heading {
 		margin: 5px 10px 0 0;
 	}
 	.fact-fader {
-		height: 80px;
+
+		height: 95px;
 		#gradient > .vertical(rgba(250,220,210,0); rgba(250,220,210,1); 0; 80%);  
 		position: absolute;
 		bottom: 0;
@@ -3833,55 +3834,28 @@ h1.heading {
 		text-align: center;
 		cursor: pointer;
 		
-		
-
-		.fact-toggle {
-			display: inline-block;
-			cursor: pointer;
+		.btn {
 			position: relative;
-			text-transform: uppercase;
-			
-			bottom: -38px;
-			box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
-			.transition (background-color .1s ease);
-			.btn;
-			.btn-primary;
-			
-			
-			.fa {
-				color: #fff;
-			}
-			
+			top: 40px;
+
 		}
+		.fact-close {
+			display: none;
+		}
+
+		
 	}
 	&.show {
 		max-height: 9999px;
+		.fact-close {
+			display: inline-block;
+		}
 		.fact-fader {
 			background: transparent;
 		}
-		.fact-toggle .fa:before {
-			content: "\f066";
-		}
+		
 		.fact-toggle {
-			position: absolute!important;
-			right: 5px;
-			bottom: 10px;
-			top: auto!important;
-			padding: 0;
-			background: transparent!important;
-			box-shadow: none;
-			border-bottom: 0;
-			.fa {
-				background-color: @biz-1;
-				padding: 4px;
-				.transition (transform .1s ease);
-				&:hover {
-					.scale(1.2);
-				}
-			}
-			span {
-				display: none;
-			}
+			display: none;
 		}
 	}
 }

@@ -93,7 +93,7 @@ $(function () {
     if (showShareMenu.length) {
       showShareMenu = showShareMenu.offset().top;
     }
-    console.log (showShareMenu);
+    // console.log (showShareMenu);
 
     $(window).scroll(function (event) {
         var y = $(this).scrollTop();
@@ -115,9 +115,25 @@ $(function () {
     });
 
     // ARTICLE FACTBOX 
-    $('.fact-fader').on('click', function() {
-    	$(this).closest('.article-fact').toggleClass('show');
+    $('.article-fact:not(.show) .fact-toggle').on('click', function() {
+    	$(this).closest('aside').addClass('show');
     });
+
+
+    // Scroll to top of factbox
+    $('.fact-close').on('click',function(){
+       var factTop = $(this).closest('aside');
+       console.log (factTop);
+      $(this).closest('aside').removeClass('show');
+      $('html,body').animate({
+          scrollTop: factTop.offset().top - 100
+        },{
+           duration: 200
+        });
+    });
+
+
+
 
     // Responsive videos in articles
     $('.article-content').fitVids();

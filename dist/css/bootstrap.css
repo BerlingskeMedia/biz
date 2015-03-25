@@ -10058,6 +10058,7 @@ h1.heading {
   clear: right;
   position: relative;
   max-height: 200px;
+  padding-bottom: 70px;
   overflow: hidden;
   margin-bottom: 25px;
 }
@@ -10070,7 +10071,7 @@ h1.heading {
   margin: 5px 10px 0 0;
 }
 .article-fact-embedded .fact-fader {
-  height: 80px;
+  height: 95px;
   background-image: -webkit-linear-gradient(top, rgba(250, 220, 210, 0) 0, #fadcd2 80%);
   background-image: -o-linear-gradient(top, rgba(250, 220, 210, 0) 0, #fadcd2 80%);
   background-image: linear-gradient(to bottom, rgba(250, 220, 210, 0) 0, #fadcd2 80%);
@@ -10083,150 +10084,23 @@ h1.heading {
   text-align: center;
   cursor: pointer;
 }
-.article-fact-embedded .fact-fader .fact-toggle {
+.article-fact-embedded .fact-fader .btn {
   position: relative;
-  bottom: -38px;
-  -webkit-transition: background-color 0.1s ease;
-  -o-transition: background-color 0.1s ease;
-  transition: background-color 0.1s ease;
-  text-transform: uppercase;
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: 600;
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  border: 0;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
-  border-radius: 2px;
-  white-space: nowrap;
-  padding: 6px 12px;
-  font-size: 16px;
-  line-height: 1.42857143;
-  border-radius: 1px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #ffffff;
-  background-color: #193057;
-  -webkit-transition: background-color 0.2s ease;
-  -o-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
+  top: 40px;
 }
-.article-fact-embedded .fact-fader .fact-toggle:focus,
-.article-fact-embedded .fact-fader .fact-toggle:active:focus,
-.article-fact-embedded .fact-fader .fact-toggle.active:focus,
-.article-fact-embedded .fact-fader .fact-toggle.focus,
-.article-fact-embedded .fact-fader .fact-toggle:active.focus,
-.article-fact-embedded .fact-fader .fact-toggle.active.focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-.article-fact-embedded .fact-fader .fact-toggle:hover,
-.article-fact-embedded .fact-fader .fact-toggle:focus,
-.article-fact-embedded .fact-fader .fact-toggle.focus {
-  color: #333333;
-  text-decoration: none;
-}
-.article-fact-embedded .fact-fader .fact-toggle:active,
-.article-fact-embedded .fact-fader .fact-toggle.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-.article-fact-embedded .fact-fader .fact-toggle.disabled,
-.article-fact-embedded .fact-fader .fact-toggle[disabled],
-fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle {
-  cursor: not-allowed;
-  pointer-events: none;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.article-fact-embedded .fact-fader .fact-toggle:hover,
-.article-fact-embedded .fact-fader .fact-toggle:focus,
-.article-fact-embedded .fact-fader .fact-toggle.focus,
-.article-fact-embedded .fact-fader .fact-toggle:active,
-.article-fact-embedded .fact-fader .fact-toggle.active,
-.open > .dropdown-toggle.article-fact-embedded .fact-fader .fact-toggle {
-  color: #ffffff;
-  background-color: #132543;
-  outline: none!important;
-}
-.article-fact-embedded .fact-fader .fact-toggle:active,
-.article-fact-embedded .fact-fader .fact-toggle.active,
-.open > .dropdown-toggle.article-fact-embedded .fact-fader .fact-toggle {
-  background-image: none;
-  outline: none;
-}
-.article-fact-embedded .fact-fader .fact-toggle.disabled,
-.article-fact-embedded .fact-fader .fact-toggle[disabled],
-fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle,
-.article-fact-embedded .fact-fader .fact-toggle.disabled:hover,
-.article-fact-embedded .fact-fader .fact-toggle[disabled]:hover,
-fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle:hover,
-.article-fact-embedded .fact-fader .fact-toggle.disabled:focus,
-.article-fact-embedded .fact-fader .fact-toggle[disabled]:focus,
-fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle:focus,
-.article-fact-embedded .fact-fader .fact-toggle.disabled.focus,
-.article-fact-embedded .fact-fader .fact-toggle[disabled].focus,
-fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.focus,
-.article-fact-embedded .fact-fader .fact-toggle.disabled:active,
-.article-fact-embedded .fact-fader .fact-toggle[disabled]:active,
-fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle:active,
-.article-fact-embedded .fact-fader .fact-toggle.disabled.active,
-.article-fact-embedded .fact-fader .fact-toggle[disabled].active,
-fieldset[disabled] .article-fact-embedded .fact-fader .fact-toggle.active {
-  background-color: #193057;
-}
-.article-fact-embedded .fact-fader .fact-toggle .badge {
-  color: #193057;
-  background-color: #ffffff;
-}
-.article-fact-embedded .fact-fader .fact-toggle .fa {
-  color: #fff;
+.article-fact-embedded .fact-fader .fact-close {
+  display: none;
 }
 .article-fact-embedded.show {
   max-height: 9999px;
 }
+.article-fact-embedded.show .fact-close {
+  display: inline-block;
+}
 .article-fact-embedded.show .fact-fader {
   background: transparent;
 }
-.article-fact-embedded.show .fact-toggle .fa:before {
-  content: "\f066";
-}
 .article-fact-embedded.show .fact-toggle {
-  position: absolute!important;
-  right: 5px;
-  bottom: 10px;
-  top: auto!important;
-  padding: 0;
-  background: transparent!important;
-  box-shadow: none;
-  border-bottom: 0;
-}
-.article-fact-embedded.show .fact-toggle .fa {
-  background-color: #e64d1a;
-  padding: 4px;
-  -webkit-transition: transform 0.1s ease;
-  -o-transition: transform 0.1s ease;
-  transition: transform 0.1s ease;
-}
-.article-fact-embedded.show .fact-toggle .fa:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-}
-.article-fact-embedded.show .fact-toggle span {
   display: none;
 }
 .article-premium-buy {
