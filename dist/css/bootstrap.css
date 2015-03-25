@@ -7808,11 +7808,12 @@ h2.page-header:before {
   }
 }
 .nav-responsive.show-nav {
-  z-index: 9999;
+  z-index: 20;
 }
 .nav-responsive.show-nav ul {
   display: block;
   position: absolute;
+  right: 0;
 }
 .nav-responsive.show-nav ul li {
   float: none;
@@ -10392,7 +10393,8 @@ h1.heading {
 }
 .theme-magazine .nav-responsive.show-nav ul {
   display: block;
-  position: relative;
+  position: absolute;
+  right: 0;
 }
 .theme-magazine .nav-responsive.show-nav ul li {
   padding: 0;
