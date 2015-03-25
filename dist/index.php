@@ -297,6 +297,9 @@
           </li>
         <? endwhile ?>
       </ul>
+      <div class="text-center">
+        <a href="./news-overview.php" class="btn btn-xs btn-primary">See all <i class="fa fa-caret-right"></i></a>
+      </div>
     </div>
     <div role="tabpanel" class="tab-pane fade" id="tab-berlingske">
     
