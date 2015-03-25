@@ -8889,12 +8889,6 @@ h1.deck-header {
 .article-image figcaption span {
   color: rgba(0, 0, 0, 0.6);
 }
-/*.slick-slider {
-	@media (max-width: @screen-xs-max) {
-		margin-left: -10px;
-		margin-right: -10px;
-	}
-}*/
 .slide .article-image {
   position: relative;
   margin-bottom: 0;
@@ -9460,6 +9454,8 @@ h1.heading {
   display: inline-block;
   margin-right: 15px;
   line-height: 1;
+  min-height: 30px;
+  vertical-align: top;
 }
 @media (max-width: 767px) {
   .article-byline .article-author {
