@@ -83,7 +83,7 @@
 <p><strong>Få ubegrænset adgang til B.dk og Business.dk fra 29 kr. pr. md.</strong> <a href="http://b.kundeunivers.dk/koeb-abonnement/b?ns_campaign=_Kundeunivers_abonnement_berlingske&ns_mchannel=&ns_source=Paywall_koeb_bdk&ns_linkname=popup_business&ns_fee=" target="_blank" class="btn btn-primary btn-sm">Køb abonnement <i class="fa fa-caret-right"></i></a></p>
 
 
- <p>Allerede abonnent? <strong><a href="http://b.kundeunivers.dk/allerede-abonnent?ns_campaign=_Kundeunivers_login_berlingske&ns_mchannel=&ns_source=Paywall_login_bdk&ns_linkname=popup_business&ns_fee=" data-toggle="modal" data-target="#modal-login">Få gratis adgang</a></strong>.</p>
+ <p>Allerede abonnent? <strong><a href="http://b.kundeunivers.dk/allerede-abonnent?ns_campaign=_Kundeunivers_login_berlingske&ns_mchannel=&ns_source=Paywall_login_bdk&ns_linkname=popup_business&ns_fee=">Få gratis adgang</a></strong>.</p>
 
  <p class="small">Brug for hjælp? Ring til kundeservice på 3375 3636 mandag-fredag kl. 8-17.</p>
 
