@@ -10729,8 +10729,7 @@ h1.heading {
   padding: 0 5px;
 }
 .theme-splash-wide p {
-  color: #fff;
-  font-size: 19px;
+  display: none;
 }
 .theme-splash-wide .cat {
   display: inline-block;
