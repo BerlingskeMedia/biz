@@ -10520,6 +10520,9 @@ h1.heading {
   border-style: solid;
   padding: 0 20px 40px 0;
 }
+.theme-wrapper .teaser-tag-trumpet {
+  display: none;
+}
 .theme-wrapper ul {
   position: absolute;
   bottom: 20px;
