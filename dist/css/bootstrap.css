@@ -9471,6 +9471,7 @@ h1.heading {
   line-height: 1;
   min-height: 30px;
   vertical-align: top;
+  position: relative;
 }
 @media (max-width: 767px) {
   .article-byline .article-author {
