@@ -7475,6 +7475,9 @@ footer + [class*="teaser-tag-"] {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.6);
 }
+.js_pane_2 {
+  clear: left;
+}
 .teaser-solid .teaser-tag-comingup {
   color: #ff3333;
 }
