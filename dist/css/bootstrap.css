@@ -8854,6 +8854,9 @@ h1.deck-header {
   margin-left: -15px;
   color: #e64d1a;
 }
+.section-content h2.header {
+  overflow: hidden;
+}
 .teaser-image-left figure {
   float: left;
   margin: 4px 10px 0 0;
