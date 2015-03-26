@@ -42,7 +42,7 @@
     <div class="col-md-12 module">
       
           <h1 class="deck-header text-center">
-          Tak for din tilmeldning
+          <div class="module-top">Tak for din tilmeldning</div>
           </h1>
 
           <p class="text-center">Du er nu tilmeldt nyhedsbrevet</p>
