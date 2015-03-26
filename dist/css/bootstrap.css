@@ -10431,6 +10431,19 @@ h1.heading {
   opacity: 1;
   z-index: 1;
 }
+.theme-cover figure:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+  display: block;
+  content: '';
+  background-repeat: repeat-x;
+  background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
 .theme-cover .theme-title {
   position: absolute;
   bottom: 40px;

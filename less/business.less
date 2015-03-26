@@ -4163,7 +4163,17 @@ h1.heading {
 		display: block;
 		opacity: 1;
 		z-index: 1;
-		
+
+		&:before {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 50%;
+			display: block;
+			content: '';
+			#gradient .directional(@start-color: rgba(0,0,0,.8); @end-color: rgba(0,0,0,0); @deg: 0deg);	
+		}
 		
 	}
 	.theme-title {
