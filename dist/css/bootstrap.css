@@ -7610,6 +7610,9 @@ footer + [class*="teaser-tag-"] {
   margin-right: 20px;
   margin-bottom: 0;
 }
+.teaser-img-left h2 {
+  overflow: hidden;
+}
 .list .teaser-img-left .teaser-img {
   margin-right: 10px;
 }
