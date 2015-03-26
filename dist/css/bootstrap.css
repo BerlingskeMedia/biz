@@ -10468,7 +10468,8 @@ h1.heading {
 }
 @media (max-width: 991px) {
   .theme-cover .theme-title:before {
-    height: 10px;
+    height: 5px;
+    bottom: -10px;
   }
 }
 .theme-cover a {
