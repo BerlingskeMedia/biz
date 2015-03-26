@@ -6093,7 +6093,7 @@ figcaption,
   height: 54px;
   background-color: #fadcd2;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  z-index: 20;
+  z-index: 10001;
   margin-bottom: 10px;
 }
 .make-fixed-menu .main-header-bottom {
@@ -7118,6 +7118,9 @@ ul.related li:before {
     float: none;
   }
 }
+.teaser-background-img {
+  margin-bottom: 5px;
+}
 .teaser-background-img .teaser-img {
   background-size: cover;
   width: 40%;
@@ -7335,6 +7338,7 @@ ul.related li:before {
   background-color: #333;
   margin-bottom: 0;
   overflow: hidden;
+  margin-bottom: 10px;
   -webkit-transition: background-color 0.1s ease;
   -o-transition: background-color 0.1s ease;
   transition: background-color 0.1s ease;
@@ -11221,6 +11225,9 @@ h1.heading {
 }
 .module-xs:after {
   clear: both;
+}
+.module-xxs {
+  margin-bottom: 10px;
 }
 .module-top {
   margin-top: 25px;
