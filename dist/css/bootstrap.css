@@ -7470,7 +7470,10 @@ footer + [class*="teaser-tag-"] {
 }
 .teaser-tag-trumpet {
   color: #333;
-  text-transform: none;
+  font-weight: 300;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
 }
 .teaser-solid .teaser-tag-comingup {
   color: #ff3333;
