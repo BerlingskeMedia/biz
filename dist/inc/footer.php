@@ -2,22 +2,16 @@
 <footer class="main-footer">
 	<!-- <h1 class="text-center">This is a temporary footer. Do not code</h1>	 -->
 	<section class="footer-marketing">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-								
-						 <a href="#"><p><strong>Få Berlingske i tre mdr. inkl. digital adgang for kun 199 kr./md.</strong></p>
-						 <p class="small">Samlet engangspris 597,- Abonnementet fortsætter til normalpris indtil det opsiges - <b>Klik her</b></p></a>
-					
-					
-				</div>
+		
+			
 				
-
-						
-
-
-					</div>
-					</div>
+								
+<div class="marketing-banner">
+  <a href="http://sjma.dk/lpcms/landingpage/b1.php" target="_blank"><img id="image" src="./images/marketing-banner.png" class="img-responsive"/></a> 
+</div>
+    
+		
+		
 		
 
 
