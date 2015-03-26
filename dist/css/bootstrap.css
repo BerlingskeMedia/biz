@@ -8888,7 +8888,8 @@ h1.deck-header {
   text-indent: -9999px;
   text-align: left;
 }
-.banner {
+.banner,
+.banner iframe {
   text-align: center;
 }
 .desktop-banner {
