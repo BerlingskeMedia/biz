@@ -9082,6 +9082,15 @@ h1.heading {
 	font-weight: 200;
 	font-size: 50px;*/
 }
+.media-embeds {
+  clear: both;
+}
+.media-embeds img {
+  display: block;
+  max-width: 100%;
+  width: 100% \9;
+  height: auto;
+}
 .media-embeds iframe {
   text-align: center;
   margin: 10px auto!important;
