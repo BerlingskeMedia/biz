@@ -6520,7 +6520,7 @@ ins.text-label {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 30;
+  z-index: 10002;
   text-align: center;
   -webkit-transition: opacity 0.2s ease;
   -o-transition: opacity 0.2s ease;
