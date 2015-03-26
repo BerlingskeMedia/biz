@@ -9668,6 +9668,25 @@ h1.heading {
 .article-social .comments-teaser .icon-letter:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
+#article-comments {
+  margin-bottom: 25px;
+}
+#article-comments:before,
+#article-comments:after {
+  content: " ";
+  display: table;
+}
+#article-comments:after {
+  clear: both;
+}
+#article-comments:before,
+#article-comments:after {
+  content: " ";
+  display: table;
+}
+#article-comments:after {
+  clear: both;
+}
 .article-link-embedded {
   padding: 5px 5px 5px 20px;
   position: relative;
