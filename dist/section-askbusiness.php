@@ -318,25 +318,23 @@
       <div class="col-md-12">
       <div class="row">
          <section class="col-md-12 col-sm-6">
-            <div class="border-bottom border-top">
+            
              
-          <p><strong><i class="fa fa-mobile"></i> Gratis breaking news på mobilen</strong></p>
-
-        
+          <h2 class="section-header">Gratis breaking news på mobilen</h2>
           <p class="micro">Send <strong>BUSINESS BREAK</strong> til 1929 og modtag en SMS med en bekræftelse. Det er gratis - tilmelding koster kun almindelig takst. Du kan til hver en tid afmelde tjenesten igen.</p>
-          <p class="micro">Afmeld: sms <strong>BUSINESS BREAK STOP</strong> til 1929</p>          
+          <p class="micro">Afmeld: sms <strong>BUSINESS BREAK STOP</strong> til 1929</p>
           
           
           
-          </div>
         </section>
 
 
           
           <section class="col-md-12 col-sm-6">
           <div class="module-sm">
-              <p><strong>
-              <i class="fa fa-envelope"></i> Tilmeld Business.dk nyhedsbrev</strong></p>
+              
+              <h2 class="section-header">Tilmeld Business.dk nyhedsbrev</h2>
+
             <div class="row">
             <form class="form-signup ">
            <div class="col-sm-9 col-xs-10">
@@ -353,8 +351,19 @@
 
           </form>
           </div>
+
            </div>
           </section>
+
+          <section class="col-md-12 col-sm-6">
+             <div class="marketing-subscription">
+              <h2 class="section-header">Køb abonnement</h2>          
+              <a href="#" class="a-gray">
+            <p class="small"><strong>Få avisen i tre måneder inkl. digital adgang. Kun 199 kr/md. <span class="pink">Klik her <i class="fa fa-caret-right"></i></span> </strong> </p>
+            <p class="micro">Samlet engangspris 597,-. Abonnementet fortsætter til normalpris, indtil det opsiges</p>
+            </a>
+          </div> 
+          </section> 
 
           </div>
 
