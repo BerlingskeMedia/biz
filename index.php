@@ -205,6 +205,17 @@ li ul {
         <li class="nuke"><a href="#">Text pages ("What is Business Direct")</a>
         <li class="d"><a href="dist/backend-businessdirect.php">Backend</a>
         </ul>
+
+
+        <h3>Nykredit</h3>
+
+  <ul class="overview">
+          <li><a href="/dist/index.php">Frontpage</a> (large version)</li>
+          <li><a href="/dist/article.php">Article</a> (small version)</li>
+          <li><a href="/dist/nykredit.php">Nykredit generel markup</a></li>
+        </ul>        
+
+
         <h3>Toolbox</h3>
 
         <ul class="overview">
@@ -213,7 +224,7 @@ li ul {
           <li><a href="/dist/assets-article.php">Article assets</a></li>
         </ul>
 
-        
+
       </div>
     
 <aside class="col-md-6">
@@ -228,10 +239,6 @@ li ul {
     </div>
 
     
-
-
-<p><a href="sms:+4520616768?body=Her kommer tekst">Link til Android</a><br>
-<a href="sms:+4520616768;body=Test en hest">Link for iOs</a></p>
 
 
 
