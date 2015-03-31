@@ -126,7 +126,7 @@
       </div>
       
       <div class="col-md-12">
-        <div class="section-sponsor">Sponsored by Nykredit A/S <a href="http://www.nykredit.dk" target="_blank"><img src="images/nykredit_logo_negativ.jpg"></a></div>
+        <div class="section-sponsor-lg"><a href="http://www.nykredit.dk/#!/dit-liv/bolig/boligfinansiering/dagens-obligationskurser-udbetaling?ref=businessdk" target="_blank"><i class="fa fa-caret-right"></i>  Se de aktuelle obligationskurser</a> <a href="http://www.nykredit.dk/#!/dit-liv/bolig/boligfinansiering/dagens-obligationskurser-udbetaling?ref=businessdk" target="_blank"><img class="sponsor-logo" src="images/nykredit_logo_negativ.jpg"></a></div>
       </div>
 
       </section> 

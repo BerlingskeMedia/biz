@@ -10029,6 +10029,36 @@ h1.heading {
     list-style-type: none;
   }
 }
+[class*="section-sponsor"] {
+  text-align: right;
+  margin-top: 10px;
+}
+[class*="section-sponsor"] .sponsor-logo {
+  height: auto;
+  vertical-align: middle;
+  float: right;
+  margin-left: 5px;
+}
+.section-sponsor-lg {
+  line-height: 35px;
+}
+.section-sponsor-lg .sponsor-logo {
+  max-height: 35px;
+}
+.section-sponsor-md {
+  font-size: 11px;
+  line-height: 20px;
+}
+.section-sponsor-md .sponsor-logo {
+  max-height: 20px;
+}
+.section-sponsor-sm {
+  font-size: 11px;
+  line-height: 18px;
+}
+.section-sponsor-sm .sponsor-logo {
+  max-height: 18px;
+}
 .article-fact-graph {
   max-width: 40%;
   float: right;
@@ -10057,18 +10087,6 @@ h1.heading {
 }
 .article-fact-graph .red {
   color: #ff3333;
-}
-.article-fact-graph .section-sponsor {
-  font-size: 11px;
-  text-align: right;
-  line-height: 18px;
-  margin-top: 10px;
-}
-.article-fact-graph .section-sponsor img {
-  max-width: 60px;
-  height: auto;
-  vertical-align: middle;
-  float: right;
 }
 .aside-premiumbox header {
   margin-bottom: 10px;

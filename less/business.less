@@ -3725,7 +3725,38 @@ h1.heading {
 		}
 	}
 }
+[class*="section-sponsor"] {
+	text-align: right;
+	margin-top: 10px;
+	.sponsor-logo {
+		height: auto;
+		vertical-align: middle;
+		float: right;
+		margin-left: 5px;
+	}
+}
 
+.section-sponsor-lg {
+	// font-size: 13px;
+	line-height: 35px;
+	.sponsor-logo {
+		max-height: 35px;
+	}
+}
+.section-sponsor-md {
+	font-size: 11px;
+	line-height: 20px;
+	.sponsor-logo {
+		max-height: 20px;
+	}
+}
+.section-sponsor-sm {
+	font-size: 11px;
+	line-height: 18px;
+	.sponsor-logo {
+		max-height: 18px;
+	}
+}
 .article-fact-graph {
 	.article-fact-float-right;
 	padding: 20px;
@@ -3739,21 +3770,6 @@ h1.heading {
 	}
 	.red {
 		color: @col-red;
-	}
-	.section-sponsor {
-		font-size: 11px;
-		text-align: right;
-		line-height: 18px;
-		margin-top: 10px;
-		img {
-			max-width: 60px;
-			height: auto;
-			vertical-align: middle;
-			float: right;
-		}
-		
-		
-		
 	}
 }
 .aside-premiumbox {
