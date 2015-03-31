@@ -1,12 +1,14 @@
 $(function () {
 
     // Navigation
+    if ($('.site-wrap').offset()) {
     var sticky_navigation_offset_top = $('.main-header-bottom').offset().top;
+    };
     
     var sticky_navigation = function()  {
     var scroll_top = $(window).scrollTop();
 
-    
+  
     
     
     if (scroll_top > sticky_navigation_offset_top) {
