@@ -207,7 +207,7 @@ li ul {
         </ul>
 
 
-        <h3>Nykredit</h3>
+        <h4>Nykredit</h4>
 
   <ul class="overview">
           <li><a href="/dist/index.php">Frontpage</a> (large version)</li>
