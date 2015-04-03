@@ -7906,6 +7906,9 @@ h2.page-header:before {
   font-size: 13px;
   font-weight: 600;
 }
+.stock-graph img {
+  margin: auto;
+}
 .stock-info {
   list-style: none;
   margin: 0;
