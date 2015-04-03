@@ -30,6 +30,7 @@
           
         </div>
         
+        <!-- Netdania start: -->
         
           
           <div class="col-md-4 col-sm-6">
@@ -109,7 +110,7 @@
       
       
       
-
+          <!-- netdania end -->
 
       
       
