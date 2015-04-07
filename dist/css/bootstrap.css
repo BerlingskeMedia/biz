@@ -9321,6 +9321,10 @@ h1.heading {
     font-size: 16px;
   }
 }
+.template-longread .comments-teaser,
+.template-longread .scroll-comments {
+  display: none;
+}
 .article-longread .main-header-bottom {
   margin-bottom: 0;
 }
