@@ -613,6 +613,27 @@
           <? dummy("ad@300x250") ?>
         </div>  
         </div>
+
+        <div class="col-md-12 col-sm-6">
+          
+
+          <section class=" module-sm">
+              <h1 class="section-header"> Business Direct <a href="#" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a> </h1>
+              <ul class="list list-xs list-light list-image-left ">
+              <? while (dumb_luck("2")): ?>
+              <li class="teaser">
+                      <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure>
+                      <div class="teaser-body">
+                        <h2 class="header"><a href="article-businessdirect.php"><? dummy("text@headline") ?></a></h2>
+                        <footer><a href="section.php" class="cat">Økonomi</a> </footer>
+                      </div>
+                      </li>
+              <? endwhile ?>
+        </ul>
+        </section>
+
+
+        </div>
         <div class="col-md-12 col-sm-6">
         <section class="module-sm text-center">
           <iframe src="http://www.jobindex.dk/cgi/partnerbanner.cgi?size=300x400&partner=business&pagetype=front;cre=mu;target=_blank;ord=6ca81a82-b751-11e4-b4f6-00259006236a;EASClick=http://ad1.emediate.dk/eas/cu=24881::camp=347212::no=360322::kw=link1-360322::cat1=bond-2944::encoding=utf-8::EASTpage_type=frontpage::EASTpath=%2Fforside::EASTauth=0::c2-2=0::uuid=6ca81a82-b751-11e4-b4f6-00259006236a::EASLink=" height="400" width="300" frameborder="0" scrolling="auto"></iframe>

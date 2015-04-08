@@ -194,23 +194,42 @@
       </div>
 
         </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="col-md-4 col-sm-12">
            
-         
-           <div class="banner module-sm">
+          <div class="row">
+            
+            <div class="col-md-12 col-xs-12">
+              
+ <div class="banner module-sm">
               <? dummy("ad@300x250") ?>
             </div>
-            
+
+            <section class=" module-sm">
+              <h1 class="section-header"> Business Direct <a href="#" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a> </h1>
+              <ul class="list  list-light list-xs list-image-left ">
+              <? while (dumb_luck("2")): ?>
+              <li class="teaser">
+                      <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure>
+                      <div class="teaser-body">
+                        <h2 class="header"><a href="article-businessdirect.php"><? dummy("text@headline") ?></a></h2>
+                        <footer><a href="section.php" class="cat">Økonomi</a> </footer>
+                      </div>
+                      </li>
+              <? endwhile ?>
+              </ul>
+              </section>
 
 
+            </div>
 
-            <section class="module-sm">
+            <div class="col-md-12 col-xs-12">
+              <section class="module-sm">
           <h1 class="section-header">
             Business blogs <a href="#" class="section-header-link">More blogs <i class="fa fa-caret-right"></i></a>
           </h1>
         
         <ul class="list  teaser-round list-light">
-          <? while (dumb_luck("5")): ?>
+          <? while (dumb_luck("4")): ?>
           <li class="teaser teaser-img-left">
           <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image/!author@50x50,") ?>" width="" height="" alt="" /></a></figure>
           <div class="teaser-body">
@@ -221,6 +240,17 @@
           <? endwhile ?>
         </ul>
         </section>
+              
+            </div>
+
+          </div>
+          
+            
+
+              
+
+
+            
 
 
            
