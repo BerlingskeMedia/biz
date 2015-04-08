@@ -10334,6 +10334,22 @@ h1.heading {
     clear: left;
   }
 }
+.flex-3-2-2 li {
+  display: block;
+}
+.flex-3-2-2 li article {
+  margin-bottom: 15px;
+}
+@media (min-width: 992px) {
+  .flex-3-2-2 li:nth-child(3n+4) {
+    clear: left;
+  }
+}
+@media (max-width: 991px) {
+  .flex-3-2-2 li:nth-child(odd) {
+    clear: left;
+  }
+}
 .flex-4-3-2 li {
   display: block;
 }

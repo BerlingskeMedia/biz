@@ -3988,6 +3988,30 @@ h1.heading {
 	
 }
 
+.flex-3-2-2 {
+	li {
+		display: block;
+		article {
+			margin-bottom: 15px;
+		}
+		
+
+	}
+	@media (min-width: @screen-md) {
+		li:nth-child(3n+4) {
+    		clear: left;
+		}
+	}
+	@media (max-width: @screen-sm-max) {
+		li:nth-child(odd) {
+    		clear: left;
+		}
+	}
+	
+}
+
+
+
 .flex-4-3-2 {
 	li {
 		display: block;
