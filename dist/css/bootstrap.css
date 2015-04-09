@@ -2472,53 +2472,6 @@ fieldset[disabled] .btn-rss.active {
   color: #ff9900;
   background-color: #ffffff;
 }
-.btn-trans {
-  color: #333333;
-  background-color: transparent;
-  -webkit-transition: background-color 0.2s ease;
-  -o-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
-}
-.btn-trans:hover,
-.btn-trans:focus,
-.btn-trans.focus,
-.btn-trans:active,
-.btn-trans.active,
-.open > .dropdown-toggle.btn-trans {
-  color: #333333;
-  background-color: rgba(0, 0, 0, 0);
-  outline: none!important;
-}
-.btn-trans:active,
-.btn-trans.active,
-.open > .dropdown-toggle.btn-trans {
-  background-image: none;
-  outline: none;
-}
-.btn-trans.disabled,
-.btn-trans[disabled],
-fieldset[disabled] .btn-trans,
-.btn-trans.disabled:hover,
-.btn-trans[disabled]:hover,
-fieldset[disabled] .btn-trans:hover,
-.btn-trans.disabled:focus,
-.btn-trans[disabled]:focus,
-fieldset[disabled] .btn-trans:focus,
-.btn-trans.disabled.focus,
-.btn-trans[disabled].focus,
-fieldset[disabled] .btn-trans.focus,
-.btn-trans.disabled:active,
-.btn-trans[disabled]:active,
-fieldset[disabled] .btn-trans:active,
-.btn-trans.disabled.active,
-.btn-trans[disabled].active,
-fieldset[disabled] .btn-trans.active {
-  background-color: transparent;
-}
-.btn-trans .badge {
-  color: transparent;
-  background-color: #333333;
-}
 .btn-facebook {
   color: #ffffff;
   background-color: #4c66a4;
@@ -2613,9 +2566,6 @@ fieldset[disabled] .btn-border.active {
 .btn-border .badge {
   color: #333333;
   background-color: #ffffff;
-}
-.btn-trans {
-  border-color: transparent;
 }
 .btn-success {
   color: #ffffff;
@@ -2754,8 +2704,8 @@ fieldset[disabled] .btn-link:focus {
   border-radius: 1px;
 }
 .btn-sm {
-  padding: 5px 10px;
-  font-size: 14px;
+  padding: 5px 14px;
+  font-size: 13px;
   line-height: 1.5;
   border-radius: 2px;
 }
@@ -8553,8 +8503,7 @@ h1.deck-header {
   overflow: hidden;
 }
 .article-related-chunk .header {
-  font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
-  font-size: 17px;
+  font-size: 14px;
 }
 .teaser-margin-bottom-0 {
   margin-bottom: 0;
@@ -9725,25 +9674,6 @@ h1.heading {
 .sticky-social .comments-teaser .icon-letter:hover,
 .article-social .comments-teaser .icon-letter:hover {
   background-color: rgba(0, 0, 0, 0.5);
-}
-#article-comments {
-  margin-bottom: 25px;
-}
-#article-comments:before,
-#article-comments:after {
-  content: " ";
-  display: table;
-}
-#article-comments:after {
-  clear: both;
-}
-#article-comments:before,
-#article-comments:after {
-  content: " ";
-  display: table;
-}
-#article-comments:after {
-  clear: both;
 }
 .article-link-embedded {
   padding: 5px 5px 5px 20px;

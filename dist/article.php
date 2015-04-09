@@ -264,11 +264,11 @@
               </div>
 
 
-              <aside class="article-related-chunk list-xs">
-                <h1 class="aside-header">Read also</h1>
+              <aside class="article-related-chunk list-xs module">
+                <h1 class="section-header">Read also</h1>
                 <ul>
                   <? while (dumb_luck("4")): ?>
-                  <li class="teaser">
+                  <li class="teaser ">
                       <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@100x,16:9,") ?>" width="" height="" alt="" /></a></figure>
                       <div class="teaser-body">
                         <h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>
@@ -280,17 +280,26 @@
                 </ul>
 
                 <div class="module-top-sm text-center">
-                  <a href="#" class="btn btn-primary btn-sm">Load more</a>
+                  <a href="#" class="btn btn-primary btn-sm">Load more <i class="fa fa-caret-down"></i></a>
                 </div>
               </aside>
 
 
               
+
+              
+              
               <div class="comments" id="article-comments">
                 
-             
+            <h1 class="section-header"><i class="fa fa-comment"></i> 10 comments</h1>
 
-                <div id="disqus_thread"></div>
+
+                
+             
+              <div class="text-center"><button class="btn  btn-sm btn-secondary show-comments"><i class="fa fa-comment"></i> Show comments</button></div>
+<!-- 
+              
+    <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'biztesting'; // required: replace example with your forum shortname
@@ -302,7 +311,8 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+     -->            
     
 
 
