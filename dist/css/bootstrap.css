@@ -2183,7 +2183,7 @@ select[multiple].form-group-lg .form-control {
   top: 1px;
   right: 0;
   border-bottom-width: 1px;
-  z-index: 15;
+  z-index: 1;
 }
 .form-oneline-alt {
   position: relative;
@@ -2193,7 +2193,7 @@ select[multiple].form-group-lg .form-control {
   top: 1px;
   right: 0;
   border-bottom-width: 1px;
-  z-index: 15;
+  z-index: 1;
 }
 .form-oneline-alt button {
   right: -50px;
