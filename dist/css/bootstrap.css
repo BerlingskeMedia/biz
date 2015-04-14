@@ -8821,6 +8821,9 @@ h1.deck-header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 10px;
 }
+.friendly-iframe {
+  margin: 0 auto;
+}
 .banner,
 .banner iframe {
   text-align: center;
@@ -9657,6 +9660,16 @@ h1.heading {
 .sticky-social .icon-social-letter:hover,
 .article-social .icon-social-letter:hover {
   background-color: #cf4517;
+}
+.sticky-social .icon-social-sms,
+.article-social .icon-social-sms {
+  background-color: #00cc00;
+  font-size: 23px;
+  vertical-align: bottom;
+}
+.sticky-social .icon-social-sms:hover,
+.article-social .icon-social-sms:hover {
+  background-color: #00b300;
 }
 .sticky-social .icon-text,
 .article-social .icon-text {
