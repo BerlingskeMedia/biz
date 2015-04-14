@@ -9663,13 +9663,13 @@ h1.heading {
 }
 .sticky-social .icon-social-sms,
 .article-social .icon-social-sms {
-  background-color: #00cc00;
-  font-size: 23px;
+  background-color: #21bb21;
+  font-size: 24px;
   vertical-align: bottom;
 }
 .sticky-social .icon-social-sms:hover,
 .article-social .icon-social-sms:hover {
-  background-color: #00b300;
+  background-color: #1da51d;
 }
 .sticky-social .icon-text,
 .article-social .icon-text {
