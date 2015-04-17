@@ -188,60 +188,38 @@
 <div class="site-main-header main-header-bottom">
 
 
-
+<?php 
+$stockvalue = rand(0,1);
+?>
 
   <div class="container-main-header">
   <div class="row">
     <div class="header-bottom col-md-12">
         <a href="./" class="logo-business">Business</a>
         
-        <!-- <a href="#" class="btn-toggle-mobile-search toggle-global-search"><i class="fa fa-search"></i></a> -->
+        <style type="text/css">
+
+
+        </style>
         <nav class="site-nav">
-          <ul class="main-nav desktop-nav">
-            <li ><a href="section.php">Investor</a>
-            <ul class="sub-menu desktop-nav">
-              <li><a href="section.php">Se alle</a></li>
-              <li><a href="section.php">Økonomi</a></li>
-              <li><a href="section.php">Global</a></li>
-              <li><a href="section.php">Børstal</a></li>
-              <li><a href="section.php">Aktier</a></li>
-              <li><a href="section.php">Obligationer</a></li>
-              <li><a href="section.php">Investeringsbeviser</a></li>
-              <li><a href="section.php">Valuta</a></li>
-              <li><a href="section.php">Markeder</a></li>
-            </ul>
-            </li>
-            <li ><a href="section.php">Virksomheder</a>
-            <ul class="sub-menu">
-              <li><a href="section.php">Se alle</a></li>
-              <? while (dumb_luck("6-9")): ?><li><a href="section.php"><? dummy("text@item") ?></a></li><? endwhile ?>
-            </ul>
-            </li>
-            <li ><a href="section.php">Privatøkonomi</a>
-            <ul class="sub-menu">
-              <li><a href="section.php">Se alle</a></li>
-              <? while (dumb_luck("6-9")): ?><li><a href="section.php"><? dummy("text@item") ?></a></li><? endwhile ?>
-            </ul>
-            </li>
-            <li class="<? if (dumb_luck("25%")): ?>active<? endif ?>"><a href="section.php">Karriere</a>
-            <ul class="sub-menu">
-              <li><a href="section.php">Se alle</a></li>
-              <? while (dumb_luck("6-9")): ?><li><a href="section.php"><? dummy("text@item") ?></a></li><? endwhile ?>
-            </ul>
-            </li>
-            <li ><a href="section.php">TV</a>
-            <ul class="sub-menu">
-              <li><a href="section.php">Se alle</a></li>
-              <? while (dumb_luck("6-9")): ?><li><a href="section.php"><? dummy("text@item") ?></a></li><? endwhile ?>
-            </ul>
-            </li>
-          </ul>
-          
+          <a href="#" class="nav-stock">
+            <div class="stock-container">
+              <span class="stock-title">OMX C20 CAP</span>
+              <span class="stock-value">1032,21</span>
+            </div>
+            <?php if($stockvalue == 1): ?>
+            <span class="stock-change" id="stock-count"></span>
+          <?php else: ?>
+            <span class="stock-change negative" id="stock-count"></span>
+          <?php endif; ?>
+          </a>
+
+          <a href="#" class="nav-stock-button nav-button"><i class="fa icon-stockquote"></i> Børstal</a>
 
           <ul class="main-nav nav-tools">
-            <li class="menu-menu"><a href="#" class="btn-toggle-nav"><i class="fa fa-bars"></i></a></li>
-            <li class="menu-latest"><a href="news-overview.php" title="Seneste nyt"><i class="fa fa-clock-o"></i><ins class="text-label"><? dummy("text@number") ?></ins></a></li>
-            <li class="menu-search hidden-xs"><a href="#" title="Søg"><i class="fa fa-search"></i></a></li>
+            <li class="menu-menu nav-button"><a href="#" class="btn-toggle-nav"><i class="fa fa-bars"></i> Indhold</a></li>
+            <li class="menu-latest nav-button"><a href="news-overview.php" title="Seneste nyt"><i class="fa fa-clock-o"></i> Seneste nyt</a></li>
+            <li class="menu-search nav-button hidden-xs"><a href="#" title="Søg"><i class="fa fa-search"></i> Søg</a></li>
           </ul>
         
         </nav>
