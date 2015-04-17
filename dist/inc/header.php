@@ -190,6 +190,8 @@
 
 <?php 
 $stockvalue = rand(0,1);
+$stock_change_mobile = mt_rand(0,250)/100;
+
 ?>
 
   <div class="container-main-header">
@@ -203,23 +205,26 @@ $stockvalue = rand(0,1);
         </style>
         <nav class="site-nav">
           <a href="#" class="nav-stock">
-            <div class="stock-container">
-              <span class="stock-title">OMX C20 CAP</span>
+            <div class="stock-container hidden-xs">
+              <span class="stock-title">OMX C20CAP</span>
               <span class="stock-value">1032,21</span>
             </div>
-            <?php if($stockvalue == 1): ?>
-            <span class="stock-change" id="stock-count"></span>
-          <?php else: ?>
-            <span class="stock-change negative" id="stock-count"></span>
-          <?php endif; ?>
+
+            <div class="stock-container-xs visible-xs">
+              <span class="stock-title">C20<br>CAP</span>
+              <span class="stock-change <? if (dumb_luck("50%")): ?>negative<? endif ?>" ><?php echo $stock_change_mobile; ?><i>%</i></span>
+            </div>
+
+            <span class="hidden-xs stock-change  <? if (dumb_luck("50%")): ?>negative<? endif ?>" id="stock-count"></span>
+          
           </a>
 
-          <a href="#" class="nav-stock-button nav-button"><i class="fa icon-stockquote"></i> Børstal</a>
+          
 
           <ul class="main-nav nav-tools">
-            <li class="menu-menu nav-button"><a href="#" class="btn-toggle-nav"><i class="fa fa-bars"></i> Indhold</a></li>
-            <li class="menu-latest nav-button"><a href="news-overview.php" title="Seneste nyt"><i class="fa fa-clock-o"></i> Seneste nyt</a></li>
-            <li class="menu-search nav-button hidden-xs"><a href="#" title="Søg"><i class="fa fa-search"></i> Søg</a></li>
+            <li class="menu-menu nav-button"><a href="#" class="btn-toggle-nav"><i class="fa fa-bars"></i> <span>Indhold</span></a></li>
+            <li class="menu-latest nav-button"><a href="news-overview.php" title="Seneste nyt"><i class="fa fa-clock-o"></i> <span>Seneste nyt</span></a></li>
+            <li class="menu-search nav-button hidden-xs"><a href="#" title="Søg"><i class="fa fa-search"></i> <span>Søg</span></a></li>
           </ul>
         
         </nav>

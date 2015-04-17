@@ -14,16 +14,16 @@
 $stock_change = mt_rand(0,250)/100;
  ?>
 <script type="text/javascript">
-var options = {
+var stockOptions = {
   useEasing : true, 
   useGrouping : true, 
   separator : ',', 
   decimal : ',', 
-  prefix : '', 
+  prefix : '<b></b>', 
   suffix : '<i>%</i>' 
 };
-var demo = new countUp("stock-count", 0, <?php echo $stock_change; ?>, 2, 1, options);
-demo.start();
+var stockCounter = new countUp("stock-count", 0, <?php echo $stock_change; ?>, 2, 1, stockOptions);
+stockCounter.start();
 </script>
 
 <script src="js/app.js?ver=<? dummy("text@number") ?>"></script>

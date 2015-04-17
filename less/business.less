@@ -218,6 +218,13 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 		height: 54px;
 		margin: 0;
 		padding: 0;
+		a {
+			color: #666;
+			.transition (color .1s  ease);
+			&:hover {
+				color: darken(#666, 15%);
+			}
+		}
 		li {
 			display: inline-block;
 			line-height: 54px;
@@ -225,19 +232,39 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 			float: left;
 		}
 		.fa {
-			font-size: 20px;
+			font-size: 18px;
 			line-height: 54px;
+			float: left;
+			margin-right: 5px;
+			color: #333;
+		}
+	}
+	.main-nav span {
+		@media (max-width: @screen-xs-max) {
+			display: none;
 		}
 	}
 }
-
+.stock-container-xs {
+	margin-top: 4px;
+	width: 65px;
+}
 .nav-stock {
 	display: inline-block;
-	padding-top: 10px;
+	margin-top: 13px;
 	font-weight: 600;
 	font-size: 12px;
 	color: #333;
 	text-align: right;
+	margin-left: 90px;
+	@media (max-width: @screen-sm-max) {
+		margin-left: 40px;
+	}
+	@media (max-width: @screen-xs-max) {
+		margin-left: 10px;
+		font-size: 10px;
+
+	}
 }
 .stock-container {
 	height: 40px;
@@ -245,6 +272,11 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 }
 .stock-title {
 	display: block;
+	line-height: 12px;
+	@media (max-width: @screen-xs-max) {
+		float: left;
+		line-height: 1;
+	}
 
 }
 .stock-value {
@@ -252,22 +284,35 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 	display: block;
 }
 .stock-change {
-	float: right;
-	height: 40px;
-	line-height: 34px;
+	// float: right;
+	line-height: 29px;
 	font-weight: 300;
-	font-size: 37px;
+	font-size: 30px;
 	padding-left: 10px;
 	color: @col-green;
-	width: 100px;
 	text-align: left;
+	width: 120px;
 	i {
-		font-size: 20px;
+		font-size: 19px;
 		font-style: normal;
 		font-weight: 600;
+		padding-left: 5px;
 	}
 	&.negative {
 		color: @col-red;
+	}
+	@media (max-width: @screen-xs-max) {
+		font-size: 14px;
+		line-height: 1;
+		padding-top: 4px;
+		width: auto;
+		padding-left: 5px;
+		float: left;
+		i {
+			font-size: 10px;
+			padding: 0;
+
+		}
 	}
 }
 
@@ -281,7 +326,6 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 .nav-stock-button {
 	vertical-align: text-bottom;
 	display: inline-block;
-	line-height: 30px;
 }
 
 .icon-stockquote:before {
