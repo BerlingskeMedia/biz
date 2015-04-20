@@ -154,10 +154,10 @@
 
  
    <section class="border-top-thick">
-            <div class="border-bottom border-top">          
+            
 
 
-              <p><strong><i class="fa fa-mobile"></i> Gratis breaking news på mobilen</strong></p>
+              <h2 class="section-header"> Gratis breaking news på mobilen</h2>
        
           <p class="micro">Send <strong>BUSINESS BREAK</strong> til 1929 og modtag en SMS med en bekræftelse. Det er gratis - tilmelding koster kun almindelig takst. Du kan til hver en tid afmelde tjenesten igen.</p>
           <p class="micro">Afmeld: sms <strong>BUSINESS BREAK STOP</strong> til 1929</p>          
@@ -166,21 +166,18 @@
 
 
 
-          
-          
-          </div>
+  
         </section>
 
 
           
           <section>
-          <div class="border-bottom">
-              <p><strong>
-              <i class="fa fa-envelope"></i> Tilmeld Business.dk nyhedsbrev</strong></p>
-            <div class="row">
+          <h2 class="section-header">Tilmeld Business.dk nyhedsbrev</h2>
+
+            
             <form class="form-signup ">
-           <div class="col-sm-9 col-xs-10">
-            <div class="form-group form-oneline-alt ">
+           
+            <div class=" form-oneline ">
             
             <? if (dumb_luck("50%")): ?>
             <input type="email" class="form-control input-sm form-underline" placeholder="Email" value="bsk@berlingskemedia.dk" aria-describedby="sizing-addon3">
@@ -188,12 +185,15 @@
             <input type="email" class="form-control input-sm form-underline" placeholder="Indtast email" aria-describedby="sizing-addon3">
             <? endif ?> 
             <button class="btn btn-sm btn-primary btn-sm ">OK <!-- <i class="fa fa-caret-right"></i> --></button>
-            </div>
-            </div>
+            
+           
 
-          </form>
-          </div>
-           </div>
+            </div>
+            
+            <p class="micro">Du tilmeldes nyhedsbrevene Business Breaking, Morgen og Eftermiddag. <a href="http://nyhedsbreve.berlingske-mail.dk/?medieid=2" target="_blank">Se alle nyhedsbreve <i class="fa fa-caret-right"></i></a></p>
+            </form>
+            
+          
           </section>
 
           <section class="module-sm">

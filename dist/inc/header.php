@@ -4,7 +4,7 @@
   
   <header class="slider-header ">
     <ul class="nav nav-tabs-sm" role="tablist">
-      <li role="presentation" class="tab-label active"><a href="#tab-latest-slider" aria-controls="tab-latest-slider" role="tab" data-toggle="tab">Seneste nyt<ins class="text-label">48</ins></a></li>
+      <li role="presentation" class="tab-label active"><a href="#tab-latest-slider" aria-controls="tab-latest-slider" role="tab" data-toggle="tab">Seneste nyt</a></li>
       <li role="presentation"><a href="#tab-topstories-slider" aria-controls="tab-topstories-slider" role="tab" data-toggle="tab">Topnyheder</a></li>
       
     </ul>
@@ -125,6 +125,10 @@
     </li>
     <li class="tool"><a href="#">Læs E-avis</a></li>
     <li class="tool"><a href="#">Køb abonnement</a></li>
+    <li class="tool"><a href="#">Business Direct</a></li>
+    <li class="tool"><a href="#">BrandView</a></li>
+    <li class="tool"><a href="#">Business Premium</a></li>
+    <li class="tool"><a href="#">Nyhedsbreve</a></li>
     <li class="tool"><a href="#">Kontakt</a></li>
     <li class="tool"><a href="#">Annoncering</a></li>
     <li class="tool sosume"><a href="#">Privatlivspolitik</a></li>
@@ -188,6 +192,7 @@
 <div class="site-main-header main-header-bottom">
 
 
+
 <?php 
 $stockvalue = rand(0,1);
 $stock_change_mobile = mt_rand(0,250)/100;
@@ -199,19 +204,16 @@ $stock_change_mobile = mt_rand(0,250)/100;
     <div class="header-bottom col-md-12">
         <a href="./" class="logo-business">Business</a>
         
-        <style type="text/css">
-
-
-        </style>
+        
         <nav class="site-nav">
-          <a href="#" class="nav-stock">
+          <a href="http://www.business.dk/investor/aktier" class="nav-stock">
             <div class="stock-container hidden-xs">
               <span class="stock-title">OMX C20CAP</span>
               <span class="stock-value">1032,21</span>
             </div>
 
             <div class="stock-container-xs visible-xs">
-              <span class="stock-title">C20<br>CAP</span>
+              <span class="stock-title">C20 CAP</span>
               <span class="stock-change <? if (dumb_luck("50%")): ?>negative<? endif ?>" ><?php echo $stock_change_mobile; ?><i>%</i></span>
             </div>
 
@@ -228,19 +230,33 @@ $stock_change_mobile = mt_rand(0,250)/100;
           </ul>
         
         </nav>
-        <div class="site-search">
-            <form action="./search-result.php" method="POST">
-            <input type="search" class="" id="site-search" placeholder="What are you searching for?"> 
-            <button class="btn-search"><i class="fa fa-search"></i></button>
-            </form>
-            <button class="btn-close-search"><i class="fa fa-close"></i></button>
-        </div>
+        
+    </div>
+<div class="site-main-search">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+    <form action="./search-result.php" method="POST">
+      <input type="search" class="" id="site-search" placeholder="What are you searching for?"> 
+      <button class="btn-search"><i class="fa fa-search"></i></button>
+    </form>
     </div>
   </div>
   </div>
+</div><!-- search -->
+
+
+  </div>
+
+
+
+  </div>
 </div>
-  
-<a href="#" class="close-search"></a>
+
+
+
+
+
 
 
 

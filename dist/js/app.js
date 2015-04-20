@@ -48,11 +48,11 @@ $(function () {
     // Toggle latest news. Show slide-in if viewport is iPad or phone
     $('.menu-latest a').on('click', function(e){
       e.preventDefault();
-      if($(window).width()>992) {
-        window.location =  $(this).attr('href');
-      } else {
+      // if($(window).width()>992) {
+      //   window.location =  $(this).attr('href');
+      // } else {
         $('body').toggleClass('show-latest');   
-      }
+      //}
     });
 
 

@@ -10,7 +10,7 @@
     <title>Business.dk</title>
     <?php include("./inc/head.php"); ?> 
   </head>
-  <body>
+  <body class="show-search">
 
   <?php include("./inc/header.php"); ?>
 
