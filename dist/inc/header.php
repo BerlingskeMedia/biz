@@ -209,7 +209,7 @@ $stock_change_mobile = mt_rand(0,250)/100;
           <a href="http://www.business.dk/investor/aktier" class="nav-stock">
             <div class="stock-container hidden-xs">
               <span class="stock-title">OMX C20CAP</span>
-              <span class="stock-value">1032,21</span>
+              <span class="stock-value"><? if (dumb_luck("50%")): ?><span>Lukket</span><? endif ?> 1032,21</span>
             </div>
 
             <div class="stock-container-xs visible-xs">
