@@ -50,7 +50,7 @@
 
 
 
-            <?php include('inc/asset-article-byline.php'); ?>
+            
 
 
           
@@ -120,6 +120,8 @@
               
               
               <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
+
+              <?php include('inc/asset-article-byline.php'); ?>
 
               <div class="article-fact-float-right article-fact-graph module-sm">
                 <div class="visible-xs text-center">

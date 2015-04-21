@@ -50,7 +50,7 @@
 
 
 
-            <?php include('inc/asset-article-byline.php'); ?>
+            
 
           
 
@@ -81,6 +81,8 @@
                 
               
                 <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
+                <?php include('inc/asset-article-byline.php'); ?>
+                
               <? if (dumb_luck("50%")): ?><p><? dummy("text@paragraph") ?></p><? endif ?>
               
 

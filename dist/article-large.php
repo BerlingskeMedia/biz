@@ -44,7 +44,7 @@
 
 
 
-             <?php include('inc/asset-article-byline.php'); ?>
+             
 
 
           <? if (dumb_luck("50%")): ?>
@@ -86,7 +86,7 @@
               
 
 
-              
+              <?php include('inc/asset-article-byline.php'); ?>
  
 
               
