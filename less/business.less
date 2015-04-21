@@ -3993,6 +3993,24 @@ h1.heading {
 	}
 	
 }
+.flex-4-4-2 {
+	li {
+		display: block;
+		article {
+			margin-bottom: 15px;
+		}
+		&:nth-child(4n+5) {
+    		clear: left;
+		}
+
+	}
+	@media (max-width: @screen-xs-max) {
+		li:nth-child(odd) {
+    		clear: left;
+		}
+	}
+	
+}
 
 .flex-3-2-2 {
 	li {
@@ -4404,7 +4422,9 @@ h1.heading {
 	}
 	
 }
-
+.load-more-longreads {
+	padding: 5px 5px 10px;
+}
 .theme-splash {
 	background: #333;
 	height: 60vh;
@@ -4412,7 +4432,17 @@ h1.heading {
 	position: relative;
 }
 
-
+.teaser-splash-extra {
+	background-color: #333;
+	padding: 5px;
+}
+.teaser-longread {
+	.header {
+		a {
+			color: #fff;
+		}
+	}
+}
 .teaser-splash {
 	background-color: #333;
 	border: 5px solid #333;
