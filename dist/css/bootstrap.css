@@ -1925,7 +1925,7 @@ fieldset[disabled] .checkbox label {
 .form-group-sm .form-control {
   height: 33px;
   padding: 5px 10px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   border-radius: 1px;
 }
@@ -2959,7 +2959,7 @@ select[multiple].input-group-lg > .input-group-btn > .btn {
 .input-group-sm > .input-group-btn > .btn {
   height: 33px;
   padding: 5px 10px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   border-radius: 1px;
 }
@@ -6250,7 +6250,6 @@ figcaption,
   width: 45px;
   text-align: center;
   overflow: hidden;
-  margin-left: 7px;
 }
 .nav-stock {
   display: inline-block;
@@ -6447,6 +6446,24 @@ ins.text-label {
   visibility: visible;
   opacity: 1;
 }
+.icon-text {
+  display: inline-block;
+  background-color: #333;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 900;
+  color: #fff;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  line-height: 1.1;
+  text-decoration: none;
+  height: auto;
+  padding: 0 3px;
+  top: -1px;
+  position: absolute;
+  right: 0;
+  text-shadow: none!important;
+  color: #fff!important;
+}
 .sticky-social {
   visibility: hidden;
   height: 54px;
@@ -6472,28 +6489,6 @@ ins.text-label {
   max-width: 940px;
   padding: 0 10px;
   position: relative;
-}
-.sticky-social .comments-teaser a {
-  position: relative;
-  display: inline-block;
-}
-.sticky-social .icon-text {
-  display: inline-block;
-  background-color: #e64d1a;
-  border-radius: 8px;
-  font-size: 11px;
-  font-weight: 900;
-  color: #fff;
-  font-family: "helvetica neue", helvetica, arial, sans-serif;
-  line-height: 1.1;
-  text-decoration: none;
-  height: auto;
-  padding: 0 3px;
-  top: 3px;
-  position: absolute;
-  right: -5px;
-  text-shadow: none!important;
-  color: #fff!important;
 }
 .show-latest .exit-mobile-nav {
   display: block;
@@ -9668,7 +9663,8 @@ h1.heading {
 .sticky-social .icon-social-sms,
 .article-social .icon-social-sms {
   background-color: #21bb21;
-  font-size: 24px;
+  font-size: 11px;
+  font-weight: 600;
   vertical-align: bottom;
 }
 .sticky-social .icon-social-sms:hover,
@@ -9683,6 +9679,7 @@ h1.heading {
 .article-social .comments-teaser {
   font-size: 13px;
   font-weight: 600;
+  position: relative;
 }
 .sticky-social .comments-teaser .icon-letter,
 .article-social .comments-teaser .icon-letter {
