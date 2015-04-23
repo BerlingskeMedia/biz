@@ -7036,6 +7036,7 @@ ul.related li:before {
 }
 .teaser time {
   color: rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
 }
 .teaser a + time {
   padding-left: 4px;
