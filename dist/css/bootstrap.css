@@ -10874,18 +10874,90 @@ h1.heading {
 }
 .marketing-banner {
   margin: 0;
-  text-align: center;
   padding: 40px 10px;
+}
+.marketing-banner span {
+  color: #fff;
+  font-family: berlingske;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.1;
+}
+.marketing-banner sup {
+  font-size: 80%;
+  top: -5px;
+}
+.marketing-banner button {
+  float: right;
+  margin: 0 0 0 20px;
+  background-color: #00cc7f;
+  background-image: -webkit-linear-gradient(top, #00fb9d 0%, #00cc7f 100%);
+  background-image: -o-linear-gradient(top, #00fb9d 0%, #00cc7f 100%);
+  background-image: linear-gradient(to bottom, #00fb9d 0%, #00cc7f 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00fb9d', endColorstr='#ff00cc7f', GradientType=0);
+  -webkit-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  color: #060e3b;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  font-size: 42px;
+  font-weight: 800;
+  margin-top: 10px;
+  padding: 6px 20px;
+  outline: none;
+  outline: none!important;
+}
+.marketing-banner button:hover {
+  background-image: -webkit-linear-gradient(top, #00fb9d 0%, #00b872 100%);
+  background-image: -o-linear-gradient(top, #00fb9d 0%, #00b872 100%);
+  background-image: linear-gradient(to bottom, #00fb9d 0%, #00b872 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00fb9d', endColorstr='#ff00b872', GradientType=0);
+  color: #060e3b;
+}
+.marketing-banner button:focus,
+.marketing-banner button:active {
+  outline: none;
+  border: 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5) inset;
+}
+.marketing-banner small {
+  color: #fff;
+  font-size: 12px;
+  display: block;
+  margin-top: 10px;
+}
+@media (max-width: 991px) {
+  .marketing-banner {
+    padding: 20px 10px;
+  }
+  .marketing-banner span {
+    font-size: 30px;
+  }
+  .marketing-banner button {
+    padding: 6px 10px;
+    font-size: 28px;
+    margin-top: 5px;
+  }
 }
 @media (max-width: 767px) {
   .marketing-banner {
     padding: 20px 10px;
   }
-}
-.marketing-banner img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
+  .marketing-banner span {
+    font-size: 18px;
+    display: block;
+    clear: both;
+  }
+  .marketing-banner button {
+    padding: 4px 10px;
+    font-size: 13px;
+    margin: 10px 0 0;
+    border-radius: 4px;
+    float: none;
+  }
 }
 .footer-marketing {
   background-image: -webkit-linear-gradient(270deg, #194173 0%, #14143c 100%);
