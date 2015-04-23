@@ -1,7 +1,7 @@
  <section class="deck">
         
         <div class="col-md-12">
-        <div class="deck-header">
+        <div class="deck-header border-xs-top">
             <h1 >
             Investor
           </h1>
