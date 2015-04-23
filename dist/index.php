@@ -592,7 +592,7 @@
    <div class="row">
       <section class="deck">
       <div class="col-md-8 ">
-        <? while (dumb_luck("8")): ?>
+        <? while (dumb_luck("7")): ?>
         <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
@@ -604,6 +604,30 @@
             </div>
           </article>
           <? endwhile ?>
+
+          <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom teaser-brandview">
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
+              <div class="teaser-body">
+              <footer><a href="section.php" class="cat">BrandView</a> <time><? dummy("text@time-ago-short") ?></time></footer>
+              
+              <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?>
+              
+              </a></h2>
+
+              <span class="teaser-tagline">
+              Sponseret af Columbus
+            </span>
+
+            </div>
+          </article>
+
+          <!-- <article class="teaser teaser-brandview ">
+            <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@420x,16:9") ?>" width="" height="" alt="" /></a></figure>
+            
+            <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
+        </article> -->
+
+
       </div>
 
       <div class="col-md-4">
@@ -683,7 +707,7 @@
  <div class="row">
       
       <div class="col-md-8 ">
-        <? while (dumb_luck("8")): ?>
+        <? while (dumb_luck("7")): ?>
         <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
@@ -695,6 +719,22 @@
             </div>
           </article>
           <? endwhile ?>
+          <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom teaser-brandview">
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
+              <div class="teaser-body">
+              <footer><a href="section.php" class="cat">BrandView</a> <time><? dummy("text@time-ago-short") ?></time></footer>
+              
+              <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?>
+              
+              </a></h2>
+
+              <span class="teaser-tagline">
+              Sponseret af Columbus
+            </span>
+
+            </div>
+          </article>
+
       </div>
 
       <div class="col-md-4">
@@ -724,34 +764,8 @@
         </div>
  <div class="col-sm-6 col-md-12">
 
-
-        <section class="toggle-container">
-
-      <h1 class="section-header">
-        BrandView <a class="section-header-link toggle-btn" href="#">Hvad er BrandView?</a>
-      </h1>
-
-      <div class="brandview-info toggle-content">
-        <p class="small">BrandView er en service fra Berlingske Media, hvor virksomheder har mulighed for at kommunikere deres specialviden direkte til brugere og læsere af Berlingske.</p>
-        <p class="small">Indhold under BrandView produceres i et tæt samarbejde mellem Berlingske Medias content marketing bureau og virksomheden, der er afsender på budskabet. <a href="http://www.publicimpact.dk/">Læs mere om BrandView</a> eller kontakt os direkte på <a href="mailto:moas@berlingslemedia.dk">moas@berlingslemedia.dk</a>.</p>    
-      </div>
-      
-        <div class="row">
-          <? while (dumb_luck("2")): ?>
-
-          <div class="col-md-6 col-xs-6">
-            <article class="teaser teaser-brandview ">
-            <figure class="teaser-img"><a href="article-brandview.php"><img src="<? dummy("image@420x,16:9") ?>" width="" height="" alt="" /></a></figure>
-            <span class="teaser-tagline">
-              Sponseret af Columbus
-            </span>
-            <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
-        </article>
-          </div>
-        <? endwhile ?>
-        </div>
-      
-        </section>
+Empty
+        
 
         </div><!-- row -->
 
@@ -825,7 +839,7 @@
  <div class="row">
       <section class="deck">
       <div class="col-md-8 ">
-        <? while (dumb_luck("8")): ?>
+        <? while (dumb_luck("7")): ?>
         <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
@@ -837,6 +851,24 @@
             </div>
           </article>
           <? endwhile ?>
+
+          <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom teaser-brandview">
+            <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
+              <div class="teaser-body">
+              <footer><a href="section.php" class="cat">BrandView</a> <time><? dummy("text@time-ago-short") ?></time></footer>
+              
+              <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?>
+              
+              </a></h2>
+
+              <span class="teaser-tagline">
+              Sponseret af Columbus
+            </span>
+
+            </div>
+          </article>
+
+          
       </div>
 
       <div class="col-md-4">

@@ -104,6 +104,22 @@
         </div>    
         </li>
     <? endwhile ?>
+
+    <li class="teaser teaser-brandview">
+      <div class="teaser-body">
+    
+    <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
+    <footer><a href="section.php" class="cat">BrandView</a> <time><? dummy("text@time-ago-short") ?></time></footer>
+
+    <span class="teaser-tagline">
+    Sponseret af Columbus
+  </span>
+
+  </div>
+
+    </li>
+
+    
     </ul>
   
 </section>
@@ -138,36 +154,20 @@
         </div>    
         </li>
     <? endwhile ?>
-    </ul>
-  
-</section>
-
-
-<section class="section-border-bottom">
-  <h1 class="section-header">BrandView <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a></h1>
-  <div class="row">
-<? while (dumb_luck("2")): ?>
-<div class="col-xs-6">
-<article class="teaser teaser-sm teaser-brandview">
-  <figure class="teaser-img"><a href="article-premium.php"><img src="<? dummy("image@200x,16:9") ?>" width="" height="" alt="" /></a></figure>
-  <span class="teaser-tagline">
-                    Sponseret af Columbus
-                  </span>
-  <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
-  
-</article>
-</div>
-<? endwhile ?>
-</div>
-
-</section>
-
-
-
-
-<section class="">
+    <li class="teaser teaser-brandview">
+      <div class="teaser-body">
     
-      <ul class="list list-sx list-first-child">
+    <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
+    <footer><a href="section.php" class="cat">BrandView</a> <time><? dummy("text@time-ago-short") ?></time></footer>
+
+    <span class="teaser-tagline">
+    Sponseret af Columbus
+  </span>
+
+  </div>
+
+    </li>
+
     <? while (dumb_luck("4")): ?>
       
         <li class="teaser">
@@ -177,9 +177,32 @@
         </div>    
         </li>
     <? endwhile ?>
+
+    <li class="teaser teaser-brandview">
+      <div class="teaser-body">
+    
+    <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
+    <footer><a href="section.php" class="cat">BrandView</a> <time><? dummy("text@time-ago-short") ?></time></footer>
+
+    <span class="teaser-tagline">
+    Sponseret af Columbus
+  </span>
+
+  </div>
+
+    </li>
+
     </ul>
   
 </section>
+
+
+
+
+
+
+
+
 
 
 

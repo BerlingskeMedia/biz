@@ -7043,7 +7043,7 @@ ul.related li:before {
 }
 .teaser .teaser-tagline {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 13px;
+  font-size: 12px;
   display: block;
   font-weight: 600;
 }
@@ -8805,7 +8805,7 @@ h1.deck-header {
 }
 .context-primary-term-name-brandview h1.heading .header,
 .teaser-brandview .header {
-  font-family: Georgia, Helvetica, arial, sans-serif !important;
+  font-family: "Proxima", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 .teaser-divider {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -9160,9 +9160,6 @@ h1.heading {
 .article-content-stream .teaser .header {
   font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   font-size: 17px;
-}
-.article-content-stream .teaser-brandview .header {
-  font-size: 15px;
 }
 .aside-header-small {
   font-size: 12px;
