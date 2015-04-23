@@ -10948,16 +10948,13 @@ h1.heading {
     padding: 20px 10px;
   }
   .marketing-banner span {
-    font-size: 18px;
-    display: block;
-    clear: both;
+    font-size: 15px;
   }
   .marketing-banner button {
     padding: 4px 10px;
     font-size: 13px;
-    margin: 10px 0 0;
+    margin: 7px 0 0;
     border-radius: 4px;
-    float: none;
   }
 }
 .footer-marketing {

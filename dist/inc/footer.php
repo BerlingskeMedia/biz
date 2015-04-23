@@ -10,9 +10,9 @@
 <div class="container">
 	<div class="col-md-12">
   <a href="http://sjma.dk/lpcms/landingpage/b1.php" target="_blank">
-  <button class="btn btn-marketing hidden-xs">Køb nu!</button>
+  <button class="btn btn-marketing ">Køb nu!</button>
   <span>Få Berlingske hver dag i 3 mdr. inkl. digital adgang for kun 249 kr./md.<sup>*</sup></span>
-  <button class="btn btn-marketing visible-xs">Køb nu!</button>
+  <!-- <button class="btn btn-marketing visible-xs">Køb nu!</button> -->
   <small>* Abonnementet fortsætter til normalpris, indtil det opsiges.</small>
   
   </a> 
