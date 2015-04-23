@@ -8633,6 +8633,9 @@ h1.deck-header {
   .header-70 .header {
     font-size: 30px;
   }
+  .header-xs-20 .header {
+    font-size: 20px;
+  }
   .header-xs-18 .header {
     font-size: 18px;
   }

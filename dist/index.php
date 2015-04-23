@@ -148,7 +148,7 @@
 <div class="col-md-4 col-sm-4">
 <section>
 
-<article class="teaser  header-20 teaser-border-bottom-thick-last-child ">
+<article class="teaser  header-20 header-xs-20 teaser-border-bottom-thick-last-child ">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@732x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -168,7 +168,7 @@
 
 <? while (dumb_luck("2")): ?>
 
-            <article class="teaser  header-20 teaser-border-bottom-thick-last-child ">
+            <article class="teaser  header-20 header-xs-18 teaser-border-bottom-thick-last-child ">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@732x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
