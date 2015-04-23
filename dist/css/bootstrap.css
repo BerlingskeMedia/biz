@@ -10925,7 +10925,7 @@ h1.heading {
 }
 .marketing-banner small {
   color: #fff;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 12px;
   display: block;
   margin-top: 10px;
