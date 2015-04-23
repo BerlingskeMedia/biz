@@ -8251,6 +8251,9 @@ a.btn-premium:after {
     border-top: 0;
   }
 }
+.deck-header.border-xs-top {
+  border-top: 5px solid #333;
+}
 .deck-header .btn {
   vertical-align: text-bottom;
 }
@@ -8580,7 +8583,7 @@ h1.deck-header {
 }
 @media (max-width: 767px) {
   .header-25 .header {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 .header-30 .header {
@@ -8588,7 +8591,7 @@ h1.deck-header {
 }
 @media (max-width: 767px) {
   .header-30 .header {
-    font-size: 27px;
+    font-size: 20px;
   }
 }
 .header-35 .header {
@@ -8596,7 +8599,7 @@ h1.deck-header {
 }
 @media (max-width: 767px) {
   .header-35 .header {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 .header-40 .header {
@@ -8629,6 +8632,15 @@ h1.deck-header {
   .header-65 .header,
   .header-70 .header {
     font-size: 30px;
+  }
+  .header-xs-18 .header {
+    font-size: 18px;
+  }
+  .header-xs-16 .header {
+    font-size: 16px;
+  }
+  .header-xs-15 .header {
+    font-size: 15px;
   }
 }
 .header-404 {
