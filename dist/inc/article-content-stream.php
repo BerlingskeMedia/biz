@@ -107,19 +107,19 @@
 
     <li class="teaser teaser-brandview">
       <div class="teaser-body">
-    
-    <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
-    <footer><a href="section.php" class="cat">BrandView</a> <time><? dummy("text@time-ago-short") ?></time></footer>
-
     <span class="teaser-tagline">
     Sponseret af Columbus
   </span>
+    <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
+    <footer><a href="section.php" class="cat">Sponseret</a> <time><? dummy("text@time-ago-short") ?></time></footer>
+
+    
 
   </div>
 
     </li>
 
-    
+
     </ul>
   
 </section>
@@ -156,13 +156,13 @@
     <? endwhile ?>
     <li class="teaser teaser-brandview">
       <div class="teaser-body">
-    
-    <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
-    <footer><a href="section.php" class="cat">BrandView</a> <time><? dummy("text@time-ago-short") ?></time></footer>
-
-    <span class="teaser-tagline">
+      <span class="teaser-tagline">
     Sponseret af Columbus
   </span>
+    <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
+    <footer><a href="section.php" class="cat">Sponseret</a> <time><? dummy("text@time-ago-short") ?></time></footer>
+
+    
 
   </div>
 
@@ -180,13 +180,13 @@
 
     <li class="teaser teaser-brandview">
       <div class="teaser-body">
-    
-    <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
-    <footer><a href="section.php" class="cat">BrandView</a> <time><? dummy("text@time-ago-short") ?></time></footer>
-
     <span class="teaser-tagline">
     Sponseret af Columbus
   </span>
+    <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?></a></h2>
+    <footer><a href="section.php" class="cat">Sponseret</a> <time><? dummy("text@time-ago-short") ?></time></footer>
+
+    
 
   </div>
 

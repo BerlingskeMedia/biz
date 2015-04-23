@@ -608,7 +608,7 @@
           <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom teaser-brandview">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
-              <footer><a href="section.php" class="cat">BrandView</a> <time><? dummy("text@time-ago-short") ?></time></footer>
+              <footer><a href="section.php" class="cat">Sponseret</a> <time><? dummy("text@time-ago-short") ?></time></footer>
               
               <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?>
               
@@ -722,7 +722,7 @@
           <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom teaser-brandview">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
-              <footer><a href="section.php" class="cat">BrandView</a> <time><? dummy("text@time-ago-short") ?></time></footer>
+              <footer><a href="section.php" class="cat">Sponseret</a> <time><? dummy("text@time-ago-short") ?></time></footer>
               
               <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?>
               
@@ -855,7 +855,7 @@ Empty
           <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom teaser-brandview">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
-              <footer><a href="section.php" class="cat">BrandView</a> <time><? dummy("text@time-ago-short") ?></time></footer>
+              <footer><a href="section.php" class="cat">Sponseret</a> <time><? dummy("text@time-ago-short") ?></time></footer>
               
               <h2 class="header"><a href="article-brandview.php"><? dummy("text@headline") ?>
               
@@ -868,7 +868,7 @@ Empty
             </div>
           </article>
 
-          
+
       </div>
 
       <div class="col-md-4">
