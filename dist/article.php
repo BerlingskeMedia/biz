@@ -76,9 +76,9 @@
 
         </header>
 
-        <div class="banner banner-top-article desktop-banner hidden-xs">
-          
-          <a href="http://sjma.dk/lpcms/landingpage/b1.php" target="_blank">
+        <div class="banner desktop-banner hidden-xs">
+          <div class="banner-top-article">
+          <a href="http://sjma.dk/lpcms/landingpage/b1.php?cid=BM-100201-CP-CALETR01OB&ns_campaign=_Komplet_marts_Bsuiness&ns_mchannel=&ns_source=web_intern&ns_linkname=web_930x40&ns_fee=" target="_blank">
   <button class="btn btn-marketing ">Køb nu!</button>
   <span>Få Berlingske hver dag i 3 mdr. inkl. digital adgang for kun 249 kr./md.<sup>*</sup></span>
 
@@ -161,7 +161,7 @@
 
 
 </style>
-
+</div> 
         </div>
 
         <div class="row">
