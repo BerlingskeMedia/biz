@@ -77,7 +77,91 @@
         </header>
 
         <div class="banner banner-top-article desktop-banner hidden-xs">
-          <? dummy("ad@930x80") ?>
+          
+          <a href="http://sjma.dk/lpcms/landingpage/b1.php" target="_blank">
+  <button class="btn btn-marketing ">Køb nu!</button>
+  <span>Få Berlingske hver dag i 3 mdr. inkl. digital adgang for kun 249 kr./md.<sup>*</sup></span>
+
+  <small>* Abonnementet fortsætter til normalpris, indtil det opsiges.</small>
+  
+  </a>
+
+  <style type="text/css">
+
+.banner-top-article {
+  background-image: -webkit-linear-gradient(270deg,#194173 0%,#14143c 100%);
+  background-image: linear-gradient(180deg,#194173 0%,#14143c 100%);
+  background-repeat: no-repeat;
+
+  margin: 0 0 20px;
+  padding: 10px;
+    text-align:left;
+}
+.banner-top-article span {
+  color: #fff;
+  font-family: berlingske;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.1;
+}
+.banner-top-article sup {
+  font-size: 80%;
+  top: -5px;
+}
+.banner-top-article button {
+  float: right;
+  margin: 0 0 0 10px;
+  background-color: #00cc7f;
+  background-image: -webkit-linear-gradient(top, #00fb9d 0%, #00cc7f 100%);
+  background-image: -o-linear-gradient(top, #00fb9d 0%, #00cc7f 100%);
+  background-image: linear-gradient(to bottom, #00fb9d 0%, #00cc7f 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00fb9d', endColorstr='#ff00cc7f', GradientType=0);
+  -webkit-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  color: #060e3b;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  font-size: 21px;
+  font-weight: 800;
+  padding: 4px 10px;
+  outline: none!important;
+}
+.banner-top-article button:hover {
+  background-image: -webkit-linear-gradient(top, #00fb9d 0%, #00b872 100%);
+  background-image: -o-linear-gradient(top, #00fb9d 0%, #00b872 100%);
+  background-image: linear-gradient(to bottom, #00fb9d 0%, #00b872 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00fb9d', endColorstr='#ff00b872', GradientType=0);
+  color: #060e3b;
+}
+.banner-top-article button:focus,
+.banner-top-article button:active {
+  outline: none;
+  border: 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5) inset;
+}
+.banner-top-article small {
+  color: #fff;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 11px;
+  display: block;
+  margin-top: 2px;
+}
+@media (max-width: 991px) {
+
+  .banner-top-article span {
+    font-size: 18px;
+  }
+  .banner-top-article button {
+    font-size: 19px;
+  }
+}
+
+
+</style>
+
         </div>
 
         <div class="row">
