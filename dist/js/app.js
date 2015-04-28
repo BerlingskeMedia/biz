@@ -226,7 +226,10 @@ $('.btn-closecookie').on('click', function(){
   });
 
 
-
+  $('.icon-social-share').on('click', function(e){
+    e.preventDefault();
+    $(this).closest('div').find('.mobile-menu').toggleClass('active');
+  });
 
 
 });
