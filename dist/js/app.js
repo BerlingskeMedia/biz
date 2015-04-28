@@ -225,7 +225,10 @@ $('.btn-closecookie').on('click', function(){
     $('.gallery-overlay').fadeOut('fast');
   });
 
-
+  $('.icon-social-share').on('click', function(e){
+    e.preventDefault();
+    $(this).closest('div').find('.mobile-menu').toggleClass('active');
+  });
 
 
 

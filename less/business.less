@@ -3399,6 +3399,81 @@ h1.heading {
 	}
 }
 @icon-size : 35px;
+@icon-size-sm : 25px;
+[class*='icon-social-'] {
+	color: #fff;
+	width: @icon-size;
+	height: @icon-size;
+	line-height: @icon-size;
+	border-radius: 50%;
+	text-align: center;
+	display: inline-block;
+	font-size: 18px;
+	.transition (background-color .1s ease);
+	background-color: @biz-1;
+	//default	
+	&:hover {
+		background-color: darken(@biz-1, 5%); 
+		color: #fff;
+	}
+}
+.icon-social-share {
+	background-color: rgba(255,255,255,.1);
+	color: #fff;
+	&:active, 
+	&:focus {
+		background-color: rgba(255,255,255,.15);
+		color: #fff;
+	}
+}
+.icon-social-facebook{
+	background-color: @col-facebook;
+	&:hover {
+		background-color: darken(@col-facebook, 5%);
+	}
+}
+.icon-social-twitter {
+	background-color: @col-twitter;
+	&:hover {
+		background-color: darken(@col-twitter, 5%);
+	}
+}
+.icon-social-linkedin {
+	background-color: @col-linkedin;
+	&:hover {
+		background-color: darken(@col-linkedin, 5%);
+	}
+}
+.icon-social-letter {
+	background-color: @biz-1;
+	&:hover {
+		background-color: darken(@biz-1, 5%);
+	}
+}
+.icon-social-sms {
+	background-color: #21bb21;
+	font-size: 11px!important;
+	font-weight: 600;
+	vertical-align: bottom;
+	&:hover {
+		background-color: darken(#21bb21, 5%);
+	}
+}
+.gallery-tools {
+	[class*='icon-social-'] {
+		width: @icon-size-sm;
+		height: @icon-size-sm;
+		line-height: @icon-size-sm;
+		margin-left: 10px;
+		font-size: 15px;
+	}
+	.pull-right {
+		display: inline-block;
+		line-height: 40px;
+	}
+}
+
+
 .sticky-social,
 .article-social {
 	.module-xs;
@@ -3406,60 +3481,14 @@ h1.heading {
 
 	@icon-size: 35px;
 	
-	[class*='icon-social-'] {
-		color: #fff;
-		width: @icon-size;
-		height: @icon-size;
-		line-height: @icon-size;
-		border-radius: 50%;
-		text-align: center;
-		display: inline-block;
-		font-size: 18px;
-		.transition (background-color .1s ease);
-		background-color: @biz-1;
-		//default	
-		&:hover {
-			background-color: darken(@biz-1, 5%); 
-		}
-	}
-	.icon-social-facebook{
-		background-color: @col-facebook;
-		&:hover {
-			background-color: darken(@col-facebook, 5%);
-		}
-	}
-	.icon-social-twitter {
-		background-color: @col-twitter;
-		&:hover {
-			background-color: darken(@col-twitter, 5%);
-		}
-	}
-	.icon-social-linkedin {
-		background-color: @col-linkedin;
-		&:hover {
-			background-color: darken(@col-linkedin, 5%);
-		}
-	}
-	.icon-social-letter {
-		background-color: @biz-1;
-		&:hover {
-			background-color: darken(@biz-1, 5%);
-		}
-	}
-	.icon-social-sms {
-		background-color: #21bb21;
-		font-size: 24px;
-		vertical-align: bottom;
-		&:hover {
-			background-color: darken(#21bb21, 5%);
-		}
-	}
+	
 	.icon-text {
 		color: #333;
 	}
 	.comments-teaser {
 		font-size: 13px;
 		font-weight: 600;
+		position: relative;
 		
 		.icon-letter {
 			color: #fff;
@@ -4774,6 +4803,29 @@ h1.heading {
 		}
 	}
 }
+.mobile-menu {
+	display: inline;
+	@media (max-width: @screen-xs-max) {
+		display: none;
+		width: 45px;
+		position: absolute;
+		bottom: 50px;
+		right: 0;
+		text-align: center;
+		line-height: 30px;
+	}
+	a {
+		margin-left: 0!important;
+	}
+	.icon-social-sms {
+		vertical-align: baseline;
+	}
+	&.active {
+		display: inline-block;
+		
+	}
+}
+
 
 .gallery-overlay {
 	position: fixed;
@@ -4782,7 +4834,7 @@ h1.heading {
 	left: 0;
 	right: 0;
 	background-color: #000;
-	z-index: 10;
+	z-index: 10020;
 	
 	button {
 		outline: 0;
@@ -4801,7 +4853,7 @@ h1.heading {
 		height: 40px;
 		background: #333;
 		font-size: 13px;
-		padding: 0 20px;
+		padding: 0 10px 0 20px;
 	}
 	.gallery-caption {
 		position: absolute;
@@ -4830,8 +4882,9 @@ h1.heading {
 		display: inline-block;
 	}
 	.gallery-btn-show-caption {
-		background: transparent;
-		border: 1px solid #999;
+		background: rgba(255,255,255,.1);
+		border: 0px solid #999;
+		border-radius: 3px;
 		text-align: center;
 		font-size: 12px;
 		font-weight: 700;
@@ -4935,6 +4988,9 @@ h1.heading {
 
 	}
 	@media (max-width: @screen-xs-max) {
+		.gallery-caption p {
+			font-size: 12px;
+		}
 		.gallery-image {
 			top: 0;
 			left: 0;
