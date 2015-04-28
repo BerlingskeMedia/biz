@@ -47,8 +47,6 @@
 
           <div class="article-date">Mandag d. <time datetime="2014-02-14"><? dummy("text@pol-date") ?> kl. <? dummy("text@time") ?></time> </div>
 
-
-          <?php include('inc/asset-article-byline.php'); ?>
             
 
 
@@ -92,6 +90,8 @@
 
 
 <h2 class="article-summary">Interview med Koncernchef, Thomas Honoré, Columbus</h2>
+
+<?php include('inc/asset-article-byline.php'); ?>
 
 
 
