@@ -1,5 +1,5 @@
 <div class="col-md-12">
-  <div class="deck-header">
+  <div class="deck-header border-xs-top">
   <h1>Business TV</h1>
   <a href="section-video.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
   </div>

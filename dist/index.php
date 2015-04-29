@@ -148,7 +148,7 @@
 <div class="col-md-4 col-sm-4">
 <section>
 
-<article class="teaser  header-20 teaser-border-bottom-thick-last-child ">
+<article class="teaser  header-20 header-xs-20 teaser-border-bottom-thick-last-child ">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@732x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -168,7 +168,7 @@
 
 <? while (dumb_luck("2")): ?>
 
-            <article class="teaser  header-20 teaser-border-bottom-thick-last-child ">
+            <article class="teaser  header-20 header-xs-20 teaser-border-bottom-thick-last-child ">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@732x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -203,7 +203,7 @@
           <div class="col-md-8 col-sm-6">
 
 
-          <article class="teaser  header-20 teaser-border-top-thick ">
+          <article class="teaser  header-20  header-xs-20 teaser-border-top-thick ">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@732x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -428,7 +428,7 @@
     <ul class="list-clean flex-4-2-2">
     <? while (dumb_luck("4")): ?>
       <li class="col-md-3 col-sm-6 col-xs-6">
-        <article class="teaser header-20 ">
+        <article class="teaser header-20 header-xs-15">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@620x,16:9") ?>" width="" height="" alt="" /></a></figure>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -466,7 +466,7 @@
 <section class="deck">
         
         <div class="col-md-12">
-        <div class="deck-header">
+        <div class="deck-header border-xs-top">
           <h1>
             Business recommends 
           </h1><a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
@@ -479,7 +479,7 @@
         
         
           <div class="col-md-8">
-            <article class="teaser header-35 header-xs-20 teaser-border-bottom-thick">
+            <article class="teaser header-35 header-xs-20 ">
               <figure class="teaser-img"><a href="#"><img src="<? dummy("image@940x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
               <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a>
@@ -502,7 +502,7 @@
           </div>
             <? while (dumb_luck("2")): ?>
       <div class="col-md-4 col-sm-4 col-xs-6 ">
-          <article class="teaser header-20 ">
+          <article class="teaser header-20 header-xs-15 ">
               <figure class="teaser-img"><a href="#"><img src="<? dummy("image@394,16:9") ?>" width="" height="" alt="" /></a></figure>
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
               <h2 class="header"><a href="article.php"><? dummy("text@headline") ?>
@@ -897,7 +897,7 @@
 <div class="row">
 <section class="deck"> 
   <div class="col-md-12">
-  <div class="deck-header">
+  <div class="deck-header border-xs-top">
     <h1>Business in pictures</h1>
     <a href="section.php" class="section-header-link">See all <i class="fa fa-caret-right"></i></a>
 
