@@ -238,8 +238,8 @@ $stock_change_mobile = mt_rand(0,250)/100;
   <div class="row">
     <div class="col-md-12">
     <form action="./search-result.php" method="POST">
-      <input type="search" class="" id="site-search" placeholder="What are you searching for?"> 
-      <button class="btn-search"><i class="fa fa-search"></i></button>
+      <input type="search" class="form-control" id="site-search" placeholder="What are you searching for?"> 
+      <button class="btn"><i class="fa fa-search"></i> Søg </button>
     </form>
     </div>
   </div>
