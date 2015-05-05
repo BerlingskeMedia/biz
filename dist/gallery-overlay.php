@@ -309,7 +309,7 @@
       
 
       
-      <?php include('./inc/asset-article-below.php'); ?>
+<!--      --><?php //include('./inc/asset-article-below.php'); ?>
 
       
 
@@ -326,28 +326,41 @@
 
   <?php include("./inc/footer.php"); ?>
 
-    
     <div class="gallery-overlay show-caption">
-      <button class="gallery-close"><i class="fa fa-close"></i></button>
-      <a class="gallery-arrow arrow-prev" href="#" ></a>
-      <a class="gallery-arrow arrow-next" href="#" ></a>
-      <div class="gallery-caption">
-        
-        <p><? dummy("text@teaser") ?> <span>Photo: <? dummy("text@author") ?></span></p>
+        <button class="gallery-close"><i class="fa fa-close"></i></button>
+        <div class="gallery-list" id="galleryList">
 
-      </div>
-      <div class="gallery-tools">
-      
-        <div class="gallery-counter">
-          <strong>2</strong> out of <strong>22</strong>
+
         </div>
-        <button class="gallery-btn-show-caption"><i class="fa fa-caret-up"></i> <span>Skjul beskrivelse</span></button>
-      </div>
-      <figure style="background-image: url(<? dummy("image@1600x,") ?>);" class="gallery-image">
-      
-      </figure>
     </div>
 
+    <script>
+
+        $(document).ready(function () {
+            var jsonURL = "../gallery.json";
+            $.getJSON(jsonURL, function (json)
+            {
+                var imgList= "";
+                var counter = json.gallery.items.length;
+                $.each(json.gallery.items, function () {
+                    imgList += '<div>' +
+                    '<img data-lazy="' + this.image + '" alt="" />' +
+                    '</div>';
+                });
+                $('#galleryList').append(imgList);
+                gallery();
+            });
+        });
+
+        function gallery() {
+            $('.gallery-list').slick({
+                lazyLoad: 'ondemand',
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        }
+
+    </script>
 
   </body>
 </html>
