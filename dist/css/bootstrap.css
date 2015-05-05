@@ -11094,8 +11094,6 @@ h1.heading {
 .gallery-overlay .gallery-caption {
   position: absolute;
   bottom: 40px;
-  left: 0;
-  right: 0;
   background: rgba(0, 0, 0, 0.8);
   padding: 10px 20px;
   z-index: 10;
@@ -12114,6 +12112,7 @@ body.billede .picture-series-watermark {
 }
 .slick-slider .slick-track,
 .slick-slider .slick-list {
+  height: 100%;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -12148,6 +12147,7 @@ body.billede .picture-series-watermark {
 }
 .slick-slide img {
   display: block;
+  margin: auto;
 }
 .slick-slide.slick-loading img {
   display: none;

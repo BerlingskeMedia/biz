@@ -320,41 +320,32 @@
   <?php include("./inc/footer.php"); ?>
 
     <div class="gallery-overlay show-caption">
-        <button class="gallery-close"><i class="fa fa-close"></i></button>
-        <div class="gallery-list" id="galleryList">
-
-        </div>
+      <button class="gallery-close"><i class="fa fa-close"></i></button>
+      <div class="gallery-list" id="galleryList">
       </div>
+<!--      <div class="gallery-caption">-->
+<!--        <p>Inden sommerferien er Danmarks største teleselskab…-->
+<!--          <span>Photo: Willis R. Mitchell</span>-->
+<!--        </p>-->
+<!--      </div>-->
       <div class="gallery-tools">
-      <div class="pull-left">
-        <div class="gallery-counter">
-          <strong>2</strong> out of <strong>22</strong>
+        <div class="pull-left">
+          <div class="gallery-counter">
+            <strong>2</strong> out of <strong>22</strong>
+          </div>
+          <button class="gallery-btn-show-caption"><i class="fa fa-caret-up"></i> <span>Skjul beskrivelse</span></button>
         </div>
-        <button class="gallery-btn-show-caption"><i class="fa fa-caret-up"></i> <span>Skjul beskrivelse</span></button>
-      </div>
-        
         <div class="pull-right">
-          <a href="#" class="icon-social-share visible-xs-inline-block"><i class="fa fa-share"></i></a>          
-
+          <a href="#" class="icon-social-share visible-xs-inline-block"><i class="fa fa-share"></i></a>
           <div class="mobile-menu">
             <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
             <a href="#" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>
             <a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>
             <a href="#" class="icon-social-sms">SMS</a>
           </div>
-
         </div>
-
-                
-          
-              
-
-
       </div>
-      <figure style="background-image: url(<? dummy("image@1600x,") ?>);" class="gallery-image">
-      
-      </figure>
->>>>>>> c2b0a77219cbe82c188064f6ade2d67cbcd9fb6a
+
     </div>
 
     <script>
@@ -368,10 +359,17 @@
                 $.each(json.gallery.items, function () {
                     imgList += '<div>' +
                     '<img data-lazy="' + this.image + '" alt="" />' +
+
+                    '<div class="gallery-caption">' +
+                    '<p>' + this.title + ' ' +
+                    '<span> Photo: ' + this.photographer + '</span>' +
+                    '</p>' +
+                    '</div>' +
                     '</div>';
                 });
                 $('#galleryList').append(imgList);
                 gallery();
+                captionPos();
             });
         });
 
@@ -381,6 +379,13 @@
                 slidesToShow: 1,
                 slidesToScroll: 1
             });
+        };
+        function captionPos() {
+            $(window).resize(function() {
+                $('.gallery-caption').css({'width': ($(window).width())+ 'px' });
+            });
+
+            $(window).trigger('resize');
         }
 
     </script>
