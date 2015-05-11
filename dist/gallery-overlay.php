@@ -323,29 +323,6 @@
       <button class="gallery-close"><i class="fa fa-close"></i></button>
       <div class="gallery-list" id="galleryList">
       </div>
-<!--      <div class="gallery-caption">-->
-<!--        <p>Inden sommerferien er Danmarks største teleselskab…-->
-<!--          <span>Photo: Willis R. Mitchell</span>-->
-<!--        </p>-->
-<!--      </div>-->
-      <div class="gallery-tools">
-        <div class="pull-left">
-          <div class="gallery-counter">
-            <strong>2</strong> out of <strong>22</strong>
-          </div>
-          <button class="gallery-btn-show-caption"><i class="fa fa-caret-up"></i> <span>Skjul beskrivelse</span></button>
-        </div>
-        <div class="pull-right">
-          <a href="#" class="icon-social-share visible-xs-inline-block"><i class="fa fa-share"></i></a>
-          <div class="mobile-menu">
-            <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="icon-social-sms">SMS</a>
-          </div>
-        </div>
-      </div>
-
     </div>
 
     <script>
@@ -355,15 +332,33 @@
             $.getJSON(jsonURL, function (json)
             {
                 var imgList= "";
-                var counter = json.gallery.items.length;
-                $.each(json.gallery.items, function () {
+                var counter = json.latest.items.length;
+                $.each(json.latest.items, function () {
+                    var current = 1;
+                    current =+ current;
                     imgList += '<div>' +
                     '<img data-lazy="' + this.image + '" alt="" />' +
-
                     '<div class="gallery-caption">' +
                     '<p>' + this.title + ' ' +
                     '<span> Photo: ' + this.photographer + '</span>' +
                     '</p>' +
+                    '</div>' +
+                    '<div class="gallery-tools">' +
+                    '<div class="pull-left">' +
+                    '<div class="gallery-counter">' +
+                    '<strong>' + current + '</strong> out of <strong>' + counter + '</strong>' +
+                    '</div>' +
+                    '<button class="gallery-btn-show-caption"><i class="fa fa-caret-up"></i> <span>Skjul beskrivelse</span></button>' +
+                    '</div>' +
+                    '<div class="pull-right">' +
+                    '<a href="#" class="icon-social-share visible-xs-inline-block"><i class="fa fa-share"></i></a>' +
+                    '<div class="mobile-menu">' +
+                    '<a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>' +
+                    '<a href="#" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>' +
+                    '<a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>' +
+                    '<a href="#" class="icon-social-sms">SMS</a>' +
+                    '</div>' +
+                    '</div>' +
                     '</div>' +
                     '</div>';
                 });
@@ -383,6 +378,7 @@
         function captionPos() {
             $(window).resize(function() {
                 $('.gallery-caption').css({'width': ($(window).width())+ 'px' });
+                $('.gallery-tools').css({'width': ($(window).width())+ 'px' });
             });
 
             $(window).trigger('resize');
