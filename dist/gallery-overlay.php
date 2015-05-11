@@ -328,14 +328,21 @@
     <script>
 
         $(document).ready(function () {
-            var jsonURL = "../gallery.json";
-            $.getJSON(jsonURL, function (json)
-            {
-                var imgList= "";
-                var counter = json.latest.items.length;
-                $.each(json.latest.items, function () {
+            var jsonURL = "{{ path('bm_image_gallery', {item: content.id}) }}";
+            displayGallery(jsonURL, true);
+        });
+
+        function displayGallery(jsonURL, redirect) {
+            var redirect = redirect || false;
+            $.getJSON(jsonURL, function (json) {
+                var imgList = "";
+                var counter = json.gallery.items.length;
+
+                var closeAction = redirect == true ? 'redirect' : 'close';
+
+                $.each(json.gallery.items, function () {
                     var current = 1;
-                    current =+ current;
+                    current = +current;
                     imgList += '<div>' +
                     '<img data-lazy="' + this.image + '" alt="" />' +
                     '<div class="gallery-caption">' +
@@ -363,10 +370,12 @@
                     '</div>';
                 });
                 $('#galleryList').append(imgList);
+                $('.gallery-overlay').prepend('<button class="gallery-'+closeAction+'"><i class="fa fa-close"></i></button>');
+                $('.gallery-overlay').removeClass('hidden');
                 gallery();
                 captionPos();
             });
-        });
+        }
 
         function gallery() {
             $('.gallery-list').slick({
