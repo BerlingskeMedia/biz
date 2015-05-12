@@ -327,78 +327,78 @@
 
     <script>
 
-        $(document).ready(function () {
+        (function() {
             var jsonURL = "{{ path('bm_image_gallery', {item: content.id}) }}";
 //            var jsonURL = "../gallery.json";
             displayGallery(jsonURL, true);
-        });
 
-        function displayGallery(jsonURL, redirect) {
-            var redirect = redirect || false;
-            $.getJSON(jsonURL, function (json) {
-                var imgList = "";
+            function displayGallery(jsonURL, redirect) {
+                var redirect = redirect || false;
+                $.getJSON(jsonURL, function (json) {
+                    var imgList = "";
+                    var closeAction = redirect == true ? 'redirect' : 'close';
 
-                var closeAction = redirect == true ? 'redirect' : 'close';
-
-                $.each(json.gallery.items, function () {
-
-                    imgList += '<div>' +
-                    '<img data-lazy="' + this.image + '" alt="" />' +
-                    '<div class="gallery-caption">' +
-                    '<p>' + this.title + ' ' +
-                    '<span> Photo: ' + this.photographer + '</span>' +
-                    '</p>' +
-                    '</div>' +
-                    '<div class="gallery-tools">' +
-                    '<div class="pull-left">' +
-                    '<div class="gallery-counter">' +
-                    '<strong class="current"></strong> out of <strong class="total"></strong>' +
-                    '</div>' +
-                    '<button class="gallery-btn-show-caption"><i class="fa fa-caret-up"></i> <span>Skjul beskrivelse</span></button>' +
-                    '</div>' +
-                    '<div class="pull-right">' +
-                    '<a href="#" class="icon-social-share visible-xs-inline-block"><i class="fa fa-share"></i></a>' +
-                    '<div class="mobile-menu">' +
-                    '<a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>' +
-                    '<a href="#" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>' +
-                    '<a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>' +
-                    '<a href="#" class="icon-social-sms">SMS</a>' +
-                    '</div>' +
-                    '</div>' +
-                    '</div>' +
-                    '</div>';
+                    $.each(json.gallery.items, function () {
+                        imgList += '<div>' +
+                        '<img data-lazy="' + (isUAMobile ? this.imageMobile : this.image) + '" alt="" />' +
+                        '<div class="gallery-caption">' +
+                        '<p>' + this.title + ' ' +
+                        '<span> Photo: ' + this.photographer + '</span>' +
+                        '</p>' +
+                        '</div>' +
+                        '<div class="gallery-tools">' +
+                        '<div class="pull-left">' +
+                        '<div class="gallery-counter">' +
+                        '<strong class="current"></strong> out of <strong class="total"></strong>' +
+                        '</div>' +
+                        '<button class="gallery-btn-show-caption"><i class="fa fa-caret-up"></i> <span>Skjul beskrivelse</span></button>' +
+                        '</div>' +
+                        '<div class="pull-right">' +
+                        '<a href="#" class="icon-social-share visible-xs-inline-block"><i class="fa fa-share"></i></a>' +
+                        '<div class="mobile-menu">' +
+                        '<a href="' + this.facebook + '" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>' +
+                        '<a href="' + this.twitter + '" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>' +
+                        '<a href="' + this.linkedin + '" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>' +
+                        '<a href="' + this.sms + '" class="icon-social-sms">SMS</a>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>';
+                    });
+                    var $go = $('.gallery-overlay');
+                    $('#galleryList').append(imgList);
+                    $go.prepend('<button class="gallery-'+closeAction+'"><i class="fa fa-close"></i></button>');
+                    $go.removeClass('hidden');
+                    gallery();
+                    captionPos();
                 });
-                $('#galleryList').append(imgList);
+            }
 
-                $('.gallery-overlay').prepend('<button class="gallery-'+closeAction+'"><i class="fa fa-close"></i></button>');
-                $('.gallery-overlay').removeClass('hidden');
-                gallery();
-                captionPos();
-            });
-        }
-        var $el = $('.gallery-list');
-        function gallery() {
-            $('.gallery-list').slick({
-                lazyLoad: 'ondemand',
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                onInit: function(e){
-                    $('.total').text(parseInt(e.slideCount));
-                    $('.current').text(parseInt(e.currentSlide + 1, 10));
-                },
-                onAfterChange: function(e){
-                    $el.find('.current').html(e.currentSlide + 1);
-                }
-            });
-        };
-        function captionPos() {
-            $(window).resize(function() {
-                $('.gallery-caption').css({'width': ($(window).width())+ 'px' });
-                $('.gallery-tools').css({'width': ($(window).width())+ 'px' });
-            });
+            var $el = $('.gallery-list');
+            function gallery() {
+                $el.slick({
+                    lazyLoad: 'ondemand',
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    onInit: function(e){
+                        $('.total').text(parseInt(e.slideCount));
+                        $('.current').text(parseInt(e.currentSlide + 1, 10));
+                    },
+                    onAfterChange: function(e){
+                        $el.find('.current').html(e.currentSlide + 1);
+                    }
+                });
+            };
 
-            $(window).trigger('resize');
-        }
+            function captionPos() {
+                $(window).resize(function() {
+                    $('.gallery-caption').css({'width': ($(window).width())+ 'px' });
+                    $('.gallery-tools').css({'width': ($(window).width())+ 'px' });
+                });
+                $(window).trigger('resize');
+            }
+
+        })();
 
     </script>
 
