@@ -326,10 +326,15 @@
     </div>
 
     <script>
-
+        
         (function() {
-            var jsonURL = "{{ path('bm_image_gallery', {item: content.id}) }}";
-//            var jsonURL = "../gallery.json";
+            galleryOverlay();
+        })();
+
+
+        function galleryOverlay() {
+//            var jsonURL = "{{ path('bm_image_gallery', {item: content.id}) }}";
+            var jsonURL = "../gallery.json";
             displayGallery(jsonURL, true);
 
             function displayGallery(jsonURL, redirect) {
@@ -372,7 +377,7 @@
                     gallery();
                     captionPos();
                 });
-            }
+            };
 
             var $el = $('.gallery-list');
             function gallery() {
@@ -398,7 +403,7 @@
                 $(window).trigger('resize');
             }
 
-        })();
+        };
 
     </script>
 
