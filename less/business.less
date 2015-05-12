@@ -3401,6 +3401,8 @@ h1.heading {
 @icon-size : 35px;
 @icon-size-sm : 25px;
 [class*='icon-social-'] {
+  float: left;
+  margin-top: 7px;
 	color: #fff;
 	width: @icon-size;
 	height: @icon-size;
@@ -4815,7 +4817,7 @@ h1.heading {
 		line-height: 30px;
 	}
 	a {
-		margin-left: 0!important;
+		margin-left: 3px!important;
 	}
 	.icon-social-sms {
 		vertical-align: baseline;
@@ -4869,6 +4871,9 @@ h1.heading {
 		background: #333;
 		font-size: 13px;
 		padding: 0 10px 0 20px;
+    opacity: 0;
+    -webkit-transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.3s;
+    transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.3s;
 	}
 	.gallery-caption {
 		position: absolute;
@@ -4880,8 +4885,10 @@ h1.heading {
 		font-size: 14px;
 		color: #ddd;
 		display: none;
-		
-		span {
+    opacity: 0;
+    -webkit-transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.2s;
+    transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.2s;
+    span {
 			color: #999;
 			font-weight: 700;
 		}
@@ -4889,6 +4896,14 @@ h1.heading {
 			margin-bottom: 0;
 		}
 	}
+  .slick-active {
+    .gallery-caption,
+    .gallery-tools {
+      opacity: 1;
+      -webkit-transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.3s 0.5s;
+      transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.3s 0.5s;
+    }
+  }
 	.gallery-counter {
 		color: #fff;
 		line-height: 40px;
@@ -4915,10 +4930,11 @@ h1.heading {
 		position: relative;
 		padding-bottom: 20px;
 		text-align: center;
-		cursor: move;
+//		cursor: move;
 	}
-	
-	.gallery-close {
+
+  .gallery-close,
+  .gallery-redirect {
 		border-radius: 50%;
 		background-color: #333;
 		border: 0;

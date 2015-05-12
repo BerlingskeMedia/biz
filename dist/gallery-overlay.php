@@ -329,6 +329,7 @@
 
         $(document).ready(function () {
             var jsonURL = "{{ path('bm_image_gallery', {item: content.id}) }}";
+//            var jsonURL = "../gallery.json";
             displayGallery(jsonURL, true);
         });
 
@@ -336,13 +337,11 @@
             var redirect = redirect || false;
             $.getJSON(jsonURL, function (json) {
                 var imgList = "";
-                var counter = json.gallery.items.length;
 
                 var closeAction = redirect == true ? 'redirect' : 'close';
 
                 $.each(json.gallery.items, function () {
-                    var current = 1;
-                    current = +current;
+
                     imgList += '<div>' +
                     '<img data-lazy="' + this.image + '" alt="" />' +
                     '<div class="gallery-caption">' +
@@ -353,7 +352,7 @@
                     '<div class="gallery-tools">' +
                     '<div class="pull-left">' +
                     '<div class="gallery-counter">' +
-                    '<strong>' + current + '</strong> out of <strong>' + counter + '</strong>' +
+                    '<strong class="current"></strong> out of <strong class="total"></strong>' +
                     '</div>' +
                     '<button class="gallery-btn-show-caption"><i class="fa fa-caret-up"></i> <span>Skjul beskrivelse</span></button>' +
                     '</div>' +
@@ -370,18 +369,26 @@
                     '</div>';
                 });
                 $('#galleryList').append(imgList);
+
                 $('.gallery-overlay').prepend('<button class="gallery-'+closeAction+'"><i class="fa fa-close"></i></button>');
                 $('.gallery-overlay').removeClass('hidden');
                 gallery();
                 captionPos();
             });
         }
-
+        var $el = $('.gallery-list');
         function gallery() {
             $('.gallery-list').slick({
                 lazyLoad: 'ondemand',
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                onInit: function(e){
+                    $('.total').text(parseInt(e.slideCount));
+                    $('.current').text(parseInt(e.currentSlide + 1, 10));
+                },
+                onAfterChange: function(e){
+                    $el.find('.current').html(e.currentSlide + 1);
+                }
             });
         };
         function captionPos() {

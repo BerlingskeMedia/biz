@@ -9584,6 +9584,8 @@ h1.heading {
   background-color: rgba(0, 0, 0, 0.1);
 }
 [class*='icon-social-'] {
+  float: left;
+  margin-top: 7px;
   color: #fff;
   width: 35px;
   height: 35px;
@@ -11057,7 +11059,7 @@ h1.heading {
   }
 }
 .mobile-menu a {
-  margin-left: 0!important;
+  margin-left: 3px!important;
 }
 .mobile-menu .icon-social-sms {
   vertical-align: baseline;
@@ -11103,6 +11105,9 @@ h1.heading {
   background: #333;
   font-size: 13px;
   padding: 0 10px 0 20px;
+  opacity: 0;
+  -webkit-transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.3s;
+  transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.3s;
 }
 .gallery-overlay .gallery-caption {
   position: absolute;
@@ -11114,6 +11119,9 @@ h1.heading {
   font-size: 14px;
   color: #ddd;
   display: none;
+  opacity: 0;
+  -webkit-transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.2s;
+  transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.2s;
 }
 .gallery-overlay .gallery-caption span {
   color: #999;
@@ -11121,6 +11129,12 @@ h1.heading {
 }
 .gallery-overlay .gallery-caption p:last-child {
   margin-bottom: 0;
+}
+.gallery-overlay .slick-active .gallery-caption,
+.gallery-overlay .slick-active .gallery-tools {
+  opacity: 1;
+  -webkit-transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.3s 0.5s;
+  transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.3s 0.5s;
 }
 .gallery-overlay .gallery-counter {
   color: #fff;
@@ -11150,9 +11164,9 @@ h1.heading {
   position: relative;
   padding-bottom: 20px;
   text-align: center;
-  cursor: move;
 }
-.gallery-overlay .gallery-close {
+.gallery-overlay .gallery-close,
+.gallery-overlay .gallery-redirect {
   border-radius: 50%;
   background-color: #333;
   border: 0;
@@ -11171,7 +11185,8 @@ h1.heading {
   -o-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-.gallery-overlay .gallery-close:hover {
+.gallery-overlay .gallery-close:hover,
+.gallery-overlay .gallery-redirect:hover {
   background: #444;
 }
 .gallery-overlay .gallery-arrow,
