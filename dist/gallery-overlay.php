@@ -321,20 +321,40 @@
 
     <div class="gallery-overlay show-caption">
       <button class="gallery-close"><i class="fa fa-close"></i></button>
-      <div class="gallery-list" id="galleryList">
+      <div class="gallery-list" id="galleryList"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" ><h2 class="section-header"> You might also like</h2></div>
+        </div>
+        <div class="row">
+          <ul class="similar-list list-clean flex-4-2-2 module-sm"></ul>
+        </div>
+        <div class="row">
+          <div class="col-md-12"><h2 class="section-header"> Latest galleries</h2></div>
+        </div>
+        <div class="row">
+          <ul class="latest-list list-clean flex-4-2-2 module-sm">
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <button class="btn btn-sm btn-primary"><i class="fa fa-refresh"></i> Play again</button>
+          </div>
+        </div>
+
       </div>
     </div>
 
     <script>
-        
+
         (function() {
             galleryOverlay();
         })();
 
 
         function galleryOverlay() {
-//            var jsonURL = "{{ path('bm_image_gallery', {item: content.id}) }}";
-            var jsonURL = "../gallery.json";
+            var jsonURL = "{{ path('bm_image_gallery', {item: content.id}) }}";
+//            var jsonURL = "../gallery.json";
             displayGallery(jsonURL, true);
 
             function displayGallery(jsonURL, redirect) {
@@ -361,10 +381,10 @@
                         '<div class="pull-right">' +
                         '<a href="#" class="icon-social-share visible-xs-inline-block"><i class="fa fa-share"></i></a>' +
                         '<div class="mobile-menu">' +
-                        '<a href="' + this.facebook + '" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>' +
-                        '<a href="' + this.twitter + '" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>' +
-                        '<a href="' + this.linkedin + '" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>' +
-                        '<a href="' + this.sms + '" class="icon-social-sms">SMS</a>' +
+                        '<a href="' + json.gallery.url + '" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>' +
+                        '<a href="' + json.gallery.url + '" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>' +
+                        '<a href="' + json.gallery.url + '" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>' +
+                        '<a href="' + json.gallery.url + '" class="icon-social-sms">SMS</a>' +
                         '</div>' +
                         '</div>' +
                         '</div>' +
@@ -379,18 +399,45 @@
                 });
             };
 
-            var $el = $('.gallery-list');
+            function displayOther(jsonURL, list) {
+                var list = list;
+                $.getJSON(jsonURL, list, function (json) {
+                    console.log(list);
+                    var otherList = "";
+                    $.each(json[list].items, function () {
+                        otherList += '<li class="col-md-3 col-xs-6 col-sm-6 ">' +
+                        '<article class="teaser teaser-gallery ">' +
+                        '<figure class="teaser-img"><a href="#"><img src="' + this.image + '" alt="" /></a></figure>' +
+                        '<h2 class="header"><a href="#"><i class="fa fa-camera"></i>' + this.title + '</a></h2>' +
+                        '</article>' +
+                        '</li>';
+                    });
+                    $('.'+list+'-list').append(otherList);
+                });
+            };
+
             function gallery() {
+                var $el = $('.gallery-list');
                 $el.slick({
                     lazyLoad: 'ondemand',
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    adaptiveHeight: 1,
+                    infinite: false,
                     onInit: function(e){
                         $('.total').text(parseInt(e.slideCount));
                         $('.current').text(parseInt(e.currentSlide + 1, 10));
                     },
                     onAfterChange: function(e){
                         $el.find('.current').html(e.currentSlide + 1);
+                        if( e.slideCount == e.currentSlide + 1 ){
+                            $('.slick-next').click( function() {
+                                $('.gallery-overlay').addClass('gallery-finale');
+                                displayOther(jsonURL, 'similar');
+                                displayOther(jsonURL, 'latest');
+                                $('.gallery-list').addClass('hidden');
+                            });
+                        };
                     }
                 });
             };
