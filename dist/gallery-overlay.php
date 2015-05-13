@@ -407,8 +407,8 @@
                     $.each(json[list].items, function () {
                         otherList += '<li class="col-md-3 col-xs-6 col-sm-6 ">' +
                         '<article class="teaser teaser-gallery ">' +
-                        '<figure class="teaser-img"><a href="#"><img src="' + this.image + '" alt="" /></a></figure>' +
-                        '<h2 class="header"><a href="#"><i class="fa fa-camera"></i>' + this.title + '</a></h2>' +
+                        '<figure class="teaser-img"><a href="' + this.url + '"><img src="' + this.image + '" alt="Author' + this.otherList + '" /></a></figure>' +
+                        '<h2 class="header"><a href="' + this.url + '"><i class="fa fa-camera"></i>' + this.title + '</a></h2>' +
                         '</article>' +
                         '</li>';
                     });
