@@ -337,23 +337,22 @@
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
-            <button class="btn btn-sm btn-primary "><i class="fa fa-refresh"></i> Play again</button>
+            <button class="btn btn-sm btn-primary play-again"><i class="fa fa-refresh"></i> Play again</button>
           </div>
         </div>
-<!---->
       </div>
     </div>
 
     <script>
 
         (function() {
-            galleryOverlay('http://google.com');
+            var jsonURL = "{{ path('bm_image_gallery', {item: content.id}) }}";
+//            var jsonURL = "../gallery.json";
+            galleryOverlay(jsonURL, 'http://google.com');
         })();
 
 
-        function galleryOverlay(redirect) {
-//            var jsonURL = "{{ path('bm_image_gallery', {item: content.id}) }}";
-            var jsonURL = "../gallery.json";
+        function galleryOverlay(jsonURL,redirect) {
             var redirect = (redirect ? redirect : false);
             displayGallery(jsonURL, redirect);
 
@@ -394,7 +393,7 @@
                     $go.prepend('<button class="gallery-'+closeAction+'"><i class="fa fa-close"></i></button>');
                     $('.gallery-redirect').click(function() {
                         window.location.href=redirect;
-                    })
+                    });
                     $go.removeClass('hidden');
                     gallery();
                     captionPos();
@@ -404,7 +403,6 @@
             function displayOther(jsonURL, list) {
                 var list = list;
                 $.getJSON(jsonURL, list, function (json) {
-                    console.log(list);
                     var otherList = "";
                     $.each(json[list].items, function () {
                         otherList += '<li class="col-md-3 col-xs-6 col-sm-6 ">' +
@@ -415,6 +413,12 @@
                         '</li>';
                     });
                     $('.'+list+'-list').append(otherList);
+                    $('.play-again').click(function(){
+                        $('.gallery-list').slickGoTo(0,false);
+                        $('.gallery-overlay').removeClass('gallery-finale');
+                        $('.gallery-list').removeClass('hidden');
+
+                    })
                 });
             };
 
@@ -439,7 +443,7 @@
                                 displayOther(jsonURL, 'latest');
                                 $('.gallery-list').addClass('hidden');
                             });
-                        };
+                        }
                     }
                 });
             };

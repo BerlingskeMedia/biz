@@ -11238,6 +11238,9 @@ h1.heading {
 .gallery-overlay .slick-prev {
   left: -50px;
 }
+.gallery-overlay .slick-prev.slick-disabled {
+  display: none !important;
+}
 .gallery-overlay .slick-next {
   left: auto;
   right: -50px;

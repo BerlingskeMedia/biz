@@ -4968,6 +4968,7 @@ h1.heading {
 		display: inline-block;
 		margin-top: -50px;
 		.transition(background-color .2s ease);
+
 		&.slick-passive {
 			display: none;
 		}
@@ -4992,8 +4993,13 @@ h1.heading {
 		}
 	}
   .slick-prev {
-     left: -50px;
-   }
+    left: -50px;
+
+    &.slick-disabled {
+      display: none !important;
+    }
+  }
+
   .slick-next {
     left:auto;
     right: -50px;
