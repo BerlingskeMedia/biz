@@ -321,7 +321,7 @@
 
     <div class="gallery-overlay show-caption">
       <div class="gallery-list" id="galleryList"></div>
-      <div class="container">
+      <div class="other-galleries container">
         <div class="row">
           <div class="col-md-12" ><h2 class="section-header"> You might also like</h2></div>
         </div>
@@ -346,8 +346,8 @@
     <script>
 
         (function() {
-            var jsonURL = "{{ path('bm_image_gallery', {item: content.id}) }}";
-//            var jsonURL = "../gallery.json";
+//            var jsonURL = "{{ path('bm_image_gallery', {item: content.id}) }}";
+            var jsonURL = "../gallery.json";
             galleryOverlay(jsonURL, 'http://google.com');
         })();
 
@@ -414,16 +414,17 @@
                     });
                     $('.'+list+'-list').append(otherList);
                     $('.play-again').click(function(){
-                        $('.gallery-list').slickGoTo(0,false);
                         $('.gallery-overlay').removeClass('gallery-finale');
                         $('.gallery-list').removeClass('hidden');
-
+                        var again = true;
+                        gallery(again);
                     })
                 });
             };
 
-            function gallery() {
+            function gallery(again) {
                 var $el = $('.gallery-list');
+                $el.unslick();
                 $el.slick({
                     lazyLoad: 'ondemand',
                     slidesToShow: 1,
@@ -436,13 +437,15 @@
                     },
                     onAfterChange: function(e){
                         $el.find('.current').html(e.currentSlide + 1);
-                        if( e.slideCount == e.currentSlide + 1 ){
+                        if ( e.slideCount == e.currentSlide + 1){
                             $('.slick-next').click( function() {
+                                if (!again) {
+                                    displayOther(jsonURL, 'similar');
+                                    displayOther(jsonURL, 'latest');
+                                }
                                 $('.gallery-overlay').addClass('gallery-finale');
-                                displayOther(jsonURL, 'similar');
-                                displayOther(jsonURL, 'latest');
-                                $('.gallery-list').addClass('hidden');
-                            });
+                                $el.addClass('hidden');
+                            })
                         }
                     }
                 });

@@ -11291,6 +11291,10 @@ h1.heading {
     right: 10px;
   }
 }
+.other-galleries {
+  display: none;
+  visibility: hidden;
+}
 .gallery-finale {
   color: #999;
   padding-top: 100px;
@@ -11303,6 +11307,10 @@ h1.heading {
 }
 .gallery-finale .gallery-tools {
   display: none;
+}
+.gallery-finale .other-galleries {
+  display: block;
+  visibility: visible;
 }
 .bempay-footer {
   background-color: rgba(0, 0, 0, 0.1);
