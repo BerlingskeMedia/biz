@@ -320,7 +320,6 @@
   <?php include("./inc/footer.php"); ?>
 
     <div class="gallery-overlay show-caption">
-      <button class="gallery-close"><i class="fa fa-close"></i></button>
       <div class="gallery-list" id="galleryList"></div>
       <div class="container">
         <div class="row">
@@ -338,30 +337,30 @@
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
-            <button class="btn btn-sm btn-primary"><i class="fa fa-refresh"></i> Play again</button>
+            <button class="btn btn-sm btn-primary "><i class="fa fa-refresh"></i> Play again</button>
           </div>
         </div>
-
+<!---->
       </div>
     </div>
 
     <script>
 
         (function() {
-            galleryOverlay();
+            galleryOverlay('http://google.com');
         })();
 
 
-        function galleryOverlay() {
-            var jsonURL = "{{ path('bm_image_gallery', {item: content.id}) }}";
-//            var jsonURL = "../gallery.json";
-            displayGallery(jsonURL, true);
+        function galleryOverlay(redirect) {
+//            var jsonURL = "{{ path('bm_image_gallery', {item: content.id}) }}";
+            var jsonURL = "../gallery.json";
+            var redirect = (redirect ? redirect : false);
+            displayGallery(jsonURL, redirect);
 
             function displayGallery(jsonURL, redirect) {
-                var redirect = redirect || false;
                 $.getJSON(jsonURL, function (json) {
                     var imgList = "";
-                    var closeAction = redirect == true ? 'redirect' : 'close';
+                    var closeAction = (redirect == false ? 'close' : 'redirect');
 
                     $.each(json.gallery.items, function () {
                         imgList += '<div>' +
@@ -393,6 +392,9 @@
                     var $go = $('.gallery-overlay');
                     $('#galleryList').append(imgList);
                     $go.prepend('<button class="gallery-'+closeAction+'"><i class="fa fa-close"></i></button>');
+                    $('.gallery-redirect').click(function() {
+                        window.location.href=redirect;
+                    })
                     $go.removeClass('hidden');
                     gallery();
                     captionPos();
@@ -407,7 +409,7 @@
                     $.each(json[list].items, function () {
                         otherList += '<li class="col-md-3 col-xs-6 col-sm-6 ">' +
                         '<article class="teaser teaser-gallery ">' +
-                        '<figure class="teaser-img"><a href="' + this.url + '"><img src="' + this.image + '" alt="Author' + this.otherList + '" /></a></figure>' +
+                        '<figure class="teaser-img"><a href="' + this.url + '"><img src="' + this.image + '" alt="Photo' + this.photographer + '" /></a></figure>' +
                         '<h2 class="header"><a href="' + this.url + '"><i class="fa fa-camera"></i>' + this.title + '</a></h2>' +
                         '</article>' +
                         '</li>';
