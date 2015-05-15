@@ -321,42 +321,23 @@
 
     <div class="gallery-overlay show-caption">
       <div class="gallery-list" id="galleryList"></div>
-      <div class="other-galleries container">
-        <div class="row">
-          <div class="col-md-12" ><h2 class="section-header"> You might also like</h2></div>
-        </div>
-        <div class="row">
-          <ul class="similar-list list-clean flex-4-2-2 module-sm"></ul>
-        </div>
-        <div class="row">
-          <div class="col-md-12"><h2 class="section-header"> Latest galleries</h2></div>
-        </div>
-        <div class="row">
-          <ul class="latest-list list-clean flex-4-2-2 module-sm">
-          </ul>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <button class="btn btn-sm btn-primary play-again"><i class="fa fa-refresh"></i> Play again</button>
-          </div>
-        </div>
-      </div>
+      <div class="gallery-last" id="galleryLast"></div>
     </div>
 
     <script>
 
         (function() {
-            var jsonURL = "{{ path('bm_image_gallery', {item: content.id}) }}";
-//            var jsonURL = "../gallery.json";
-            galleryOverlay(jsonURL, 'http://google.com');
+//            var jsonURL = "{{ path('bm_image_gallery', {item: content.id}) }}";
+            var jsonURL = "../gallery.json";
+            galleryOverlay(jsonURL, 'http://google.com','last-gallery.html');
         })();
 
 
-        function galleryOverlay(jsonURL,redirect) {
+        function galleryOverlay(jsonURL,redirect, lastGalleryUrl) {
             var redirect = (redirect ? redirect : false);
-            displayGallery(jsonURL, redirect);
+            displayGallery(jsonURL, redirect, lastGalleryUrl);
 
-            function displayGallery(jsonURL, redirect) {
+            function displayGallery(jsonURL, redirect,lastGalleryUrl) {
                 $.getJSON(jsonURL, function (json) {
                     var imgList = "";
                     //if redirect is true button close is changed to redirect
@@ -391,6 +372,7 @@
                         '</div>';
                     });
                     $('#galleryList').append(imgList);
+                    $('body').addClass('overlay');
 
                     var $go = $('.gallery-overlay');
                     //button close/redirect inserting
@@ -400,39 +382,12 @@
                     });
                     //everything is ready - show overlay, gallery and caption
                     $go.removeClass('hidden');
-                    gallery();
+                    gallery(false, lastGalleryUrl);
                     captionPos();
                 });
             };
 
-            //function which shows similar and latest items at the and of carousel
-            function displayOther(jsonURL, list) {
-                var list = list;
-                $.getJSON(jsonURL, list, function (json) {
-                    var otherList = "";
-                    $.each(json[list].items, function () {
-                        otherList += '<li class="col-md-3 col-xs-6 col-sm-6 ">' +
-                        '<article class="teaser teaser-gallery ">' +
-                        '<figure class="teaser-img"><a href="' + this.url + '"><img src="' + this.image + '" alt="Photo' + this.photographer + '" /></a></figure>' +
-                        '<h2 class="header"><a href="' + this.url + '"><i class="fa fa-camera"></i>' + this.title + '</a></h2>' +
-                        '</article>' +
-                        '</li>';
-                    });
-                    $('.'+list+'-list').append(otherList);
-                    //play again button, adding
-                    $('.play-again').click(function(){
-                        //final gallery item overlay has gallery-finale class, we need to remove them when we back to the first item
-                        $('.gallery-overlay').removeClass('gallery-finale');
-                        //show hidden gallery
-                        $('.gallery-list').removeClass('hidden');
-                        var again = true;
-                        //call gallery again with special parameter, to eliminate latest gallery item cloning
-                        gallery(again);
-                    })
-                });
-            };
-
-            function gallery(again) {
+            function gallery(again, lastGalleryUrl) {
                 var $el = $('.gallery-list');
                 //destroy gallery, useful when gallery is called again
                 $el.unslick();
@@ -456,8 +411,7 @@
                             $('.slick-next').click( function() {
                                 //create or not similar and latest list
                                 if (!again) {
-                                    displayOther(jsonURL, 'similar');
-                                    displayOther(jsonURL, 'latest');
+                                    load_last(lastGalleryUrl);
                                 }
                                 //add special class to style final item
                                 $('.gallery-overlay').addClass('gallery-finale');
@@ -466,6 +420,24 @@
                             })
                         }
                     }
+                });
+            };
+
+            function load_last(lastGalleryUrl){
+                $('.gallery-last').load(lastGalleryUrl);
+
+                //play again button
+                $('.gallery-last').on('click', '.play-again', function(){
+
+                    //final gallery item overlay has gallery-finale class, we need to remove them when we back to the first item
+                    $('.gallery-overlay').removeClass('gallery-finale');
+
+                    //show hidden gallery
+                    $('.gallery-list').removeClass('hidden');
+
+                    //call gallery again with special parameter, to eliminate latest gallery item cloning
+                    var again = true;
+                    gallery(again, false);
                 });
             };
 
