@@ -333,18 +333,18 @@
         })();
 
 
-        function galleryOverlay(jsonURL,redirect, lastGalleryUrl) {
+        function galleryOverlay(jsonURL, lastGalleryUrl, redirect) {
             var redirect = (redirect ? redirect : false);
             displayGallery(jsonURL, redirect, lastGalleryUrl);
 
-            function displayGallery(jsonURL, redirect,lastGalleryUrl) {
+            function displayGallery(jsonURL, redirect, lastGalleryUrl) {
                 $.getJSON(jsonURL, function (json) {
                     var imgList = "";
                     //if redirect is true button close is changed to redirect
                     var closeAction = (redirect == false ? 'close' : 'redirect');
 
                     //creating img list from json
-                    $.each(json.gallery.items, function () {
+                    $.each(json.gallery.items, function (index) {
                         imgList += '<div>' +
                         '<img data-lazy="' + (isUAMobile ? this.imageMobile : this.image) + '" alt="" />' +
                         '<div class="gallery-caption">' +
@@ -370,13 +370,17 @@
                         '</div>' +
                         '</div>' +
                         '</div>';
+
+                        if ((index + 1) % 4 == 0) {
+                            imgList += getBanner();
+                        }
                     });
                     $('#galleryList').append(imgList);
                     $('body').addClass('overlay');
 
                     var $go = $('.gallery-overlay');
                     //button close/redirect inserting
-                    $go.prepend('<button class="gallery-'+closeAction+'"><i class="fa fa-close"></i></button>');
+                    $go.prepend('<button class="gallery-' + closeAction + '"><i class="fa fa-close"></i></button>');
                     $('.gallery-redirect').click(function() {
                         window.location.href=redirect;
                     });
@@ -385,7 +389,7 @@
                     gallery(false, lastGalleryUrl);
                     captionPos();
                 });
-            };
+            }
 
             function gallery(again, lastGalleryUrl) {
                 var $el = $('.gallery-list');
@@ -397,6 +401,8 @@
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     adaptiveHeight: 1,
+                    prevArrow: '<button type="button" class="slick-prev"></button>',
+                    nextArrow: '<button type="button" class="slick-next"></button>',
                     infinite: false,
                     onInit: function(e){
                         //the number of all gallery images
@@ -406,7 +412,7 @@
                     },
                     onAfterChange: function(e){
                         $el.find('.current').html(e.currentSlide + 1);
-                        if ( e.slideCount == e.currentSlide + 1){
+                        if (e.slideCount == e.currentSlide + 1) {
                             //change default next click to view final item
                             $('.slick-next').click( function() {
                                 //create or not similar and latest list
@@ -421,13 +427,22 @@
                         }
                     }
                 });
-            };
+            }
 
-            function load_last(lastGalleryUrl){
+            //during overlay fixed position, toolbar and caption need to calculate and set window width
+            function captionPos() {
+                $(window).resize(function() {
+                    $('.gallery-caption').css({'width': ($(window).width())+ 'px' });
+                    $('.gallery-tools').css({'width': ($(window).width())+ 'px' });
+                });
+                $(window).trigger('resize');
+            }
+
+            function load_last(lastGalleryUrl) {
                 $('.gallery-last').load(lastGalleryUrl);
 
                 //play again button
-                $('.gallery-last').on('click', '.play-again', function(){
+                $('.gallery-last').on('click', '.play-again', function () {
 
                     //final gallery item overlay has gallery-finale class, we need to remove them when we back to the first item
                     $('.gallery-overlay').removeClass('gallery-finale');
@@ -439,19 +454,39 @@
                     var again = true;
                     gallery(again, false);
                 });
-            };
-
-            //during overlay fixed position, toolbar and caption need to calculate and set window width
-            function captionPos() {
-                $(window).resize(function() {
-                    $('.gallery-caption').css({'width': ($(window).width())+ 'px' });
-                    $('.gallery-tools').css({'width': ($(window).width())+ 'px' });
-                });
-                $(window).trigger('resize');
             }
+            function getBanner() {
+                return '<div>' +
+                    Emediate.renderBannerForGallery('M11', {'mobile': true}) +
+                    Emediate.renderBannerForGallery('F3', {'mobile': false}) +
+                    '</div>';
+            }
+            $('.gallery-overlay').on('click', '.gallery-close', function() {
+                $('#galleryList').unslick();
+                $('.gallery-overlay').empty();
+                $('.gallery-overlay').append('<div class="gallery-list" id="galleryList"></div>');
+                $('.gallery-overlay').append('<div class="gallery-last" id="galleryLast"></div>');
+                $('.gallery-overlay').addClass('hidden');
+                $('.gallery-overlay').removeClass('gallery-finale');
+            }).on('click', '.gallery-btn-show-caption', function () {
+                var buttonTxt = $(this).find('span');
+                var caption = $(this).closest('.gallery-overlay');
 
-        };
+                caption.toggleClass('show-caption');
 
+                if ((caption).hasClass('show-caption')) {
+                    $(buttonTxt).text('Skjul beskrivelse');
+                } else {
+                    $(buttonTxt).text('Vis beskrivelse');
+                }
+            });
+        }
+
+        $('[data-gallery="true"]').on('click', function(e) {
+            e.preventDefault();
+            var jsonURL = $(this).data('json');
+            galleryOverlay(jsonURL, Routing.generate('bm_image_gallery_last_slide'), false);
+        });
     </script>
 
   </body>
