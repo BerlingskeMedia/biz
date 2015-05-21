@@ -9600,7 +9600,7 @@ h1.heading {
 }
 .sticky-social [class*='icon-social-'] {
     float: none;
-    margin-top: 0px;
+    margin-top: 0;
 }
 [class*='icon-social-']:hover {
   background-color: #cf4517;
