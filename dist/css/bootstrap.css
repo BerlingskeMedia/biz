@@ -9598,6 +9598,10 @@ h1.heading {
   transition: background-color 0.1s ease;
   background-color: #e64d1a;
 }
+.sticky-social [class*='icon-social-'] {
+    float: none;
+    margin-top: 0px;
+}
 [class*='icon-social-']:hover {
   background-color: #cf4517;
   color: #fff;
