@@ -9598,7 +9598,8 @@ h1.heading {
   transition: background-color 0.1s ease;
   background-color: #e64d1a;
 }
-.sticky-social [class*='icon-social-'] {
+.sticky-social [class*='icon-social-'],
+.article-social [class*='icon-social-'] {
     float: none;
     margin-top: 0;
 }
