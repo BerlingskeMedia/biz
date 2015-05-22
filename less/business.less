@@ -4864,12 +4864,8 @@ h1.heading {
 
 .marketing-banner-sm {
 	padding: 10px;
-	/*border-top: 3px solid #333;
-	border-bottom: 3px solid #333;*/
-
 	span {
 		font-size: 26px;
-		// color: #333;
 	}
 	button {
 		margin: 0 0 0 10px;
@@ -4878,8 +4874,18 @@ h1.heading {
 		margin-top: 5px;
 		padding: 8px 15px;
 	}
-	small {
-		// color: #333;
+	@media (max-width: @screen-xs-max) {
+		span {
+			font-size: 18px;
+		}
+		button {
+			font-size: 16px;
+			padding: 2px 6px;		
+			border-radius: 2px
+		}
+		small {
+			margin-top: 5px;
+		}
 	}
 }
 
