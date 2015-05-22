@@ -295,29 +295,24 @@
               
               
               <div class="comments" id="article-comments">
+
+              <div id="disqus_thread"></div>
+    
+
                 
-            <h1 class="section-header"><i class="fa fa-comment"></i> 10 comments</h1>
+                <button class="btn  btn-block btn-sm btn-secondary show-comments"><i class="fa fa-comment"></i> <? if (dumb_luck("50%")): ?>Show  <? dummy("text@number") ?> comments<? else: ?> Add comment<? endif ?></button>
+
+              
 
 
                 
              
-              <div class="text-center"><button class="btn  btn-sm btn-secondary show-comments"><i class="fa fa-comment"></i> Show comments</button></div>
-<!-- 
               
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'biztesting'; // required: replace example with your forum shortname
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
+              
     
-     -->            
+    
+
     
 
 
