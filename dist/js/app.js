@@ -1,5 +1,20 @@
 $(function () {
 
+
+    $('.show-comments').on('click', function(){
+          var disqus_shortname = 'biztesting'; 
+ 
+          $.ajax({
+                  type: "GET",
+                  url: "http://" + disqus_shortname + ".disqus.com/embed.js",
+                  dataType: "script",
+                  cache: true
+          });
+          // hide the button once comments load
+          $(this).fadeOut();
+    });
+
+
     // Navigation
     if ($('.site-wrap').offset()) {
     var sticky_navigation_offset_top = $('.main-header-bottom').offset().top;
