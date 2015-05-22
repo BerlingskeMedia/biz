@@ -100,6 +100,8 @@
     <article class="teaser header-20 header-xs-15">
       <figure class="teaser-img">
         <a href="article.php"><img src="<? dummy("image@440x,16:9") ?>" width="" height="" alt="" /></a>
+    
+
       </figure>
       <div class="teaser-body">
       <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -117,6 +119,8 @@
   
   <div class="col-md-12 text-center"><button class="btn-primary btn btn-sm">Load more <i class="fa fa-caret-down"></i></button></div>
 </section>
+
+
 
 
 <section class="deck">   

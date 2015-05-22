@@ -290,7 +290,14 @@
               </aside>
 
 
-              
+              <section class="footer-marketing marketing-banner marketing-banner-sm module-sm">
+                <a href="http://sjma.dk/lpcms/landingpage/b1.php?cid=BM-131228-CP-CALEDIT1BE&ns_campaign=_Kombi_maj_B.dk&ns_mchannel=na&ns_source=web_intern&ns_linkname=web_footer&ns_fee=0" target="_blank">
+                  <button class="btn btn-marketing ">Køb nu!</button>
+                  <span>Få avisen fre-, lør- og søndag i 3 mdr. inkl. digital adgang for 199 kr./md.<sup>*</sup></span>
+                  <small>* Abonnementet fortsætter til normalpris, indtil det opsiges.</small>
+                </a> 
+              </section>
+
 
               
               

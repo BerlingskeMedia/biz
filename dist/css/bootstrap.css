@@ -11108,6 +11108,21 @@ h1.heading {
     border-radius: 4px;
   }
 }
+.marketing-banner-sm {
+  padding: 10px;
+  /*border-top: 3px solid #333;
+	border-bottom: 3px solid #333;*/
+}
+.marketing-banner-sm span {
+  font-size: 26px;
+}
+.marketing-banner-sm button {
+  margin: 0 0 0 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 5px;
+  padding: 8px 15px;
+}
 .footer-marketing {
   background-image: -webkit-linear-gradient(270deg, #194173 0%, #14143c 100%);
   background-image: linear-gradient(180deg, #194173 0%, #14143c 100%);
