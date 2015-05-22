@@ -272,7 +272,7 @@
               <aside class="article-related-chunk list-xs module">
                 <h1 class="section-header">Read also</h1>
                 <ul>
-                  <? while (dumb_luck("4")): ?>
+                  <? while (dumb_luck("2")): ?>
                   <li class="teaser ">
                       <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@100x,16:9,") ?>" width="" height="" alt="" /></a></figure>
                       <div class="teaser-body">
