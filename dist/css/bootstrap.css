@@ -6074,6 +6074,11 @@ figcaption,
 .main-header-top ul li:last-child {
   margin-right: 0;
 }
+@media (max-width: 767px) {
+  .main-header-top .float-right-xs {
+    float: right;
+  }
+}
 .main-header-top .username {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -6087,6 +6092,10 @@ figcaption,
   .main-header-top .username {
     max-width: 50px;
   }
+}
+.btn-subscription {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 2px 5px;
 }
 .main-header-bottom {
   background-color: #fadcd2;

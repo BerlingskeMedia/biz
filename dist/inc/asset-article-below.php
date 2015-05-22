@@ -72,15 +72,7 @@
           
           </section>
 
-          <section class=" col-sm-12 col-md-12 ">
-          <div class="marketing-subscription">
-    <h2 class="section-header">Køb abonnement</h2>          
-              <a href="#" class="a-gray">
-            <p class="small"><strong>Få avisen i tre måneder inkl. digital adgang. Kun 199 kr/md. <span class="pink">Klik her <i class="fa fa-caret-right"></i></span> </strong> </p>
-            <p class="micro">Samlet engangspris 597,-. Abonnementet fortsætter til normalpris, indtil det opsiges</p>
-            </a>
-          </div>          
-          </section>
+          
 
 
      </div><!-- row -->
