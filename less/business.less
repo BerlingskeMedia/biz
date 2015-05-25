@@ -4844,15 +4844,6 @@ h1.heading {
     margin: 0;
     padding: 20px 0 0;
     overflow: hidden;
-    li {
-      float: left;
-      width: 100%;
-      height: 100%;
-      img {
-        width: 100%;
-        //        height: 100%;
-      }
-    }
   }
 	
 	button {
@@ -5012,7 +5003,9 @@ h1.heading {
       padding-right: 0;
       position: relative;
       left: 25%;
-
+    }
+    &.slick-disabled {
+      display: none !important;
     }
   }
 
