@@ -9602,6 +9602,11 @@ h1.heading {
     float: none;
     margin-top: 0;
 }
+.sticky-social [class*='icon-social-'],
+.article-social [class*='icon-social-'] {
+    float: none;
+    margin-top: 0;
+}
 [class*='icon-social-']:hover {
     background-color: #cf4517;
     color: #fff;
