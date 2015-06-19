@@ -5224,7 +5224,19 @@ h1.heading {
 
 	}
 	@media (max-width: @screen-xs-max) {
-		.gallery-caption p {
+      .other-galleries .row:first-child .section-header {
+          border-top: 0;
+      }
+
+      .gallery-finale.slick-slide {
+          padding-top: 0;
+      }
+
+      .gallery-finale .teaser h2 {
+          font-size: 13px;
+      }
+
+      .gallery-caption p {
 			font-size: 12px;
 		}
 		.gallery-image {
