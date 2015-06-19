@@ -11591,6 +11591,18 @@ h1.heading {
     left: 25%;
 }
 @media (max-width: 767px) {
+    .other-galleries .row:first-child .section-header {
+        border-top: 0;
+    }
+
+    .gallery-finale.slick-slide {
+        padding-top: 0;
+    }
+
+    .gallery-finale .teaser h2 {
+        font-size: 13px;
+    }
+
     .gallery-overlay .gallery-caption p {
         font-size: 12px;
     }
