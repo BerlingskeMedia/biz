@@ -11422,14 +11422,6 @@ h1.heading {
     padding: 20px 0 0;
     overflow: hidden;
 }
-.gallery-overlay .gallery-list li {
-    float: left;
-    width: 100%;
-    height: 100%;
-}
-.gallery-overlay .gallery-list li img {
-    width: 100%;
-}
 .gallery-overlay button {
     outline: 0;
 }
