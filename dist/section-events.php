@@ -203,9 +203,27 @@
         
 
 
+
       <div class="row">
       <div class="col-md-12 col-sm-6">
 
+
+        <section class="module-sm">
+      <h1 class="section-header">
+        Business Events
+      </h1>
+      <ul class="list list-xs">
+        <? while (dumb_luck("5")): ?>
+          <li class="teaser">
+        <div class="teaser-body">
+          <h2 class="header"><a href="#"><? dummy("text@headline") ?></a></h2>
+          <small><i class="fa fa-calendar"></i> Mandag den 17. november 2014</small>
+        </div>
+        </li>
+      <? endwhile ?>
+      </ul>
+        
+      </section>
 
       <section class="module-sm">
         <h1 class="section-header">Business Events</h1>
