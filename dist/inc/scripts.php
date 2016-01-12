@@ -27,3 +27,15 @@ stockCounter.start();
 </script>
 
 <script src="js/app.js?ver=<? dummy("text@number") ?>"></script>
+
+<script type='text/javascript' src="//wurfl.io/wurfl.js"></script>
+<script>
+	var isTablet = WURFL.form_factor == "Tablet"; 
+
+	if (isTablet) {
+		$('head').append('<meta name="viewport" content="width=940">');
+	} else {
+		$('head').append('<meta name="viewport" content="width=device-width, initial-scale=1">');
+	}
+    //alert(WURFL.form_factor);
+</script>
