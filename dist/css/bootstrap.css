@@ -802,7 +802,7 @@ address {
 }
 @media (min-width: 1024px) {
   .container {
-    width: 1020px;
+    width: 1000px;
   }
 }
 @media (min-width: 1600px) {
