@@ -70,7 +70,7 @@
             </ul>
         <? endif ?>
         </div>
-        <a href="article.php"><figure class="teaser-img" style="background-image: url(<? dummy("image@420x,1:1") ?>);"></figure></a>
+        <a href="article.php"><figure class="teaser-img" style="background-image: url(<? dummy("image@1000x,1:1") ?>);"></figure></a>
 
         </article>
 
@@ -123,7 +123,7 @@
       <div class="col-md-8 col-sm-8">
 
        <article class="teaser header-40 teaser-margin-bottom-0 teaser-solid teaser-background-img-tall  module-sm">
-            <a href="article.php"><figure class="teaser-img" style="background-image: url(<? dummy("image@620x,1:1") ?>);"></figure></a>
+            <a href="article.php"><figure class="teaser-img" style="background-image: url(<? dummy("image@1000x,1:1") ?>);"></figure></a>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
             <? dummy("text@biz-headertags") ?>
