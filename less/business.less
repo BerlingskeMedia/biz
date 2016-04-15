@@ -3522,7 +3522,7 @@ h1.heading {
 	a {
 		color: rgba(0,0,0,.8);
 		.a-blur;
-		font-size: 14px;
+		font-size: 16px;
 		font-weight: 600;
 		line-height: 1.2;
 		display: inline-block;
@@ -3531,7 +3531,11 @@ h1.heading {
 		float: left;
 		margin-right: 10px;
 	} 
-	
+	@media (max-width: @screen-sm-max) {
+		a {
+			font-size: 14px;
+		}
+	}
 }
 
 .article-video {

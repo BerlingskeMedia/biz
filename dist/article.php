@@ -84,6 +84,10 @@
           <div class="col-md-8 col-md-push-4">
           
             <div class="article-content">
+            
+            
+
+
               <?php if($imageSize == '1'): ?>
                 
 
@@ -172,27 +176,8 @@
             <? endif ?>
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-              <div class="article-link-embedded">
-                <figure>
-                <a href="article.php" title="TITLE"><img src="<? dummy("image@70x,16:9") ?>" width="" height="" alt="" /></a>
-                </figure>
-                <div class="teaser-body">
-                  <span>Læs også:</span>
-                  <a href="article.php" title="TITLE"><? dummy("text@headline") ?></a>  
-                </div>
-                
-              </div>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <div class="article-link-embedded">
-                <figure>
-                <a href="article.php" title="TITLE"><img src="<? dummy("image@70x,16:9") ?>" width="" height="" alt="" /></a>
-                </figure>
-                <div class="teaser-body">
-                  <span>Læs også:</span>
-                  <a href="article.php" title="TITLE"><? dummy("text@headline") ?></a>  
-                </div>
-                
-              </div>
+              <?php include('inc/article-link-embedded.php'); ?>
+
 
               <p><? dummy("text@paragraph") ?></p>
                 <!-- *** Asset - factbox float right-->
