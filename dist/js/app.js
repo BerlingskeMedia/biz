@@ -1,5 +1,12 @@
 $(function () {
 
+    // Newsletter fold out breaking option
+    $('.newsletter-email').focus(function(){
+        // $(this).closest('form').find('.form-options').toggleClass('hidden');
+        $(this).closest('form').find('.form-options').slideDown('fast');
+        
+    });
+
 
     $('.show-comments').on('click', function(){
           var disqus_shortname = 'biztesting'; 

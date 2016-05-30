@@ -2,7 +2,7 @@
 <? while (dumb_luck("3-5")): ?>
   <div class="slide">
     <figure class="article-image">
-      <img data-lazy="<? dummy("image@940x,16:9") ?>" alt="" class="img-responsive" />
+      <img data-lazy="<? dummy("image@1240x,16:9") ?>" alt="" class="img-responsive" />
       <? if (dumb_luck("90%")): ?>
       <figcaption>
       <div class="toggle-caption"><span>Caption</span></div>

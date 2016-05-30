@@ -1,5 +1,6 @@
 <? require_once("../../dummy/dummy.php") ?>
 
+<?php include('inc/_variables.php') ?>
 <?php $imageSize = rand(0,2); ?>
 
 <!DOCTYPE html>
@@ -23,15 +24,10 @@
   <?php include("./inc/header.php"); ?>
 
   <div class="container">
-    <div class="rat-tail desktop-banner">
+    <div class="rat-tail desktop-banner text-center">
     <? dummy("ad@960x180") ?>
-    <div class="banner-left">
-      <? dummy("ad@160x600-2") ?>
-    </div>
-    <div class="banner-right">
-      <? dummy("ad@160x600-2") ?>
-    </div>
-
+    
+    
       
     
     </div>
@@ -41,8 +37,11 @@
       
       <article class="col-md-12">
         <header class="article-head">
-
+        <?php if($label): ?>
+          <?php include('inc/article-header-labels.php'); ?>
+        <?php else: ?>
           <a href="section.php" title="TITLE" class="article-tag"><span><? dummy("text@biz-cat") ?></span></a>
+        <?php endif; ?>
           <h1 class="heading"><? dummy("text@headline") ?></h1>
 
 
@@ -129,6 +128,8 @@
 
               <?php include('inc/asset-article-byline.php'); ?>
 
+              <?php include('inc/article-newsletter-embedded.php'); ?>
+
               <div class="article-fact-float-right article-fact-graph module-sm">
                 <div class="visible-xs text-center">
                   <img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=MAERSK/A.co&prv=ms_dlc&points=20&ts=1440&current=1426690728590&w=340&h=206&bgcolor=edd0c7&fullName=[name]%20-%201%20mdr.&end=2015-03-17" class="img-responsive">
@@ -172,12 +173,7 @@
  
 
               
-              <? if (dumb_luck("50%")): ?>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <div class="embedded-node">
-                <iframe src="http://cf.datawrapper.de/2W39o/1/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="417"></iframe>
-               </div>
-            <? endif ?>
+              
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
               <?php include('inc/article-link-embedded.php'); ?>
@@ -199,12 +195,9 @@
 
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-              <? if (dumb_luck("50%")): ?>
-              <div class="media-embeds">
-              <blockquote class="twitter-tweet" lang="da"><p>Jubii! 11,8 millioner fra A. P. Møller Fonden til Helsingør Kommune! God dag;-) <a href="https://twitter.com/SthePol">@sthepol</a>&#10;<a href="http://t.co/LWfd9iStaU">http://t.co/LWfd9iStaU</a></p>&mdash; Benedikte Kiær (@benediktekiaer) <a href="https://twitter.com/benediktekiaer/status/533231937037414400">14. november 2014</a></blockquote>
-              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-              <? else: ?>
+              
+              
+              
               <blockquote class="bond-quote">
                   
                   <p>
@@ -214,7 +207,7 @@
                   <div class="quote-share">SHARE QUOTE <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></div>
 
               </blockquote>
-              <? endif ?>
+              
 
               <h3>H3:<? dummy("text@item") ?></h3>
               <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
