@@ -315,8 +315,6 @@
 
     </div>
 
-  
-
   <?php include("./inc/footer.php"); ?>
 
     <div class="gallery-overlay show-caption">

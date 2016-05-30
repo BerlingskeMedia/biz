@@ -312,7 +312,7 @@ input[type="checkbox"] {
 
 .input-sm,
 .form-group-sm .form-control {
-  .input-size(@input-height-small; @padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @input-border-radius-small);
+  .input-size(@input-height-small; @padding-small-vertical; @padding-small-horizontal; 16px; @line-height-small; @input-border-radius-small);
 }
 
 .input-lg,
@@ -548,11 +548,12 @@ input[type="checkbox"] {
 
 .form-oneline {
   position: relative;
+  margin-bottom: 10px;
   button {
     position: absolute;
     top: 1px;
     right: 0;
-    border-bottom-width: 1px; 
+    border-bottom-width: 2px; 
     z-index: 1;
   }
 }

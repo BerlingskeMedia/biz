@@ -1,5 +1,20 @@
 $(function () {
 
+
+    $('.show-comments').on('click', function(){
+          var disqus_shortname = 'biztesting'; 
+ 
+          $.ajax({
+                  type: "GET",
+                  url: "http://" + disqus_shortname + ".disqus.com/embed.js",
+                  dataType: "script",
+                  cache: true
+          });
+          // hide the button once comments load
+          $(this).fadeOut();
+    });
+
+
     // Navigation
     var sw = $('.site-wrap');
     if (sw.length && sw.offset() && $('.main-header-bottom').length) {
@@ -43,13 +58,9 @@ $(function () {
 
 
     // Toggle latest news. Show slide-in if viewport is iPad or phone
-    $('.menu-latest a').on('click', function (e) {
-        e.preventDefault();
-        if ($(window).width() > 992) {
-            window.location = $(this).attr('href');
-        } else {
-            $('body').toggleClass('show-latest');
-        }
+    $('.menu-latest a').on('click', function(e){
+      e.preventDefault();
+        $('body').toggleClass('show-latest');
     });
 
 

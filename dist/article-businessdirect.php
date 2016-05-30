@@ -45,16 +45,7 @@
          
           <h1 class="heading"><? dummy("text@headline") ?></h1>
           
-            <div class="article-byline-sponsored">
-              
-                <div class="article-author">
-                  
-                  <span>By <strong>Toyota Danmark A/S</strong> in category <strong><? dummy("text@cat-bizdirect") ?></strong><br>
-                  <div class="article-date">Mandag d. <time datetime="2014-02-14"><? dummy("text@pol-date") ?> kl. <? dummy("text@time") ?></time></div>
-                  </span>
-              </div>
             
-            </div>    
 
 
           
@@ -97,7 +88,16 @@
               
 
 
-
+              <div class="article-byline-sponsored">
+              
+                <div class="article-author">
+                  
+                  <span>By <strong>Toyota Danmark A/S</strong> in category <strong><? dummy("text@cat-bizdirect") ?></strong><br>
+                  <div class="article-date">Mandag d. <time datetime="2014-02-14"><? dummy("text@pol-date") ?> kl. <? dummy("text@time") ?></time></div>
+                  </span>
+              </div>
+            
+            </div>    
               
               
               

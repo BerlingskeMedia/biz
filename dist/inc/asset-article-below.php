@@ -29,7 +29,7 @@
             <? dummy("ad@300x250") ?>
          </div>
         
-        <section class="col-md-12 col-sm-6">
+        <section class="col-md-12 col-sm-6 module-sm">
             
           
           
@@ -50,10 +50,10 @@
           
               <h2 class="section-header">Tilmeld Business.dk nyhedsbrev</h2>
 
-            <div class="row">
+            
             <form class="form-signup ">
-           <div class="col-sm-9 col-xs-10">
-            <div class="form-group form-oneline-alt ">
+           
+            <div class=" form-oneline ">
             
             <? if (dumb_luck("50%")): ?>
             <input type="email" class="form-control input-sm form-underline" placeholder="Email" value="bsk@berlingskemedia.dk" aria-describedby="sizing-addon3">
@@ -61,23 +61,18 @@
             <input type="email" class="form-control input-sm form-underline" placeholder="Indtast email" aria-describedby="sizing-addon3">
             <? endif ?> 
             <button class="btn btn-sm btn-primary btn-sm ">OK <!-- <i class="fa fa-caret-right"></i> --></button>
-            </div>
-            </div>
+            
+           
 
-          </form>
-          </div>
+            </div>
+            
+            <p class="micro">Du tilmeldes nyhedsbrevene Business Breaking, Morgen og Eftermiddag. <a href="http://nyhedsbreve.berlingske-mail.dk/?medieid=2" target="_blank">Se alle nyhedsbreve <i class="fa fa-caret-right"></i></a></p>
+            </form>
+            
           
           </section>
 
-          <section class=" col-sm-12 col-md-12 ">
-          <div class="marketing-subscription">
-    <h2 class="section-header">Køb abonnement</h2>          
-              <a href="#" class="a-gray">
-            <p class="small"><strong>Få avisen i tre måneder inkl. digital adgang. Kun 199 kr/md. <span class="pink">Klik her <i class="fa fa-caret-right"></i></span> </strong> </p>
-            <p class="micro">Samlet engangspris 597,-. Abonnementet fortsætter til normalpris, indtil det opsiges</p>
-            </a>
-          </div>          
-          </section>
+          
 
 
      </div><!-- row -->
@@ -90,7 +85,7 @@
 
 <section class="deck">
   <div class="col-md-12">
-  <div class="deck-header">
+  <div class="deck-header border-xs-top">
       <h1>Forsiden lige nu</h1>
       <a href="index.php" class="section-header-link">Til forsiden <i class="fa fa-caret-right"></i></a>
   </div>
@@ -102,9 +97,11 @@
   <ul class="list-clean flex-4-2-2">
 <? while (dumb_luck("4")): ?>
   <li class="col-md-3 col-sm-6 col-xs-6">
-    <article class="teaser header-20">
+    <article class="teaser header-20 header-xs-15">
       <figure class="teaser-img">
         <a href="article.php"><img src="<? dummy("image@440x,16:9") ?>" width="" height="" alt="" /></a>
+    
+
       </figure>
       <div class="teaser-body">
       <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -122,6 +119,8 @@
   
   <div class="col-md-12 text-center"><button class="btn-primary btn btn-sm">Load more <i class="fa fa-caret-down"></i></button></div>
 </section>
+
+
 
 
 <section class="deck">   
@@ -147,7 +146,7 @@
        <section class="deck">
         
         <div class="col-md-12">
-        <div class="deck-header">
+        <div class="deck-header border-xs-top">
           <h1>
             Business recommends <a href="section.php" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a>
           </h1>
@@ -160,10 +159,12 @@
         <div class="row">
         
           <div class="col-md-8">
-            <article class="teaser header-35">
+            <article class="teaser header-35 header-xs-20 ">
               <figure class="teaser-img"><a href="#"><img src="<? dummy("image@940x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a>
+              <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+              </h2>
             </article>
         
           <div class="row">
@@ -171,18 +172,22 @@
               
 
       <div class="col-md-4 col-sm-4 col-xs-12 ">
-          <article class="teaser header-15 ">
-              <figure class="teaser-img"><a href="#"><img src="<? dummy("image@394,16:9") ?>" width="" height="" alt="" /></a></figure>
+          <article class="teaser header-20 teaser-border-bottom-thick-xs">
+              <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@394,16:9") ?>" width="" height="" alt="" /></a></figure>
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?>
+              <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+              </a></h2>
             </article>
           </div>
             <? while (dumb_luck("2")): ?>
       <div class="col-md-4 col-sm-4 col-xs-6 ">
-          <article class="teaser header-15 ">
+          <article class="teaser header-20 header-xs-15 ">
               <figure class="teaser-img"><a href="#"><img src="<? dummy("image@394,16:9") ?>" width="" height="" alt="" /></a></figure>
               <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
-              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h2>
+              <h2 class="header"><a href="article.php"><? dummy("text@headline") ?>
+              <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+              </a></h2>
             </article>
       </div>
 
@@ -287,7 +292,7 @@
 
 <section class="deck">
     <div class="col-md-12 ">
-    <div class="deck-header">
+    <div class="deck-header border-xs-top">
         <h1>
             Business in pictures
           </h1>

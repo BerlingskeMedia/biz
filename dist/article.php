@@ -50,7 +50,7 @@
 
 
 
-            <?php include('inc/asset-article-byline.php'); ?>
+            
 
 
           
@@ -76,7 +76,7 @@
 
         </header>
 
-        <div class="banner banner-top-article desktop-banner">
+        <div class="banner banner-top-article desktop-banner hidden-xs">
           <? dummy("ad@930x80") ?>
         </div>
 
@@ -113,10 +113,12 @@
                     <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
                     <a href="#" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>
                     <a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>
-                    <a href="#" class="icon-social-sms visible-xs-inline-block"><i class="fa fa-mobile"></i></a>
+                    <a href="#" class="icon-social-sms visible-xs-inline-block">SMS</a>
 
                     <a href="mailto:?subject=Artikel fra Business.dk&body=[ARTICLE URL]" class="icon-social-mail"><i class="fa fa-envelope"></i></a>
-                    <span class="pull-right comments-teaser"><a href="#" class="icon-text scroll-comments"><? dummy("text@number") ?> kommentarer</a> <a href="#" class="icon-social-default scroll-comments"><i class="fa fa-comment"></i></a></span>
+                    <span class="pull-right comments-teaser"><a href="#" class="icon-text scroll-comments">
+                    <span class="icon-text scroll-comments">48</span> 
+                    </a> <a href="#" class="icon-social-default scroll-comments"><i class="fa fa-comment"></i></a></span>
               </div>
 
               
@@ -124,6 +126,8 @@
               
               
               <h2 class="article-summary"><? dummy("text@long-teaser") ?></h2>
+
+              <?php include('inc/asset-article-byline.php'); ?>
 
               <div class="article-fact-float-right article-fact-graph module-sm">
                 <div class="visible-xs text-center">
@@ -253,7 +257,7 @@
               <aside class="article-related-chunk list-xs module">
                 <h1 class="section-header">Read also</h1>
                 <ul>
-                  <? while (dumb_luck("4")): ?>
+                  <? while (dumb_luck("2")): ?>
                   <li class="teaser ">
                       <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@100x,16:9,") ?>" width="" height="" alt="" /></a></figure>
                       <div class="teaser-body">
@@ -271,34 +275,36 @@
               </aside>
 
 
-              
+              <section class="footer-marketing marketing-banner marketing-banner-sm module-sm">
+                <a href="http://sjma.dk/lpcms/landingpage/b1.php?cid=BM-131228-CP-CALEDIT1BE&ns_campaign=_Kombi_maj_B.dk&ns_mchannel=na&ns_source=web_intern&ns_linkname=web_footer&ns_fee=0" target="_blank">
+                  <button class="btn btn-marketing ">Køb nu!</button>
+                  <span>Få avisen fre-, lør- og søndag i 3 mdr. inkl. digital adgang for 199 kr./md.<sup>*</sup></span>
+                  <small>* Abonnementet fortsætter til normalpris, indtil det opsiges.</small>
+                </a> 
+              </section>
+
 
               
               
               <div class="comments" id="article-comments">
+
+              <div id="disqus_thread"></div>
+    
+
                 
-            <h1 class="section-header"><i class="fa fa-comment"></i> 10 comments</h1>
+                <button class="btn  btn-block btn-sm btn-secondary show-comments"><i class="fa fa-comment"></i> <? if (dumb_luck("50%")): ?>Show  <? dummy("text@number") ?> comments<? else: ?> Add comment<? endif ?></button>
+
+              
 
 
                 
              
-              <div class="text-center"><button class="btn  btn-sm btn-secondary show-comments"><i class="fa fa-comment"></i> Show comments</button></div>
-<!-- 
               
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'biztesting'; // required: replace example with your forum shortname
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
+              
     
-     -->            
+    
+
     
 
 
