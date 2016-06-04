@@ -200,4 +200,33 @@ Fax: 33 75 20 20</p>
 </div><!-- /.modal -->
 
 
+<div class="oneliner-sticky-yellow ">
+	<a href="#" class="close-oneliner"><i class="fa fa-close"></i></a>
+	<div class="oneliner-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<article class="">
+						<a href="tpl-article.php">Breaking</a>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="oneliner-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<article class="">
+						<a href="tpl-article.php"><? dummy("text@headline") ?></a>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
 <?php include('inc/scripts.php'); ?>
