@@ -44,9 +44,7 @@
   
 </section>
 
- <section class="banner">
-  <iframe src="http://www.jobindex.dk/partnerbanner/business" height="400" width="100%" frameborder="0" scrolling="auto"></iframe>  
- </section>
+ 
  
 
 <!-- <section class="section-border-bottom">
