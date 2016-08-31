@@ -636,7 +636,7 @@
         </div>
         <div class="col-md-12 col-sm-6">
         <section class="module-sm text-center">
-          <iframe src="http://www.jobindex.dk/cgi/partnerbanner.cgi?size=300x400&partner=business&pagetype=front;cre=mu;target=_blank;ord=6ca81a82-b751-11e4-b4f6-00259006236a;EASClick=http://ad1.emediate.dk/eas/cu=24881::camp=347212::no=360322::kw=link1-360322::cat1=bond-2944::encoding=utf-8::EASTpage_type=frontpage::EASTpath=%2Fforside::EASTauth=0::c2-2=0::uuid=6ca81a82-b751-11e4-b4f6-00259006236a::EASLink=" height="400" width="300" frameborder="0" scrolling="auto"></iframe>
+          
         
         
         </section>
