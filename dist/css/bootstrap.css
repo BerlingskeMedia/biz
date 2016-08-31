@@ -6172,7 +6172,7 @@ figcaption,
   left: 0;
   right: 0;
   top: 90px;
-  height: 49px;
+  padding: 10px 0;
   z-index: 10;
   background-color: #fadcd2;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -6868,7 +6868,7 @@ ins.text-label {
 }
 @media (max-width: 1023px) {
   .logo-business {
-    width: 200px;
+    width: 180px;
   }
 }
 @media (max-width: 767px) {
