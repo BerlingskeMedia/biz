@@ -69,6 +69,7 @@
 				<div class="live-content">
 					
 					<ul class="live-blog">
+						
 						<li class="live-item-sticky">
 							<time>
 								Fastgjort
@@ -82,41 +83,48 @@
 								</ul>
 
 						</li>
-						<li class="live-item-teaser">
-							<time><? dummy("text@time-ago") ?></time>
-							<p><strong><? dummy("text@headline") ?></strong></p>
-							<p><? dummy("text@teaser") ?></p>
-							<div class="live-teaser">
-								<a href="#">
-									<figure>
-										<img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" />
-									</figure>
-									<div>
-									<h3><? dummy("text@headline") ?></h3>
-									<p><? dummy("text@teaser") ?></p>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="live-item">
-							<time><? dummy("text@time-ago") ?></time>
-							<p><strong><? dummy("text@headline") ?></strong></p>
-							<p>ATP-direktør Carsten Stendevad kalder pensionsgigantens investering i Nets for en af de bedste i meget lang tid. <a href="#">Læs hele artiklen</a> </p>
-						</li>
-						<li class="live-item-tweet">
-							<time><? dummy("text@time-ago") ?></time>
-							<p><strong>Markederne i grønt i dag i hele Norden</strong></p>
-							<p>ATP-direktør Carsten Stendevad kalder pensionsgigantens investering i Nets for en af de bedste i meget lang tid. På lidt over to år ser  ... </p>
-							<blockquote class="twitter-tweet" data-lang="da"><p lang="en" dir="ltr">Silicon Valley&#39;s relationship with India may be about to get even more fraught <a href="https://t.co/0wdWERyf8k">https://t.co/0wdWERyf8k</a> <a href="https://t.co/hPqhbr2pSF">pic.twitter.com/hPqhbr2pSF</a></p>&mdash; Bloomberg (@business) <a href="https://twitter.com/business/status/776000873336012800">14. september 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-						</li>
-						<li class="live-item-facebook">
-							<time><? dummy("text@time-ago") ?></time>
-							<p><strong>Her er et Facebook element</strong></p>
-							<p><? dummy("text@teaser") ?></p>
+						<?php 
+							// $liveType teaser, facebook, twitter, sticky, text
+							$liveType = 'teaser';
+							include('inc/live-item.php');
 
-							<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fberlingske%2Fposts%2F10153899266193133&width=500" width="500" height="466" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-						</li>
+							$liveType = 'text ';
+							include('inc/live-item.php');
+
+							$liveType = 'text';
+							include('inc/live-item.php');
+
+							$liveType = 'text big-item';
+							include('inc/live-item.php');
+
+
+							$liveType = 'twitter';
+							include('inc/live-item.php'); 
+
+							$liveType = 'stock';
+							include('inc/live-item.php');
+
+							$liveType = 'text ';
+							include('inc/live-item.php');
+
+							$liveType = 'text';
+							include('inc/live-item.php');
+
+							$liveType = 'text big-item';
+							include('inc/live-item.php');
+
+							$liveType = 'facebook';
+							include('inc/live-item.php'); 
+							 ?>
+
+
+
+						
+
+						
+
+						
+
 					</ul>	
 				</div>
 

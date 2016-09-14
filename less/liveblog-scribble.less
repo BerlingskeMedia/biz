@@ -13,9 +13,11 @@
 	font-size: 16px;
 	color: #fff;
 	font-weight: 700;
+	span {
+		padding: 0 1rem;
+	}
 	.livelabel {
 		line-height: 40px;
-		padding: 0 2rem;
 		height: 40px;
 		float: left;
 		display: inline-block;
@@ -23,13 +25,11 @@
 	}
 	.timeofday {
 		display: inline-block;
-		padding: 0 1rem;
 	}
 	.hostoftheday {
 		font-size: 12px;
 		display: inline-block;
 		float: right;
-		padding-right: 1rem;
 		img {
 			border-radius: 50%;
 			margin: -2px 0 0 5px;
@@ -44,24 +44,15 @@
 .live-content {
 	background-color: #fdeee9;
 	padding: 2rem;
+	margin-bottom: 2rem;
 }
 
 .live-blog {
 	list-style: none;
-	padding: 0 0 0 155px;
+	padding: 0;
 	position: relative;
-	&:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 140px;
-		width: 1px;
-		background-color: rgba(0,0,0,.15);
-
-
-	}
-	[class*="live-item"] {
+	
+	> [class*="live-item"] {
 		border-bottom: 1px solid rgba(0,0,0,.15);
 		margin: 0 0 2rem 0;
 		padding: 0 0 2rem 0;
@@ -73,35 +64,35 @@
 			margin-bottom: 0;
 		}
 	}
+	.live-item__header {
+		font-size: 18px;
+	}
+	img {
+		display: block;
+	    max-width: 100%;
+		height: auto;
+	}
+	
+	.live-item-stock img {
+		margin-bottom: 1rem;
+	}
+	/*.big-item {
+		.live-item__header {
+			font-size: 25px;
+		}
+	}*/
+
 	
 	a {
 		font-weight: 700;
 	}
 	time {
-		margin-left: -155px;
-		width: 155px;
-		text-align: right;
-		float: left;
-		padding-right: 25px;
 		font-size: 12px;
 		font-weight: 700;
 		line-height: 20px;
-		color: #999;
+		color: #666;
 		position: relative;
-		&:after {
-			width: 12px;
-			height: 12px;
-			border-radius: 50%;
-			top: 5px;
-			right: 9px;
-			display: inline-block;
-			content: '';
-			background-color: #fdeee9;
-			position: absolute;
-			border: 1px solid rgba(0,0,0,.15);
-			
-
-		}
+		
 	}
 	ul {
 		list-style: disc;
@@ -128,7 +119,7 @@
 	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
 	border-radius: 2px;
 	.clearfix;
-	> div {
+	div {
 		overflow: hidden;
 		
 	}
@@ -153,4 +144,63 @@
 		font-weight: normal;
 		margin: 0;
 	}
+}
+@media (max-width: @screen-sm-max) {
+	.live-content {
+		padding: 1rem;
+	}
+	.liveheader {
+		font-size: 12px;
+		span {
+			padding: 0 .5rem;
+		}
+		.livelabel  {
+			padding: 0 1rem;
+		}
+	}
+	.live-teaser {
+		img {
+			max-width: 80px;
+		}
+	}
+
+}
+@media (min-width: @screen-lg) {
+	.live-blog {
+		padding-left: 155px;
+		time {
+			margin-left: -155px;
+			width: 155px;
+			float: left;
+			text-align: right;
+			padding-right: 40px;
+			&:after {
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				top: 5px;
+				right: 9px;
+				display: inline-block;
+				content: '';
+				background-color: #fdeee9;
+				position: absolute;
+				border: 1px solid rgba(0,0,0,.15);
+				
+
+			}
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 140px;
+			width: 1px;
+			background-color: rgba(0,0,0,.15);
+
+
+		}
+	}
+	
+	
 }
