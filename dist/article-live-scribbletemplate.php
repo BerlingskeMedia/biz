@@ -56,8 +56,8 @@
 					
 				</header>
 				
+				<div id="scribblelive"></div>
 
-				
 				<div class="liveheader">
 					<span class="livelabel"><i class="fa fa-circle zoomfade"></i> LIVE</span>
 					<span class="timeofday">13:24:28</span>
