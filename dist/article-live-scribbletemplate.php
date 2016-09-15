@@ -68,78 +68,9 @@
 				
 				<div id="scribblelive"></div>
 
-				<div class="liveheader">
-					<span class="livelabel"><i class="fa fa-circle zoomfade"></i> LIVE</span>
-					<span class="timeofday">13:24:28</span>
-					<span class="hostoftheday">
-						
-						Nyhedsvært: <a href="mailto:jst@berlingskemedia.dk"><? dummy("text@author") ?></a>
-						<img src="<? dummy("image/!author@40x40,") ?>" width="" height="" alt="" />
-					</span>
-				</div>
 				
-				<div class="live-content">
-					
-					<ul class="live-blog">
-						
-						<li class="live-item-sticky">
-							<time>
-								Fastgjort
-							</time>
-							<p><strong>Begivenheder i dag</strong></p>
-							
-								<ul>
-									<li>Oslo Børs åpner flatt og oljeprisen stiger svakt</li>
-									<li>Mot sluttføring av <a href="tpl-article.php">Bayers Monsanto-bud</a></li>
-									<li>Britiske ledighetstall, industriproduksjon fra eurosonen</li>
-								</ul>
-
-						</li>
-						<?php 
-							// $liveType teaser, facebook, twitter, sticky, text
-							$liveType = 'teaser';
-							include('inc/live-item.php');
-
-							$liveType = 'text ';
-							include('inc/live-item.php');
-
-							$liveType = 'text';
-							include('inc/live-item.php');
-
-							$liveType = 'text big-item';
-							include('inc/live-item.php');
-
-
-							$liveType = 'twitter';
-							include('inc/live-item.php'); 
-
-							$liveType = 'stock';
-							include('inc/live-item.php');
-
-							$liveType = 'text ';
-							include('inc/live-item.php');
-
-							$liveType = 'text';
-							include('inc/live-item.php');
-
-							$liveType = 'text big-item';
-							include('inc/live-item.php');
-
-							$liveType = 'facebook';
-							include('inc/live-item.php'); 
-							 ?>
-
-
-
-						
-
-						
-
-						
-
-					</ul>	
-				</div>
-
+				
+				
 
 
 			</div><!-- col -->
