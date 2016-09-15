@@ -8,10 +8,20 @@
 
   <head>
     <title>Business.dk</title>
-    <?php include("./inc/head.php"); ?> 
+    
+  <head>
+    <title>Business.dk</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="http://biz.medieimperiet.dk/css/bootstrap.css?ver=17" rel="stylesheet">
+
+    
+
+     
   </head>
   <body>
-
 
 
 
