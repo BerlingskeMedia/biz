@@ -3,25 +3,17 @@
 <?php $imageSize = rand(0,2); ?>
 
 <!DOCTYPE html>
-<!--[if IE 9 ]><html class="ie9" lang="da"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html lang="da"><!--<![endif]-->
 
-  <head>
-    <title>Business.dk</title>
-    
+  
   <head>
     <title>Business.dk</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
     <link href="http://biz.medieimperiet.dk/dist/css/bootstrap.css?ver=17" rel="stylesheet">
-
-    
-
      
   </head>
-  <body>
+<body>
 
 
 
