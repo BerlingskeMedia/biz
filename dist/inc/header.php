@@ -220,7 +220,7 @@ $stock_change_mobile = mt_rand(0,250)/100;
                 </div>
 
                 <div class="stock-container-xs visible-xs">
-                  <span class="stock-title">C20 CAP</span>
+                  <span class="stock-title">C20 CAP</span><br>
                   <span class="stock-change <? if (dumb_luck("50%")): ?>negative<? endif ?>" ><?php echo $stock_change_mobile; ?><i>%</i></span>
                 </div>
 
