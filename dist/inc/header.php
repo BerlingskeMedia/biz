@@ -228,7 +228,7 @@ $stock_change_mobile = mt_rand(0,250)/100;
               
               </a>
             </li>
-            <li class="menu-businesslive nav-button is-live"><a href="#" title="Business Live"> Business <span>Live</span></a></li>
+            <li class="menu-businesslive nav-button "><a href="#" title="Business Live"> Live <span class="beta">Beta</span></a></li>
             <li class="menu-menu nav-button"><a href="#" class="btn-toggle-nav"><i class="fa fa-bars"></i> <span class="hidden-sm hidden-xs">Indhold</span></a></li>
             <li class="menu-search nav-button hidden-xs"><a href="#" title="Søg"><i class="fa fa-search"></i> <span>Søg</span></a></li>
           </ul>

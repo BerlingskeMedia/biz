@@ -6246,14 +6246,14 @@ figcaption,
 }
 @media (max-width: 1023px) {
   .site-nav .nav-tools li:not(:last-child) {
-    padding-right: 7px;
+    padding-right: 9px;
   }
 }
 .site-nav .nav-tools li:not(:last-child):after {
   position: absolute;
   right: 0;
-  top: 10px;
-  bottom: 10px;
+  top: 13px;
+  bottom: 13px;
   content: '';
   background-color: rgba(0, 0, 0, 0.1);
   width: 1px;
@@ -6263,7 +6263,7 @@ figcaption,
     margin-left: 0;
   }
   .site-nav .nav-tools li:not(:first-child) {
-    margin-left: 7px;
+    margin-left: 9px;
   }
   .site-nav .nav-tools li.menu-menu {
     padding-right: 0;
@@ -6317,11 +6317,13 @@ figcaption,
 .stock-title {
   color: #333;
 }
+.menu-businesslive a,
 .menu-menu a,
 .menu-search a {
   padding-top: 22px;
   display: inline-block;
 }
+.menu-businesslive a .fa,
 .menu-menu a .fa,
 .menu-search a .fa {
   margin-top: -3px;
@@ -6362,10 +6364,6 @@ figcaption,
     padding: 0;
   }
 }
-.menu-businesslive {
-  line-height: 12px!important;
-  padding-top: 18px;
-}
 .menu-businesslive a {
   line-height: 12px;
   padding-left: 18px;
@@ -6376,7 +6374,7 @@ figcaption,
   .menu-businesslive a {
     padding-left: 15px;
     line-height: 1;
-    padding-top: 2px;
+    padding-top: 21px;
   }
 }
 .menu-businesslive a:before {
@@ -6386,13 +6384,18 @@ figcaption,
   height: 10px;
   position: absolute;
   left: 0;
-  top: 7px;
+  top: 23px;
   content: '';
 }
-.menu-businesslive span {
+.menu-businesslive .beta {
+  font-weight: 300;
+  color: #ff3a3a;
+  font-size: 9px;
+}
+.menu-businesslive .beta {
   display: block;
 }
-.menu-businesslive.is-live a:before {
+.is-live .menu-businesslive a:before {
   background-color: #ff3a3a;
   animation-name: blink;
   -webkit-animation-name: blink;
@@ -6403,7 +6406,7 @@ figcaption,
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
 }
-body:not(.make-fixed-menu) .menu-businesslive:before {
+body.is-live:not(.make-fixed-menu) .menu-businesslive:before {
   position: absolute;
   left: 50%;
   bottom: -10px;
@@ -6422,7 +6425,7 @@ body:not(.make-fixed-menu) .menu-businesslive:before {
 }
 @media (max-width: 767px) {
   .nav-button {
-    font-size: 9px;
+    font-size: 10px;
     line-height: 1;
   }
 }
@@ -12182,6 +12185,7 @@ slideUp
   }
 }
 .business-live-teaser {
+  display: none;
   background-color: #a10e4b;
   height: 35px;
   line-height: 35px;
@@ -12202,6 +12206,9 @@ slideUp
   .business-live-teaser {
     font-size: 13px;
   }
+}
+.is-live .business-live-teaser {
+  display: block;
 }
 body.billede {
   padding: 20px;

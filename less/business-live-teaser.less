@@ -1,5 +1,6 @@
 @col-purple: #a10e4b;
 .business-live-teaser {
+	display: none;
 	background-color: @col-purple; 
 	height: 35px;
 	line-height: 35px;
@@ -22,4 +23,8 @@
 	.business-live-teaser {
 		font-size: 13px;
 	}
+}
+
+.is-live .business-live-teaser {
+	display: block
 }

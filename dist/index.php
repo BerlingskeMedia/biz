@@ -10,7 +10,7 @@
     <title>Business.dk</title>
     <?php include("./inc/head.php"); ?> 
   </head>
-  <body>
+  <body class="is-live">
 
 
 
@@ -948,6 +948,12 @@
 
 
   <?php include("./inc/footer.php"); ?>
+
+  <script>
+    $('.btn-subscription').click(function(){
+      $('body').toggleClass('is-live');
+    })
+  </script>
 
     
   </body>
