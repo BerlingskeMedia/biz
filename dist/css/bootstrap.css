@@ -6376,7 +6376,7 @@ figcaption,
   .menu-businesslive a {
     padding-left: 15px;
     line-height: 1;
-    padding-top: 4px;
+    padding-top: 2px;
   }
 }
 .menu-businesslive a:before {
@@ -12200,7 +12200,7 @@ slideUp
 }
 @media (max-width: 1023px) {
   .business-live-teaser {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 body.billede {
