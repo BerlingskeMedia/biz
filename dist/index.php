@@ -22,7 +22,18 @@
 
   <?php include("./inc/header.php"); ?>
 
+  <div class="business-live-teaser">
+    <div class="container-main-header">
+      <div class="row">
+        <div class="col-xs-12">
+          <a href="#"><time>10.23</time> <? dummy("text@headline") ?></a>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container">
+
+
   <div class="visible-xs banner module-sm">MOBIL BANNER</div>
     <div class="rat-tail desktop-banner">
     <? dummy("ad@960x180") ?>
@@ -41,7 +52,7 @@
     
       
       <div class="col-md-12">
-        <? if (dumb_luck("50%")): ?>
+        <? if (dumb_luck("4%")): ?>
         <? if (dumb_luck("33%")): ?>
         <article class="teaser teaser-oneliner-red"><a href="article.php"><b>Opdateres</b> <? dummy("text@headline") ?></a></article>
         <? else: ?>

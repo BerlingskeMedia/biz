@@ -206,26 +206,30 @@ $stock_change_mobile = mt_rand(0,250)/100;
         
         
         <nav class="site-nav">
-          <a href="http://www.business.dk/investor/aktier" class="nav-stock">
-            <div class="stock-container hidden-xs">
-              <span class="stock-title">OMX C20CAP</span>
-              <span class="stock-value"><? if (dumb_luck("50%")): ?><span>Lukket</span><? endif ?> 1032,21</span>
-            </div>
-
-            <div class="stock-container-xs visible-xs">
-              <span class="stock-title">C20 CAP</span>
-              <span class="stock-change <? if (dumb_luck("50%")): ?>negative<? endif ?>" ><?php echo $stock_change_mobile; ?><i>%</i></span>
-            </div>
-
-            <span class="hidden-xs stock-change  <? if (dumb_luck("50%")): ?>negative<? endif ?>" id="stock-count"></span>
           
-          </a>
 
           
 
           <ul class="main-nav nav-tools">
-            <li class="menu-menu nav-button"><a href="#" class="btn-toggle-nav"><i class="fa fa-bars"></i> <span>Indhold</span></a></li>
-            <li class="menu-latest nav-button"><a href="news-overview.php" title="Seneste nyt"><i class="fa fa-clock-o"></i> <span>Seneste nyt</span></a></li>
+            <li class="menu-stock">
+              <a href="http://www.business.dk/investor/aktier" class="nav-stock">
+                
+                <div class="stock-container hidden-xs">
+                  <span class="stock-title">OMX C20CAP</span>
+                  <span class="stock-value"><? if (dumb_luck("50%")): ?><span>Lukket</span><? endif ?> 1032,21</span>
+                </div>
+
+                <div class="stock-container-xs visible-xs">
+                  <span class="stock-title">C20 CAP</span>
+                  <span class="stock-change <? if (dumb_luck("50%")): ?>negative<? endif ?>" ><?php echo $stock_change_mobile; ?><i>%</i></span>
+                </div>
+
+                <span class="hidden-xs stock-change  <? if (dumb_luck("50%")): ?>negative<? endif ?>" id="stock-count"></span>
+              
+              </a>
+            </li>
+            <li class="menu-businesslive nav-button is-live"><a href="#" title="Business Live"> Business <span>Live</span></a></li>
+            <li class="menu-menu nav-button"><a href="#" class="btn-toggle-nav"><i class="fa fa-bars"></i> <span class="hidden-sm hidden-xs">Indhold</span></a></li>
             <li class="menu-search nav-button hidden-xs"><a href="#" title="Søg"><i class="fa fa-search"></i> <span>Søg</span></a></li>
           </ul>
         

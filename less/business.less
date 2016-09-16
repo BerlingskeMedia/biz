@@ -117,7 +117,6 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 	background-color: @biz-pink;
 	border-bottom: 1px solid rgba(0,0,0,.1);
 	z-index: 10001;
-	margin-bottom: 10px;
 }
 .make-fixed-menu .main-header-bottom {
 	position: fixed;
@@ -157,9 +156,7 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 	text-align: left;
 	position: relative;
 	height: 60px;
-	@media (max-width: @screen-sm-max) {
-		height: 50px;
-	}
+	
 	.logo-business {
 		display: inline-block;
 		text-align: left;
@@ -225,80 +222,118 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 		height: 60px;
 		margin: 0;
 		padding: 0;
+		
+		
 		a {
-			color: #666;
+			color: #333;
 			.transition (color .1s  ease);
 			&:hover {
-				color: darken(#666, 15%);
+				color: lighten(#333, 15%);
 			}
 		}
 		li {
 			display: inline-block;
-			line-height: 60px;
 			margin: 0 0 0 15px;
 			float: left;
+			position: relative;
+			height: 60px;
+			&:not(:last-child) {
+				padding-right: 10px;
+			}
+			&:not(:last-child):after {
+				position: absolute;
+				right: 0;
+				top: 10px;
+				bottom: 10px;
+				content: '';
+				background-color: rgba(0,0,0,.15);
+				width: 1px;
+			}
+			@media (max-width: @screen-sm-max) {
+				&:first-child {
+					margin-left: 0
+				}
+				&:not(:first-child) {
+					margin-left: 5px;	
+				}
+				
+				&.menu-menu  {
+					padding-right: 0;
+
+					.fa {
+						margin-right: 0;
+						font-size: 14px;
+					}
+					&:after {
+						display: none;
+					}
+				}
+			}
+
 		}
 		.fa {
 			font-size: 23px;
-			line-height: 60px;
+		
 			float: left;
 			margin-right: 5px;
 			color: @biz-2;
-			vertical-align: middle;
-		}
-		@media (max-width: @screen-sm-max) {
-			.nav-tools, li, .fa {
-				height: 50px;
-			}
 		}
 		
+		
 	}
-	.main-nav span {
-		@media (max-width: @screen-xs-max) {
-			display: none;
-		}
-	}
+	
 }
 .stock-container-xs {
-	margin-top: 2px;
-	width: 45px;
+	
+	width: 42px;
 	text-align: right;
 	overflow: hidden;
 	
 }
 .nav-stock {
 	display: inline-block;
-	margin-top: 18px;
 	font-weight: 600;
 	font-size: 12px;
 	color: #333;
 	text-align: right;
-	margin-left: 90px;
 	
 	@media (max-width: @screen-xs-max) {
-		margin-left: 20px;
 		font-size: 10px;
 	}
 }
-.stock-container {
-	height: 40px;
-	display: inline-block;
+.menu-stock {
+	margin-left: 0;
+	 a {
+		padding-top: 17px;
+	}
 }
-.stock-title {
-	display: block;
+
+.stock-container {
+	display: inline-block;
+	text-align: right;
 	line-height: 12px;
-	color: #666;
+	&>span {
+		display: block;
+	}
+}
+.stock-title {	
+	color: #333;
 	@media (max-width: @screen-xs-max) {
 		line-height: 1;
 	}
-
+}
+.menu-menu a,
+.menu-search a {
+	padding-top: 22px;
+	display: inline-block;
+	.fa {
+		margin-top: -3px;
+	}
 }
 .stock-value {
 	color: #999;
-	display: block;
 	span {
 		color: #666;
-		font-size: 10px;
 		text-transform: uppercase;
 	}
 }
@@ -336,6 +371,63 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 			padding: 0;
 
 		}
+	}
+}
+
+@col-live: #ff3a3a;
+
+
+.menu-businesslive {
+	line-height: 12px!important;
+	padding-top: 18px;
+	a {
+		line-height: 12px;
+		padding-left: 18px;
+		display: inline-block;
+		position: relative;
+		@media (max-width: @screen-sm-max) {
+			padding-left: 15px;
+		}
+		&:before {
+			background-color: #999;
+			border-radius: 50%;
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			left: 0;
+			top: 7px;
+			content: '';
+
+		}
+	}
+
+	span {
+		display: block;
+
+	}
+	&.is-live {
+		a {
+			
+			&:before {
+				background-color: @col-live;		
+				.blink
+			}
+		}
+	}
+
+}
+
+body:not(.make-fixed-menu) {
+	.menu-businesslive:before {
+		position: absolute;
+		left: 50%;
+		bottom: -10px;
+		margin-left: -8px;
+		width: 15px;
+		height: 15px;
+		background-color: @col-purple;
+		content: '';
+		transform: rotate(45deg);
 	}
 }
 
@@ -2806,8 +2898,13 @@ h1.deck-header {
 .rat-tail {
 	position: relative;
 	// display: none;
-	width: 960px;
+	width: 1260px;
+	@media (max-width: @screen-md-max) {
+		width: 1000px;
+	}
 	height: 180px;
+	text-align: center;
+	background-color: #7dc5e1;
 	margin: 0 -10px 10px;
 	.hidden-xs;
 	.hidden-sm;
