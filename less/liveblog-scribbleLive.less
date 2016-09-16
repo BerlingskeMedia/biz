@@ -41,28 +41,20 @@
 }
 
 
-.live-content {
-	background-color: #fdeee9;
-	padding: 2rem;
-	margin-bottom: 2rem;
-}
 
-.Meta {
-	width: 130px;
-	float: left;
-	margin-left: -130px;
-	font-size: 12px;
-}
-.live-blog,
+
+
+
 .Posts {
+	background-color: #fdeee9;
 	list-style: none;
 	padding: 0;
 	position: relative;
 	
-	> [class*="live-item"] {
+	> li {
 		border-bottom: 1px solid rgba(0,0,0,.15);
 		margin: 0 0 2rem 0;
-		padding: 0 0 2rem 0;
+		padding: 1rem 1rem 2rem;
 		
 		p + p {
 			font-size: 14px;
@@ -70,9 +62,8 @@
 		p:last-child {
 			margin-bottom: 0;
 		}
-		&>img {
-			margin-left: -100px;
-			float: left;
+		&.Focus {
+			background-color: rgba(255,255,255,.1);
 		}
 	}
 	.live-item__header {
