@@ -296,7 +296,7 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 .nav-stock {
 	display: inline-block;
 	font-weight: 600;
-	font-size: 12px;
+	font-size: 11px;
 	color: #333;
 	text-align: right;
 	
@@ -325,7 +325,7 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 	
 	}
 }
-.menu-businesslive a,
+
 .menu-menu a,
 .menu-search a {
 	padding-top: 22px;
@@ -345,7 +345,6 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 	line-height: 29px;
 	font-weight: 300;
 	font-size: 30px;
-	padding-left: 10px;
 	color: @col-green;
 	text-align: left;
 	
@@ -354,7 +353,7 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 		font-size: 19px;
 		font-style: normal;
 		font-weight: 600;
-		padding-left: 5px;
+		padding-left: 1px;
 	}
 	&.negative {
 		color: @col-red;
@@ -377,11 +376,10 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 
 
 .menu-businesslive {
-	
-	
 	a {
-		line-height: 12px;
-		padding-left: 18px;
+		padding-top: 23px;
+		line-height: 1;
+		padding-left: 11px;
 		display: inline-block;
 		position: relative;
 		@media (max-width: @screen-sm-max) {
@@ -392,28 +390,22 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 		&:before {
 			background-color: #999;
 			border-radius: 50%;
-			width: 10px;
-			height: 10px;
+			width: 12px;
+			height: 12px;
 			position: absolute;
-			left: 0;
-			top: 23px;
+			left: -5px;
+			top: 24px;
 			content: '';
-
 		}
 	}
-	
-
 
 	.beta {
 		font-weight: 300;
 		color: @col-live;
-		font-size: 9px;
-	}
-	
-	
-	.beta {
+		font-size: 7px;
 		display: block;
 	}
+	
 }
 .is-live {
 	.menu-businesslive 
