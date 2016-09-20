@@ -375,6 +375,7 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 @col-live: #ff3a3a;
 
 
+
 .menu-businesslive {
 	a {
 		padding-top: 23px;
@@ -382,11 +383,7 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 		padding-left: 11px;
 		display: inline-block;
 		position: relative;
-		@media (max-width: @screen-sm-max) {
-			padding-left: 15px;
-			line-height: 1;
-			padding-top: 21px;
-		}
+		
 		&:before {
 			background-color: #999;
 			border-radius: 50%;
@@ -396,6 +393,15 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 			left: -5px;
 			top: 24px;
 			content: '';
+		}
+		@media (max-width: @screen-sm-max) {
+			padding-left: 15px;
+			line-height: 1;
+			padding-top: 21px;
+			&:before {
+				left: -2px;
+				top: 21px;	
+			}
 		}
 	}
 
