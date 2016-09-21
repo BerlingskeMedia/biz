@@ -12430,11 +12430,21 @@ slideUp
 }
 [class*="live-item"] .Content > blockquote {
   margin: 20px 0;
-  padding-top: 0;
-  padding-left: 40px;
+  padding: 10px 10px 10px 60px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+[class*="live-item"] .Content > blockquote:before {
+  opacity: .2;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  top: 10px;
+  left: 5px;
 }
 [class*="live-item"] .Content > blockquote > div {
   font-size: 15px;
+  min-height: 40px;
 }
 @media (max-width: 1023px) {
   .business-live-teaser {
