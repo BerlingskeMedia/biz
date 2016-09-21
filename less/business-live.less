@@ -23,7 +23,7 @@
 	background-color: @col-purple;
 	line-height: 50px;
 	height: 50px;
-	font-size: 16px;
+	font-size: 14px;
 	color: #fff;
 	font-weight: 700;
 	a {
@@ -62,6 +62,25 @@
 			vertical-align: middle;
 		}
 	}
+}
+
+.liveheader-small {
+	line-height: 34px;
+	height: 34px;
+	font-size: 14px;
+	.livelabel {
+		line-height: 21px;
+		height: 21px;
+		padding: 0 .8rem 0 .5rem;
+		margin: 7px 1rem 0 7px;
+	}
+	.hostoftheday {
+		line-height: 34px;
+		img {
+			top: 2px;
+		}
+	}
+
 }
 .livelabel.livelabel-offline {
 	background-color: darken(#444, 0%);
@@ -288,16 +307,40 @@
 }
 
 
+@font-size: 14px;
+@line-height: 1.2;
+@lines-to-show: 3;
 
 
+.live-blog-frontpage {
+	.Content > div {
+		display: block; /* Fallback for non-webkit */
+		display: -webkit-box;
+		height: (@font-size*@line-height*@lines-to-show); /* Fallback for non-webkit */
+		margin: 0;
+		font-size: @font-size;
+		line-height: @line-height;
+		-webkit-line-clamp: @lines-to-show;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 
+}
 
-
-
-
-
-
-
+.live-content {
+	position: relative;
+}
+.live-link {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 1;
+	display: block;
+	z-index: 99;
+}
 
 @media (max-width: @screen-sm-max) {
 
@@ -352,19 +395,23 @@
 }
 
 @media (min-width: @screen-lg) {
-	.live-blog {
-		padding-left: 170px;
 		
+	
+	
+	
+
+	.live-blog {
+		padding-left: 170px;	
 		&:before {
 			left: 145px;
 			top: -5px;
 		}
-	}
-	.live-blog > li {
-		position: relative;
-		&:before {
-			top: 1px;
-			left: -33px;
+		&> li {
+			position: relative;
+			&:before {
+				top: 1px;
+				left: -33px;
+			}
 		}
 	}
 
@@ -374,5 +421,36 @@
 		margin-left: -170px;
 		position: absolute;
 		top: 5px;
-	}	
+	}
+
+	.live-blog-frontpage {
+		padding-left: 100px;
+		[class*="live-item"] {
+			padding-bottom: 1rem;
+			margin-bottom: 1rem;
+			&:last-child {
+				border-bottom: 0;
+			}
+		}	
+		&:before {
+			left: 76px;
+			top: -3px;
+		}
+
+		
+		&> li {
+			position: relative;
+			&:before {
+				top: -2px;
+				left: -33px;
+			}
+		}
+		.Meta {
+			width: 90px;
+			float: left;
+			margin-left: -90px;
+			position: absolute;
+			top: 1px;
+		}
+	}
 }

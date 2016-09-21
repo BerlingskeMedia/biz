@@ -12205,7 +12205,7 @@ slideUp
   background-color: #a10e4b;
   line-height: 50px;
   height: 50px;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
   font-weight: 700;
 }
@@ -12244,10 +12244,28 @@ slideUp
   height: auto;
   vertical-align: middle;
 }
+.liveheader-small {
+  line-height: 34px;
+  height: 34px;
+  font-size: 14px;
+}
+.liveheader-small .livelabel {
+  line-height: 21px;
+  height: 21px;
+  padding: 0 .8rem 0 .5rem;
+  margin: 7px 1rem 0 7px;
+}
+.liveheader-small .hostoftheday {
+  line-height: 34px;
+}
+.liveheader-small .hostoftheday img {
+  top: 2px;
+}
 .livelabel.livelabel-offline {
   background-color: #444444;
   color: #808080;
   margin-right: 10px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 .business-live-teaser {
   display: none;
@@ -12446,6 +12464,33 @@ slideUp
   font-size: 15px;
   min-height: 40px;
 }
+.live-blog-frontpage .Content > div {
+  display: block;
+  /* Fallback for non-webkit */
+  display: -webkit-box;
+  height: 50.4px;
+  /* Fallback for non-webkit */
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.2;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.live-content {
+  position: relative;
+}
+.live-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  display: block;
+  z-index: 99;
+}
 @media (max-width: 1023px) {
   .business-live-teaser {
     font-size: 13px;
@@ -12510,6 +12555,34 @@ slideUp
     margin-left: -170px;
     position: absolute;
     top: 5px;
+  }
+  .live-blog-frontpage {
+    padding-left: 100px;
+  }
+  .live-blog-frontpage [class*="live-item"] {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  .live-blog-frontpage [class*="live-item"]:last-child {
+    border-bottom: 0;
+  }
+  .live-blog-frontpage:before {
+    left: 76px;
+    top: -3px;
+  }
+  .live-blog-frontpage > li {
+    position: relative;
+  }
+  .live-blog-frontpage > li:before {
+    top: -2px;
+    left: -33px;
+  }
+  .live-blog-frontpage .Meta {
+    width: 90px;
+    float: left;
+    margin-left: -90px;
+    position: absolute;
+    top: 1px;
   }
 }
 body.billede {

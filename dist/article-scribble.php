@@ -64,9 +64,7 @@
                                         
 
                                         
-                                            <p>Vores liveblog hvor vi bringer de seneste nyheder fra de globale
-                                                markeder, økonomi og store begivenheder indenfor finansverdenen og bla bla bla.
-                                                Vores team sidder klar ved tasterne på hverdage fra kl. 7 - 23</p>
+                                            <p>Vær konstant opdateret på seneste nyt og de bedste historier om børsmarkedet, økonomi og finans fra Danmark og globalt på hverdage fra kl. 7 til 18.</p>
                                         </div>
                                     </div>
 

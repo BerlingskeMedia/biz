@@ -133,7 +133,80 @@
         
       <div class="col-md-8 col-sm-8">
 
-       <article class="teaser header-40 teaser-margin-bottom-0 teaser-solid teaser-background-img-tall  module-sm">
+        <?php 
+        if(isset($_GET["live"])) {
+            $live = true;
+          }
+         ?>
+      <?php if($live) : ?>
+      <div class="liveheader liveheader-small">
+      <span class="livelabel"><i class="fa fa-circle zoomfade"></i> LIVE</span>
+      <span class="timeofday">14.40.03</span>
+      <span class="hostoftheday">
+        <span>Nyhedsvært:</span> <a href="mailto:jst@berlingskemedia.dk">Bent Højgaard Sørensen</a>
+      <img src="http://dummy.medieimperium.dk/cache/6188256_jetc_byline_40x40.jpg" width="" height="" alt="">
+      </span>
+      </div>
+      <?php else: ?>
+      <div class="liveheader">
+        <span class="livelabel livelabel-offline">OFFLINE</span>
+        Opdateres hverdage mellem 7 og 18.
+      </div>
+      <?php endif; ?>
+      
+      <div class="live-content">
+        <a href="article-scribble.php?live" class="live-link"></a>
+        <ul class="live-blog live-blog-frontpage">
+          <li id="367566086" class="live-item-text">
+          <img src="https://avatars.scribblelive.com/2016/9/20/ef697ff0-74ca-4fb6-97d9-8c976efe4975.png" class="">
+          <div class="Content">
+            <div>Dansk dele- og elbil vil revolutionere hele transportbranchen. Designet er utraditionelt og ambitionerne store. Det kan blive enden til privatbilismen, siger direktøren.</div>
+          </div>
+          <div class="Meta">14.23.53</div>
+          </li>
+          <li id="367566086" class="live-item-text">
+          <img src="https://avatars.scribblelive.com/2016/9/20/ef697ff0-74ca-4fb6-97d9-8c976efe4975.png" class="">
+          <div class="Content">
+            <div>Fra sommerferien 2017 er det helt slut med at skulle betale overpriser for at bruge telefonen eller computeren på ferie i andre EU-lande. Hvis det misbruges, kan man dog få en ekstraregning.</div>
+          </div>
+          <div class="Meta">14.23.53</div>
+          </li>
+
+          <li id="367566086" class="live-item-text">
+          <img src="https://avatars.scribblelive.com/2016/9/20/ef697ff0-74ca-4fb6-97d9-8c976efe4975.png" class="">
+          <div class="Content">
+            <div>Uanset om man læser Forbes Magazine, Harvard Business Review eller FastCompany står det klart, at fremtidens mest succesfulde virksomheder på samme tid formår at forbedre eksisterende produkter og udvikle nye forretningsmodeller.</div>
+          </div>
+          <div class="Meta">14.23.53</div>
+          </li>
+        </ul>
+      </div>
+
+      
+
+
+      <article class="teaser teaser-margin-bottom-0 teaser-solid   module-sm header-30 teaser-border-top-thick margin-top-0 ">
+          
+          <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@732x,16:9") ?>" width="" height="" alt="" /></a></figure>
+          <div class="teaser-body">
+            
+            <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
+            <? dummy("text@biz-headertags") ?>
+              <h2 class="header">
+              <a href="article.php"><? dummy("text@headline") ?>
+              <? if (dumb_luck("25%")): ?><? dummy("text@biz-external-href") ?><? endif ?>
+              </a></h2>  
+            <p><? dummy("text@teaser") ?></p>
+            <ul class="related">
+          <? while (dumb_luck("1-3")): ?>
+          <? dummy("text@biz-related") ?>
+          <? endwhile ?>
+        </ul>
+            </div>
+      </article>
+
+
+      <!--  <article class="teaser header-40 teaser-margin-bottom-0 teaser-solid teaser-background-img-tall  module-sm">
             <a href="article.php"><figure class="teaser-img" style="background-image: url(<? dummy("image@1000x,1:1") ?>);"></figure></a>
             <div class="teaser-body">
             <footer><a href="section.php" class="cat"><? dummy("text@biz-cat") ?></a> <time><? dummy("text@time-ago-short") ?></time></footer>
@@ -150,7 +223,7 @@
             </ul>
             <? endif ?>
             </div>
-          </article>
+          </article> -->
 
 
 
