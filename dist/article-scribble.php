@@ -59,11 +59,11 @@
             
                                 <header class="liveblog-header">
                                     <div class="row">
-                                        <div class="col-sm-12 col-md-3">
-                                            <h1>BusinessLive</h1>
-                                        </div>
+                                        <div class="col-sm-12">
+                                            <h1 class="business-live-title">Business <span>Live</span></h1>
+                                        
 
-                                        <div class="col-sm-12 col-md-9">
+                                        
                                             <p>Vores liveblog hvor vi bringer de seneste nyheder fra de globale
                                                 markeder, økonomi og store begivenheder indenfor finansverdenen og bla bla bla.
                                                 Vores team sidder klar ved tasterne på hverdage fra kl. 7 - 23</p>
