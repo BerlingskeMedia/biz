@@ -229,7 +229,7 @@ $stock_change = mt_rand(0,250)/100;
               
               </a>
             </li>
-            <li class="menu-businesslive nav-button <?php if($live): ?>is-live<?php endif; ?> "><a href="#" title="Business Live"> Live <span class="beta">Beta</span></a></li>
+            <li class="menu-businesslive nav-button <?php if($live): ?>is-live<?php endif; ?> "><a href="article-scribble.php" title="Business Live"> Live <span class="beta">Beta</span></a></li>
             <li class="menu-menu nav-button"><a href="#" class="btn-toggle-nav"><i class="fa fa-bars"></i> <span class="hidden-sm hidden-xs">Indhold</span></a></li>
             <li class="menu-search nav-button hidden-xs"><a href="#" title="Søg"><i class="fa fa-search"></i> <span>Søg</span></a></li>
           </ul>
