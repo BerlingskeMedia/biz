@@ -141,14 +141,14 @@
       <?php if($live) : ?>
       <div class="liveheader liveheader-small">
       <span class="livelabel"><i class="fa fa-circle zoomfade"></i> LIVE</span>
-      <span class="timeofday">14.40.03</span>
+      <span class="timeofday">14.40</span>
       <span class="hostoftheday">
         <span>Nyhedsvært:</span> <a href="mailto:jst@berlingskemedia.dk">Bent Højgaard Sørensen</a>
       <img src="http://dummy.medieimperium.dk/cache/6188256_jetc_byline_40x40.jpg" width="" height="" alt="">
       </span>
       </div>
       <?php else: ?>
-      <div class="liveheader">
+      <div class="liveheader liveheader-small">
         <span class="livelabel livelabel-offline">OFFLINE</span>
         Opdateres hverdage mellem 7 og 18.
       </div>
@@ -162,14 +162,14 @@
           <div class="Content">
             <div>Dansk dele- og elbil vil revolutionere hele transportbranchen. Designet er utraditionelt og ambitionerne store. Det kan blive enden til privatbilismen, siger direktøren.</div>
           </div>
-          <div class="Meta">14.23.53</div>
+          <div class="Meta">14.23</div>
           </li>
           <li id="367566086" class="live-item-text">
           <img src="https://avatars.scribblelive.com/2016/9/20/ef697ff0-74ca-4fb6-97d9-8c976efe4975.png" class="">
           <div class="Content">
             <div>Fra sommerferien 2017 er det helt slut med at skulle betale overpriser for at bruge telefonen eller computeren på ferie i andre EU-lande. Hvis det misbruges, kan man dog få en ekstraregning.</div>
           </div>
-          <div class="Meta">14.23.53</div>
+          <div class="Meta">14.23</div>
           </li>
 
           <li id="367566086" class="live-item-text">
@@ -177,9 +177,12 @@
           <div class="Content">
             <div>Uanset om man læser Forbes Magazine, Harvard Business Review eller FastCompany står det klart, at fremtidens mest succesfulde virksomheder på samme tid formår at forbedre eksisterende produkter og udvikle nye forretningsmodeller.</div>
           </div>
-          <div class="Meta">14.23.53</div>
+          <div class="Meta">14.23</div>
           </li>
         </ul>
+        <div class="footer text-center">
+          <button class="btn btn-sm btn-live">Gå til live <i class="fa fa-caret-right blink"></i></button>
+        </div>
       </div>
 
       
