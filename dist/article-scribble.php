@@ -87,8 +87,8 @@
                               </div>
                               <?php else: ?>
                               <div class="liveheader">
-                                <span class="livelabel livelabel-offline"> OFFLINE</span>
-                                Opdateres alle hverdage mellem 7 og 18.
+                                <span class="livelabel livelabel-offline">OFFLINE</span>
+                                Opdateres hverdage mellem 7 og 18.
                               </div>
                               <?php endif; ?>
 
