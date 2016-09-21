@@ -1,6 +1,11 @@
 <? require_once("../../dummy/dummy.php") ?>
 
-<?php $imageSize = rand(0,2); ?>
+<?php $imageSize = rand(0,2); 
+
+if(isset($_GET["live"])) {
+    $live = true;
+  }
+ ?>
 
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9" lang="da"> <![endif]-->
@@ -10,7 +15,7 @@
     <title>Business.dk</title>
     <?php include("./inc/head.php"); ?> 
   </head>
-  <body class="is-live">
+  <body>
 
 
 
@@ -22,6 +27,7 @@
 
   <?php include("./inc/header.php"); ?>
 
+  <?php if($live): ?>
   <div class="business-live-teaser">
     <div class="container-main-header">
       <div class="row">
@@ -31,6 +37,7 @@
       </div>
     </div>
   </div>
+  <?php endif; ?>
   <div class="container">
 
 
@@ -133,11 +140,7 @@
         
       <div class="col-md-8 col-sm-8">
 
-        <?php 
-        if(isset($_GET["live"])) {
-            $live = true;
-          }
-         ?>
+      
       <?php if($live) : ?>
       <div class="liveheader liveheader-small">
       <span class="livelabel"><i class="fa fa-circle zoomfade"></i> LIVE</span>
@@ -180,9 +183,11 @@
           <div class="Meta">14.23</div>
           </li>
         </ul>
+              <?php if($live) : ?>
         <div class="footer text-center">
           <button class="btn btn-sm btn-live">Gå til live <i class="fa fa-caret-right blink"></i></button>
         </div>
+      <?php endif; ?>
       </div>
 
       

@@ -6442,18 +6442,7 @@ figcaption,
   font-size: 7px;
   display: block;
 }
-.is-live .menu-businesslive a:before {
-  background-color: #ff3a3a;
-  animation-name: blink;
-  -webkit-animation-name: blink;
-  animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  animation-timing-function: ease;
-  -webkit-animation-timing-function: ease;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-}
-body.is-live:not(.make-fixed-menu) .menu-businesslive:before {
+.menu-businesslive.is-live:before {
   position: absolute;
   left: 50%;
   bottom: -10px;
@@ -6463,6 +6452,17 @@ body.is-live:not(.make-fixed-menu) .menu-businesslive:before {
   background-color: #a10e4b;
   content: '';
   transform: rotate(45deg);
+}
+.menu-businesslive.is-live a:before {
+  background-color: #ff3a3a;
+  animation-name: blink;
+  -webkit-animation-name: blink;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
 }
 .nav-button {
   font-weight: 600;
@@ -12310,12 +12310,11 @@ slideUp
 }
 .livelabel.livelabel-offline {
   background-color: #444444;
-  color: #808080;
+  color: #eee;
   margin-right: 10px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 .business-live-teaser {
-  display: none;
   background-color: #a10e4b;
   height: 35px;
   line-height: 35px;
@@ -12334,9 +12333,6 @@ slideUp
 }
 .business-live-teaser a:hover {
   text-decoration: underline;
-}
-.is-live .business-live-teaser {
-  display: block;
 }
 .Content > div {
   margin-bottom: 10px;
@@ -12644,7 +12640,7 @@ slideUp
     float: left;
     margin-left: -70px;
     position: absolute;
-    top: 1px;
+    top: 0;
   }
 }
 body.billede {

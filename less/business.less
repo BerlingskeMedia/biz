@@ -413,18 +413,9 @@ h1, h2, h3, h4, div, span, strong, i, em, form, figcaption, .subscription-logo, 
 	}
 	
 }
-.is-live {
-	.menu-businesslive 
-	a {
-		&:before {
-			background-color: @col-live;		
-			.blink
-		}
-	}
-}
 
-body.is-live:not(.make-fixed-menu) {
-	.menu-businesslive:before {
+	.menu-businesslive.is-live {
+	&:before {
 		position: absolute;
 		left: 50%;
 		bottom: -10px;
@@ -435,7 +426,16 @@ body.is-live:not(.make-fixed-menu) {
 		content: '';
 		transform: rotate(45deg);
 	}
+	a {
+		&:before {
+			background-color: @col-live;		
+			.blink
+		}
+	}
+
 }
+
+
 
 .nav-button {
 	font-weight: 600;
