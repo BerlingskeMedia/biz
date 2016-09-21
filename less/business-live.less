@@ -4,6 +4,12 @@
 	span {
 		color: @col-purple;
 	}
+	.beta {
+		color: #666;
+		font-weight: 300;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
 }
 .liveblog-header {
 	border-top: 4px solid #333;
@@ -20,8 +26,9 @@
 	font-size: 16px;
 	color: #fff;
 	font-weight: 700;
-	span {
-		
+	a {
+		color: #fff;
+		text-decoration: underline;
 	}
 	.livelabel {
 		line-height: 30px;
@@ -36,21 +43,12 @@
 		display: inline-block;
 	}
 	.hostoftheday {
-		
 		line-height: 1;
-		
 		display: inline-block;
 		float: right;
 		padding-right: 40px;
 		line-height: 50px;
 		position: relative;
-		a {
-		
-		}
-		span {
-		
-		
-		}
 	
 		img {
 			float: right;
@@ -93,12 +91,7 @@
 		}
 	}
 }
-@media (max-width: @screen-sm-max) {
 
-	.business-live-teaser {
-		font-size: 13px;
-	}
-}
 
 .is-live .business-live-teaser {
 	display: block
@@ -272,8 +265,17 @@
 			height: 100%;
 		}
 	}
-	.Content > blockquote > div {
-		font-size: 20px;
+	.Content > blockquote {
+		margin: 20px 0;
+		padding-top: 0;
+		padding-left: 40px;
+		&:before {
+
+		}
+		&> div {
+			font-size: 15px;
+
+		}
 	}
 }
 
@@ -290,6 +292,11 @@
 
 
 @media (max-width: @screen-sm-max) {
+
+	.business-live-teaser {
+		font-size: 13px;
+	}
+
 	.business-live-title + p {
 		font-size: 14px;
 	}

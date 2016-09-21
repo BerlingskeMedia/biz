@@ -6375,7 +6375,7 @@ figcaption,
   height: 12px;
   position: absolute;
   left: -5px;
-  top: 24px;
+  top: 22px;
   content: '';
 }
 @media (max-width: 1023px) {
@@ -6391,7 +6391,7 @@ figcaption,
 }
 .menu-businesslive .beta {
   font-weight: 300;
-  color: #ff3a3a;
+  color: #666;
   font-size: 7px;
   display: block;
 }
@@ -12187,6 +12187,12 @@ slideUp
 .business-live-title span {
   color: #a10e4b;
 }
+.business-live-title .beta {
+  color: #666;
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+}
 .liveblog-header {
   border-top: 4px solid #333;
   padding-top: 10px;
@@ -12202,6 +12208,10 @@ slideUp
   font-size: 16px;
   color: #fff;
   font-weight: 700;
+}
+.liveheader a {
+  color: #fff;
+  text-decoration: underline;
 }
 .liveheader .livelabel {
   line-height: 30px;
@@ -12259,11 +12269,6 @@ slideUp
 }
 .business-live-teaser a:hover {
   text-decoration: underline;
-}
-@media (max-width: 1023px) {
-  .business-live-teaser {
-    font-size: 13px;
-  }
 }
 .is-live .business-live-teaser {
   display: block;
@@ -12423,10 +12428,18 @@ slideUp
   width: 100%;
   height: 100%;
 }
+[class*="live-item"] .Content > blockquote {
+  margin: 20px 0;
+  padding-top: 0;
+  padding-left: 40px;
+}
 [class*="live-item"] .Content > blockquote > div {
-  font-size: 20px;
+  font-size: 15px;
 }
 @media (max-width: 1023px) {
+  .business-live-teaser {
+    font-size: 13px;
+  }
   .business-live-title + p {
     font-size: 14px;
   }

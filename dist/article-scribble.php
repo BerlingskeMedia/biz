@@ -60,7 +60,7 @@
                                 <header class="liveblog-header">
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <h1 class="business-live-title">Business <span>Live</span></h1>
+                                            <h1 class="business-live-title">Business <span>Live <span class="beta">Beta</span></span></h1>
                                         
 
                                         
