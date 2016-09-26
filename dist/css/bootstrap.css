@@ -12643,6 +12643,103 @@ slideUp
     top: 0;
   }
 }
+.adblocker {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(250, 220, 210, 0.95);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+.adblocker-content {
+  padding: 3rem;
+  width: 900px;
+  max-width: 90%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: #fadcd2;
+  margin: 10px auto 50px;
+  position: relative;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.2s cubic-bezier(0.06, 1.03, 0.84, 1.18);
+  transition-delay: .5s;
+  border-radius: 2px;
+  -webkit-transform: translate3d(0, -20px, 0);
+  transform: translate3d(0, -20px, 0);
+}
+.adblocker-content h3 {
+  clear: both;
+  font-size: 70px;
+  font-family: berlingske;
+  line-height: 1.1;
+  margin: 0 0 2rem 0;
+}
+.adblocker-content p {
+  font-size: 21px;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+}
+.adblocker-content .toggle-adblock {
+  color: rgba(0, 0, 0, 0.6);
+  bottom: -3rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: absolute;
+  display: block;
+  font-size: 13px;
+  text-decoration: underline;
+}
+.adblocker-content .toggle-adblock:hover {
+  color: #222;
+}
+.adblocker-logo {
+  width: 100%!important;
+  height: 40px;
+  background-position: center center;
+  background-size: contain;
+  margin: 0 0 20px;
+}
+.show-adblocker {
+  overflow: hidden;
+}
+.show-adblocker .adblocker {
+  opacity: 1;
+  visibility: visible;
+}
+.show-adblocker .adblocker .adblocker-content {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  visibility: visible;
+}
+@media (max-width: 1023px) {
+  .adblocker {
+    display: block;
+  }
+  .adblocker-content {
+    padding: 1rem;
+  }
+  .adblocker-content h3 {
+    font-size: 30px;
+  }
+  .adblocker-content p {
+    font-size: 14px;
+  }
+  .adblocker-logo {
+    height: 30px;
+  }
+}
 body.billede {
   padding: 20px;
   background: #333;

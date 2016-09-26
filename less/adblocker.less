@@ -1,0 +1,108 @@
+
+.adblocker {
+	position: fixed;
+	overflow: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	width: 100vw;
+	overflow: auto;
+	z-index: 99999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: fade(@biz-pink, 95%);
+	// background-color: @biz-pink;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .2s ease;
+}
+
+.adblocker-content {
+	// box-shadow: 0 0 10px @biz-pink;
+	padding: 3rem;
+	width:900px;
+	max-width: 90%;
+	border: 1px solid rgba(0,0,0,.15);
+	background-color: @biz-pink;
+	margin:10px auto 50px;
+	position: relative;
+	text-align:center;
+	opacity: 0;
+	transition: all .2s cubic-bezier(.06,1.03,.84,1.18);
+	transition-delay: .5s;
+	border-radius: 2px;
+
+
+	.translate3d(0, -20px, 0);
+	h3 {
+		clear: both;
+		font-size: 70px;
+		font-family: berlingske;
+		line-height: 1.1;
+		margin:  0 0 2rem 0;
+	}
+
+	p {
+		font-size: 21px;
+		line-height: 1.2;
+		margin: 0 0 20px 0;
+	}
+	.toggle-adblock {
+		color: rgba(0,0,0,.6);
+		bottom: -3rem;
+		left: 0;
+		right: 0;
+		text-align: center;
+		position: absolute;
+		display: block;
+		font-size: 13px;
+		text-decoration: underline;
+		&:hover {
+			color: #222;
+		}
+	}
+}
+
+.adblocker-logo {
+	width: 100%!important;
+	height: 40px;
+	background-position: center center;
+	background-size: contain;
+	margin: 0 0 20px;
+}
+
+
+.show-adblocker {
+	overflow: hidden;
+	.adblocker {
+		opacity: 1;
+		visibility: visible;
+		.adblocker-content {
+			.translate3d(0, 0, 0);
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+@media (max-width: @screen-sm-max) {
+	.adblocker {
+		display: block;
+	}
+	.adblocker-content {
+		padding: 1rem;
+
+		h3 {
+			font-size: 30px;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+	.adblocker-logo {
+		height: 30px;
+	}
+}

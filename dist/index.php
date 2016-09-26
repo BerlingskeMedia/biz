@@ -1026,14 +1026,32 @@ if(isset($_GET["live"])) {
   </div><!-- container -->
     
 
-
+  
 
   <?php include("./inc/footer.php"); ?>
 
+  <button class="toggle-adblock">Toggle adblocker</button>
+  
+  <div class="adblocker">
+    <div class="adblocker-content">
+      <div class="logo-business adblocker-logo"></div>
+      <h3>Hov! Hvor blev min artikel af..!?</h3>
+      <p>Vi kan se, at du har installeret en adblocker, så vi ikke kan vise dig annoncer.</p>
+      <p>Det er vi kede af, fordi indtægter fra annoncer er en helt afgørende årsag til, at vi dagligt kan tilbyde dig journalistik af høj kvalitet.</p>
+      <p>For få adgang til indhold på business.dk skal du tillade visning af annoncer på business.dk. <strong><a href="#">Se hvordan du gør her</a></strong>.</p>
+      <p>Tak for din forståelse.</p>
+      <a href="#" class="toggle-adblock">Tilbage til artiklen</a>
+    </div>
+  </div>
   <script>
     $('.btn-subscription').click(function(){
       $('body').toggleClass('is-live');
-    })
+    });
+
+    $('.toggle-adblock').click(function(e){
+      e.preventDefault();
+      $('body').toggleClass('show-adblocker');
+    });
   </script>
 
     
