@@ -174,7 +174,7 @@
 
          <ul class="pull-right nav-tools hidden-xs">
           <li><a href="#" class="sosume">Privatlivspolitik</a></li>
-          <li class="social-icons"><a href="#" title="Følg os via Facebook"><i class="fa fa-facebook"></i></a> <a href="#" title="Følg os via Twitter"><i class="fa fa-twitter"></i></a> <a href="#" title="Følg os via LinkedIn"><i class="fa fa-linkedin"></i></a></li>  
+          <!-- <li class="social-icons"><a href="#" title="Følg os via Facebook"><i class="fa fa-facebook"></i></a> <a href="#" title="Følg os via Twitter"><i class="fa fa-twitter"></i></a> <a href="#" title="Følg os via LinkedIn"><i class="fa fa-linkedin"></i></a></li>   -->
           <? if (dumb_luck("50%")): ?>
           <li class="menu-login"><a href="page-profile.php" class="username"><i class="fa fa-user"></i> <? dummy("text@author") ?></a> <a href="#" class="btn-login" title="Log ud" >Log ud <i class="fa fa-caret-right"></i></a></li>
           <? else: ?>
@@ -204,34 +204,72 @@ $stock_change = mt_rand(0,250)/100;
   <div class="row">
     <div class="header-bottom col-md-12">
         <a href="./" class="logo-business">Business</a>
-        
+  
         
         <nav class="site-nav">
+<!-- <a href="http://www.business.dk/investor/aktier" class="nav-stock">
+<span class="stock-title">OMX C20CAP</span>
+<span class="stock-value"><? if (dumb_luck("50%")): ?><span>Lukket</span><? endif ?> 1032,21</span>
+
+
+<li class="menu-businesslive nav-button <?php if($live): ?>is-live<?php endif; ?> "><a href="article-scribble.php" title="Business Live"> Live <span class="beta">Beta</span></a></li>
+<li class="menu-menu nav-button"><a href="#" class="btn-toggle-nav"><i class="fa fa-bars"></i> <span class="hidden-sm hidden-xs">Indhold</span></a></li>
+<li class="menu-search nav-button hidden-sm hidden-xs"><a href="#" title="Søg"><i class="fa fa-search"></i> <span>Søg</span></a></li> -->
+        
+
+        
           
+        
 
-          
-
-          <ul class="main-nav nav-tools">
-            <li class="menu-stock">
-              <a href="http://www.business.dk/investor/aktier" class="nav-stock">
-                
-                <div class="stock-container hidden-xs">
-                  <span class="stock-title">OMX C20CAP</span>
-                  <span class="stock-value"><? if (dumb_luck("50%")): ?><span>Lukket</span><? endif ?> 1032,21</span>
-                </div>
-
-                <div class="stock-container-xs visible-xs">
-                  <span class="stock-title">C20 CAP</span><br>
-                  <span class="stock-change <? if (dumb_luck("50%")): ?>negative<? endif ?>" ><?php echo $stock_change; ?><i>%</i></span>
-                </div>
-
-                <span class="hidden-xs stock-change  <? if (dumb_luck("50%")): ?>negative<? endif ?>" id="stock-count"><b></b><?php echo $stock_change; ?><i>%</i></span>
+          <ul class="main-nav">
+           
               
+            <li class="nav-stock">
+              <a href="#">
+                <? if (dumb_luck("50%")): ?>
+                <span class="stock-quote negative">
+                  -<?php echo $stock_change; ?>%
+                </span>
+                <? else: ?>
+                <span class="stock-quote">
+                  <?php echo $stock_change; ?>%
+                </span>
+                <? endif ?>
+                <span class="stock-title">
+                  <div>OMX C20CAP</div>
+                  <div>1032,21 <? if (dumb_luck("50%")): ?>- LUKKET<? endif ?></div>
+                </span>
               </a>
             </li>
-            <li class="menu-businesslive nav-button <?php if($live): ?>is-live<?php endif; ?> "><a href="article-scribble.php" title="Business Live"> Live <span class="beta">Beta</span></a></li>
-            <li class="menu-menu nav-button"><a href="#" class="btn-toggle-nav"><i class="fa fa-bars"></i> <span class="hidden-sm hidden-xs">Indhold</span></a></li>
-            <li class="menu-search nav-button hidden-sm hidden-xs"><a href="#" title="Søg"><i class="fa fa-search"></i> <span>Søg</span></a></li>
+                
+            <li class="nav-live is-live">
+              <a href="#" class="">
+                LIVE
+                <span class="beta">BETA</span>
+              </a>
+            </li>
+
+            <li class="nav-latest menu-latest hidden-xs">
+              <a href="#" class="">
+                <i class="fa fa-clock-o"></i>
+                <span class="hidden-xs">Seneste nyt</span>
+              </a>
+            </li>
+
+            <li class="nav-search hidden-xs menu-search  ">
+              <a href="#" title="Søg"><i class="fa fa-search"></i> <span>Søg</span></a>
+            </li>
+            
+            <li class="nav-content">
+              <a href="#" class="btn-toggle-nav">
+                <i class="fa fa-bars"></i>
+                <span class="hidden-xs">Indhold</span>
+              </a>
+            </li>
+
+            
+            
+            
           </ul>
         
         </nav>
@@ -251,12 +289,22 @@ $stock_change = mt_rand(0,250)/100;
 </div><!-- search -->
 
 
-  </div>
+  </div><!-- row -->
 
 
 
-  </div>
+  </div><!-- container-main-header -->
 </div>
+
+<div class="business-live-teaser">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <a href="#"><time>10.23</time> Selskabet bag Bendtners underbukser sætter kursrekord</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 

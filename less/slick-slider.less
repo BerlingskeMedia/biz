@@ -125,64 +125,65 @@
 
 /* Arrows */
 //
-//.slick-prev,
-//.slick-next {
-//    position: absolute;
-//    display: block;
-//    height: 30px;
-//    width: 30px;
-//    line-height: 0;
-//    font-size: 0;
-//    cursor: pointer;
-//    background: rgba(255,255,255,.6);
-//    color: transparent;
-//    bottom: 0;
-//    padding: 0;
-//    border: none;
-//    outline: none;
-//    .transition(all .1s ease);
-//    &:hover{
-//      outline: none;
-//      background: rgba(255,255,255,.8);
-//      color: transparent;
-//      &:before {
-//        opacity: @slick-opacity-on-hover;
-//      }
-//    }
-//    &:focus {
-//      outline: none;
-//      color: transparent;
-//
-//    }
-//
-//    &.slick-disabled:before {
-//        opacity: @slick-opacity-not-active;
-//    }
-//}
-//.slick-prev:before,
-//.slick-next:before {
-//    font-family: fontawesome;
-//    font-size: 30px;
-//    line-height: 1;
-//    color: #333;
-//    -webkit-font-smoothing: antialiased;
-//    -moz-osx-font-smoothing: grayscale;
-//}
-//.slick-prev {
-//    right: 30px;
-//
-//    &:before {
-//        content: '\f104';
-//
-//    }
-//}
-//.slick-next {
-//    right: 0;
-//
-//    &:before {
-//        content: '\f105';
-//    }
-//}
+.slick-prev,
+.slick-next {
+    position: absolute;
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 0;
+    font-size: 0;
+    cursor: pointer;
+    background: rgba(255,255,255,.6) none repeat scroll 0 0;
+    color: transparent;
+    bottom: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    .transition(all .1s ease);
+    &:hover{
+      outline: none;
+      background: rgba(255,255,255,.8);
+      color: transparent;
+      &:before {
+        opacity: @slick-opacity-on-hover;
+      }
+    }
+    &:focus {
+      outline: none;
+      color: transparent;
+
+    }
+
+    &.slick-disabled:before {
+        opacity: @slick-opacity-not-active;
+    }
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: fontawesome;
+    font-size: 30px;
+    line-height: 1;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev {
+    right: 30px;
+
+    &:before {
+        content: '\f104';
+
+    }
+}
+.slick-next {
+    right: 0;
+
+    &:before {
+        content: '\f105';
+    }
+}
 
 /* Dots */
 

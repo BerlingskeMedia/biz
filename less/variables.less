@@ -56,6 +56,7 @@
 @biz-3: 				#3795a0;
 @biz-tabs: 				#666;
 @biz-tabs-active:		@biz-1;
+@col-live: 				#ff3a3a;
 
 
 
@@ -324,17 +325,21 @@
 
 // Medium screen / desktop
 //** Deprecated `@screen-md` as of v3.0.1
-@screen-md:                  1024px;
+@screen-md:                  992px;
 @screen-md-min:              @screen-md;
 //** Deprecated `@screen-desktop` as of v3.0.1
 @screen-desktop:             @screen-md-min;
 
 // Large screen / wide desktop
 //** Deprecated `@screen-lg` as of v3.0.1
-@screen-lg:                  1600px;
+@screen-lg:                  1024px;
 @screen-lg-min:              @screen-lg;
 //** Deprecated `@screen-lg-desktop` as of v3.0.1
 @screen-lg-desktop:          @screen-lg-min;
+
+// XLarge screen
+@screen-xlg:                  1600px;
+@screen-xlg-min:              @screen-xlg;
 
 // So media queries don't overlap when required, provide a maximum
 @screen-xs-max:              (@screen-sm-min - 1);
@@ -374,9 +379,12 @@
 // Large screen / wide desktop
 @container-large-desktop:      (1240px + @grid-gutter-width);
 //** For `@screen-lg-min` and up.
-@container-lg:                 @container-large-desktop;
-// @container-lg:                 @container-desktop;
+//@container-lg:                 @container-large-desktop;
+@container-lg:                 @container-desktop;
 
+// XLarge screen
+// min-width: @screen-xlg-min
+@container-xlg:                (1240px + @grid-gutter-width);
 
 //== Navbar
 //

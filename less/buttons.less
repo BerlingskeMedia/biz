@@ -77,10 +77,6 @@
   .button-variant(#fff; #ff9900;);
 }
 
-.btn-live {
-  .button-variant(#fff; @col-purple;);
-}
-
 
 
 
@@ -193,4 +189,19 @@ input[type="button"] {
   font-weight: 600;
   line-height: 1.7;
 }
-  
+
+.m-button {
+  display: inline-block;
+  border-radius: 5px;
+  background: #17325A;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 25px;
+  vertical-align: middle;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  &.light {
+    background: #A5AAAF;
+    margin-left: 10px;
+  }
+}

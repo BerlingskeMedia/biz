@@ -1,0 +1,321 @@
+.gallery-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  z-index: 10020;
+}
+
+.gallery-overlay .gallery-list {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+}
+
+.gallery-overlay button {
+  outline: 0;
+}
+
+.gallery-overlay.show-caption .gallery-caption {
+  display: block;
+}
+
+.gallery-overlay .gallery-tools {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  background: #333;
+  font-size: 13px;
+  padding: 0 10px 0 20px;
+  opacity: 0;
+  -webkit-transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.3s;
+  transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.3s;
+}
+
+.gallery-overlay .gallery-caption {
+  text-align: left;
+  position: absolute;
+  bottom: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  z-index: 10;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  color: #ddd;
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.2s;
+  transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.2s;
+}
+
+.gallery-overlay .gallery-caption span {
+  color: #999;
+  font-weight: 700;
+}
+
+.gallery-overlay .gallery-caption p:last-child {
+  margin-bottom: 0;
+}
+
+.gallery-overlay .slick-active .gallery-caption,
+.gallery-overlay .slick-active .gallery-tools {
+  opacity: 1;
+  -webkit-transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.3s 0.5s;
+  transition: opacity cubic-bezier(0.4, 0, 1, 1) 0.3s 0.5s;
+}
+
+.gallery-overlay .gallery-counter {
+  color: #fff;
+  line-height: 40px;
+  display: inline-block;
+}
+
+.gallery-overlay .gallery-btn-show-caption {
+  background: rgba(255, 255, 255, 0.1);
+  border: 0 solid #999;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ddd;
+  margin: 0 20px;
+}
+
+.gallery-overlay .gallery-btn-show-caption i {
+  -webkit-transition: transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+
+.gallery-overlay .gallery-btn-show-caption:hover {
+  border-color: #bbb;
+  color: #eee;
+}
+
+.gallery-overlay .gallery-image {
+  position: relative;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.gallery-overlay .gallery-close,
+.gallery-overlay .gallery-redirect {
+  border-radius: 50%;
+  background-color: #333;
+  border: 0;
+  padding: 0;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 20;
+  -webkit-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.gallery-overlay .gallery-close:hover,
+.gallery-overlay .gallery-redirect:hover {
+  background: #444;
+}
+
+.gallery-overlay .gallery-arrow,
+.gallery-overlay .slick-prev,
+.gallery-overlay .slick-next {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: #eee;
+  border: 0;
+  padding: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  z-index: 20;
+  display: inline-block;
+  margin-top: -50px;
+  -webkit-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.gallery-overlay .gallery-arrow.slick-passive,
+.gallery-overlay .slick-prev.slick-passive,
+.gallery-overlay .slick-next.slick-passive {
+  display: none;
+}
+
+.gallery-overlay .gallery-arrow:before,
+.gallery-overlay .slick-prev:before,
+.gallery-overlay .slick-next:before {
+  content: "\f104";
+  font-family: fontawesome;
+  display: inline-block;
+  font-size: 50px;
+  width: 100%;
+  height: 100%;
+  line-height: 100px;
+  text-align: right;
+  position: relative;
+  right: 25%;
+  color: #eee;
+}
+
+.gallery-overlay .gallery-arrow:hover,
+.gallery-overlay .slick-prev:hover,
+.gallery-overlay .slick-next:hover {
+  background-color: #333333;
+  color: #fff;
+}
+
+.gallery-overlay .slick-slide {
+  float: none;
+}
+
+.gallery-overlay .slick-initialized .gallery-finale.slick-slide {
+  text-align: left;
+}
+
+.gallery-overlay .slick-initialized .slick-slide {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.gallery-overlay .gallery-arrow:active,
+.gallery-overlay .slick-prev:active,
+.gallery-overlay .slick-next:active {
+  background-color: rgba(51, 51, 51, 0.8);
+}
+
+.gallery-overlay .slick-prev {
+  left: -50px;
+}
+
+.gallery-overlay .slick-prev.slick-disabled {
+  display: none !important;
+}
+
+.gallery-overlay .slick-next {
+  left: auto;
+  right: -50px;
+}
+
+.gallery-overlay .slick-next.slick-disabled {
+  display: none !important;
+}
+
+.gallery-overlay .slick-next:before {
+  content: "\f105";
+  text-align: left;
+  padding-right: 0;
+  position: relative;
+  left: 25%;
+}
+
+@media (max-width: 767px) {
+
+  .other-galleries .row:first-child .section-header {
+    border-top: 0;
+  }
+
+  .gallery-finale.slick-slide {
+    padding-top: 0;
+  }
+
+  .gallery-finale .teaser h2 {
+    font-size: 13px;
+  }
+
+  .gallery-overlay .gallery-caption p {
+    font-size: 12px;
+  }
+
+  .gallery-overlay .gallery-image {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .gallery-overlay .gallery-arrow {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: -25px;
+  }
+
+  .gallery-overlay .slick-prev {
+    left: -25px;
+  }
+
+  .gallery-overlay .slick-next {
+    left: auto;
+    right: -25px;
+  }
+
+  .gallery-overlay .slick-prev, .gallery-overlay .slick-next {
+    width: 50px;
+    height: 50px;
+  }
+
+  .gallery-overlay .slick-prev:before, .gallery-overlay .slick-next:before {
+    font-size: 25px;
+    line-height: 50px;
+  }
+
+  .gallery-overlay .slick-next:before {
+    content: "\f105";
+    text-align: left;
+  }
+
+  .gallery-overlay .gallery-close {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.other-galleries {
+  display: none;
+  visibility: hidden;
+}
+
+.gallery-finale {
+  padding-top: 100px;
+  color: #999;
+  .teaser-img a img {
+    max-width: 100% !important;
+  }
+}
+
+.gallery-finale .header a {
+  color: #999;
+}
+
+.gallery-finale .header a:hover {
+  color: #ddd;
+}
+
+.gallery-finale .gallery-tools {
+  display: none;
+}
+
+.gallery-finale .other-galleries {
+  display: block;
+  visibility: visible;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.gallery-btn-show-caption span {
+  padding-left: 3px;
+}
