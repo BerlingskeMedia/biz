@@ -294,16 +294,22 @@
 		left: 0;
 		right: 0;
 		top: 90px;
-		height: 49px;
+		height: auto;
 		z-index: 10;
 		background-color: @biz-pink;
 		border-bottom: 1px solid rgba(0,0,0,.2);
+		.container-main-header {
+			height: auto;
+			margin-top: 0;
+			padding: 10px 0;
+		}
 		form {
 			position: relative;
 		}
 		input[type=search],
 		input[type=text] {
 			background-color: #fff;
+			height: 36px;
 			border: 0;
 			width: ~"calc(100% - 40px)";
 			border: 2px solid rgba(0,0,0,.2);
@@ -319,8 +325,9 @@
 			position: absolute;
 			top: 0;
 			right: 0;
+			height: 36px;
 			padding: 4px 20px;
-			font-size: 18px;
+			font-size: 14px;
 			box-shadow: none;
 			color: #fff;
 			border: 1px solid @biz-2;

@@ -2535,6 +2535,53 @@ fieldset[disabled] .btn-rss.active {
   color: #ff9900;
   background-color: #ffffff;
 }
+.btn-live {
+  color: #ffffff;
+  background-color: #a10e4b;
+  -webkit-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.btn-live:hover,
+.btn-live:focus,
+.btn-live.focus,
+.btn-live:active,
+.btn-live.active,
+.open > .dropdown-toggle.btn-live {
+  color: #ffffff;
+  background-color: #8a0c40;
+  outline: none!important;
+}
+.btn-live:active,
+.btn-live.active,
+.open > .dropdown-toggle.btn-live {
+  background-image: none;
+  outline: none;
+}
+.btn-live.disabled,
+.btn-live[disabled],
+fieldset[disabled] .btn-live,
+.btn-live.disabled:hover,
+.btn-live[disabled]:hover,
+fieldset[disabled] .btn-live:hover,
+.btn-live.disabled:focus,
+.btn-live[disabled]:focus,
+fieldset[disabled] .btn-live:focus,
+.btn-live.disabled.focus,
+.btn-live[disabled].focus,
+fieldset[disabled] .btn-live.focus,
+.btn-live.disabled:active,
+.btn-live[disabled]:active,
+fieldset[disabled] .btn-live:active,
+.btn-live.disabled.active,
+.btn-live[disabled].active,
+fieldset[disabled] .btn-live.active {
+  background-color: #a10e4b;
+}
+.btn-live .badge {
+  color: #a10e4b;
+  background-color: #ffffff;
+}
 .btn-facebook {
   color: #ffffff;
   background-color: #4c66a4;
@@ -6444,20 +6491,20 @@ ins.text-label {
 .mobile-nav .mobile-icons span {
   display: inline-block;
   float: left;
-  line-height: 45px;
+  line-height: 35px;
   margin-right: 5px;
 }
 .mobile-nav .mobile-icons a {
   border-radius: 50%;
-  line-height: 45px;
-  height: 45px;
-  width: 45px;
+  line-height: 35px;
+  height: 35px;
+  width: 35px;
   display: inline-block;
   background-color: #222;
   color: #ccc;
   text-align: center;
   margin: 0 5px;
-  font-size: 25px;
+  font-size: 20px;
 }
 .mobile-nav .sub-menu {
   display: none;
@@ -13185,10 +13232,15 @@ body.billede .picture-series-watermark {
   left: 0;
   right: 0;
   top: 90px;
-  height: 49px;
+  height: auto;
   z-index: 10;
   background-color: #fadcd2;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.site-main-search .container-main-header {
+  height: auto;
+  margin-top: 0;
+  padding: 10px 0;
 }
 .site-main-search form {
   position: relative;
@@ -13196,6 +13248,7 @@ body.billede .picture-series-watermark {
 .site-main-search input[type=search],
 .site-main-search input[type=text] {
   background-color: #fff;
+  height: 36px;
   border: 0;
   width: calc(100% - 40px);
   border: 2px solid rgba(0, 0, 0, 0.2);
@@ -13224,8 +13277,9 @@ body.billede .picture-series-watermark {
   position: absolute;
   top: 0;
   right: 0;
+  height: 36px;
   padding: 4px 20px;
-  font-size: 18px;
+  font-size: 14px;
   box-shadow: none;
   color: #fff;
   border: 1px solid #193057;

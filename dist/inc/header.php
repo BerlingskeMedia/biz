@@ -91,6 +91,8 @@ if(isset($_GET["live"])) {
     </form>
   </li>
 
+    <li ><a href="/"><i class="fa fa-home"></i> Forside</a></li>
+    <li ><a href="/"><i class="fa fa-clock-o"></i> Seneste nyt</a></li>
     <li ><a href="section.php">Investor</a><a href="#" class="show-sub"><i class="fa fa-angle-down"></i></a>
     <ul class="sub-menu">
       <li><a href="section.php">Se alle</a></li>
@@ -143,6 +145,7 @@ if(isset($_GET["live"])) {
       <a href="#"><i class="fa fa-facebook"></i></a>
       <a href="#"><i class="fa fa-twitter"></i></a>
       <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
   </div>
 </aside>
 
@@ -277,15 +280,13 @@ $stock_change = mt_rand(0,250)/100;
     </div>
     
       <div class="site-main-search">
-        <div class="container">
-        <div class="row">
-          <div class="col-md-12">
+        <div class="container-main-header">
+        
           <form action="./search-result.php" method="POST">
             <input type="search" class="form-control" id="site-search" placeholder="What are you searching for?"> 
             <button class="btn"><i class="fa fa-search"></i> Søg </button>
           </form>
-          </div>
-        </div>
+        
         </div>
       </div><!-- search -->
 
