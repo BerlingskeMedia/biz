@@ -127,13 +127,20 @@
 
       
       <?php if($live) : ?>
+        
+
       <div class="liveheader liveheader-small">
       <span class="livelabel"><i class="fa fa-circle zoomfade"></i> LIVE</span>
       <span class="timeofday">14.40</span>
-      <span class="hostoftheday">
-        <span>Nyhedsvært:</span> <a href="mailto:jst@berlingskemedia.dk">Bent Højgaard Sørensen</a>
-      <img src="http://dummy.medieimperium.dk/cache/6188256_jetc_byline_40x40.jpg" width="" height="" alt="">
-      </span>
+      
+      </div>
+      <div class="live-hosts">
+        <? while (dumb_luck("2")): ?>
+        <span class="hostoftheday">
+          <img src="http://dummy.medieimperium.dk/cache/6188256_jetc_byline_40x40.jpg" width="" height="" alt="">
+           <a href="mailto:jst@berlingskemedia.dk"><? dummy("text@author") ?></a>
+        </span>  
+        <? endwhile ?>
       </div>
       <?php else: ?>
       <div class="liveheader liveheader-small">
@@ -141,7 +148,8 @@
         Opdateres hverdage mellem 7 og 18.
       </div>
       <?php endif; ?>
-      
+        
+
       <div class="live-content">
         <a href="article-scribble.php?live" class="live-link"></a>
         <ul class="live-blog live-blog-frontpage">

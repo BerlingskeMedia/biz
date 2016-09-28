@@ -8702,6 +8702,7 @@ h1.deck-header {
   position: relative;
 }
 .rat-tail {
+  display: none;
   position: relative;
 }
 @media (max-width: 767px) {
@@ -12593,24 +12594,45 @@ body.billede .picture-series-watermark {
 .liveheader .timeofday {
   display: inline-block;
 }
-.liveheader .hostoftheday {
-  line-height: 1;
-  display: inline-block;
-  float: right;
-  padding-right: 40px;
-  line-height: 50px;
-  position: relative;
+.live-hosts {
+  padding: 5px 0 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.liveheader .hostoftheday img {
-  float: right;
-  border-radius: 50%;
-  margin: 0;
-  width: 30px;
+.hostoftheday {
+  display: inline-block;
+  padding-left: 40px;
+  line-height: 1.2;
+  padding-top: 14px;
+  position: relative;
+  padding-right: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  max-width: calc(50% - 5px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.hostoftheday:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 5px;
+}
+.hostoftheday:after {
+  content: 'Nyhedsvært';
   position: absolute;
-  top: 10px;
-  right: 5px;
+  top: 4px;
+  left: 40px;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.hostoftheday a {
+  color: #222;
+}
+.hostoftheday img {
+  float: left;
+  border-radius: 50%;
+  width: 30px;
+  margin: -10px 0 0 -40px;
   height: auto;
-  vertical-align: middle;
 }
 .liveheader-small {
   line-height: 34px;
@@ -12622,12 +12644,6 @@ body.billede .picture-series-watermark {
   height: 20px;
   padding: 0 .8rem 0 .5rem;
   margin: 7px 1rem 0 7px;
-}
-.liveheader-small .hostoftheday {
-  line-height: 34px;
-}
-.liveheader-small .hostoftheday img {
-  top: 2px;
 }
 .livelabel.livelabel-offline {
   background-color: #444444;
@@ -12698,7 +12714,7 @@ body.billede .picture-series-watermark {
   font-size: 12px;
 }
 .live-content {
-  margin: 2rem 0;
+  margin: 5px 0 2rem;
 }
 .live-blog {
   padding: 0 0 0 30px;
@@ -12876,12 +12892,6 @@ body.billede .picture-series-watermark {
   .liveheader:not(.liveheader-small) .livelabel {
     margin-top: 5px;
     margin-left: 5px;
-  }
-  .liveheader:not(.liveheader-small) .hostoftheday {
-    line-height: 40px;
-  }
-  .liveheader:not(.liveheader-small) .hostoftheday img {
-    top: 5px;
   }
   .live-blog-frontpage [class*="live-item"] {
     padding-top: 20px;

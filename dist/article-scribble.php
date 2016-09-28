@@ -75,13 +75,20 @@
                                   }
                                  ?>
                               <?php if($live) : ?>
+                                <div class="live-hosts">
+                                  <? while (dumb_luck("2")): ?>
+                                  <span class="hostoftheday">
+                                    <img src="http://dummy.medieimperium.dk/cache/6188256_jetc_byline_40x40.jpg" width="" height="" alt="">
+                                     <a href="mailto:jst@berlingskemedia.dk"><? dummy("text@author") ?></a>
+                                  </span>  
+                                  <? endwhile ?>
+                                </div>
+                                
+
                               <div class="liveheader">
                               <span class="livelabel"><i class="fa fa-circle zoomfade"></i> LIVE</span>
                               <span class="timeofday">14.40.03</span>
-                              <span class="hostoftheday">
-                                <span>Nyhedsvært:</span> <a href="mailto:jst@berlingskemedia.dk">Bent Højgaard Sørensen</a>
-                              <img src="http://dummy.medieimperium.dk/cache/6188256_jetc_byline_40x40.jpg" width="" height="" alt="">
-                              </span>
+                              
                               </div>
                               <?php else: ?>
                               <div class="liveheader">
