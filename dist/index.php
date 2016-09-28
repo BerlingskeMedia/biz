@@ -1,11 +1,6 @@
 <? require_once("../../dummy/dummy.php") ?>
 
-<?php $imageSize = rand(0,2); 
-
-if(isset($_GET["live"])) {
-    $live = true;
-  }
- ?>
+<?php $imageSize = rand(0,2);  ?>
 
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9" lang="da"> <![endif]-->
@@ -27,17 +22,7 @@ if(isset($_GET["live"])) {
 
   <?php include("./inc/header.php"); ?>
 
-  <?php if($live): ?>
-  <div class="business-live-teaser">
-    <div class="container-main-header">
-      <div class="row">
-        <div class="col-xs-12">
-          <a href="#"><time>10.23</time> <? dummy("text@headline") ?></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <?php endif; ?>
+  
   <div class="container">
 
 
