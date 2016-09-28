@@ -1028,11 +1028,12 @@
   <div class="adblocker">
     <div class="adblocker-content">
       <div class="logo-business adblocker-logo"></div>
-      <h3>Hov! Hvor blev min artikel af..!?</h3>
-      <p>Vi kan se, at du har installeret en adblocker, så vi ikke kan vise dig annoncer.</p>
-      <p>Det er vi kede af, fordi indtægter fra annoncer er en helt afgørende årsag til, at vi dagligt kan tilbyde dig journalistik af høj kvalitet.</p>
-      <p>For få adgang til indhold på business.dk skal du tillade visning af annoncer på business.dk. <strong><a href="#">Se hvordan du gør her</a></strong>.</p>
-      <p>Tak for din forståelse.</p>
+      <h3>Kære læser. Velkommen til business.dk. </h3>
+      <p>Vi kan se, at du har installeret en adblocker, så vi ikke kan vise dig annoncer. Det er vi kede af, fordi indtægter fra annoncer er en helt afgørende årsag til, at vi dagligt kan tilbyde dig journalistik af høj kvalitet.</p>
+      <p>Vi håber derfor, at du i din adblocker vil tillade visning af annoncer fra business.dk Det er nemt og tager kun et øjeblik: <a href="/adblocker)">Se hvordan du gør her</a>.</p>
+      
+    <p>Med venlig hilsen<br>Berlingske Business</p>
+      
       <a href="#" class="toggle-adblock">Tilbage til artiklen</a>
     </div>
   </div>
