@@ -1,3 +1,8 @@
+<?php 
+if(isset($_GET["live"])) {
+  $live = true;
+}
+?>
 <div class="site-wrap">
 
 <aside class="slider-latest-news slider-nav">
@@ -241,7 +246,7 @@ $stock_change = mt_rand(0,250)/100;
             </li>
                 
             <!-- add class .is-live if chart is live -->
-            <li class="nav-live is-live">
+            <li class="nav-live <?php if($live) { echo 'is-live';} ?>">
               <a href="#" class="">
                 LIVE
                 <span class="beta">BETA</span>
@@ -288,6 +293,7 @@ $stock_change = mt_rand(0,250)/100;
   </div><!-- container-main-header -->
 </div>
 
+<?php if($live): ?>
 <div class="business-live-teaser ">
   <div class="container-main-header" style="height: auto;">
     
@@ -295,6 +301,7 @@ $stock_change = mt_rand(0,250)/100;
     
   </div>
 </div>
+<?php endif; ?>
 
 
 <div class="main-nav-container hidden-sm hidden-xs">
