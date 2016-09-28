@@ -13003,7 +13003,11 @@ body.billede .picture-series-watermark {
   background-size: contain;
   background-position: left center;
   text-indent: -9999px;
-  margin-right: 5px;
+}
+@media (min-width: 1024px) {
+  .logo-business {
+    margin-right: 40px;
+  }
 }
 @media (max-width: 1023px) {
   .logo-business {
@@ -13012,7 +13016,8 @@ body.billede .picture-series-watermark {
 }
 @media (max-width: 991px) {
   .logo-business {
-    width: 180px;
+    width: 165px;
+    margin-right: 0;
   }
 }
 @media (max-width: 767px) {
@@ -13059,7 +13064,7 @@ body.billede .picture-series-watermark {
   text-align: left;
   vertical-align: top;
 }
-.main-nav {
+.tools-nav {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -13069,16 +13074,16 @@ body.billede .picture-series-watermark {
   font-weight: 700;
   text-transform: uppercase;
 }
-.main-nav a {
+.tools-nav a {
   color: #333;
   display: block;
   padding: 23px 11px 0 11px;
   line-height: 1;
 }
-.main-nav a:hover {
+.tools-nav a:hover {
   color: #666;
 }
-.main-nav > li {
+.tools-nav > li {
   display: inline-block;
   text-align: left;
   line-height: 1;
@@ -13086,7 +13091,7 @@ body.billede .picture-series-watermark {
   vertical-align: middle;
   position: relative;
 }
-.main-nav > li:not(:last-child):after {
+.tools-nav > li:not(:last-child):after {
   position: absolute;
   right: 0;
   top: 16px;
@@ -13095,16 +13100,16 @@ body.billede .picture-series-watermark {
   background-color: rgba(0, 0, 0, 0.1);
   width: 1px;
 }
-.main-nav > li:last-child a {
+.tools-nav > li:last-child a {
   padding-right: 0;
 }
-.main-nav .fa {
+.tools-nav .fa {
   font-size: 18px;
   float: left;
   margin-right: 5px;
   margin-top: -4px;
 }
-.main-nav .beta {
+.tools-nav .beta {
   font-weight: normal;
   display: block;
   font-size: 8px;
@@ -13126,6 +13131,12 @@ body.billede .picture-series-watermark {
 .nav-stock .stock-quote.negative {
   color: #ff3333;
 }
+.nav-stock .stock-quote-mobile {
+  color: #2da12d;
+}
+.nav-stock .stock-quote-mobile.negative {
+  color: #ff3333;
+}
 .nav-stock .stock-title {
   float: left;
 }
@@ -13139,10 +13150,10 @@ body.billede .picture-series-watermark {
 .nav-live a:before {
   background-color: #999;
   border-radius: 50%;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   position: absolute;
-  left: 6px;
+  left: 9px;
   top: 22px;
   content: '';
 }
@@ -13228,9 +13239,12 @@ body.billede .picture-series-watermark {
   background-color: #a10e4b;
   height: 35px;
   line-height: 35px;
-  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
+}
+.business-live-teaser .container-main-header {
+  line-height: 35px;
+  height: auto;
 }
 .business-live-teaser .container {
   background-color: transparent;
@@ -13248,6 +13262,84 @@ body.billede .picture-series-watermark {
 }
 .business-live-teaser a:hover {
   text-decoration: underline;
+}
+.main-nav-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.main-nav-container .container {
+  padding-top: 0;
+}
+.main-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+}
+.main-nav > li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  float: left;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.main-nav > li:first-child {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.main-nav > li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.main-nav > li:hover .sub-nav {
+  display: block;
+}
+.main-nav > li > a {
+  display: block;
+  line-height: 50px;
+  color: #222;
+  font-weight: 700;
+  padding: 0 15px;
+}
+.main-nav-container {
+  position: relative;
+}
+.main-nav-container .container-main-header {
+  height: auto;
+}
+.sub-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  line-height: 0;
+  background-color: #e0c6bd;
+  z-index: 10;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+}
+.sub-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sub-nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+.sub-nav ul li a {
+  line-height: 38px;
+  display: block;
+  padding: 0 15px;
+  color: #444;
+}
+.sub-nav ul li a:hover {
+  color: #222;
+}
+@media (max-width: 1024px) {
+  .sub-nav ul li a {
+    padding: 0 10px;
+  }
 }
 @media (max-width: 991px) {
   .nav-stock {

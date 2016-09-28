@@ -196,8 +196,6 @@
 <?php 
 $stockvalue = rand(0,1);
 $stock_change = mt_rand(0,250)/100;
-
-
 ?>
 
   <div class="container-main-header">
@@ -207,41 +205,42 @@ $stock_change = mt_rand(0,250)/100;
   
         
         <nav class="site-nav">
-<!-- <a href="http://www.business.dk/investor/aktier" class="nav-stock">
-<span class="stock-title">OMX C20CAP</span>
-<span class="stock-value"><? if (dumb_luck("50%")): ?><span>Lukket</span><? endif ?> 1032,21</span>
-
-
-<li class="menu-businesslive nav-button <?php if($live): ?>is-live<?php endif; ?> "><a href="article-scribble.php" title="Business Live"> Live <span class="beta">Beta</span></a></li>
-<li class="menu-menu nav-button"><a href="#" class="btn-toggle-nav"><i class="fa fa-bars"></i> <span class="hidden-sm hidden-xs">Indhold</span></a></li>
-<li class="menu-search nav-button hidden-sm hidden-xs"><a href="#" title="Søg"><i class="fa fa-search"></i> <span>Søg</span></a></li> -->
         
-
-        
-          
-        
-
-          <ul class="main-nav">
-           
-              
+          <ul class="tools-nav">
             <li class="nav-stock">
               <a href="#">
+                <!-- add class .negative if stock change is negative -->
                 <? if (dumb_luck("50%")): ?>
-                <span class="stock-quote negative">
+                <span class="stock-quote negative hidden-xs">
                   -<?php echo $stock_change; ?>%
                 </span>
                 <? else: ?>
-                <span class="stock-quote">
-                  <?php echo $stock_change; ?>%
+                <span class="stock-quote hidden-xs">
+                  +<?php echo $stock_change; ?>%
                 </span>
                 <? endif ?>
                 <span class="stock-title">
-                  <div>OMX C20CAP</div>
-                  <div>1032,21 <? if (dumb_luck("50%")): ?>- LUKKET<? endif ?></div>
+                  <div><span class="hidden-xs">OMX</span>
+                    
+                     <? if (dumb_luck("50%")): ?>
+                <span class="stock-quote-mobile negative visible-xs">
+                  -<?php echo $stock_change; ?>%
+                </span>
+                <? else: ?>
+                <span class="stock-quote-mobile visible-xs">
+                  +<?php echo $stock_change; ?>%
+                </span>
+                <? endif ?>
+
+                   C20CAP</div>
+                  <div class="hidden-xs">1032,21 
+                  <!-- add "LUKKET" if stock market is closed -->
+                  <? if (dumb_luck("50%")): ?>- LUKKET<? endif ?></div>
                 </span>
               </a>
             </li>
                 
+            <!-- add class .is-live if chart is live -->
             <li class="nav-live is-live">
               <a href="#" class="">
                 LIVE
@@ -265,49 +264,139 @@ $stock_change = mt_rand(0,250)/100;
                 <i class="fa fa-bars"></i>
                 <span class="hidden-xs">Indhold</span>
               </a>
-            </li>
-
-            
-            
-            
+            </li>            
           </ul>
         
         </nav>
         
     </div>
-<div class="site-main-search">
-  <div class="container">
-  <div class="row">
-    <div class="col-md-12">
-    <form action="./search-result.php" method="POST">
-      <input type="search" class="form-control" id="site-search" placeholder="What are you searching for?"> 
-      <button class="btn"><i class="fa fa-search"></i> Søg </button>
-    </form>
-    </div>
-  </div>
-  </div>
-</div><!-- search -->
+    
+      <div class="site-main-search">
+        <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+          <form action="./search-result.php" method="POST">
+            <input type="search" class="form-control" id="site-search" placeholder="What are you searching for?"> 
+            <button class="btn"><i class="fa fa-search"></i> Søg </button>
+          </form>
+          </div>
+        </div>
+        </div>
+      </div><!-- search -->
 
-
-  </div><!-- row -->
-
-
-
+    </div><!-- row -->
   </div><!-- container-main-header -->
 </div>
 
-<div class="business-live-teaser">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <a href="#"><time>10.23</time> Selskabet bag Bendtners underbukser sætter kursrekord</a>
-        </div>
-      </div>
-    </div>
+<div class="business-live-teaser ">
+  <div class="container-main-header" style="height: auto;">
+    
+        <a href="#"><time>10.23</time> <? dummy("text@headline") ?></a>
+    
   </div>
+</div>
 
 
+<div class="main-nav-container hidden-sm hidden-xs">
+  <div class="container-main-header">
+    
+        <nav>
+        <ul class="main-nav">
+          <li><a href="/"><i class="fa fa-home"></i></a></li>
+          <li><a href="#" title="Investor">Investor</a>
+          <div class="sub-nav">
+              <div class="container-main-header">
+                
+                        <ul>
+                          <li><a href="#">Økonomi</a></li>
+                          <li><a href="#">Global</a></li>
+                          <li><a href="#">Aktier</a></li>
+                          <li><a href="#">Obligationer</a></li>
+                          <li><a href="#">Investeringsbeviser</a></li>
+                          <li><a href="#">Valuta</a></li>
+                          <li><a href="#">Markeder</a></li>
+                      </ul>      
+                
+              </div>
 
+              
+          </div>
+          
+          </li>
+          <li><a href="#" title="Virksomheder">Virksomheder</a>
+          <div class="sub-nav">
+              <div class="container-main-header">
+                <ul>
+                  <li><a href="#">Finans</a></li>
+                  <li><a href="#">Detail</a></li>
+                  <li><a href="#">Digital</a></li>
+                  <li><a href="#">Ejendomme</a></li>
+                  <li><a href="#">Energi</a></li>
+                  <li><a href="#">Fødevarer</a></li>
+                  <li><a href="#">Industri</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Medico</a></li>
+                  <li><a href="#">Rådgivning</a></li>
+                  <li><a href="#">Transport</a></li>
+                  <li><a href="#">Vækst</a></li>
+                  </ul>
+                </div>
+              </div>
+          </li>
+          <li><a href="#" title="Privatøkonomi">Privatøkonomi</a>
+          <div class="sub-nav">
+            <div class="container-main-header">
+              <ul>
+              <li><a href="#">Bank</a></li>
+              <li><a href="#">Bolig</a></li>
+              <li><a href="#">Pension</a></li>
+              <li><a href="#">Skat</a></li>
+              <li><a href="#">Forsikring</a></li>
+              <li><a href="#">Brevkassen</a></li>
+              </ul>
+            </div>
+          </div>
+          </li>
+          <li><a href="#" title="Karriere">Karriere</a>
+          <div class="sub-nav">
+            <div class="container-main-header">
+              <ul>
+              <li><a href="#">Ledelse</a></li>
+              <li><a href="#">Business-kvinder</a></li>
+              <li><a href="#">Navne</a></li>
+              <li><a href="#">Business Events</a></li>
+              </ul>
+            </div>
+          </div>
+
+          </li>
+          <li><a href="#" title="TV">TV</a>
+          <div class="sub-nav">
+            <div class="container-main-header">
+              <ul>
+              <li><a href="#">Business TV</a></li>
+              <li><a href="#">Topledernes Univers</a></li>
+              <li><a href="#">Ugens vinder og taber</a></li>
+              </ul>
+            </div>
+          </div>
+
+          </li>
+          <li><a href="#" title="Opinion">Opinion</a>
+          <div class="sub-nav">
+            <div class="container-main-header">
+              <ul>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Debat</a></li>
+              </ul>
+            </div>
+          </div>
+          </li>
+        </ul>
+        </nav>
+    
+  </div>
+</div>
 
 
 
