@@ -151,7 +151,7 @@ if(isset($_GET["live"])) {
 
 <div class="inner-wrap">
 
-
+<div class="header-wrapper">
 <div class="sticky-social">
   
   <div class="inner">
@@ -406,7 +406,7 @@ $stock_change = mt_rand(0,250)/100;
   </div>
 </div>
 
-
+</div><!-- /header-wrapper -->
 
 
 
