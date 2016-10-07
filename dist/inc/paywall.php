@@ -17,7 +17,7 @@ if (isset($_GET['paywall'])) {
                 <p >Få adgang til alle artikler med et digitalt abonnement.</p>
                 
 
-                        <button class="btn btn-primary btn-sm  module-xs">
+                        <button class="btn btn-primary btn-sm  module-sm">
                             Få den første måned gratis <i class="fa fa-angle-right"></i>
                         </button>
                                                     <p class="small">
