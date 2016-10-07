@@ -13522,6 +13522,7 @@ body.billede .picture-series-watermark {
   color: #333;
   background: #fadcd2;
   line-height: 1.2;
+  padding-bottom: 20px;
 }
 .paywall h2 {
   font-size: 50px;
@@ -13578,7 +13579,7 @@ body.billede .picture-series-watermark {
 }
 @media (max-width: 991px) {
   .paywall {
-    padding: 0 10px;
+    padding: 0 10px 20px;
   }
   .paywall h2 {
     font-size: 40px;
