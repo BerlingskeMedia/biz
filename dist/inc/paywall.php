@@ -18,7 +18,7 @@ if (isset($_GET['paywall'])) {
                 
 
                         <button class="btn btn-primary btn-sm  module-sm">
-                            Få den første måned gratis <i class="fa fa-angle-right"></i>
+                            Få den første måned gratis nu <i class="fa fa-angle-right"></i>
                         </button>
                                                     <p class="small">
                                 <a href="#" class="close-paywall-overlay link-gray">Nej tak, jeg vil bare læse artiklen <i class="fa fa-angle-right"></i></a>
@@ -42,7 +42,7 @@ if (isset($_GET['paywall'])) {
             
                 
             <button class="open-link btn btn-primary btn-sm  module-xs" data-link="http://abonnement.b.dk/berlingske-alle-produkter-abonnementslink/?utm_source=web_intern&amp;utm_medium=web_abonnementlinks&amp;utm_term=AL-151222-CP-WKLEDIT1WK&amp;utm_content=bus_indhold&amp;utm_campaign=abonnementer_berlingske&amp;callback_url=http%3A//login.berlingskemedia.net/sso/server/multisite-update/biz&amp;utm_source=paywall&amp;utm_medium=pw_køb_link&amp;utm_term=AL-151222-CP-WKLEDIT1PW&amp;utm_content=alle_abonnementer&amp;utm_campaign=Matrix">
-                Få Berlingske Digital gratis <i class="fa fa-angle-right"></i>
+                Få den første måned gratis nu <i class="fa fa-angle-right"></i>
             </button>
                                         <p class="small">
                     Allerede abonnent?
