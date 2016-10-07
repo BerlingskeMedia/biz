@@ -2,6 +2,8 @@
 
 <?php $imageSize = rand(0,2); ?>
 
+
+
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9" lang="da"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="da"><!--<![endif]-->
@@ -83,10 +85,10 @@
         <div class="row">
           <div class="col-md-8 col-md-push-4">
           
-            <div class="article-content">
+            <div class="article-content ">
             
             
-
+          
 
               <?php if($imageSize == '1'): ?>
                 
@@ -129,6 +131,14 @@
 
               <?php include('inc/asset-article-byline.php'); ?>
 
+        
+              <?php include('inc/paywall.php'); ?>
+              
+              <div class="content article-body--cutoff">
+
+
+
+             
               <div class="article-fact-float-right article-fact-graph module-sm">
                 <div class="visible-xs text-center">
                   <img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=MAERSK/A.co&prv=ms_dlc&points=20&ts=1440&current=1426690728590&w=340&h=206&bgcolor=edd0c7&fullName=[name]%20-%201%20mdr.&end=2015-03-17" class="img-responsive">
@@ -274,14 +284,10 @@
                 </div>
               </aside>
 
+             
 
-              <section class="footer-marketing marketing-banner marketing-banner-sm module-sm">
-                <a href="http://sjma.dk/lpcms/landingpage/b1.php?cid=BM-131228-CP-CALEDIT1BE&ns_campaign=_Kombi_maj_B.dk&ns_mchannel=na&ns_source=web_intern&ns_linkname=web_footer&ns_fee=0" target="_blank">
-                  <button class="btn btn-marketing ">Køb nu!</button>
-                  <span>Få avisen fre-, lør- og søndag i 3 mdr. inkl. digital adgang for 199 kr./md.<sup>*</sup></span>
-                  <small>* Abonnementet fortsætter til normalpris, indtil det opsiges.</small>
-                </a> 
-              </section>
+
+             
 
 
               
@@ -309,6 +315,8 @@
 
 
               </div>
+
+              </div><!-- content -->
 
 
 

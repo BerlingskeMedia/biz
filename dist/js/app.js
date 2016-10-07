@@ -212,4 +212,18 @@ $(function () {
         e.preventDefault();
         $(this).closest('div').find('.mobile-menu').toggleClass('active');
     });
+
+    $('.close-paywall-overlay').click(function(e){
+        e.preventDefault();
+
+        var addOverflow = function(){
+            // $('.article-body').css('overflow', 'visible');
+            $('.article-body--cutoff').removeClass('article-body--cutoff');
+        };
+        $('.paywall').fadeToggle('fast');
+        
+        setTimeout(addOverflow, 500);
+    });
+
+
 });
