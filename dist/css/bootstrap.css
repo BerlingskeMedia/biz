@@ -12607,7 +12607,7 @@ body.billede .picture-series-watermark {
   padding-right: 10px;
   font-weight: 700;
   font-size: 14px;
-  max-width: calc(50% - 5px);
+  max-width: calc(33.33333% - 7px);
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -12831,16 +12831,10 @@ body.billede .picture-series-watermark {
   margin-bottom: 0;
 }
 .live-blog-frontpage .Content > div {
-  display: block;
-  /* Fallback for non-webkit */
-  display: -webkit-box;
-  height: 50.4px;
-  /* Fallback for non-webkit */
   margin: 0;
   font-size: 14px;
   line-height: 1.2;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }

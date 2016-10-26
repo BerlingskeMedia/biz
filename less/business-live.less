@@ -57,7 +57,7 @@
 	padding-right: 10px;
 	font-weight: 700;
 	font-size: 14px;
-	max-width: calc(50% - 5px);
+	max-width: calc(33.33333% - 7px);
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
@@ -314,14 +314,11 @@
 .live-blog-frontpage {
 	margin-bottom: 0;
 	.Content > div {
-		display: block; /* Fallback for non-webkit */
-		display: -webkit-box;
-		height: (@font-size*@line-height*@lines-to-show); /* Fallback for non-webkit */
+		
 		margin: 0;
 		font-size: @font-size;
 		line-height: @line-height;
-		-webkit-line-clamp: @lines-to-show;
-		-webkit-box-orient: vertical;
+		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}

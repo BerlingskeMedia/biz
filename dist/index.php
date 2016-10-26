@@ -135,7 +135,7 @@
       
       </div>
       <div class="live-hosts">
-        <? while (dumb_luck("2")): ?>
+        <? while (dumb_luck("3")): ?>
         <span class="hostoftheday">
           <img src="http://dummy.medieimperium.dk/cache/6188256_jetc_byline_40x40.jpg" width="" height="" alt="">
            <a href="mailto:jst@berlingskemedia.dk"><? dummy("text@author") ?></a>
@@ -156,14 +156,14 @@
           <li id="367566086" class="live-item-text">
           <img src="https://avatars.scribblelive.com/2016/9/20/ef697ff0-74ca-4fb6-97d9-8c976efe4975.png" class="">
           <div class="Content">
-            <div>Dansk dele- og elbil vil revolutionere hele transportbranchen. Designet er utraditionelt og ambitionerne store. Det kan blive enden til privatbilismen, siger direktøren.</div>
+            <div><strong>Dansk dele- og elbil vil revolutionere hele transportbranchen vil revolutionere hele transportbranchen.</strong></div>
           </div>
           <div class="Meta">14.23</div>
           </li>
           <li id="367566086" class="live-item-text">
           <img src="https://avatars.scribblelive.com/2016/9/20/ef697ff0-74ca-4fb6-97d9-8c976efe4975.png" class="">
           <div class="Content">
-            <div>Fra sommerferien 2017 er det helt slut med at skulle betale overpriser for at bruge telefonen eller computeren på ferie i andre EU-lande. Hvis det misbruges, kan man dog få en ekstraregning.</div>
+            <div><strong>Fra sommerferien 2017 er det helt slut med at skulle betale overpriser</strong></div>
           </div>
           <div class="Meta">14.23</div>
           </li>
@@ -171,7 +171,23 @@
           <li id="367566086" class="live-item-text">
           <img src="https://avatars.scribblelive.com/2016/9/20/ef697ff0-74ca-4fb6-97d9-8c976efe4975.png" class="">
           <div class="Content">
-            <div>Uanset om man læser Forbes Magazine, Harvard Business Review eller FastCompany står det klart, at fremtidens mest succesfulde virksomheder på samme tid formår at forbedre eksisterende produkter og udvikle nye forretningsmodeller.</div>
+            <div><strong>Uanset om man læser Forbes Magazine, Harvard Business Review.</strong></div>
+          </div>
+          <div class="Meta">14.23</div>
+          </li>
+
+          <li id="367566086" class="live-item-text">
+          <img src="https://avatars.scribblelive.com/2016/9/20/ef697ff0-74ca-4fb6-97d9-8c976efe4975.png" class="">
+          <div class="Content">
+            <div><strong>Fra sommerferien 2017 er det helt slut med at skulle betale overpriser</strong></div>
+          </div>
+          <div class="Meta">14.23</div>
+          </li>
+
+          <li id="367566086" class="live-item-text">
+          <img src="https://avatars.scribblelive.com/2016/9/20/ef697ff0-74ca-4fb6-97d9-8c976efe4975.png" class="">
+          <div class="Content">
+            <div><strong>Uanset om man læser Forbes Magazine, Harvard Business Review.</strong></div>
           </div>
           <div class="Meta">14.23</div>
           </li>
