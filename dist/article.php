@@ -138,61 +138,66 @@ if (isset($_GET['paywall'])) {
 
         
               
-              <div class="content article-body--cutoff">
+              <div class="content <?php if($paywall === 'soft'): ?> article-body--cutoff <?php endif; ?>">
 
 				<?php if($paywall === 'soft'): ?>
 					<?php include('inc/paywall.php'); ?>
 				<?php endif; ?>
 
              
-              <div class="article-fact-float-right article-fact-graph module-sm">
-                <div class="visible-xs text-center">
-                  <img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=MAERSK/A.co&prv=ms_dlc&points=20&ts=1440&current=1426690728590&w=340&h=206&bgcolor=edd0c7&fullName=[name]%20-%201%20mdr.&end=2015-03-17" class="img-responsive">
-                </div>
-                <div class="visible-sm text-center">
-                  <img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=MAERSK/A.co&prv=ms_dlc&points=20&ts=1440&current=1426690728590&w=278&h=150&bgcolor=edd0c7&fullName=[name]%20-%201%20mdr.&end=2015-03-17" class="img-responsive">
-                </div>
-                <div class="visible-md visible-lg">
-                  <img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=MAERSK/A.co&prv=ms_dlc&points=20&ts=1440&current=1426690728590&w=208&h=150&bgcolor=edd0c7&fullName=[name]%20-%201%20mdr.&end=2015-03-17" class="img-responsive">
-                </div>
-                  
-      
-  <div class="section-sponsor-sm"><a href="http://www.nykredit.dk/#!/dit-liv/bolig/boligfinansiering/dagens-obligationskurser-udbetaling?ref=businessdk" target="_blank"><i class="fa fa-caret-right"></i> Aktuelle obligationskurser</a> <a href="http://www.nykredit.dk/#!/dit-liv/bolig/boligfinansiering/dagens-obligationskurser-udbetaling?ref=businessdk" target="_blank"><img src="images/nykredit_logo_negativ.jpg" class="sponsor-logo"></a></div>
-
-
-              </div>
-
-              <p><? dummy("text@paragraph") ?></p>
-
-              <? if (dumb_luck("25%")): ?>
-                <!-- *** Asset - factbox theme-->
-                <?php include("inc/asset-article-factbox-theme.php"); ?>
-              <? endif ?>
-
-              <? if (dumb_luck("100%")): ?>
               
-                <? if (dumb_luck("50%")): ?>
-                <!-- *** Asset - factbox float right-->
-                <?php include("inc/asset-article-factbox-float-right.php"); ?>
-              
-                <? else: ?>
-                <!-- *** Asset - factbox timeline  -->
-                <?php include("inc/asset-article-factbox-timeline.php"); ?>
-                <? endif ?>
-
-
-              <? endif ?>
 
 
 			<?php if($paywall == 'hard'): ?>	
+        <? while (dumb_luck("3")): ?>
+      <p><? dummy("text@paragraph") ?></p>
+    <? endwhile ?>
 				<?php include('inc/paywall.php'); ?>
+
+
 			<?php endif; ?>
             
             <?php if($paywall !== 'hard'): ?>  
             
 
 				
-            	
+            	            <div class="article-fact-float-right article-fact-graph module-sm">
+                            <div class="visible-xs text-center">
+                              <img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=MAERSK/A.co&prv=ms_dlc&points=20&ts=1440&current=1426690728590&w=340&h=206&bgcolor=edd0c7&fullName=[name]%20-%201%20mdr.&end=2015-03-17" class="img-responsive">
+                            </div>
+                            <div class="visible-sm text-center">
+                              <img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=MAERSK/A.co&prv=ms_dlc&points=20&ts=1440&current=1426690728590&w=278&h=150&bgcolor=edd0c7&fullName=[name]%20-%201%20mdr.&end=2015-03-17" class="img-responsive">
+                            </div>
+                            <div class="visible-md visible-lg">
+                              <img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=MAERSK/A.co&prv=ms_dlc&points=20&ts=1440&current=1426690728590&w=208&h=150&bgcolor=edd0c7&fullName=[name]%20-%201%20mdr.&end=2015-03-17" class="img-responsive">
+                            </div>
+                              
+                  
+              <div class="section-sponsor-sm"><a href="http://www.nykredit.dk/#!/dit-liv/bolig/boligfinansiering/dagens-obligationskurser-udbetaling?ref=businessdk" target="_blank"><i class="fa fa-caret-right"></i> Aktuelle obligationskurser</a> <a href="http://www.nykredit.dk/#!/dit-liv/bolig/boligfinansiering/dagens-obligationskurser-udbetaling?ref=businessdk" target="_blank"><img src="images/nykredit_logo_negativ.jpg" class="sponsor-logo"></a></div>
+
+
+                          </div>
+
+                          <p><? dummy("text@paragraph") ?></p>
+
+                          <? if (dumb_luck("25%")): ?>
+                            <!-- *** Asset - factbox theme-->
+                            <?php include("inc/asset-article-factbox-theme.php"); ?>
+                          <? endif ?>
+
+                          <? if (dumb_luck("100%")): ?>
+                          
+                            <? if (dumb_luck("50%")): ?>
+                            <!-- *** Asset - factbox float right-->
+                            <?php include("inc/asset-article-factbox-float-right.php"); ?>
+                          
+                            <? else: ?>
+                            <!-- *** Asset - factbox timeline  -->
+                            <?php include("inc/asset-article-factbox-timeline.php"); ?>
+                            <? endif ?>
+
+
+                          <? endif ?>
             	
 
 

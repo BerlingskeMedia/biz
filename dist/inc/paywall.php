@@ -46,6 +46,14 @@
                         <i class="fa fa-user" aria-hidden="true"></i>&nbsp;Klik her
                     </a>
                 </p>
+                <div class="alert alert-danger">
+                                <p>Du er logget ind med en profil, der desværre ikke giver adgang til Berlingske.dk i dag. Det kan skyldes, at dit abonnement har begrænset digital adgang, eller at din ordre ikke er tilknyttet din profil. 
+                                
+                                <a href="https://b.kundeunivers.dk/">Tilknyt ordrenummer</a></p>
+
+                <p><strong>Har du brug for hjælp?</strong>
+                Kontakt Kundeservice på 3375 3330</p>
+                </div>
                 
             </div>
         </div>
