@@ -1,4 +1,9 @@
 <? require_once("../../dummy/dummy.php") ?>
+<?php 
+if (isset($_GET['paywall'])) {
+    $paywall = $_GET['paywall'];
+}
+?>
 
 <?php $imageSize = rand(0,2); ?>
 
@@ -132,11 +137,12 @@
               <?php include('inc/asset-article-byline.php'); ?>
 
         
-              <?php include('inc/paywall.php'); ?>
               
               <div class="content article-body--cutoff">
 
-
+				<?php if($paywall === 'soft'): ?>
+					<?php include('inc/paywall.php'); ?>
+				<?php endif; ?>
 
              
               <div class="article-fact-float-right article-fact-graph module-sm">
@@ -156,7 +162,8 @@
 
               </div>
 
-              
+              <p><? dummy("text@paragraph") ?></p>
+
               <? if (dumb_luck("25%")): ?>
                 <!-- *** Asset - factbox theme-->
                 <?php include("inc/asset-article-factbox-theme.php"); ?>
@@ -177,112 +184,121 @@
               <? endif ?>
 
 
+			<?php if($paywall == 'hard'): ?>	
+				<?php include('inc/paywall.php'); ?>
+			<?php endif; ?>
+            
+            <?php if($paywall !== 'hard'): ?>  
+            
 
-              
- 
-
-              
-              <? if (dumb_luck("50%")): ?>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <div class="embedded-node">
-                <iframe src="http://cf.datawrapper.de/2W39o/1/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="417"></iframe>
-               </div>
-            <? endif ?>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-
-              <?php include('inc/article-link-embedded.php'); ?>
+				
+            	
+            	
 
 
-              <p><? dummy("text@paragraph") ?></p>
-                <!-- *** Asset - factbox float right-->
-                <?php include("inc/asset-article-factbox-embedded.php"); ?>
+				<? if (dumb_luck("50%")): ?>
+				<? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+				<div class="embedded-node">
+				<iframe src="http://cf.datawrapper.de/2W39o/1/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="417"></iframe>
+				</div>
+				<? endif ?>
+				<? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+
+				<?php include('inc/article-link-embedded.php'); ?>
 
 
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-
-              <? if (dumb_luck("100%")): ?>
-                <!-- *** Asset - factbox theme-->
-                <?php include("inc/asset-article-quiz.php"); ?>
-              <? endif ?>
-
-              <h2>H2:<? dummy("text@item") ?></h2>
-
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-
-              <? if (dumb_luck("50%")): ?>
-              <div class="media-embeds">
-              <blockquote class="twitter-tweet" lang="da"><p>Jubii! 11,8 millioner fra A. P. Møller Fonden til Helsingør Kommune! God dag;-) <a href="https://twitter.com/SthePol">@sthepol</a>&#10;<a href="http://t.co/LWfd9iStaU">http://t.co/LWfd9iStaU</a></p>&mdash; Benedikte Kiær (@benediktekiaer) <a href="https://twitter.com/benediktekiaer/status/533231937037414400">14. november 2014</a></blockquote>
-              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-              <? else: ?>
-              <blockquote class="bond-quote">
-                  
-                  <p>
-                    <? dummy("text@teaser") ?>
-                  </p>
-                  <small><? dummy("text@author") ?>- <? if (dumb_luck("50%")): ?><? dummy("text@teaser") ?><? endif ?></small>
-                  <div class="quote-share">SHARE QUOTE <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></div>
-
-              </blockquote>
-              <? endif ?>
-
-              <h3>H3:<? dummy("text@item") ?></h3>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <div class="sm-notitification">Article continues after factbox &hellip;</div>
-              
-
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-
-              
-              <? if (dumb_luck("50%")): ?>
-              <!-- EMBEDDED IMAGE -->
-              <?php include("inc/asset-article-image-embedded.php"); ?>
-              
-              
-              <? endif ?>
-
-              
-              <? if (dumb_luck("50%")): ?>
-              <!-- VIDEOS -->
-              <div class="article-video">
-                <iframe width="425" height="349" src="http://www.youtube.com/embed/FKWwdQu6_ok" frameborder="0" allowfullscreen></iframe>
-              </div>
-              <? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-              <? endif ?>
-
-              <?php include("inc/asset-article-letterbox.php"); ?>
-
-              
-              <?php include('inc/asset-article-tags.php'); ?>
+				<p><? dummy("text@paragraph") ?></p>
+				<!-- *** Asset - factbox float right-->
+				<?php include("inc/asset-article-factbox-embedded.php"); ?>
 
 
-              <div class="article-social text-center">
-                    <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>
-                    <a href="mailto:?subject=Artikel fra Business.dk&body=[ARTICLE URL]" class="icon-social-mail"><i class="fa fa-envelope"></i></a>
-              </div>
+				<? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+
+				<? if (dumb_luck("100%")): ?>
+				<!-- *** Asset - factbox theme-->
+				<?php include("inc/asset-article-quiz.php"); ?>
+				<? endif ?>
+
+				<h2>H2:<? dummy("text@item") ?></h2>
+
+				<? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+
+				<? if (dumb_luck("50%")): ?>
+				<div class="media-embeds">
+				<blockquote class="twitter-tweet" lang="da"><p>Jubii! 11,8 millioner fra A. P. Møller Fonden til Helsingør Kommune! God dag;-) <a href="https://twitter.com/SthePol">@sthepol</a>&#10;<a href="http://t.co/LWfd9iStaU">http://t.co/LWfd9iStaU</a></p>&mdash; Benedikte Kiær (@benediktekiaer) <a href="https://twitter.com/benediktekiaer/status/533231937037414400">14. november 2014</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+				<? else: ?>
+				<blockquote class="bond-quote">
+
+				<p>
+				<? dummy("text@teaser") ?>
+				</p>
+				<small><? dummy("text@author") ?>- <? if (dumb_luck("50%")): ?><? dummy("text@teaser") ?><? endif ?></small>
+				<div class="quote-share">SHARE QUOTE <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></div>
+
+				</blockquote>
+				<? endif ?>
+
+				<h3>H3:<? dummy("text@item") ?></h3>
+				<? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+				<div class="sm-notitification">Article continues after factbox &hellip;</div>
 
 
-              <aside class="article-related-chunk list-xs module">
-                <h1 class="section-header">Read also</h1>
-                <ul>
-                  <? while (dumb_luck("2")): ?>
-                  <li class="teaser ">
-                      <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@100x,16:9,") ?>" width="" height="" alt="" /></a></figure>
-                      <div class="teaser-body">
-                        <h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>
-                        <footer><time> 3d.</time></footer>
-                      </div>
+				<? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-                  </li>
-                  <? endwhile ?>
-                </ul>
 
-                <div class="module-top-sm text-center">
-                  <a href="#" class="btn btn-primary btn-sm">Load more <i class="fa fa-caret-down"></i></a>
-                </div>
-              </aside>
+				<? if (dumb_luck("50%")): ?>
+				<!-- EMBEDDED IMAGE -->
+				<?php include("inc/asset-article-image-embedded.php"); ?>
+
+
+				<? endif ?>
+
+
+				<? if (dumb_luck("50%")): ?>
+				<!-- VIDEOS -->
+				<div class="article-video">
+				<iframe width="425" height="349" src="http://www.youtube.com/embed/FKWwdQu6_ok" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+				<? endif ?>
+
+				<?php include("inc/asset-article-letterbox.php"); ?>
+
+
+				<?php include('inc/asset-article-tags.php'); ?>
+
+
+				<div class="article-social text-center">
+				<a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="icon-social-twitter"><i class="fa fa-twitter"></i></a>
+				<a href="#" class="icon-social-linkedin"><i class="fa fa-linkedin"></i></a>
+				<a href="mailto:?subject=Artikel fra Business.dk&body=[ARTICLE URL]" class="icon-social-mail"><i class="fa fa-envelope"></i></a>
+				</div>
+
+
+				<aside class="article-related-chunk list-xs module">
+				<h1 class="section-header">Read also</h1>
+				<ul>
+				<? while (dumb_luck("2")): ?>
+				<li class="teaser ">
+				<figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@100x,16:9,") ?>" width="" height="" alt="" /></a></figure>
+				<div class="teaser-body">
+				<h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>
+				<footer><time> 3d.</time></footer>
+				</div>
+
+				</li>
+				<? endwhile ?>
+				</ul>
+
+				<div class="module-top-sm text-center">
+				<a href="#" class="btn btn-primary btn-sm">Load more <i class="fa fa-caret-down"></i></a>
+				</div>
+				</aside>
+
+			<?php endif; ?>
 
              
 

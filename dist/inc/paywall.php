@@ -1,8 +1,4 @@
-<?php 
-if (isset($_GET['paywall'])) {
-    $paywall = $_GET['paywall'];
-}
-?>
+
 
 <?php if($paywall == 'soft'): ?>
 
