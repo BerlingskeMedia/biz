@@ -1,4 +1,5 @@
 <? require_once("../../dummy/dummy.php") ?>
+<?php include('inc/_variables.php'); ?>
 <?php 
 if (isset($_GET['paywall'])) {
     $paywall = $_GET['paywall'];

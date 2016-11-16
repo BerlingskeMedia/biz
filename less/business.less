@@ -212,6 +212,7 @@ ins.text-label {
 	right: 0;
 	z-index: 10002;
 	text-align: center;
+
 	.transition (opacity .2s ease);
 	span {
 		display: inline-block;
@@ -3378,7 +3379,6 @@ h1.heading {
 }
 .sticky-social,
 .article-social {
-	.module-xs;
 	padding: 10px 0;
 
 	@icon-size: 35px;
@@ -3403,6 +3403,9 @@ h1.heading {
       float: none;
       margin-top: 0;
     }
+}
+.article-social {
+	.module-xs;
 }
 
 #article-comments {

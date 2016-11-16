@@ -153,6 +153,22 @@ if(isset($_GET["live"])) {
 
 <div class="header-wrapper">
 <div class="sticky-social">
+
+<?php if($showNext): ?>
+
+  <aside class="next-article-inner">
+    <div class="link-frontpage">
+        <a href="/"><i class="fa fa-caret-left"></i> Til forsiden</a>
+    </div>
+
+    <article class="teaser-show-next">
+      <span class="badge">Populær på<br>Business.dk</span>
+      <h3 class="header"><a href="tpl-article.php?showNext"><? dummy("text@headline") ?></a></h3>
+    </article>
+  </aside>
+<?php else: ?>
+
+
   
   <div class="inner">
     <span>Del <span class="hidden-xs"> artiklen</span>:</span>
@@ -164,6 +180,8 @@ if(isset($_GET["live"])) {
     <!-- <span class="comments-teaser"><a href="#" class="icon-social-letter scroll-comments"><i class="fa fa-comment"></i><span class="icon-text scroll-comments">48</span></a></span> -->
     
   </div>        
+
+<?php endif; ?>
 
 </div>
 
