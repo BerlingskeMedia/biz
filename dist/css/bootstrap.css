@@ -13496,12 +13496,11 @@ body.billede .picture-series-watermark {
   }
   .teaser-show-next {
     width: 100%;
-    padding-left: 110px;
+    padding-left: 80px;
   }
   .teaser-show-next .badge {
     font-size: 10px;
-    width: 100px;
-    margin-left: -100px;
+    margin-left: -75px;
     padding: 11px 5px 5px 5px;
   }
   .teaser-show-next .header {
@@ -13518,6 +13517,8 @@ body.billede .picture-series-watermark {
     vertical-align: middle;
     width: 100%;
     padding-left: 5px;
+    height: 40px;
+    overflow: hidden;
   }
 }
 @media (min-width: 992px) {
