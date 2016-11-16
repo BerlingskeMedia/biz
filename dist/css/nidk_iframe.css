@@ -1,40 +1,15 @@
 @charset "UTF-8";
-/*@import "variables";
-@import "logo";*/
-$col-news: blue;
 
-@mixin fontFace($family, $src, $style: normal, $weight: normal) {
-    @font-face {
-        font-family: $family;
-        src: url('#{$src}.eot'); // IE9 compat
-        src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
-            url('#{$src}.woff2') format('woff2'), // standards
-            url('#{$src}.woff') format('woff'), // standards
-            url('#{$src}.ttf') format('truetype'); // Safari, Android, iOS
-        font-style: $style;
-        font-weight: $weight;
-    }
+@font-face {
+    font-family: Berlingske;
+    src: url('../fonts/berlingskeserif-bd.eot');
+    src: url('../fonts/berlingskeserif-bd.eot?#iefix') format("embedded-opentype"), 
+    url('../fonts/berlingskeserif-bd.woff2') format("woff2"), 
+    url('../fonts/berlingskeserif-bd.woff') format("woff"), 
+    url('../fonts/berlingskeserif-bd.ttf') format("truetype");
+    font-style: "normal";
+    font-weight: 600
 }
-
-@include fontFace('CPH-Signs', '../fonts/CPH-Signs Berlingske-RegularWEB', 'normal',400);
-@include fontFace('Sanomat', '../fonts/Sanomat Serif regular', 'normal',400);
-@include fontFace('Sanomat', '../fonts/Sanomat Serif Black', 'normal',900);
-/*@include fontFace('Guardian', '../fonts/Guardian Text Egyp Web-Regular', 'normal',400);*/
-
-
-.sanomat {
-	font-family: Sanomat, Georgia, "times new roman", times, serif;
-}
-.cph {
-	font-family: CPH-Signs, "helvetica neue", helvetica, arial, sans-serif;
-}
-/*
-.guardian {
-	font-family: Guardian, "times new roman", times, serif;
-}*/
-
-
-
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -176,6 +151,8 @@ figcaption {
 	z-index: 2;
 	font-size: 15px;
 	font-weight: 600;
+    font-family: berlingske, georgia, times, "times new roman", serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 figcaption:hover {
