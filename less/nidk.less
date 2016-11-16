@@ -1,0 +1,356 @@
+@charset "UTF-8";
+@import "variables";
+@import "logo";
+$col-news: blue;
+
+@mixin fontFace($family, $src, $style: normal, $weight: normal) {
+    @font-face {
+        font-family: $family;
+        src: url('#{$src}.eot'); // IE9 compat
+        src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
+            url('#{$src}.woff2') format('woff2'), // standards
+            url('#{$src}.woff') format('woff'), // standards
+            url('#{$src}.ttf') format('truetype'); // Safari, Android, iOS
+        font-style: $style;
+        font-weight: $weight;
+    }
+}
+
+@include fontFace('CPH-Signs', '../fonts/CPH-Signs Berlingske-RegularWEB', 'normal',400);
+@include fontFace('Sanomat', '../fonts/Sanomat Serif regular', 'normal',400);
+@include fontFace('Sanomat', '../fonts/Sanomat Serif Black', 'normal',900);
+/*@include fontFace('Guardian', '../fonts/Guardian Text Egyp Web-Regular', 'normal',400);*/
+
+
+.sanomat {
+	font-family: Sanomat, Georgia, "times new roman", times, serif;
+}
+.cph {
+	font-family: CPH-Signs, "helvetica neue", helvetica, arial, sans-serif;
+}
+/*
+.guardian {
+	font-family: Guardian, "times new roman", times, serif;
+}*/
+
+
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+html,body, li, ul, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+}
+body {
+    line-height: 1;
+    background-color: #fff;
+}
+
+.wrapper {
+	height: 205px;
+	position: relative;
+    background: #fff;
+    width: 310px;
+    border-top: 0;
+}
+
+.header {
+    line-height: 25px;
+    padding-left: 10px;
+    height: 25px;
+    border-bottom: 0;
+    background: url(http://www.ni.dk/partner/img/header.png)  center 0 no-repeat;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+.content-wrapper {
+    border-top: 0;
+    position: relative;
+    
+}
+
+.menu {
+	text-align: right;
+	padding-left: 83px;
+	height: 30px;
+	border-left: 1px solid #c7c9cb;
+	border-right: 1px solid #c7c9cb;
+}
+
+.logo {
+    @extend .sanomat;
+    font-weight: 900;
+    font-size: 20px;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    z-index: 99;
+    color: #1e1448;
+    text-decoration: none;
+}
+
+.main-content {
+	border-left: 1px solid #c7c9cb;
+	border-right: 1px solid #c7c9cb;
+}
+
+
+.tabs {
+	margin: 0;
+	height: 30px;
+	display: inline-block;
+	margin: 0;
+}
+.tabs li {
+    float: left;
+    padding: 0 12px;
+    margin: 0;
+    display: inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    line-height: 1;
+    font-weight: normal;
+}
+.tabs .current {
+    color: #007cbb;
+}
+
+.tabs a {
+    padding: 10px 0 0px 0;
+    margin-bottom: 2px;
+    text-decoration: none;
+    display: inline-block;
+    color: #000; 
+    text-decoration: none;
+}
+.tabs a:hover {
+    color: #007cbb;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+figure {
+	position: relative;
+	margin: 0;
+}
+figure:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: '';
+    background-color: rgba(0,0,0,.4);
+    transition: background-color .2s ease;
+    z-index: 1;
+}
+figure:hover:after {
+    background-color: rgba(0,0,0,.5);
+}
+	 
+
+	
+}
+figcaption {
+	position: absolute;
+	left: 8px;
+	bottom: 10px;
+	right: 5px;
+	color: #fff;
+	line-height: 1;
+	z-index: 2;
+	font-size: 15px;
+	font-weight: 900;
+}
+
+figcaption:hover {
+    text-decoration: underline;
+}       
+
+
+.tab {
+    height: 132px;
+    border-bottom: 1px solid #c7c9cb;
+    overflow: hidden;
+}
+
+.tab  ul {
+        margin: 2px 0 0 5px;
+        padding: 0;
+        list-style: none;
+        
+    }
+.tab li {
+        margin: 0 ;
+        padding: 0;
+        font-size: 12px;
+        text-decoration: none;
+    }
+.tab ul a {
+        text-decoration: none;
+        padding: 3px 0 3px 35px;
+        display: block;
+        max-width: 275px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #000;
+        
+    }
+.tab ul a :hover {
+    text-decoration: underline;
+}
+
+.tab .time {
+        color: #999;
+        display: inline-block;
+        margin-left: -35px;
+        float: left;
+        text-align: right;
+        width: 30px;
+        font-size: 12px;
+    }
+.tab .headline {
+        font-size: 12px;
+    }
+
+
+
+.tab-container > div {
+	display: none;
+}
+.tab-container .showMe {
+	display: block!important;
+}
+
+
+.counter-0 {
+
+}
+
+.footer {
+    padding: 0 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    border-left: 1px solid #c7c9cb;
+    border-right: 1px solid #c7c9cb;
+    border-bottom: 1px solid #c7c9cb;
+}
+ .footer p {
+    	margin: 0;
+    	display: inline-block;
+    }
+.footer p+p {
+    float: right;
+}
+
+
+
+
+.footer a {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+}
+.footer span {
+    display: none;
+}
+
+
+.arrows {
+	position: absolute;
+	top: 104px;
+	right: 5px;
+	width: 20px;
+	height: 50px;
+	z-index: 10;
+}
+.arrows a {
+    color: #000;
+}
+
+.arrow {
+  fill: #6b6b6b; 
+}
+.arrow:hover {
+  fill: darken(#6b6b6b, 20%); 
+}
+.arrow-prev svg {
+	transform: rotate(180deg);
+}
+.arrow-next svg {
+	margin-top: 9px;
+}
+
+.slide-in {
+    animation: slide-in 0.5s forwards;
+}
+@keyframes slide-in {
+    100% { 
+		
+		opacity: 1;
+	}
+}
+
+[class*="counter-"] {
+	list-style: none;
+}
+
+[class*="counter-"] li {
+    display: none;
+    opacity: 0;
+    @extend .slide-in;
+}
+
+.counter-0 li:nth-child(-n+3) {
+	display: block;
+}
+
+.counter-1 li:nth-child(n+4) {
+    display: block;
+} 
+
+.counter-1 li:nth-last-child(-n+6) {
+    display: none;
+}
+
+.counter-2 li:nth-child(n+7) {
+    display: block;
+} 
+	
+
+.counter-2 li:nth-last-child(-n+3) {
+    display: none;
+}
+
+.counter-3 li:nth-child(n+10) {
+    display: block;
+} 
+
