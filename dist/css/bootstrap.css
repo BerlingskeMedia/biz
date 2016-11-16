@@ -13421,7 +13421,7 @@ body.billede .picture-series-watermark {
 .teaser-show-next .header {
   font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   margin: 2px 0 0 0;
-  padding: 0 0 0 10px;
+  padding: 0 0 1px 10px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -13438,8 +13438,7 @@ body.billede .picture-series-watermark {
   color: #fff;
   display: inline-block;
   height: 42px;
-  width: 120px;
-  padding: 7px 10px 5px 10px;
+  padding: 7px 5px 5px 10px;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
@@ -13458,16 +13457,16 @@ body.billede .picture-series-watermark {
 }
 @media (min-width: 992px) {
   .teaser-show-next .badge {
-    padding-right: 25px;
+    padding-right: 20px;
   }
   .teaser-show-next .badge:before {
     content: '\f0da';
     font-family: fontawesome;
     position: absolute;
-    top: 10px;
+    top: 12px;
     right: 8px;
     color: #fff;
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 .link-frontpage {

@@ -462,10 +462,11 @@
 	.header {
 		font-family: @font-family-serif;
 		margin: 2px 0 0 0;
-		padding: 0 0 0 10px;
+		padding: 0 0 1px 10px;
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		overflow: hidden;
+
 		a {
 			color: #000;
 			&:hover {
@@ -479,8 +480,8 @@
 		color: #fff;
 		display: inline-block;
 		height: 42px;
-		width: 120px;
-		padding: 7px 10px 5px 10px;
+		text-align: center;
+		padding: 7px 5px 5px 10px;
 		line-height: 1;
 		text-align: center;
 		text-transform: uppercase;
@@ -497,15 +498,15 @@
 			transform: skewX(-4deg);
 		}
 		@media (min-width: @screen-md) { 
-			padding-right: 25px;
+			padding-right: 20px;
 			&:before {
 				content: '\f0da';
 				font-family: fontawesome;
 				position: absolute;
-				top: 10px;
+				top: 12px;
 				right: 8px;
 				color: #fff;
-				font-size: 20px;
+				font-size: 17px;
 			}
 		}
 	}
