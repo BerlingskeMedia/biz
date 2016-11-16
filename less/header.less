@@ -553,20 +553,22 @@
 		}
 		.header {
 			font-size: 14px;
-			line-height: 42px;
 			margin-top: 0;
 			height: 42px;
-			display: table-row;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			line-height: 1;
 			white-space: initial;
 		}
 		a {
-			display: table-cell;
-			vertical-align: middle;
 			width: 100%;
 			padding-left: 5px;
-			height: 40px;
 			overflow: hidden;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			max-height: 42px;
+			padding-bottom: 2px; 
 		}
 	}
 
