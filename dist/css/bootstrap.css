@@ -13439,7 +13439,7 @@ body.billede .picture-series-watermark {
   display: inline-block;
   height: 42px;
   width: 120px;
-  padding: 7px 25px 5px 10px;
+  padding: 7px 10px 5px 10px;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
@@ -13456,14 +13456,19 @@ body.billede .picture-series-watermark {
   z-index: -1;
   transform: skewX(-4deg);
 }
-.teaser-show-next .badge:before {
-  content: '\f0da';
-  font-family: fontawesome;
-  position: absolute;
-  top: 10px;
-  right: 8px;
-  color: #fff;
-  font-size: 20px;
+@media (min-width: 992px) {
+  .teaser-show-next .badge {
+    padding-right: 25px;
+  }
+  .teaser-show-next .badge:before {
+    content: '\f0da';
+    font-family: fontawesome;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    color: #fff;
+    font-size: 20px;
+  }
 }
 .link-frontpage {
   width: 100px;

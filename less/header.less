@@ -480,7 +480,7 @@
 		display: inline-block;
 		height: 42px;
 		width: 120px;
-		padding: 7px 25px 5px 10px;
+		padding: 7px 10px 5px 10px;
 		line-height: 1;
 		text-align: center;
 		text-transform: uppercase;
@@ -496,14 +496,17 @@
 			z-index: -1;
 			transform: skewX(-4deg);
 		}
-		&:before {
-			content: '\f0da';
-			font-family: fontawesome;
-			position: absolute;
-			top: 10px;
-			right: 8px;
-			color: #fff;
-			font-size: 20px;
+		@media (min-width: @screen-md) { 
+			padding-right: 25px;
+			&:before {
+				content: '\f0da';
+				font-family: fontawesome;
+				position: absolute;
+				top: 10px;
+				right: 8px;
+				color: #fff;
+				font-size: 20px;
+			}
 		}
 	}
 	
