@@ -13413,15 +13413,27 @@ body.billede .picture-series-watermark {
 .next-article-inner:after {
   clear: both;
 }
+.link-frontpage {
+  width: 120px;
+  float: left;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 34px;
+  padding: 3px 0 0 10px;
+  text-transform: uppercase;
+}
+.link-frontpage a {
+  color: #222;
+}
 .teaser-show-next {
-  width: calc(100% - 100px);
+  width: calc(100% - 120px);
   float: left;
   padding-left: 120px;
 }
 .teaser-show-next .header {
   font-family: Berlingske, Georgia, "Times New Roman", Times, serif;
   margin: 2px 0 0 0;
-  padding: 0 0 1px 10px;
+  padding: 0 0 1px 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -13438,11 +13450,12 @@ body.billede .picture-series-watermark {
   color: #fff;
   display: inline-block;
   height: 42px;
-  padding: 7px 5px 5px 10px;
+  padding: 9px 5px 5px 8px;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
   float: left;
+  font-size: 12px;
 }
 .teaser-show-next .badge:after {
   position: absolute;
@@ -13469,17 +13482,6 @@ body.billede .picture-series-watermark {
     font-size: 17px;
   }
 }
-.link-frontpage {
-  width: 100px;
-  float: left;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 34px;
-  padding: 0 0 0 10px;
-}
-.link-frontpage a {
-  color: #222;
-}
 @media (max-width: 1024px) {
   .sub-nav ul li a {
     padding: 0 10px;
@@ -13500,7 +13502,7 @@ body.billede .picture-series-watermark {
     font-size: 10px;
     width: 100px;
     margin-left: -100px;
-    padding: 11px 5px 5px;
+    padding: 11px 5px 5px 5px;
   }
   .teaser-show-next .header {
     font-size: 14px;
