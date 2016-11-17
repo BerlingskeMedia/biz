@@ -17,6 +17,7 @@ $(function () {
 
     // Navigation
     var sw = $('.site-wrap');
+    var readNextShown = false; // only make animation on readNext teaser first time
     if (sw.length && sw.offset() && $('.main-header-bottom').length) {
         sticky_navigation_offset_top = $('.main-header-bottom').offset().top;
     }
@@ -111,12 +112,18 @@ $(function () {
         var y = $(this).scrollTop();
 
         if (showShareMenu) {
-            if (y >= showShareMenu && y >= lastScrollTop)
+            if (y >= showShareMenu && y >= lastScrollTop) {
                 body.addClass('show-social-menu');
+                $('.next-article-inner').addClass('slideDown');
+                
+            }
             else
-                body.removeClass('show-social-menu');
-        }
-        lastScrollTop = y
+                {
+                    body.removeClass('show-social-menu');
+                    $('.next-article-inner').removeClass('slideDown');
+                }
+            }
+            lastScrollTop = y
     });
 
 
