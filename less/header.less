@@ -479,19 +479,19 @@
 		margin: 2px 0 0 0;
 		padding: 0 0 1px 0;
 		opacity: 1;
-		
-
+		text-overflow: ellipsis;
+		overflow: hidden;
+		display: inline-block;
+		max-width: 100%;
+		white-space: nowrap;
 		a {
 			color: #000;
-			white-space: nowrap;
-			text-overflow: ellipsis;
-			overflow: hidden;
-			display: inline-block;
-			max-width: 100%;
 			font-weight: 600;
-		
 			&:hover {
 				opacity: .8;
+			}
+			i {
+				color: #a10e4b;
 			}	
 		}
 	}

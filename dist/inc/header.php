@@ -163,7 +163,7 @@ if(isset($_GET["live"])) {
 
     <article class="teaser-show-next">
       <span class="badge">Populær på<br>Business.dk</span>
-      <h3 class="header"><a href="tpl-article.php?showNext"><? dummy("text@headline") ?> </a></h3>
+      <h3 class="header"><a href="tpl-article.php?showNext"><? dummy("text@headline") ?> <i class="hidden-lg hidden-md fa fa-caret-right"></i> </a></h3>
     </article>
   </aside>
 <?php else: ?>
