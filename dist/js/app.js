@@ -17,7 +17,6 @@ $(function () {
 
     // Navigation
     var sw = $('.site-wrap');
-    var readNextShown = false; // only make animation on readNext teaser first time
     if (sw.length && sw.offset() && $('.main-header-bottom').length) {
         sticky_navigation_offset_top = $('.main-header-bottom').offset().top;
     }

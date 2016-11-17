@@ -13478,7 +13478,7 @@ body.billede .picture-series-watermark {
   color: #a10e4b;
 }
 .teaser-show-next .badge {
-  margin-left: -120px;
+  margin-left: -100px;
   position: relative;
   color: #fff;
   display: inline-block;
@@ -13489,6 +13489,18 @@ body.billede .picture-series-watermark {
   text-transform: uppercase;
   float: left;
   font-size: 12px;
+  /*@media (min-width: @screen-md) { 
+			padding-right: 20px;
+			&:before {
+				content: '\f0da';
+				font-family: fontawesome;
+				position: absolute;
+				top: 12px;
+				right: 8px;
+				color: #fff;
+				font-size: 17px;
+			}
+		}*/
 }
 .teaser-show-next .badge:after {
   position: absolute;
@@ -13500,20 +13512,6 @@ body.billede .picture-series-watermark {
   bottom: 0;
   z-index: -1;
   transform: skewX(-4deg);
-}
-@media (min-width: 992px) {
-  .teaser-show-next .badge {
-    padding-right: 20px;
-  }
-  .teaser-show-next .badge:before {
-    content: '\f0da';
-    font-family: fontawesome;
-    position: absolute;
-    top: 12px;
-    right: 8px;
-    color: #fff;
-    font-size: 17px;
-  }
 }
 .slideDown {
   animation: blinkme linear .2s;
