@@ -1,35 +1,35 @@
 @font-face {
   font-family: 'Proxima';
-  src: url('../fonts/proximanova-light.eot');
-  src: url('../fonts/proximanova-light.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-light.woff2') format('woff2'), url('../fonts/proximanova-light.woff') format('woff'), url('../fonts/proximanova-light.ttf') format('truetype');
+  src: url('../fonts/prox-light.eot');
+  src: url('../fonts/prox-light.eot?#iefix') format('embedded-opentype'), url('../fonts/prox-light.woff2') format('woff2'), url('../fonts/prox-light.woff') format('woff');
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: 'Proxima';
-  src: url('../fonts/proximanova-regular.eot');
-  src: url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-regular.woff2') format('woff2'), url('../fonts/proximanova-regular.woff') format('woff'), url('../fonts/proximanova-regular.ttf') format('truetype');
+  src: url('../fonts/prox-regular.eot');
+  src: url('../fonts/prox-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/prox-regular.woff2') format('woff2'), url('../fonts/prox-regular.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'Proxima';
-  src: url('../fonts/proximanova-bold.eot');
-  src: url('../fonts/proximanova-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-bold.woff2') format('woff2'), url('../fonts/proximanova-bold.woff') format('woff'), url('../fonts/proximanova-bold.ttf') format('truetype');
+  src: url('../fonts/prox-bold.eot');
+  src: url('../fonts/prox-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/prox-bold.woff2') format('woff2'), url('../fonts/prox-bold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: 'Berlingske';
   src: url('../fonts/berlingskeserif-rg.eot');
-  src: url('../fonts/berlingskeserif-rg.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-rg.woff2') format('woff2'), url('../fonts/berlingskeserif-rg.woff') format('woff'), url('../fonts/berlingskeserif-rg.ttf') format('truetype');
+  src: url('../fonts/berlingskeserif-rg.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-rg.woff2') format('woff2'), url('../fonts/berlingskeserif-rg.woff') format('woff');
   font-weight: 300;
   font-style: regular;
 }
 @font-face {
   font-family: 'Berlingske';
   src: url('../fonts/berlingskeserif-bd.eot');
-  src: url('../fonts/berlingskeserif-bd.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-bd.woff2') format('woff2'), url('../fonts/berlingskeserif-bd.woff') format('woff'), url('../fonts/berlingskeserif-bd.ttf') format('truetype');
+  src: url('../fonts/berlingskeserif-bd.eot?#iefix') format('embedded-opentype'), url('../fonts/berlingskeserif-bd.woff2') format('woff2'), url('../fonts/berlingskeserif-bd.woff') format('woff');
   font-weight: 600;
   font-style: regular;
 }
