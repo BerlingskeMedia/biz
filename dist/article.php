@@ -5,7 +5,7 @@ if (isset($_GET['paywall'])) {
 }
 ?>
 
-<?php $imageSize = rand(0,2); ?>
+<?php $imageSize = rand(1,1); ?>
 
 
 
@@ -95,26 +95,18 @@ if (isset($_GET['paywall'])) {
             
           
 
-              <?php if($imageSize == '1'): ?>
+          
                 
 
-            <? if (dumb_luck("50%")): ?>
-           
-           <?php include('inc/asset-article-image-slider.php'); ?>
-
-            <? else: ?>
+            
 
               <?php include('inc/asset-article-image.php') ?>
 
-            <? endif ?>
+            
 
-              <?php endif; ?>
+              
 
-              <?php if($imageSize == '2'): ?>
-              <div class="test-article-webtv">
-                WEB TV player
-              </div>
-            <?php endif; ?>
+              
 
               <div class="article-social article-social-top">
                     <a href="#" class="icon-social-facebook"><i class="fa fa-facebook"></i></a>
@@ -161,7 +153,7 @@ if (isset($_GET['paywall'])) {
             
 
 				
-            	            <div class="article-fact-float-right article-fact-graph module-sm">
+            	            <!-- <div class="article-fact-float-right article-fact-graph module-sm">
                             <div class="visible-xs text-center">
                               <img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=MAERSK/A.co&prv=ms_dlc&points=20&ts=1440&current=1426690728590&w=340&h=206&bgcolor=edd0c7&fullName=[name]%20-%201%20mdr.&end=2015-03-17" class="img-responsive">
                             </div>
@@ -170,30 +162,30 @@ if (isset($_GET['paywall'])) {
                             </div>
                             <div class="visible-md visible-lg">
                               <img src="http://businessdk.netdania.com/backend/GetImage.aspx?instr=MAERSK/A.co&prv=ms_dlc&points=20&ts=1440&current=1426690728590&w=208&h=150&bgcolor=edd0c7&fullName=[name]%20-%201%20mdr.&end=2015-03-17" class="img-responsive">
-                            </div>
+                            </div> -->
                               
                   
-              <div class="section-sponsor-sm"><a href="http://www.nykredit.dk/#!/dit-liv/bolig/boligfinansiering/dagens-obligationskurser-udbetaling?ref=businessdk" target="_blank"><i class="fa fa-caret-right"></i> Aktuelle obligationskurser</a> <a href="http://www.nykredit.dk/#!/dit-liv/bolig/boligfinansiering/dagens-obligationskurser-udbetaling?ref=businessdk" target="_blank"><img src="images/nykredit_logo_negativ.jpg" class="sponsor-logo"></a></div>
+              <!-- <div class="section-sponsor-sm"><a href="http://www.nykredit.dk/#!/dit-liv/bolig/boligfinansiering/dagens-obligationskurser-udbetaling?ref=businessdk" target="_blank"><i class="fa fa-caret-right"></i> Aktuelle obligationskurser</a> <a href="http://www.nykredit.dk/#!/dit-liv/bolig/boligfinansiering/dagens-obligationskurser-udbetaling?ref=businessdk" target="_blank"><img src="images/nykredit_logo_negativ.jpg" class="sponsor-logo"></a></div> -->
 
 
-                          </div>
+                          <!-- </div> -->
 
                           <p><? dummy("text@paragraph") ?></p>
 
                           <? if (dumb_luck("25%")): ?>
                             <!-- *** Asset - factbox theme-->
-                            <?php include("inc/asset-article-factbox-theme.php"); ?>
+                            <?php // include("inc/asset-article-factbox-theme.php"); ?>
                           <? endif ?>
 
                           <? if (dumb_luck("100%")): ?>
                           
                             <? if (dumb_luck("50%")): ?>
                             <!-- *** Asset - factbox float right-->
-                            <?php include("inc/asset-article-factbox-float-right.php"); ?>
+                            <?php // include("inc/asset-article-factbox-float-right.php"); ?>
                           
                             <? else: ?>
                             <!-- *** Asset - factbox timeline  -->
-                            <?php include("inc/asset-article-factbox-timeline.php"); ?>
+                            <?php // include("inc/asset-article-factbox-timeline.php"); ?>
                             <? endif ?>
 
 
@@ -201,12 +193,7 @@ if (isset($_GET['paywall'])) {
             	
 
 
-				<? if (dumb_luck("50%")): ?>
-				<? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-				<div class="embedded-node">
-				<iframe src="http://cf.datawrapper.de/2W39o/1/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="417"></iframe>
-				</div>
-				<? endif ?>
+				
 				<? while (dumb_luck("3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
 				<?php include('inc/article-link-embedded.php'); ?>

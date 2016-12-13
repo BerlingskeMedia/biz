@@ -18,8 +18,8 @@
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid rgba(0,0,0,.05);
   border: 0;
-  border-bottom: 2px solid rgba(0,0,0,.2);
-  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
+  // border-bottom: 2px solid rgba(0,0,0,.2);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.15);
   border-radius: 2px;
   white-space: nowrap;
   .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; 1px);
@@ -93,11 +93,20 @@
 // Danger and error appear as red
 .btn-success {
   .button-variant(@btn-success-color; @btn-success-bg; );
+  
+}
+.btn-success {
+  .button-variant(@btn-success-color; @btn-success-bg; );
+  
 }
 
 // Danger and error appear as red
 .btn-danger {
   .button-variant(@btn-danger-color; @btn-danger-bg; );
+}
+
+.btn-transparent {
+ .button-variant(#222; #e1c6bd);
 }
 
 
@@ -153,6 +162,40 @@
 .btn-sm {
   // line-height: ensure proper height of button next to small input
   .button-size(5px; 14px; 13px; @line-height-small; 2px);
+}
+.btn-paywall {
+  .button-size(8px; 14px; 16px; 1.1; 2px);
+  // padding: 7px 14px 4px;
+  text-transform: none;
+  text-align: left;
+  padding-right: 40px;
+  position: relative;
+  i {
+    display: block;
+    
+    border-left: 1px solid rgba(0,0,0,.1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    &:before {
+      position: absolute;
+      top: 50%;
+      margin-top: -10px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+  
+  em {
+    font-style: normal;
+    font-size: 12px;
+    display: block;
+
+  }
 }
 .btn-xs {
   .button-size(@padding-xs-vertical; 9px; @font-size-small; @line-height-small; 2px);

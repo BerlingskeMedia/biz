@@ -3,25 +3,55 @@
 <?php if($paywall == 'soft'): ?>
 
 
-    <section class="paywall-fade paywall paywall-soft" rel="noindex">
-        <div class="row">
-            <div class="col-xs-12 col-lg-10 col-lg-offset-1">
-                <h2>God fornøjelse</h2>
-                <p>
-                    Denne artikel er normalt kun for abonnenter, men i dag kan du læse den gratis.
+    <section class="paywall paywall-soft" rel="noindex">
+        
+            <div class="paywall-inner">
+                <h2>God læselyst!</h2>
+                <p class="module-lg">
+                    Denne artikel kræver normalt, at du har et abonnement. Men i dag kan du læse den gratis!
                 </p>
-                <p >Få adgang til alle artikler med et digitalt abonnement.</p>
                 
-
-                        <button class="btn btn-primary btn-sm  module-sm">
-                            Få den første måned gratis nu <i class="fa fa-angle-right"></i>
+                <div class="module-sm">
+                    <div class="btn-container">
+                    	<div class="btn-container-inner">
+                        
+                        <button class="btn btn-live btn-md  btn-paywall ">
+                        	<em>Ja tak</em>
+                        	<div class="rotator" >
+                        		<span class="msg1">Køb abonnement</span>
+                        		<span class="msg2">Prøv gratis i 30 dage</span>	
+                        	</div>
+                        	<i class="fa fa-angle-right"></i>
+                            
                         </button>
-                                                    <p class="small">
-                                <a href="#" class="close-paywall-overlay link-gray">Nej tak, jeg vil bare læse artiklen <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+					
+                    <div class="btn-container">
+                    	<div class="btn-container-inner">
+						
+                    	<button class="btn btn-transparent btn-md btn-paywall close-paywall-overlay">
+                    	<em>Nej tak</em>
+                    	    Jeg vil bare læse artiklen 
+
+                    	 <i class="fa fa-angle-right"></i>
+                    	</button>
+                    	</div>
+
+                    </div>
+
+                </div>
+                        
+                                                    
+				<p class="small">
+                    Allerede abonnent?
+                                                    <a href="#" class="btn-topmenu-login toggle-login link-gray" data-href="" data-toggle="modal" data-target="#modal-login">
+                        <i class="fa fa-user" aria-hidden="true"></i>&nbsp;Klik her
+                    </a>
+                </p>
                                                                 
-                            </p>
+                            
                 
-            </div>
         </div>
     </section>
 
@@ -29,33 +59,43 @@
 
 <?php elseif ($paywall == 'hard'): ?>
 
-    <section class="paywall-fade paywall paywall-hard" rel="noindex">
-        <div class="row">
-            <div class="col-xs-12 col-lg-10 col-lg-offset-1">
-                <p class="paywall--caption">Artiklen er kun for abonnenter</p>
-                <h2>Velkommen</h2>
-                <p>Få adgang til alle artikler på Berlingske.dk og Business.dk med et digitalt abonnement.</p>
-            
+    <section class=" paywall paywall-hard" rel="noindex">
+        
+        <div class="paywall-inner">
                 
-            <button class="open-link btn btn-primary btn-sm  module-xs" data-link="http://abonnement.b.dk/berlingske-alle-produkter-abonnementslink/?utm_source=web_intern&amp;utm_medium=web_abonnementlinks&amp;utm_term=AL-151222-CP-WKLEDIT1WK&amp;utm_content=bus_indhold&amp;utm_campaign=abonnementer_berlingske&amp;callback_url=http%3A//login.berlingskemedia.net/sso/server/multisite-update/biz&amp;utm_source=paywall&amp;utm_medium=pw_køb_link&amp;utm_term=AL-151222-CP-WKLEDIT1PW&amp;utm_content=alle_abonnementer&amp;utm_campaign=Matrix">
-                Få den første måned gratis nu <i class="fa fa-angle-right"></i>
+                <h2>Få hurtig adgang til artiklen</h2>
+
+                <p>Artiklen kræver abonnement.</p>
+                
+             <div class="module-sm">
+            <button class="btn btn-live btn-md  btn-paywall ">
+            	<em>Køb abonnement</em>
+            	<div class="rotator" >
+            		<span class="msg1">Køb abonnement</span>
+            		<span class="msg2">Prøv gratis i 30 dage</span>	
+            	</div>
+            	<i class="fa fa-angle-right"></i>
+                
             </button>
-                                        <p class="small">
+				
+			</div>
+                
+            
+			<p class="small">
                     Allerede abonnent?
-                                                    <a href="#" class="btn-topmenu-login toggle-login link-blue" data-href="/login_form?returnUri=http%3A//business.bemit.dk/redirect%3FreturnUri%3DaHR0cDovL2J1c2luZXNzLmJlbWl0LmRrL2thcnJpZXJlL3RoZS1oYXJkZXN0LWhhcmQtcGF5d2FsbA%25253D%25253D" data-toggle="modal" data-target="#modal-login">
+                                                    <a href="#" class="btn-topmenu-login toggle-login link-gray" data-href="" data-toggle="modal" data-target="#modal-login">
                         <i class="fa fa-user" aria-hidden="true"></i>&nbsp;Klik her
                     </a>
                 </p>
-                <div class="alert alert-danger">
+                <!-- <div class="alert alert-danger">
                                 <p>Du er logget ind med en profil, der desværre ikke giver adgang til Berlingske.dk i dag. Det kan skyldes, at dit abonnement har begrænset digital adgang, eller at din ordre ikke er tilknyttet din profil. 
                                 
                                 <a href="https://b.kundeunivers.dk/">Tilknyt ordrenummer</a></p>
 
                 <p><strong>Har du brug for hjælp?</strong>
                 Kontakt Kundeservice på 3375 3330</p>
-                </div>
+                </div> -->
                 
-            </div>
         </div>
     </section>
 
