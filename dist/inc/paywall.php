@@ -31,7 +31,7 @@
                     	<div class="btn-container-inner">
 						
                     	<button class="btn btn-transparent btn-md btn-paywall close-paywall-overlay">
-                    	<em>Nej tak</em>
+                    	<em>Fortsæt uden abonnement</em>
                     	    Jeg vil bare læse artiklen 
 
                     	 <i class="fa fa-angle-right"></i>
@@ -69,14 +69,14 @@
                 
              <div class="module-sm">
             <button class="btn btn-live btn-md  btn-paywall ">
-            	<em>Køb abonnement</em>
-            	<div class="rotator" >
-            		<span class="msg1">Køb abonnement</span>
-            		<span class="msg2">Prøv gratis i 30 dage</span>	
-            	</div>
-            	<i class="fa fa-angle-right"></i>
-                
-            </button>
+                                    	<em><ins>Køb abonnement</ins></em>
+                                    	<div class="rotator" >
+                                    		<span class="msg1">Ingen binding</span>
+                                    		<span class="msg2">Prøv gratis i 30 dage</span>	
+                                    	</div>
+                                    	<i class="fa fa-angle-right"></i>
+                                        
+                                    </button>
 				
 			</div>
                 
