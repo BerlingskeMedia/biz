@@ -11,9 +11,9 @@
                     Denne artikel kræver normalt, at du har et abonnement. Men i dag kan du læse den gratis!
                 </p>
                 
-                <div class="module-sm">
-                    <div class="btn-container">
-                    	<div class="btn-container-inner">
+                <div class="module-xs">
+                    
+                    	
                         
                         <button class="btn btn-live btn-md  btn-paywall ">
                         	<em><ins>Køb abonnement</ins></em>
@@ -24,8 +24,7 @@
                         	<i class="fa fa-angle-right"></i>
                             
                         </button>
-                        </div>
-                    </div>
+                    
 					
                     
 
@@ -42,8 +41,7 @@
                             
               
               <a href="#" class="close-paywall-overlay link-gray small">
-                    	Fortsæt uden abonnement - 
-                    	    Vis mig artiklen <i class="fa fa-angle-down"></i>
+                    	Fortsæt til artiklen uden abonnement <i class="fa fa-angle-right"></i>
 				</a>
 
         </div>
