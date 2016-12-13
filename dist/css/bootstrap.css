@@ -13779,6 +13779,7 @@ body.billede .picture-series-watermark {
     font-size: 14px;
   }
   .paywall .btn {
+    display: block;
     padding-left: 10px;
     width: 100%;
   }
@@ -13786,6 +13787,7 @@ body.billede .picture-series-watermark {
     padding: 0;
     margin-bottom: 10px;
     float: none;
+    display: block;
   }
   .paywall .btn-container-inner {
     padding: 0;
