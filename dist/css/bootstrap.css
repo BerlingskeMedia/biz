@@ -2930,7 +2930,6 @@ fieldset[disabled] .btn-link:focus {
   bottom: 0;
   right: 0;
   width: 30px;
-  background-color: rgba(0, 0, 0, 0.05);
 }
 .btn-paywall i:before {
   position: absolute;
@@ -13645,6 +13644,13 @@ body.billede .picture-series-watermark {
   padding: 3px;
   z-index: 100;
   margin-top: 20px;
+  padding: 5px;
+}
+.paywall .paywall-inner {
+  padding: 27px 17px 17px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
 }
 .paywall:before {
   position: absolute;
@@ -13683,22 +13689,6 @@ body.billede .picture-series-watermark {
   margin: 15px 0 0 0;
   text-align: center;
   font-size: 14px;
-}
-.paywall-hard {
-  text-align: center;
-  padding: 20px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-.paywall-soft {
-  padding: 5px;
-}
-.paywall-soft .paywall-inner {
-  padding: 17px;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
 }
 .link-gray {
   color: rgba(0, 0, 0, 0.6);

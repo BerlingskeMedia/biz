@@ -16,9 +16,9 @@
                     	<div class="btn-container-inner">
                         
                         <button class="btn btn-live btn-md  btn-paywall ">
-                        	<em>Velkomstilbud</em>
+                        	<em>Køb abonnement</em>
                         	<div class="rotator" >
-                        		<span class="msg1">Prøv Business.dk</span>
+                        		<span class="msg1">Ingen binding</span>
                         		<span class="msg2"><ins>Gratis i 30 dage</ins></span>	
                         	</div>
                         	<i class="fa fa-angle-right"></i>
