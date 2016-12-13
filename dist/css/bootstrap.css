@@ -2930,6 +2930,7 @@ fieldset[disabled] .btn-link:focus {
   bottom: 0;
   right: 0;
   width: 30px;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 .btn-paywall i:before {
   position: absolute;
@@ -13637,27 +13638,31 @@ body.billede .picture-series-watermark {
   bottom: 0;
   left: 0;
   right: 0;
+  text-align: center;
   color: #333;
   background: #fadcd2;
   line-height: 1.2;
   padding: 3px;
   z-index: 100;
   margin-top: 20px;
-  border-radius: 2px;
 }
 .paywall:before {
   position: absolute;
   content: '';
   left: -1px;
   right: -1px;
-  top: -131px;
+  top: -130px;
   height: 130px;
-  background-image: -webkit-linear-gradient(top, rgba(250, 220, 210, 0) 0%, #fadcd2 75%);
-  background-image: -o-linear-gradient(top, rgba(250, 220, 210, 0) 0%, #fadcd2 75%);
-  background-image: linear-gradient(to bottom, rgba(250, 220, 210, 0) 0%, #fadcd2 75%);
+  background-image: -webkit-linear-gradient(top, rgba(250, 220, 210, 0) 0%, #fadcd2 90%);
+  background-image: -o-linear-gradient(top, rgba(250, 220, 210, 0) 0%, #fadcd2 90%);
+  background-image: linear-gradient(to bottom, rgba(250, 220, 210, 0) 0%, #fadcd2 90%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00fadcd2', endColorstr='#fffadcd2', GradientType=0);
   z-index: -10;
+}
+.paywall ins {
+  color: #ffdb5e;
+  text-decoration: none;
 }
 .paywall h2 {
   font-size: 35px;
@@ -13684,14 +13689,16 @@ body.billede .picture-series-watermark {
   padding: 20px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 .paywall-soft {
-  padding: 3px;
+  padding: 5px;
 }
 .paywall-soft .paywall-inner {
   padding: 17px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
 }
 .link-gray {
   color: rgba(0, 0, 0, 0.6);
@@ -13700,7 +13707,7 @@ body.billede .picture-series-watermark {
   color: rgba(0, 0, 0, 0.8);
 }
 .btn-container {
-  float: left;
+  display: inline-block;
   padding-left: 0;
   padding-right: 10px;
   padding-bottom: 10px;

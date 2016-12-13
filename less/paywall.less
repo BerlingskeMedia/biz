@@ -4,29 +4,30 @@
   bottom: 0;
   left: 0; 
   right: 0;
-  // text-align: center;
+  text-align: center;
   color: #333;
   background: @biz-pink;
   line-height: 1.2;
   padding: 3px;
-  
   z-index: 100;
-  // 
   margin-top: 20px;
-  border-radius: 2px;
+
    &:before {
      position: absolute;
      content: '';
      left: -1px;
      right: -1px;
-     top: -131px;
+     top: -130px;
      height: 130px;
-     #gradient .vertical(rgba(250,220,210,0); rgba(250,220,210,1); 0%; 75%);
-     
+     #gradient .vertical(rgba(250,220,210,0); rgba(250,220,210,1); 0%; 90%);    
      z-index: -10;
    }
 
-   
+    
+  ins {
+    color: #ffdb5e;
+    text-decoration: none;
+  } 
 
   h2 {
     font-size: 35px;
@@ -58,14 +59,16 @@
   padding: 20px;
   box-shadow: 2px 2px 2px rgba(0,0,0,.25);
   border: 1px solid rgba(0,0,0,.1);
+  border-radius: 5px;
 }
 
 .paywall-soft {
-  padding: 3px;
+  padding: 5px;
   .paywall-inner {
     padding: 17px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+    border-radius: 5px;
     border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 2px 2px 3px rgba(0,0,0,.1);
   }
 }
 
@@ -79,7 +82,7 @@
 
 .btn-container {
   
-  float: left;
+  display: inline-block;
   padding-left: 0;
   padding-right: 10px;
   padding-bottom: 10px;

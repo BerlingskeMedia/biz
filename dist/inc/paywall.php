@@ -5,7 +5,7 @@
 
     <section class="paywall paywall-soft" rel="noindex">
         
-            <div class="paywall-inner">
+            <div class="paywall-inner ">
                 <h2>God læselyst!</h2>
                 <p class="module-lg">
                     Denne artikel kræver normalt, at du har et abonnement. Men i dag kan du læse den gratis!
@@ -16,10 +16,10 @@
                     	<div class="btn-container-inner">
                         
                         <button class="btn btn-live btn-md  btn-paywall ">
-                        	<em>Ja tak</em>
+                        	<em>Velkomstilbud</em>
                         	<div class="rotator" >
-                        		<span class="msg1">Køb abonnement</span>
-                        		<span class="msg2">Prøv gratis i 30 dage</span>	
+                        		<span class="msg1">Prøv Business.dk</span>
+                        		<span class="msg2"><ins>Gratis i 30 dage</ins></span>	
                         	</div>
                         	<i class="fa fa-angle-right"></i>
                             
