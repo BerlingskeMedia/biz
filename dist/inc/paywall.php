@@ -27,16 +27,7 @@
                         </div>
                     </div>
 					
-                    <div class="btn-container">
-                    	<div class="btn-container-inner">
-						
-                    	<button class="btn btn-link  btn-md btn-paywall close-paywall-overlay link-gray">
-                    	<em>Fortsæt uden abonnement</em>
-                    	    Vis mig artiklen <i class="fa fa-angle-right"></i>
-                    	</button>
-                    	</div>
-
-                    </div>
+                    
 
                 </div>
                         
@@ -49,7 +40,12 @@
                 </p>
                                                                 
                             
-                
+              
+              <a href="#" class="close-paywall-overlay link-gray small">
+                    	Fortsæt uden abonnement - 
+                    	    Vis mig artiklen <i class="fa fa-angle-down"></i>
+				</a>
+
         </div>
     </section>
 
@@ -66,15 +62,17 @@
                 <p>Artiklen kræver abonnement.</p>
                 
              <div class="module-sm">
-            <button class="btn btn-live btn-md  btn-paywall ">
-            	<em>Køb abonnement</em>
-            	<div class="rotator" >
-            		<span class="msg1">Køb abonnement</span>
-            		<span class="msg2">Prøv gratis i 30 dage</span>	
-            	</div>
-            	<i class="fa fa-angle-right"></i>
-                
-            </button>
+             <button class="btn btn-live btn-md  btn-paywall ">
+             	<em><ins>Køb abonnement</ins></em>
+             	<div class="rotator" >
+             		<span class="msg1">Ingen binding</span>
+             		<span class="msg2">Prøv gratis i 30 dage</span>	
+             	</div>
+             	<i class="fa fa-angle-right"></i>
+                 
+             </button>
+
+            
 				
 			</div>
                 

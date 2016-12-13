@@ -13693,12 +13693,22 @@ body.billede .picture-series-watermark {
   text-align: center;
   font-size: 14px;
 }
-.paywall-hard {
-  /*text-align: center;
-  padding: 20px;
-  box-shadow: 2px 2px 2px rgba(0,0,0,.25);
-  border: 1px solid rgba(0,0,0,.1);
-  border-radius: 5px;*/
+.paywall-soft .paywall-inner {
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.1) 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.1) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.1) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);
+  padding-bottom: 60px;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+.close-paywall-overlay {
+  display: block;
+  padding: 20px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .link-gray {
   color: rgba(0, 0, 0, 0.6);
