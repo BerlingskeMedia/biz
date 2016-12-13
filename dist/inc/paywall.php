@@ -67,9 +67,9 @@
                 
              <div class="module-sm">
             <button class="btn btn-live btn-md  btn-paywall ">
-            	<em>Køb abonnement</em>
+            	<em><ins>Køb abonnement</ins></em>
             	<div class="rotator" >
-            		<span class="msg1">Køb abonnement</span>
+            		<span class="msg1">Ingen binding</span>
             		<span class="msg2">Prøv gratis i 30 dage</span>	
             	</div>
             	<i class="fa fa-angle-right"></i>
