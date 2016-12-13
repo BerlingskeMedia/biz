@@ -13709,6 +13709,7 @@ body.billede .picture-series-watermark {
   left: 0;
   right: 0;
   bottom: 0;
+  font-weight: 600;
 }
 .link-gray {
   color: rgba(0, 0, 0, 0.6);
