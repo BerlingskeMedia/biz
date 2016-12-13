@@ -16,10 +16,10 @@
                     	<div class="btn-container-inner">
                         
                         <button class="btn btn-live btn-md  btn-paywall ">
-                        	<em>Velkomstilbud</em>
+                        	<em><ins>Køb abonnement</ins></em>
                         	<div class="rotator" >
-                        		<span class="msg1">Prøv Business.dk</span>
-                        		<span class="msg2"><ins>Gratis i 30 dage</ins></span>	
+                        		<span class="msg1">Ingen binding</span>
+                        		<span class="msg2">Prøv gratis i 30 dage</span>	
                         	</div>
                         	<i class="fa fa-angle-right"></i>
                             
@@ -30,11 +30,9 @@
                     <div class="btn-container">
                     	<div class="btn-container-inner">
 						
-                    	<button class="btn btn-transparent btn-md btn-paywall close-paywall-overlay">
-                    	<em>Nej tak</em>
-                    	    Jeg vil bare læse artiklen 
-
-                    	 <i class="fa fa-angle-right"></i>
+                    	<button class="btn btn-link  btn-md btn-paywall close-paywall-overlay link-gray">
+                    	<em>Fortsæt uden abonnement</em>
+                    	    Vis mig artiklen <i class="fa fa-angle-right"></i>
                     	</button>
                     	</div>
 

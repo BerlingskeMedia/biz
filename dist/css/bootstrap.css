@@ -2887,7 +2887,6 @@ fieldset[disabled] .btn-link {
 .btn-link:hover,
 .btn-link:focus {
   color: #b83e14;
-  text-decoration: underline;
   background-color: transparent;
 }
 .btn-link[disabled]:hover,
@@ -2921,16 +2920,17 @@ fieldset[disabled] .btn-link:focus {
   text-align: left;
   padding-right: 40px;
   position: relative;
+  font-weight: 600;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 .btn-paywall i {
   display: block;
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  /*border-left: 1px solid rgba(0,0,0,.1);*/
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   width: 30px;
-  background-color: rgba(0, 0, 0, 0.05);
 }
 .btn-paywall i:before {
   position: absolute;
@@ -2945,6 +2945,9 @@ fieldset[disabled] .btn-link:focus {
   font-style: normal;
   font-size: 12px;
   display: block;
+}
+.btn-link.btn-paywall {
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .btn-xs {
   padding: 1px 9px;
@@ -13644,7 +13647,13 @@ body.billede .picture-series-watermark {
   line-height: 1.2;
   padding: 3px;
   z-index: 100;
-  margin-top: 20px;
+  padding: 5px;
+}
+.paywall .paywall-inner {
+  padding: 27px 17px 17px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
 }
 .paywall:before {
   position: absolute;
@@ -13685,20 +13694,11 @@ body.billede .picture-series-watermark {
   font-size: 14px;
 }
 .paywall-hard {
-  text-align: center;
+  /*text-align: center;
   padding: 20px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-.paywall-soft {
-  padding: 5px;
-}
-.paywall-soft .paywall-inner {
-  padding: 17px;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 5px;*/
 }
 .link-gray {
   color: rgba(0, 0, 0, 0.6);
@@ -13733,7 +13733,7 @@ body.billede .picture-series-watermark {
 .rotator {
   height: 18px;
   position: relative;
-  min-width: 180px;
+  min-width: 220px;
 }
 .msg1,
 .msg2 {
@@ -13780,7 +13780,6 @@ body.billede .picture-series-watermark {
   }
   .paywall .btn {
     padding-left: 10px;
-    padding-right: 10px;
     width: 100%;
   }
   .paywall .btn-container {

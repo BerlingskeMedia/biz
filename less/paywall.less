@@ -10,7 +10,13 @@
   line-height: 1.2;
   padding: 3px;
   z-index: 100;
-  margin-top: 20px;
+  padding: 5px;
+  .paywall-inner {
+    padding: 27px 17px 17px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 2px 2px 3px rgba(0,0,0,.1);
+  }
 
    &:before {
      position: absolute;
@@ -55,22 +61,14 @@
   
 }
 .paywall-hard {
-  text-align: center;
+
+  /*text-align: center;
   padding: 20px;
   box-shadow: 2px 2px 2px rgba(0,0,0,.25);
   border: 1px solid rgba(0,0,0,.1);
-  border-radius: 5px;
+  border-radius: 5px;*/
 }
 
-.paywall-soft {
-  padding: 5px;
-  .paywall-inner {
-    padding: 17px;
-    border-radius: 5px;
-    border: 1px solid rgba(0,0,0,.1);
-    box-shadow: 2px 2px 3px rgba(0,0,0,.1);
-  }
-}
 
 
 .link-gray {
@@ -123,7 +121,7 @@
 .rotator {
   height: 18px;
   position: relative;
-  min-width: 180px;
+  min-width: 220px;
 }
 
 @rotator-duration: 5s;
@@ -186,7 +184,7 @@
     .btn {
       
       padding-left: 10px;
-      padding-right: 10px;
+      
       width: 100%;
     }
     .btn-container {
