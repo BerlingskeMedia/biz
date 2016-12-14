@@ -13802,7 +13802,10 @@ body.billede .picture-series-watermark {
     opacity: 1;
     transform: rotate3d(1, 0, 0, 0deg);
   }
-  60%,
+  60% {
+    opacity: 0;
+    transform: rotate3d(1, 0, 0, -90deg);
+  }
   100% {
     opacity: 0;
     transform: rotate3d(1, 0, 0, -90deg);
@@ -13821,7 +13824,10 @@ body.billede .picture-series-watermark {
     opacity: 1;
     transform: rotate3d(1, 0, 0, 0deg);
   }
-  60%,
+  60% {
+    opacity: 0;
+    transform: rotate3d(1, 0, 0, -90deg);
+  }
   100% {
     opacity: 0;
     transform: rotate3d(1, 0, 0, -90deg);
@@ -13840,7 +13846,10 @@ body.billede .picture-series-watermark {
     opacity: 1;
     transform: rotate3d(1, 0, 0, 0deg);
   }
-  60%,
+  60% {
+    opacity: 0;
+    transform: rotate3d(1, 0, 0, -90deg);
+  }
   100% {
     opacity: 0;
     transform: rotate3d(1, 0, 0, -90deg);
@@ -13859,7 +13868,10 @@ body.billede .picture-series-watermark {
     opacity: 1;
     transform: rotate3d(1, 0, 0, 0deg);
   }
-  60%,
+  60% {
+    opacity: 0;
+    transform: rotate3d(1, 0, 0, -90deg);
+  }
   100% {
     opacity: 0;
     transform: rotate3d(1, 0, 0, -90deg);
