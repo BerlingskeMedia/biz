@@ -141,7 +141,7 @@ if (isset($_GET['paywall'])) {
 
 
 			<?php if($paywall == 'hard'): ?>	
-        <? while (dumb_luck("3")): ?>
+        <? while (dumb_luck("2")): ?>
       <p><? dummy("text@paragraph") ?></p>
     <? endwhile ?>
 				<?php include('inc/paywall.php'); ?>
