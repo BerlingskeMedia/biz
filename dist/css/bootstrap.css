@@ -13805,7 +13805,7 @@ body.billede .picture-series-watermark {
   58%,
   100% {
     opacity: 0;
-    transform: rotate3d(1, 0, 0, 90deg);
+    transform: rotate3d(1, 0, 0, -90deg);
   }
 }
 @-moz-keyframes rotator {
@@ -13824,7 +13824,7 @@ body.billede .picture-series-watermark {
   58%,
   100% {
     opacity: 0;
-    transform: rotate3d(1, 0, 0, 90deg);
+    transform: rotate3d(1, 0, 0, -90deg);
   }
 }
 @-o-keyframes rotator {
@@ -13843,7 +13843,7 @@ body.billede .picture-series-watermark {
   58%,
   100% {
     opacity: 0;
-    transform: rotate3d(1, 0, 0, 90deg);
+    transform: rotate3d(1, 0, 0, -90deg);
   }
 }
 @keyframes rotator {
@@ -13862,7 +13862,7 @@ body.billede .picture-series-watermark {
   58%,
   100% {
     opacity: 0;
-    transform: rotate3d(1, 0, 0, 90deg);
+    transform: rotate3d(1, 0, 0, -90deg);
   }
 }
 @media (max-width: 991px) {
