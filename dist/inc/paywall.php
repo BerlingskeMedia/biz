@@ -15,7 +15,7 @@
                     
                     	
                         
-                        <button class="btn btn-live btn-md  btn-paywall ">
+                        <button class="btn btn-live btn-md  btn-paywall btn-paywall-2 ">
                         	<em><ins>Køb abonnement</ins></em>
                         	<div class="rotator" >
                         		<span class="msg1">Ingen binding</span>
@@ -60,7 +60,7 @@
                 <p>Artiklen kræver abonnement.</p>
                 
              <div class="module-sm">
-             <button class="btn btn-live btn-md  btn-paywall ">
+             <button class="btn btn-live btn-md  btn-paywall btn-paywall-2 ">
              	<em><ins>Køb abonnement</ins></em>
              	<div class="rotator" >
              		<span class="msg1">Ingen binding</span>

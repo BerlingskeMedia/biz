@@ -2924,7 +2924,6 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-paywall i {
   display: block;
-  /*border-left: 1px solid rgba(0,0,0,.1);*/
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2942,8 +2941,21 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-paywall em {
   font-style: normal;
-  font-size: 12px;
   display: block;
+}
+.btn-paywall-1 em {
+  font-size: 12px;
+}
+.btn-paywall-2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.btn-paywall-2 .rotator {
+  font-size: 12px;
+}
+.btn-paywall-2 em {
+  font-size: 20px;
+  text-transform: uppercase;
 }
 .btn-link.btn-paywall {
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -13745,6 +13757,9 @@ body.billede .picture-series-watermark {
   position: relative;
   min-width: 220px;
 }
+.btn-paywall-2 .rotator {
+  height: 13px;
+}
 .msg1,
 .msg2 {
   display: block;
@@ -13803,7 +13818,7 @@ body.billede .picture-series-watermark {
     padding: 0;
   }
   .rotator {
-    width: 160px;
+    width: 100%;
     min-width: initial;
   }
 }
