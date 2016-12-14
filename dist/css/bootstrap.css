@@ -2917,7 +2917,6 @@ fieldset[disabled] .btn-link:focus {
   line-height: 1.1;
   border-radius: 2px;
   text-transform: none;
-  text-align: left;
   padding-right: 40px;
   position: relative;
   font-weight: 600;
@@ -2925,7 +2924,6 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-paywall i {
   display: block;
-  /*border-left: 1px solid rgba(0,0,0,.1);*/
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2943,8 +2941,21 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-paywall em {
   font-style: normal;
-  font-size: 12px;
   display: block;
+}
+.btn-paywall-1 em {
+  font-size: 12px;
+}
+.btn-paywall-2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.btn-paywall-2 .rotator {
+  font-size: 12px;
+}
+.btn-paywall-2 em {
+  font-size: 20px;
+  text-transform: uppercase;
 }
 .btn-link.btn-paywall {
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -13735,8 +13746,7 @@ body.billede .picture-series-watermark {
   position: relative;
   min-width: 220px;
 }
-.msg1,
-.msg2 {
+.rotator span {
   display: block;
   height: 100%;
   overflow: hidden;
@@ -13748,16 +13758,19 @@ body.billede .picture-series-watermark {
   animation-direction: normal;
   transform-origin: center center;
 }
-.msg2 {
+.rotator .msg2 {
   animation-delay: 2.5s;
   opacity: 0;
+}
+.btn-paywall-2 .rotator {
+  height: 14px;
 }
 @keyframes rotator {
   0% {
     opacity: 0;
     transform: rotate3d(1, 0, 0, -90deg);
   }
-  2% {
+  8% {
     opacity: 1;
     transform: rotate3d(1, 0, 0, 0deg);
   }
@@ -13765,7 +13778,7 @@ body.billede .picture-series-watermark {
     opacity: 1;
     transform: rotate3d(1, 0, 0, 0deg);
   }
-  52%,
+  58%,
   100% {
     opacity: 0;
     transform: rotate3d(1, 0, 0, 90deg);

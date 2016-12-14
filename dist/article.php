@@ -368,6 +368,20 @@ if (isset($_GET['paywall'])) {
 
   <?php include("./inc/footer.php"); ?>
 
-    
+    <script>
+          
+        $('.btn-paywall').click(function(e){
+          
+          if($(this).hasClass('btn-paywall-2')) {
+            $(this).removeClass();
+            $(this).addClass('btn btn-live btn-md  btn-paywall btn-paywall-1');
+          } else {
+            $(this).removeClass();
+            $(this).addClass('btn btn-live btn-md  btn-paywall btn-paywall-2');
+          }
+          
+        });
+
+        </script>
   </body>
 </html>

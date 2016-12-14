@@ -122,12 +122,7 @@
   height: 18px;
   position: relative;
   min-width: 220px;
-}
-
-@rotator-duration: 5s;
-
-.msg1, 
-.msg2 {
+  span {
     display: block;
     height: 100%;
     overflow: hidden;
@@ -138,22 +133,31 @@
     animation: rotator @rotator-duration infinite linear; 
     animation-direction: normal;
     transform-origin: center center;
+  }
+  .msg2 {
+    animation-delay: (@rotator-duration / 2);
+    opacity: 0;
+  }
 }
-.msg1 {
+
+.btn-paywall-2 {
   
+  .rotator {
+    height: 14px;
+  }
 }
-.msg2 {
-  animation-delay: (@rotator-duration / 2);
-  opacity: 0;
+
+@rotator-duration: 5s;
 
 
-}
+
+
 @keyframes rotator {
   0% {
     opacity: 0;
     transform:  rotate3d(1, 0, 0, -90deg);
   }
-  2% {
+  8% {
     opacity: 1;
     transform:  rotate3d(1, 0, 0, 0deg);
   }
@@ -162,7 +166,7 @@
     opacity: 1;
     transform:  rotate3d(1, 0, 0, 0deg);
   }
-  52%, 100% {
+  58%, 100% {
     opacity: 0;
     transform:  rotate3d(1, 0, 0, 90deg);
     
