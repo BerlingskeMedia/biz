@@ -18,7 +18,6 @@
                         <button class="btn btn-live btn-md  btn-paywall btn-paywall-2 ">
                         	<em><ins>Køb abonnement</ins></em>
                         	<div class="rotator" >
-                        		<span class="msg1">Ingen binding</span>
                         		<span class="msg2">Prøv gratis i 30 dage</span>	
                         	</div>
                         	<i class="fa fa-angle-right"></i>
@@ -63,7 +62,6 @@
              <button class="btn btn-live btn-md  btn-paywall btn-paywall-2 ">
              	<em><ins>Køb abonnement</ins></em>
              	<div class="rotator" >
-             		<span class="msg1">Ingen binding</span>
              		<span class="msg2">Prøv gratis i 30 dage</span>	
              	</div>
              	<i class="fa fa-angle-right"></i>
