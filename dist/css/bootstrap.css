@@ -2917,7 +2917,6 @@ fieldset[disabled] .btn-link:focus {
   line-height: 1.1;
   border-radius: 2px;
   text-transform: none;
-  text-align: left;
   padding-right: 40px;
   position: relative;
   font-weight: 600;
@@ -13768,7 +13767,7 @@ body.billede .picture-series-watermark {
     opacity: 0;
     transform: rotate3d(1, 0, 0, -90deg);
   }
-  2% {
+  8% {
     opacity: 1;
     transform: rotate3d(1, 0, 0, 0deg);
   }
@@ -13776,7 +13775,7 @@ body.billede .picture-series-watermark {
     opacity: 1;
     transform: rotate3d(1, 0, 0, 0deg);
   }
-  52%,
+  58%,
   100% {
     opacity: 0;
     transform: rotate3d(1, 0, 0, 90deg);
