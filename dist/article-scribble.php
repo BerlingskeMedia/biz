@@ -86,10 +86,64 @@
                                 
 
                               <div class="liveheader">
-                              <span class="livelabel"><i class="fa fa-circle zoomfade"></i> LIVE</span>
-                              <span class="timeofday">14.40.03</span>
-                              
+                                <span class="livelabel"><i class="fa fa-circle zoomfade"></i> LIVE</span>
+                                <span class="timeofday">14.40.03</span>
+                                <a href="#" class="toggle-usercomment-form pull-right"><i class="fa fa-comment"></i> Skriv kommentar</a>
                               </div>
+
+                              <!-- LIVE USER COMMENT FORM -->
+
+                                <div class="live-user-commentform">
+                                  <form action="" id="live-form">
+                                    
+                                    <div class="row form-group">
+                                      <!-- <div class="col-sm-12 col-md-2">
+                                        <label for="live-user-comment" class="col-form-label">Kommentar</label>
+                                      </div> -->
+                                      <div class="col-sm-12 col-md-10 col-md-offset-1">
+
+                                        <textarea name="live-user-comment"  cols="30" rows="10" class="form-control" id="live-user-comment" placeholder="Din kommentar - max 250 karakterer" data-error="Du har ikke skrevet en kommentar"></textarea>    
+                                        <span class="form-control-errormessage"></span>
+                                        <p class="form-text text-muted text-right small"><span id="charCounter">250</span> karakterer tilbage. </p>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="row form-group">
+                                      <!-- <div class="col-sm-12 col-md-2">
+                                        <label for="live-user-name" class="col-form-label">Navn</label>
+                                      </div> -->
+                                      <div class="col-sm-12 col-md-10 col-md-offset-1">
+                                      <input type="text" name="live-user-name" id="live-user-name" class="form-control" placeholder="Navn" data-error="Skriv venligst dit navn.">
+                                      <span class="form-control-errormessage"></span>
+                                      </div>
+
+                                    </div>
+
+                                    <div class="row form-group">
+                                      <!-- <div class="col-sm-12 col-md-2">
+                                        <label for="live-user-email" class="col-form-label">E-mail</label>
+                                      </div> -->
+                                      <div class="col-sm-12 col-md-10 col-md-offset-1">
+                                      <input type="email" name="live-user-email" id="live-user-email" class="form-control" placeholder="E-mail" data-error="Skriv venligst din e-mail-adresse.">
+                                      <span class="form-control-errormessage"></span>
+                                      </div>
+
+                                    </div>
+                                    <div class="row">
+
+                                      <p class="small col-xs-12 col-md-10 col-md-offset-1">Din e-mail er kun synlig for redaktionen. Indlæg skal godkendes af en nyhedsvært, før de bringes. Vi forbeholder os ret til at redigere i indsendte indlæg.</p>
+                                    </div>
+
+                                    <div class="row">
+                                      <div class="col-xs-12 col-md-10 col-md-offset-1 text-right">
+                                          <a class="btn btn-link btn-sm live-close-comment" href="#">Annullér</a> 
+                                          <button class="btn btn-live btn-sm">Send</button> 
+                                      </div>
+                                    </div>
+                                  </form>
+
+                                </div>
+                              <!-- / LIVE USER COMMENT FORM -->
                               <?php else: ?>
                               <div class="liveheader">
                                 <span class="livelabel livelabel-offline">OFFLINE</span>

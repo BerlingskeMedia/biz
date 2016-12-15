@@ -26,9 +26,9 @@
 	font-size: 14px;
 	color: #fff;
 	font-weight: 700;
+	padding-right: 10px;
 	a {
 		color: #fff;
-		text-decoration: underline;
 	}
 	.livelabel {
 		line-height: 30px;
@@ -304,6 +304,45 @@
 		}
 	}
 }
+.form-control-errormessage {
+	display: none;
+}
+.has-error .form-control-errormessage {
+	font-size: 12px;
+	font-weight: 600;
+	color: #a94442;
+	float: left;
+	display: inline;
+	margin-top: .25rem;
+}
+.toggle-usercomment-form {
+	text-decoration: none;
+}
+
+.live-user-commentform {
+	display: none;
+	padding:0  0 20px;
+	.btn-link {
+		color: @col-purple;
+		text-transform: none;
+	}	
+	
+	textarea {
+		height: 90px;
+	}
+
+	form {
+		border-bottom: 3px solid rgba(0,0,0,.1);
+		margin: 20px 0;
+		padding-bottom: 20px;
+
+	}
+}
+
+.limit {
+	color: #ff3a3a
+}
+
 
 
 @font-size: 14px;

@@ -225,5 +225,85 @@ $(function () {
         setTimeout(addOverflow, 500);
     });
 
+     
+    // BUSINESS LIVE --- Char counter
+    $("#live-user-comment").keyup(function () {
+      var cmax = 250;
+      if ($(this).val().length >= cmax) {
+        $("#charCounter").addClass("limit");
+      } else {
+          $("#charCounter").removeClass("limit");
+      }
+      $("#charCounter").text(cmax - $(this).val().length);
+    });
+
+    // BUSINESS LIVE --- Email validator
+    function validateEmail($email) {
+      var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+      return emailReg.test( $email );
+    }
+
+    // BUSINESS LIVE --- Field validation
+
+    var checkFields = function(){
+        var fields = $("#live-form input, #live-form textarea");
+        var isValid;
+        $(fields).each(function() {
+           var element = $(this);
+
+           if (element.val() == "") {
+               isValid = false;
+               event.preventDefault();
+                 
+               
+               if(!$(element).closest(".form-group").hasClass("has-error")) {
+                $(element).next(".form-control-errormessage").html($(element).data("error")); 
+                $(element).focus();
+               } 
+               $(element).closest(".form-group").addClass("has-error");
+               return false;
+
+            } else {
+                $(element).closest(".form-group").removeClass("has-error");
+            }
+        });
+        
+        
+    };
+
+
+    // BUSINESS LIVE --- Send form. 
+    
+
+    $( "#live-form" ).submit(function( event ) {
+        var message = $('#live-user-comment').val();  
+        var emailaddress =  $('#live-user-email').val();
+        
+        // first check if we have empty fields
+        
+
+        
+      if (message.length >= 250){ // Then check if we have a message that is too long
+            event.preventDefault();
+            $("#live-user-comment").closest(".form-group").addClass("has-error");
+            $("#live-user-comment").next(".form-control-errormessage").html("<span class='form-control-errormessage'>Din besked er for lang</span>"); 
+            return false;
+      } else if (!validateEmail(emailaddress)) { // Then check if Email address is valid
+
+            event.preventDefault();
+            $("#live-user-email").closest(".form-group").addClass("has-error");
+            $("#live-user-email").next(".form-control-errormessage").html("<span class='form-control-errormessage'>Skriv venligst din e-mail</span>"); 
+      } 
+
+        checkFields(); 
+        
+      
+    });
+
+    $('.toggle-usercomment-form, .live-close-comment').click(function(e){
+        e.preventDefault();
+        $('.live-user-commentform').slideToggle('fast', 'linear');
+
+    });
 
 });
