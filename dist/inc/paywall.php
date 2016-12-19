@@ -6,9 +6,9 @@
     <section class="paywall paywall-soft" rel="noindex">
         
             <div class="paywall-inner ">
-                <h2>God læselyst!</h2>
+                <h2>God fornøjelse</h2>
                 <p class="module-lg">
-                    Denne artikel kræver normalt, at du har et abonnement. Men i dag kan du læse den gratis!
+                    Denne artikel er normalt kun for abonnenter, men i dag kan du læse den gratis. Få adgang til alle artikler med et digitalt abonnement. 
                 </p>
                 
                 <div class="module-xs">
@@ -16,12 +16,7 @@
                     	
                         
                         <button class="btn btn-live btn-md  btn-paywall btn-paywall-2 ">
-                        	<em><ins>Køb abonnement</ins></em>
-                        	<div class="rotator" >
-                        		<span class="msg2">Prøv gratis i 30 dage</span>	
-                        	</div>
-                        	<i class="fa fa-angle-right"></i>
-                            
+                        	Få den første måned gratis nu <i class="fa fa-angle-right"></i>
                         </button>
                     
 					
@@ -40,7 +35,7 @@
                             
               
               <a href="#" class="close-paywall-overlay link-gray small">
-                    	Fortsæt til artiklen uden abonnement <i class="fa fa-angle-right"></i>
+                    	Fortsæt til artiklen nu <i class="fa fa-angle-right"></i>
 				</a>
 
         </div>
@@ -53,40 +48,29 @@
     <section class=" paywall paywall-hard" rel="noindex">
         
         <div class="paywall-inner">
-                
-                <h2>Få hurtig adgang til artiklen</h2>
 
-                <p>Artiklen kræver abonnement.</p>
+            <h2>Få hurtig adgang til artiklen</h2>
+
+            <p>Med et digitalt abonnement får du adgang til alt indhold.</p>
                 
              <div class="module-sm">
-             <button class="btn btn-live btn-md  btn-paywall btn-paywall-2 ">
-             	<em><ins>Køb abonnement</ins></em>
-             	<div class="rotator" >
-             		<span class="msg2">Prøv gratis i 30 dage</span>	
-             	</div>
-             	<i class="fa fa-angle-right"></i>
-                 
-             </button>
-
-            
-				
+                 <button class="btn btn-live btn-md  btn-paywall btn-paywall-2 ">
+                 	Få den første måned gratis nu <i class="fa fa-angle-right"></i>
+                 </button>
 			</div>
                 
             
 			<p class="small">
-                    Allerede abonnent?
-                                                    <a href="#" class="btn-topmenu-login toggle-login link-gray" data-href="" data-toggle="modal" data-target="#modal-login">
-                        <i class="fa fa-user" aria-hidden="true"></i>&nbsp;Klik her
-                    </a>
-                </p>
-                <!-- <div class="alert alert-danger">
-                                <p>Du er logget ind med en profil, der desværre ikke giver adgang til Berlingske.dk i dag. Det kan skyldes, at dit abonnement har begrænset digital adgang, eller at din ordre ikke er tilknyttet din profil. 
-                                
-                                <a href="https://b.kundeunivers.dk/">Tilknyt ordrenummer</a></p>
-
-                <p><strong>Har du brug for hjælp?</strong>
-                Kontakt Kundeservice på 3375 3330</p>
-                </div> -->
+                Allerede abonnent?
+                <a href="#" class="btn-topmenu-login toggle-login link-gray" data-href="" data-toggle="modal" data-target="#modal-login">
+                    <i class="fa fa-user" aria-hidden="true"></i>&nbsp;Klik her
+                </a>
+            </p>
+            <!-- <div class="alert alert-info">
+                <p>Du er logget ind med en profil, der desværre ikke giver adgang til Business.dk i dag. Det kan skyldes, at dit abonnement har begrænset digital adgang, eller at din ordre ikke er tilknyttet din profil. 
+                <a href="https://b.kundeunivers.dk/">Tilknyt ordrenummer</a></p>
+                <p><strong>Har du brug for hjælp?</strong> Kontakt Kundeservice på 3375 3330</p>
+            </div> -->
                 
         </div>
     </section>

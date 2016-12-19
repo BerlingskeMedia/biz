@@ -2916,32 +2916,8 @@ fieldset[disabled] .btn-link:focus {
   font-size: 16px;
   line-height: 1.1;
   border-radius: 2px;
-  text-transform: none;
-  padding-right: 40px;
-  position: relative;
   font-weight: 600;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
-}
-.btn-paywall i {
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 30px;
-}
-.btn-paywall i:before {
-  position: absolute;
-  top: 50%;
-  margin-top: -10px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 20px;
-}
-.btn-paywall em {
-  font-style: normal;
-  display: block;
 }
 .btn-paywall-1 em {
   font-size: 12px;
@@ -13760,16 +13736,6 @@ body.billede .picture-series-watermark {
 .btn-paywall-2 .rotator {
   height: 13px;
 }
-.msg1,
-.msg2 {
-  display: block;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  transform-style: preserve-3d;
-  color: #fff;
-}
 @media (max-width: 991px) {
   .paywall h2 {
     font-size: 35px;
@@ -13790,10 +13756,6 @@ body.billede .picture-series-watermark {
   }
   .paywall .btn-container-inner {
     padding: 0;
-  }
-  .rotator {
-    width: 100%;
-    min-width: initial;
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
