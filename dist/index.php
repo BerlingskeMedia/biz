@@ -693,7 +693,7 @@
    <div class="row">
       <section class="deck">
       <div class="col-md-8 ">
-        <? while (dumb_luck("8")): ?>
+        <? while (dumb_luck("7")): ?>
         <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom">
             <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
               <div class="teaser-body">
@@ -705,6 +705,19 @@
             </div>
           </article>
           <? endwhile ?>
+
+          <article class="teaser header-20 teaser-img-left img-xs-100 teaser-border-bottom teaser-sponsored ">
+              <figure class="teaser-img"><a href="#"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a></figure>
+                <div class="teaser-body">
+                <footer><a href="section.php" class="cat">Sponseret</a> <time><? dummy("text@time-ago-short") ?></time></footer>
+                
+                <h2 class="header"><a href="article.php"><? dummy("text@headline") ?>
+                
+                </a></h2>
+                <span class="teaser-tagline">Sponseret af Sampension</span>
+              </div>
+            </article>
+
       </div>
 
       <div class="col-md-4">
@@ -719,14 +732,15 @@
           
 
           <section class=" module-sm">
-              <h1 class="section-header"> Business Direct <a href="#" class="section-header-link">Se alle <i class="fa fa-caret-right"></i></a> </h1>
-              <ul class="list list-xs list-light list-image-left ">
-              <? while (dumb_luck("2")): ?>
-              <li class="teaser">
+              <h1 class="section-header"> Business Direct <span class="list-sponsor-tag">Sponseret</span> <a href="#" class="section-header-link ">Se alle <i class="fa fa-caret-right"></i></a></h1>
+              <ul class="list list-xs  list-image-left list-sponsored ">
+              <? while (dumb_luck("10")): ?>
+              <li class="teaser teaser-sponsored">
                       <figure class="teaser-img"><a href="article.php"><img src="<? dummy("image@50x50,") ?>" width="" height="" alt="" /></a></figure>
                       <div class="teaser-body">
+                        <footer><a href="section.php" class="cat">Sponseret</a> </footer>
                         <h2 class="header"><a href="article-businessdirect.php"><? dummy("text@headline") ?></a></h2>
-                        <footer><a href="section.php" class="cat">Økonomi</a> </footer>
+                        
                       </div>
                       </li>
               <? endwhile ?>
