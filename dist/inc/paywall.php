@@ -48,6 +48,7 @@
     <section class=" paywall paywall-hard" rel="noindex">
         
         <div class="paywall-inner">
+        <p class="small">Artiklen er kun for abonnenter</p>
 
             <h2>Få hurtig adgang til artiklen</h2>
 
