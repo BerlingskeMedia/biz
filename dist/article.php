@@ -140,7 +140,7 @@ if (isset($_GET['paywall'])) {
               
 
 
-			<?php if($paywall == 'hard' || $paywall == 'split' || $paywall == 'weekend'): ?>	
+			<?php if($paywall == 'hard' || $paywall == 'split' || $paywall == 'split2' || $paywall == 'weekend'): ?>	
         <? while (dumb_luck("2")): ?>
       <p><? dummy("text@paragraph") ?></p>
     <? endwhile ?>

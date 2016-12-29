@@ -191,9 +191,18 @@
 }
 
 .btn-arrow {
+  display: inline-block;
+  padding: 5px 30px 5px 10px;
   position: relative;
   padding-right: 30px;
   text-align: left;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 2px;
+  background: transparent;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  color: rgba(0,0,0,.8);
   .fa {
     position: absolute;
     right: 0;
@@ -203,6 +212,14 @@
     transform: translateY(-50%);
     font-size: 30px;
     text-align: center;
+
+  }
+  &:hover {
+    border-color: rgba(0,0,0,.2);
+    color: rgba(0,0,0,.9);
+  }
+  small {
+    color: @biz-1;
   }
 
 }

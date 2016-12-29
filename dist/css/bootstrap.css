@@ -2938,9 +2938,18 @@ fieldset[disabled] .btn-link:focus {
   text-transform: uppercase;
 }
 .btn-arrow {
+  display: inline-block;
+  padding: 5px 30px 5px 10px;
   position: relative;
   padding-right: 30px;
   text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background: transparent;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
 }
 .btn-arrow .fa {
   position: absolute;
@@ -2951,6 +2960,13 @@ fieldset[disabled] .btn-link:focus {
   transform: translateY(-50%);
   font-size: 30px;
   text-align: center;
+}
+.btn-arrow:hover {
+  border-color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.9);
+}
+.btn-arrow small {
+  color: #e64d1a;
 }
 .btn-link.btn-paywall {
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -13680,6 +13696,9 @@ body.billede .picture-series-watermark {
   z-index: 100;
   padding: 5px;
 }
+.paywall .notice {
+  font-size: 90%;
+}
 .paywall .paywall-inner {
   padding: 27px 17px 17px;
   border-radius: 5px;
@@ -13789,6 +13808,10 @@ body.billede .picture-series-watermark {
 }
 .btn-paywall-2 .rotator {
   height: 13px;
+}
+.paywall-login {
+  margin-top: -10px;
+  margin-bottom: 30px;
 }
 @media (max-width: 991px) {
   .paywall .paywall-inner {
