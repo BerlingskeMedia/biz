@@ -2929,9 +2929,28 @@ fieldset[disabled] .btn-link:focus {
 .btn-paywall-2 .rotator {
   font-size: 12px;
 }
+.btn-paywall-2 small {
+  text-transform: none;
+  font-size: 12px;
+}
 .btn-paywall-2 em {
   font-size: 20px;
   text-transform: uppercase;
+}
+.btn-arrow {
+  position: relative;
+  padding-right: 30px;
+  text-align: left;
+}
+.btn-arrow .fa {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: block;
+  width: 30px;
+  transform: translateY(-50%);
+  font-size: 30px;
+  text-align: center;
 }
 .btn-link.btn-paywall {
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -13651,10 +13670,8 @@ body.billede .picture-series-watermark {
   }
 }
 .paywall {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin-top: -50px;
+  position: relative;
   text-align: center;
   color: #333;
   background: #fadcd2;
@@ -13668,6 +13685,7 @@ body.billede .picture-series-watermark {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 .paywall:before {
   position: absolute;
@@ -13749,6 +13767,15 @@ body.billede .picture-series-watermark {
 .btn-container-inner {
   padding: 0 10px 0 0;
 }
+.subscription-alert {
+  margin: 20px -17px -17px -17px;
+  padding: 17px;
+  background-color: #fff9c4;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.subscription-alert p:last-child {
+  margin-bottom: 0;
+}
 .article-body--cutoff {
   position: relative;
   max-height: 450px;
@@ -13764,8 +13791,11 @@ body.billede .picture-series-watermark {
   height: 13px;
 }
 @media (max-width: 991px) {
+  .paywall .paywall-inner {
+    padding: 27px 10px 17px;
+  }
   .paywall h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
   .paywall p {
     font-size: 14px;

@@ -180,13 +180,32 @@
   .rotator {
     font-size: 12px;
   }
-
+  small {
+    text-transform: none;
+    font-size: 12px;
+  }
   em {
     font-size: 20px;
     text-transform: uppercase;
   } 
 }
 
+.btn-arrow {
+  position: relative;
+  padding-right: 30px;
+  text-align: left;
+  .fa {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    display: block;
+    width: 30px;
+    transform: translateY(-50%);
+    font-size: 30px;
+    text-align: center;
+  }
+
+}
 .btn-link.btn-paywall {
   border: 1px solid rgba(0,0,0,.1);
 }

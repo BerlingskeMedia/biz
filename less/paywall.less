@@ -1,9 +1,7 @@
 // Block: paywall
 .paywall {
-  position: absolute;
-  bottom: 0;
-  left: 0; 
-  right: 0;
+  margin-top: -50px;
+  position: relative;
   text-align: center;
   color: #333;
   background: @biz-pink;
@@ -16,6 +14,7 @@
     border-radius: 5px;
     border: 1px solid rgba(0,0,0,.1);
     box-shadow: 2px 2px 3px rgba(0,0,0,.1);
+    overflow: hidden;
   }
 
    &:before {
@@ -112,7 +111,16 @@
 
 
 
+.subscription-alert {
+  margin: 20px -17px -17px -17px;
+  padding: 17px;
+  background-color: #fff9c4;
+  border-top: 1px solid rgba(0,0,0,.2);
+  p:last-child {
+    margin-bottom: 0;
+  }
 
+}
 
 
 // Modifier: article-body--cutoff - used for paywall soft
@@ -146,9 +154,12 @@
 
 @media (max-width: @screen-sm-max) {
   .paywall {
+     .paywall-inner {
+        padding: 27px 10px 17px;
+      }
     
     h2 {
-      font-size: 35px;
+      font-size: 30px;
     }
     p {
       font-size: 14px;
