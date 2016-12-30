@@ -7,7 +7,11 @@ if (isset($_GET['paywall'])) {
 
 <?php $imageSize = rand(1,1); ?>
 
-
+<?php 
+if($paywall == 'hard' || $paywall == 'split' || $paywall == 'split2' || $paywall == 'weekend') {
+  $cutContentstream = true;
+}
+?>
 
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9" lang="da"> <![endif]-->
@@ -17,7 +21,7 @@ if (isset($_GET['paywall'])) {
     <title>Business.dk</title>
     <?php include("./inc/head.php"); ?> 
   </head>
-  <body>
+  <body class="<?php if($cutContentstream == true): echo 'cut-contentstream'; endif; ?>">
 
 
 
@@ -141,7 +145,7 @@ if (isset($_GET['paywall'])) {
 
 
 			<?php if($paywall == 'hard' || $paywall == 'split' || $paywall == 'split2' || $paywall == 'weekend'): ?>	
-        <? while (dumb_luck("2")): ?>
+        <? while (dumb_luck("1")): ?>
       <p><? dummy("text@paragraph") ?></p>
     <? endwhile ?>
 				<?php include('inc/paywall.php'); ?>
@@ -319,9 +323,11 @@ if (isset($_GET['paywall'])) {
           <aside class="col-md-4 col-md-pull-8 hidden-sm hidden-xs">
           <div class="article-sidebar article-content-stream">
 
-
+          <?php if($cutContentstream == true) : ?>
+          <?php  include('inc/article-content-stream-paywall.php'); ?>
+          <?php else: ?>
           <?php  include('inc/article-content-stream.php'); ?>
-
+          <?php endif; ?>
           
           
             </div><!-- article-sidebar -->

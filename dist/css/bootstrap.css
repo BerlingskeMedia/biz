@@ -13820,6 +13820,23 @@ body.billede .picture-series-watermark {
   margin-top: -10px;
   margin-bottom: 30px;
 }
+.has-fade {
+  overflow: hidden;
+  position: relative;
+}
+.has-fade:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: -webkit-linear-gradient(top, rgba(250, 220, 210, 0) 0%, #fadcd2 100%);
+  background-image: -o-linear-gradient(top, rgba(250, 220, 210, 0) 0%, #fadcd2 100%);
+  background-image: linear-gradient(to bottom, rgba(250, 220, 210, 0) 0%, #fadcd2 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00fadcd2', endColorstr='#fffadcd2', GradientType=0);
+  height: 100px;
+}
 @media (max-width: 991px) {
   .paywall .paywall-inner {
     padding: 27px 10px 17px;

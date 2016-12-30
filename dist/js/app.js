@@ -215,15 +215,24 @@ $(function () {
 
     $('.close-paywall-overlay').click(function(e){
         e.preventDefault();
-
-        var addOverflow = function(){
-            // $('.article-body').css('overflow', 'visible');
-            $('.article-body--cutoff').removeClass('article-body--cutoff');
-        };
+        $('.article-body--cutoff').removeClass('article-body--cutoff');
         $('.paywall').fadeToggle('fast');
+        $('.article-content-stream').removeClass('has-fade');
+        $('.article-content-stream').css('height', 'auto');
         
-        setTimeout(addOverflow, 500);
     });
 
+
+     
+     
+    if ($('.cut-contentstream').length && $(window).width() > 768 ) {
+        console.log($(window).width());
+        
+        var contentStreamHeight = $('.article-content').height();
+        $('.article-content-stream').css('height', contentStreamHeight);
+        $('.article-content-stream').addClass('has-fade');
+    }
+
+    
 
 });
