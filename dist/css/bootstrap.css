@@ -13698,6 +13698,7 @@ body.billede .picture-series-watermark {
 }
 .paywall .notice {
   font-size: 90%;
+  margin-bottom: 15px;
 }
 .paywall .paywall-inner {
   padding: 27px 17px 17px;

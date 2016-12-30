@@ -46,8 +46,10 @@
 
     <section class=" paywall paywall-hard" rel="noindex">
         
+        <p class="notice">Artiklen er kun for abonnenter</p>
+
         <div class="paywall-inner">
-        <p class="small">Artiklen er kun for abonnenter</p>
+        
 
             <h2>Få hurtig adgang til artiklen</h2>
 
@@ -101,7 +103,7 @@
                         <div class="row">
                             <div class="col-xs-12 col-md-6 col-md-offset-3  ">
 
-                                <a href="http://b.kundeunivers.dk/" class="btn-arrow btn-block" style="margin-bottom: 10px;">
+                                <a href="http://b.kundeunivers.dk/newspaper-subscription/order/add?destination=newspaper-subscription/order" target="_blank" class="btn-arrow btn-block" style="margin-bottom: 10px;">
                                     <i class="fa fa-angle-right"></i>
                                     <p><strong>Jeg <u>har</u> abonnement </strong><br>
                                     <small>Registrér dit abonnement</small></p>
@@ -143,7 +145,7 @@
                     </div>
                         
                     
-                    <p>Allerede abonnement? <a href="http://b.kundeunivers.dk">Indtast dit dit ordrenummer <i class="fa fa-angle-right"></i></a> </p>
+                    <p>Allerede abonnement? <a href="http://b.kundeunivers.dk/newspaper-subscription/order/add?destination=newspaper-subscription/order" target="_blank">Klik her <i class="fa fa-angle-right"></i></a> </p>
 
                     
             </section>
