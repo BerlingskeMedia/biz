@@ -27,7 +27,7 @@
                                                     
 				<p class="small">
                     Allerede abonnent?
-                                                    <a href="#" class="btn-topmenu-login toggle-login link-gray" data-href="" data-toggle="modal" data-target="#modal-login">
+                                                    <a href="#" class="btn-topmenu-login toggle-login " data-href="" data-toggle="modal" data-target="#modal-login">
                         <i class="fa fa-user" aria-hidden="true"></i>&nbsp;Klik her
                     </a>
                 </p>
@@ -64,7 +64,7 @@
             
 			<p class="small">
                 Allerede abonnent?
-                <a href="#" class="btn-topmenu-login toggle-login link-gray" data-href="" data-toggle="modal" data-target="#modal-login">
+                <a href="#" class="btn-topmenu-login toggle-login" data-href="" data-toggle="modal" data-target="#modal-login">
                     <i class="fa fa-user" aria-hidden="true"></i>&nbsp;Klik her
                 </a>
             </p>
