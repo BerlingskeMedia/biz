@@ -13704,7 +13704,7 @@ body.billede .picture-series-watermark {
   padding: 27px 17px 17px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 .paywall:before {
@@ -13860,6 +13860,9 @@ body.billede .picture-series-watermark {
   }
   .paywall .btn-container-inner {
     padding: 0;
+  }
+  .paywall-soft .paywall-inner {
+    padding-bottom: 60px;
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */

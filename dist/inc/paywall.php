@@ -16,7 +16,7 @@
                     	
                         
                         <button class="btn btn-live btn-md  btn-paywall btn-paywall-2 ">
-                        	Få den første måned gratis nu <i class="fa fa-angle-right"></i>
+                        	Få den første måned gratis <span class="hidden-xs">nu</span> <i class="fa fa-angle-right"></i>
                         </button>
                     
 					
@@ -57,7 +57,7 @@
                 
              <div class="module-sm">
                  <button class="btn btn-live btn-md  btn-paywall btn-paywall-2  ">
-                 	Få den første måned gratis nu <i class="fa fa-angle-right"></i>
+                 	Få den første måned gratis <span class="hidden-xs">nu</span> <i class="fa fa-angle-right"></i>
                  </button>
 			</div>
                 
@@ -87,7 +87,7 @@
                         
                      <div class="module-sm">
                          <button class="btn btn-live btn-md  btn-paywall btn-paywall-2  ">
-                            Få den første måned gratis nu <i class="fa fa-angle-right"></i>
+                            Få den første måned gratis <span class="hidden-xs">nu</span> <i class="fa fa-angle-right"></i>
                          </button>
                     </div>
                         
@@ -140,7 +140,7 @@
                         
                      <div class="module-sm">
                          <button class="btn btn-live btn-md  btn-paywall btn-paywall-2  ">
-                            Få den første måned gratis nu <i class="fa fa-angle-right"></i>
+                            Få den første måned gratis <span class="hidden-xs">nu</span> <i class="fa fa-angle-right"></i>
                          </button>
                     </div>
                         
