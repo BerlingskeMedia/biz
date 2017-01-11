@@ -13752,11 +13752,6 @@ body.billede .picture-series-watermark {
   bottom: 0;
 }
 .paywall-soft .paywall-inner {
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.1) 100%);
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.1) 100%);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.1) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);
   padding-bottom: 60px;
   border-bottom-color: rgba(0, 0, 0, 0.2);
 }
